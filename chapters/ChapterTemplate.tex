@@ -1,0 +1,56 @@
+% Chapter Template
+
+\chapter{Chapter Title Here} % Main chapter title
+
+\label{ChapterX} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{SAFT-VR Mie}
+
+The SAFT-VR Mie equation of state \cite{abntex2classe} describes chain molecule formed from fused Mie segments using the Mie attractive and repulsive potential: 
+\begin{equation}
+U_{mie}(r) = C\epsilon \left( \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right)
+\label{eqn:miepotential}
+\end{equation}
+with
+\begin{equation}
+C = \frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)}
+\label{eqn:coefmie}
+\end{equation}
+%where C is the pre-factor, \epsilon is the potential well depth, \sigma is the segment diameter, r is the distance between the spherical segments, \lambda_r is the repulsive exponent and \lambda_s is the attractive exponent. This equation uses the Barker and Henderson \cite{} \hl{(J. A. Barker and D. Henderson, Rev. Mod. Phys. 48, 587 (1976)} high perturbation expansion of the Helmholtz free energy up to third order in addition to a improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the dimensionless Helmholtz free energy ($a = A / N\kappaT$) is defined as:
+\begin{equation}
+a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
+\label{eqn:miehelm}
+\end{equation}
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Ideal Contribution}
+
+The ideal contribution is given by:
+\begin{equation}
+a^{IDEAL} = ln(\rho\Lambda^3) -1
+\label{eqn:aideal}
+\end{equation}
+where $\rho$ is the molar density of chain molecules, $\lambda$ is de Broglie wavelength. 
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Monomer Contribution}
+For a fluid wit N chains formed of $m_s$ segments, the monomer contribution is given by:
+\begin{equation}
+a^{MONO} = lm_sa^M
+\label{eqn:amonomer}
+\end{equation}
+%where $a^M = A^M/(N_a\kappaT)$ is the Helmholtz free energy per mono. 
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Main Section 2}
+
+Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
