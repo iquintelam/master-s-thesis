@@ -8,7 +8,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Chapter Title Here}}{25}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {SAFT-$\gamma $ Mie Force Field}}{25}{chapter.1}
 \contentsline {section}{\numberline {1.1}SAFT-VR Mie}{25}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Ideal Contribution}{25}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Monomer Contribution}{25}{subsection.1.1.2}

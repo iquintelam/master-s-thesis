@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  6 SEP 2017 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  6 SEP 2017 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1198,10 +1198,14 @@ l.243 E
        lemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
 [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 249.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 243.
+
+
+LaTeX Warning: Citation `NBR14724:2011' on page 3 undefined on input line 243.
+
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 258.
- [3
+[3
 
 ] [4
 
@@ -1217,12 +1221,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 
 ] [11] [12
 
-] [13] [14
+]
+
+LaTeX Warning: Citation `NBR6028:2003' on page 13 undefined on input line 374.
+
+[13] [14
 
 ] [15] [16
 
-]
-(./abntex2-modelo-trabalho-academico.lof) [17] [18
+] (./abntex2-modelo-trabalho-academico.lof) [17] [18
 
 ]
 (./abntex2-modelo-trabalho-academico.lot) [19] [20
@@ -1237,7 +1244,25 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 ]
 \openout2 = `chapters/Chaptersaft.aux'.
 
- (./chapters/Chaptersaft.tex) [25
+ (./chapters/Chaptersaft.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <24.88> on input line 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3.
+
+
+LaTeX Warning: Citation `abntex2classe' on page 25 undefined on input line 13.
+
+) [25
 
 
 ] (./abntex2-modelo-trabalho-academico.bbl
@@ -1254,6 +1279,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
+
+LaTeX Warning: Citation `NBR14724:2005' on page 27 undefined on input line 27.
+
 ) [27] [28
 
 ]
@@ -1282,7 +1310,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [39] [40
 
-] (./abntex2-modelo-trabalho-academico.ind)
+]
+No file abntex2-modelo-trabalho-academico.ind.
 
 AED: lastpage setting LastPage
 [41]
@@ -1305,37 +1334,43 @@ ot changed.
 (rerunfilecheck)             Checksum: 6D66ADB4F83EBFFFF457F67691D1FA8A;208.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 652.
  ) 
 Here is how much of TeX's memory you used:
- 13220 strings out of 494929
- 195146 string characters out of 6180142
- 439530 words of memory out of 5000000
- 16053 multiletter control sequences out of 15000+600000
- 105776 words of font info for 189 fonts, out of 8000000 for 9000
+ 13228 strings out of 494929
+ 195315 string characters out of 6180142
+ 438803 words of memory out of 5000000
+ 16068 multiletter control sequences out of 15000+600000
+ 116330 words of font info for 194 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,12n,35p,891b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/font
-s/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (43 pages, 177328 bytes
+pdfTeX warning (dest): name{section*.14} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/fonts/
+enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/palatino/uplri8a.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (43 pages, 177764 bytes
 ).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
+ 433 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
  95 named destinations out of 1000 (max. 500000)
- 43721 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 45257 words of extra memory for PDF output out of 51595 (max. 10000000)
 
