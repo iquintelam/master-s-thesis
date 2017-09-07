@@ -56,6 +56,7 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
+\usepackage{palatino} % Use the Palatino font by default
 		
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
@@ -93,23 +94,26 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Modelo Canônico de\\ Trabalho Acadêmico com \abnTeX}
-\autor{Equipe \abnTeX}
-\local{Brasil}
-\data{2015, v-1.9.6}
-\orientador{Lauro César Araujo}
-\coorientador{Equipe \abnTeX}
+\titulo{Partition Coefficient Calculations of Molecules Mimicking Asphaltenes Through Molecular Simulation Using The Coarse-Grained SAFT-\boldmath$\gamma$ Mie Force Field}
+\autor{Isabela Quintela Matos}
+\local{Rio de Janeiro}
+\data{2018}
+\orientador{Charlles Rubber de Almeida Abreu}
+\coorientador{Papa Matar Ndiaye}
 \instituicao{%
-  Universidade do Brasil -- UBr
+  Universidade Federal do Rio de Janeiro
   \par
-  Faculdade de Arquitetura da Informação
+  Escola de Química 
   \par
-  Programa de Pós-Graduação}
-\tipotrabalho{Tese (Doutorado)}
+  Programa de Pós-Graduação em Tecnologia de Processos Químicos e Bioquímicos}
+\tipotrabalho{Dissertação (Mestrado)}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Modelo canônico de trabalho monográfico acadêmico em conformidade com
-as normas ABNT apresentado à comunidade de usuários \LaTeX.}
+\preambulo{Dissertação de Mestrado apresentada ao
+Programa de Pós-Graduação em Tecnologia de Processos Químicos e Bioquímicos, Escola de Química,
+Universidade Federal do Rio de Janeiro, como
+requisitos parcial à obtenção do título de Mestre
+em Engenharia Química.}
 % ---
 
 
@@ -160,8 +164,8 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \begin{document}
 
 % Seleciona o idioma do documento (conforme pacotes do babel)
-%\selectlanguage{english}
-\selectlanguage{brazil}
+\selectlanguage{english}
+%\selectlanguage{brazil}
 
 % Retira espaço extra obsoleto entre as frases.
 \frenchspacing 
@@ -408,15 +412,6 @@ contribuirão para a evolução do \abnTeX.
 % ---
 
 % ---
-% inserir lista de abreviaturas e siglas
-% ---
-\begin{siglas}
-  \item[ABNT] Associação Brasileira de Normas Técnicas
-  \item[abnTeX] ABsurdas Normas para TeX
-\end{siglas}
-% ---
-
-% ---
 % inserir lista de símbolos
 % ---
 \begin{simbolos}
@@ -445,7 +440,7 @@ contribuirão para a evolução do \abnTeX.
 % ----------------------------------------------------------
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
-\include{chapters/ChapterTemplate} 
+\include{chapters/Chaptersaft} 
 
 %\chapter*[Introdução]{Introdução}
 %\addcontentsline{toc}{chapter}{Introdução}
