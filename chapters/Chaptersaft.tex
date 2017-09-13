@@ -10,47 +10,81 @@
 
 \section{SAFT-VR Mie}
 
-The SAFT-VR Mie equation of state \cite{abntex2classe} describes chain molecule formed from fused Mie segments using the Mie attractive and repulsive potential: 
+The SAFT-VR Mie equation of state \cite{lafitte2013} is the basis for the SAFT-$\gamma$ Mie coarse grained force field \cite{avendano2011}. This EoS was initially developed to describe chain molecule formed from fused Mie segments using the Mie attractive and repulsive potential. The Mie potential is a type of generalized Lennard-Jones potential that can be used to describe explicitly repulsive interactions of different hardness/softness and attractive interactions of different ranges, and is given by:
 \begin{equation}
-U_{mie}(r) = C\epsilon \left( \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right)
+U_{Mie}(r) = \epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)}
+\left[ \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right]
 \label{eqn:miepotential}
 \end{equation}
-with
+where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_s$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order in addition to a improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz is:
 \begin{equation}
-C = \frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)}
-\label{eqn:coefmie}
-\end{equation}
-%where C is the pre-factor, \epsilon is the potential well depth, \sigma is the segment diameter, r is the distance between the spherical segments, \lambda_r is the repulsive exponent and \lambda_s is the attractive exponent. This equation uses the Barker and Henderson \cite{} \hl{(J. A. Barker and D. Henderson, Rev. Mod. Phys. 48, 587 (1976)} high perturbation expansion of the Helmholtz free energy up to third order in addition to a improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the dimensionless Helmholtz free energy ($a = A / N\kappaT$) is defined as:
-\begin{equation}
-a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
+\frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
 \label{eqn:miehelm}
 \end{equation}
-%-----------------------------------
+-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
 \subsection{Ideal Contribution}
 
-The ideal contribution is given by:
+The ideal contribution for a mixture is given by:
 \begin{equation}
-a^{IDEAL} = ln(\rho\Lambda^3) -1
+a^{IDEAL} = \sum_{i=1}^{N_{c}} x_{i}\ln{(\rho_{i}{\Lambda_{i}}^3)} -1
 \label{eqn:aideal}
 \end{equation}
-where $\rho$ is the molar density of chain molecules, $\lambda$ is de Broglie wavelength. 
+where $x_{i}=N_{i}/N$ is the molar fraction of component i, $\rho_{i}=N_{i}/V$ is the number density, $N_{i}$ is the number of molecules of each component and $\Lambda_{i}^3$ is de Broglie wavelength. 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \subsection{Monomer Contribution}
-For a fluid wit N chains formed of $m_s$ segments, the monomer contribution is given by:
+The monomer contribution describes the interactions between Mie segments and can be expressed for a mixture as:
 \begin{equation}
-a^{MONO} = lm_sa^M
+a^{MONO} = \left(\sum_{i=1}^{N_{c}} x_{i}m_{s,i} \right)a^{M}
 \label{eqn:amonomer}
 \end{equation}
-%where $a^M = A^M/(N_a\kappaT)$ is the Helmholtz free energy per mono. 
+In the equation above, $m_{s,i}$ is the number of spherical segments making up the molecule i and $a^{M}$  is the monomer dimensionless Helmholtz free energy and it is expressed as a third order perturbation expansion in the inverse temperature \cite{bh1976}:
+\begin{equation}
+a^{M} = a^{HS}+\beta{a_{1}}+\beta{a_{2}}^2+\beta{a_{3}}^3 
+\label{eqn:aM}
+\end{equation}
+where $\beta=\kappa_{b}T$ and $a^{HS}$ is the hard-sphere dimensionless Helmholtz free energy for a mixture :
+\begin{equation}
+a^{HS} = \frac{6}{\pi\rho_{s}}\left[\left(\frac{\zeta^3_2}{\zeta^2_3}-\zeta_0 \right)\ln(1-\zeta_3)+\frac{3\zeta_{1}\zeta_{2}}{1-\zeta_3}+ \frac{\zeta^3_2}{\zeta_{3}(1-\zeta_3)^2}\right]
+\label{eqn:hs}
+\end{equation}
+The $\rho_{s}=\rho\sum_{i}^{N_c} x_{i}m{s,i}$ is the total number density of spherical segments and $\zeta_l$ are the moments of the number density:
+\begin{equation}
+\zeta_l = \frac{\pi\rho_s}{6}\left(\sum_{i=1}^{N_c} x_{s,i}d^l_{ii} \right), l = 0,1,2,3
+\label{eqn:zetal}
+\end{equation}
+where $x_{s,i}$ is the mole fraction of the segments and is related through the mole fraction of component i ($x_i$) by:
+\begin{equation}
+x_{s,i} = \frac{m_{s,i}x_i}{\sum_{k=1}^{N_c} m_{s,k}x_{k} }
+\label{eqn:xsi}
+\end{equation}
+The effective hard-sphere diameter $d_{ii}$ for the segments is:
+\begin{equation}
+d_{ii} =\int_{0}^{\sigma_{ii}} ( 1 - \exp(-\beta U^{Mie}_{ii}(r)) ) dr
+\label{eqn:diameter}
+\end{equation}
+The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of Gauss-Legendre with a 5-point quadrature \cite{papa2014}. The detailing of the terms of Eq. \eqref{eqn:amonomer} can be found in \citeonline{lafitte2013}.
+\subsection{Chain Contribution}
+The chain formation contribution is obtained following a formal TPT1 \cite{papa2014} and the Helmholtz free energy corresponding to tangentially bonded segments is:
+\begin{equation}
+a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln(g_{ii}^{Mie}(\sigma_{ii}))
+\label{eqn:achain}
+\end{equation}
+The $g_{ij}^{Mie}(\sigma_{ij})$ term correspond to the value of the radial distribution function (RDF) of the hypothetical Mie system evaluated at the effective diameter and can be obtained with the perturbation expansion:
+\begin{equation}
+g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp[\beta\epsilon \nicefrac{g_{1,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})} + (\beta\epsilon)^2 \nicefrac{g_{2,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})}]
+\label{eqn:achain}
+\end{equation}
+The terms in the equations above are explicitly exposed in the original article \cite{lafitte2013}. 
+\subsection{Ring Contribution}
+
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
 \section{Main Section 2}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
