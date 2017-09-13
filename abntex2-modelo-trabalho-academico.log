@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  13 SEP 2017 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  13 SEP 2017 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1321,48 +1321,48 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [25
 
 
-]) [26] (./abntex2-modelo-trabalho-academico.bbl
+]) [26] [27] (./abntex2-modelo-trabalho-academico.bbl [28
+
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-) [27
-
-
-] [28
+) [29] [30
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 599.
 
-[29
+[31
 
-] [30] [31
+] [32] [33
 
-] [32
+] [34
 
-] [33] [34
+] [35] [36
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 627.
 
-[35
+[37
 
-] [36] [37
+] [38] [39
 
-] [38
+] [40
 
-] [39] [40
+] [41] [42
 
 ]
 No file abntex2-modelo-trabalho-academico.ind.
 
 AED: lastpage setting LastPage
-[41]
+[43]
 \tf@lof=\write5
 \openout5 = `abntex2-modelo-trabalho-academico.lof'.
 
@@ -1384,32 +1384,33 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
  ) 
 Here is how much of TeX's memory you used:
- 13720 strings out of 494929
- 200049 string characters out of 6180142
- 448899 words of memory out of 5000000
- 16511 multiletter control sequences out of 15000+600000
+ 13724 strings out of 494929
+ 200085 string characters out of 6180142
+ 449899 words of memory out of 5000000
+ 16512 multiletter control sequences out of 15000+600000
  118984 words of font info for 210 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,14n,35p,732b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/font
 s/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
-alatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (43 pages, 197011 bytes
+f/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (45 pages, 214710 bytes
 ).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 105 named destinations out of 1000 (max. 500000)
- 49361 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 49369 words of extra memory for PDF output out of 51595 (max. 10000000)
 
