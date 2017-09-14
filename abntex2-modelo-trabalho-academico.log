@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  13 SEP 2017 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  14 SEP 2017 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1032,14 +1032,37 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count178
 )
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use t
+he caption package interfaces in order to configure your captions. .
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+)
+\c@ContinuedFloat=\count179
+Package caption Info: hyperref package is loaded.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip264
 \ABCIauxlen=\skip265
-\c@ABCIaux=\count179
-\c@ABCImax=\count180
+\c@ABCIaux=\count180
+\c@ABCImax=\count181
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
@@ -1049,21 +1072,21 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks32
 )
-Package color Info: Redefining color blue on input line 127.
+Package color Info: Redefining color blue on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 144.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 144.
+(hyperref)                removing `\gamma' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 144.
+(hyperref)                removing `math shift' on input line 146.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 144.
+Package hyperref Info: Option `colorlinks' set `true' on input line 146.
 \abntex2-modelo-trabalho-academico@idxfile=\write4
 \openout4 = `abntex2-modelo-trabalho-academico.idx'.
 
@@ -1075,26 +1098,26 @@ LaTeX Warning: Label `eqn:achain' multiply defined.
 ))
 \openout1 = `abntex2-modelo-trabalho-academico.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 167.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 169.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 167.
+Package hyperref Info: Link coloring ON on input line 169.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1102,31 +1125,31 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count181
+\c@section@level=\count182
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 167.
-LaTeX Info: Redefining \ref on input line 167.
-LaTeX Info: Redefining \pageref on input line 167.
-LaTeX Info: Redefining \nameref on input line 167.
+LaTeX Info: Redefining \nameref on input line 169.
+LaTeX Info: Redefining \ref on input line 169.
+LaTeX Info: Redefining \pageref on input line 169.
+LaTeX Info: Redefining \nameref on input line 169.
 \myptabbox=\box33
 \myptabboxwidth=\skip267
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 167.
+(lastpage)             ! on input line 169.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count182
-\scratchdimen=\dimen167
+\scratchcounter=\count183
+\scratchdimen=\dimen174
 \scratchbox=\box34
-\nofMPsegments=\count183
-\nofMParguments=\count184
+\nofMPsegments=\count184
+\nofMParguments=\count185
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count185
-\MPscratchDim=\dimen168
-\MPnumerator=\count186
-\makeMPintoPDFobject=\count187
+\MPscratchCnt=\count186
+\MPscratchDim=\dimen175
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1143,7 +1166,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 167.
+LaTeX Info: Redefining \microtypecontext on input line 169.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1157,7 +1180,9 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Try loading font information for T1+phv on input line 184.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 186.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1167,10 +1192,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 184.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 186.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 184.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 184.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 186.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 186.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -1180,93 +1205,93 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 184.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 186.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 184
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 186
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 184
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 186
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 184.
+(Font)              <20.74> on input line 186.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 184.
+(Font)              <14.4> on input line 186.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 184.
+(Font)              <12> on input line 186.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 184.
+(Font)              <10> on input line 186.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 184.
+(Font)              <7> on input line 186.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 193.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 195.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 193.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 195.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 193.
+(Font)              <17.28> on input line 195.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 193.
+(Font)              <8> on input line 195.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 193.
+(Font)              <6> on input line 195.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.193 
+l.195 
        [1
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 237.
+(Font)              <10.95> on input line 239.
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 
-Overfull \hbox (16.54776pt too wide) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+
+ []
+
+
+Overfull \hbox (16.54776pt too wide) in paragraph at lines 239--239
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 237.
+(Font)              <5> on input line 239.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 E
+l.248 E
        lemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
 [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 252.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 254.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 261.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 263.
  [3
 
 ] [4
@@ -1288,10 +1313,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 ] [15] [16
 
 ]
-(./abntex2-modelo-trabalho-academico.lof) [17] [18
+(./abntex2-modelo-trabalho-academico.lof
+Overfull \hbox (2.25528pt too wide) detected at line 3
+\T1/ppl/m/n/12 Figure 1.1.1 ^^U  
+ []
 
-]
-(./abntex2-modelo-trabalho-academico.lot) [19] [20
+) [17] [18
+
+] (./abntex2-modelo-trabalho-academico.lot) [19] [20
 
 ] [21
 
@@ -1321,21 +1350,40 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [25
 
 
-]) [26] [27] (./abntex2-modelo-trabalho-academico.bbl [28
+] [26] <Figures/mullergeo.jpg, id=277, 507.8975pt x 205.76875pt>
+File: Figures/mullergeo.jpg Graphic file (type jpg)
+
+<use Figures/mullergeo.jpg>
+Package pdftex.def Info: Figures/mullergeo.jpg used on input line 97.
+(pdftex.def)             Requested size: 406.31856pt x 164.6152pt.
+ [27 <./Figures/mullergeo.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 120.
 
 
-]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 120.
+
+) [28] (./abntex2-modelo-trabalho-academico.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-) [29] [30
+) [29
+
+
+] [30
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 599.
+(hyperref)                removing `\uppercase' on input line 601.
 
 [31
 
@@ -1348,7 +1396,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 627.
+(hyperref)                removing `\uppercase' on input line 629.
 
 [37
 
@@ -1372,25 +1420,25 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `abntex2-modelo-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
  (./abntex2-modelo-trabalho-academico.aux (./chapters/Chaptersaft.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 655.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 657.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
  ) 
 Here is how much of TeX's memory you used:
- 13724 strings out of 494929
- 200085 string characters out of 6180142
- 449899 words of memory out of 5000000
- 16512 multiletter control sequences out of 15000+600000
- 118984 words of font info for 210 fonts, out of 8000000 for 9000
+ 14796 strings out of 494929
+ 219582 string characters out of 6180142
+ 471395 words of memory out of 5000000
+ 17549 multiletter control sequences out of 15000+600000
+ 119775 words of font info for 220 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,14n,35p,732b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,15n,43p,744b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/font
@@ -1406,11 +1454,11 @@ c/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (45 pages, 214710 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (45 pages, 243890 bytes
 ).
 PDF statistics:
- 496 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 49369 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 469 compressed objects within 5 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 49382 words of extra memory for PDF output out of 51595 (max. 10000000)
 

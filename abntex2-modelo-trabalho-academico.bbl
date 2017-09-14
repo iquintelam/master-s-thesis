@@ -43,6 +43,26 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   molecules formed from mie segments.
 \emph{The Journal of Chemical Physics}, v.~139, p. 154504, 2013.}
 
+\bibitem[Lafitte et al. 2012]{lafitte2012}
+\abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2012}
+{LAFITTE, T. et al. Saft-$\gamma$ force field for the simulation of molecular
+  fluids: 3. coarse-grained models of benzene and hetero-group models of
+  n-decylbenzene.
+\emph{Molecular Physics}, v.~110, p. 1189–1203, 2012.}
+
+\bibitem[M\"uller e Gubbins 1993]{muller1993}
+\abntrefinfo{M\"uller e Gubbins}{M\"ULLER; GUBBINS}{1993}
+{M\"ULLER, E.~A.; GUBBINS, K.~E. Simulation of hard triatomic and tetratomic
+  molecules. a test of associating fluid theory.
+\emph{Molecular Physics}, v.~80, p. 957–976, 1993.}
+
+\bibitem[M\"uller e Mej\'ia 2017]{muller2017}
+\abntrefinfo{M\"uller e Mej\'ia}{M\"ULLER; MEJ\'IA}{2017}
+{M\"ULLER, E.~A.; MEJ\'IA, A. Extension of the saft-vr mie eos to model
+  homonuclear rings and its parametrization based on the principle of
+  corresponding states.
+\emph{Langmuir}, -, p. A–L, 2017.}
+
 \bibitem[Papaioannou et al. 2014]{papa2014}
 \abntrefinfo{Papaioannou et al.}{PAPAIOANNOU et al.}{2014}
 {PAPAIOANNOU, V. et al. Group contribution methodology based on the statistical
