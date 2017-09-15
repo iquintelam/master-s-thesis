@@ -16,7 +16,7 @@ U_{Mie}(r) = \epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda
 \left[ \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right]
 \label{eqn:miepotential}
 \end{equation}
-where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_s$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order in addition to a improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
+where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_s$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
 \begin{equation}
 \frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
 \label{eqn:miehelm}
@@ -42,6 +42,7 @@ The monomer contribution describes the interactions between Mie segments and can
 a^{MONO} = \left(\sum_{i=1}^{N_{c}} x_{i}m_{s,i} \right)a^{M}
 \label{eqn:amonomer}
 \end{equation}
+\par
 In the equation above, $m_{s,i}$ is the number of spherical segments making up the molecule i and $a^{M}$  is the monomer dimensionless Helmholtz free energy and it is expressed as a third order perturbation expansion in the inverse temperature \cite{bh1976}:
 \begin{equation}
 a^{M} = a^{HS}+\beta{a_{1}}+\beta{a_{2}}^2+\beta{a_{3}}^3 
@@ -52,7 +53,7 @@ where $\beta=\kappa_{b}T$ and $a^{HS}$ is the hard-sphere dimensionless Helmholt
 a^{HS} = \frac{6}{\pi\rho_{s}}\left[\left(\frac{\zeta^3_2}{\zeta^2_3}-\zeta_0 \right)\ln(1-\zeta_3)+\frac{3\zeta_{1}\zeta_{2}}{1-\zeta_3}+ \frac{\zeta^3_2}{\zeta_{3}(1-\zeta_3)^2}\right]
 \label{eqn:hs}
 \end{equation}
-The $\rho_{s}=\rho\sum_{i}^{N_c} x_{i}m{s,i}$ is the total number density of spherical segments and $\zeta_l$ are the moments of the number density:
+where $\rho_{s}=\rho\sum_{i}^{N_c} x_{i}m{s,i}$ is the total number density of spherical segments and $\zeta_l$ are the moments of the number density:
 \begin{equation}
 \zeta_l = \frac{\pi\rho_s}{6}\left(\sum_{i=1}^{N_c} x_{s,i}d^l_{ii} \right), l = 0,1,2,3
 \label{eqn:zetal}
@@ -62,11 +63,13 @@ where $x_{s,i}$ is the mole fraction of the segments and is related through the 
 x_{s,i} = \frac{m_{s,i}x_i}{\sum_{k=1}^{N_c} m_{s,k}x_{k} }
 \label{eqn:xsi}
 \end{equation}
+\par
 The effective hard-sphere diameter $d_{ii}$ for the segments is:
 \begin{equation}
 d_{ii} =\int_{0}^{\sigma_{ii}} ( 1 - \exp(-\beta U^{Mie}_{ii}(r)) ) dr
 \label{eqn:diameter}
 \end{equation}
+\par
 The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of Gauss-Legendre with a 5-point quadrature \cite{papa2014}. The detailing of the terms of Eq. \eqref{eqn:amonomer} can be found in \citeonline{lafitte2013}.
 \subsection{Chain Contribution}
 The chain formation of $m_{s}$ tangentially bonded Mie segments contribution is based on the first-order pertubation theory (TPT1)  \cite{papa2014} and can be expressed as:
@@ -74,11 +77,13 @@ The chain formation of $m_{s}$ tangentially bonded Mie segments contribution is 
 a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:achain}
 \end{equation}
+\par
 The $g_{ij}^{Mie}(\sigma_{ij})$ term correspond to the value of the radial distribution function (RDF) of the hypothetical Mie system evaluated at the effective diameter and can be obtained with the perturbation expansion:
 \begin{equation}
-g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp[\beta\epsilon \nicefrac{g_{1,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})} + (\beta\epsilon)^2 \nicefrac{g_{2,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})}]
+g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp[\beta\epsilon g_{1,ij}(\sigma_{ij})/g_{d,ij}^{HS}(\sigma_{ij}) + (\beta\epsilon)^{2} g_{2,ij}(\sigma_{ij})/g_{d,ij}^{HS}(\sigma_{ij})]
 \label{eqn:achain}
 \end{equation}
+\par
 The terms in the equations above are explicitly exposed in the original article \cite{lafitte2013}. 
 \subsection{Ring Contribution}
 There are two forms for the Helmholtz free energy for rings formed from $m_{s}$ tangentially bonded segments in the literature. The first one  \cite{lafitte2012} considered that the difference between a chain and a ring molecule is that the latter one has one more bond that is connecting the first segment to the last. With this assumption, the Eq. \eqref{eqn:achain} becomes:
@@ -86,6 +91,7 @@ There are two forms for the Helmholtz free energy for rings formed from $m_{s}$ 
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringlafitte}
 \end{equation}
+\par
 According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for ring molecules. Recently \citeonline{muller2017} tried to correct this inconsistency developing the ring free energy based on the work of \citeonline{muller1993} whom obtained rigorous expressions for molecular geometries of rings of $m_s=3$ for hard fluids. The final expression for the dimensionless Helmholtz free energy is:
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i}-1+\chi_{i}\eta_{i})\ln(g_{ii}^{Mie}(\sigma_{ii}))
@@ -99,7 +105,7 @@ where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\
 \label{fig:ringqsi}
 \end{figure}
 \subsection{Combining rules for the intermolecular potential parameters}
-\citeonline{lafitte2013} also suggested mixing rules for the potential parameters:
+\citeonline{lafitte2013} also suggested mixing rules for the potential parameters based on Lorentz-Berthelot combining rules \cite{rowlinson}:
 \begin{equation}
 \sigma_{ij} =\frac{\sigma{ii}+\sigma{jj}}{2}
 \label{eqn:sigmamix}
@@ -112,10 +118,12 @@ where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\
 \epsilon_{ij} =(1-k_{ij})\frac{\sqrt{\sigma_{ii}^{3}\sigma_{jj}^{3}}}{\sigma_{ij}^{3}}\sqrt{\epsilon_{ii}\epsilon_{jj}}
 \label{eqn:epsmix}
 \end{equation}
-The $k_{ij}$ is a binary interaction parameter to account the mixture behavior. This parameter can also be fitted to experimental data.
+\par
+The $k_{ij}$ is a binary interaction parameter to correct the deviations of the Lorentz-Berthelot rule for chemically distinct compounds. This parameter can also be fitted to experimental data or pseudo experimental data.
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
 \section{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}
 
+The SAFT-$\gamma$ Mie Force Field is force field that uses a  coarse graining top down methodology in your parameterization so the intermolecular parameters are obtained from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters for the molecular simulation can  be estimated with the equation of state can be used on molecular simulations since both the Saft-VR Mie EoS and the force field use the Mie Potential.

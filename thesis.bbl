@@ -70,4 +70,9 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   segments.
 \emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
 
+\bibitem[ROWLINSON e SWINTON 1982]{rowlinson}
+\abntrefinfo{ROWLINSON e SWINTON}{ROWLINSON; SWINTON}{1982}
+{ROWLINSON, J.~S.; SWINTON, F.~L. \emph{Liquid and Liquid Mixtures}. 3. ed.
+  London: Butterworth Scientific, 1982.}
+
 \end{thebibliography}
