@@ -1,0 +1,78 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
+\abntrefinfo{ABNT}{ABNT}{2003}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6028}: Resumo -
+  apresenta{\c c}{\~a}o.
+Rio de Janeiro, 2003. 2~p.}
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2005]{NBR14724:2005}
+\abntrefinfo{ABNT}{ABNT}{2005}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
+  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
+  apresenta{\c c}\~ao.
+Rio de Janeiro, 2005. 9~p.}
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
+\abntrefinfo{ABNT}{ABNT}{2011}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
+  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
+  apresenta{\c c}\~ao.
+Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
+
+\bibitem[Avenda{\~n}o et al. 2011]{avendano2011}
+\abntrefinfo{Avenda{\~n}o et al.}{AVENDA{\~N}O et al.}{2011}
+{AVENDA{\~N}O, C. et al. Saft-$\gamma$ force field for the simulation of
+  molecular fluids.1. a single-site coarse grained model of carbon dioxide.
+\emph{The Journal of Physical Chemistry B}, v.~115, p. 11154–11169, 2011.}
+
+\bibitem[Barker e Henderson 1976]{bh1976}
+\abntrefinfo{Barker e Henderson}{BARKER; HENDERSON}{1976}
+{BARKER, J.~A.; HENDERSON, D. What is "liquid"? understanding the states of
+  matter.
+\emph{Review of Modern Physics}, v.~48, p. 587--671, 1976.}
+
+\bibitem[Lafitte et al. 2013]{lafitte2013}
+\abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2013}
+{LAFITTE, T. et al. Accurate statistical associating fluid theory for chain
+  molecules formed from mie segments.
+\emph{The Journal of Chemical Physics}, v.~139, p. 154504, 2013.}
+
+\bibitem[Lafitte et al. 2012]{lafitte2012}
+\abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2012}
+{LAFITTE, T. et al. Saft-$\gamma$ force field for the simulation of molecular
+  fluids: 3. coarse-grained models of benzene and hetero-group models of
+  n-decylbenzene.
+\emph{Molecular Physics}, v.~110, p. 1189–1203, 2012.}
+
+\bibitem[M\"uller e Gubbins 1993]{muller1993}
+\abntrefinfo{M\"uller e Gubbins}{M\"ULLER; GUBBINS}{1993}
+{M\"ULLER, E.~A.; GUBBINS, K.~E. Simulation of hard triatomic and tetratomic
+  molecules. a test of associating fluid theory.
+\emph{Molecular Physics}, v.~80, p. 957–976, 1993.}
+
+\bibitem[M\"uller e Mej\'ia 2017]{muller2017}
+\abntrefinfo{M\"uller e Mej\'ia}{M\"ULLER; MEJ\'IA}{2017}
+{M\"ULLER, E.~A.; MEJ\'IA, A. Extension of the saft-vr mie eos to model
+  homonuclear rings and its parametrization based on the principle of
+  corresponding states.
+\emph{Langmuir}, -, p. A–L, 2017.}
+
+\bibitem[Papaioannou et al. 2014]{papa2014}
+\abntrefinfo{Papaioannou et al.}{PAPAIOANNOU et al.}{2014}
+{PAPAIOANNOU, V. et al. Group contribution methodology based on the statistical
+  associating fluid theory for heteronuclear molecules formed from mie
+  segments.
+\emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
+
+\bibitem[ROWLINSON e SWINTON 1982]{rowlinson}
+\abntrefinfo{ROWLINSON e SWINTON}{ROWLINSON; SWINTON}{1982}
+{ROWLINSON, J.~S.; SWINTON, F.~L. \emph{Liquid and Liquid Mixtures}. 3. ed.
+  London: Butterworth Scientific, 1982.}
+
+\end{thebibliography}
