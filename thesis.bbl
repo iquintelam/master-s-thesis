@@ -37,6 +37,25 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   matter.
 \emph{Review of Modern Physics}, v.~48, p. 587--671, 1976.}
 
+\bibitem[Ervik et al. 2016]{ervik20162}
+\abntrefinfo{Ervik et al.}{ERVIK et al.}{2016}
+{ERVIK, A. et al. A multiscale method for simulating fluid interfaces covered
+  with large molecules such as asphaltenes.
+\emph{Journal of Computational Physics}, v.~327, p. 576--611, 2016.}
+
+\bibitem[Ervik, Mej\'ia e M\"uller 2016]{ervik2016}
+\abntrefinfo{Ervik, Mej\'ia e M\"uller}{ERVIK; MEJ\'IA; M\"ULLER}{2016}
+{ERVIK, A.; MEJ\'IA, A.; M\"ULLER, E.~A. Bottled saft: A web app providing
+  saft-$\gamma$ mie force field parameters for thousands of molecular fluids.
+\emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
+  2016.}
+
+\bibitem[Herdes, Totton e M\"uller 2015]{herdes2015}
+\abntrefinfo{Herdes, Totton e M\"uller}{HERDES; TOTTON; M\"ULLER}{2015}
+{HERDES, C.; TOTTON, T.~S.; M\"ULLER, E.~A. Coarse grained force field for the
+  molecular simulation of natural gases and condensates.
+\emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
+
 \bibitem[Lafitte et al. 2013]{lafitte2013}
 \abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2013}
 {LAFITTE, T. et al. Accurate statistical associating fluid theory for chain
@@ -49,6 +68,20 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   fluids: 3. coarse-grained models of benzene and hetero-group models of
   n-decylbenzene.
 \emph{Molecular Physics}, v.~110, p. 1189–1203, 2012.}
+
+\bibitem[Lobanova et al. 2016]{lobanova2016}
+\abntrefinfo{Lobanova et al.}{LOBANOVA et al.}{2016}
+{LOBANOVA, O. et al. Saft-$\gamma$ force field for the simulation of molecular
+  fluids 6: Binaryand ternary mixtures comprising water, carbon dioxide, and
+  n-alkanes.
+\emph{The Journal of Chemical Thermodynamics}, v.~93, p. 320–336, 2016.}
+
+\bibitem[Mej\'ia, Herdes e M\"uller 2014]{mejia2014}
+\abntrefinfo{Mej\'ia, Herdes e M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
+{MEJ\'IA, A.; HERDES, C.; M\"ULLER, E.~A. Force fields for coarse-grained
+  molecular simulations from a corresponding states correlation.
+\emph{Industrial and Chemical Engineering Research}, v.~53, p. 4131–4141,
+  2014.}
 
 \bibitem[M\"uller e Gubbins 1993]{muller1993}
 \abntrefinfo{M\"uller e Gubbins}{M\"ULLER; GUBBINS}{1993}
@@ -69,6 +102,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   associating fluid theory for heteronuclear molecules formed from mie
   segments.
 \emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
+
+\bibitem[Ramrattan et al. 2015]{ramrattan2015}
+\abntrefinfo{Ramrattan et al.}{RAMRATTAN et al.}{2015}
+{RAMRATTAN, N. et al. A corresponding-states framework for the description of
+  the mie family of intermolecular potentials.
+\emph{Molecular Physics}, v.~113, p. 1–16, 2015.}
 
 \bibitem[ROWLINSON e SWINTON 1982]{rowlinson}
 \abntrefinfo{ROWLINSON e SWINTON}{ROWLINSON; SWINTON}{1982}
