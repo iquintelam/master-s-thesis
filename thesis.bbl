@@ -27,8 +27,9 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 
 \bibitem[Avenda{\~n}o et al. 2011]{avendano2011}
 \abntrefinfo{Avenda{\~n}o et al.}{AVENDA{\~N}O et al.}{2011}
-{AVENDA{\~N}O, C. et al. Saft-$\gamma$ force field for the simulation of
-  molecular fluids.1. a single-site coarse grained model of carbon dioxide.
+{AVENDA{\~N}O, C.; LAFITTE, T.; GALINDO, A.; ADJIMAN, C.~S.; JACKSON, G.;
+  MULLER, E.~A. Saft-$\gamma$ force field for the simulation of molecular
+  fluids.1. a single-site coarse grained model of carbon dioxide.
 \emph{The Journal of Physical Chemistry B}, v.~115, p. 11154–11169, 2011.}
 
 \bibitem[Barker e Henderson 1976]{bh1976}
@@ -39,8 +40,9 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 
 \bibitem[Ervik et al. 2016]{ervik20162}
 \abntrefinfo{Ervik et al.}{ERVIK et al.}{2016}
-{ERVIK, A. et al. A multiscale method for simulating fluid interfaces covered
-  with large molecules such as asphaltenes.
+{ERVIK, A.; LYSGAARD, M.~O.; HERDES, C.; JIM\'ENEZ-SERRATOS, G.; M\"LLER,
+  E.~A.; MUNKEJORD, S.~T.; M\"ULLER, B. A multiscale method for simulating
+  fluid interfaces covered with large molecules such as asphaltenes.
 \emph{Journal of Computational Physics}, v.~327, p. 576--611, 2016.}
 
 \bibitem[Ervik, Mej\'ia e M\"uller 2016]{ervik2016}
@@ -58,22 +60,24 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 
 \bibitem[Lafitte et al. 2013]{lafitte2013}
 \abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2013}
-{LAFITTE, T. et al. Accurate statistical associating fluid theory for chain
-  molecules formed from mie segments.
+{LAFITTE, T.; APOSTOLAKOU, A.; AVENDANO, C.; GALINDO, A.; ADJIMAN, C.~S.;
+  MULLER, E.~A.; JACKSON, G. Accurate statistical associating fluid theory for
+  chain molecules formed from mie segments.
 \emph{The Journal of Chemical Physics}, v.~139, p. 154504, 2013.}
 
 \bibitem[Lafitte et al. 2012]{lafitte2012}
 \abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2012}
-{LAFITTE, T. et al. Saft-$\gamma$ force field for the simulation of molecular
-  fluids: 3. coarse-grained models of benzene and hetero-group models of
-  n-decylbenzene.
+{LAFITTE, T.; AVENDA{\~N}O, C.; PAPAIOANNOU, V.; GALINDO, A.; ADJIMAN, C.~S.;
+  JACKSON, G.; M\"ULLER, E.~A. Saft-$\gamma$ force field for the simulation of
+  molecular fluids: 3. coarse-grained models of benzene and hetero-group models
+  of n-decylbenzene.
 \emph{Molecular Physics}, v.~110, p. 1189–1203, 2012.}
 
 \bibitem[Lobanova et al. 2016]{lobanova2016}
 \abntrefinfo{Lobanova et al.}{LOBANOVA et al.}{2016}
-{LOBANOVA, O. et al. Saft-$\gamma$ force field for the simulation of molecular
-  fluids 6: Binaryand ternary mixtures comprising water, carbon dioxide, and
-  n-alkanes.
+{LOBANOVA, O.; MEJ\'IA, A.; JACKSON, G.; M\"LLER, E.~A. Saft-$\gamma$ force
+  field for the simulation of molecular fluids 6: Binaryand ternary mixtures
+  comprising water, carbon dioxide, and n-alkanes.
 \emph{The Journal of Chemical Thermodynamics}, v.~93, p. 320–336, 2016.}
 
 \bibitem[Mej\'ia, Herdes e M\"uller 2014]{mejia2014}
@@ -98,15 +102,17 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 
 \bibitem[Papaioannou et al. 2014]{papa2014}
 \abntrefinfo{Papaioannou et al.}{PAPAIOANNOU et al.}{2014}
-{PAPAIOANNOU, V. et al. Group contribution methodology based on the statistical
-  associating fluid theory for heteronuclear molecules formed from mie
-  segments.
+{PAPAIOANNOU, V.; LAFITTE, T.; AVENDA{\~N}O, C.; ADJIMAN, C.~S.; JACKSON, G.;
+  M\"ULLER, E.~A.; GALINDO, A. Group contribution methodology based on the
+  statistical associating fluid theory for heteronuclear molecules formed from
+  mie segments.
 \emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
 
 \bibitem[Ramrattan et al. 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan et al.}{RAMRATTAN et al.}{2015}
-{RAMRATTAN, N. et al. A corresponding-states framework for the description of
-  the mie family of intermolecular potentials.
+{RAMRATTAN, N.; AVENDA{\~N}O, C.; M\"ULLER, E.; GALINDO, A. A
+  corresponding-states framework for the description of the mie family of
+  intermolecular potentials.
 \emph{Molecular Physics}, v.~113, p. 1–16, 2015.}
 
 \bibitem[ROWLINSON e SWINTON 1982]{rowlinson}

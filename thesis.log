@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  19 SEP 2017 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  3 OCT 2017 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,13 +1332,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 659.
  ) 
 Here is how much of TeX's memory you used:
- 14767 strings out of 494929
- 218121 string characters out of 6180142
- 473624 words of memory out of 5000000
- 17522 multiletter control sequences out of 15000+600000
- 71310 words of font info for 231 fonts, out of 8000000 for 9000
+ 14760 strings out of 494929
+ 218066 string characters out of 6180142
+ 473713 words of memory out of 5000000
+ 17524 multiletter control sequences out of 15000+600000
+ 70837 words of font info for 225 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 40i,17n,43p,1007b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,17n,43p,1031b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1355,10 +1355,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on thesis.pdf (30 pages, 259820 bytes).
+Output written on thesis.pdf (30 pages, 260715 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 473 compressed objects within 5 object streams
+ 530 PDF objects out of 1000 (max. 8388607)
+ 474 compressed objects within 5 object streams
  125 named destinations out of 1000 (max. 500000)
  49382 words of extra memory for PDF output out of 51595 (max. 10000000)
 
