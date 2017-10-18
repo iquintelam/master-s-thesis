@@ -16,7 +16,7 @@ U_{Mie}(r) = \epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda
 \left[ \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right]
 \label{eqn:miepotential}
 \end{equation}
-where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_s$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
+where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation able to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
 \begin{equation}
 \frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
 \label{eqn:miehelm}
@@ -97,7 +97,7 @@ a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringlafitte}
 \end{equation}
 
-According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for chain molecules. Recently \citeonline{muller2017} tried to correct this inconsistency by means of developing the ring free energy based on the work of \citeonline{muller1993} whom obtained rigorous expressions for molecular geometries of rings of $m_s=3$ for hard fluids. The final expression developed for the ring dimensionless Helmholtz free energy is:
+According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for chain molecules. Recently \citeonline{muller2017} tried to correct this inconsistency by means of developing the ring free energy based on the work of \citeonline{muller1993} who obtained rigorous expressions for molecular geometries of rings of $m_s=3$ for hard fluids. The final expression developed for the ring dimensionless Helmholtz free energy is:
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i}-1+\chi_{i}\eta_{i})\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringmuller}
@@ -117,7 +117,7 @@ $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i
 \label{eqn:sigmamix}
 \end{equation}
 \begin{equation}
-\lambda_{k,ij} -3 =\sqrt{(\lambda_{k,ii}-3)(\lambda{k,jj}-3)} , k=r,a
+\lambda_{k,ij} -3 =\sqrt{(\lambda_{k,ii}-3)(\lambda_{k,jj}-3)} , k=r,a
 \label{eqn:lambdamix}
 \end{equation}
 \begin{equation}
@@ -133,9 +133,9 @@ The $k_{ij}$ is a binary interaction parameter to correct the deviations of the 
 
 \section{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}
 
-The SAFT-$\gamma$ Mie is a force field that uses a  coarse graining top down methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters estimated with the equation of state can be used on molecular simulations since both the Saft-VR Mie EoS and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has already been seem for a variety of fluids in which this force field was parameterized and  this succes in the represantion can be imputed to the flexibility of the Mie potential due to its degrees of freedom to reproduce the properties of real fluids \cite{herdes2015}. This flexibility also provides an exploration of a very large parameter space without using a iterative simulation scheme \cite{avendano2011}. 
+The SAFT-$\gamma$ Mie is a force field that uses a  coarse graining top down methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters estimated with the equation of state can be used on molecular simulations since both the SAFT-VR Mie EoS and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has already been seem for a variety of fluids in which this force field was parameterized and  this success in the representation of the properties of real fluids can be imputed to the degrees of freedom of Mie Potential \cite{herdes2015}. This flexibility also provides an exploration of a very large parameter space without using a iterative simulation scheme \cite{avendano2011}. 
 
-Each substance has intially five parameters to be estimated ($m_s$,$\sigma$,$\epsilon$,$\lambda_{r}$ and $\lambda_{a}$) according to Eq. \eqref{eqn:miepotential}. The number of segments are usually fixed in an integer value so it can be used in the coarse grained simulations. The attractive parameter can also be fixed since there is a high correlation between the attractive and repulsilve parameter. Usually, the parameter is fixed in the London value of 6, which is expected to be a good representation of the dispersion scale of most simple fluids thaht don't have strong polar interactions \cite{ramrattan2015,herdes2015}. There are two strategies to obtain the parameters of each substance: one is by fitting the Saft-Vr Mie Eos to experimental data as vapor pressure and liquid density and the other is using correspondent state parametrization. The first one, generally, minimizes the following unweighted least-squares objective function:
+Each substance has initially five parameters to be estimated ($m_s$,$\sigma$,$\epsilon$,$\lambda_{r}$ and $\lambda_{a}$) according to Eq. \eqref{eqn:miepotential}. The number of segments are usually fixed in an integer value so it can be used in the coarse grained simulations. The attractive parameter can also be fixed since there is a high correlation between the attractive and repulsilve parameter. Usually, the parameter is fixed in the London value of 6, which is expected to be a good representation of the dispersion scale of most simple fluids that don't have strong polar interactions \cite{ramrattan2015,herdes2015}. There are two strategies to obtain the parameters of each substance: one is by fitting the Saft-Vr Mie EoS to experimental data as vapor pressure and liquid density and the other is using correspondent state parametrization. The first one, generally, minimizes the following unweighted least-squares objective function:
 
 \begin{equation}
 \begin{aligned}
@@ -144,7 +144,7 @@ Each substance has intially five parameters to be estimated ($m_s$,$\sigma$,$\ep
 \end{aligned}
 \label{eqn:fobj}
 \end{equation}
-where $N_{p}$ is the number of experimental points, $P_{v}$ is the vapor pressure and $\rho_{l}$ is the saturated liquid density. The minimized properties can also change and other possible properties as superficial tension, speed of sound, compressibility can also be taken into account. These multiple parameters make it necessary the use of a wide range of experimental data since multiple solutions can be found for the fit. So one need to be careful in deciding the level of coarse graining (i.e. the parameter $m_{s}$) and subsequent parameter space that will not result in some physical inconsistencies like a fluid with premature freezing.
+where $N_{p}$ is the number of experimental points, $P_{v}$ is the vapor pressure and $\rho_{l}$ is the saturated liquid density. The minimized properties can also change and other possible properties as superficial tension and speed of sound can also be taken into account. These multiple parameters make it necessary the use of a wide range of experimental data since multiple solutions can be found for the fit. So one need to be careful in deciding the level of coarse graining (i.e. the parameter $m_{s}$) and subsequent parameter space that will not result in some physical inconsistencies like a fluid with premature freezing.
 
 \citeonline{lafitte2012} suggested that the two corrections factors ($c_{\sigma}$ and $c_{\epsilon}$) should be estimated with simulation data when using Eq. \eqref{eqn:aringlafitte} for the ring contribution. They are related to the EoS parameters by scaled parameters:
 
@@ -229,7 +229,7 @@ The relation among the equation above, $\sigma$ and the experimental density is 
 \end{equation}
 where $N_{av}$ is The Avogadro number. This correspondent state method has the advantage of only requiring critical data, that it is available for a great range of fluids, and one liquid density point. In addition to that, there is an available online parameter database obtained with this strategy \cite{ervik2016}.     
 
-The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behaviour of chemically distinct components. Normally, it is fitted to experimental binary vapor liquid equilibrium or superficial tension data with the SAFT-VR Mie EoS \cite{muller2017,lobanova2016}. However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data of the mixture water-toluene. The strategy followed by them was to do simulations in three values of $k_{ij}$ and  the parameter until a value in good agreement with the experimental data was found. 
+The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behaviour of chemically distinct components. Normally, it is fitted to experimental binary vapor liquid equilibrium or superficial tension data with the SAFT-VR Mie EoS \cite{muller2017,lobanova2016}. However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data of the mixture water-toluene. The strategy followed by them was to do simulations in three values of $k_{ij}$ and then refine the parameter value until a value in good agreement with the experimental data was found. 
 
 %\begin{equation}
 %\begin{aligned}
