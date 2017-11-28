@@ -52,6 +52,11 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
   2016.}
 
+\bibitem[Hadley e McCabe 2012]{hadley2012}
+\abntrefinfo{Hadley e McCabe}{HADLEY; MCCABE}{2012}
+{HADLEY, K.~R.; MCCABE, C. Coarse-grained molecular models of water: a review.
+\emph{Molecular Simulation}, v.~38, p. 671–681, 2012.}
+
 \bibitem[Herdes, Totton e M\"uller 2015]{herdes2015}
 \abntrefinfo{Herdes, Totton e M\"uller}{HERDES; TOTTON; M\"ULLER}{2015}
 {HERDES, C.; TOTTON, T.~S.; M\"ULLER, E.~A. Coarse grained force field for the
@@ -73,12 +78,26 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   of n-decylbenzene.
 \emph{Molecular Physics}, v.~110, p. 1189–1203, 2012.}
 
+\bibitem[Lafitte et al. 2006]{lafitte2006}
+\abntrefinfo{Lafitte et al.}{LAFITTE et al.}{2006}
+{LAFITTE, T.; BESSIERES, D.; PINEIRO, M.~M.; DARIDON, J.~L. Simultaneous
+  estimation of phase behavior and second-derivative properties using the
+  statistical associating fluid theory with variable range approach.
+\emph{The Journal of Chemical Physics}, v.~124, p. 024509, 2006.}
+
 \bibitem[Lobanova et al. 2016]{lobanova2016}
 \abntrefinfo{Lobanova et al.}{LOBANOVA et al.}{2016}
 {LOBANOVA, O.; MEJ\'IA, A.; JACKSON, G.; M\"LLER, E.~A. Saft-$\gamma$ force
   field for the simulation of molecular fluids 6: Binaryand ternary mixtures
   comprising water, carbon dioxide, and n-alkanes.
 \emph{The Journal of Chemical Thermodynamics}, v.~93, p. 320–336, 2016.}
+
+\bibitem[Marrink et al. 2007]{martini2007}
+\abntrefinfo{Marrink et al.}{MARRINK et al.}{2007}
+{MARRINK, S.~J.; RISSELADA, H.~J.; YEFIMOV, S.; TIELEMAN, D.~P.; VRIES, A.~H.
+  de. The martini force field: Coarse grained model for biomolecular
+  simulations.
+\emph{Journal of Physical Chemistry B}, v.~111, p. 7812–7824, 2007.}
 
 \bibitem[Mej\'ia, Herdes e M\"uller 2014]{mejia2014}
 \abntrefinfo{Mej\'ia, Herdes e M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
@@ -119,5 +138,11 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \abntrefinfo{ROWLINSON e SWINTON}{ROWLINSON; SWINTON}{1982}
 {ROWLINSON, J.~S.; SWINTON, F.~L. \emph{Liquid and Liquid Mixtures}. 3. ed.
   London: Butterworth Scientific, 1982.}
+
+\bibitem[Shinoda, Devane e Klein 2007]{shinoda2007}
+\abntrefinfo{Shinoda, Devane e Klein}{SHINODA; DEVANE; KLEIN}{2007}
+{SHINODA, W.; DEVANE, R.; KLEIN, M.~L. Multi-property fitting and
+  parameterization of a coarse grained model for aqueous surfactants.
+\emph{Molecular Simulation}, v.~33, p. 27–36, 2007.}
 
 \end{thebibliography}

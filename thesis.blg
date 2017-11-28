@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chapters/review.aux
 A level-1 auxiliary file: chapters/Chaptersaft.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -23,44 +24,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 19 entries,
+You've used 23 entries,
             6714 wiz_defined-function locations,
-            1302 strings with 12897 characters,
-and the built_in function-call counts, 17266 in all, are:
-= -- 1356
-> -- 695
-< -- 40
-+ -- 322
-- -- 198
-* -- 1245
-:= -- 2103
-add.period$ -- 56
-call.type$ -- 19
-change.case$ -- 240
-chr.to.int$ -- 64
-cite$ -- 17
-duplicate$ -- 894
-empty$ -- 1102
-format.name$ -- 1021
-if$ -- 4187
+            1327 strings with 13649 characters,
+and the built_in function-call counts, 21405 in all, are:
+= -- 1651
+> -- 884
+< -- 52
++ -- 396
+- -- 252
+* -- 1548
+:= -- 2599
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 299
+chr.to.int$ -- 80
+cite$ -- 21
+duplicate$ -- 1124
+empty$ -- 1337
+format.name$ -- 1295
+if$ -- 5180
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 349
-newline$ -- 92
-num.names$ -- 70
-pop$ -- 443
+missing$ -- 427
+newline$ -- 112
+num.names$ -- 90
+pop$ -- 547
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 100
 quote$ -- 0
-skip$ -- 1113
+skip$ -- 1376
 stack$ -- 1
-substring$ -- 607
-swap$ -- 542
-text.length$ -- 25
+substring$ -- 746
+swap$ -- 688
+text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 104
+while$ -- 132
 width$ -- 0
-write$ -- 277
+write$ -- 341
