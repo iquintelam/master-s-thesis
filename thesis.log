@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  28 NOV 2017 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  29 NOV 2017 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1260,7 +1260,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] [18] <Figures/mullergeo.jpg, id=261, 507.8975pt x 205.76875pt>
+] [18] <Figures/mullergeo.jpg, id=349, 507.8975pt x 205.76875pt>
 File: Figures/mullergeo.jpg Graphic file (type jpg)
 
 <use Figures/mullergeo.jpg>
@@ -1288,35 +1288,35 @@ bibitemlist
 [24
 
 
-]) [25]
+] [25] [26]) [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 604.
 
-[26
+[28
 
 
-] [27
+] [29
 
-] [28
+] [30
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 632.
 
-[29
+[31
 
 
-] [30
+] [32
 
-] [31
+] [33
 
 ]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
-[32
+[34
 
 ]
 \tf@lof=\write5
@@ -1340,13 +1340,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
  ) 
 Here is how much of TeX's memory you used:
- 14811 strings out of 494929
- 218833 string characters out of 6180142
- 475649 words of memory out of 5000000
- 17550 multiletter control sequences out of 15000+600000
- 71306 words of font info for 231 fonts, out of 8000000 for 9000
+ 14981 strings out of 494929
+ 221439 string characters out of 6180142
+ 480808 words of memory out of 5000000
+ 17666 multiletter control sequences out of 15000+600000
+ 72789 words of font info for 250 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,17n,43p,1320b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,43p,2337b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1363,10 +1363,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on thesis.pdf (33 pages, 268631 bytes).
+Output written on thesis.pdf (35 pages, 279202 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
- 49398 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 675 PDF objects out of 1000 (max. 8388607)
+ 612 compressed objects within 7 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 49406 words of extra memory for PDF output out of 51595 (max. 10000000)
 

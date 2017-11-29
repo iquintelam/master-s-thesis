@@ -1,0 +1,55 @@
+the SAFT-$\gamma$ Mie is straightforward to implement.
+
+For a more thorough explanation of this models, readers are referred to specific reviews. 
+
+%http://aip.scitation.org/doi/pdf/10.1063/1.4818908
+
+Typically, in comparison to its all-atom counterpart, the coarse-grained force field smoothens out the energy landscape, and thereby helps to avoid local energy minima “traps,” see Figure 3. Coarse-graining also affects thermodynamic properties of a modeled system, particularly the balance between enthalpy and entropy. Reduction of the degrees of freedom affects the entropy of the simulation system, which is compensated by reduced enthalpic terms. In turn, a coarse-grained model may accurately reproduce free energy differences but contributing enthalpy and entropy values may be inaccurate. Such limitations are typical for the majority of coarse-grained models \cite{kmiecik2016}. 
+Coarse-Grained Protein Models and Their Applications
+
+
+
+
+
+
+
+The pair potential is based on molecule specific
+parameters, such as the ranges of the repulsive and attractive interactions, the size of
+the bead and the energy parameter which characterises the strength of the attractive interaction.
+
+At short distances, the potential is
+invariably repulsive and tends to infinity, whereas at larger separations, the potential is
+attractive and tends to zero so that the energy remains finite. The total potential energy
+is usually assumed as a sum of both, the repulsive and the attractive, contributions. Some
+of the commonly used pair potentials are illustrated in Figure 2.1 and briefly described
+below.
+
+sing the versatile exponents has been shown to provide
+a significant improvement of the vapour pressure and the second-derivative thermodynamic
+properties of real fluids, such as speed of sound, heat capacity, and compressibility \cite{avendano2011,lafitte2013,lafitte2006}.
+
+In conventional statistical mechanics, it is common to replace time
+averages with ensemble averages. This hypothesis, currently referred to as the ergodic
+hypothesis, states that the time and the ensemble averages of two systems with the same tate variables, e.g., N, V , and T are identical in infinite time and thermodynamic limits.
+
+By contrast, commonly used
+bottom-up approaches often make use of temperature dependent parameters that have to
+be re-derived at various state points. The parameters obtained with our SAFT-gamma top-down
+methodology can be used as a direct input in molecular simulation. Unlike intermolecular
+interactions can also be obtained by using appropriate experimental data for the mixtures,
+but often combining rules are employed for some of the parameters as described in the
+next section.
+
+The parameterisation of a force field is a non-trivial and a cumbersome task. Some of
+the main requirements on a force field include the accuracy, transferability, and robustness. Unfortunately, there is no generic force field that can reproduce all properties with a
+unique parameter set.
+
+
+
+mostly the intermolecular interactions and the torsional terms. In this work, our main focus lies on the
+dispersion interactions. The dispersion interactions are normally described by the intermolecular potentials presented in Section 2.1.2.
+
+The LJ potential function forms the basis for a large number of widely
+used molecular force fields, such as OPLS [73], TraPPE [74], NERD [75] force fields, and
+the TIP [76] and SPC [77] models of water, to mention but a few. The popular coarsegrained MARTINI force field [78] is also based on the LJ representation.
+
