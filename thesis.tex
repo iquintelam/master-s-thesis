@@ -74,7 +74,7 @@
 % ---
 %\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 %\citeoption{abnt-substyle=COPPE}
-\usepackage[alf,abnt-etal-list=0]{abntex2cite}	% Citações padrão ABNT
+\usepackage[alf,abnt-etal-list=0,abnt-etal-text=it,abnt-doi=doi]{abntex2cite}	% Citações padrão ABNT
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
@@ -146,8 +146,9 @@ em Engenharia Química.}
 }
 \makeatother
 % --- 
+\newcommand{\figref}[2][{}]{\hyperref[#2]{\figurename~\ref{#2}#1}} 
 
-% --- 
+% --- Use it as \figref{label} for figures that contain only one plot, and use it as \figref[A]{label} for those figures for which you want the reference to be Figure 1A.
 % Espaçamentos entre linhas e parágrafos 
 % --- 
 

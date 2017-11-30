@@ -10,46 +10,46 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Literature Review}}{14}{chapter.1}
 \contentsline {section}{\numberline {1.1}Coarse Grained Force Fields}{14}{section.1.1}
-\contentsline {section}{\numberline {1.2}Solvation Free Energy}{16}{section.1.2}
+\contentsline {section}{\numberline {1.2}Solvation Free Energies Based on Molecular Dynamics}{16}{section.1.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {SAFT-$\gamma $ Mie Force Field}}{17}{chapter.2}
-\contentsline {section}{\numberline {2.1}SAFT-VR Mie EoS}{17}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Ideal Contribution}{17}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Monomer Contribution}{17}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Chain Contribution}{18}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Ring Contribution}{19}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Combining rules for the intermolecular potential parameters}{20}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{20}{section.2.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {SAFT-$\gamma $ Mie Force Field}}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}SAFT-VR Mie EoS}{19}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Ideal Contribution}{19}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Monomer Contribution}{19}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Chain Contribution}{20}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Ring Contribution}{21}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Combining rules for the intermolecular potential parameters}{22}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{22}{section.2.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{24}{section*.17}
+\contentsline {chapter}{\uppercase {Bibliography}}{26}{section*.18}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{28}{section*.18}
+\contentsline {part}{\uppercase {Appendix}}{30}{section*.19}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{29}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{31}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{30}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{32}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANNEX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Annex}}{31}{section*.19}
+\contentsline {part}{\uppercase {Annex}}{33}{section*.20}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{32}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{34}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{33}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{35}{appendix.anexochapback.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{34}{appendix.anexochapback.3}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{36}{appendix.anexochapback.3}
 \vspace {\cftbeforechapterskip }

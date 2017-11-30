@@ -18,7 +18,64 @@ One of the first applications of coarse grained models is the study of protein f
 
 Outside of the Martini framework, \citeonline{shinoda2010} studied different levels of coarse-graining for water ranging for one to 4 molecules per bead using different Mie and Morse potentials. Other works also assessed the use of Soft-core potentials to study aqueous solutions of surfactants \cite{shinoda2007}, ionic liquids \cite{bhargava2009}, lipids \cite{shinoda20102} and membranes \cite{pantano2009}. Other CG force field for water based on the Mie Potential is the SAFT-$\gamma$ Mie \cite{lobanova2015}. In this model, the water molecule can be represented by two different one isotropic bead interacting via a 8-6 Mie Potential models. The CGW1-vle model was parametrized using saturated-liquid density and vapor pressure data, and should be used for simulations of aqueous systems' fluid-phase equilibria at high temperatures and pressures. This model still suffers from premature freezing with a triple point at 343 K. The other model, CGW1-ift, was parametrized using saturated-liquid density and vapor-liquid interfacial tension, hence it is best suited for interfacial properties calculations. Both models have temperature-dependent size and energy parameters and performed well for these properties over the entire temperature range of the liquid. The SAFT-$\gamma$ Mie force field have also been applied to other compounds with satisfactory results. \citeonline{muller2017} parametrized the force field for aromatic compounds and tested it with simulations of fluid phase equilibrium. \citeonline{herdes2015} carried out simulations of alkanes and light gases with this force fields. Binary and ternary mixtures of water, carbon-dioxide and water \cite{lobanova2016}, thermodynamic and transport properties of carbon dioxide and methane \cite{cassiano1,cassiano2} and water/oil interfacial tension \cite{herdes2017} were also studied with this force field.   
 
-\section{Solvation Free Energy}
+\section{Solvation Free Energies Based on Molecular Dynamics}
+
+Free energies can be expressed as averages over ensembles of atomic configurations generated using Monte Carlo or molecular dynamics techniques. In the canonical ensemble, the free energy is given by:  
+
+\begin{equation}
+\label{eq:fcano}
+\begin{aligned}
+F(N,V,T) = -\kappa_{b}TQ(N,V,T)
+\end{aligned}
+\end{equation}
+where $Q(N,V,T))$ is the partition function of the canonical ensemble. Meanwhile, the average over the isothermal-isobaric ensemble gives the Gibbs free energy:
+
+\begin{equation}
+\label{eq:fisobari}
+\begin{aligned}
+G(N,P,T) = -\kappa_{b}T\frac{1}{V_{0}} \int_{0}^{\infty} dV \exp(-\kappa_{b}TPV)Q(N,V,T)
+\end{aligned}
+\end{equation}
+
+Since it is only possible to obtain free energy differences, Solvation free energy calculations based on molecular dynamics estimate the difference between the Gibbs free energies of end states, more specifically the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these energy differences between be accurate, the sates' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the intermediate states chosen since the free energy is a state function. That's why the states chosen typically don't have a physical sense, they are alchemical states which are only linking the physical states of interest.
+
+The solvation free energy calculations follow a thermodynamic cycle to gradually insert the solute molecule into the solvent as illustrated in the \figref{thermcy}. According to this cycle, the free energy of solvation can be expressed as:
+
+\begin{equation}
+\label{eq:freesolv}
+\begin{aligned}
+\Delta G_{solv} = \Delta G_{1 \rightarrow 4} = \Delta G_{1 \rightarrow 2} + \Delta G_{2 \rightarrow 3} + \Delta G_{3 \rightarrow 4}  
+\end{aligned}
+\end{equation}
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[scale=0.6]{Figures/cicclotermo.jpg}
+\caption{Thermodynamic cycle for solvation free energy calculations with molecular dynamics \cite{klimovich}}
+\label{thermcy}
+\end{figure}
+
+The solvation free energy between sates 1 and 2 in the cycle is the one associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent and is equal to zero. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the  the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  
+
+If both the non-bonded interactions with the environment and the internal interactions are turned of, this is the annihilation free energy. Meanwhile, if only the non-bonded interactions with the environment are turned off,this is the decoupling free energy. In this later case, $\Delta G_{1 \rightarrow 2} = 0$ since no gas transformation is needed. 
+
+%The strategy chosen in this work was to use an alchemical method in which the solute molecule is gradually inserted in the solvent using a  thermodynamic cycle \cite{klimovich}. Each insertion or alchemical state is represented by a coupling parameter, $\lambda$, that ranges from 0 to 1. When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, the interactions are fully activated. Since the force field used doesn't explicitly take in consideration  the charges, the interactions are only due the Mie potential. The coupling of the Mie Potential is done non linearly through the generalization of the soft-core potential \cite{beutler} :
+%\begin{equation}
+%\label{eq:miesoftcore}
+%\begin{aligned}
+%U_{Mie}^{sc}(r) {}=& \lambda\epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \\
+%& \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}}  \mathrm -  \right. \\ 
+%&\left. \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace
+%\end{aligned}
+%\end{equation}
+%where $\alpha$ is a constant in which the value of 0.5 is normally assumed. Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were done to allow the sampling of different states in only one simulation. The statistical expanded ensemble, $Z$ can be defined as a sum of sub ensembles $Z_{m}$ in different values of $\lambda$:
+%
+%
+%
+%Solvation free energy calculations with molecular simulations have a varity of applications for drug design in the pharmaceutical industry  and for development of separation technologies in the chemical industry. These calculations are important because they can provide information about the behavior of the solvent in different chemical environments or the influence of the solute's molecular geometry. Besides that, these calculations also can be used to obtain infinite dilution activity coefficients, Henry's law constants and solubility. Another reason for the study of the solvation phenomena is its intrinsic complexity. There are many competing forces interefering in the behaviour of the solute-solvent and free energy simulations are susceptible to sampling problems. With the intention of improving free energy simulations, post processing methods \cite{mbar,bareva,dexp,gdel} have been developed and evaluated and a variety of work have been published about free energy calculations in the last decades. Recent work \cite{mobley2014,mobley2017} made available a big database of hydration free energy of small molecules using the GAFF force field. A comparision of polar and nonpolar contributions to these hydratation free energy inidcated the significance of each the terms  \cite{izairi2017}. Garrido \textit{et al.} \citep{garrido,garrido2011} calculated the free energy of solvation of large alkanes in 1-octanol and water with three different force fields (TraPPE, Gromos, OPLS-AA/TraPPE) and the solvation free energy of propane and benzene in non aqueous solvents like n-hexadecane, n-hexane, ethyl benzene, acetone  with the force fields TraPPE-UA and TraPPE-AA. Roy \textit{et al.} \citep{roy2017} addressed the choice of the Lennard Jones parameters for predicting solvation free energy in 1-octanol. Gon\c{c}alves and Stassen \citep{goncalves} calculated the free energy of solvation in the solvents tetrachloride, chloroform and benzene with GROMOS force field. Using the GAFF and the polarazible AMOEBA force fields, Mohamed \textit{et al.} \citep{mohamed2016} evaluated the solvation free energy of small molecules in toluene, chloroform and acetonitrile and obtained a mean unsigned error of 1.22 $kcal/mol$ for the AMOEBA and 0.66 $kcal/mol$ for the GAFF. Though these variety of data using the intramolecular Lennard-Jones potential, we are not aware of works using the Mie Potential\cite{MIE} in free energy calculations.
+
+
 
 benchmark
 Specifically, in some
