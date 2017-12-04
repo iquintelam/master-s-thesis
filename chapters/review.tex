@@ -2,7 +2,7 @@
 
 \chapter{Literature Review} % Main chapter title
 
-\label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -37,7 +37,7 @@ G(N,P,T) = -\kappa_{b}T\frac{1}{V_{0}} \int_{0}^{\infty} dV \exp(-\kappa_{b}TPV)
 \end{aligned}
 \end{equation}
 
-Since it is only possible to obtain free energy differences, Solvation free energy calculations based on molecular dynamics estimate the difference between the Gibbs free energies of end states, more specifically the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these energy differences between be accurate, the sates' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the intermediate states chosen since the free energy is a state function. That's why the states chosen typically don't have a physical sense, they are alchemical states which are only linking the physical states of interest.
+Since it is only possible to obtain free energy differences, Solvation free energy calculations based on molecular dynamics estimate the difference between the Gibbs free energies of end states, more specifically the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these energy differences be accurate, the sates' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since the free energy is a state function. That's why the states used typically don't have a physical sense, they are alchemical states which are only linking the physical states of interest.
 
 The solvation free energy calculations follow a thermodynamic cycle to gradually insert the solute molecule into the solvent as illustrated in the \figref{thermcy}. According to this cycle, the free energy of solvation can be expressed as:
 
@@ -52,28 +52,59 @@ The solvation free energy calculations follow a thermodynamic cycle to gradually
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.6]{Figures/cicclotermo.jpg}
-\caption{Thermodynamic cycle for solvation free energy calculations with molecular dynamics \cite{klimovich}}
+\caption{Thermodynamic cycle for solvation free energy calculations with molecular dynamics (Adapted from \citeonline{klimovich})}
 \label{thermcy}
 \end{figure}
 
-The solvation free energy between sates 1 and 2 in the cycle is the one associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent and is equal to zero. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the  the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  
+The solvation free energy between sates 1 and 2 in the cycle is the one associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent and is equal to zero since the transformation of a non interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the  the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of the non bonded interactions that are turned of in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both the non-bonded interactions with the environment and the internal interactions are turned of, this is the annihilation free energy. Meanwhile, if only the non-bonded interactions with the environment are turned off,this is the decoupling free energy. In this later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out theses transformations scale the solute charges to zero and then turn of the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter $\lambda$ is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, the interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the Potential. That's why the non-linear soft-core scheme \cite{beutler1994} is usually used, the so called soft core Lennard-Jones potential is given by:
 
-If both the non-bonded interactions with the environment and the internal interactions are turned of, this is the annihilation free energy. Meanwhile, if only the non-bonded interactions with the environment are turned off,this is the decoupling free energy. In this later case, $\Delta G_{1 \rightarrow 2} = 0$ since no gas transformation is needed. 
+\begin{equation}
+\label{eq:softcore}
+\begin{aligned}
+U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)^{2}+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)^2+(r/\sigma)^{6}}\right\rbrace
+\end{aligned}
+\end{equation}
+where $\alpha$ is a constant in which the value of 0.5 is normally assumed to it. The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev} which samples all state in a single simulation. This method allows a faster sampling across the alchemical states considering that the kinetic barriers are not substantial. 
 
-%The strategy chosen in this work was to use an alchemical method in which the solute molecule is gradually inserted in the solvent using a  thermodynamic cycle \cite{klimovich}. Each insertion or alchemical state is represented by a coupling parameter, $\lambda$, that ranges from 0 to 1. When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, the interactions are fully activated. Since the force field used doesn't explicitly take in consideration  the charges, the interactions are only due the Mie potential. The coupling of the Mie Potential is done non linearly through the generalization of the soft-core potential \cite{beutler} :
-%\begin{equation}
-%\label{eq:miesoftcore}
-%\begin{aligned}
-%U_{Mie}^{sc}(r) {}=& \lambda\epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \\
-%& \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}}  \mathrm -  \right. \\ 
-%&\left. \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace
-%\end{aligned}
-%\end{equation}
-%where $\alpha$ is a constant in which the value of 0.5 is normally assumed. Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were done to allow the sampling of different states in only one simulation. The statistical expanded ensemble, $Z$ can be defined as a sum of sub ensembles $Z_{m}$ in different values of $\lambda$:
-%
-%
-%
-%Solvation free energy calculations with molecular simulations have a varity of applications for drug design in the pharmaceutical industry  and for development of separation technologies in the chemical industry. These calculations are important because they can provide information about the behavior of the solvent in different chemical environments or the influence of the solute's molecular geometry. Besides that, these calculations also can be used to obtain infinite dilution activity coefficients, Henry's law constants and solubility. Another reason for the study of the solvation phenomena is its intrinsic complexity. There are many competing forces interefering in the behaviour of the solute-solvent and free energy simulations are susceptible to sampling problems. With the intention of improving free energy simulations, post processing methods \cite{mbar,bareva,dexp,gdel} have been developed and evaluated and a variety of work have been published about free energy calculations in the last decades. Recent work \cite{mobley2014,mobley2017} made available a big database of hydration free energy of small molecules using the GAFF force field. A comparision of polar and nonpolar contributions to these hydratation free energy inidcated the significance of each the terms  \cite{izairi2017}. Garrido \textit{et al.} \citep{garrido,garrido2011} calculated the free energy of solvation of large alkanes in 1-octanol and water with three different force fields (TraPPE, Gromos, OPLS-AA/TraPPE) and the solvation free energy of propane and benzene in non aqueous solvents like n-hexadecane, n-hexane, ethyl benzene, acetone  with the force fields TraPPE-UA and TraPPE-AA. Roy \textit{et al.} \citep{roy2017} addressed the choice of the Lennard Jones parameters for predicting solvation free energy in 1-octanol. Gon\c{c}alves and Stassen \citep{goncalves} calculated the free energy of solvation in the solvents tetrachloride, chloroform and benzene with GROMOS force field. Using the GAFF and the polarazible AMOEBA force fields, Mohamed \textit{et al.} \citep{mohamed2016} evaluated the solvation free energy of small molecules in toluene, chloroform and acetonitrile and obtained a mean unsigned error of 1.22 $kcal/mol$ for the AMOEBA and 0.66 $kcal/mol$ for the GAFF. Though these variety of data using the intramolecular Lennard-Jones potential, we are not aware of works using the Mie Potential\cite{MIE} in free energy calculations.
+\section{Post simulation methods}
+
+The data obtained with molecular dynamics simulations method explained in the section above contain the potential energies correspondent to each $\lambda$. These potential energies obtained then needs to be post processed and analyzed in order to calculate the solvation free energies. Some of the widely used method for these calculations are going to be briefly describe below. 
+
+\subsection{Thermodynamic integration}
+
+The thermodynamic integration method \cite{kirkwood1935} uses equilibrium averages to evaluate the derivative of the potential energy with respect to the coupling parameter. Then, the free energies are obtained as the integration of the derivatives of the initial and final state:
+
+\begin{equation}
+\label{eq:ti}
+\begin{aligned}
+\Delta G_{solv} = \int_{0}^{1} \frac{\partial U}{\partial \lambda} d\lambda
+\end{aligned}
+\end{equation}
+
+The integration in Eq. \eqref{eq:ti} is obtained by interpolating the output data form the simulations in different ways. Some examples of methods for the interpolations are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also other more complex schemes that are usually system specific as the works of \citeonline{garrido2010} and \citeonline{shyu2009} and that use fitting functions to interpolate the data. 
+
+\subsection{Free energy of Pertubation (FEP)}
+
+The free energy of perturbation method \cite{zwanzig1954} is the oldest and the of the most general purpose strategy to calculate free energy differences. In this method, the difference between two thermodynamic states A and B is given by:
+
+\begin{equation}
+\label{eq:fep}
+\begin{aligned}
+\Delta F = -\kappa_{b}ln \langle{e^{-\beta (U_{B}-U_{A})}}\rangle_{A}
+\end{aligned}
+\end{equation}
+
+According to the equation above, the free energy difference is calculated by doing an average over the potential energies of state A and B obtained during the simulation of state A. This method only provides precise free energies when there  is a great overlap between the state that is, the state B represents a small perturbation in state A. 
+
+\subsection{Bennet Acceptance Ratio (BAR)}
+
+
+ En realidad, cuando se simulan
+dos estados existe un método que asegura convergencia en el cálculo de deltaF sin exigir un
+solapamiento considerable de las distribuciones configuracionales. En particular, nos estamos
+refiriendo al método Bennett Acceptance Ratio [148], que describimos en la próxima sección.
+
+%Recent work \cite{mobley2014,mobley2017} made available a big database of hydration free energy of small molecules using the GAFF force field. A comparision of polar and nonpolar contributions to these hydratation free energy inidcated the significance of each the terms  \cite{izairi2017}. Garrido \textit{et al.} \citep{garrido,garrido2011} calculated the free energy of solvation of large alkanes in 1-octanol and water with three different force fields (TraPPE, Gromos, OPLS-AA/TraPPE) and the solvation free energy of propane and benzene in non aqueous solvents like n-hexadecane, n-hexane, ethyl benzene, acetone  with the force fields TraPPE-UA and TraPPE-AA. Roy \textit{et al.} \citep{roy2017} addressed the choice of the Lennard Jones parameters for predicting solvation free energy in 1-octanol. Gon\c{c}alves and Stassen \citep{goncalves} calculated the free energy of solvation in the solvents tetrachloride, chloroform and benzene with GROMOS force field. Using the GAFF and the polarazible AMOEBA force fields, Mohamed \textit{et al.} \citep{mohamed2016} evaluated the solvation free energy of small molecules in toluene, chloroform and acetonitrile and obtained a mean unsigned error of 1.22 $kcal/mol$ for the AMOEBA and 0.66 $kcal/mol$ for the GAFF. 
 
 
 

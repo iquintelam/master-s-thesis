@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  30 NOV 2017 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  4 DEC 2017 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,7 +1056,9 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 146.
 \openout4 = `thesis.idx'.
 
 Writing index file thesis.idx 
-(./thesis.aux (./chapters/review.aux) (./chapters/Chaptersaft.aux))
+(./thesis.aux (./chapters/introduction.aux) (./chapters/review.aux)
+(./chapters/computational.aux) (./chapters/methodology.aux)
+(./chapters/results.aux) (./chapters/conclusions.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
@@ -1220,12 +1222,12 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 
 ] (./thesis.lof
 Overfull \hbox (2.25528pt too wide) detected at line 3
-\T1/ppl/m/n/12 Figure 1.2.1 ^^U  
+\T1/ppl/m/n/12 Figure 2.2.1 ^^U  
  []
 
 
 Overfull \hbox (2.25528pt too wide) detected at line 4
-\T1/ppl/m/n/12 Figure 2.1.1 ^^U  
+\T1/ppl/m/n/12 Figure 3.1.1 ^^U  
  []
 
 ) [10
@@ -1235,100 +1237,131 @@ Overfull \hbox (2.25528pt too wide) detected at line 4
 ] [12
 
 
-] (./thesis.toc) [13
+] (./thesis.toc [13
+
+]) [14]
+\openout2 = `chapters/introduction.aux'.
+
+
+(./chapters/introduction.tex) [15
+
+
 
 ]
 \openout2 = `chapters/review.aux'.
 
- (./chapters/review.tex
-[14
+ (./chapters/review.tex [16
 
 
 
-] [15] [16] <Figures/cicclotermo.jpg, id=298, 469.755pt x 368.37625pt>
+] [17] [18]
+<Figures/cicclotermo.jpg, id=326, 469.755pt x 368.37625pt>
 File: Figures/cicclotermo.jpg Graphic file (type jpg)
 
 <use Figures/cicclotermo.jpg>
 Package pdftex.def Info: Figures/cicclotermo.jpg used on input line 54.
 (pdftex.def)             Requested size: 281.85518pt x 221.02744pt.
- [17 <./Figures/cicclotermo.jpg>]) [18]
-\openout2 = `chapters/Chaptersaft.aux'.
+ [19 <./Figures/cicclotermo.jpg>] [20]) [21]
+\openout2 = `chapters/computational.aux'.
 
 
-(./chapters/Chaptersaft.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
+(./chapters/computational.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 3.
+(hyperref)                removing `math shift' on input line 5.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-[19
+(hyperref)                removing `\gamma' on input line 5.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 5.
 
-] [20] <Figures/mullergeo.jpg, id=376, 507.8975pt x 205.76875pt>
+[22
+
+
+
+] [23] <Figures/mullergeo.jpg, id=431, 507.8975pt x 205.76875pt>
 File: Figures/mullergeo.jpg Graphic file (type jpg)
 
 <use Figures/mullergeo.jpg>
-Package pdftex.def Info: Figures/mullergeo.jpg used on input line 108.
+Package pdftex.def Info: Figures/mullergeo.jpg used on input line 104.
 (pdftex.def)             Requested size: 406.31856pt x 164.6152pt.
- [21 <./Figures/mullergeo.jpg>]
+ [24]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 134.
+(hyperref)                removing `math shift' on input line 130.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `\gamma' on input line 130.
 
-[22] [23] [24]) [25] (./thesis.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 130.
+
+[25 <./Figures/mullergeo.jpg>] [26] [27]) [28]
+\openout2 = `chapters/methodology.aux'.
+
+ (./chapters/methodology.tex)
+[29
+
+
+
+]
+\openout2 = `chapters/results.aux'.
+
+ (./chapters/results.tex) [30
+
+
+
+]
+\openout2 = `chapters/conclusions.aux'.
+
+ (./chapters/conclusions.tex) [31
+
+
+
+]
+(./thesis.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[26
+[32
 
 
-] [27] [28]) [29]
+] [33] [34]) [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 605.
+(hyperref)                removing `\uppercase' on input line 609.
 
-[30
+[36
 
 
-] [31
+] [37
 
-] [32
+] [38
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 633.
+(hyperref)                removing `\uppercase' on input line 637.
 
-[33
+[39
 
 
-] [34
+] [40
 
-] [35
+] [41
 
 ]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
-[36
+[42
 
 ]
 \tf@lof=\write5
@@ -1340,45 +1373,46 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 661.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 661.
- (./thesis.aux (./chapters/review.aux) (./chapters/Chaptersaft.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 661.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 661.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
+ (./thesis.aux (./chapters/introduction.aux) (./chapters/review.aux)
+(./chapters/computational.aux) (./chapters/methodology.aux)
+(./chapters/results.aux) (./chapters/conclusions.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 665.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 665.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 661.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 665.
  ) 
 Here is how much of TeX's memory you used:
- 15018 strings out of 494929
- 221934 string characters out of 6180142
- 481726 words of memory out of 5000000
- 17683 multiletter control sequences out of 15000+600000
- 73413 words of font info for 258 fonts, out of 8000000 for 9000
+ 15127 strings out of 494929
+ 223719 string characters out of 6180142
+ 487988 words of memory out of 5000000
+ 17733 multiletter control sequences out of 15000+600000
+ 71671 words of font info for 255 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,17n,43p,2492b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,44p,2337b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
-ri8a.pfb>
-Output written on thesis.pdf (37 pages, 323535 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
+no/uplri8a.pfb>
+Output written on thesis.pdf (43 pages, 329257 bytes).
 PDF statistics:
- 705 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 167 named destinations out of 1000 (max. 500000)
- 49411 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 803 PDF objects out of 1000 (max. 8388607)
+ 729 compressed objects within 8 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 48459 words of extra memory for PDF output out of 51595 (max. 10000000)
 

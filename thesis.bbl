@@ -16,7 +16,7 @@
 
 \bibitem[Aimoli, Maginn e Abreu 2014]{cassiano1}
 \abntrefinfo{Aimoli, Maginn e Abreu}{AIMOLI; MAGINN; ABREU}{2014a}
-{AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C.~R. Force field comparison and
+{AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C. Force field comparison and
   thermodynamic property calculation of supercritical $co_{2}$ and $ch_{4}$
   using molecular dynamics simulations.
 \emph{{F}luid {P}hase {E}quilib.}, v.~368, p. 80--90, 2014.}
@@ -86,6 +86,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   aggregation.
 \emph{Journal of Chemical Physics}, v.~130, p. 235106, 2009.}
 
+\bibitem[Beutler \textit{et al.} 1994]{beutler1994}
+\abntrefinfo{Beutler \textit{et al.}}{BEUTLER \textit{et al.}}{1994}
+{BEUTLER, T.; MARK, A.; SCHAIK, R. van; GERBER, P.; GUNSTEREN, W. van. Avoiding
+  singularities and numerical instabilities in free energy calculations based
+  on molecular simulations.
+\emph{Chemical Physics Letters.}, v.~222, p. 529–539, 1994.}
+
 \bibitem[Bhargava e Klein 2009]{bhargava2009}
 \abntrefinfo{Bhargava e Klein}{BHARGAVA; KLEIN}{2009}
 {BHARGAVA, B.; KLEIN, M.~L. Formation of micelles in aqueous solutions of a
@@ -150,11 +157,23 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
 
+\bibitem[JG 1935]{kirkwood1935}
+\abntrefinfo{JG}{JG}{1935}
+{JG, K. Statistical mechanics of fluid mixtures.
+\emph{Journal of Chemical Physics}, v.~3, p. 300–313, 1935.}
+
+\bibitem[Jorge \textit{et al.} 2010]{garrido2010}
+\abntrefinfo{Jorge \textit{et al.}}{JORGE \textit{et al.}}{2010}
+{JORGE, M.; GARRIDO, N.; QUEIMADA, A.; ECONOMOU, I.; MACEDO, E. Effect of the
+  integration method on the accuracy and computational efficiency of free
+  energy calculations using thermodynamic integration.
+\emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
+
 \bibitem[Klimovich, Shirts e Mobley 2015]{klimovich}
 \abntrefinfo{Klimovich, Shirts e Mobley}{KLIMOVICH; SHIRTS; MOBLEY}{2015}
 {KLIMOVICH, P.~V.; SHIRTS, M.~R.; MOBLEY, D.~L. Guidelines for the analysis of
   free energy calculations.
-\emph{J. Comput. Aided Mol. Des.}, v.~29, p. 397--411, 2015.}
+\emph{Journal of Computer-Aided Molecular Design}, v.~29, p. 397--411, 2015.}
 
 \bibitem[Koga e Takada 2001]{koga2001}
 \abntrefinfo{Koga e Takada}{KOGA; TAKADA}{2001}
@@ -209,6 +228,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   comprising water, carbon dioxide, and n-alkanes.
 \emph{The Journal of Chemical Thermodynamics}, v.~93, p. 320–336, 2016.}
 
+\bibitem[Lyubartsev \textit{et al.} 1992]{lyubartsev}
+\abntrefinfo{Lyubartsev \textit{et al.}}{LYUBARTSEV \textit{et al.}}{1992}
+{LYUBARTSEV, A.~P.; MARTSINOVSKI, A.~A.; SHEVKUNOV, S.~V.;
+  VORONTSOV‐VELYAMINOV, P.~N. New approach to monte carlo calculation of the
+  free energy: Method of expanded ensembles.
+\emph{Journal of Chemical Physics}, v.~96, p. 1776--1783, 1992.}
+
 \bibitem[Marrink \textit{et al.} 2007]{martini2007}
 \abntrefinfo{Marrink \textit{et al.}}{MARRINK \textit{et al.}}{2007}
 {MARRINK, S.~J.; RISSELADA, H.~J.; YEFIMOV, S.; TIELEMAN, D.~P.; VRIES, A.~H.
@@ -240,6 +266,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   homonuclear rings and its parametrization based on the principle of
   corresponding states.
 \emph{Langmuir}, -, p. A–L, 2017.}
+
+\bibitem[Paliwal e Shirts 2011]{bareva}
+\abntrefinfo{Paliwal e Shirts}{PALIWAL; SHIRTS}{2011}
+{PALIWAL, H.; SHIRTS, M.~R. A benchmark test set for alchemical free energy
+  transformations and its use to quantify error in common free energy methods.
+\emph{J. Chem. Theory Comput.}, v.~7, p. 4115–4134, 2011.}
 
 \bibitem[Pantano e Klein 2009]{pantano2009}
 \abntrefinfo{Pantano e Klein}{PANTANO; KLEIN}{2009}
@@ -281,6 +313,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   grain force field.
 \emph{Journal of Physical Chemistry B}, v.~114, p. 6836--6849, 2010.}
 
+\bibitem[Shyu e Ytreberg 2010]{shyu2009}
+\abntrefinfo{Shyu e Ytreberg}{SHYU; YTREBERG}{2010}
+{SHYU, C.; YTREBERG, F.~M. Reducing the bias and uncertainty of free energy
+  estimates by using regression to fit thermodynamic integration data.
+\emph{Journal of Computational Chemistry}, v.~6, p. 1018–1027, 2010.}
+
 \bibitem[Sterpone, Derreumaux e Melchionna 2015]{opep2015}
 \abntrefinfo{Sterpone, Derreumaux e Melchionna}{STERPONE; DERREUMAUX;
   MELCHIONNA}{2015}
@@ -304,5 +342,11 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   integration time step in molecular dynamics simulations of coarse-grained
   molecular models.
 \emph{Physical Chemistry Chemical Physics}, v.~11, p.~1934, 2009.}
+
+\bibitem[Zwanzig 1954]{zwanzig1954}
+\abntrefinfo{Zwanzig}{ZWANZIG}{1954}
+{ZWANZIG, R.~W. High‐temperature equation of state by a perturbation method.
+  i. nonpolar gases.
+\emph{The Journal of Chemical Physics}, v.~22, p.~1420, 1954.}
 
 \end{thebibliography}

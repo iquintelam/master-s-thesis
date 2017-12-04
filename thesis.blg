@@ -1,8 +1,12 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chapters/introduction.aux
 A level-1 auxiliary file: chapters/review.aux
-A level-1 auxiliary file: chapters/Chaptersaft.aux
+A level-1 auxiliary file: chapters/computational.aux
+A level-1 auxiliary file: chapters/methodology.aux
+A level-1 auxiliary file: chapters/results.aux
+A level-1 auxiliary file: chapters/conclusions.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -24,44 +28,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 49 entries,
+You've used 56 entries,
             6714 wiz_defined-function locations,
-            1452 strings with 18406 characters,
-and the built_in function-call counts, 47390 in all, are:
-= -- 3456
-> -- 2077
-< -- 121
-+ -- 868
-- -- 592
-* -- 3521
-:= -- 5705
-add.period$ -- 140
-call.type$ -- 50
-change.case$ -- 669
-chr.to.int$ -- 171
-cite$ -- 45
-duplicate$ -- 2474
-empty$ -- 2917
-format.name$ -- 3026
-if$ -- 11391
+            1494 strings with 19827 characters,
+and the built_in function-call counts, 54096 in all, are:
+= -- 3943
+> -- 2333
+< -- 142
++ -- 967
+- -- 666
+* -- 3979
+:= -- 6513
+add.period$ -- 161
+call.type$ -- 57
+change.case$ -- 755
+chr.to.int$ -- 199
+cite$ -- 52
+duplicate$ -- 2870
+empty$ -- 3336
+format.name$ -- 3405
+if$ -- 13004
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 931
-newline$ -- 232
-num.names$ -- 210
-pop$ -- 1188
+missing$ -- 1063
+newline$ -- 267
+num.names$ -- 245
+pop$ -- 1355
 preamble$ -- 1
-purify$ -- 218
+purify$ -- 247
 quote$ -- 0
-skip$ -- 2997
+skip$ -- 3441
 stack$ -- 1
-substring$ -- 1744
-swap$ -- 1527
-text.length$ -- 79
+substring$ -- 2021
+swap$ -- 1778
+text.length$ -- 93
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 310
+while$ -- 361
 width$ -- 0
-write$ -- 723
+write$ -- 835

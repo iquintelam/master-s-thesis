@@ -1,14 +1,10 @@
-% Chapter Template
-
-\chapter{SAFT-$\gamma$ Mie Force Field} % Main chapter title
+\chapter{Fundamentals of the Computational Methods} % Main chapter title
 
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
+\section{SAFT-$\gamma$ Mie Force Field}
 
-\section{SAFT-VR Mie EoS}
+\subsection{SAFT-VR Mie EoS}
 
 The SAFT-VR Mie equation of state \cite{lafitte2013} is the basis for the SAFT-$\gamma$ Mie coarse grained force field \cite{avendano2011}. This EoS was initially developed to describe chain molecule formed from fused Mie segments using the Mie attractive and repulsive potential. The Mie potential is a type of generalized Lennard-Jones potential that can be used to describe explicitly repulsive interactions of different hardness/softness and attractive interactions of different ranges, and is given by:
 \begin{equation}
@@ -22,7 +18,7 @@ where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, 
 \label{eqn:miehelm}
 \end{equation}
 
-\subsection{Ideal Contribution}
+\subsubsection{Ideal Contribution}
 
 The ideal contribution for a mixture is given by:
 \begin{equation}
@@ -31,7 +27,7 @@ a^{IDEAL} = \sum_{i=1}^{N_{c}} x_{i}\ln{(\rho_{i}{\Lambda_{i}}^3)} -1
 \end{equation}
 where $x_{i}=N_{i}/N$ is the molar fraction of component i, $\rho_{i}=N_{i}/V$ is the number density, $N_{i}$ is the number of molecules of each component and $\Lambda_{i}^3$ is de Broglie wavelength. 
 
-\subsection{Monomer Contribution}
+\subsubsection{Monomer Contribution}
 
 The monomer contribution describes the interactions between Mie segments and can be expressed for a mixture as:
 \begin{equation}
@@ -71,7 +67,7 @@ d_{ii} =\int_{0}^{\sigma_{ii}} ( 1 - \exp(-\beta U^{Mie}_{ii}(r)) ) dr
 
 The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of Gauss-Legendre with a 5-point quadrature \cite{papa2014}. The detailing of the terms of Eq. \eqref{eqn:amonomer} can be found in \citeonline{lafitte2013}.
 
-\subsection{Chain Contribution}
+\subsubsection{Chain Contribution}
 The chain formation of $m_{s}$ tangentially bonded Mie segments contribution is based on the first-order pertubation theory (TPT1)  \cite{papa2014} and can be expressed as:
 \begin{equation}
 a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln(g_{ii}^{Mie}(\sigma_{ii}))
@@ -90,7 +86,7 @@ g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp[\beta\epsilon g_{1,ij}
 
 The other terms in the equations above are explicitly exposed in the original article \cite{lafitte2013}. 
 
-\subsection{Ring Contribution}
+\subsubsection{Ring Contribution}
 There are two forms for the Helmholtz free energy for rings formed from $m_{s}$ tangentially bonded segments in the literature. The first one  \cite{lafitte2012} considered that the difference between a chain and a ring molecule is that the latter one has one more bond that is connecting the first segment to the last. With this assumption, the Eq. \eqref{eqn:achain} can be adapted to rings by:
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii}))
@@ -110,7 +106,7 @@ $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i
 \label{ringqsi}
 \end{figure}
 
-\subsection{Combining rules for the intermolecular potential parameters}
+\subsubsection{Combining rules for the intermolecular potential parameters}
 \citeonline{lafitte2013} also suggested mixing rules for the potential parameters based on Lorentz-Berthelot combining rules \cite{rowlinson}:
 \begin{equation}
 \sigma_{ij} =\frac{\sigma{ii}+\sigma{jj}}{2}
@@ -131,9 +127,9 @@ The $k_{ij}$ is a binary interaction parameter to correct the deviations of the 
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}
+\subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}
 
-The SAFT-$\gamma$ Mie is a force field that uses a  coarse graining top down methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters estimated with the equation of state can be used on molecular simulations since both the SAFT-VR Mie EoS and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has already been seem for a variety of fluids in which this force field was parameterized and  this success in the representation of the properties of real fluids can be imputed to the degrees of freedom of Mie Potential \cite{herdes2015}. This flexibility also provides an exploration of a very large parameter space without using a iterative simulation scheme \cite{avendano2011}. 
+The SAFT-$\gamma$ Mie Force Field uses a coarse graining top down methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters estimated with the the SAFT-VR Mie EoS can be used on molecular simulations since both the equation of state and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has already been seem for a variety of fluids in which this force field was parameterized and  this success in the representation of the properties of real fluids can be imputed to the degrees of freedom of Mie Potential \cite{herdes2015}. This flexibility also provides an exploration of a very large parameter space without using a iterative simulation scheme \cite{avendano2011}. 
 
 Each substance has initially five parameters to be estimated ($m_s$,$\sigma$,$\epsilon$,$\lambda_{r}$ and $\lambda_{a}$) according to Eq. \eqref{eqn:miepotential}. The number of segments are usually fixed in an integer value so it can be used in the coarse grained simulations. The attractive parameter can also be fixed since there is a high correlation between the attractive and repulsilve parameter. Usually, the parameter is fixed in the London value of 6, which is expected to be a good representation of the dispersion scale of most simple fluids that don't have strong polar interactions \cite{ramrattan2015,herdes2015}. There are two strategies to obtain the parameters of each substance: one is by fitting the Saft-Vr Mie EoS to experimental data as vapor pressure and liquid density and the other is using correspondent state parametrization. The first one, generally, minimizes the following unweighted least-squares objective function:
 

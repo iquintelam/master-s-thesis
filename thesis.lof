@@ -1,4 +1,4 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {figure}{\numberline {1.2.1}{\ignorespaces Thermodynamic cycle for solvation free energy calculations with molecular dynamics \cite {klimovich}\relax }}{17}{figure.caption.14}
-\contentsline {figure}{\numberline {2.1.1}{\ignorespaces Values for parameter $\chi $ according to the ring geometry \cite {muller2017}\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Thermodynamic cycle for solvation free energy calculations with molecular dynamics (Adapted from \citeonline {klimovich})\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {3.1.1}{\ignorespaces Values for parameter $\chi $ according to the ring geometry \cite {muller2017}\relax }}{25}{figure.caption.15}
