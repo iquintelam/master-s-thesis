@@ -93,12 +93,12 @@ a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringlafitte}
 \end{equation}
 
-According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for chain molecules. Recently \citeonline{muller2017} tried to correct this inconsistency by means of developing the ring free energy based on the work of \citeonline{muller1993} who obtained rigorous expressions for molecular geometries of rings of $m_s=3$ for hard fluids. The final expression developed for the ring dimensionless Helmholtz free energy is:
+According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for chain molecules. Recently \citeonline{muller2017} tried to correct this inconsistency by means of developing the ring free energy based on the work of \citeonline{muller1993} who obtained rigorous expressions for hard fluids with molecular geometries of rings of $m_s=3$. The final expression developed for the ring dimensionless Helmholtz free energy is:
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i}-1+\chi_{i}\eta_{i})\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringmuller}
 \end{equation}
-$\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$ Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain} and the system corresponds to a hard sphere system of triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\zeta$ for values of $m_{s}=3,m_{s}=4,m_{s}=5,m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid. The values of $\chi$ for each geometry estimated can be seen in the \figref{ringqsi}.
+$\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$ Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. Meanwhile, the system corresponds to a hard sphere system of triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\zeta$ for $m_{s}=3,m_{s}=4,m_{s}=5,m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid. The values of $\chi$ for each geometry estimated can be seen in the \figref{ringqsi}.
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.8]{Figures/mullergeo.jpg}
@@ -122,10 +122,6 @@ $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i
 \end{equation}
 
 The $k_{ij}$ is a binary interaction parameter to correct the deviations of the Lorentz-Berthelot rule for chemically distinct compounds. This parameter can also be fitted to experimental data or pseudo experimental data.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 2
-%----------------------------------------------------------------------------------------
 
 \subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}
 
@@ -226,6 +222,31 @@ The relation among the equation above, $\sigma$ and the experimental density is 
 where $N_{av}$ is The Avogadro number. This correspondent state method has the advantage of only requiring critical data, that it is available for a great range of fluids, and one liquid density point. In addition to that, there is an available online parameter database obtained with this strategy \cite{ervik2016}.     
 
 The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behaviour of chemically distinct components. Normally, it is fitted to experimental binary vapor liquid equilibrium or superficial tension data with the SAFT-VR Mie EoS \cite{muller2017,lobanova2016}. However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data of the mixture water-toluene. The strategy followed by them was to do simulations in three values of $k_{ij}$ and then refine the parameter value until a value in good agreement with the experimental data was found. 
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Expanded Ensemble Method}
+
+Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were developed to allow a non-Boltzmann sampling scheme of different states in only one simulation. The statistical expanded ensemble, $Z^{EE}$ can be defined as a sum of sub ensembles $Z_{i}$ in different values of $\lambda$:
+
+\begin{equation}
+Z^{EE} = \sum_{i=1}^{N} Z_{i}(\lambda_{i}) exp(\eta_{i})
+\label{ee}
+\end{equation}   
+where N is the number of alchemical states and $\eta_{i}$ is the arbitrary weight of the subs ensemble $Z_{i}$ at each state. This weights allow the sampling of the states during the simulation with equal frequency. A sufficient number of states needs to be sampled in order to obtain the reduced free energies differences between the states ($\hat{f}_i-\hat{f}_j$) from the simulations' results.  The weights are calculated doing trials simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{weight}), the next values of $\eta$ can be calculated  from the previous result. This iteration goes on until a uniform distribution is secured.
+
+equilibrium properties are no longer estimated via arithmetic averages, but via properly weighted averages. 
+
+\begin{equation}
+(\eta_{i} - \eta_{j})_{k+1} = \beta(\hat{f}_i-\hat{f}_j)_{k}
+\label{weight}
+\end{equation}
+These acquired  weights  can then  be used in a longer simulation to obtain the data necessary for the free energy differences calculations.
+
+\section{Gibbs Ensemble Monte Carlo}
+
 
 %\begin{equation}
 %\begin{aligned}

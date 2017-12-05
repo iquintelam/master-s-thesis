@@ -25,7 +25,7 @@
 \abntrefinfo{Aimoli, Maginn e Abreu}{AIMOLI; MAGINN; ABREU}{2014b}
 {AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C.~R. Transport properties of carbon
   dioxide and methane from molecular dynamics simulations.
-\emph{THE JOURNAL OF CHEMICAL PHYSICS}, v.~141, p. 134101, 2014.}
+\emph{The Journal of Chemical Physics}, v.~141, p. 134101, 2014.}
 
 \bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
 \abntrefinfo{ABNT}{ABNT}{2003}
@@ -72,6 +72,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 {BASDEVANT, N.; BORGIS, D.; HA-DUONG, T. Modeling protein-protein recognition
   in solution using the coarse-grained force field scorpion.
 \emph{Journal of Chemical Theory and Computation}, v.~9, p. 803--813, 2013.}
+
+\bibitem[Bennett 1976]{bennet1976}
+\abntrefinfo{Bennett}{BENNETT}{1976}
+{BENNETT, C. Efficient estimation of free energy differences from monte carlo
+  data.
+\emph{Journal of Computational Physics}, v.~22, p. 245–268, 1976.}
 
 \bibitem[Bereau, Bachmann e Deserno 2010]{bereau2010}
 \abntrefinfo{Bereau, Bachmann e Deserno}{BEREAU; BACHMANN; DESERNO}{2010}
@@ -157,17 +163,17 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
 
-\bibitem[JG 1935]{kirkwood1935}
-\abntrefinfo{JG}{JG}{1935}
-{JG, K. Statistical mechanics of fluid mixtures.
-\emph{Journal of Chemical Physics}, v.~3, p. 300–313, 1935.}
-
 \bibitem[Jorge \textit{et al.} 2010]{garrido2010}
 \abntrefinfo{Jorge \textit{et al.}}{JORGE \textit{et al.}}{2010}
 {JORGE, M.; GARRIDO, N.; QUEIMADA, A.; ECONOMOU, I.; MACEDO, E. Effect of the
   integration method on the accuracy and computational efficiency of free
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
+
+\bibitem[Kirkwood 1935]{kirkwood1935}
+\abntrefinfo{Kirkwood}{KIRKWOOD}{1935}
+{KIRKWOOD, J. Statistical mechanics of fluid mixtures.
+\emph{Journal of Chemical Physics}, v.~3, p. 300–313, 1935.}
 
 \bibitem[Klimovich, Shirts e Mobley 2015]{klimovich}
 \abntrefinfo{Klimovich, Shirts e Mobley}{KLIMOVICH; SHIRTS; MOBLEY}{2015}
@@ -180,6 +186,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 {KOGA, N.; TAKADA, S. Roles of native topology and chain-length scaling in
   protein folding: a simulation study with a go-like model.
 \emph{Journal of Molecular Biology}, v.~331, p. 171–180, 2001.}
+
+\bibitem[Kumar \textit{et al.} 1992]{wham}
+\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992}
+{KUMAR, S.; BOUZIDA, D.; SWENDSEN, R.; KOLLMAN, P.; ROSENBERG, J. The weighted
+  histogram analysis method for free-energy calculations on biomolecules. 1.
+  the method.
+\emph{Journal of Computational Chemistry}, v.~13, p. 1011--1021, 1992.}
 
 \bibitem[Lafitte \textit{et al.} 2013]{lafitte2013}
 \abntrefinfo{Lafitte \textit{et al.}}{LAFITTE \textit{et al.}}{2013}
@@ -271,7 +284,7 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \abntrefinfo{Paliwal e Shirts}{PALIWAL; SHIRTS}{2011}
 {PALIWAL, H.; SHIRTS, M.~R. A benchmark test set for alchemical free energy
   transformations and its use to quantify error in common free energy methods.
-\emph{J. Chem. Theory Comput.}, v.~7, p. 4115–4134, 2011.}
+\emph{Journal of Chemical Theory and Computation}, v.~7, p. 4115–4134, 2011.}
 
 \bibitem[Pantano e Klein 2009]{pantano2009}
 \abntrefinfo{Pantano e Klein}{PANTANO; KLEIN}{2009}
@@ -287,6 +300,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   statistical associating fluid theory for heteronuclear molecules formed from
   mie segments.
 \emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
+
+\bibitem[Pohorille, Jarzynski e Chipot 2010]{pohorille2010}
+\abntrefinfo{Pohorille, Jarzynski e Chipot}{POHORILLE; JARZYNSKI; CHIPOT}{2010}
+{POHORILLE, A.; JARZYNSKI, C.; CHIPOT, C. Good practices in freeenergy
+  calculations.
+\emph{Journal of Physical Chemistry B}, v.~114, p. 10235–10253, 2010.}
 
 \bibitem[Ramrattan \textit{et al.} 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan \textit{et al.}}{RAMRATTAN \textit{et al.}}{2015}
@@ -312,6 +331,12 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   dynamics studies of monolayers, bilayers, and vesicles using a new coarse
   grain force field.
 \emph{Journal of Physical Chemistry B}, v.~114, p. 6836--6849, 2010.}
+
+\bibitem[Shirts e Chodera 2008]{mbar}
+\abntrefinfo{Shirts e Chodera}{SHIRTS; CHODERA}{2008}
+{SHIRTS, M.~R.; CHODERA, J.~D. Statistically optimal analysis of samples from
+  multiple equilibrium states.
+\emph{Journal of Chemical Physics}, v.~129, p. 124105, 2008.}
 
 \bibitem[Shyu e Ytreberg 2010]{shyu2009}
 \abntrefinfo{Shyu e Ytreberg}{SHYU; YTREBERG}{2010}
@@ -348,5 +373,11 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 {ZWANZIG, R.~W. High‐temperature equation of state by a perturbation method.
   i. nonpolar gases.
 \emph{The Journal of Chemical Physics}, v.~22, p.~1420, 1954.}
+
+\bibitem[Zwanzig 1955]{zwanzig1955}
+\abntrefinfo{Zwanzig}{ZWANZIG}{1955}
+{ZWANZIG, R.~W. High‐temperature equation of state by a perturbation method.
+  ii. polar gases.
+\emph{The Journal of Chemical Physics}, v.~23, p.~1915, 1955.}
 
 \end{thebibliography}
