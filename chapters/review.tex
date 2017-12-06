@@ -4,9 +4,7 @@
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
+
 
 \section{Coarse Grained Force Fields}
 
@@ -23,6 +21,7 @@ Outside of the Martini framework, \citeonline{shinoda2010} studied different lev
 %----------------------------------------------------------------------------------------
 
 
+
 \section{Solvation Free Energies Based on Molecular Dynamics}
 
 Free energies can be expressed as averages over ensembles of atomic configurations generated using Monte Carlo or molecular dynamics techniques. In the canonical ensemble, the free energy is given by:  
@@ -30,19 +29,54 @@ Free energies can be expressed as averages over ensembles of atomic configuratio
 \begin{equation}
 \label{eq:fcano}
 \begin{aligned}
-F(N,V,T) = -\kappa_{b}TQ(N,V,T)
+F(N,V,T) = -\kappa_{b}T ln Q(N,V,T)
 \end{aligned}
 \end{equation}
-where $Q(N,V,T))$ is the partition function of the canonical ensemble. Meanwhile, the average over the isothermal-isobaric ensemble gives the Gibbs free energy:
+where $Q(N,V,T))$ is the partition function of the canonical ensemble:
+
+\begin{equation}
+\label{eq:partican}
+\begin{aligned}
+Q(N,V,T) = \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) \right)
+\right]
+\end{aligned}
+\end{equation}
+where $\beta=1/k_{b}T$. Meanwhile, the average over the isothermal-isobaric ensemble gives the Gibbs free energy:
 
 \begin{equation}
 \label{eq:fisobari}
 \begin{aligned}
-G(N,P,T) = -\kappa_{b}T\frac{1}{V_{0}} \int_{0}^{\infty} dV \exp(-\kappa_{b}TPV)Q(N,V,T)
+G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
+\end{aligned}
+\end{equation}
+where $\Delta (N,P,T)$ is the partition function of the isothermal-isobaric ensemble:
+
+\begin{equation}
+\label{eq:partiso}
+\begin{aligned}
+\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]
 \end{aligned}
 \end{equation}
 
-Since it is only possible to obtain free energy differences, Solvation free energy calculations based on molecular dynamics estimate the difference between the Gibbs free energies of end states, more specifically the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these energy differences be accurate, the sates' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since the free energy is a state function. That's why the states used typically don't have a physical sense, they are alchemical states which are only linking the physical states of interest.
+Since it is only possible to obtain free energy differences, solvation free energy calculations based on molecular dynamics estimate the difference between the Gibbs free energies of end states:
+
+\begin{equation}
+\label{eq:dif}
+\begin{aligned}
+\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{\Delta_{B}}{\Delta_{A}}\right) = -\kappa_{b}T ln \left( \frac{Z_{B}}{Z_{A}}\right)
+\end{aligned}
+\end{equation}
+
+Since both states are at the same temperature, the moment integrals in the ratio ${\Delta_{B}}/{\Delta_{A}}$ can be simplified. Hence this ratio becomes equal to the ratio the configurational particion function ratio:
+
+\begin{equation}
+\label{eq:partiso}
+\begin{aligned}
+\dfrac{Z_{B}}{Z_{A}} = \dfrac{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{B} \right]}{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{A} \right]}
+\end{aligned}
+\end{equation}
+
+The Gibbs free energy difference between end states $A$ and $B$ are, more specifically, the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these differences be accurate, the sates' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since the free energy is a state function. That's why the states used typically don't have a physical sense, they are alchemical states which are only linking the physical states of interest.
 
 The solvation free energy calculations follow a thermodynamic cycle to gradually insert the solute molecule into the solvent as illustrated in the \figref{thermcy}. According to this cycle, the free energy of solvation can be expressed as:
 
@@ -53,7 +87,6 @@ The solvation free energy calculations follow a thermodynamic cycle to gradually
 \end{aligned}
 \end{equation}
 
-
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.6]{Figures/cicclotermo.jpg}
@@ -61,15 +94,27 @@ The solvation free energy calculations follow a thermodynamic cycle to gradually
 \label{thermcy}
 \end{figure}
 
-The solvation free energy between sates 1 and 2 in the cycle is the one associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent and is equal to zero since the transformation of a non interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the  the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of the non bonded interactions that are turned of in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both the non-bonded interactions with the environment and the internal interactions are turned of, this is the annihilation free energy. Meanwhile, if only the non-bonded interactions with the environment are turned off,this is the decoupling free energy. In this later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out theses transformations scale the solute charges to zero and then turn of the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter $\lambda$ is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, the interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the Potential. That's why the non-linear soft-core scheme \cite{beutler1994} is usually used, the so called soft core Lennard-Jones potential is given by:
+The solvation free energy between sates 1 and 2 in the cycle is the one associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent and is equal to zero since the transformation of a non interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the  the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of the non bonded interactions that are turned of in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both the non-bonded interactions with the environment and the internal interactions are turned of, this is the annihilation free energy. Meanwhile, if only the non-bonded interactions with the environment are turned off,this is the decoupling free energy. In this later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out theses transformations scale the solute charges to zero and then turn of the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter $\lambda$ is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, the interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the Potential. That's why the non-linear soft-core scheme \cite{beutler1994} is usually used, the generalized soft core potential is given by:
 
 \begin{equation}
 \label{eq:softcore}
 \begin{aligned}
-U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)^{2}+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)^2+(r/\sigma)^{6}}\right\rbrace
+U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \\
+& \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace
 \end{aligned}
 \end{equation}
+
+Using the Lennard Jones exponents, Eq. \eqref{eq:softcore} becomes:
+
+\begin{equation}
+\label{eq:softcoreLJ}
+\begin{aligned}
+U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)^{2}+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{6}}\right\rbrace
+\end{aligned}
+\end{equation}
+
 where $\alpha$ is a constant in which the value of 0.5 is normally assumed to it. The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev} which samples all state in a single simulation. This method allows a faster sampling across the alchemical states considering that the kinetic barriers are not substantial. 
+
 
 \section{Post simulation methods}
 

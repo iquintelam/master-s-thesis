@@ -92,6 +92,14 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   aggregation.
 \emph{Journal of Chemical Physics}, v.~130, p. 235106, 2009.}
 
+\bibitem[Berg e Neuhaus 1992]{bernd1992}
+\abntrefinfo{Berg e Neuhaus}{BERG; NEUHAUS}{1992}
+{BERG, B.~A.; NEUHAUS, T. Multicanonical ensemble: A new approach to simulate
+  first-order phase transitions.
+\emph{Physical Review Letters}, American Physical Society, v.~68, p. 9--12, Jan
+  1992.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.68.9}.}
+
 \bibitem[Beutler \textit{et al.} 1994]{beutler1994}
 \abntrefinfo{Beutler \textit{et al.}}{BEUTLER \textit{et al.}}{1994}
 {BEUTLER, T.; MARK, A.; SCHAIK, R. van; GERBER, P.; GUNSTEREN, W. van. Avoiding
@@ -125,6 +133,21 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   potential for water and n-alkanes.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 851--863, 2010.}
 
+\bibitem[Chodera e Shirts 2011]{chodera2011}
+\abntrefinfo{Chodera e Shirts}{CHODERA; SHIRTS}{2011}
+{CHODERA, J.~D.; SHIRTS, M.~R. Replica exchange and expanded ensemble
+  simulations as gibbs sampling: simple improvements for enhanced mixing.
+\emph{Journal of Chemical Physics}, v.~135, p. 194110, 2011.}
+
+\bibitem[Dayal \textit{et al.} 2004]{dayal2004}
+\abntrefinfo{Dayal \textit{et al.}}{DAYAL \textit{et al.}}{2004}
+{DAYAL, P.; TREBST, S.; WESSEL, S.; W\"URTZ, D.; TROYER, M.; SABHAPANDIT, S.;
+  COPPERSMITH, S.~N. Performance limitations of flat-histogram methods.
+\emph{Physical Review Letters}, American Physical Society, v.~92, p. 097201,
+  Mar 2004.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.92.097201}.}
+
 \bibitem[Ervik \textit{et al.} 2016]{ervik20162}
 \abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016}
 {ERVIK, A.; LYSGAARD, M.~O.; HERDES, C.; JIM\'ENEZ-SERRATOS, G.; M\"LLER,
@@ -138,6 +161,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   saft-$\gamma$ mie force field parameters for thousands of molecular fluids.
 \emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
   2016.}
+
+\bibitem[Geman e Geman 1984]{geman1984}
+\abntrefinfo{Geman e Geman}{GEMAN; GEMAN}{1984}
+{GEMAN, S.; GEMAN, D. Stochastic relaxation, gibbs distributions, and the
+  bayesian restoration of images.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, PAMI-6,
+  p. 721 -- 741, 1984.}
 
 \bibitem[Hadley e McCabe 2012]{hadley2012}
 \abntrefinfo{Hadley e McCabe}{HADLEY; MCCABE}{2012}
@@ -215,6 +245,13 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
   the martini coarse-grained protein force field.
 \emph{Journal of Chemical Theory and Computation}, v.~9, p. 687--697, 2013.}
 
+\bibitem[Lee 1993]{bernd1993}
+\abntrefinfo{Lee}{LEE}{1993}
+{LEE, J. New monte carlo algorithm: Entropic sampling.
+\emph{Physical Review Letters}, American Physical Society, v.~71, p. 211--214,
+  Jul 1993.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.71.211}.}
+
 \bibitem[Levitt 1976]{levitt1976}
 \abntrefinfo{Levitt}{LEVITT}{1976}
 {LEVITT, M. A simplified representation of protein conformations for rapid
@@ -225,6 +262,11 @@ Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
 \abntrefinfo{Levitt e Warshe}{LEVITT; WARSHE}{1975}
 {LEVITT, M.; WARSHE, A. Computer-simulation of protein folding.
 \emph{Nature}, v.~253, p. 694–698, 1975.}
+
+\bibitem[Liu 2002]{liu2002}
+\abntrefinfo{Liu}{LIU}{2002}
+{LIU, J.~S. \emph{Monte Carlo strategies in Scientific Computing}. 2. ed. New
+  York: Springer, 2002.}
 
 \bibitem[Lobanova \textit{et al.} 2015]{lobanova2015}
 \abntrefinfo{Lobanova \textit{et al.}}{LOBANOVA \textit{et al.}}{2015}

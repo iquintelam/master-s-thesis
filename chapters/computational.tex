@@ -2,6 +2,7 @@
 
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
+
 \section{SAFT-$\gamma$ Mie Force Field}
 
 \subsection{SAFT-VR Mie EoS}
@@ -221,11 +222,22 @@ The relation among the equation above, $\sigma$ and the experimental density is 
 \end{equation}
 where $N_{av}$ is The Avogadro number. This correspondent state method has the advantage of only requiring critical data, that it is available for a great range of fluids, and one liquid density point. In addition to that, there is an available online parameter database obtained with this strategy \cite{ervik2016}.     
 
-The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behaviour of chemically distinct components. Normally, it is fitted to experimental binary vapor liquid equilibrium or superficial tension data with the SAFT-VR Mie EoS \cite{muller2017,lobanova2016}. However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data of the mixture water-toluene. The strategy followed by them was to do simulations in three values of $k_{ij}$ and then refine the parameter value until a value in good agreement with the experimental data was found. 
+The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behaviour of chemically distinct components. Normally, it is estimated minimizing the difference between experimental binary vapor liquid equilibrium or superficial tension data and the SAFT-VR Mie EoS output data \cite{muller2017,lobanova2016}. The objective function is similar to: 
+
+\begin{equation}
+\begin{aligned}
+\min\limits_{k_{ij}} F_{obj}(k_{ij})= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
+ \sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2
+\end{aligned}
+\label{eqn:fobjmix}
+\end{equation}
+
+However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data of the mixture water-toluene. The strategy followed by them was to do simulations in three values of $k_{ij}$ and then refine the parameter value until a value in good agreement with the experimental data was found. 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
+
 
 \section{Expanded Ensemble Method}
 
@@ -233,28 +245,83 @@ Instead of doing various simulations in different values of $\lambda$, expanded 
 
 \begin{equation}
 Z^{EE} = \sum_{i=1}^{N} Z_{i}(\lambda_{i}) exp(\eta_{i})
-\label{ee}
+\label{eqn:ee}
 \end{equation}   
-where N is the number of alchemical states and $\eta_{i}$ is the arbitrary weight of the subs ensemble $Z_{i}$ at each state. This weights allow the sampling of the states during the simulation with equal frequency. A sufficient number of states needs to be sampled in order to obtain the reduced free energies differences between the states ($\hat{f}_i-\hat{f}_j$) from the simulations' results.  The weights are calculated doing trials simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{weight}), the next values of $\eta$ can be calculated  from the previous result. This iteration goes on until a uniform distribution is secured.
-
-equilibrium properties are no longer estimated via arithmetic averages, but via properly weighted averages. 
+where N is the number of alchemical states and $\eta_{i}$ is the arbitrary weight of the subs ensemble $Z_{i}$ at each state. In the application of this method for solvation energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the soft-core potential (Eq. \ref{eq:softcore}) and the expanded ensemble is sampled in the MD simulations by performing a arbitrary number of steps followed by a state transition. \citeonline{chodera2011} proved that the sampling of the expanded ensemble are similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done using the conditional distribution:
 
 \begin{equation}
-(\eta_{i} - \eta_{j})_{k+1} = \beta(\hat{f}_i-\hat{f}_j)_{k}
-\label{weight}
+\pi(x|\lambda_{k}) = \dfrac{\exp[-\beta u(x,\lambda_{k})]}{\int dx \exp [- \beta u(x,\lambda_{k})]}
+\label{eqn:rhoee1}
+\end{equation} 
+
+Meanwhile, the state transition in the MD simulation uses the following conditional distribution:
+
+\begin{equation}
+\pi(\lambda_{k}|x) = \dfrac{\exp[-\beta u(x,\lambda_{k}) + \eta_{k}]}{ \sum_{k=1}^{K} \exp [- \beta u(x,\lambda_{k})+ \eta_{k}]}
+\label{eqn:rhoee2}
+\end{equation} 
+where $u(x,\lambda_{k}) = U(x,\lambda_{k}) + PV(x,\lambda_{k})$ is the reduced potential function for the NPT ensemble. There are a variety of proposal or acceptance schemes to do the expanded sampling using the Eq. \eqref{eqn:rhoee2}, but \citeonline{chodera2011} suggested that the independence sampling \cite{liu2002} is the best strategy to increase the number of uncorrelated configurations. The implementation suggested by them updates the state index from $i$ to $j$ by first generating a uniform random number $R$ on the interval $[0,1)$ and then selecting the smallest new value of $j$ that satisfies  the relation bellow:
+
+\begin{equation}
+R < \sum_{i=1}^{j} \pi(\lambda_{i}|x) 
+\label{eqn:relee2}
+\end{equation} 
+
+The sampling strategy above depends on the weights above in order to assure a adequate sampling of the states. If there isn't a sufficient number of states sampled, the expanded ensemble becomes deficient in obtaining input data to estimate free energy differences with the methods exposed in Chapter 2. The weights can be calculated following the flat-histogram approach \cite{bernd1992,bernd1993,dayal2004}. This strategy aims to obtain adequate sampling by sampling all the states in a equal number of ways, i. e. the ratio of the probability of sampling state ($\pi_{i}$) to the probability of sampling state $j$ ($\pi_{j}$) is equal to one. Given that $\pi_{i}$ has the following equation:
+
+\begin{equation}
+\pi_{i} = \dfrac{Z_{i}(\lambda_{i}) exp(\eta_{i})}{Z^{EE}} 
+\label{eqn:wei1}
+\end{equation} 
+and using Eqs. \ref{eq:dif} and \ref {eq:partiso}, the following relation can be obtained for $\pi_{i}/\pi_{j}=1$:
+
+\begin{equation}
+(\eta_{i} - \eta_{j}) = \beta(G_i-G_j)
+\label{eqn:weight}
 \end{equation}
-These acquired  weights  can then  be used in a longer simulation to obtain the data necessary for the free energy differences calculations.
+
+The Eq. \eqref{eqn:weight} is solved iteratively with trial simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{weight}), the next values of $\eta$ can be calculated  from the previous result. This iteration goes on until a uniform distribution is secured. The weights of the uniform distribution can then  be used in a longer simulation to obtain the final solvation free energy differences.
+
+The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate energy differences. One of the existing methods to obtain the optimal stage of the $\lambda$ domain is the one developed by \citeonline{escobedo2017} with basis in the one developed by \cite{trebst2004}. In this method, the $\lambda s$ are optimized with the minimization of the number of round trips per CPU time between the lowest $\lambda$ ($=0$) and highest $\lambda$ ($=1$). This is done by maximizing the steady-state stream $\phi$ of the simulation which "walks" among the values of $\lambda$. This stream is estimated form Fick's diffusion type of law:
+
+\begin{equation}
+\phi = D(\Lambda) \Pi (\Lambda) \dfrac{dx(\Lambda)}{d \Lambda}
+\label{eqn:stream}
+\end{equation}
+
+In the equation above, $\Lambda$ is the actual continue value of the coupling parameter. This continue function of $\lambda s$ may be obtained by interpolating them linearly. $D(\Lambda)$ is the diffusivity at the state $\Lambda$ and $x(\Lambda)$ is the fraction of times that the trial simulation at state $\Lambda_{i}$ has most recently visited the state $\lambda=1$ as opposed to state $\lambda=0$. The derivative ${dx(\Lambda)}/{d \Lambda}$ can be approximated with the central finite differences. Finally, $\Pi (\Lambda)$ represents the probability of visiting $\Lambda$. 
+
+\begin{equation}
+\Pi (\Lambda) = \dfrac{C^{'} \bar{\Pi} (\lambda)}{\Lambda_{i+1} - \Lambda_{i}}
+\label{eqn:plambda}
+\end{equation}
+
+The $C^{'} $ term in the equation above represents a constant and $\bar{\Pi} (\lambda)$ is the arithmetic average of visiting the $\Lambda$ states:
+
+\begin{equation}
+\bar{\Pi} (\lambda) = \dfrac{\pi_{i+1} - \pi_{i}}{2}
+\label{eqn:barplambda}
+\end{equation}
+
+The $\phi$ is maximum when the the probability $\Pi^{'}(\Lambda_{i})$ is proportional to $1/\sqrt{D(\Lambda)}$. With that information is possible to estimate the diffusivity using one trial simulation with the equation bellow:
+
+\begin{equation}
+D(\Lambda) = \dfrac{\Lambda_{i+1} - \Lambda_{i}}{\bar{\Pi} (\lambda) {dx(\Lambda)}/{d \Lambda}}
+\label{eqn:diff}
+\end{equation}
+
+Hence, it is possible to calculate $\bar{\Pi} $ and, consequently, the cumulative probability, which is used to calculate the new $\lambda$ states:
+
+\begin{equation}
+\Phi = \int_{\lambda =0}^{\lambda =1} \Pi^{'}(\Lambda_{i}) d \Lambda = \dfrac{i}{K}
+\label{eqn:cumfun}
+\end{equation}
+where, $K$ is the total number of $\lambda$ states.
 
 \section{Gibbs Ensemble Monte Carlo}
 
 
-%\begin{equation}
-%\begin{aligned}
-%\min\limits_{k_{ij}} F_{obj}(k_{ij})= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
-% \sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2
-%\end{aligned}
-%\label{eqn:fobjmix}
-%\end{equation}
+
 
 
 %Ramrattan et al. [57] have noted that the value of the repulsive exponent

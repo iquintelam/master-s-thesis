@@ -13,11 +13,11 @@
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Literature Review}}{16}{chapter.2}
 \contentsline {section}{\numberline {2.1}Coarse Grained Force Fields}{16}{section.2.1}
 \contentsline {section}{\numberline {2.2}Solvation Free Energies Based on Molecular Dynamics}{18}{section.2.2}
-\contentsline {section}{\numberline {2.3}Post simulation methods}{20}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Thermodynamic integration}{20}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Free energy of Pertubation (FEP)}{20}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Bennet Acceptance Ratio (BAR)}{21}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Multistate Bennet Acceptance Ratio (MBAR)}{22}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.3}Post simulation methods}{21}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Thermodynamic integration}{21}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Free energy of Pertubation (FEP)}{21}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Bennet Acceptance Ratio (BAR)}{22}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Multistate Bennet Acceptance Ratio (MBAR)}{23}{subsection.2.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentals of the Computational Methods}}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}SAFT-$\gamma $ Mie Force Field}{24}{section.3.1}
@@ -29,43 +29,43 @@
 \contentsline {subsubsection}{\numberline {3.1.1.5}Combining rules for the intermolecular potential parameters}{26}{subsubsection.3.1.1.5}
 \contentsline {subsection}{\numberline {3.1.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{27}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Expanded Ensemble Method}{30}{section.3.2}
-\contentsline {section}{\numberline {3.3}Gibbs Ensemble Monte Carlo}{31}{section.3.3}
+\contentsline {section}{\numberline {3.3}Gibbs Ensemble Monte Carlo}{33}{section.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{32}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{34}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{33}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{35}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{34}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{36}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{35}{section*.18}
+\contentsline {chapter}{\uppercase {Bibliography}}{37}{section*.18}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{40}{section*.19}
+\contentsline {part}{\uppercase {Appendix}}{42}{section*.19}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{41}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Quisque libero justo}}{43}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{42}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula ac pretium ante justo a nulla curabitur tristique arcu eu metus}}{44}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANNEX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Annex}}{43}{section*.20}
+\contentsline {part}{\uppercase {Annex}}{45}{section*.20}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{44}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{46}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{45}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}}{47}{appendix.anexochapback.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{46}{appendix.anexochapback.3}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{48}{appendix.anexochapback.3}
 \vspace {\cftbeforechapterskip }
