@@ -162,6 +162,13 @@ Dispon{\'\i}vel em:
 \emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
   2016.}
 
+\bibitem[Escobedo e Martinez-Veracoechea 2007]{escobedo2007}
+\abntrefinfo{Escobedo e Martinez-Veracoechea}{ESCOBEDO;
+  MARTINEZ-VERACOECHEA}{2007}
+{ESCOBEDO, F.~A.; MARTINEZ-VERACOECHEA, F.~J. Optimized expanded ensembles for
+  simulations involving molecular insertions and deletions. i. closed systems.
+\emph{Journal of Chemical Physics}, v.~127, p. 174103, 2007.}
+
 \bibitem[Geman e Geman 1984]{geman1984}
 \abntrefinfo{Geman e Geman}{GEMAN; GEMAN}{1984}
 {GEMAN, S.; GEMAN, D. Stochastic relaxation, gibbs distributions, and the
@@ -402,6 +409,14 @@ Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.71.211}.}
   protein model: from single molecules, amyloid formation, crowding and
   hydrodynamics to dna/rna systems.
 \emph{Chemical Society Reviews}, v.~43, p. 4871– 4893, 2014.}
+
+\bibitem[Trebst, Huse e Troyer 2004]{trebst2004}
+\abntrefinfo{Trebst, Huse e Troyer}{TREBST; HUSE; TROYER}{2004}
+{TREBST, S.; HUSE, D.~A.; TROYER, M. Optimizing the ensemble for equilibration
+  in broad-histogram monte carlo simulations.
+\emph{Physical Review E}, American Physical Society, v.~70, p. 046701, Oct
+  2004.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevE.70.046701}.}
 
 \bibitem[Winger \textit{et al.} 2009]{winger2009}
 \abntrefinfo{Winger \textit{et al.}}{WINGER \textit{et al.}}{2009}

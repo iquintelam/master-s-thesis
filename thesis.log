@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  6 DEC 2017 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  7 DEC 2017 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,20 +1304,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
 
-[27 <./Figures/mullergeo.jpg>] [28] [29] [30] [31]
-
-LaTeX Warning: Reference `weight' on page 32 undefined on input line 283.
-
-
-LaTeX Warning: Citation `escobedo2017' on page 32 undefined on input line 285.
-
-
-LaTeX Warning: Citation `trebst2004' on page 32 undefined on input line 285.
-
-[32]) [33]
+[27 <./Figures/mullergeo.jpg>] [28] [29] [30] [31] [32]) [33]
 \openout2 = `chapters/methodology.aux'.
 
- (./chapters/methodology.tex) [34
+
+(./chapters/methodology.tex) [34
 
 
 
@@ -1394,21 +1385,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 667.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 667.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 667.
  ) 
 Here is how much of TeX's memory you used:
- 15255 strings out of 494929
- 225529 string characters out of 6180142
- 491672 words of memory out of 5000000
- 17818 multiletter control sequences out of 15000+600000
- 71671 words of font info for 255 fonts, out of 8000000 for 9000
+ 15265 strings out of 494929
+ 225688 string characters out of 6180142
+ 492092 words of memory out of 5000000
+ 17823 multiletter control sequences out of 15000+600000
+ 71830 words of font info for 257 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,17n,44p,2337b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,44p,2337b,643s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1425,10 +1413,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on thesis.pdf (49 pages, 366374 bytes).
+Output written on thesis.pdf (49 pages, 365993 bytes).
 PDF statistics:
- 950 PDF objects out of 1000 (max. 8388607)
- 868 compressed objects within 9 object streams
- 235 named destinations out of 1000 (max. 500000)
+ 959 PDF objects out of 1000 (max. 8388607)
+ 877 compressed objects within 9 object streams
+ 237 named destinations out of 1000 (max. 500000)
  48483 words of extra memory for PDF output out of 51595 (max. 10000000)
 

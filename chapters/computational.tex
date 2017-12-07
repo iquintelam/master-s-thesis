@@ -280,9 +280,9 @@ and using Eqs. \ref{eq:dif} and \ref {eq:partiso}, the following relation can be
 \label{eqn:weight}
 \end{equation}
 
-The Eq. \eqref{eqn:weight} is solved iteratively with trial simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{weight}), the next values of $\eta$ can be calculated  from the previous result. This iteration goes on until a uniform distribution is secured. The weights of the uniform distribution can then  be used in a longer simulation to obtain the final solvation free energy differences.
+The Eq. \eqref{eqn:weight} is solved iteratively with trial simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{eqn:weight}, the next values of $\eta$ can be calculated  from the previous result. This iteration goes on until a uniform distribution is secured. The weights of the uniform distribution can then  be used in a longer simulation to obtain the final solvation free energy differences.
 
-The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate energy differences. One of the existing methods to obtain the optimal stage of the $\lambda$ domain is the one developed by \citeonline{escobedo2017} with basis in the one developed by \cite{trebst2004}. In this method, the $\lambda s$ are optimized with the minimization of the number of round trips per CPU time between the lowest $\lambda$ ($=0$) and highest $\lambda$ ($=1$). This is done by maximizing the steady-state stream $\phi$ of the simulation which "walks" among the values of $\lambda$. This stream is estimated form Fick's diffusion type of law:
+The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate energy differences. One of the existing methods to obtain the optimal stage of the $\lambda$ domain is the one developed by \citeonline{escobedo2007} with basis in the one developed by \citeonline{trebst2004}. In this method, the $\lambda s$ are optimized with the minimization of the number of round trips per CPU time between the lowest $\lambda$ ($=0$) and highest $\lambda$ ($=1$). This is done by maximizing the steady-state stream $\phi$ of the simulation which "walks" among the values of $\lambda$. This stream is estimated form Fick's diffusion type of law:
 
 \begin{equation}
 \phi = D(\Lambda) \Pi (\Lambda) \dfrac{dx(\Lambda)}{d \Lambda}
@@ -320,9 +320,28 @@ where, $K$ is the total number of $\lambda$ states.
 
 \section{Gibbs Ensemble Monte Carlo}
 
+The Gibbs Ensemble Method \cite{papa1987} is used to study phase coexistence with simultaneous Monte Carlo simulations of two boxes with periodic conditions. The boxes exchange molecules, energy and volume between them, but always maintaining the total volume of the boxes constant. The boxes equilibrium is obtained through MC steps that consist of the translation and rotation moves, volume exchange and randomly exchanges of molecules between the boxes. For the phase equilibrium of only one component, the simulation is carried out at number of particles, temperature and volume constant (NVT). 
+%Os parâmetros estimados com equação SAFT-VR Mie foram usados para realizar simulações
+%no GEMC (Panagiotopoulos, 1987) com o simulador CASSANDRA (Shah e Maginn, 2011).
+%O método de GEMC foi desenvolvido com o intuito de estudar a coexistência entre fases
+%através da simulação simultânea de duas caixas com condições de contorno periódicas e que
+%trocam moléculas, energia e volume entre si, mas de forma a manter o volume total constante.
+%O equilíbrio entre elas é obtido através de passos de Monte Carlo (MC) que incluem o
+%deslocamento aleatório das moléculas, mudança de volume e transferências aleatórias de
+%moléculas entre as caixas. Para sistemas com apenas um componente, os cálculos são
+%realizados mantendo-se o volume e o número de partículas total constantes (NVT), mas de
+%maneira a permitir a variação de volume ( liq vap V =V +V ) e partículas ( liq vap N = N + N )
+%dentro de cada caixa. Essas simulações no GEMC-NVT foram feitas inserindo-se
+%aleatoriamente 400 moléculas na caixa líquida e 100 moléculas na caixa vapor. As densidades
+%iniciais das caixas foram escolhidas ajustando-as às densidades obtidas com a EdE SAFT-VR
+%Mie, para evitar que todas as moléculas migrassem pra uma única caixa ao longo da
+%simulação. A simulação consistiu em, no mínimo, 10000 ciclos de equilibração e 100000
+%ciclos de produção, sendo que cada ciclo de MC corresponde a 1000 tentativas de rotação,
+%1000 de translação, 100 de inserção, 100 de exclusão e 10 de variação de volume. A
 
-
-
+%Shah, J.R.; Maginn, E.J. A general and efficient Monte Carlo method for sampling
+%intramolecular degrees of freedom of branched and cyclic molecules. J. Chem. Phys., 135
+%(2011), 134121.
 
 %Ramrattan et al. [57] have noted that the value of the repulsive exponent
 %has a direct relation to the fluid range, i.e. the ratio between the
