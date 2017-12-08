@@ -318,9 +318,49 @@ Hence, it is possible to calculate $\bar{\Pi} $ and, consequently, the cumulativ
 \end{equation}
 where, $K$ is the total number of $\lambda$ states.
 
-\section{Gibbs Ensemble Monte Carlo}
+\section{Gibbs Ensemble Monte Carlo (GEMC)}
 
-The Gibbs Ensemble Method \cite{papa1987} is used to study phase coexistence with simultaneous Monte Carlo simulations of two boxes with periodic conditions. The boxes exchange molecules, energy and volume between them, but always maintaining the total volume of the boxes constant. The boxes equilibrium is obtained through MC steps that consist of the translation and rotation moves, volume exchange and randomly exchanges of molecules between the boxes. For the phase equilibrium of only one component, the simulation is carried out at number of particles, temperature and volume constant (NVT). 
+The Gibbs Ensemble Method \cite{papa1987} is used to study phase coexistence with simultaneous Monte Carlo simulations of two boxes,  representing a two phase system, with periodic conditions. The boxes exchange molecules, energy and volume between them. The boxes equilibrium is obtained through MC steps that consist of translation and rotation moves, volume exchange and randomly exchanges of molecules between the boxes. For the phase equilibrium of multi-component systems,the GEMC simulations should be carried out at the NPT (constant number of particles, pressure and temperature) ensemble to obey the requirement of an additional degree of freedom for mixtures. Meanwhile, the simulation of single component systems is carried out at constant number of particles, temperature and volume (NVT) since the two phase region would be a line for a system at constant pressure and temperature. The constant volume GEMC ensemble is rigorously equivalent to the canonical ensemble in the thermodynamic limit as demonstrated by \citeonline{frenkel}. The partition function of the GEMC-NVT ensemble is obtained considering that the particles in both boxes are subjected to the same intermolecular interactions and that the boxes volumes and number of particles ($N_{1}$,$N_{2}$,$V_{1}$ and $V_{2}$) can vary while the total volume ($V$) and total number of particles ($N$) remain constant ($N = N_{1} + N_{2}$,$V = V_{1} + V_{2}$):
+
+\begin{equation}
+\begin{aligned}
+Q(NVT) {} \equiv & \sum_{N_{1}}^{N} \dfrac{1}{V \Lambda ^{3N} N_{1}!(N-N_{1})!} \int_{0}^{V} dV_{1} V_{1}^{N_{1}} V_{2}^{N_{2}} \int dx_{1}^{N_{1}} \exp[-\beta U(x_{1}^{N_{1}})] \\
+& \int dx_{2}^{N_{2}} \exp[-\beta U(x_{2}^{N_{2}})]
+\end{aligned}
+\label{eqn:gepart}
+\end{equation}
+
+In order to define the acceptance rules for the MC moves, it is necessary to know the probability of finding the configuration with $N_{1}$ particles in box 1 with volume $V_{1}$ and positions $x_{1}^{N_{1}}$ and $x_{2}^{N_{2}}$. This probability is given by:
+
+\begin{equation}
+\pi(x_{1}^{N_{1}},x_{2}^{N_{2}},N_{1},N_{2},V_{1},V_{2}) \propto \dfrac{V_{1}^{N_{1}}V_{2}^{N_{2}}}{N_{1}!N_{2}!} \exp[-\beta U(x_{1}^{N_{1}}) -\beta U(x_{2}^{N_{2}})]
+\label{eqn:geprob}
+\end{equation}
+
+The acceptance criterion for the translation and rotation moves of configuration A	to B is similar to the the conventional NVT MC ensembles and is equal to:
+
+\begin{equation}
+acc_{A \rightarrow B} = \min(1,\exp[-\beta U(x_{A}^{N_{1}}) -\beta U(x_{B}^{N_{1}})])
+\label{eqn:drprob}
+\end{equation} 
+
+The exchange volume moves happen by exchanging an amount $\Delta V$ between the boxes to achieve pressure equilibrium. $\Delta V$ can be chosen from aa uniform distribution based on one defined maximum variation of volume ($\delta V_{max}$) with probability $1/\delta V_{max}$. The acceptance rules for these moves is: 
+
+\begin{equation}
+acc_{A \rightarrow B} = \min \left(1, \left(\dfrac{V_{1}^{B}}{V_{1}^{A}} \right)^{N_{1}=1} \left( \dfrac{V_{2}^{B}}{V_{2}^{A}} \right)^{N_{2}+1} \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right)
+\label{vprob}
+\end{equation}
+
+Particle exchange moves are carried out to obtain the equality of chemical potential the two boxes. One particle from one box is removed and then added to a random location in the other box. The criteria to accept or reject this type of movie is:
+
+\begin{equation}
+acc_{A \rightarrow B} = \min \left( 1, \dfrac{N_{1}V_{2}}{N_{2}V_{1}}  \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right)
+\label{moleprob}
+\end{equation}
+
+This method has been widely used to calculate phase equilibria, but under performs for the region near the critical point due large density fluctuations. The GEMC also has a poor performance for dense systems like systems with structured phases and at low temperatures since the particle exchange moves has a low acceptance ration for these dense systems.  
+
+
 %Os parâmetros estimados com equação SAFT-VR Mie foram usados para realizar simulações
 %no GEMC (Panagiotopoulos, 1987) com o simulador CASSANDRA (Shah e Maginn, 2011).
 %O método de GEMC foi desenvolvido com o intuito de estudar a coexistência entre fases

@@ -169,6 +169,12 @@ Dispon{\'\i}vel em:
   simulations involving molecular insertions and deletions. i. closed systems.
 \emph{Journal of Chemical Physics}, v.~127, p. 174103, 2007.}
 
+\bibitem[Frenkel e Smit 2001]{frenkel}
+\abntrefinfo{Frenkel e Smit}{FRENKEL; SMIT}{2001}
+{FRENKEL, D.; SMIT, B. \emph{Understanding Molecular Simulation}. 2nd. ed.
+  Orlando, FL, USA: Academic Press, Inc., 2001.
+ISBN 0122673514.}
+
 \bibitem[Geman e Geman 1984]{geman1984}
 \abntrefinfo{Geman e Geman}{GEMAN; GEMAN}{1984}
 {GEMAN, S.; GEMAN, D. Stochastic relaxation, gibbs distributions, and the
@@ -200,12 +206,24 @@ Dispon{\'\i}vel em:
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
 
+\bibitem[J.Chang 1992]{co2toliq}
+\abntrefinfo{J.Chang}{J.CHANG}{1992}
+{J.CHANG, C. The solubility of carbon dioxide in organic solvents at elevated
+  pressures.
+\emph{{F}luid {P}hase {E}quilibria}, v.~15, p. 235--242, 1992.}
+
 \bibitem[Jorge \textit{et al.} 2010]{garrido2010}
 \abntrefinfo{Jorge \textit{et al.}}{JORGE \textit{et al.}}{2010}
 {JORGE, M.; GARRIDO, N.; QUEIMADA, A.; ECONOMOU, I.; MACEDO, E. Effect of the
   integration method on the accuracy and computational efficiency of free
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
+
+\bibitem[Kamberaj, Low e Neal 2005]{kamberaj}
+\abntrefinfo{Kamberaj, Low e Neal}{KAMBERAJ; LOW; NEAL}{2005}
+{KAMBERAJ, H.; LOW, R.; NEAL, M. Time reversible and symplectic integrators for
+  molecular dynamics simulations of rigid molecules.
+\emph{Journal of Chemical Physics}, v.~122, p. 224114, 2005.}
 
 \bibitem[Kirkwood 1935]{kirkwood1935}
 \abntrefinfo{Kirkwood}{KIRKWOOD}{1935}
@@ -309,6 +327,13 @@ Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.71.211}.}
 {MARRINK, S.~J.; TIELEMAN, D.~P. Perspective on the martini model.
 \emph{Chemical Society Reviews}, v.~42, p. 6801– 6822, 2013.}
 
+\bibitem[Mart\'inez \textit{et al.} 2009]{packmol}
+\abntrefinfo{Mart\'inez \textit{et al.}}{MART\'INEZ \textit{et al.}}{2009}
+{MART\'INEZ, L.; ANDRADE, R.; BIRGIN, E.~G.; MART\'INEZ, J.~M. Packmol: a
+  package for building initial configurations for molecular dynamics
+  simulations.
+\emph{Journal of Computational Chemistry}, v.~30, p. 2157--2164, 2009.}
+
 \bibitem[Mej\'ia, Herdes e M\"uller 2014]{mejia2014}
 \abntrefinfo{Mej\'ia, Herdes e M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
 {MEJ\'IA, A.; HERDES, C.; M\"ULLER, E.~A. Force fields for coarse-grained
@@ -335,6 +360,12 @@ Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.71.211}.}
   transformations and its use to quantify error in common free energy methods.
 \emph{Journal of Chemical Theory and Computation}, v.~7, p. 4115–4134, 2011.}
 
+\bibitem[Panagiotopoulos 1987]{papa1987}
+\abntrefinfo{Panagiotopoulos}{PANAGIOTOPOULOS}{1987}
+{PANAGIOTOPOULOS, A. Direct determination of phase coexistence properties of
+  fluids using %monte carlo simulation in a new ensemble.
+\emph{Molecular Physics}, v.~61, p. 813–826, 1987.}
+
 \bibitem[Pantano e Klein 2009]{pantano2009}
 \abntrefinfo{Pantano e Klein}{PANTANO; KLEIN}{2009}
 {PANTANO, D.; KLEIN, M.~L. Characterization of membrane-protein interactions
@@ -349,6 +380,11 @@ Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.71.211}.}
   statistical associating fluid theory for heteronuclear molecules formed from
   mie segments.
 \emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
+
+\bibitem[Plimpton 1995]{lammps}
+\abntrefinfo{Plimpton}{PLIMPTON}{1995}
+{PLIMPTON, S. Fast parallel algorithms for short-range molecular dynamics.
+\emph{Journal of Computational Physics}, v.~117, p. 1--19, 1995.}
 
 \bibitem[Pohorille, Jarzynski e Chipot 2010]{pohorille2010}
 \abntrefinfo{Pohorille, Jarzynski e Chipot}{POHORILLE; JARZYNSKI; CHIPOT}{2010}
@@ -417,6 +453,12 @@ Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.71.211}.}
 \emph{Physical Review E}, American Physical Society, v.~70, p. 046701, Oct
   2004.
 Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevE.70.046701}.}
+
+\bibitem[Verlet 1967]{verlet}
+\abntrefinfo{Verlet}{VERLET}{1967}
+{VERLET, L. Computer "experiments" on classical fluids. i. thermodynamical
+  properties of lennard-jones molecules.
+\emph{Physical Review}, v.~159, p. 98--103, 1967.}
 
 \bibitem[Winger \textit{et al.} 2009]{winger2009}
 \abntrefinfo{Winger \textit{et al.}}{WINGER \textit{et al.}}{2009}

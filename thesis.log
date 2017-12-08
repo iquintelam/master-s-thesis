@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  7 DEC 2017 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  8 DEC 2017 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,7 +1258,7 @@ Overfull \hbox (2.25528pt too wide) detected at line 4
 
 
 ] [17] [18]
-<Figures/cicclotermo.jpg, id=333, 469.755pt x 368.37625pt>
+<Figures/cicclotermo.jpg, id=350, 469.755pt x 368.37625pt>
 File: Figures/cicclotermo.jpg Graphic file (type jpg)
 
 <use Figures/cicclotermo.jpg>
@@ -1285,7 +1285,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] [25] <Figures/mullergeo.jpg, id=491, 507.8975pt x 205.76875pt>
+] [25] <Figures/mullergeo.jpg, id=508, 507.8975pt x 205.76875pt>
 File: Figures/mullergeo.jpg Graphic file (type jpg)
 
 <use Figures/mullergeo.jpg>
@@ -1304,26 +1304,35 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
 
-[27 <./Figures/mullergeo.jpg>] [28] [29] [30] [31] [32]) [33]
+[27 <./Figures/mullergeo.jpg>] [28] [29] [30] [31] [32] [33]) [34]
 \openout2 = `chapters/methodology.aux'.
 
 
-(./chapters/methodology.tex) [34
+(./chapters/methodology.tex)
+Overfull \hbox (16.94917pt too wide) in paragraph at lines 8--454
+\T1/ppl/m/n/12 (-20) for al-chem-i-cal sim-u-la-tions de-vel-oped by our group,
+ avail-able at https://github.com/atoms-
+ []
+
+[35
 
 
 
-]
+] [36]
 \openout2 = `chapters/results.aux'.
 
- (./chapters/results.tex) [35
+ (./chapters/results.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [37
 
 
 
-]
+] [38]
 \openout2 = `chapters/conclusions.aux'.
 
-
-(./chapters/conclusions.tex) [36
+ (./chapters/conclusions.tex) [39
 
 
 
@@ -1333,38 +1342,38 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[37
+[40
 
 
-] [38] [39] [40]) [41]
+] [41] [42] [43] [44]) [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 611.
 
-[42
+[46
 
 
-] [43
+] [47
 
-] [44
+] [48
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 639.
 
-[45
+[49
 
 
-] [46
+] [50
 
-] [47
+] [51
 
 ]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
-[48
+[52
 
 ]
 \tf@lof=\write5
@@ -1390,13 +1399,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 667.
  ) 
 Here is how much of TeX's memory you used:
- 15265 strings out of 494929
- 225688 string characters out of 6180142
- 492092 words of memory out of 5000000
- 17823 multiletter control sequences out of 15000+600000
+ 15335 strings out of 494929
+ 226600 string characters out of 6180142
+ 495360 words of memory out of 5000000
+ 17870 multiletter control sequences out of 15000+600000
  71830 words of font info for 257 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,17n,44p,2337b,643s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,44p,2337b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1413,10 +1422,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on thesis.pdf (49 pages, 365993 bytes).
+Output written on thesis.pdf (53 pages, 383096 bytes).
 PDF statistics:
- 959 PDF objects out of 1000 (max. 8388607)
- 877 compressed objects within 9 object streams
- 237 named destinations out of 1000 (max. 500000)
- 48483 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1037 PDF objects out of 1200 (max. 8388607)
+ 950 compressed objects within 10 object streams
+ 260 named destinations out of 1000 (max. 500000)
+ 48507 words of extra memory for PDF output out of 51595 (max. 10000000)
 

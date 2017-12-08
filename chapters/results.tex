@@ -1,3 +1,83 @@
 \chapter{Results and Discussion} % Main chapter title
 
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\begin{table*}[h]
+\center
+  \caption{Calculated and experimental values for the Gibbs energy of solvation (kcal/mol) of solutes in non aqueous solvents}
+  \label{tbl:solv1}
+  \begin{tabular}{lllll}
+    \hline
+      Solvent & Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+    \hline
+    hexane    & benzene      & -3.96  & -3.90  $\pm$ 0.02 &  \\
+    hexane    & phenanthrene & -10.01 & -9.16  $\pm$ 0.02 & 0.85 \\
+    hexane    & pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
+    toluene   & pyrene       & -12.86 & -11.74 $\pm$ 0.02 & 1.12\\
+    toluene   & anthracene   & -11.31 & -10.03 $\pm$ 0.02 & 1.28\\
+    1-octanol & propane      & -1.32  & -1.34  $\pm$ 0.02 & 0.02 \\
+    1-octanol & phenanthrene & -10.22 & -8.34  $\pm$ 0.04 & - \\
+    1-octanol & anthracene   & -10.22 & -8.34  $\pm$ 0.04 & - \\
+    \hline
+  \end{tabular}
+
+\end{table*}
+
+\begin{table}[h]
+\center
+  \caption{Calculated values for the Gibbs energy of solvation (kcal/mol) of phenanthrene in toluene+$CO_{2}$}
+  \label{tbl:solv3}
+  \begin{tabular}{lll}
+    \hline
+      $w_{CO_{2}}$ & $\Delta G_{solv}^{Mie}$ & $\Delta G_{solv}^{Mie}$\\
+    \hline
+     & $k_{ij}=0$& $k_{ij} \neq 0$\\
+    \hline
+    0.0    & -10.55 $\pm$ 0.03  & \\
+    0.050  & -10.55 $\pm$ 0.03  & \\
+    0.087  & -10.73 $\pm$ 0.02  & \\
+    0.119  & -10.73 $\pm$ 0.02  & \\
+    0.169  & -10.67 $\pm$ 0.02  & \\
+    0.289  & -10.77 $\pm$ 0.02  & \\
+    0.471  & -8.958 $\pm$ 0.02  & \\
+    \hline
+  \end{tabular}
+
+\end{table}
+
+\subsection{Hydration free energies}
+
+
+\begin{table}[h]
+\center
+  \caption{Binary interaction parameters employed}
+  \label{tbl:kij}
+  \begin{tabular}{ll}
+    \hline
+      Pair & $k_{ij}$ \\
+    \hline
+    water  + propane      & 0.067  \\
+    water  + benzene      & 0.162 \\  
+    water  + toluene      & 0.152 \\
+    water  + phenanthrene & 0.148  \\
+    \hline
+  \end{tabular}
+
+\end{table}
+
+\begin{table*}[h]
+\center
+  \caption{Calculated and experimental values for the Gibbs energy of solvation (kcal/mol) of solutes in water}
+  \label{tbl:solv2}
+  \begin{tabular}{lllll}
+    \hline
+     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE &$\Delta G_{solv}^{GAFF}$ \\
+    \hline
+    propane      &  2.00 $\pm$ 0.20 & 1.98 $\pm$ 0.02& 0.03 &2.50 $\pm$0.02 \\
+    benzene      & -0.90 $\pm$ 0.20 & 4.51 $\pm$     &      &-0.81$\pm$0.02 \\  
+    toluene      & -0.90 $\pm$ 0.20 & 4.34 $\pm$     &      &-0.79$\pm$0.03\\
+    phenanthrene & -3.88 $\pm$ 0.60 & 3.63 $\pm$ 0.03& 0.25 &-5.26$\pm$0.03 \\
+    \hline
+  \end{tabular}
+
+\end{table*}
