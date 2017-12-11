@@ -10,17 +10,77 @@
     \hline
       Solvent & Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
     \hline
-    hexane    & benzene      & -3.96  & -3.90  $\pm$ 0.02 &  \\
-    hexane    & phenanthrene & -10.01 & -9.16  $\pm$ 0.02 & 0.85 \\
+    hexane    & benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
     hexane    & pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
+    hexane    & phenanthrene & -10.01 & -9.16  $\pm$ 0.02 & 0.85 \\
     toluene   & pyrene       & -12.86 & -11.74 $\pm$ 0.02 & 1.12\\
     toluene   & anthracene   & -11.31 & -10.03 $\pm$ 0.02 & 1.28\\
-    1-octanol & propane      & -1.32  & -1.34  $\pm$ 0.02 & 0.02 \\
-    1-octanol & phenanthrene & -10.22 & -8.34  $\pm$ 0.04 & - \\
-    1-octanol & anthracene   & -10.22 & -8.34  $\pm$ 0.04 & - \\
+    1-octanol & propane      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
+    1-octanol & anthracene   & -17.72 & -8.16  $\pm$ 0.03 & 3.56 \\
+    1-octanol & phenanthrene & -10.22 & -8.34  $\pm$ 0.03 & 1.47 \\
     \hline
   \end{tabular}
 
+\end{table*}
+
+\begin{table*}[h]
+\center
+  \label{tbl:solv1tes}
+  \begin{tabular}{llll}
+    \hline
+     Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+    \hline
+    benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
+    pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
+    phenanthrene & -10.01 & -9.16  $\pm$ 0.02 & 0.85 \\
+    \hline
+  \end{tabular}
+
+\end{table*}
+
+\begin{table*}[h]
+\center
+  \label{tbl:solv1tes}
+  \begin{tabular}{llll}
+    \hline
+     Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+    \hline
+    propane      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
+    anthracene   & -17.72 & -8.16  $\pm$ 0.03 & 3.56 \\
+    phenanthrene & -10.22 & -8.34  $\pm$ 0.03 & 1.47 \\
+    \hline
+  \end{tabular}
+
+\end{table*}
+
+\begin{table*}[h]
+\center
+  \label{tbl:solv1tes}
+  \begin{tabular}{llll}
+    \hline
+     Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+    \hline
+    pyrene       & -12.86 & -11.74 $\pm$ 0.02 & 1.12\\
+    anthracene   & -11.31 & -10.03 $\pm$ 0.02 & 1.28\\
+    phenanthrene   & - & -10.55 $\pm$ 0.03 & -\\
+    \hline
+  \end{tabular}
+
+\end{table*}
+
+\begin{table*}[h]
+\center
+  \label{tbl:solv2}
+  \begin{tabular}{lllll}
+    \hline
+     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE &$\Delta G_{solv}^{GAFF}$ \\
+    \hline
+    propane      &  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01& 0.01 &2.50 $\pm$0.02 \\
+    benzene      & -0.86 $\pm$ 0.20 & -0.82 $\pm$ 0.01    &  0.04    &-0.81$\pm$0.02 \\  
+    toluene      & -0.83 $\pm$ 0.20 & -0.92 $\pm$ 0.01   &  0.09    &-0.79$\pm$0.03\\
+    phenanthrene & -3.88 $\pm$ 0.60 & 3.63 $\pm$ 0.03& 0.25 &-5.26$\pm$0.03 \\
+    \hline
+  \end{tabular}
 \end{table*}
 
 \begin{table}[h]
@@ -36,10 +96,9 @@
     0.0    & -10.55 $\pm$ 0.03  & \\
     0.050  & -10.55 $\pm$ 0.03  & \\
     0.087  & -10.73 $\pm$ 0.02  & \\
-    0.119  & -10.73 $\pm$ 0.02  & \\
-    0.169  & -10.67 $\pm$ 0.02  & \\
-    0.289  & -10.77 $\pm$ 0.02  & \\
-    0.471  & -8.958 $\pm$ 0.02  & \\
+    0.119  & -10.78 $\pm$ 0.02  & \\
+    0.169  & -10.71 $\pm$ 0.02  & \\
+    0.289  & -10.69 $\pm$ 0.02  & \\
     \hline
   \end{tabular}
 
@@ -73,9 +132,9 @@
     \hline
      Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE &$\Delta G_{solv}^{GAFF}$ \\
     \hline
-    propane      &  2.00 $\pm$ 0.20 & 1.98 $\pm$ 0.02& 0.03 &2.50 $\pm$0.02 \\
-    benzene      & -0.90 $\pm$ 0.20 & 4.51 $\pm$     &      &-0.81$\pm$0.02 \\  
-    toluene      & -0.90 $\pm$ 0.20 & 4.34 $\pm$     &      &-0.79$\pm$0.03\\
+    propane      &  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01& 0.01 &2.50 $\pm$0.02 \\
+    benzene      & -0.86 $\pm$ 0.20 & -0.82 $\pm$ 0.01    &  0.04    &-0.81$\pm$0.02 \\  
+    toluene      & -0.83 $\pm$ 0.20 & -0.92 $\pm$ 0.01   &  0.09    &-0.79$\pm$0.03\\
     phenanthrene & -3.88 $\pm$ 0.60 & 3.63 $\pm$ 0.03& 0.25 &-5.26$\pm$0.03 \\
     \hline
   \end{tabular}
