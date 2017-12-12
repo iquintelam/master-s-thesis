@@ -2,13 +2,44 @@
 
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
+\subsection{Phenanthrene Parameterization}
+
+
+\subsection{Solvation free energies}
+
+The force field parameters for phenanthrene were estimated as described above and the ones for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}:
+
+\begin{table*}[h]
+\center
+  \caption{SAFT-$\gamma$ Mie Force Field for each substance used in this work}
+  \label{tbl:parameters}
+  \begin{tabular}{lllll}
+    \hline
+        & $m_s$ & $\epsilon/k_{B}$ (K) & $\sigma (\dot{A})$ & $\lambda_r$ \\
+    \hline
+    Water & 1 & 305.21 & 2.902 & 8.0 \\
+    Propane & 1 & 426.08 & 4.871 & 34.29 \\
+    Carbon dioxide  & 2 & 194.94 & 2.848 & 14.65 \\
+    Hexane  & 2  & 376.35 & 4.508 & 19.57 \\  
+    Octanol & 3 & 495.71 & 4.341 & 28.79 \\
+    Toluene  & 3 & 268.24 & 3.685 & 11.80 \\
+    Benzene  & 3 & 230.30 & 3.441 & 10.45 \\
+    Pyrene  & 4 & 459.04 & 4.134 & 15.79 \\
+    Anthracene & 5 & 259.68 & 3.631 & 9.55 \\
+    Phenanthrene & 5 & 262.74 & 4.077 & 9.55 \\
+    \hline
+  \end{tabular}
+
+\end{table*}
+
+
 \begin{table*}[h]
 \center
   \caption{Calculated and experimental values for the Gibbs energy of solvation (kcal/mol) of solutes in non aqueous solvents}
   \label{tbl:solv1}
   \begin{tabular}{lllll}
     \hline
-      Solvent & Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+      Solvent & Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute Deviation \\
     \hline
     hexane    & benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
     hexane    & pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
@@ -16,23 +47,10 @@
     toluene   & pyrene       & -12.86 & -11.74 $\pm$ 0.02 & 1.12\\
     toluene   & anthracene   & -11.31 & -10.03 $\pm$ 0.02 & 1.28\\
     1-octanol & propane      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
-    1-octanol & anthracene   & -17.72 & -8.16  $\pm$ 0.03 & 3.56 \\
+    1-octanol & anthracene   & -11.72 & -8.16  $\pm$ 0.03 & 3.56 \\
     1-octanol & phenanthrene & -10.22 & -8.34  $\pm$ 0.03 & 1.47 \\
     \hline
-  \end{tabular}
-
-\end{table*}
-
-\begin{table*}[h]
-\center
-  \label{tbl:solv1tes}
-  \begin{tabular}{llll}
-    \hline
-     Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
-    \hline
-    benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
-    pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
-    phenanthrene & -10.01 & -9.16  $\pm$ 0.02 & 0.85 \\
+    RMSE      &              &        &                   & 1.54     \\
     \hline
   \end{tabular}
 
@@ -43,11 +61,11 @@
   \label{tbl:solv1tes}
   \begin{tabular}{llll}
     \hline
-     Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio \\
     \hline
-    propane      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
-    anthracene   & -17.72 & -8.16  $\pm$ 0.03 & 3.56 \\
-    phenanthrene & -10.22 & -8.34  $\pm$ 0.03 & 1.47 \\
+    benzeno      & -3.96  & -3.76  $\pm$ 0.01 & -0.20 \\
+    pireno       & -11.53 & -10.82 $\pm$ 0.02 & -0.71 \\
+    fenantreno   & -10.01 & -9.16  $\pm$ 0.02 & -0.85 \\
     \hline
   \end{tabular}
 
@@ -58,11 +76,26 @@
   \label{tbl:solv1tes}
   \begin{tabular}{llll}
     \hline
-     Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE \\
+     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio \\
     \hline
-    pyrene       & -12.86 & -11.74 $\pm$ 0.02 & 1.12\\
-    anthracene   & -11.31 & -10.03 $\pm$ 0.02 & 1.28\\
-    phenanthrene   & - & -10.55 $\pm$ 0.03 & -\\
+    propano      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
+    antraceno   & -11.72 & -8.16  $\pm$ 0.03 & -3.56 \\
+    fenantreno & -10.22 & -8.34  $\pm$ 0.03 & -1.47 \\
+    \hline
+  \end{tabular}
+
+\end{table*}
+
+\begin{table*}[h]
+\center
+  \label{tbl:solv1tes}
+  \begin{tabular}{llll}
+    \hline
+     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio \\
+    \hline
+    pireno       & -12.86 & -11.74 $\pm$ 0.02 & -1.12\\
+    antraceno   & -11.31 & -10.03 $\pm$ 0.02 & -1.28\\
+    fenantreno   & - & -10.55 $\pm$ 0.03 & -\\
     \hline
   \end{tabular}
 
@@ -73,12 +106,12 @@
   \label{tbl:solv2}
   \begin{tabular}{lllll}
     \hline
-     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE &$\Delta G_{solv}^{GAFF}$ \\
+     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio &$\Delta G_{solv}^{GAFF}$ \\
     \hline
-    propane      &  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01& 0.01 &2.50 $\pm$0.02 \\
-    benzene      & -0.86 $\pm$ 0.20 & -0.82 $\pm$ 0.01    &  0.04    &-0.81$\pm$0.02 \\  
-    toluene      & -0.83 $\pm$ 0.20 & -0.92 $\pm$ 0.01   &  0.09    &-0.79$\pm$0.03\\
-    phenanthrene & -3.88 $\pm$ 0.60 & 3.63 $\pm$ 0.03& 0.25 &-5.26$\pm$0.03 \\
+    propano      &  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01& -0.01 &2.50 $\pm$0.02 \\
+    benzeno      & -0.86 $\pm$ 0.20 & -0.88 $\pm$ 0.01    &  0.02    &-0.81$\pm$0.02 \\  
+    tolueno      & -0.83 $\pm$ 0.20 & -0.92 $\pm$ 0.01   &  0.09    &-0.79$\pm$0.03\\
+    fenantreno & -3.88 $\pm$ 0.60 & -3.63 $\pm$ 0.03& -0.25 &-5.26$\pm$0.03 \\
     \hline
   \end{tabular}
 \end{table*}
@@ -87,18 +120,15 @@
 \center
   \caption{Calculated values for the Gibbs energy of solvation (kcal/mol) of phenanthrene in toluene+$CO_{2}$}
   \label{tbl:solv3}
-  \begin{tabular}{lll}
+  \begin{tabular}{ll}
     \hline
-      $w_{CO_{2}}$ & $\Delta G_{solv}^{Mie}$ & $\Delta G_{solv}^{Mie}$\\
+      $w_{CO_{2}}$ & $\Delta G_{solv}^{Mie}$ \\
     \hline
-     & $k_{ij}=0$& $k_{ij} \neq 0$\\
-    \hline
-    0.0    & -10.55 $\pm$ 0.03  & \\
-    0.050  & -10.55 $\pm$ 0.03  & \\
-    0.087  & -10.73 $\pm$ 0.02  & \\
-    0.119  & -10.78 $\pm$ 0.02  & \\
-    0.169  & -10.71 $\pm$ 0.02  & \\
-    0.289  & -10.69 $\pm$ 0.02  & \\
+    0.0    & -10.55 $\pm$ 0.03   \\
+    0.087  & -10.73 $\pm$ 0.02   \\
+    0.119  & -10.78 $\pm$ 0.02   \\
+    0.169  & -10.71 $\pm$ 0.02   \\
+    0.289  & -10.69 $\pm$ 0.02   \\
     \hline
   \end{tabular}
 
@@ -130,12 +160,14 @@
   \label{tbl:solv2}
   \begin{tabular}{lllll}
     \hline
-     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & RMSE &$\Delta G_{solv}^{GAFF}$ \\
+     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute Deviation &$\Delta G_{solv}^{GAFF}$ \\
     \hline
     propane      &  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01& 0.01 &2.50 $\pm$0.02 \\
-    benzene      & -0.86 $\pm$ 0.20 & -0.82 $\pm$ 0.01    &  0.04    &-0.81$\pm$0.02 \\  
+    benzene      & -0.86 $\pm$ 0.20 & -0.88 $\pm$ 0.01    &  0.02    &-0.81$\pm$0.02 \\  
     toluene      & -0.83 $\pm$ 0.20 & -0.92 $\pm$ 0.01   &  0.09    &-0.79$\pm$0.03\\
     phenanthrene & -3.88 $\pm$ 0.60 & 3.63 $\pm$ 0.03& 0.25 &-5.26$\pm$0.03 \\
+    \hline
+    RMSE         &                  &               &  0.13     &      \\
     \hline
   \end{tabular}
 
