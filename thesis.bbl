@@ -93,6 +93,12 @@
   dynamicss.
 \emph{Molecular Simulation}, v.~107, p. 393--401, 2009.}
 
+\bibitem[Chang 1992]{co2toliq}
+\abntrefinfo{Chang}{CHANG}{1992}
+{CHANG, C.~J. The solubility of carbon dioxide in organic solvents at elevated
+  pressures.
+\emph{{F}luid {P}hase {E}quilibria}, v.~15, p. 235--242, 1992.}
+
 \bibitem[Chebaro \textit{et al.} 2009]{opep20092}
 \abntrefinfo{Chebaro \textit{et al.}}{CHEBARO \textit{et al.}}{2009a}
 {CHEBARO, Y.; DONG, X.; LAGHAEI, R.; DERREUMAUX, P.; MOUSSEAU, N. Pep-fold: an
@@ -182,12 +188,6 @@ ISBN 0122673514.}
 {HERDES, C.; TOTTON, T.~S.; M\"ULLER, E.~A. Coarse grained force field for the
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
-
-\bibitem[J.Chang 1992]{co2toliq}
-\abntrefinfo{J.Chang}{J.CHANG}{1992}
-{J.CHANG, C. The solubility of carbon dioxide in organic solvents at elevated
-  pressures.
-\emph{{F}luid {P}hase {E}quilibria}, v.~15, p. 235--242, 1992.}
 
 \bibitem[Jorge \textit{et al.} 2010]{garrido2010}
 \abntrefinfo{Jorge \textit{et al.}}{JORGE \textit{et al.}}{2010}
@@ -311,6 +311,13 @@ ISBN 0122673514.}
 \emph{Industrial and Chemical Engineering Research}, v.~53, p. 4131–4141,
   2014.}
 
+\bibitem[Mortimer e Murphy 1923]{pvphen}
+\abntrefinfo{Mortimer e Murphy}{MORTIMER; MURPHY}{1923}
+{MORTIMER, S.; MURPHY, R. The vapor pressures of some substances found in coal
+  tar.
+\emph{Industrial and Engineering Chemistry Research}, v.~14, p. 1140--1142,
+  1923.}
+
 \bibitem[M\"uller e Gubbins 1993]{muller1993}
 \abntrefinfo{M\"uller e Gubbins}{M\"ULLER; GUBBINS}{1993}
 {M\"ULLER, E.~A.; GUBBINS, K.~E. Simulation of hard triatomic and tetratomic
@@ -398,6 +405,12 @@ ISBN 0122673514.}
 {SHYU, C.; YTREBERG, F.~M. Reducing the bias and uncertainty of free energy
   estimates by using regression to fit thermodynamic integration data.
 \emph{Journal of Computational Chemistry}, v.~6, p. 1018–1027, 2010.}
+
+\bibitem[Smith, Ness e Abbot 2007]{smithbook}
+\abntrefinfo{Smith, Ness e Abbot}{SMITH; NESS; ABBOT}{2007}
+{SMITH, J.; NESS, H. V.; ABBOT, M.~M. \emph{Introdu{\c c}{\~a}o \'a
+  Termodin{\~a}mica da Engenharia Qu\'imica}. 2. ed. Rio de Janeiro: LTC,
+  2007.}
 
 \bibitem[Sterpone, Derreumaux e Melchionna 2015]{opep2015}
 \abntrefinfo{Sterpone, Derreumaux e Melchionna}{STERPONE; DERREUMAUX;
