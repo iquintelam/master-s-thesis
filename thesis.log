@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  13 DEC 2017 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  14 DEC 2017 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,6 +1252,11 @@ Overfull \hbox (2.25528pt too wide) detected at line 5
 \T1/ppl/m/n/12 Figure 4.1.1 ^^U  
  []
 
+
+Overfull \hbox (2.25528pt too wide) detected at line 6
+\T1/ppl/m/n/12 Figure 4.1.2 ^^U  
+ []
+
 ) [10
 
 ] (./thesis.lot) [11
@@ -1277,7 +1282,7 @@ Overfull \hbox (2.25528pt too wide) detected at line 5
 
 
 ] [17] [18]
-<Figures/cicclotermo.jpg, id=344, 469.755pt x 368.37625pt>
+<Figures/cicclotermo.jpg, id=346, 469.755pt x 368.37625pt>
 File: Figures/cicclotermo.jpg Graphic file (type jpg)
 
 <use Figures/cicclotermo.jpg>
@@ -1304,7 +1309,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] [25] <Figures/mullergeo.jpg, id=502, 507.8975pt x 205.76875pt>
+] [25] <Figures/mullergeo.jpg, id=504, 507.8975pt x 205.76875pt>
 File: Figures/mullergeo.jpg Graphic file (type jpg)
 
 <use Figures/mullergeo.jpg>
@@ -1328,20 +1333,26 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 (./chapters/methodology.tex
-<Figures/fen5.jpg, id=677, 383.93437pt x 214.55156pt>
+<Figures/fen5.jpg, id=679, 383.93437pt x 214.55156pt>
 File: Figures/fen5.jpg Graphic file (type jpg)
  <use Figures/fen5.jpg>
 Package pdftex.def Info: Figures/fen5.jpg used on input line 10.
-(pdftex.def)             Requested size: 159.25278pt x 88.99467pt.
+(pdftex.def)             Requested size: 113.75pt x 63.56387pt.
 
-[35
+<Figures/fe3.png, id=684, 240.9pt x 213.79875pt>
+File: Figures/fe3.png Graphic file (type png)
+ <use Figures/fe3.png>
+Package pdftex.def Info: Figures/fe3.png used on input line 25.
+(pdftex.def)             Requested size: 68.24722pt x 60.56789pt.
+ [35
 
 
 
- <./Figures/fen5.jpg>] [36]) [37]
+ <./Figures/fen5.jpg> <./Figures/fe3.png (PNG copy)>] [36]) [37]
 \openout2 = `chapters/results.aux'.
 
- (./chapters/results.tex
+
+(./chapters/results.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1434,11 +1445,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 648.
  ) 
 Here is how much of TeX's memory you used:
- 15169 strings out of 494929
- 224522 string characters out of 6180142
- 400852 words of memory out of 5000000
- 17686 multiletter control sequences out of 15000+600000
- 72605 words of font info for 267 fonts, out of 8000000 for 9000
+ 15173 strings out of 494929
+ 224587 string characters out of 6180142
+ 401939 words of memory out of 5000000
+ 17691 multiletter control sequences out of 15000+600000
+ 72450 words of font info for 265 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,17n,44p,2334b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1457,10 +1468,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on thesis.pdf (53 pages, 392247 bytes).
+Output written on thesis.pdf (53 pages, 417686 bytes).
 PDF statistics:
- 1055 PDF objects out of 1200 (max. 8388607)
- 967 compressed objects within 10 object streams
- 265 named destinations out of 1000 (max. 500000)
- 48512 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1067 PDF objects out of 1200 (max. 8388607)
+ 978 compressed objects within 10 object streams
+ 266 named destinations out of 1000 (max. 500000)
+ 48517 words of extra memory for PDF output out of 51595 (max. 10000000)
 

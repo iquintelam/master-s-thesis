@@ -36,18 +36,18 @@
 \contentsline {section}{\numberline {4.2}Solvation Free energy Calculations}{36}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{38}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.1}Phenanthrene Parameterization}{38}{subsection.5.0.1}
-\contentsline {subsection}{\numberline {5.0.2}Solvation free energies}{38}{subsection.5.0.2}
-\contentsline {subsection}{\numberline {5.0.3}Hydration free energies}{39}{subsection.5.0.3}
+\contentsline {section}{\numberline {5.1}Phenanthrene Parameterization}{38}{section.5.1}
+\contentsline {section}{\numberline {5.2}Solvation free energies}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}Hydration free energies}{39}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{41}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{42}{section*.28}
+\contentsline {chapter}{\uppercase {Bibliography}}{42}{section*.29}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{48}{section*.29}
+\contentsline {part}{\uppercase {Appendix}}{48}{section*.30}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -56,7 +56,7 @@
 \renewcommand *{\cftappendixname }{ANNEX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Annex}}{50}{section*.30}
+\contentsline {part}{\uppercase {Annex}}{50}{section*.31}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}

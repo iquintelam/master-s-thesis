@@ -2,10 +2,10 @@
 
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\subsection{Phenanthrene Parameterization}
+\section{Phenanthrene Parameterization}
 
 
-\subsection{Solvation free energies}
+\section{Solvation free energies}
 
 The force field parameters for phenanthrene were estimated as described above and the ones for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}:
 
@@ -57,13 +57,13 @@ The force field parameters for phenanthrene were estimated as described above an
 \begin{table*}[h]
 \center
   \label{tbl:solv1tes}
-  \begin{tabular}{llll}
+  \begin{tabular}{lllll}
     \hline
-     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio \\
+     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio & $\Delta G_{solv}^{TraPPE}$ \\
     \hline
-    benzeno      & -3.96  & -3.76  $\pm$ 0.01 & -0.20 \\
-    pireno       & -11.53 & -10.82 $\pm$ 0.02 & -0.71 \\
-    fenantreno   & -10.01 & -9.16  $\pm$ 0.02 & -0.85 \\
+    benzeno      & -3.96  & -3.76  $\pm$ 0.01 & -0.20 & -4.35 $\pm$ 0.05\\
+    pireno       & -11.53 & -10.82 $\pm$ 0.02 & -0.71 & -\\
+    fenantreno   & -10.01 & -9.16  $\pm$ 0.02 & -0.85 & -\\
     \hline
   \end{tabular}
 
@@ -72,13 +72,13 @@ The force field parameters for phenanthrene were estimated as described above an
 \begin{table*}[h]
 \center
   \label{tbl:solv1tes}
-  \begin{tabular}{llll}
+  \begin{tabular}{lllll}
     \hline
-     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio \\
+     Soluto & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Desvio & $\Delta G_{solv}^{TraPPE}$\\
     \hline
-    propano      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
-    antraceno   & -11.72 & -8.16  $\pm$ 0.03 & -3.56 \\
-    fenantreno & -10.22 & -8.34  $\pm$ 0.03 & -1.47 \\
+    propano      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 & -1.0 $\pm$ 0.2\\
+    antraceno   & -11.72 & -8.12  $\pm$ 0.03 & -3.61 & -14.21 $\pm$ 0.41\\
+    fenantreno & -10.22 & -8.36  $\pm$ 0.03 & -1.86 & -\\
     \hline
   \end{tabular}
 
@@ -93,7 +93,7 @@ The force field parameters for phenanthrene were estimated as described above an
     \hline
     pireno       & -12.86 & -11.74 $\pm$ 0.02 & -1.12\\
     antraceno   & -11.31 & -10.03 $\pm$ 0.02 & -1.28\\
-    fenantreno   & - & -10.55 $\pm$ 0.03 & -\\
+    fenantreno   & - & -10.65 $\pm$ 0.02 & -\\
     \hline
   \end{tabular}
 
@@ -122,7 +122,7 @@ The force field parameters for phenanthrene were estimated as described above an
     \hline
       $w_{CO_{2}}$ & $\Delta G_{solv}^{Mie}$ \\
     \hline
-    0.0    & -10.55 $\pm$ 0.03   \\
+    0.0    & -10.65 $\pm$ 0.03   \\
     0.087  & -10.73 $\pm$ 0.02   \\
     0.119  & -10.78 $\pm$ 0.02   \\
     0.169  & -10.71 $\pm$ 0.02   \\
@@ -132,7 +132,7 @@ The force field parameters for phenanthrene were estimated as described above an
 
 \end{table}
 
-\subsection{Hydration free energies}
+\section{Hydration free energies}
 
 
 \begin{table}[h]

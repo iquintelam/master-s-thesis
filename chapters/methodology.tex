@@ -7,7 +7,7 @@
 The two parameterization strategies for ring molecules described in section \ref{parsaft} were followed for phenanthrene. For both of them, only vapor pressure data \cite{pvphen} was used due to the unavailability of saturated liquid density and the attractive parameter was set to six to avoid correlation with repulsive parameter. The parameterization with the ring equation of \citeonline{muller2017} was made with the number of segments fixed in 5 since this level of coarse graining was also used for the similar molecule anthracene in the original article:
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.35\linewidth]{Figures/fen5}
+\includegraphics[width=0.25\linewidth]{Figures/fen5}
 \caption{Geometry for $m_{s}=5$}
 \label{fig:fen5}
 \end{figure}
@@ -18,26 +18,19 @@ The minimization was done using the Particle Swarm Optimization (PSO) method wit
 \label{eqn:fobjm}
 \end{equation}
 
-The $P_{v}^{exp}$ is the experimental vapor pressure and $P_{v}^{SAFT}$ is the vapor pressure obtained with SAFT-VR Mie EoS. The method used to calculate the bubble point was the one proposed by \citeonline{smithbook}. The parameters $\sigma$, $\epsilon $ and $\lambda _{r}$ resulted from this minimization are the final force field parameters to be used in molecular simulations. The parameterization with the \citeonline{lafitte2012} ring equation requires was done with $m_{s}=3$ so every bead would represent one ring. The first part of the estimation followed the same procedure of the one described above. As explained in section \ref{parsaft}, the \citeonline{lafitte2012} equation requires the estimation of the correction factors $c_{\sigma}$ and $c_{\epsilon}$ (Eqs. \eqref{eqn:csigma} and \eqref{eqn:ceps}). The PSO method was also used and the objective function is the one in Eq. \eqref{eqn:fobjla}. The vapor pressures and saturated liquid densities from molecular simulations was obtained with the GEMC method (section \ref{gemc}).
-    
-%Essas simulações no GEMC-NVT foram feitas inserindo-se
-%aleatoriamente 400 moléculas na caixa líquida e 100 moléculas na caixa vapor. As densidades
-%iniciais das caixas foram escolhidas ajustando-as às densidades obtidas com a EdE SAFT-VR
-%Mie, para evitar que todas as moléculas migrassem pra uma única caixa ao longo da
-%simulação. A simulação consistiu em, no mínimo, 10000 ciclos de equilibração e 100000
-%ciclos de produção, sendo que cada ciclo de MC corresponde a 1000 tentativas de rotação,
-%1000 de translação, 100 de inserção, 100 de exclusão e 10 de variação de volume. A distância
-%de corte usada foi igual a quatro vezes o valor do diâmetro do segmento estimado e as
-%interações de van der Waals foram calculadas através do potencial Mie com correção de longa
-%distância (tail correction). As propriedades densidade de vapor ( vap ρ ), densidade de líquido
-%( liq ρ ) e pressão ( sim Pv ) foram amostradas a cada 100 ciclos de MC e essas amostragens foram
-%divididas em cinco blocos para os cálculos da média e do desvio padrão. Os resultados
-%
-%obtidos nessas simulações foram usados para estimar coeficientes de correção para os
-%parâmetros conformacionais do campo de força (
-%σ c e c
-%), que são relacionados aos
-%parâmetros provenientes da EdE SAFT-VR Mie através de parâmetros oriundos de ajuste,
+The $P_{v}^{exp}$ is the experimental vapor pressure and $P_{v}^{SAFT}$ is the vapor pressure obtained with SAFT-VR Mie EoS. The method used to calculate the bubble point was the one proposed by \citeonline{smithbook}. The parameters $\sigma$, $\epsilon $ and $\lambda _{r}$ resulted from this minimization are the final force field parameters to be used in molecular simulations. The parameterization with the \citeonline{lafitte2012} ring equation was done with $m_{s}=3$ so every bead would represent one ring:
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.15\linewidth]{Figures/fe3}
+	\caption{Geometry for $m_{s}=3$}
+	\label{fig:fen3}
+\end{figure}
+
+The first part of the estimation followed the same procedure of the one described above for the \citeonline{muller2017} equation. As explained in section \ref{parsaft}, the \citeonline{lafitte2012} equation requires the estimation of the correction factors $c_{\sigma}$ and $c_{\epsilon}$ (Eqs. \eqref{eqn:csigma} and \eqref{eqn:ceps}). The PSO method was also used and the objective function is the one in Eq. \eqref{eqn:fobjla}. In this equation, the vapor pressures and saturated liquid densities from molecular simulations was obtained using the Gibbs Ensemble Monte Carlo method on the NVT ensemble  (section \ref{gemc}).
+
+The boxes for the simulations on the GEMC-NVT were generated inserting 400 molecules on the liquid one and 100 on the vapor one with the Packmol package \cite{packmol}. The initial densities of each box were given the value of the saturated densities found with the SAFT-VR Mie Eos, to avoid the migration of all molecules to a single phase throughout the simulation. The equilibration and production time consisted of $10^{4}$ and $5 10^{4}$ MC cycles respectively. Each MC cycle corresponded to $10^3$ rotation trials, $10^3$ translation trials, $10^2$ molecule insertion trials, $10^2$ molecule deletion trials and 10 volume exchange trials. The cut off distance was equal to $20 \hat{A}$ with no long range interactions. The saturated vapor and liquid densities ($\rho_{vap}$ and $\rho_{liq}$) and the vapor pressure ($P_{v}$) were sampled at each 100 MC cycles and this data were divided in five blocks to calculate the averages and standard deviations. The corrections found after the estimations was then used to calculate the of $\sigma$ and $\epsilon$ parameters to use in molecular simulations with Eqs. \eqref{eqn:simsigma} and \eqref{eqn:simeps}.
+
 \section{Solvation Free energy Calculations}
 
 The molecular dynamic simulations to estimate the free energy differences with the SAFT-$\gamma$ Mie force field were performed using the Lammps package \cite{lammps}. The motion's equations were integrated with the velocity-Verlet algorithm \cite{verlet} with time step of 1 fs. The molecules were treated as rigid bodies, as required by the coarse grained model. The thermostat and the barostat were the Nose/Hoover with chains with a damping factors of 100 and 1000 fs respectively. The SAFT-$\gamma$ Mie model doesn't consider electrostatics interactions explicitly, hence there was no shifting of forces or long range corrections and the potential cutoff was equal to 20 $\dot{A}$ with a neighbor skin of 2 $\dot{A}$. The initial configuration of the  solvated systems were generated with the Packmol package \cite{packmol}. For the binary mixtures, one molecule of solute and a varying number of solvent molecules- 700 molecules for toluene and octanol, 1024 for hexane, 3000 for water - were randomly added to a cubic box. The simulations to study solvation free energy of phenanthrene in a mixture of toluene and carbon dioxide were done with different fractions of carbon dioxide. The  system consisted of one molecule of phenanthrene for all the fractions and 123 molecules of $CO_{2}$ and 618 molecules of toluene for $w_{CO_{2}} = 0.087$; 166 molecules of $CO_{2}$; 589 molecules of toluene for $w_{CO_{2}} = 0.119$; 232 molecules of $CO_{2}$ and 545 molecules of toluene for $w_{CO_{2}} = 0.169$ and 380 molecules of $CO_{2}$ and 446 molecules of toluene for $w_{CO_{2}} = 0.289$.
