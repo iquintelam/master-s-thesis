@@ -111,12 +111,16 @@ U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda
 \end{aligned}
 \end{equation}
 
-where $\alpha$ is a constant in which the value of 0.5 is normally assumed to it. The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev} which samples all state in a single simulation. This method allows a faster sampling across the alchemical states considering that the kinetic barriers are not substantial. 
+where $\alpha$ is a constant in which the value of 0.5 is normally assumed to it. The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev} which samples all state in a single simulation. This method allows a faster sampling across the alchemical states considering that the kinetic barriers are not substantial. The free energies of solvation obtained can be used to calculate the partition coefficients, that are a measure of the partitioning of one solute in two solvents (a nad b) at a temperature T:
 
+\begin{equation}
+\label{eqn:partcoe}
+\log{P}^{a/b} = \frac{\Delta G_{solv}^{a} - \Delta G_{solv}^{b}}{2.303RT}
+\end{equation}
 
 \section{Post simulation methods}
 
-The data obtained with molecular dynamics simulations method explained in the section above contain the potential energies correspondent to each $\lambda$. These potential energies obtained then needs to be post processed and analyzed in order to calculate the solvation free energies. Some of the widely used method for these calculations are going to be briefly describe below. 
+The data obtained with molecular dynamics simulations method explained in the section above contain the potential energies correspondent to each $\lambda$. These potential energies obtained needs to be post processed and analyzed in order to calculate the solvation free energies. Some of the widely used method for these calculations are going to be briefly describe below. 
 
 \subsection{Thermodynamic integration}
 
