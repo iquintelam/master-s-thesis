@@ -23,7 +23,6 @@ Database file #2: thesis.bib
 Warning--I didn't find a database entry for "NBR14724:2011"
 Warning--I didn't find a database entry for "NBR6028:2003"
 Warning--I didn't find a database entry for "dexp"
-Warning--I didn't find a database entry for "gdel"
 Warning--I didn't find a database entry for "mobley2014"
 Warning--I didn't find a database entry for "mobley2017"
 Warning--I didn't find a database entry for "izairi2017"
@@ -45,45 +44,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 75 entries,
+You've used 76 entries,
             6714 wiz_defined-function locations,
-            1624 strings with 22797 characters,
-and the built_in function-call counts, 72096 in all, are:
-= -- 5208
-> -- 3072
-< -- 201
-+ -- 1243
-- -- 883
-* -- 5275
-:= -- 8806
-add.period$ -- 218
-call.type$ -- 76
-change.case$ -- 984
-chr.to.int$ -- 284
-cite$ -- 71
-duplicate$ -- 3879
-empty$ -- 4465
-format.name$ -- 4470
-if$ -- 17226
+            1629 strings with 22929 characters,
+and the built_in function-call counts, 73105 in all, are:
+= -- 5279
+> -- 3124
+< -- 204
++ -- 1262
+- -- 898
+* -- 5354
+:= -- 8929
+add.period$ -- 221
+call.type$ -- 77
+change.case$ -- 999
+chr.to.int$ -- 288
+cite$ -- 72
+duplicate$ -- 3931
+empty$ -- 4521
+format.name$ -- 4540
+if$ -- 17466
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 1434
-newline$ -- 360
-num.names$ -- 355
-pop$ -- 1835
+missing$ -- 1453
+newline$ -- 365
+num.names$ -- 360
+pop$ -- 1862
 preamble$ -- 1
-purify$ -- 325
+purify$ -- 330
 quote$ -- 0
-skip$ -- 4510
+skip$ -- 4568
 stack$ -- 1
-substring$ -- 2748
-swap$ -- 2367
-text.length$ -- 130
+substring$ -- 2778
+swap$ -- 2398
+text.length$ -- 132
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 520
+while$ -- 527
 width$ -- 0
-write$ -- 1143
-(There were 16 warnings)
+write$ -- 1159
+(There were 15 warnings)
