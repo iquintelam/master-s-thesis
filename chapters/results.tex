@@ -32,11 +32,12 @@ alifaticos
 
 \begin{table*}[h]
 \centering
-  \caption{Calculated and experimental values for the Gibbs energy of solvation (kcal/mol) of solutes in non aqueous solvents}
+  \caption{Calculated and experimental values for solvation free energies (kcal/mol) of solutes in non aqueous solvents}
   \label{tbl:solv1}
   \begin{tabular}{lllll}
     \hline
-      Solvent & Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute Deviation \\
+      Solvent & Solute & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute \\
+      & & & &Deviation \\
     \hline
     hexane    & benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
     hexane    & pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
@@ -73,12 +74,10 @@ alifaticos
 \label{fig:oct}
 \end{figure}
 
-
-
 \FloatBarrier
-\begin{table}[h]
+\begin{table}[H]
 \centering
-  \caption{Calculated values for the Gibbs energy of solvation (kcal/mol) of phenanthrene in toluene+$CO_{2}$}
+  \caption{Calculated values for the solvation free energies (kcal/mol) of phenanthrene in toluene+$CO_{2}$}
   \label{tbl:solv3}
   \begin{tabular}{ll}
     \hline
@@ -94,10 +93,17 @@ alifaticos
 \end{table}
 \FloatBarrier
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{Figures/Figure_1}
+\caption{Solvation free energy profiles of phenanthrene in toluene+$CO_{2}$}
+\label{fig:Figure_1}
+\end{figure}
+
+
 \section{Hydration free energies}
 
-\FloatBarrier
-\begin{table}[h]
+\begin{table*}[h]
 	\centering
 	\caption{Calculated values for the Gibbs energy of solvation (kcal/mol) of solutes in water for $k_{ij}=0$}
 	\label{tbl:solv3}
@@ -111,11 +117,9 @@ alifaticos
 		phenanthrene & -10.90 $\pm$ 0.04   \\
 		\hline
 	\end{tabular}
-\end{table}
-\FloatBarrier
-
-\begin{table}[h]
-\centering
+\end{table*}
+\begin{table*}[h]
+  \centering
   \caption{Binary interaction parameters employed}
   \label{tbl:kij}
   \begin{tabular}{ll}
@@ -126,11 +130,10 @@ alifaticos
     water  + aromatic      & 0.154 \\  
     \hline
   \end{tabular}
+\end{table*}
 
-\end{table}
-
-\begin{table*}[h]
-\centering
+\begin{table*}[!htb]
+  \centering
   \caption{Calculated and experimental values for the Gibbs energy of solvation (kcal/mol) of solutes in water}
   \label{tbl:solv2}
   \begin{tabular}{lllll}
@@ -145,13 +148,14 @@ alifaticos
     RMSE         &                  &               &  0.24     &      \\
     \hline
   \end{tabular}
+
 \end{table*}
-\vspace{-2em}
-\FloatBarrier
+
+
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{Figures/water}
+\includegraphics[width=0.9\textwidth]{Figures/water}
 \caption{Hydration free energy profiles}
 \label{fig:water}
 \end{figure}
-\FloatBarrier
+

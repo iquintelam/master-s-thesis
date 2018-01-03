@@ -17,24 +17,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 11279 items from 5000.
+Reallocated field_info (elt_size=4) to 10727 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
 Warning--I didn't find a database entry for "NBR14724:2011"
 Warning--I didn't find a database entry for "NBR6028:2003"
-Warning--I didn't find a database entry for "dexp"
-Warning--I didn't find a database entry for "mobley2014"
-Warning--I didn't find a database entry for "mobley2017"
-Warning--I didn't find a database entry for "izairi2017"
-Warning--I didn't find a database entry for "garrido"
-Warning--I didn't find a database entry for "garrido2011"
-Warning--I didn't find a database entry for "roy2017"
-Warning--I didn't find a database entry for "goncalves"
-Warning--I didn't find a database entry for "mohamed2016"
-Warning--I didn't find a database entry for "MIE"
-Warning--I didn't find a database entry for "cassiano"
-Warning--I didn't find a database entry for "mobley2007"
-Warning--I didn't find a database entry for "shirts2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -44,45 +31,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 76 entries,
+You've used 81 entries,
             6714 wiz_defined-function locations,
-            1629 strings with 22929 characters,
-and the built_in function-call counts, 73105 in all, are:
-= -- 5279
-> -- 3124
-< -- 204
-+ -- 1262
-- -- 898
-* -- 5354
-:= -- 8929
-add.period$ -- 221
-call.type$ -- 77
-change.case$ -- 999
-chr.to.int$ -- 288
-cite$ -- 72
-duplicate$ -- 3931
-empty$ -- 4521
-format.name$ -- 4540
-if$ -- 17466
+            1649 strings with 23902 characters,
+and the built_in function-call counts, 78228 in all, are:
+= -- 5623
+> -- 3343
+< -- 223
++ -- 1349
+- -- 960
+* -- 5774
+:= -- 9574
+add.period$ -- 239
+call.type$ -- 82
+change.case$ -- 1070
+chr.to.int$ -- 308
+cite$ -- 77
+duplicate$ -- 4187
+empty$ -- 4844
+format.name$ -- 4870
+if$ -- 18666
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 1453
-newline$ -- 365
-num.names$ -- 360
-pop$ -- 1862
+missing$ -- 1553
+newline$ -- 393
+num.names$ -- 385
+pop$ -- 1974
 preamble$ -- 1
-purify$ -- 330
+purify$ -- 352
 quote$ -- 0
-skip$ -- 4568
+skip$ -- 4830
 stack$ -- 1
-substring$ -- 2778
-swap$ -- 2398
-text.length$ -- 132
+substring$ -- 3027
+swap$ -- 2557
+text.length$ -- 146
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 527
+while$ -- 568
 width$ -- 0
-write$ -- 1159
-(There were 15 warnings)
+write$ -- 1246
+(There were 2 warnings)

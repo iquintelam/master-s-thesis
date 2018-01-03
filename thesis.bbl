@@ -19,7 +19,7 @@
 {AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C. Force field comparison and
   thermodynamic property calculation of supercritical $co_{2}$ and $ch_{4}$
   using molecular dynamics simulations.
-\emph{{F}luid {P}hase {E}quilib.}, v.~368, p. 80--90, 2014.}
+\emph{{F}luid {P}hase {E}quilibria}, v.~368, p. 80--90, 2014.}
 
 \bibitem[Aimoli, Maginn e Abreu 2014]{cassiano2}
 \abntrefinfo{Aimoli, Maginn e Abreu}{AIMOLI; MAGINN; ABREU}{2014b}
@@ -317,6 +317,18 @@ ISBN 0122673514.}
 \emph{Industrial and Chemical Engineering Research}, v.~53, p. 4131–4141,
   2014.}
 
+\bibitem[Mie 1903]{MIE}
+\abntrefinfo{Mie}{MIE}{1903}
+{MIE, G. Zur kinetischen theorie der einatomigen korper.
+\emph{Ann. Phys.}, v.~316, p. 657--697, 1903.}
+
+\bibitem[Mobley \textit{et al.} 2007]{mobley2007}
+\abntrefinfo{Mobley \textit{et al.}}{MOBLEY \textit{et al.}}{2007}
+{MOBLEY, D.~L.; DUMONT, E.; CHODERA, J.~D.; DILL, K.~A. Comparison of charge
+  models for fixed-charge force fields: Small-molecule hydration free energies
+  in explicit solvent.
+\emph{The Journal of Physical Chemistry B}, v.~111, n.~9, p. 2242--2254, 2007.}
+
 \bibitem[Mortimer e Murphy 1923]{pvphen}
 \abntrefinfo{Mortimer e Murphy}{MORTIMER; MURPHY}{1923}
 {MORTIMER, S.; MURPHY, R. The vapor pressures of some substances found in coal
@@ -406,11 +418,35 @@ ISBN 0122673514.}
   multiple equilibrium states.
 \emph{Journal of Chemical Physics}, v.~129, p. 124105, 2008.}
 
+\bibitem[Shirts \textit{et al.} 2003]{shirts2013}
+\abntrefinfo{Shirts \textit{et al.}}{SHIRTS \textit{et al.}}{2003}
+{SHIRTS, M.~R.; PITERA, J.~W.; SWOPE, W.~C.; PANDE, V.~S. Extremely precise
+  free energy calculations of amino acid side chain analogs: Comparison of
+  common molecular mechanics force fields for proteins.
+\emph{Journal of Chemical Physics}, v.~119, p.~5740, 2003.}
+
 \bibitem[Shyu e Ytreberg 2010]{shyu2009}
 \abntrefinfo{Shyu e Ytreberg}{SHYU; YTREBERG}{2010}
 {SHYU, C.; YTREBERG, F.~M. Reducing the bias and uncertainty of free energy
   estimates by using regression to fit thermodynamic integration data.
 \emph{Journal of Computational Chemistry}, v.~6, p. 1018–1027, 2010.}
+
+\bibitem[Sjöblom \textit{et al.} 2003]{SJOBLOM2003399}
+\abntrefinfo{Sjöblom \textit{et al.}}{SJöBLOM \textit{et al.}}{2003}
+{SJöBLOM, J.; ASKE, N.; AUFLEM, I.~H.; BRANDAL Øystein; HAVRE, T.~E.; SæTHER
+  Øystein; WESTVIK, A.; JOHNSEN, E.~E.; KALLEVIK, H. Our current understanding
+  of water-in-crude oil emulsions.: Recent characterization techniques and high
+  pressure performance.
+\emph{Advances in Colloid and Interface Science}, v. 100-102, n. Supplement C,
+  p. 399 -- 473, 2003.
+ISSN 0001-8686.}
+
+\bibitem[Sjöblom, Simon e Xu 2015]{SJOBLOM20151}
+\abntrefinfo{Sjöblom, Simon e Xu}{SJöBLOM; SIMON; XU}{2015}
+{SJöBLOM, J.; SIMON, S.; XU, Z. Model molecules mimicking asphaltenes.
+\emph{Advances in Colloid and Interface Science}, v.~218, n. Supplement C, p. 1
+  -- 16, 2015.
+ISSN 0001-8686.}
 
 \bibitem[Smith, Ness e Abbot 2007]{smithbook}
 \abntrefinfo{Smith, Ness e Abbot}{SMITH; NESS; ABBOT}{2007}
@@ -435,6 +471,13 @@ ISBN 0122673514.}
   hydrodynamics to dna/rna systems.
 \emph{Chemical Society Reviews}, v.~43, p. 4871– 4893, 2014.}
 
+\bibitem[Torrie e Valleau 1977]{TORRIE1977187}
+\abntrefinfo{Torrie e Valleau}{TORRIE; VALLEAU}{1977}
+{TORRIE, G.; VALLEAU, J. Nonphysical sampling distributions in monte carlo
+  free-energy estimation: Umbrella sampling.
+\emph{Journal of Computational Physics}, v.~23, n.~2, p. 187 -- 199, 1977.
+ISSN 0021-9991.}
+
 \bibitem[Trebst, Huse e Troyer 2004]{trebst2004}
 \abntrefinfo{Trebst, Huse e Troyer}{TREBST; HUSE; TROYER}{2004}
 {TREBST, S.; HUSE, D.~A.; TROYER, M. Optimizing the ensemble for equilibration
@@ -454,13 +497,6 @@ ISBN 0122673514.}
   integration time step in molecular dynamics simulations of coarse-grained
   molecular models.
 \emph{Physical Chemistry Chemical Physics}, v.~11, p.~1934, 2009.}
-
-\bibitem[Ytreberg, Swendsen e Zuckerman 2006]{gdel}
-\abntrefinfo{Ytreberg, Swendsen e Zuckerman}{YTREBERG; SWENDSEN;
-  ZUCKERMAN}{2006}
-{YTREBERG, F.~M.; SWENDSEN, R.~H.; ZUCKERMAN, D.~M. Comparison of free energy
-  methods for molecular systems.
-\emph{Journal of Chemical Physics}, v.~125, p. 184114, 2006.}
 
 \bibitem[Zwanzig 1954]{zwanzig1954}
 \abntrefinfo{Zwanzig}{ZWANZIG}{1954}
