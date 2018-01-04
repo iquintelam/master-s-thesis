@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  4 JAN 2018 03:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  4 JAN 2018 03:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1393,26 +1393,26 @@ Package pdftex.def Info: Figures/fe3.png used on input line 25.
 
 
 
-] <Figures/hex.png, id=833, 462.528pt x 346.896pt>
+] <Figures/hex.png, id=832, 462.528pt x 346.896pt>
 File: Figures/hex.png Graphic file (type png)
 
 <use Figures/hex.png>
 Package pdftex.def Info: Figures/hex.png used on input line 73.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- [40] <Figures/oct.png, id=842, 462.528pt x 346.896pt>
+ [40] <Figures/oct.png, id=841, 462.528pt x 346.896pt>
 File: Figures/oct.png Graphic file (type png)
 
 <use Figures/oct.png>
 Package pdftex.def Info: Figures/oct.png used on input line 80.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- <Figures/tol.png, id=843, 462.528pt x 346.896pt>
+ <Figures/tol.png, id=842, 462.528pt x 346.896pt>
 File: Figures/tol.png Graphic file (type png)
 
 <use Figures/tol.png>
 Package pdftex.def Info: Figures/tol.png used on input line 87.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
  [41 <./Figures/hex.png> <./Figures/oct.png>] [42 <./Figures/tol.png>] <Figures
-/Figure_1.png, id=860, 462.528pt x 346.896pt>
+/Figure_1.png, id=859, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 
 <use Figures/Figure_1.png>
@@ -1422,16 +1422,18 @@ Package pdftex.def Info: Figures/Figure_1.png used on input line 117.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/water.png, id=861, 1743.51375pt x 1291.82625pt>
+[43 <./Figures/Figure_1.png>]
+<Figures/water.png, id=867, 1743.51375pt x 1291.82625pt>
 File: Figures/water.png Graphic file (type png)
 
 <use Figures/water.png>
-Package pdftex.def Info: Figures/water.png used on input line 176.
+Package pdftex.def Info: Figures/water.png used on input line 181.
 (pdftex.def)             Requested size: 409.49722pt x 303.40181pt.
-) [43 <./Figures/Figure_1.png>] [44 <./Figures/water.png>]
+) [44] [45 <./Figures/water.png>]
 \openout2 = `chapters/conclusions.aux'.
 
- (./chapters/conclusions.tex) [45
+
+(./chapters/conclusions.tex) [46
 
 
 
@@ -1441,15 +1443,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[46
+[47
 
 
-] [47] [48] [49] [50]) [51]
+] [48] [49] [50] [51]) [52]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 613.
 
-[52
+[53
 
 
 ]
@@ -1477,13 +1479,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 615.
 
-[53
+[54
 
 ]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
-[54
+[55
 
 ]
 \tf@lof=\write5
@@ -1512,10 +1514,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
  ) 
 Here is how much of TeX's memory you used:
- 15354 strings out of 494929
- 227611 string characters out of 6180141
- 398088 words of memory out of 5000000
- 17840 multiletter control sequences out of 15000+600000
+ 15356 strings out of 494929
+ 227626 string characters out of 6180141
+ 399189 words of memory out of 5000000
+ 17841 multiletter control sequences out of 15000+600000
  74812 words of font info for 276 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,17n,44p,2334b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1535,10 +1537,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on thesis.pdf (55 pages, 738076 bytes).
+Output written on thesis.pdf (56 pages, 739360 bytes).
 PDF statistics:
- 1164 PDF objects out of 1200 (max. 8388607)
- 1062 compressed objects within 11 object streams
- 279 named destinations out of 1000 (max. 500000)
+ 1168 PDF objects out of 1200 (max. 8388607)
+ 1065 compressed objects within 11 object streams
+ 280 named destinations out of 1000 (max. 500000)
  49542 words of extra memory for PDF output out of 51595 (max. 10000000)
 

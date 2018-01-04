@@ -19,7 +19,7 @@ The force field parameters for phenanthrene were not available for the ring geom
 	
 \end{table*} 
 
-In the table above the first value of MPE for the \citeonline{lafitte2012} strategy corresponds to the found for the estimation with experimental data and the second corresponds to the the estimation of the corrections factors with uses molecular simulation data. This strategy has this inconsistency of requiring two estimations because the parameters solely  estimated with the EoS aren't accurate for molecular simulation, hence the solvation free energy of phenanthrene wasonly studied with the set of parameters estimated with \citeonline{muller2017} strategy. In fact, the \cite{lafitte2012} was only followed because it was the only one available when the study first started. The sets of parameters for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}:
+In the table above the first value of MPE for the \citeonline{lafitte2012} strategy corresponds to the found for the estimation with experimental data and the second corresponds to the the estimation of the corrections factors with uses molecular simulation data. This strategy has this inconsistency of requiring two estimations because the parameters solely  estimated with the EoS aren't accurate for molecular simulation, hence the solvation free energy of phenanthrene was only studied with the set of parameters estimated with \citeonline{muller2017} strategy. In fact, the \cite{lafitte2012} was only followed because it was the only one available when the study first started. The sets of parameters for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}:
 
 \begin{table*}[h]
 \centering
@@ -122,21 +122,26 @@ The increasing of $CO_{2}$ mass fraction in toluene caused a slight effect on so
 
 \section{Hydration free energies}
 
+The hydration free energies of widely studied solutes (propane, benzene) and aromatic solutes (toluene, phenanthrene) were calculated with a group of fifteen intermediate states. First, the binary interaction parameter was equal to zero, but the results obtained deviated a lot from the experimental data as can be seen in the table below:
+
 \begin{table*}[h]
 	\centering
 	\caption{Calculated values for the Gibbs energy of solvation (kcal/mol) of solutes in water for $k_{ij}=0$}
 	\label{tbl:solv3}
-	\begin{tabular}{ll}
+	\begin{tabular}{lll}
 		\hline
-		Solute & $\Delta G_{solv}^{Mie}$ \\
+		Solute & $\Delta G_{solv}^{Mie}$ & $\Delta G_{solv}^{exp}$ \\
 		\hline
-		propane   & 1.10 $\pm$ 0.01   \\
-		benzene  & -4.45 $\pm$ 0.03   \\
-		toluene  & -15.80 $\pm$ 0.06   \\
-		phenanthrene & -10.90 $\pm$ 0.04   \\
+		propane   & 2.00 $\pm$ 0.20&1.10 $\pm$ 0.01   \\
+		benzene  & -0.86 $\pm$ 0.20 & -4.45 $\pm$ 0.03   \\
+		toluene  & -0.83 $\pm$ 0.20 &-15.80 $\pm$ 0.06   \\
+		phenanthrene & -3.88 $\pm$ 0.60 &-10.90 $\pm$ 0.04   \\
 		\hline
 	\end{tabular}
 \end{table*}
+
+After this results, it need of the interaction parameter was clear. The estimation the SAFT VR Mie EoS using vapor pressure data also didn't provide good results, then it was decided the strategy of estimating the $k_{ij}=0$ with the output form solvation free energy calculations with molecular dynamics as described in the last paragraph of section \ref{solvme}. A $k_{ij}$ individual value for each solvent was initially found, but, since the parameters values for aromatic solutes seems to be very similar (0.148, 0.162, 0.152), the average of this values was taken in order to obtain a general parameter for the pair water+aromatic and avoid the necessity of doing new molecular simulations to find interactions parameters of other aromatic compounds. The $k_{ij}$ estimated are exposed below:
+
 \begin{table*}[h]
   \centering
   \caption{Binary interaction parameters employed}
