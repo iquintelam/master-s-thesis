@@ -158,6 +158,13 @@
   Orlando, FL, USA: Academic Press, Inc., 2001.
 ISBN 0122673514.}
 
+\bibitem[Garrido \textit{et al.} 2011]{garrido2011}
+\abntrefinfo{Garrido \textit{et al.}}{GARRIDO \textit{et al.}}{2011}
+{GARRIDO, N.~M.; JORGE, M.; QUEIMADA, A.~J.; MACEDO, E.~A.; ECONOMOU, I.~G.
+  Using molecular simulation to predict solute solvation and partition
+  coefficients in solvents of different polarity.
+\emph{Physical Chemistry Chemical Physics}, v.~20, p. 9155--9164, 2011.}
+
 \bibitem[Geman e Geman 1984]{geman1984}
 \abntrefinfo{Geman e Geman}{GEMAN; GEMAN}{1984}
 {GEMAN, S.; GEMAN, D. Stochastic relaxation, gibbs distributions, and the
@@ -329,6 +336,12 @@ ISBN 0122673514.}
   in explicit solvent.
 \emph{The Journal of Physical Chemistry B}, v.~111, n.~9, p. 2242--2254, 2007.}
 
+\bibitem[Mobley e Gilson 2017]{doimobley}
+\abntrefinfo{Mobley e Gilson}{MOBLEY; GILSON}{2017}
+{MOBLEY, D.~L.; GILSON, M.~K. Predicting binding free energies: Frontiers and
+  benchmarks.
+\emph{Annual Review of Biophysics}, v.~46, n.~1, p. 531--558, 2017.}
+
 \bibitem[Mortimer e Murphy 1923]{pvphen}
 \abntrefinfo{Mortimer e Murphy}{MORTIMER; MURPHY}{1923}
 {MORTIMER, S.; MURPHY, R. The vapor pressures of some substances found in coal
@@ -453,6 +466,14 @@ ISSN 0001-8686.}
 {SMITH, J.; NESS, H. V.; ABBOT, M.~M. \emph{Introdu{\c c}{\~a}o \'a
   Termodin{\~a}mica da Engenharia Qu\'imica}. 2. ed. Rio de Janeiro: LTC,
   2007.}
+
+\bibitem[Soroush \textit{et al.} 2014]{SOROUSH2014405}
+\abntrefinfo{Soroush \textit{et al.}}{SOROUSH \textit{et al.}}{2014}
+{SOROUSH, S.; STRAVER, E.~J.; RUDOLPH, E. S.~J.; PETERS, C.~J.; LOOS, T.~W. de;
+  ZITHA, P.~L.; VAFAIE-SEFTI, M. Phase behavior of the ternary system carbon
+  dioxide+toluene+asphaltene.
+\emph{Fuel}, v.~137, n. Supplement C, p. 405 -- 411, 2014.
+ISSN 0016-2361.}
 
 \bibitem[Sterpone, Derreumaux e Melchionna 2015]{opep2015}
 \abntrefinfo{Sterpone, Derreumaux e Melchionna}{STERPONE; DERREUMAUX;

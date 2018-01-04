@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  3 JAN 2018 01:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  4 JAN 2018 03:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1265,33 +1265,33 @@ Overfull \hbox (2.25528pt too wide) detected at line 6
 
 
 Overfull \hbox (2.25528pt too wide) detected at line 7
-\T1/ppl/m/n/12 Figure 5.2.1 ^^U  
+\T1/ppl/m/n/12 Figure 5.1.1 ^^U  
  []
 
 
 Overfull \hbox (2.25528pt too wide) detected at line 8
-\T1/ppl/m/n/12 Figure 5.2.2 ^^U  
+\T1/ppl/m/n/12 Figure 5.1.2 ^^U  
  []
 
 
 Overfull \hbox (2.25528pt too wide) detected at line 9
-\T1/ppl/m/n/12 Figure 5.2.3 ^^U  
+\T1/ppl/m/n/12 Figure 5.1.3 ^^U  
  []
 
 
 Overfull \hbox (2.25528pt too wide) detected at line 10
-\T1/ppl/m/n/12 Figure 5.2.4 ^^U  
+\T1/ppl/m/n/12 Figure 5.1.4 ^^U  
  []
 
 
 Overfull \hbox (2.25528pt too wide) detected at line 11
-\T1/ppl/m/n/12 Figure 5.3.1 ^^U  
+\T1/ppl/m/n/12 Figure 5.2.1 ^^U  
  []
 
 ) [10
 
 ] (./thesis.lot
-Overfull \hbox (10.56483pt too wide) in paragraph at lines 4--4
+Overfull \hbox (10.56483pt too wide) in paragraph at lines 5--5
  [][] [][][]\T1/ppl/m/n/12 (-20) Calculated and ex-per-i-men-tal val-ues for so
 l-va-tion free en-er-gies (kcal/mol) 
  []
@@ -1319,7 +1319,7 @@ l-va-tion free en-er-gies (kcal/mol)
 
 
 ] [18] [19]
-<Figures/cicclotermo.jpg, id=412, 469.755pt x 368.37625pt>
+<Figures/cicclotermo.jpg, id=408, 469.755pt x 368.37625pt>
 File: Figures/cicclotermo.jpg Graphic file (type jpg)
 
 <use Figures/cicclotermo.jpg>
@@ -1346,7 +1346,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] [26] <Figures/mullergeo.jpg, id=567, 507.8975pt x 205.76875pt>
+] [26] <Figures/mullergeo.jpg, id=563, 507.8975pt x 205.76875pt>
 File: Figures/mullergeo.jpg Graphic file (type jpg)
 
 <use Figures/mullergeo.jpg>
@@ -1370,13 +1370,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 (./chapters/methodology.tex
-<Figures/fen5.jpg, id=741, 383.93437pt x 214.55156pt>
+<Figures/fen5.jpg, id=737, 383.93437pt x 214.55156pt>
 File: Figures/fen5.jpg Graphic file (type jpg)
  <use Figures/fen5.jpg>
 Package pdftex.def Info: Figures/fen5.jpg used on input line 10.
 (pdftex.def)             Requested size: 113.75pt x 63.56387pt.
 
-<Figures/fe3.png, id=746, 240.9pt x 213.79875pt>
+<Figures/fe3.png, id=742, 240.9pt x 213.79875pt>
 File: Figures/fe3.png Graphic file (type png)
  <use Figures/fe3.png>
 Package pdftex.def Info: Figures/fe3.png used on input line 25.
@@ -1389,46 +1389,49 @@ Package pdftex.def Info: Figures/fe3.png used on input line 25.
 \openout2 = `chapters/results.aux'.
 
 
-(./chapters/results.tex <Figures/hex.png, id=809, 462.528pt x 346.896pt>
+(./chapters/results.tex [39
+
+
+
+] <Figures/hex.png, id=833, 462.528pt x 346.896pt>
 File: Figures/hex.png Graphic file (type png)
 
 <use Figures/hex.png>
-Package pdftex.def Info: Figures/hex.png used on input line 58.
+Package pdftex.def Info: Figures/hex.png used on input line 73.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- <Figures/tol.png, id=811, 462.528pt x 346.896pt>
-File: Figures/tol.png Graphic file (type png)
-
-<use Figures/tol.png>
-Package pdftex.def Info: Figures/tol.png used on input line 65.
-(pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- <Figures/oct.png, id=812, 462.528pt x 346.896pt>
+ [40] <Figures/oct.png, id=842, 462.528pt x 346.896pt>
 File: Figures/oct.png Graphic file (type png)
 
 <use Figures/oct.png>
-Package pdftex.def Info: Figures/oct.png used on input line 72.
+Package pdftex.def Info: Figures/oct.png used on input line 80.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- [39
+ <Figures/tol.png, id=843, 462.528pt x 346.896pt>
+File: Figures/tol.png Graphic file (type png)
 
-
-
-] [40 <./Figures/hex.png> <./Figures/tol.png>]
-<Figures/Figure_1.png, id=825, 462.528pt x 346.896pt>
+<use Figures/tol.png>
+Package pdftex.def Info: Figures/tol.png used on input line 87.
+(pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
+ [41 <./Figures/hex.png> <./Figures/oct.png>] [42 <./Figures/tol.png>] <Figures
+/Figure_1.png, id=860, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 
 <use Figures/Figure_1.png>
-Package pdftex.def Info: Figures/Figure_1.png used on input line 98.
+Package pdftex.def Info: Figures/Figure_1.png used on input line 117.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- [41 <./Figures/oct.png>]
-<Figures/water.png, id=831, 1743.51375pt x 1291.82625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/water.png, id=861, 1743.51375pt x 1291.82625pt>
 File: Figures/water.png Graphic file (type png)
 
 <use Figures/water.png>
-Package pdftex.def Info: Figures/water.png used on input line 157.
+Package pdftex.def Info: Figures/water.png used on input line 176.
 (pdftex.def)             Requested size: 409.49722pt x 303.40181pt.
-) [42 <./Figures/Figure_1.png>] [43 <./Figures/water.png>]
+) [43 <./Figures/Figure_1.png>] [44 <./Figures/water.png>]
 \openout2 = `chapters/conclusions.aux'.
 
- (./chapters/conclusions.tex) [44
+ (./chapters/conclusions.tex) [45
 
 
 
@@ -1438,34 +1441,49 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[45
+[46
 
 
-] [46] [47] [48] [49]) [50]
+] [47] [48] [49] [50]) [51]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 613.
 
-[51
+[52
 
-
-] [52
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 633.
+(hyperref)                removing `math shift' on input line 615.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\lambda' on input line 615.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 615.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 615.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\eta' on input line 615.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 615.
 
 [53
-
-
-] [54
 
 ]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
-[55
+[54
 
 ]
 \tf@lof=\write5
@@ -1477,13 +1495,13 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 651.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 651.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
  (./thesis.aux (./chapters/introduction.aux) (./chapters/review.aux)
 (./chapters/computational.aux) (./chapters/methodology.aux)
 (./chapters/results.aux) (./chapters/conclusions.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 651.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 651.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 655.
 
 
 LaTeX Warning: There were undefined references.
@@ -1491,16 +1509,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 651.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
  ) 
 Here is how much of TeX's memory you used:
- 15328 strings out of 494929
- 227030 string characters out of 6180141
- 398377 words of memory out of 5000000
- 17814 multiletter control sequences out of 15000+600000
- 72760 words of font info for 269 fonts, out of 8000000 for 9000
+ 15354 strings out of 494929
+ 227611 string characters out of 6180141
+ 398088 words of memory out of 5000000
+ 17840 multiletter control sequences out of 15000+600000
+ 74812 words of font info for 276 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,17n,44p,2334b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,44p,2334b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1517,10 +1535,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on thesis.pdf (56 pages, 732015 bytes).
+Output written on thesis.pdf (55 pages, 738076 bytes).
 PDF statistics:
- 1151 PDF objects out of 1200 (max. 8388607)
- 1048 compressed objects within 11 object streams
+ 1164 PDF objects out of 1200 (max. 8388607)
+ 1062 compressed objects within 11 object streams
  279 named destinations out of 1000 (max. 500000)
- 48542 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49542 words of extra memory for PDF output out of 51595 (max. 10000000)
 

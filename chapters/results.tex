@@ -2,13 +2,25 @@
 
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\section{Phenanthrene Parameterization}
-
-
 \section{Solvation free energies}
 
-The force field parameters for phenanthrene were estimated as described above and the ones for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}:
-alifaticos
+The force field parameters for phenanthrene were not available for the ring geometry on the force field database, hence they were estimated as described in section \ref{parame}. The parameters obtained and the mean percentage error (MPE) of the estimation were:
+
+\begin{table*}[h]
+	\centering
+	\caption{Estimated SAFT-$\gamma$ Mie Force Field parameters for phenanthrene}
+	\label{tbl:estimparameters}
+	\begin{tabular}{lllll}
+		\hline
+		 $m_s$ & $\epsilon/k_{B}$ (K) & $\sigma (\dot{A})$ & $\lambda_r$& MPE(\%) \\ \hline
+		 3 \cite{lafitte2012}    & 485.55              & 4.197              & 14.34 & 1.64|9.74       \\ 
+		 5  \cite{muller2017}   & 262.74               & 4.077              & 9.55   &  0.88   \\ \hline
+	\end{tabular}
+	
+\end{table*} 
+
+In the table above the first value of MPE for the \citeonline{lafitte2012} strategy corresponds to the found for the estimation with experimental data and the second corresponds to the the estimation of the corrections factors with uses molecular simulation data. This strategy has this inconsistency of requiring two estimations because the parameters solely  estimated with the EoS aren't accurate for molecular simulation, hence the solvation free energy of phenanthrene wasonly studied with the set of parameters estimated with \citeonline{muller2017} strategy. In fact, the \cite{lafitte2012} was only followed because it was the only one available when the study first started. The sets of parameters for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}:
+
 \begin{table*}[h]
 \centering
   \caption{SAFT-$\gamma$ Mie Force Field for each substance used in this work}
@@ -24,11 +36,12 @@ alifaticos
   	Toluene        & 3     & 268.24               & 3.685              & 11.80       \\
   	Benzene        & 3     & 230.30               & 3.441              & 10.45       \\
   	Pyrene         & 4     & 459.04               & 4.134              & 15.79       \\
-  	Anthracene     & 5     & 259.68               & 3.631              & 9.55        \\
-  	Phenanthrene   & 5     & 262.74               & 4.077              & 9.55        \\ \hline
+  	Anthracene     & 5     & 259.68               & 3.631              & 9.55        \\ \hline
   \end{tabular}
 
 \end{table*}
+
+The solvation free energies of aromatic solutes in non polar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameter equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of fifteen values of $\lambda$ were used, except 1-octanol+phenanthrene and 1-octanol+anthracene which had eighteen intermediate states. The final values of $\lambda$ were concentrated in the region with a steeper slope. This values and and the final values of $\eta$ are available at  Appendix A. The overlapping of the intermediate states are an important measure of the reliability of the solvation free energy estimation. In order demonstrate that the group of $\lambda$ found have a sufficient overlap, the overlapping matrices obtained with the software alchemical-analysis are available at the Appendix B. The solvation free energies of solvation estimated  were:
 
 \begin{table*}[h]
 \centering
@@ -42,38 +55,42 @@ alifaticos
     hexane    & benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
     hexane    & pyrene       & -11.53 & -10.82 $\pm$ 0.02 & 0.71 \\
     hexane    & phenanthrene & -10.01 & -9.16  $\pm$ 0.01 & 0.85 \\
-    toluene   & pyrene       & -12.86 & -11.74 $\pm$ 0.01 & 1.11\\
-    toluene   & anthracene   & -11.31 & -9.90 $\pm$ 0.01 & 1.41\\
     1-octanol & propane      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
     1-octanol & anthracene   & -11.72 & -8.16  $\pm$ 0.03 & 3.61 \\
     1-octanol & phenanthrene & -10.22 & -8.34  $\pm$ 0.03 & 1.47 \\
-    \hline
-    RMSE      &              &        &                   & 1.48     \\
+    toluene   & pyrene       & -12.86 & -11.74 $\pm$ 0.01 & 1.11\\
+    toluene   & anthracene   & -11.31 & -9.90 $\pm$ 0.01 & 1.41\\
+%    \hline
+%    RMSE      &              &        &                   & 1.48     \\
     \hline
   \end{tabular}
 \end{table*}
 
-\begin{figure}
+The absolute deviations when the solvent is hexane are smaller, what shows that the Saft-$\gamma$ Mie force field performs better for the non polar solvent. Additionally, this froce field presented a better result for the pair hexane+benzene than the Trappe force field \cite{garrido2011}. Observing the free energy profile in Figure \ref{fig:hex}, the effect of molecule's size on the entropic region of the curve. It was expected that a force field based on a EoS that doesn't explicitly account for hydrogen bond would not perform well for 1-octanol. Despite this, the solvation free energies of propane and phenanthrene stayed in the desired range for applications of 1-2 kcal/mol \cite{doimobley}. The deviation was much smaller for propane and, this can be attributed to its non polarity and the molecule geometry as in observed by the smoother free energy curve (Figure \ref{fig:oct}). The geometry for anthracene and phenanthrene are the same in the force field and they have similar properties, but the absolute deviation of the solvation free energy of anthracene in 1-octanol is much higher than the one of phenanthrene 1-octanol. This may indicate a problem in the parameterization of anthrancene.     
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{Figures/hex}
 \caption{Solvation free energy profiles for the hexane solvent}
 \label{fig:hex}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Figures/oct}
+	\caption{Solvation free energy profiles for the 1-octanol solvent}
+	\label{fig:oct}
+\end{figure}
+
+\begin{figure}[H]
 	\centering
     \includegraphics[width=0.9\linewidth]{Figures/tol}
     \caption{Solvation free energy profiles for the toluene solvent }
     \label{fig:tol}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{Figures/oct}
-\caption{Solvation free energy profiles for the 1-octanol solvent}
-\label{fig:oct}
-\end{figure}
-
+ The results also indicated the prediction capability of the force field for the pairs of aromatic solute and solvent. The pattern of smaller deviations for smoother curves (Figure \ref{fig:tol}) was also observed for these pairs. The $\Delta G_{solv}$ was also calculated of phenanthrene in toluene and in toluene+$CO_{2}$. To the best of my knowledge, there was no available experimental data for these solvation free energies, but the previous results for phenanthrene in other solvents and for the pair anthracene+toluene indicated that the force field is adequate to describe the solvation phenomena of phenanthrene in an aromatic solvent. The results for these set are exposed bellow: 
+ 
 \FloatBarrier
 \begin{table}[H]
 \centering
@@ -92,6 +109,8 @@ alifaticos
   \end{tabular}
 \end{table}
 \FloatBarrier
+
+The increasing of $CO_{2}$ mass fraction in toluene caused a slight effect on solvation free energies. First, the $\Delta G_{solv}$ decreased with the increase of $w_{CO_{2}}$ , indicating a higher solubility.From the 0.169 fraction, the effected was reversed and carbon dioxide became an anti solvent. It was observed that asphaltene precipitation occurs when carbon dioxide mass fractions became higher than 0.10 in the system asphaltene+toluene+carbon dioxide \cite{SOROUSH2014405}, what is in accordance with the anti solvent effect of carbon dioxide observed on the calculated values. It is also important to point out the small differences observed in the free energy profiles (Figure \ref{fig:Figure_1}) may indicate that there is no influence of $CO_{2}$ in solvation of phenanthrene in toluene when using the Saft-$\gamma$ Mie force field. But, since this is a qualitative study due the lack of this system experimental data, more studies need to be done in order to make a secure assertion about it.   
 
 \begin{figure}[H]
 \centering
