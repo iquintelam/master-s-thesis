@@ -41,11 +41,11 @@ In the table above the first value of MPE for the \citeonline{lafitte2012} strat
 
 \end{table*}
 
-The solvation free energies of aromatic solutes in non polar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameter equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of fifteen values of $\lambda$ were used, except 1-octanol+phenanthrene and 1-octanol+anthracene which had eighteen intermediate states. The final values of $\lambda$ were concentrated in the region with a steeper slope. This values and and the final values of $\eta$ are available at  Appendix A. The overlapping of the intermediate states are an important measure of the reliability of the solvation free energy estimation. In order demonstrate that the group of $\lambda$ found have a sufficient overlap, the overlapping matrices obtained with the software alchemical-analysis are available at the Appendix B. The solvation free energies of solvation estimated  were:
+The solvation free energies of aromatic solutes in non polar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameter equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of 15-18 values of $\lambda$ were used depending on the pairs solute-solvent. The final values of $\lambda$ were concentrated in the region with a steeper slope. This values and and the final values of $\eta$ are available at  Appendix A. The overlapping of the intermediate states are an important measure of the reliability of the solvation free energy estimation. In order demonstrate that the group of $\lambda$ found have a sufficient overlap, the overlapping matrices obtained with the software alchemical-analysis are available at the Appendix B. The solvation free energies of solvation estimated  were:
 
 \begin{table*}[h]
 \centering
-  \caption{Calculated and experimental values for solvation free energies (kcal/mol) of solutes in non aqueous solvents}
+  \caption{Calculated and experimental values for solvation free energy differences (kcal/mol) of solutes in non aqueous solvents}
   \label{tbl:solv1}
   \begin{tabular}{lllll}
     \hline
@@ -66,35 +66,35 @@ The solvation free energies of aromatic solutes in non polar (hexane), aromatic 
   \end{tabular}
 \end{table*}
 
-The absolute deviations when the solvent is hexane are smaller, what shows that the Saft-$\gamma$ Mie force field performs better for the non polar solvent. Additionally, this froce field presented a better result for the pair hexane+benzene than the Trappe force field \cite{garrido2011}. Observing the free energy profile in Figure \ref{fig:hex}, the effect of molecule's size on the entropic region of the curve. It was expected that a force field based on a EoS that doesn't explicitly account for hydrogen bond would not perform well for 1-octanol. Despite this, the solvation free energies of propane and phenanthrene stayed in the desired range for applications of 1-2 kcal/mol \cite{doimobley}. The deviation was much smaller for propane and, this can be attributed to its non polarity and the molecule geometry as in observed by the smoother free energy curve (Figure \ref{fig:oct}). The geometry for anthracene and phenanthrene are the same in the force field and they have similar properties, but the absolute deviation of the solvation free energy of anthracene in 1-octanol is much higher than the one of phenanthrene 1-octanol. This may indicate a problem in the parameterization of anthrancene.     
+The absolute deviations when the solvent is hexane are smaller, what shows that the Saft-$\gamma$ Mie force field performs better for the non polar solvent. Additionally, this froce field presented a better result for the pair hexane+benzene than the Trappe force field \cite{garrido2011}. Observing the free energy profile in Figure \ref{fig:hex}, the effect of molecule's size on the entropic region of the curve. It was expected that a force field based on a EoS that doesn't explicitly account for hydrogen bond would not perform well for 1-octanol. Despite this, the solvation free energies of propane and phenanthrene stayed in the desired deviation range of 1-2 kcal/mol \cite{doimobley}. The deviation was much smaller for propane and, this can be attributed to its non polarity and the molecule geometry as in observed by the smoother free energy curve (Figure \ref{fig:oct}). The geometry for anthracene and phenanthrene are the same in the force field and they have similar properties, but the absolute deviation of the solvation free energy of anthracene in 1-octanol is much higher than the one of phenanthrene 1-octanol. This may indicate a problem in the parameterization of anthrancene.     
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{Figures/hex}
-\caption{Solvation free energy profiles for the hexane solvent}
+\caption{Solvation free energy profiles for the hexane solvent.}
 \label{fig:hex}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Figures/oct}
-	\caption{Solvation free energy profiles for the 1-octanol solvent}
+	\caption{Solvation free energy profiles for the 1-octanol solvent.}
 	\label{fig:oct}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
     \includegraphics[width=0.9\linewidth]{Figures/tol}
-    \caption{Solvation free energy profiles for the toluene solvent }
+    \caption{Solvation free energy profiles for the toluene solvent. }
     \label{fig:tol}
 \end{figure}
 
- The results also indicated the prediction capability of the force field for the pairs of aromatic solute and solvent. The pattern of smaller deviations for smoother curves (Figure \ref{fig:tol}) was also observed for these pairs. The $\Delta G_{solv}$ was also calculated of phenanthrene in toluene and in toluene+$CO_{2}$. To the best of my knowledge, there was no available experimental data for these solvation free energies, but the previous results for phenanthrene in other solvents and for the pair anthracene+toluene indicated that the force field is adequate to describe the solvation phenomena of phenanthrene in an aromatic solvent. The results for these set are exposed bellow: 
+ The results also indicated the prediction capability of the force field for the pairs of aromatic solute and solvent. The pattern influence of the molecule's geometry on the free energy curves (Figure \ref{fig:tol}) was also observed for these pairs. The $\Delta G_{solv}$ was also calculated of phenanthrene in toluene and in toluene+$CO_{2}$. To the best of my knowledge, there was no available experimental data for these solvation free energies, but the previous results for phenanthrene in other solvents and for the pair anthracene+toluene showed that the force field is adequate to describe the solvation phenomena of phenanthrene in an aromatic solvent. The results for these set are exposed bellow: 
  
 \FloatBarrier
 \begin{table}[H]
 \centering
-  \caption{Calculated values for the solvation free energies (kcal/mol) of phenanthrene in toluene+$CO_{2}$}
+  \caption{Calculated values for the solvation free energy differences (kcal/mol) of phenanthrene in toluene+$CO_{2}$.}
   \label{tbl:solv3}
   \begin{tabular}{ll}
     \hline
@@ -115,7 +115,7 @@ The increasing of $CO_{2}$ mass fraction in toluene caused a slight effect on so
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{Figures/Figure_1}
-\caption{Solvation free energy profiles of phenanthrene in toluene+$CO_{2}$}
+\caption{Solvation free energy profiles of phenanthrene in toluene+$CO_{2}$.}
 \label{fig:Figure_1}
 \end{figure}
 
@@ -126,7 +126,7 @@ The hydration free energies of widely studied solutes (propane, benzene) and aro
 
 \begin{table*}[h]
 	\centering
-	\caption{Calculated values for the Gibbs energy of solvation (kcal/mol) of solutes in water for $k_{ij}=0$}
+	\caption{Calculated values for the hydration free energy differences (kcal/mol) of solutes in water for $k_{ij}=0$.}
 	\label{tbl:solv3}
 	\begin{tabular}{lll}
 		\hline
@@ -140,11 +140,11 @@ The hydration free energies of widely studied solutes (propane, benzene) and aro
 	\end{tabular}
 \end{table*}
 
-After this results, it need of the interaction parameter was clear. The estimation the SAFT VR Mie EoS using vapor pressure data also didn't provide good results, then it was decided the strategy of estimating the $k_{ij}=0$ with the output form solvation free energy calculations with molecular dynamics as described in the last paragraph of section \ref{solvme}. A $k_{ij}$ individual value for each solvent was initially found, but, since the parameters values for aromatic solutes seems to be very similar (0.148, 0.162, 0.152), the average of this values was taken in order to obtain a general parameter for the pair water+aromatic and avoid the necessity of doing new molecular simulations to find interactions parameters of other aromatic compounds. The $k_{ij}$ estimated are exposed below:
+After this results, the need of the interaction parameter was clear. The $k_{ij}$ estimation with the SAFT VR Mie EoS and experimental vapor pressure data also didn't provide good results, then the strategy of estimating the $k_{ij}$ with the output form solvation free energy calculations with molecular dynamics, as described in the last paragraph of section \ref{solvme}, was used.  Individual values for the interaction parameter for each solvent was initially found, but, since the parameters values for aromatic solutes were very similar (0.148, 0.162, 0.152), the average of this values was taken in order to obtain a general parameter for the pair water+aromatic and avoid the necessity of doing new molecular simulations to find interactions parameters of other aromatic compounds. The $k_{ij}$ estimated are:
 
 \begin{table*}[h]
   \centering
-  \caption{Binary interaction parameters employed}
+  \caption{Binary interaction parameters employed.}
   \label{tbl:kij}
   \begin{tabular}{ll}
     \hline
@@ -156,30 +156,34 @@ After this results, it need of the interaction parameter was clear. The estimati
   \end{tabular}
 \end{table*}
 
-\begin{table*}[!htb]
+The relatively large $k_{ij}$ value for the aromatic solutes can be pinned on the lack of an explicit association term on the model. Nevertheless, the value obtained by fitting the parameter with molecular dynamics interfacial tension data was larger for the mixture water+toluene (0.241) \cite{herdes2017}.  The SAFT-$\gamma$ Mie model for water \cite{lobanova2016} has actually three different of temperature dependent sets of parameters. The one used in this work was the set estimated with experimental interfacial tension data, but the binary interaction parameter estimated with MD interfacial tension data could not be transferable to solvation free energies calculations. Modeling the water with a coarse grained methodology has a lot of difficulties because the water molecules move independently and only have non bonded interactions \cite{hadley2010,hadley2012}. The  SAFT-$\gamma$ Mie water model considers that one water molecular corresponds to one bead, this strategy only saves small simulation time, but it is able to predict properties at physiological temperatures unlike other more aggressive models which considers that one bead represents various water molecules. In light of all this, the SAFT-$\gamma$ Mie force field appears to be a good alternative when working close to room temperatures, but the necessity of additional parameters estimated with molecular simulation indicates problems on the model. The solvation free energies differences calculated with the final fitted binary interaction parameters are presented in Table \ref{tbl:solv2}.  
+
+\begin{table}[H]
   \centering
-  \caption{Calculated and experimental values for the Gibbs energy of solvation (kcal/mol) of solutes in water}
+  \caption{Calculated and experimental values for the hydration free energy differences  (kcal/mol) of solutes in water.}
   \label{tbl:solv2}
   \begin{tabular}{lllll}
     \hline
-     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute Deviation &$\Delta G_{solv}^{GAFF}$ \\
+     Solute      & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute Deviation & $\Delta G_{solv}^{GAFF}$ \\
     \hline
     propane      &  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01& 0.01 &2.50 $\pm$0.02 \\
     benzene      & -0.86 $\pm$ 0.20 & -1.12 $\pm$ 0.01    &  0.26    &-0.81$\pm$0.02 \\  
     toluene      & -0.83 $\pm$ 0.20 & -0.84 $\pm$ 0.01   &  0.01    &-0.79$\pm$0.03\\
-    phenanthrene & -3.88 $\pm$ 0.60 & 3.47 $\pm$ 0.02& 0.41 &-5.26$\pm$0.03 \\
+    phenanthrene & -3.88 $\pm$ 0.60 & -3.47 $\pm$ 0.02& 0.41 &-5.26$\pm$0.03 \\
     \hline
-    RMSE         &                  &               &  0.24     &      \\
-    \hline
+%    RMSE         &                  &               &  0.24     &      \\
+%    \hline
   \end{tabular}
 
-\end{table*}
+\end{table}
+
+The hydration free energies differences with $k_{ij}$ had low absolute deviations from the experimental data, as expected since the parameter was adjusted to fit this data. The root mean square error (RMSE) for the pairs tested with the SAFT-$\gamma$ 	Mie model was equal to 0.24, meanwhile the RMSE for hydration free energy differences with the GAFF force field \cite{PMID:24928188} was 0.73. The difference in absolute deviations between the two force fields is significantly high for phenanthrene, hence the coarse grained force filed with a binary parameter is preferred if the application requires a higher level of accuracy. The hydration free energy profiles in Figure \ref{fig:water} show again the geometry  dependence on the free energy profiles. 
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{Figures/water}
-\caption{Hydration free energy profiles}
+\caption{Hydration free energy profiles.}
 \label{fig:water}
 \end{figure}
 

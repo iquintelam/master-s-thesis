@@ -172,10 +172,18 @@ ISBN 0122673514.}
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, PAMI-6,
   p. 721 -- 741, 1984.}
 
+\bibitem[Hadley e McCabe 2010]{hadley2010}
+\abntrefinfo{Hadley e McCabe}{HADLEY; MCCABE}{2010}
+{HADLEY, K.~R.; MCCABE, C. On the investigation of coarse-grained models for
+  water: Balancing computational efficiency and the retention of structural
+  properties.
+\emph{The Journal of Physical Chemistry B}, v.~114, n.~13, p. 4590--4599,
+  2010.}
+
 \bibitem[Hadley e McCabe 2012]{hadley2012}
 \abntrefinfo{Hadley e McCabe}{HADLEY; MCCABE}{2012}
-{HADLEY, K.~R.; MCCABE, C. Coarse-grained molecular models of water: a review.
-\emph{Molecular Simulation}, v.~38, p. 671–681, 2012.}
+{HADLEY, K.~R.; MCCABE, C. Coarse-grained molecular models of water: A review.
+\emph{Molecular simulation}, v. 38 8-9, p. 671--681, 2012.}
 
 \bibitem[He \textit{et al.} 2010]{shinoda2010}
 \abntrefinfo{He \textit{et al.}}{HE \textit{et al.}}{2010}
@@ -341,6 +349,14 @@ ISBN 0122673514.}
 {MOBLEY, D.~L.; GILSON, M.~K. Predicting binding free energies: Frontiers and
   benchmarks.
 \emph{Annual Review of Biophysics}, v.~46, n.~1, p. 531--558, 2017.}
+
+\bibitem[Mobley e Guthrie 2014]{PMID:24928188}
+\abntrefinfo{Mobley e Guthrie}{MOBLEY; GUTHRIE}{2014}
+{MOBLEY, D.~L.; GUTHRIE, J.~P. Freesolv: a database of experimental and
+  calculated hydration free energies, with input files.
+\emph{Journal of computer-aided molecular design}, v.~28, n.~7, p. 711—720,
+  July 2014.
+ISSN 0920-654X.}
 
 \bibitem[Mortimer e Murphy 1923]{pvphen}
 \abntrefinfo{Mortimer e Murphy}{MORTIMER; MURPHY}{1923}
