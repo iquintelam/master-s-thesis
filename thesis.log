@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  6 JAN 2018 01:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  7 JAN 2018 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,21 +1056,21 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks34
 )
-Package color Info: Redefining color blue on input line 133.
+Package color Info: Redefining color blue on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 150.
+(hyperref)                removing `\gamma' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 149.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 150.
+Package hyperref Info: Option `colorlinks' set `true' on input line 149.
 \thesis@idxfile=\write4
 \openout4 = `thesis.idx'.
 
@@ -1087,35 +1087,35 @@ LaTeX Warning: Label `tbl:solv3' multiply defined.
 ) (./chapters/conclusions.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 174.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 173.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 174.
-LaTeX Info: Redefining \ref on input line 174.
-LaTeX Info: Redefining \pageref on input line 174.
-LaTeX Info: Redefining \nameref on input line 174.
+Package hyperref Info: Link coloring ON on input line 173.
+LaTeX Info: Redefining \ref on input line 173.
+LaTeX Info: Redefining \pageref on input line 173.
+LaTeX Info: Redefining \nameref on input line 173.
 \myptabbox=\box35
 \myptabboxwidth=\skip267
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 174.
+(lastpage)             ! on input line 173.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1145,7 +1145,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 174.
+LaTeX Info: Redefining \microtypecontext on input line 173.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1161,7 +1161,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 191.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 190.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1171,9 +1171,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 191.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 190.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 191.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 190.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1182,47 +1182,44 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 200.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 200.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 199.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.200 
+l.199 
        [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
 
  []
 
 
-Overfull \hbox (16.54776pt too wide) in paragraph at lines 244--244
+Overfull \hbox (16.54776pt too wide) in paragraph at lines 243--243
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
 
  []
 
 [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 309.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 308.
  [3
 
 ] [4
-
-
-] [5
 
 ] (./thesis.lof
 Overfull \hbox (2.25528pt too wide) detected at line 3
@@ -1354,36 +1351,36 @@ Overfull \hbox (9.58727pt too wide) detected at line 28
 \T1/ppl/m/n/12 Figure B.0.17 ^^U  
  []
 
-) [6
+) [5
 
-] (./thesis.lot) [7
+] (./thesis.lot) [6
 
-] (./thesis.toc [8
+] (./thesis.toc [7
 
-]) [9]
+]) [8]
 \openout2 = `chapters/introduction.aux'.
 
  (./chapters/introduction.tex
-[10
+[9
 
 
 
-]) [11]
+]) [10]
 \openout2 = `chapters/review.aux'.
 
- (./chapters/review.tex [12
+ (./chapters/review.tex [11
 
 
 
-] [13] [14]
-<Figures/cicclotermo.jpg, id=419, 469.755pt x 368.37625pt>
+] [12] [13]
+<Figures/cicclotermo.jpg, id=400, 469.755pt x 368.37625pt>
 File: Figures/cicclotermo.jpg Graphic file (type jpg)
 
 <use Figures/cicclotermo.jpg>
 Package pdftex.def Info: Figures/cicclotermo.jpg used on input line 90.
 (pdftex.def)             Requested size: 281.85518pt x 221.02744pt.
- [15] [16 <./Figures/cicclotermo.jpg>] [17]
-[18]) [19]
+ [14 <./Figures/cicclotermo.jpg>] [15] [16]
+[17]) [18]
 \openout2 = `chapters/computational.aux'.
 
  (./chapters/computational.tex
@@ -1399,17 +1396,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 6.
 
-[20
+[19
 
 
 
-] [21] <Figures/mullergeo.jpg, id=573, 507.8975pt x 205.76875pt>
+] [20] <Figures/mullergeo.jpg, id=553, 507.8975pt x 205.76875pt>
 File: Figures/mullergeo.jpg Graphic file (type jpg)
 
 <use Figures/mullergeo.jpg>
 Package pdftex.def Info: Figures/mullergeo.jpg used on input line 105.
 (pdftex.def)             Requested size: 406.31856pt x 164.6152pt.
- [22]
+ [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
@@ -1422,54 +1419,54 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
 
-[23 <./Figures/mullergeo.jpg>] [24] [25] [26] [27] [28] [29]) [30]
+[22 <./Figures/mullergeo.jpg>] [23] [24] [25] [26] [27] [28]) [29]
 \openout2 = `chapters/methodology.aux'.
 
 
 (./chapters/methodology.tex
-<Figures/fen5.jpg, id=749, 383.93437pt x 214.55156pt>
+<Figures/fen5.jpg, id=728, 383.93437pt x 214.55156pt>
 File: Figures/fen5.jpg Graphic file (type jpg)
  <use Figures/fen5.jpg>
 Package pdftex.def Info: Figures/fen5.jpg used on input line 10.
 (pdftex.def)             Requested size: 113.75pt x 63.56387pt.
 
-<Figures/fe3.png, id=754, 240.9pt x 213.79875pt>
+<Figures/fe3.png, id=733, 240.9pt x 213.79875pt>
 File: Figures/fe3.png Graphic file (type png)
  <use Figures/fe3.png>
 Package pdftex.def Info: Figures/fe3.png used on input line 25.
 (pdftex.def)             Requested size: 68.24722pt x 60.56789pt.
- [31
+ [30
 
 
 
- <./Figures/fen5.jpg> <./Figures/fe3.png (PNG copy)>] [32]) [33]
+ <./Figures/fen5.jpg> <./Figures/fe3.png (PNG copy)>] [31]) [32]
 \openout2 = `chapters/results.aux'.
 
 
-(./chapters/results.tex [34
+(./chapters/results.tex [33
 
 
 
-] <Figures/hex.png, id=842, 462.528pt x 346.896pt>
+] <Figures/hex.png, id=822, 462.528pt x 346.896pt>
 File: Figures/hex.png Graphic file (type png)
 
 <use Figures/hex.png>
 Package pdftex.def Info: Figures/hex.png used on input line 73.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- [35] <Figures/oct.png, id=850, 462.528pt x 346.896pt>
+ [34] <Figures/oct.png, id=830, 462.528pt x 346.896pt>
 File: Figures/oct.png Graphic file (type png)
 
 <use Figures/oct.png>
 Package pdftex.def Info: Figures/oct.png used on input line 80.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- <Figures/tol.png, id=851, 462.528pt x 346.896pt>
+ <Figures/tol.png, id=831, 462.528pt x 346.896pt>
 File: Figures/tol.png Graphic file (type png)
 
 <use Figures/tol.png>
 Package pdftex.def Info: Figures/tol.png used on input line 87.
 (pdftex.def)             Requested size: 409.49722pt x 307.13791pt.
- [36 <./Figures/hex.png> <./Figures/oct.png>] [37 <./Figures/tol.png>] <Figures
-/Figure_1.png, id=868, 462.528pt x 346.896pt>
+ [35 <./Figures/hex.png> <./Figures/oct.png>] [36 <./Figures/tol.png>] <Figures
+/Figure_1.png, id=848, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 
 <use Figures/Figure_1.png>
@@ -1479,61 +1476,61 @@ Package pdftex.def Info: Figures/Figure_1.png used on input line 117.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[38 <./Figures/Figure_1.png>] [39]
-<Figures/water.png, id=893, 1743.51375pt x 1291.82625pt>
+[37 <./Figures/Figure_1.png>] [38]
+<Figures/water.png, id=872, 1743.51375pt x 1291.82625pt>
 File: Figures/water.png Graphic file (type png)
 
 <use Figures/water.png>
 Package pdftex.def Info: Figures/water.png used on input line 187.
 (pdftex.def)             Requested size: 409.49722pt x 303.40181pt.
-) [40 <./Figures/water.png>]
+) [39 <./Figures/water.png>]
 \openout2 = `chapters/conclusions.aux'.
 
- (./chapters/conclusions.tex [41
+ (./chapters/conclusions.tex [40
 
 
 
-]) [42] (./thesis.bbl
+]) [41] (./thesis.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[43
+[42
 
 
-] [44] [45] [46] [47]) [48]
+] [43] [44] [45] [46]) [47]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 613.
+(hyperref)                removing `\uppercase' on input line 612.
 
-[49
+[48
 
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 615.
+(hyperref)                removing `math shift' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 615.
+(hyperref)                removing `\lambda' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 615.
+(hyperref)                removing `math shift' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 615.
+(hyperref)                removing `math shift' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\eta' on input line 615.
+(hyperref)                removing `\eta' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 615.
+(hyperref)                removing `math shift' on input line 614.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1547,133 +1544,133 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50
+[49
 
-] [51] [52] <Figures/ohex_benz.pdf, id=957, 420.06938pt x 433.62pt>
+] [50] [51] <Figures/ohex_benz.pdf, id=936, 420.06938pt x 433.62pt>
 File: Figures/ohex_benz.pdf Graphic file (type pdf)
 
 <use Figures/ohex_benz.pdf>
-Package pdftex.def Info: Figures/ohex_benz.pdf used on input line 772.
+Package pdftex.def Info: Figures/ohex_benz.pdf used on input line 771.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
 
-<Figures/ohex_pyr.pdf, id=958, 420.06938pt x 433.62pt>
+<Figures/ohex_pyr.pdf, id=937, 420.06938pt x 433.62pt>
 File: Figures/ohex_pyr.pdf Graphic file (type pdf)
 
 <use Figures/ohex_pyr.pdf>
-Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 778.
+Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 777.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [53
+ [52
 
  <./Figures/ohex_benz.pdf>]
-<Figures/ohex_phen.pdf, id=985, 420.06938pt x 433.62pt>
+<Figures/ohex_phen.pdf, id=964, 420.06938pt x 433.62pt>
 File: Figures/ohex_phen.pdf Graphic file (type pdf)
 
 <use Figures/ohex_phen.pdf>
-Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 784.
+Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 783.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [54 <./Figures/ohex_pyr.pdf>]
-<Figures/ooct_prop.pdf, id=1013, 420.06938pt x 433.62pt>
+ [53 <./Figures/ohex_pyr.pdf>]
+<Figures/ooct_prop.pdf, id=991, 420.06938pt x 433.62pt>
 File: Figures/ooct_prop.pdf Graphic file (type pdf)
 
 <use Figures/ooct_prop.pdf>
-Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 790.
+Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 789.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [55 <./Figures/ohex_phen.pdf>]
-<Figures/ooct_ant.pdf, id=1040, 504.08327pt x 520.34402pt>
+ [54 <./Figures/ohex_phen.pdf>]
+<Figures/ooct_ant.pdf, id=1019, 504.08327pt x 520.34402pt>
 File: Figures/ooct_ant.pdf Graphic file (type pdf)
 
 <use Figures/ooct_ant.pdf>
-Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 796.
+Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 795.
 (pdftex.def)             Requested size: 409.49722pt x 422.72289pt.
- [56 <./Figures/ooct_prop.pdf>]
-<Figures/ooct_phen.pdf, id=1067, 504.08327pt x 520.34402pt>
+ [55 <./Figures/ooct_prop.pdf>]
+<Figures/ooct_phen.pdf, id=1046, 504.08327pt x 520.34402pt>
 File: Figures/ooct_phen.pdf Graphic file (type pdf)
 
 <use Figures/ooct_phen.pdf>
-Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 802.
+Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 801.
 (pdftex.def)             Requested size: 409.49722pt x 422.72289pt.
- [57 <./Figures/ooct_ant.pdf>]
-<Figures/otol_pyr.pdf, id=1095, 420.06938pt x 433.62pt>
+ [56 <./Figures/ooct_ant.pdf>]
+<Figures/otol_pyr.pdf, id=1073, 420.06938pt x 433.62pt>
 File: Figures/otol_pyr.pdf Graphic file (type pdf)
 
 <use Figures/otol_pyr.pdf>
-Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 808.
+Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 807.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [58 <./Figures/ooct_phen.pdf>]
-<Figures/otol_antr.pdf, id=1122, 420.06938pt x 433.62pt>
+ [57 <./Figures/ooct_phen.pdf>]
+<Figures/otol_antr.pdf, id=1100, 420.06938pt x 433.62pt>
 File: Figures/otol_antr.pdf Graphic file (type pdf)
 
 <use Figures/otol_antr.pdf>
-Package pdftex.def Info: Figures/otol_antr.pdf used on input line 814.
+Package pdftex.def Info: Figures/otol_antr.pdf used on input line 813.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [59 <./Figures/otol_pyr.pdf>]
-<Figures/otol_phen.pdf, id=1149, 420.06938pt x 433.62pt>
+ [58 <./Figures/otol_pyr.pdf>]
+<Figures/otol_phen.pdf, id=1128, 420.06938pt x 433.62pt>
 File: Figures/otol_phen.pdf Graphic file (type pdf)
 
 <use Figures/otol_phen.pdf>
-Package pdftex.def Info: Figures/otol_phen.pdf used on input line 820.
+Package pdftex.def Info: Figures/otol_phen.pdf used on input line 819.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [60 <./Figures/otol_antr.pdf>]
-<Figures/otolco2_1.pdf, id=1177, 420.06938pt x 433.62pt>
+ [59 <./Figures/otol_antr.pdf>]
+<Figures/otolco2_1.pdf, id=1155, 420.06938pt x 433.62pt>
 File: Figures/otolco2_1.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_1.pdf>
-Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 826.
+Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 825.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
 
-<Figures/otolco2_2.pdf, id=1178, 420.06938pt x 433.62pt>
+<Figures/otolco2_2.pdf, id=1156, 420.06938pt x 433.62pt>
 File: Figures/otolco2_2.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_2.pdf>
-Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 831.
+Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 830.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [61 <./Figures/otol_phen.pdf>] [62 <./Figures/otolco2_1.pdf>] <Figures/otolco2
-_3.pdf, id=1231, 455.10025pt x 452.20944pt>
+ [60 <./Figures/otol_phen.pdf>] [61 <./Figures/otolco2_1.pdf>] <Figures/otolco2
+_3.pdf, id=1210, 455.10025pt x 452.20944pt>
 File: Figures/otolco2_3.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_3.pdf>
-Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 837.
+Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 836.
 (pdftex.def)             Requested size: 409.49722pt x 406.89502pt.
- [63 <./Figures/otolco2_2.pdf>]
-<Figures/otolco2_4.pdf, id=1258, 448.07399pt x 462.52798pt>
+ [62 <./Figures/otolco2_2.pdf>]
+<Figures/otolco2_4.pdf, id=1237, 448.07399pt x 462.52798pt>
 File: Figures/otolco2_4.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_4.pdf>
-Package pdftex.def Info: Figures/otolco2_4.pdf used on input line 843.
+Package pdftex.def Info: Figures/otolco2_4.pdf used on input line 842.
 (pdftex.def)             Requested size: 409.49722pt x 422.71492pt.
- [64 <./Figures/otolco2_3.pdf>]
-<Figures/owat_prop.pdf, id=1285, 420.06938pt x 433.62pt>
+ [63 <./Figures/otolco2_3.pdf>]
+<Figures/owat_prop.pdf, id=1264, 420.06938pt x 433.62pt>
 File: Figures/owat_prop.pdf Graphic file (type pdf)
 
 <use Figures/owat_prop.pdf>
-Package pdftex.def Info: Figures/owat_prop.pdf used on input line 849.
+Package pdftex.def Info: Figures/owat_prop.pdf used on input line 848.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
- [65 <./Figures/otolco2_4.pdf>]
-<Figures/owat_benz.pdf, id=1313, 427.09563pt x 424.38548pt>
+ [64 <./Figures/otolco2_4.pdf>]
+<Figures/owat_benz.pdf, id=1291, 427.09563pt x 424.38548pt>
 File: Figures/owat_benz.pdf Graphic file (type pdf)
 
 <use Figures/owat_benz.pdf>
-Package pdftex.def Info: Figures/owat_benz.pdf used on input line 855.
+Package pdftex.def Info: Figures/owat_benz.pdf used on input line 854.
 (pdftex.def)             Requested size: 409.49722pt x 406.89386pt.
- [66 <./Figures/owat_prop.pdf>]
-<Figures/owat_tol.pdf, id=1341, 427.09563pt x 424.38548pt>
+ [65 <./Figures/owat_prop.pdf>]
+<Figures/owat_tol.pdf, id=1319, 427.09563pt x 424.38548pt>
 File: Figures/owat_tol.pdf Graphic file (type pdf)
 
 <use Figures/owat_tol.pdf>
-Package pdftex.def Info: Figures/owat_tol.pdf used on input line 861.
+Package pdftex.def Info: Figures/owat_tol.pdf used on input line 860.
 (pdftex.def)             Requested size: 409.49722pt x 406.89386pt.
- [67 <./Figures/owat_benz.pdf>]
-<Figures/owat_phen.pdf, id=1368, 427.09563pt x 424.38548pt>
+ [66 <./Figures/owat_benz.pdf>]
+<Figures/owat_phen.pdf, id=1347, 427.09563pt x 424.38548pt>
 File: Figures/owat_phen.pdf Graphic file (type pdf)
 
 <use Figures/owat_phen.pdf>
-Package pdftex.def Info: Figures/owat_phen.pdf used on input line 867.
+Package pdftex.def Info: Figures/owat_phen.pdf used on input line 866.
 (pdftex.def)             Requested size: 409.49722pt x 406.89386pt.
- [68 <./Figures/owat_tol.pdf>]
+ [67 <./Figures/owat_tol.pdf>]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
-[69 <./Figures/owat_phen.pdf>]
+[68 <./Figures/owat_phen.pdf>]
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -1683,28 +1680,28 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 904.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 904.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 903.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 903.
  (./thesis.aux (./chapters/introduction.aux)
 (./chapters/review.aux) (./chapters/computational.aux)
 (./chapters/methodology.aux) (./chapters/results.aux)
 (./chapters/conclusions.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 904.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 904.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 903.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 903.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 904.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 903.
  ) 
 Here is how much of TeX's memory you used:
- 15465 strings out of 494929
- 229961 string characters out of 6180141
- 420608 words of memory out of 5000000
- 17906 multiletter control sequences out of 15000+600000
- 73518 words of font info for 276 fonts, out of 8000000 for 9000
+ 15441 strings out of 494929
+ 229712 string characters out of 6180141
+ 419505 words of memory out of 5000000
+ 17901 multiletter control sequences out of 15000+600000
+ 69837 words of font info for 266 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,17n,44p,2335b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,44p,2322b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1722,10 +1719,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 >
-Output written on thesis.pdf (70 pages, 1152623 bytes).
+Output written on thesis.pdf (69 pages, 1149657 bytes).
 PDF statistics:
- 1660 PDF objects out of 1728 (max. 8388607)
- 1318 compressed objects within 14 object streams
- 305 named destinations out of 1000 (max. 500000)
- 49075 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1634 PDF objects out of 1728 (max. 8388607)
+ 1294 compressed objects within 13 object streams
+ 297 named destinations out of 1000 (max. 500000)
+ 48043 words of extra memory for PDF output out of 51595 (max. 10000000)
 
