@@ -166,12 +166,26 @@ ISBN 0122673514.}
   coefficients in solvents of different polarity.
 \emph{Physical Chemistry Chemical Physics}, v.~20, p. 9155--9164, 2011.}
 
+\bibitem[Garrido \textit{et al.} 2009]{garrido}
+\abntrefinfo{Garrido \textit{et al.}}{GARRIDO \textit{et al.}}{2009}
+{GARRIDO, N.~M.; QUEIMADA, A.~J.; JORGE, M.; MACEDO, E.~A.; ECONOMOU, I.~G.
+  1-octanol/water partition coefficients of n-alkanes from molecular
+  simulations of absolute solvation free energies.
+\emph{Journal of Chemical Theory and Computation}, v.~5, p. 2436--2446, 2009.}
+
 \bibitem[Geman and Geman 1984]{geman1984}
 \abntrefinfo{Geman and Geman}{GEMAN; GEMAN}{1984}
 {GEMAN, S.; GEMAN, D. Stochastic relaxation, gibbs distributions, and the
   bayesian restoration of images.
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, PAMI-6,
   p. 721 -- 741, 1984.}
+
+\bibitem[Gonçalves and Stassen 2005]{goncalves}
+\abntrefinfo{Gonçalves and Stassen}{GONçALVES; STASSEN}{2005}
+{GONçALVES, P. F.~B.; STASSEN, H. Free energy of solvation from molecular
+  dynamics simulation applying voronoi-delaunay triangulation to the cavity
+  creation.
+\emph{The Journal of Chemical Physics}, v.~123, p. 214109, 2005.}
 
 \bibitem[Hadley and McCabe 2010]{hadley2010}
 \abntrefinfo{Hadley and McCabe}{HADLEY; MCCABE}{2010}
@@ -204,6 +218,13 @@ ISBN 0122673514.}
 {HERDES, C.; TOTTON, T.~S.; M\"ULLER, E.~A. Coarse grained force field for the
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
+
+\bibitem[Izairi and Kamberaj 2017]{izairi2017}
+\abntrefinfo{Izairi and Kamberaj}{IZAIRI; KAMBERAJ}{2017}
+{IZAIRI, R.; KAMBERAJ, H. Comparison study of polar and nonpolar contributions
+  to solvation free energy.
+\emph{Journal of Chemical Information and Modeling}, v.~57, p. 2539–2553,
+  2017.}
 
 \bibitem[Jorge \textit{et al.} 2010]{garrido2010}
 \abntrefinfo{Jorge \textit{et al.}}{JORGE \textit{et al.}}{2010}
@@ -326,6 +347,13 @@ ISBN 0122673514.}
   simulations.
 \emph{Journal of Computational Chemistry}, v.~30, p. 2157--2164, 2009.}
 
+\bibitem[Matos \textit{et al.} 2017]{mobley2017}
+\abntrefinfo{Matos \textit{et al.}}{MATOS \textit{et al.}}{2017}
+{MATOS, G. D.~R.; KYU, D.~Y.; LOEFFLER, H.~H.; CHODERA, J.~D.; SHIRTS, M.~R.; ;
+  MOBLEY, D.~L. Approaches for calculating solvation free energies and
+  enthalpies demonstrated with an update of the freesolv database.
+\emph{Journal Chemical Engineering Data}, v.~62, p. 1559--1569, 2017.}
+
 \bibitem[Mej\'ia, Herdes and M\"uller 2014]{mejia2014}
 \abntrefinfo{Mej\'ia, Herdes and M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
 {MEJ\'IA, A.; HERDES, C.; M\"ULLER, E.~A. Force fields for coarse-grained
@@ -358,6 +386,12 @@ ISBN 0122673514.}
 \emph{Journal of computer-aided molecular design}, v.~28, n.~7, p. 711—720,
   July 2014.
 ISSN 0920-654X.}
+
+\bibitem[Mohamed, Bradshaw and Essex 2016]{mohamed2016}
+\abntrefinfo{Mohamed, Bradshaw and Essex}{MOHAMED; BRADSHAW; ESSEX}{2016}
+{MOHAMED, N.~A.; BRADSHAW, R.~T.; ESSEX, J.~W. Evaluation of solvation free
+  energies for small molecules with the amoeba polarizable force field.
+\emph{Journal of Computational Chemistry}, v.~37, p. 2749--2758, 2016.}
 
 \bibitem[Mortimer and Murphy 1923]{pvphen}
 \abntrefinfo{Mortimer and Murphy}{MORTIMER; MURPHY}{1923}
@@ -430,6 +464,13 @@ ISSN 0920-654X.}
 {ROWLINSON, J.~S.; SWINTON, F.~L. \emph{Liquid and Liquid Mixtures}. 3. ed.
   London: Butterworth Scientific, 1982.}
 
+\bibitem[Roy, Blinov and Kovalenko 2017]{roy2017}
+\abntrefinfo{Roy, Blinov and Kovalenko}{ROY; BLINOV; KOVALENKO}{2017}
+{ROY, D.; BLINOV, N.; KOVALENKO, A. Predicting accurate solvation free energy
+  in n-octanol using 3d-rism-kh molecular theory of solvation: Making right
+  choices.
+\emph{Journal of Physical Chemistry B}, v.~121, p. 9268–9273, 2017.}
+
 \bibitem[Shinoda, Devane and Klein 2007]{shinoda2007}
 \abntrefinfo{Shinoda, Devane and Klein}{SHINODA; DEVANE; KLEIN}{2007}
 {SHINODA, W.; DEVANE, R.; KLEIN, M.~L. Multi-property fitting and
@@ -498,8 +539,7 @@ ISSN 0016-2361.}
   MELCHIONNA}{2015}
 {STERPONE, F.; DERREUMAUX, P.; MELCHIONNA, S. Protein simulations in fluids:
   Coupling the opep coarse-grained force field with hydrodynamics.
-\emph{Journal of Chemical Theory and Computation}, v.~11, p. 1843– 1853,
-  2015.}
+\emph{ga}, v.~11, p. 1843– 1853, 2015.}
 
 \bibitem[Sterpone \textit{et al.} 2014]{opep2014}
 \abntrefinfo{Sterpone \textit{et al.}}{STERPONE \textit{et al.}}{2014}

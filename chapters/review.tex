@@ -6,7 +6,9 @@
 
 
 
+
 \section{Coarse Grained Force Fields}
+
 
 Molecular simulations can be carried out at different levels of description. The detailed atomistic level or \textit{ab initio} level is described by the laws of quantum mechanics. The system consists of a set of subatomic particles in which Schrodinger's equation is solved for all of them. The next level is the atomistic description. It considers that the system is made up of atoms following the laws of statistical mechanics.  Force fields at this level are based on pair potentials with Coulombic charged sites. Contributions due to intramolecular interactions such as bond-stretching, angle-bending and torsion are also usually accounted by these kinds of force fields. When the simulation scale needs to be increased and the atomistic simulations become too computationally expensive, the coarse-grained (CG) description is more suited. It considers that the system is made up of pseudo atoms or beads that contain multiple atoms or even an entire molecule. 
 
@@ -21,7 +23,6 @@ Outside of the Martini framework, \citeonline{shinoda2010} studied different lev
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
-
 
 
 \section{Solvation Free Energies Based on Molecular Dynamics}
@@ -119,6 +120,8 @@ where $\alpha$ is a constant which the value of 0.5 is normally assumed to it. T
 \label{eqn:partcoe}
 \log{P}^{a/b} = \frac{\Delta G_{solv}^{a} - \Delta G_{solv}^{b}}{2.303RT}
 \end{equation}
+
+Using the methodology described above, a variety of work about free nergy calculations have been published. Recently, \citeonline{PMID:24928188, mobley2017} made available a big database of hydration free energy of small molecules using the GAFF force field. A comparison of polar and nonpolar contributions to these hydration free energy indicated the significance of each terms  \cite{izairi2017}. \citeonline{garrido,garrido2011} calculated the free energy of solvation of large alkanes in 1-octanol and water with three different force fields (TraPPE, Gromos, OPLS-AA/TraPPE) and the solvation free energy of propane and benzene in non aqueous solvents like n-hexadecane, n-hexane, ethyl benzene, acetone  with the force fields TraPPE-UA and TraPPE-AA. \citeonline{roy2017} addressed the choice of the Lennard Jones parameters for predicting solvation free energy in 1-octanol. \citeonline{goncalves} calculated the free energy of solvation in the solvents tetrachloride, chloroform and benzene with GROMOS force field. Using the GAFF and the polarizable AMOEBA force fields, \citeonline{mohamed2016} evaluated the solvation free energy of small molecules in toluene, chloroform and acetonitrile and obtained a mean unsigned error of 1.22 $kcal/mol$ for the AMOEBA and 0.66 $kcal/mol$ for the GAFF.
 
 \section{Post simulation methods}
 
