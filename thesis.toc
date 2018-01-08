@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.2}Solvation Free Energies Based on Molecular Dynamics}{13}{section.2.2}
 \contentsline {section}{\numberline {2.3}Post simulation methods}{16}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Thermodynamic integration}{16}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Free energy of Perturbation (FEP)}{16}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Free Energy of Perturbation (FEP)}{16}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Bennet Acceptance Ratio (BAR)}{17}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Multistate Bennet Acceptance Ratio (MBAR)}{18}{subsection.2.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -30,7 +30,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Solvation Free energy Calculations}{31}{section.4.2}
+\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{31}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Solvation free energies}{33}{section.5.1}
