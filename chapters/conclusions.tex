@@ -1,15 +1,43 @@
 \chapter{Conclusions} % Main chapter title
 
 \label{Chapter6} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-The work done on this dissertation focused on the calculation of solvation free energy differences of aromatics solutes that can mimic the asphaltene with the SAFT-$\gamma$ Mie force field. By doing that, we enriched the information about these calculations because the data available on the literature generally uses all atoms force fields based on the Lennard Jones Potential and solvation is studied on water for the majority of the data. The parametrization of the SAFT-$\gamma$ Mie force field is more straightforward when compared to other force fielsd since its parameters are obtained with the SAF-VR Mie EoS. Following this strategy, the phenanthrene parameters were obtained with two different ring equations and geometries. The ring equation proposed by \citeonline{muller2017} provided the more adequate set of parameters. 
 
-The potential energy data for every intermediated state was obtained with simulations at the expanded ensemble. The solvation free energy differences was then estimated with these data using the MBAR method. The results for the solvation free energy differences  with non aqueous solvents had absolute deviations to the experimental data of less of 2.0 kcal/mol, unless for the pair 1-octanol+anthracene. The geometry effect on the free energy curves was also observed, larger molecules had steeper curves and larger absolute deviations. The influence of carbon dioxide on the solvation free energy of phenanthrene in toluene found was minimum. The $\Delta G_{solv}$ decreased slightly until the mass fraction of $CO_{2}$ was equal to 0.119 and, after this point, the solvation free energies increased.   
+This dissertation consisted in  the study of solvation free
+energy calculations of aromatic solutes that can mimic asphaltenes with the SAFT-$\gamma$ 
+Mie force field. By doing that, we provided information about these calculations since solvation free energies studies are mostly done using  water as solvent and all atom force fields based on the Lennard Jones Potential. The parametrization of the SAFT-$\gamma$  Mie force field is more straightforward
+when compared to other force fields since its parameters are obtained through the SAF-VR
+Mie EoS. Following this strategy, the phenanthrene parameters were obtained using two
+different ring equations and geometries. The ring equation proposed by Müller and Mejía
+(2017) provided the more adequate set of parameters.
+The potential energy data for every intermediate state was obtained with simulations at the expanded ensemble. 
 
-The hydration free energy differences calculations with the SAFT-$\gamma$ Mie model required the use of relatively larger values of $k_{ij}$ in order to obtain satisfactory results. The parameter was estimated with the output form molecular dynamics data because the  strategy of using the SAFT-VR Mie EoS also didn't provide good results. This necessity of one additional parameter is probably due to the lack of an association term on the EoS that the models is based on. The results with $k_{ij}$ estimated with MD output were great, the absolute deviations to the experimental data found were smaller than the ones for the GAFF force field.   
+Solvation free energy differences were then
+estimated with these data using the MBAR method. The results for solvation free energy differences with non aqueous solvents had absolute deviations to the experimental
+data of less than 2.0 kcal/mol, except for the pair 1-octanol+anthracene. The geometry
+effect on the free energy curves was also observed- larger molecules had steeper curves
+and larger absolute deviations. The influence of carbon dioxide on the solvation free
+energy of phenanthrene in toluene was found to be minimum. The $\Delta G_{solv}$ decreased slightly until the mass fraction of $CO_{2}$ was equal to 0.119 and, after this point, solvation free
+energies increased. 
 
-Generally, the SAFT-$\gamma$ Mie proved to be a good model to represent the solvation phenomenon. It correctly described the solvation free energy differences of solutes mimicking asphaltenes in hexane, toluene, 1-octanol and water. The requirement of binary interaction parameter estimated with MD  output for the hydration free energies increases the simulation time, which is already larger for water for this model due to its coarse graining level. Nevertheless, SAFT-$\gamma$ Mie force field for water used doesn't predict freezing at room temperature as other force fields, which is essential for hydration free energy calculations.
+Hydration free energy differences calculations with the SAFT-$\gamma$ Mie model
+required the use of relatively larger values of $k_{ij}$ in order to obtain satisfactory results.
+The parameter was estimated with the output from molecular dynamics data as
+the strategy of using the SAFT-VR Mie EoS also didn’t provide good results. This
+necessity of one additional parameter happens probably due to the lack of an association term
+on the EoS that the model is based on. The results with $k_{ij}$ estimated with MD output
+were great, the absolute deviations to the experimental data found were smaller than
+the ones for the GAFF force field.
 
-This master's thesis had success in using a coarse grained force field to perform free energy calculations. Based on this work, we have some ideas for future development. Test the binary interaction parameter transferability to calculations with other aromatic solutes in water. Additionally, use the SAFT-$\gamma$ Mie force field to model more complex asphaltenes models and, consequently, increase the scale of these simulations. FInally, develop new methodologies to use solvation free energies to effectively calculate solubility. 
- 
+Generally, the SAFT-$\gamma$ Mie force field proved to be a good model to represent the solvation
+phenomenon. It correctly described solvation free energy differences of solutes
+mimicking asphaltenes in hexane, toluene, 1-octanol and water. The requirement of
+binary interaction parameter estimated with MD output for hydration free energies
+increases the simulation time, which is already larger for this water model due to its
+coarse graining level. Nevertheless, the SAFT-$\gamma$ Mie force field for water used doesn’t predict freezing at room temperature as other force fields, which is essential for hydration
+free energy calculations.
+This dissertation had success in using a coarse grained force field to perform
+free energy calculations. Based on this work, we have some ideas for future development. We intend to test the binary interaction parameter transferability to calculations with other
+aromatic solutes in water. Additionally, we want to use the SAFT-$\gamma$ Mie force field to model more
+complex asphaltenes models and, consequently, increase the scale of these simulations. The final step to expand this work would be to develop new methodologies to use solvation free energies to effectively calculate solubility
 
 

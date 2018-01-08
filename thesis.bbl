@@ -14,15 +14,15 @@
   multipole-multipole interactions.
 \emph{Journal of molecular modeling}, v.~20, p.~2306, 2014.}
 
-\bibitem[Aimoli, Maginn e Abreu 2014]{cassiano1}
-\abntrefinfo{Aimoli, Maginn e Abreu}{AIMOLI; MAGINN; ABREU}{2014a}
+\bibitem[Aimoli, Maginn and Abreu 2014]{cassiano1}
+\abntrefinfo{Aimoli, Maginn and Abreu}{AIMOLI; MAGINN; ABREU}{2014a}
 {AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C. Force field comparison and
   thermodynamic property calculation of supercritical $co_{2}$ and $ch_{4}$
   using molecular dynamics simulations.
 \emph{{F}luid {P}hase {E}quilibria}, v.~368, p. 80--90, 2014.}
 
-\bibitem[Aimoli, Maginn e Abreu 2014]{cassiano2}
-\abntrefinfo{Aimoli, Maginn e Abreu}{AIMOLI; MAGINN; ABREU}{2014b}
+\bibitem[Aimoli, Maginn and Abreu 2014]{cassiano2}
+\abntrefinfo{Aimoli, Maginn and Abreu}{AIMOLI; MAGINN; ABREU}{2014b}
 {AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C.~R. Transport properties of carbon
   dioxide and methane from molecular dynamics simulations.
 \emph{The Journal of Chemical Physics}, v.~141, p. 134101, 2014.}
@@ -34,21 +34,22 @@
   fluids.1. a single-site coarse grained model of carbon dioxide.
 \emph{The Journal of Physical Chemistry B}, v.~115, p. 11154–11169, 2011.}
 
-\bibitem[Barducci, Bonomi e Derreumaux 2011]{opep2011}
-\abntrefinfo{Barducci, Bonomi e Derreumaux}{BARDUCCI; BONOMI; DERREUMAUX}{2011}
+\bibitem[Barducci, Bonomi and Derreumaux 2011]{opep2011}
+\abntrefinfo{Barducci, Bonomi and Derreumaux}{BARDUCCI; BONOMI;
+  DERREUMAUX}{2011}
 {BARDUCCI, A.; BONOMI, M.; DERREUMAUX, P. Assessing the quality of the opep
   coarse-grained force field.
 \emph{Journal of Chemical Theory and Computation}, v.~7, p. 1928– 1934,
   2011.}
 
-\bibitem[Barker e Henderson 1976]{bh1976}
-\abntrefinfo{Barker e Henderson}{BARKER; HENDERSON}{1976}
+\bibitem[Barker and Henderson 1976]{bh1976}
+\abntrefinfo{Barker and Henderson}{BARKER; HENDERSON}{1976}
 {BARKER, J.~A.; HENDERSON, D. What is "liquid"? understanding the states of
   matter.
 \emph{Review of Modern Physics}, v.~48, p. 587--671, 1976.}
 
-\bibitem[Basdevant, Borgis e Ha-Duong 2013]{scorpion2013}
-\abntrefinfo{Basdevant, Borgis e Ha-Duong}{BASDEVANT; BORGIS; HA-DUONG}{2013}
+\bibitem[Basdevant, Borgis and Ha-Duong 2013]{scorpion2013}
+\abntrefinfo{Basdevant, Borgis and Ha-Duong}{BASDEVANT; BORGIS; HA-DUONG}{2013}
 {BASDEVANT, N.; BORGIS, D.; HA-DUONG, T. Modeling protein-protein recognition
   in solution using the coarse-grained force field scorpion.
 \emph{Journal of Chemical Theory and Computation}, v.~9, p. 803--813, 2013.}
@@ -59,21 +60,21 @@
   data.
 \emph{Journal of Computational Physics}, v.~22, p. 245–268, 1976.}
 
-\bibitem[Bereau, Bachmann e Deserno 2010]{bereau2010}
-\abntrefinfo{Bereau, Bachmann e Deserno}{BEREAU; BACHMANN; DESERNO}{2010}
+\bibitem[Bereau, Bachmann and Deserno 2010]{bereau2010}
+\abntrefinfo{Bereau, Bachmann and Deserno}{BEREAU; BACHMANN; DESERNO}{2010}
 {BEREAU, T.; BACHMANN, M.; DESERNO, M. Interplay between secondary and tertiary
   structure formation in protein folding cooperativity.
 \emph{Journal of the American Chemical Society}, v.~132, p. 13129– 13131,
   2010.}
 
-\bibitem[Bereau e Deserno 2009]{bereau2009}
-\abntrefinfo{Bereau e Deserno}{BEREAU; DESERNO}{2009}
+\bibitem[Bereau and Deserno 2009]{bereau2009}
+\abntrefinfo{Bereau and Deserno}{BEREAU; DESERNO}{2009}
 {BEREAU, T.; DESERNO, M. Generic coarse-grained model for protein folding and
   aggregation.
 \emph{Journal of Chemical Physics}, v.~130, p. 235106, 2009.}
 
-\bibitem[Berg e Neuhaus 1992]{bernd1992}
-\abntrefinfo{Berg e Neuhaus}{BERG; NEUHAUS}{1992}
+\bibitem[Berg and Neuhaus 1992]{bernd1992}
+\abntrefinfo{Berg and Neuhaus}{BERG; NEUHAUS}{1992}
 {BERG, B.~A.; NEUHAUS, T. Multicanonical ensemble: A new approach to simulate
   first-order phase transitions.
 \emph{Physical Review Letters}, American Physical Society, v.~68, p. 9--12, Jan
@@ -86,8 +87,8 @@
   on molecular simulations.
 \emph{Chemical Physics Letters.}, v.~222, p. 529–539, 1994.}
 
-\bibitem[Bhargava e Klein 2009]{bhargava2009}
-\abntrefinfo{Bhargava e Klein}{BHARGAVA; KLEIN}{2009}
+\bibitem[Bhargava and Klein 2009]{bhargava2009}
+\abntrefinfo{Bhargava and Klein}{BHARGAVA; KLEIN}{2009}
 {BHARGAVA, B.; KLEIN, M.~L. Formation of micelles in aqueous solutions of a
   room temperature ionic liquid: a study using coarse grained molecular
   dynamicss.
@@ -112,14 +113,14 @@
   implicit solvent.
 \emph{Journal of Physical Chemistry B}, v.~113, p. 267– 274, 2009.}
 
-\bibitem[Chiu, Scott e Jakobsson 2010]{chiu2010}
-\abntrefinfo{Chiu, Scott e Jakobsson}{CHIU; SCOTT; JAKOBSSON}{2010}
+\bibitem[Chiu, Scott and Jakobsson 2010]{chiu2010}
+\abntrefinfo{Chiu, Scott and Jakobsson}{CHIU; SCOTT; JAKOBSSON}{2010}
 {CHIU, S.; SCOTT, H.; JAKOBSSON, E. A coarse-grained model based on morse
   potential for water and n-alkanes.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 851--863, 2010.}
 
-\bibitem[Chodera e Shirts 2011]{chodera2011}
-\abntrefinfo{Chodera e Shirts}{CHODERA; SHIRTS}{2011}
+\bibitem[Chodera and Shirts 2011]{chodera2011}
+\abntrefinfo{Chodera and Shirts}{CHODERA; SHIRTS}{2011}
 {CHODERA, J.~D.; SHIRTS, M.~R. Replica exchange and expanded ensemble
   simulations as gibbs sampling: simple improvements for enhanced mixing.
 \emph{Journal of Chemical Physics}, v.~135, p. 194110, 2011.}
@@ -138,22 +139,22 @@
   fluid interfaces covered with large molecules such as asphaltenes.
 \emph{Journal of Computational Physics}, v.~327, p. 576--611, 2016.}
 
-\bibitem[Ervik, Mej\'ia e M\"uller 2016]{ervik2016}
-\abntrefinfo{Ervik, Mej\'ia e M\"uller}{ERVIK; MEJ\'IA; M\"ULLER}{2016}
+\bibitem[Ervik, Mej\'ia and M\"uller 2016]{ervik2016}
+\abntrefinfo{Ervik, Mej\'ia and M\"uller}{ERVIK; MEJ\'IA; M\"ULLER}{2016}
 {ERVIK, A.; MEJ\'IA, A.; M\"ULLER, E.~A. Bottled saft: A web app providing
   saft-$\gamma$ mie force field parameters for thousands of molecular fluids.
 \emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
   2016.}
 
-\bibitem[Escobedo e Martinez-Veracoechea 2007]{escobedo2007}
-\abntrefinfo{Escobedo e Martinez-Veracoechea}{ESCOBEDO;
+\bibitem[Escobedo and Martinez-Veracoechea 2007]{escobedo2007}
+\abntrefinfo{Escobedo and Martinez-Veracoechea}{ESCOBEDO;
   MARTINEZ-VERACOECHEA}{2007}
 {ESCOBEDO, F.~A.; MARTINEZ-VERACOECHEA, F.~J. Optimized expanded ensembles for
   simulations involving molecular insertions and deletions. i. closed systems.
 \emph{Journal of Chemical Physics}, v.~127, p. 174103, 2007.}
 
-\bibitem[Frenkel e Smit 2001]{frenkel}
-\abntrefinfo{Frenkel e Smit}{FRENKEL; SMIT}{2001}
+\bibitem[Frenkel and Smit 2001]{frenkel}
+\abntrefinfo{Frenkel and Smit}{FRENKEL; SMIT}{2001}
 {FRENKEL, D.; SMIT, B. \emph{Understanding Molecular Simulation}. 2nd. ed.
   Orlando, FL, USA: Academic Press, Inc., 2001.
 ISBN 0122673514.}
@@ -165,23 +166,23 @@ ISBN 0122673514.}
   coefficients in solvents of different polarity.
 \emph{Physical Chemistry Chemical Physics}, v.~20, p. 9155--9164, 2011.}
 
-\bibitem[Geman e Geman 1984]{geman1984}
-\abntrefinfo{Geman e Geman}{GEMAN; GEMAN}{1984}
+\bibitem[Geman and Geman 1984]{geman1984}
+\abntrefinfo{Geman and Geman}{GEMAN; GEMAN}{1984}
 {GEMAN, S.; GEMAN, D. Stochastic relaxation, gibbs distributions, and the
   bayesian restoration of images.
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, PAMI-6,
   p. 721 -- 741, 1984.}
 
-\bibitem[Hadley e McCabe 2010]{hadley2010}
-\abntrefinfo{Hadley e McCabe}{HADLEY; MCCABE}{2010}
+\bibitem[Hadley and McCabe 2010]{hadley2010}
+\abntrefinfo{Hadley and McCabe}{HADLEY; MCCABE}{2010}
 {HADLEY, K.~R.; MCCABE, C. On the investigation of coarse-grained models for
   water: Balancing computational efficiency and the retention of structural
   properties.
 \emph{The Journal of Physical Chemistry B}, v.~114, n.~13, p. 4590--4599,
   2010.}
 
-\bibitem[Hadley e McCabe 2012]{hadley2012}
-\abntrefinfo{Hadley e McCabe}{HADLEY; MCCABE}{2012}
+\bibitem[Hadley and McCabe 2012]{hadley2012}
+\abntrefinfo{Hadley and McCabe}{HADLEY; MCCABE}{2012}
 {HADLEY, K.~R.; MCCABE, C. Coarse-grained molecular models of water: A review.
 \emph{Molecular simulation}, v. 38 8-9, p. 671--681, 2012.}
 
@@ -198,8 +199,8 @@ ISBN 0122673514.}
   coarse-grained saft-$\gamma$ mie force field.
 \emph{{F}luid {P}hase {E}quilib.}, 2017.}
 
-\bibitem[Herdes, Totton e M\"uller 2015]{herdes2015}
-\abntrefinfo{Herdes, Totton e M\"uller}{HERDES; TOTTON; M\"ULLER}{2015}
+\bibitem[Herdes, Totton and M\"uller 2015]{herdes2015}
+\abntrefinfo{Herdes, Totton and M\"uller}{HERDES; TOTTON; M\"ULLER}{2015}
 {HERDES, C.; TOTTON, T.~S.; M\"ULLER, E.~A. Coarse grained force field for the
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
@@ -216,8 +217,8 @@ ISBN 0122673514.}
 {KIRKWOOD, J. Statistical mechanics of fluid mixtures.
 \emph{Journal of Chemical Physics}, v.~3, p. 300–313, 1935.}
 
-\bibitem[Klimovich, Shirts e Mobley 2015]{klimovich}
-\abntrefinfo{Klimovich, Shirts e Mobley}{KLIMOVICH; SHIRTS; MOBLEY}{2015}
+\bibitem[Klimovich, Shirts and Mobley 2015]{klimovich}
+\abntrefinfo{Klimovich, Shirts and Mobley}{KLIMOVICH; SHIRTS; MOBLEY}{2015}
 {KLIMOVICH, P.~V.; SHIRTS, M.~R.; MOBLEY, D.~L. Guidelines for the analysis of
   free energy calculations.
 \emph{Journal of Computer-Aided Molecular Design}, v.~29, p. 397--411, 2015.}
@@ -228,8 +229,8 @@ ISBN 0122673514.}
   Coarse-grained protein models and their applications.
 \emph{Chemical Reviews}, v.~116, p. 7898–7936, 2016.}
 
-\bibitem[Koga e Takada 2001]{koga2001}
-\abntrefinfo{Koga e Takada}{KOGA; TAKADA}{2001}
+\bibitem[Koga and Takada 2001]{koga2001}
+\abntrefinfo{Koga and Takada}{KOGA; TAKADA}{2001}
 {KOGA, N.; TAKADA, S. Roles of native topology and chain-length scaling in
   protein folding: a simulation study with a go-like model.
 \emph{Journal of Molecular Biology}, v.~331, p. 171–180, 2001.}
@@ -274,8 +275,8 @@ ISBN 0122673514.}
   simulation of protein folding.
 \emph{Journal of Molecular Biology}, v.~104, p. 59--107, 1976.}
 
-\bibitem[Levitt e Warshe 1975]{levitt1975}
-\abntrefinfo{Levitt e Warshe}{LEVITT; WARSHE}{1975}
+\bibitem[Levitt and Warshe 1975]{levitt1975}
+\abntrefinfo{Levitt and Warshe}{LEVITT; WARSHE}{1975}
 {LEVITT, M.; WARSHE, A. Computer-simulation of protein folding.
 \emph{Nature}, v.~253, p. 694–698, 1975.}
 
@@ -313,8 +314,8 @@ ISBN 0122673514.}
   simulations.
 \emph{Journal of Physical Chemistry B}, v.~111, p. 7812–7824, 2007.}
 
-\bibitem[Marrink e Tieleman 2013]{martini20132}
-\abntrefinfo{Marrink e Tieleman}{MARRINK; TIELEMAN}{2013}
+\bibitem[Marrink and Tieleman 2013]{martini20132}
+\abntrefinfo{Marrink and Tieleman}{MARRINK; TIELEMAN}{2013}
 {MARRINK, S.~J.; TIELEMAN, D.~P. Perspective on the martini model.
 \emph{Chemical Society Reviews}, v.~42, p. 6801– 6822, 2013.}
 
@@ -325,8 +326,8 @@ ISBN 0122673514.}
   simulations.
 \emph{Journal of Computational Chemistry}, v.~30, p. 2157--2164, 2009.}
 
-\bibitem[Mej\'ia, Herdes e M\"uller 2014]{mejia2014}
-\abntrefinfo{Mej\'ia, Herdes e M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
+\bibitem[Mej\'ia, Herdes and M\"uller 2014]{mejia2014}
+\abntrefinfo{Mej\'ia, Herdes and M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
 {MEJ\'IA, A.; HERDES, C.; M\"ULLER, E.~A. Force fields for coarse-grained
   molecular simulations from a corresponding states correlation.
 \emph{Industrial and Chemical Engineering Research}, v.~53, p. 4131–4141,
@@ -344,42 +345,42 @@ ISBN 0122673514.}
   in explicit solvent.
 \emph{The Journal of Physical Chemistry B}, v.~111, n.~9, p. 2242--2254, 2007.}
 
-\bibitem[Mobley e Gilson 2017]{doimobley}
-\abntrefinfo{Mobley e Gilson}{MOBLEY; GILSON}{2017}
+\bibitem[Mobley and Gilson 2017]{doimobley}
+\abntrefinfo{Mobley and Gilson}{MOBLEY; GILSON}{2017}
 {MOBLEY, D.~L.; GILSON, M.~K. Predicting binding free energies: Frontiers and
   benchmarks.
 \emph{Annual Review of Biophysics}, v.~46, n.~1, p. 531--558, 2017.}
 
-\bibitem[Mobley e Guthrie 2014]{PMID:24928188}
-\abntrefinfo{Mobley e Guthrie}{MOBLEY; GUTHRIE}{2014}
+\bibitem[Mobley and Guthrie 2014]{PMID:24928188}
+\abntrefinfo{Mobley and Guthrie}{MOBLEY; GUTHRIE}{2014}
 {MOBLEY, D.~L.; GUTHRIE, J.~P. Freesolv: a database of experimental and
   calculated hydration free energies, with input files.
 \emph{Journal of computer-aided molecular design}, v.~28, n.~7, p. 711—720,
   July 2014.
 ISSN 0920-654X.}
 
-\bibitem[Mortimer e Murphy 1923]{pvphen}
-\abntrefinfo{Mortimer e Murphy}{MORTIMER; MURPHY}{1923}
+\bibitem[Mortimer and Murphy 1923]{pvphen}
+\abntrefinfo{Mortimer and Murphy}{MORTIMER; MURPHY}{1923}
 {MORTIMER, S.; MURPHY, R. The vapor pressures of some substances found in coal
   tar.
 \emph{Industrial and Engineering Chemistry Research}, v.~14, p. 1140--1142,
   1923.}
 
-\bibitem[M\"uller e Gubbins 1993]{muller1993}
-\abntrefinfo{M\"uller e Gubbins}{M\"ULLER; GUBBINS}{1993}
+\bibitem[M\"uller and Gubbins 1993]{muller1993}
+\abntrefinfo{M\"uller and Gubbins}{M\"ULLER; GUBBINS}{1993}
 {M\"ULLER, E.~A.; GUBBINS, K.~E. Simulation of hard triatomic and tetratomic
   molecules. a test of associating fluid theory.
 \emph{Molecular Physics}, v.~80, p. 957–976, 1993.}
 
-\bibitem[M\"uller e Mej\'ia 2017]{muller2017}
-\abntrefinfo{M\"uller e Mej\'ia}{M\"ULLER; MEJ\'IA}{2017}
+\bibitem[M\"uller and Mej\'ia 2017]{muller2017}
+\abntrefinfo{M\"uller and Mej\'ia}{M\"ULLER; MEJ\'IA}{2017}
 {M\"ULLER, E.~A.; MEJ\'IA, A. Extension of the saft-vr mie eos to model
   homonuclear rings and its parametrization based on the principle of
   corresponding states.
 \emph{Langmuir}, -, p. A–L, 2017.}
 
-\bibitem[Paliwal e Shirts 2011]{bareva}
-\abntrefinfo{Paliwal e Shirts}{PALIWAL; SHIRTS}{2011}
+\bibitem[Paliwal and Shirts 2011]{bareva}
+\abntrefinfo{Paliwal and Shirts}{PALIWAL; SHIRTS}{2011}
 {PALIWAL, H.; SHIRTS, M.~R. A benchmark test set for alchemical free energy
   transformations and its use to quantify error in common free energy methods.
 \emph{Journal of Chemical Theory and Computation}, v.~7, p. 4115–4134, 2011.}
@@ -390,8 +391,8 @@ ISSN 0920-654X.}
   fluids using %monte carlo simulation in a new ensemble.
 \emph{Molecular Physics}, v.~61, p. 813–826, 1987.}
 
-\bibitem[Pantano e Klein 2009]{pantano2009}
-\abntrefinfo{Pantano e Klein}{PANTANO; KLEIN}{2009}
+\bibitem[Pantano and Klein 2009]{pantano2009}
+\abntrefinfo{Pantano and Klein}{PANTANO; KLEIN}{2009}
 {PANTANO, D.; KLEIN, M.~L. Characterization of membrane-protein interactions
   for the leucine transporter from aquifex aeolicus by molecular dynamics
   calculations.
@@ -410,8 +411,9 @@ ISSN 0920-654X.}
 {PLIMPTON, S. Fast parallel algorithms for short-range molecular dynamics.
 \emph{Journal of Computational Physics}, v.~117, p. 1--19, 1995.}
 
-\bibitem[Pohorille, Jarzynski e Chipot 2010]{pohorille2010}
-\abntrefinfo{Pohorille, Jarzynski e Chipot}{POHORILLE; JARZYNSKI; CHIPOT}{2010}
+\bibitem[Pohorille, Jarzynski and Chipot 2010]{pohorille2010}
+\abntrefinfo{Pohorille, Jarzynski and Chipot}{POHORILLE; JARZYNSKI;
+  CHIPOT}{2010}
 {POHORILLE, A.; JARZYNSKI, C.; CHIPOT, C. Good practices in freeenergy
   calculations.
 \emph{Journal of Physical Chemistry B}, v.~114, p. 10235–10253, 2010.}
@@ -423,26 +425,26 @@ ISSN 0920-654X.}
   intermolecular potentials.
 \emph{Molecular Physics}, v.~113, p. 1–16, 2015.}
 
-\bibitem[ROWLINSON e SWINTON 1982]{rowlinson}
-\abntrefinfo{ROWLINSON e SWINTON}{ROWLINSON; SWINTON}{1982}
+\bibitem[ROWLINSON and SWINTON 1982]{rowlinson}
+\abntrefinfo{ROWLINSON and SWINTON}{ROWLINSON; SWINTON}{1982}
 {ROWLINSON, J.~S.; SWINTON, F.~L. \emph{Liquid and Liquid Mixtures}. 3. ed.
   London: Butterworth Scientific, 1982.}
 
-\bibitem[Shinoda, Devane e Klein 2007]{shinoda2007}
-\abntrefinfo{Shinoda, Devane e Klein}{SHINODA; DEVANE; KLEIN}{2007}
+\bibitem[Shinoda, Devane and Klein 2007]{shinoda2007}
+\abntrefinfo{Shinoda, Devane and Klein}{SHINODA; DEVANE; KLEIN}{2007}
 {SHINODA, W.; DEVANE, R.; KLEIN, M.~L. Multi-property fitting and
   parameterization of a coarse grained model for aqueous surfactants.
 \emph{Molecular Simulation}, v.~33, p. 27–36, 2007.}
 
-\bibitem[Shinoda, Devane e Klein 2010]{shinoda20102}
-\abntrefinfo{Shinoda, Devane e Klein}{SHINODA; DEVANE; KLEIN}{2010}
+\bibitem[Shinoda, Devane and Klein 2010]{shinoda20102}
+\abntrefinfo{Shinoda, Devane and Klein}{SHINODA; DEVANE; KLEIN}{2010}
 {SHINODA, W.; DEVANE, R.; KLEIN, M.~L. Zwitterionic lipid assemblies: molecular
   dynamics studies of monolayers, bilayers, and vesicles using a new coarse
   grain force field.
 \emph{Journal of Physical Chemistry B}, v.~114, p. 6836--6849, 2010.}
 
-\bibitem[Shirts e Chodera 2008]{mbar}
-\abntrefinfo{Shirts e Chodera}{SHIRTS; CHODERA}{2008}
+\bibitem[Shirts and Chodera 2008]{mbar}
+\abntrefinfo{Shirts and Chodera}{SHIRTS; CHODERA}{2008}
 {SHIRTS, M.~R.; CHODERA, J.~D. Statistically optimal analysis of samples from
   multiple equilibrium states.
 \emph{Journal of Chemical Physics}, v.~129, p. 124105, 2008.}
@@ -454,8 +456,8 @@ ISSN 0920-654X.}
   common molecular mechanics force fields for proteins.
 \emph{Journal of Chemical Physics}, v.~119, p.~5740, 2003.}
 
-\bibitem[Shyu e Ytreberg 2010]{shyu2009}
-\abntrefinfo{Shyu e Ytreberg}{SHYU; YTREBERG}{2010}
+\bibitem[Shyu and Ytreberg 2010]{shyu2009}
+\abntrefinfo{Shyu and Ytreberg}{SHYU; YTREBERG}{2010}
 {SHYU, C.; YTREBERG, F.~M. Reducing the bias and uncertainty of free energy
   estimates by using regression to fit thermodynamic integration data.
 \emph{Journal of Computational Chemistry}, v.~6, p. 1018–1027, 2010.}
@@ -470,15 +472,15 @@ ISSN 0920-654X.}
   p. 399 -- 473, 2003.
 ISSN 0001-8686.}
 
-\bibitem[Sjöblom, Simon e Xu 2015]{SJOBLOM20151}
-\abntrefinfo{Sjöblom, Simon e Xu}{SJöBLOM; SIMON; XU}{2015}
+\bibitem[Sjöblom, Simon and Xu 2015]{SJOBLOM20151}
+\abntrefinfo{Sjöblom, Simon and Xu}{SJöBLOM; SIMON; XU}{2015}
 {SJöBLOM, J.; SIMON, S.; XU, Z. Model molecules mimicking asphaltenes.
 \emph{Advances in Colloid and Interface Science}, v.~218, n. Supplement C, p. 1
   -- 16, 2015.
 ISSN 0001-8686.}
 
-\bibitem[Smith, Ness e Abbot 2007]{smithbook}
-\abntrefinfo{Smith, Ness e Abbot}{SMITH; NESS; ABBOT}{2007}
+\bibitem[Smith, Ness and Abbot 2007]{smithbook}
+\abntrefinfo{Smith, Ness and Abbot}{SMITH; NESS; ABBOT}{2007}
 {SMITH, J.; NESS, H. V.; ABBOT, M.~M. \emph{Introdu{\c c}{\~a}o \'a
   Termodin{\~a}mica da Engenharia Qu\'imica}. 2. ed. Rio de Janeiro: LTC,
   2007.}
@@ -491,8 +493,8 @@ ISSN 0001-8686.}
 \emph{Fuel}, v.~137, n. Supplement C, p. 405 -- 411, 2014.
 ISSN 0016-2361.}
 
-\bibitem[Sterpone, Derreumaux e Melchionna 2015]{opep2015}
-\abntrefinfo{Sterpone, Derreumaux e Melchionna}{STERPONE; DERREUMAUX;
+\bibitem[Sterpone, Derreumaux and Melchionna 2015]{opep2015}
+\abntrefinfo{Sterpone, Derreumaux and Melchionna}{STERPONE; DERREUMAUX;
   MELCHIONNA}{2015}
 {STERPONE, F.; DERREUMAUX, P.; MELCHIONNA, S. Protein simulations in fluids:
   Coupling the opep coarse-grained force field with hydrodynamics.
@@ -508,15 +510,15 @@ ISSN 0016-2361.}
   hydrodynamics to dna/rna systems.
 \emph{Chemical Society Reviews}, v.~43, p. 4871– 4893, 2014.}
 
-\bibitem[Torrie e Valleau 1977]{TORRIE1977187}
-\abntrefinfo{Torrie e Valleau}{TORRIE; VALLEAU}{1977}
+\bibitem[Torrie and Valleau 1977]{TORRIE1977187}
+\abntrefinfo{Torrie and Valleau}{TORRIE; VALLEAU}{1977}
 {TORRIE, G.; VALLEAU, J. Nonphysical sampling distributions in monte carlo
   free-energy estimation: Umbrella sampling.
 \emph{Journal of Computational Physics}, v.~23, n.~2, p. 187 -- 199, 1977.
 ISSN 0021-9991.}
 
-\bibitem[Trebst, Huse e Troyer 2004]{trebst2004}
-\abntrefinfo{Trebst, Huse e Troyer}{TREBST; HUSE; TROYER}{2004}
+\bibitem[Trebst, Huse and Troyer 2004]{trebst2004}
+\abntrefinfo{Trebst, Huse and Troyer}{TREBST; HUSE; TROYER}{2004}
 {TREBST, S.; HUSE, D.~A.; TROYER, M. Optimizing the ensemble for equilibration
   in broad-histogram monte carlo simulations.
 \emph{Physical Review E}, American Physical Society, v.~70, p. 046701, Oct
