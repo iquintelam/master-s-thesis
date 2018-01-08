@@ -2,13 +2,13 @@
 
 \chapter{SAFT-$\gamma$ Mie Force Field} % Main chapter title
 
-\label{ChapterX} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{SAFT-VR Mie}
+\section{SAFT-VR Mie EoS}
 
 The SAFT-VR Mie equation of state \cite{lafitte2013} is the basis for the SAFT-$\gamma$ Mie coarse grained force field \cite{avendano2011}. This EoS was initially developed to describe chain molecule formed from fused Mie segments using the Mie attractive and repulsive potential. The Mie potential is a type of generalized Lennard-Jones potential that can be used to describe explicitly repulsive interactions of different hardness/softness and attractive interactions of different ranges, and is given by:
 \begin{equation}
@@ -16,14 +16,12 @@ U_{Mie}(r) = \epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda
 \left[ \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right]
 \label{eqn:miepotential}
 \end{equation}
-where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_s$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation capable to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
+where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between the spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain a equation able to give an accurate theoretical description of the vapor-liquid equilibria and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
 \begin{equation}
 \frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
 \label{eqn:miehelm}
 \end{equation}
 
-%	SUBSECTION 1
-%-----------------------------------
 \subsection{Ideal Contribution}
 
 The ideal contribution for a mixture is given by:
@@ -32,17 +30,15 @@ a^{IDEAL} = \sum_{i=1}^{N_{c}} x_{i}\ln{(\rho_{i}{\Lambda_{i}}^3)} -1
 \label{eqn:aideal}
 \end{equation}
 where $x_{i}=N_{i}/N$ is the molar fraction of component i, $\rho_{i}=N_{i}/V$ is the number density, $N_{i}$ is the number of molecules of each component and $\Lambda_{i}^3$ is de Broglie wavelength. 
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
 
 \subsection{Monomer Contribution}
+
 The monomer contribution describes the interactions between Mie segments and can be expressed for a mixture as:
 \begin{equation}
 a^{MONO} = \left(\sum_{i=1}^{N_{c}} x_{i}m_{s,i} \right)a^{M}
 \label{eqn:amonomer}
 \end{equation}
-\par
+
 In the equation above, $m_{s,i}$ is the number of spherical segments making up the molecule i and $a^{M}$  is the monomer dimensionless Helmholtz free energy and it is expressed as a third order perturbation expansion in the inverse temperature \cite{bh1976}:
 \begin{equation}
 a^{M} = a^{HS}+\beta{a_{1}}+\beta{a_{2}}^2+\beta{a_{3}}^3 
@@ -53,7 +49,8 @@ where $\beta=\kappa_{b}T$ and $a^{HS}$ is the hard-sphere dimensionless Helmholt
 a^{HS} = \frac{6}{\pi\rho_{s}}\left[\left(\frac{\zeta^3_2}{\zeta^2_3}-\zeta_0 \right)\ln(1-\zeta_3)+\frac{3\zeta_{1}\zeta_{2}}{1-\zeta_3}+ \frac{\zeta^3_2}{\zeta_{3}(1-\zeta_3)^2}\right]
 \label{eqn:hs}
 \end{equation}
-where $\rho_{s}=\rho\sum_{i}^{N_c} x_{i}m{s,i}$ is the total number density of spherical segments and $\zeta_l$ are the moments of the number density:
+
+The variable $\rho_{s}=\rho\sum_{i}^{N_c} x_{i}m{s,i}$ is the total number density of spherical segments and $\zeta_l$ are the moments of the number density:
 \begin{equation}
 \zeta_l = \frac{\pi\rho_s}{6}\left(\sum_{i=1}^{N_c} x_{s,i}d^l_{ii} \right), l = 0,1,2,3
 \label{eqn:zetal}
@@ -63,47 +60,56 @@ where $x_{s,i}$ is the mole fraction of the segments and is related through the 
 x_{s,i} = \frac{m_{s,i}x_i}{\sum_{k=1}^{N_c} m_{s,k}x_{k} }
 \label{eqn:xsi}
 \end{equation}
-\par
+
+
 The effective hard-sphere diameter $d_{ii}$ for the segments is:
 \begin{equation}
 d_{ii} =\int_{0}^{\sigma_{ii}} ( 1 - \exp(-\beta U^{Mie}_{ii}(r)) ) dr
 \label{eqn:diameter}
 \end{equation}
-\par
+
+
 The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of Gauss-Legendre with a 5-point quadrature \cite{papa2014}. The detailing of the terms of Eq. \eqref{eqn:amonomer} can be found in \citeonline{lafitte2013}.
+
 \subsection{Chain Contribution}
 The chain formation of $m_{s}$ tangentially bonded Mie segments contribution is based on the first-order pertubation theory (TPT1)  \cite{papa2014} and can be expressed as:
 \begin{equation}
 a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:achain}
 \end{equation}
-\par
+
+
 The $g_{ij}^{Mie}(\sigma_{ij})$ term correspond to the value of the radial distribution function (RDF) of the hypothetical Mie system evaluated at the effective diameter and can be obtained with the perturbation expansion:
 \begin{equation}
+\begin{aligned}
 g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp[\beta\epsilon g_{1,ij}(\sigma_{ij})/g_{d,ij}^{HS}(\sigma_{ij}) + (\beta\epsilon)^{2} g_{2,ij}(\sigma_{ij})/g_{d,ij}^{HS}(\sigma_{ij})]
-\label{eqn:achain}
+\end{aligned}
+\label{eqn:gmie}
 \end{equation}
-\par
-The terms in the equations above are explicitly exposed in the original article \cite{lafitte2013}. 
+
+
+The other terms in the equations above are explicitly exposed in the original article \cite{lafitte2013}. 
+
 \subsection{Ring Contribution}
-There are two forms for the Helmholtz free energy for rings formed from $m_{s}$ tangentially bonded segments in the literature. The first one  \cite{lafitte2012} considered that the difference between a chain and a ring molecule is that the latter one has one more bond that is connecting the first segment to the last. With this assumption, the Eq. \eqref{eqn:achain} becomes:
+There are two forms for the Helmholtz free energy for rings formed from $m_{s}$ tangentially bonded segments in the literature. The first one  \cite{lafitte2012} considered that the difference between a chain and a ring molecule is that the latter one has one more bond that is connecting the first segment to the last. With this assumption, the Eq. \eqref{eqn:achain} can be adapted to rings by:
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringlafitte}
 \end{equation}
-\par
-According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for ring molecules. Recently \citeonline{muller2017} tried to correct this inconsistency developing the ring free energy based on the work of \citeonline{muller1993} whom obtained rigorous expressions for molecular geometries of rings of $m_s=3$ for hard fluids. The final expression for the dimensionless Helmholtz free energy is:
+
+According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parametrization with molecular simulation data so the EoS can  be used in molecular simulations, but this procedure is not the necessary for chain molecules. Recently \citeonline{muller2017} tried to correct this inconsistency by means of developing the ring free energy based on the work of \citeonline{muller1993} who obtained rigorous expressions for molecular geometries of rings of $m_s=3$ for hard fluids. The final expression developed for the ring dimensionless Helmholtz free energy is:
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i}-1+\chi_{i}\eta_{i})\ln(g_{ii}^{Mie}(\sigma_{ii}))
 \label{eqn:aringmuller}
 \end{equation}
-where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and the geometry of the ring of each component i. For a value of $\chi=0$ Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain} and $\chi=1.3827$ corresponds to a hard sphere system of triangles. \citeonline{muller2017} also calculated values of $\zeta$ for the Saft-VR Mie EoS for the values of $m_{s}=3,m_{s}=4,m_{s}=5,m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid. The values of $\chi$ estimated can be seen in the figure below:
+$\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$ Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain} and the system corresponds to a hard sphere system of triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\zeta$ for values of $m_{s}=3,m_{s}=4,m_{s}=5,m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid. The values of $\chi$ for each geometry estimated can be seen in the \figref{ringqsi}.
 \begin{figure}[th]
 \centering
 \includegraphics[scale=0.8]{Figures/mullergeo.jpg}
 \caption{Values for parameter $\chi$ according to the ring geometry \cite{muller2017}}
-\label{fig:ringqsi}
+\label{ringqsi}
 \end{figure}
+
 \subsection{Combining rules for the intermolecular potential parameters}
 \citeonline{lafitte2013} also suggested mixing rules for the potential parameters based on Lorentz-Berthelot combining rules \cite{rowlinson}:
 \begin{equation}
@@ -111,19 +117,139 @@ where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction and $\
 \label{eqn:sigmamix}
 \end{equation}
 \begin{equation}
-\lambda_{k,ij} -3 =\sqrt{(\lambda_{k,ii}-3)(\lambda{k,jj}-3)} , k=r,a
+\lambda_{k,ij} -3 =\sqrt{(\lambda_{k,ii}-3)(\lambda_{k,jj}-3)} , k=r,a
 \label{eqn:lambdamix}
 \end{equation}
 \begin{equation}
 \epsilon_{ij} =(1-k_{ij})\frac{\sqrt{\sigma_{ii}^{3}\sigma_{jj}^{3}}}{\sigma_{ij}^{3}}\sqrt{\epsilon_{ii}\epsilon_{jj}}
 \label{eqn:epsmix}
 \end{equation}
-\par
+
 The $k_{ij}$ is a binary interaction parameter to correct the deviations of the Lorentz-Berthelot rule for chemically distinct compounds. This parameter can also be fitted to experimental data or pseudo experimental data.
+
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
 \section{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}
 
-The SAFT-$\gamma$ Mie Force Field is force field that uses a  coarse graining top down methodology in your parameterization so the intermolecular parameters are obtained from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters for the molecular simulation can  be estimated with the equation of state can be used on molecular simulations since both the Saft-VR Mie EoS and the force field use the Mie Potential.
+The SAFT-$\gamma$ Mie is a force field that uses a  coarse graining top down methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data like fluid-phase equilibrium or superficial tension data. The idea is that the force field's  parameters estimated with the equation of state can be used on molecular simulations since both the SAFT-VR Mie EoS and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has already been seem for a variety of fluids in which this force field was parameterized and  this success in the representation of the properties of real fluids can be imputed to the degrees of freedom of Mie Potential \cite{herdes2015}. This flexibility also provides an exploration of a very large parameter space without using a iterative simulation scheme \cite{avendano2011}. 
+
+Each substance has initially five parameters to be estimated ($m_s$,$\sigma$,$\epsilon$,$\lambda_{r}$ and $\lambda_{a}$) according to Eq. \eqref{eqn:miepotential}. The number of segments are usually fixed in an integer value so it can be used in the coarse grained simulations. The attractive parameter can also be fixed since there is a high correlation between the attractive and repulsilve parameter. Usually, the parameter is fixed in the London value of 6, which is expected to be a good representation of the dispersion scale of most simple fluids that don't have strong polar interactions \cite{ramrattan2015,herdes2015}. There are two strategies to obtain the parameters of each substance: one is by fitting the Saft-Vr Mie EoS to experimental data as vapor pressure and liquid density and the other is using correspondent state parametrization. The first one, generally, minimizes the following unweighted least-squares objective function:
+
+\begin{equation}
+\begin{aligned}
+\min\limits_{\sigma,\epsilon,\lambda_{r}} F_{obj}(\sigma,\epsilon,\lambda_{r})= \sum_{i=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-P_{v}^{exp}(T_{i})}{P_{v}^{exp}(T_{i})} \right)^2 +\\
+ \sum_{i=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2
+\end{aligned}
+\label{eqn:fobj}
+\end{equation}
+where $N_{p}$ is the number of experimental points, $P_{v}$ is the vapor pressure and $\rho_{l}$ is the saturated liquid density. The minimized properties can also change and other possible properties as superficial tension and speed of sound can also be taken into account. These multiple parameters make it necessary the use of a wide range of experimental data since multiple solutions can be found for the fit. So one need to be careful in deciding the level of coarse graining (i.e. the parameter $m_{s}$) and subsequent parameter space that will not result in some physical inconsistencies like a fluid with premature freezing.
+
+\citeonline{lafitte2012} suggested that the two corrections factors ($c_{\sigma}$ and $c_{\epsilon}$) should be estimated with simulation data when using Eq. \eqref{eqn:aringlafitte} for the ring contribution. They are related to the EoS parameters by scaled parameters:
+
+\begin{equation}
+\sigma^{scaled} = c_{\sigma}\sigma^{SAFT}
+\label{eqn:csigma}
+\end{equation}
+\begin{equation}
+\epsilon^{scaled} = c_{\epsilon}\epsilon^{SAFT}
+\label{eqn:ceps}
+\end{equation}
+
+According to \citeonline{lafitte2012}, these corrections are necessary because the approximations employed in the EoS theory generate discrepancies between molecular simulations and the EoS results for ring molecules modeled with Eq. \eqref{eqn:aringlafitte}. The objective function for this second estimation is given by:
+
+\begin{equation}
+\begin{split}
+\min\limits_{c_{\sigma},c_{\epsilon}} F_{obj}(c_{\sigma},c_{\epsilon})= \sum_{i=1}^{N_{p}} \left(\frac{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-P_{v}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right)^2 + \\
+ \sum_{i=1}^{N_{p}} \left(\frac{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-\rho_{liq}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right)^2
+\end{split}
+\label{eqn:fobjla}
+\end{equation}
+
+The repulsive parameter is maintained in the value found on the minimization of Eq. \eqref{eqn:fobj}, so the refined values for the force field are:
+
+\begin{equation}
+\sigma^{sim} = \sigma^{SAFT}/c_{\sigma}
+\label{eqn:simsigma}
+\end{equation}
+
+\begin{equation}
+\epsilon^{scaled} = \epsilon^{SAFT}/c_{\epsilon}
+\label{eqn:simeps}
+\end{equation}
+
+It is interesting to point out that this new parametrization is not necessary when using Eq. \eqref{eqn:aringmuller} as the ring contribution. The other method to obtain the force field parameters is the correspondent state parametrization for the EoS SAFT-VR Mie \cite{mejia2014}. This method considers that the unweighted volume average of the attractive contribution to the Mie intermolecular potential,$a_{1}$, can be given a mean field approximation:
+
+\begin{equation}
+a_{1} = 2\pi\rho\sigma^{3}\epsilon\alpha
+\label{eqn:a1corres}
+\end{equation}
+
+The van der Waals constant, $\alpha$, considering $ \lambda_{a} = 6$ is related by the Mie exponents by:
+
+\begin{equation}
+\alpha = \frac{1}{\epsilon\sigma^{3	}} \int_{\sigma}^{\infty} \phi(r)r^{2}dr = \frac{\lambda_{r}}{3(\lambda_{r}-3)}\left(\frac{\lambda_r}{6}\right)^{6/(\lambda_{r} - 6)}  
+\label{eqn:alpha}
+\end{equation}
+
+The parametrization in this method starts by using the experimental acentric factor, $\omega$, for each molecule with a fixed value of $ m_{s}$ to obtain the value of the repulsive exponent with the following Padé series:
+
+\begin{equation}
+\lambda_{r} = \frac{\sum_{i=0} a_{i}\omega^{i}}{1+\sum_{i=1} b_{i}\omega^{i}}   
+\label{eqn:lambdaco}
+\end{equation}
+
+$a_{i}$ and $b_{i}$ are dependent parameters of the number of segments and a table with its values is presented in the original paper \cite{mejia2014}. Substituting $\lambda_{r}$ into Eq. \eqref{eqn:alpha}, the van der Waals constant can be found. The reduced critical potential $T_{c}^{*}$ can also be related to $\alpha$ by a Padé series: 
+
+\begin{equation}
+T_{c}^{*} = \frac{\sum_{i=0} c_{i}\alpha^{i}}{1+\sum_{i=1} d_{i}\alpha^{i}}   
+\label{eqn:tc}
+\end{equation}
+
+The values of $c_{i}$ and $d_{i}$ are also available in the original paper. The reduced temperature of the equation above is used in conjunction with the experimental critical temperature, $ T_{c}$, to find the energy parameter with the relation below:
+
+\begin{equation}
+T_{c}^{*} = \frac{\kappa_{b}T_{c}}{\epsilon}   
+\label{eqn:epscorre}
+\end{equation}
+
+The diameter parameter, however, is not obtained with the critical properties, but with the reduced liquid density,$\rho_{T_{r}=0.7}$, at the reduced temperature ,$T_{r}$, of $0.7$. This density is also obtained with a Padé series using parameters obtained by \citeonline{mejia2014}:
+
+\begin{equation}
+\rho_{T_{r}=0.7}^{*} = \frac{\sum_{i=0} j_{i}\alpha^{i}}{1+\sum_{i=1} k_{i}\alpha^{i}} 
+\label{eqn:denscorre}
+\end{equation}
+
+The relation among the equation above, $\sigma$ and the experimental density is given by:
+
+\begin{equation}
+\rho_{T_{r}=0.7}^{*} = \rho_{T_{r}=0.7}\sigma^{3}N_{av}   
+\label{eqn:sigmacorre}
+\end{equation}
+where $N_{av}$ is The Avogadro number. This correspondent state method has the advantage of only requiring critical data, that it is available for a great range of fluids, and one liquid density point. In addition to that, there is an available online parameter database obtained with this strategy \cite{ervik2016}.     
+
+The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behaviour of chemically distinct components. Normally, it is fitted to experimental binary vapor liquid equilibrium or superficial tension data with the SAFT-VR Mie EoS \cite{muller2017,lobanova2016}. However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data of the mixture water-toluene. The strategy followed by them was to do simulations in three values of $k_{ij}$ and then refine the parameter value until a value in good agreement with the experimental data was found. 
+
+%\begin{equation}
+%\begin{aligned}
+%\min\limits_{k_{ij}} F_{obj}(k_{ij})= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
+% \sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2
+%\end{aligned}
+%\label{eqn:fobjmix}
+%\end{equation}
+
+
+%Ramrattan et al. [57] have noted that the value of the repulsive exponent
+%has a direct relation to the fluid range, i.e. the ratio between the
+%critical and triple point of a fluid; and that this metric is a valuable tool to bracket the possible parameter space. F
+%For the attractive
+%exponent used here, “hard” repulsive exponents, e.g. values larger
+%than 12 reduce the fluid range and after a value of 43 the
+%fluid phase is no longer stable being suppressed by the presence
+%of the solid phase [57]. The upshot of this is that hard potentials
+%might exhibit premature freezing as compared to the experimental
+%results.
+
+
+
