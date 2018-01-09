@@ -4,6 +4,35 @@
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 
+\section{Molecular Dynamics}
+Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. With the initial system defined, the forces ($F$) acting on every particle are calculated by doing directional derivatives of the intramolecular potential $U(r)$ in relation to the atoms' positions:
+\begin{equation}
+ \vec{F (r)}_{i} =  - \nabla U(r)
+\end{equation}
+
+From the calculated forces, the velocities and coordinates of the atoms are updated by integrating:
+
+\begin{equation}
+\frac{d \vec{r}_{i}}{dt} = \vec{v}_{i}
+\end{equation}
+
+\begin{equation}
+m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{1},..,\vec{r}_{N})}{\partial \vec{r}_{i}}
+\end{equation}
+
+The most used method to perform these integration is the Velocity Verlet \cite{verlet}. It proposes the following equation for the coordinates update:
+\begin{equation}
+r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
+\end{equation}
+and this one to update the velocities:
+\begin{equation}
+v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
+\end{equation}
+
+Microcanonical ensemble provides a starting point from which all other equilibrium
+ensembles are derived.
+
+
 
 \section{SAFT-$\gamma$ Mie Force Field}
 
@@ -239,7 +268,7 @@ The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary
 
 However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data. The strategy followed by them was to do simulations in three values of $k_{ij}$ first and, after, they refined the parameter until a value in good agreement with the experimental data was found. 
 
-\section{Molecular Dynamics}
+
 \section{Expanded Ensemble Method}\label{ee}
 
 Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were developed to allow a non-Boltzmann sampling scheme of different states in only one simulation. The statistical expanded ensemble, $Z^{EE}$ can be defined as a sum of sub ensembles $Z_{i}$ in different values of $\lambda$:
