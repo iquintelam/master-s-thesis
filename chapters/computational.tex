@@ -5,12 +5,12 @@
 
 
 \section{Molecular Dynamics}
-Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. With the initial system defined, the forces ($F$) acting on every particle are calculated by doing directional derivatives of the intramolecular potential $U(r)$ in relation to the atoms' positions:
+Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. This cubic lattice has a finite size, but  a finite size or box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called periodic boundary conditions. The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represente in Figure \ref{fig:pbc}\cite{frenkel}. With the initial system defined, the forces ($F$) acting on every particle are calculated by doing directional derivatives of the intramolecular potential $U(r)$ in relation to the atoms' positions:
 \begin{equation}
  \vec{F (r)}_{i} =  - \nabla U(r)
 \end{equation}
 
-From the calculated forces, the velocities and coordinates of the atoms are updated by integrating:
+U(r) is generally described by a force field, which is a model for structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. From the calculated forces, the velocities and coordinates of the atoms are updated by integrating:
 
 \begin{equation}
 \frac{d \vec{r}_{i}}{dt} = \vec{v}_{i}
@@ -20,6 +20,14 @@ From the calculated forces, the velocities and coordinates of the atoms are upda
 m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{1},..,\vec{r}_{N})}{\partial \vec{r}_{i}}
 \end{equation}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figures/pbc}
+	\caption{Periodic boundary condition representation. Taken from \cite{frenkel}}
+	\label{fig:pbc}
+\end{figure}
+
+\FloatBarrier
 The most used method to perform these integration is the Velocity Verlet \cite{verlet}. It proposes the following equation for the coordinates update:
 \begin{equation}
 r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
@@ -29,13 +37,12 @@ and this one to update the velocities:
 v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
 \end{equation}
 
-With the below equations, it is then possible to calculate the trajectories. During the integration process, macroscopic properties such as temperature and pressure are held constant, and the statistical ensemble are defined according to those properties. In the NVE statistical ensembles, the number of particles (N), volume (V) and energy (E) are held constant.   
-
-Microcanonical ensemble provides a starting point from which all other equilibrium
-ensembles are derived.
+With the equations above, it is then possible to calculate the trajectories. During the integration process, control macroscopic properties need to be defined  to characterize the statistical ensemble, which corresponds to the set of configurations.  This control variables defined will then result in different system properties. In the microcanonical statistical ensemble, the number of particles (N), volume (V) and energy (E) are held constant.  The other ensembles include the canonical ensemble in which N, V and the temperature (T) are held constant and the isothermal-isobaric ensemble in which N, pressure (P) and T are held constant.  The canonical and isothermal-isobaric ensembles have external conditional been applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}. 
 
 
 
+5.9
+55
 \section{SAFT-$\gamma$ Mie Force Field}
 
 

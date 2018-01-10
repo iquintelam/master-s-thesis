@@ -27,6 +27,12 @@
   dioxide and methane from molecular dynamics simulations.
 \emph{The Journal of Chemical Physics}, v.~141, p. 134101, 2014.}
 
+\bibitem[ANDERSEN 1983]{anderson1983}
+\abntrefinfo{ANDERSEN}{ANDERSEN}{1983}
+{ANDERSEN, H.~C. Rattle: A “velocity” version of the shake algorithm for
+  molecular dynamics calculations.
+\emph{JOURNAL OF COMPUTATIONAL PHYSICS}, v.~52, p. 24--34, 1983.}
+
 \bibitem[Avenda{\~n}o \textit{et al.} 2011]{avendano2011}
 \abntrefinfo{Avenda{\~n}o \textit{et al.}}{AVENDA{\~N}O \textit{et al.}}{2011}
 {AVENDA{\~N}O, C.; LAFITTE, T.; GALINDO, A.; ADJIMAN, C.~S.; JACKSON, G.;
@@ -72,6 +78,12 @@
 {BEREAU, T.; DESERNO, M. Generic coarse-grained model for protein folding and
   aggregation.
 \emph{Journal of Chemical Physics}, v.~130, p. 235106, 2009.}
+
+\bibitem[Berendsen \textit{et al.} 1984]{doi:10.1063/1.448118}
+\abntrefinfo{Berendsen \textit{et al.}}{BERENDSEN \textit{et al.}}{1984}
+{BERENDSEN, H. J.~C.; POSTMA, J. P.~M.; GUNSTEREN, W.~F. van; DINOLA, A.; HAAK,
+  J.~R. Molecular dynamics with coupling to an external bath.
+\emph{The Journal of Chemical Physics}, v.~81, n.~8, p. 3684--3690, 1984.}
 
 \bibitem[Berg and Neuhaus 1992]{bernd1992}
 \abntrefinfo{Berg and Neuhaus}{BERG; NEUHAUS}{1992}
@@ -219,6 +231,12 @@ ISBN 0122673514.}
   molecular simulation of natural gases and condensates.
 \emph{Fluid Phase Equilibria}, v.~406, p. 91–100, 2015.}
 
+\bibitem[Hoover 1985]{PhysRevA.31.1695}
+\abntrefinfo{Hoover}{HOOVER}{1985}
+{HOOVER, W.~G. Canonical dynamics: Equilibrium phase-space distributions.
+\emph{Phys. Rev. A}, American Physical Society, v.~31, p. 1695--1697, Mar
+  1985.}
+
 \bibitem[Izairi and Kamberaj 2017]{izairi2017}
 \abntrefinfo{Izairi and Kamberaj}{IZAIRI; KAMBERAJ}{2017}
 {IZAIRI, R.; KAMBERAJ, H. Comparison study of polar and nonpolar contributions
@@ -232,6 +250,12 @@ ISBN 0122673514.}
   integration method on the accuracy and computational efficiency of free
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
+
+\bibitem[Kamberaj, Low and Neal 2005]{kamberaj}
+\abntrefinfo{Kamberaj, Low and Neal}{KAMBERAJ; LOW; NEAL}{2005}
+{KAMBERAJ, H.; LOW, R.; NEAL, M. Time reversible and symplectic integrators for
+  molecular dynamics simulations of rigid molecules.
+\emph{Journal of Chemical Physics}, v.~122, p. 224114, 2005.}
 
 \bibitem[Kirkwood 1935]{kirkwood1935}
 \abntrefinfo{Kirkwood}{KIRKWOOD}{1935}
@@ -347,6 +371,12 @@ ISBN 0122673514.}
   simulations.
 \emph{Journal of Computational Chemistry}, v.~30, p. 2157--2164, 2009.}
 
+\bibitem[Martyna, Tobias and Klein 1994]{doi:10.1063/1.467468}
+\abntrefinfo{Martyna, Tobias and Klein}{MARTYNA; TOBIAS; KLEIN}{1994}
+{MARTYNA, G.~J.; TOBIAS, D.~J.; KLEIN, M.~L. Constant pressure molecular
+  dynamics algorithms.
+\emph{The Journal of Chemical Physics}, v.~101, n.~5, p. 4177--4189, 1994.}
+
 \bibitem[Matos \textit{et al.} 2017]{mobley2017}
 \abntrefinfo{Matos \textit{et al.}}{MATOS \textit{et al.}}{2017}
 {MATOS, G. D.~R.; KYU, D.~Y.; LOEFFLER, H.~H.; CHODERA, J.~D.; SHIRTS, M.~R.; ;
@@ -440,6 +470,12 @@ ISSN 0920-654X.}
   mie segments.
 \emph{The Journal of Chemical Physics}, v.~140, p. 054107, 2014.}
 
+\bibitem[Parrinello and Rahman 1981]{doi:10.1063/1.328693}
+\abntrefinfo{Parrinello and Rahman}{PARRINELLO; RAHMAN}{1981}
+{PARRINELLO, M.; RAHMAN, A. Polymorphic transitions in single crystals: A new
+  molecular dynamics method.
+\emph{Journal of Applied Physics}, v.~52, n.~12, p. 7182--7190, 1981.}
+
 \bibitem[Plimpton 1995]{lammps}
 \abntrefinfo{Plimpton}{PLIMPTON}{1995}
 {PLIMPTON, S. Fast parallel algorithms for short-range molecular dynamics.
@@ -470,6 +506,15 @@ ISSN 0920-654X.}
   in n-octanol using 3d-rism-kh molecular theory of solvation: Making right
   choices.
 \emph{Journal of Physical Chemistry B}, v.~121, p. 9268–9273, 2017.}
+
+\bibitem[Ryckaert, Ciccotti and Berendsen 1977]{RYCKAERT1977327}
+\abntrefinfo{Ryckaert, Ciccotti and Berendsen}{RYCKAERT; CICCOTTI;
+  BERENDSEN}{1977}
+{RYCKAERT, J.-P.; CICCOTTI, G.; BERENDSEN, H.~J. Numerical integration of the
+  cartesian equations of motion of a system with constraints: molecular
+  dynamics of n-alkanes.
+\emph{Journal of Computational Physics}, v.~23, n.~3, p. 327 -- 341, 1977.
+ISSN 0021-9991.}
 
 \bibitem[Shinoda, Devane and Klein 2007]{shinoda2007}
 \abntrefinfo{Shinoda, Devane and Klein}{SHINODA; DEVANE; KLEIN}{2007}

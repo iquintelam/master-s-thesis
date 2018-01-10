@@ -17,10 +17,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 11417 items from 5000.
+Reallocated field_info (elt_size=4) to 11900 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
-Repeated entry---line 630 of file thesis.bib
+Repeated entry---line 710 of file thesis.bib
  : @article{hadley2012
  :                    ,
 I'm skipping whatever remains of this entry
@@ -45,45 +45,45 @@ while executing---line 2146 of file abntex2-alf.bst
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 93 entries,
+You've used 100 entries,
             6714 wiz_defined-function locations,
-            1714 strings with 26295 characters,
-and the built_in function-call counts, 90365 in all, are:
-= -- 6497
-> -- 3860
-< -- 261
-+ -- 1548
-- -- 1109
-* -- 6709
-:= -- 11064
-add.period$ -- 278
-call.type$ -- 94
-change.case$ -- 1234
-chr.to.int$ -- 356
-cite$ -- 89
-duplicate$ -- 4820
-empty$ -- 5603
-format.name$ -- 5624
-if$ -- 21547
+            1757 strings with 27443 characters,
+and the built_in function-call counts, 97059 in all, are:
+= -- 6972
+> -- 4135
+< -- 286
++ -- 1649
+- -- 1189
+* -- 7233
+:= -- 11900
+add.period$ -- 300
+call.type$ -- 101
+change.case$ -- 1321
+chr.to.int$ -- 384
+cite$ -- 96
+duplicate$ -- 5166
+empty$ -- 6037
+format.name$ -- 6009
+if$ -- 23131
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 1789
-newline$ -- 454
-num.names$ -- 445
-pop$ -- 2269
+missing$ -- 1919
+newline$ -- 490
+num.names$ -- 480
+pop$ -- 2427
 preamble$ -- 1
-purify$ -- 405
+purify$ -- 435
 quote$ -- 0
-skip$ -- 5514
+skip$ -- 5876
 stack$ -- 1
-substring$ -- 3571
-swap$ -- 2941
-text.length$ -- 172
+substring$ -- 3901
+swap$ -- 3147
+text.length$ -- 190
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 661
+while$ -- 716
 width$ -- 0
-write$ -- 1443
+write$ -- 1561
 (There were 7 error messages)
