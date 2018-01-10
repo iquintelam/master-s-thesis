@@ -39,9 +39,6 @@ v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
 
 With the equations above, it is then possible to calculate the trajectories. During the integration process, control macroscopic properties need to be defined  to characterize the statistical ensemble, which corresponds to the set of configurations.  This control variables defined will then result in different system properties. In the microcanonical statistical ensemble, the number of particles (N), volume (V) and energy (E) are held constant.  The other ensembles include the canonical ensemble in which N, V and the temperature (T) are held constant and the isothermal-isobaric ensemble in which N, pressure (P) and T are held constant.  The canonical and isothermal-isobaric ensembles have external conditional been applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}. 
 
-
-
-5.9
 55
 \section{SAFT-$\gamma$ Mie Force Field}
 
