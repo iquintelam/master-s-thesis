@@ -5,29 +5,44 @@
 
 
 \section{Molecular Dynamics}
-Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. This cubic lattice has a finite size, but  a finite size or box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called periodic boundary conditions. The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represente in Figure \ref{fig:pbc}\cite{frenkel}. With the initial system defined, the forces ($F$) acting on every particle are calculated by doing directional derivatives of the intramolecular potential $U(r)$ in relation to the atoms' positions:
+Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. This cubic lattice has a finite size, but  a finite size or box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+
+With the initial system defined, the forces ($F$) acting on every particle are calculated by doing directional derivatives of the intermolecular potential $U(r)$ in relation to the atoms' positions:
 \begin{equation}
- \vec{F (r)}_{i} =  - \nabla U(r)
+\label{eq:forces}
+ \vec{F }(r)_{i} =  - \nabla U(r)
 \end{equation}
+\setlength{\parskip}{6mm}
+\FloatBarrier
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/pbc}
+	\caption{Periodic boundary condition representation. Taken from \citeonline{frenkel}}
+	\label{fig:pbc}
+\end{figure*}
+\FloatBarrier
 
-U(r) is generally described by a force field, which is a model for structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. From the calculated forces, the velocities and coordinates of the atoms are updated by integrating:
+U(r) is generally described by a force field, which is a model for structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. In many force fields, the intermolecular interaction between particles i and j are modeled by the Lennard Jones Potential:
+\begin{equation}
+U_{LJ}(r) = 4 \epsilon
+\left[ \left(\frac{\sigma}{r} \right)^{12} - \left(\frac{\sigma}{r} \right)^{6} \right]
+\end{equation}
+where r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the potential is:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/lj2}
+\caption{Lennard Jones potential representation for two atoms of argon (i,j). Taken from \citeonline{raabe} }
+\label{fig:lj}
+\end{figure}
 
+The interactions in Figure \ref{fig:lj} tend to zero after a certain value of r, so this value can be set as the cutoff radius in which the potential energy is considered to be zero after it. Also, only interactions with te nearest periodic image of the cell is considered in order   for short range interactions (Minimum image convention condition). With this conditions, the calculations of forces and velocities can become viable. From the calculated forces on Eq. \eqref{eq:forces}, the velocities and coordinates of the atoms are updated by integrating:
 \begin{equation}
 \frac{d \vec{r}_{i}}{dt} = \vec{v}_{i}
 \end{equation}
-
 \begin{equation}
 m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{1},..,\vec{r}_{N})}{\partial \vec{r}_{i}}
 \end{equation}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.6\textwidth]{Figures/pbc}
-	\caption{Periodic boundary condition representation. Taken from \cite{frenkel}}
-	\label{fig:pbc}
-\end{figure}
-
-\FloatBarrier
 The most used method to perform these integration is the Velocity Verlet \cite{verlet}. It proposes the following equation for the coordinates update:
 \begin{equation}
 r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
@@ -39,7 +54,40 @@ v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
 
 With the equations above, it is then possible to calculate the trajectories. During the integration process, control macroscopic properties need to be defined  to characterize the statistical ensemble, which corresponds to the set of configurations.  This control variables defined will then result in different system properties. In the microcanonical statistical ensemble, the number of particles (N), volume (V) and energy (E) are held constant.  The other ensembles include the canonical ensemble in which N, V and the temperature (T) are held constant and the isothermal-isobaric ensemble in which N, pressure (P) and T are held constant.  The canonical and isothermal-isobaric ensembles have external conditional been applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}. 
 
-The NPT ensemble, as explained above, consists of system at constant temperature and pressure. A variety of physical properties are measure at this conditions such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we going to briefly talk about it.  
+The NPT ensemble, as explained above, consists of system at constant temperature and pressure. A variety of physical properties are measure at this conditions such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ is becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
+\begin{equation}
+G(N,P,T) = A(N,V(P),T) + PV(P)
+\end{equation}
+
+
+The Gibbs free energy is related to its the partition function $\Delta (N,P,T)$ (the number of accessible microstates) by:
+
+\begin{equation}
+\label{eq:fisobari}
+\begin{aligned}
+G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\label{eq:partiso}
+\begin{aligned}
+\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]
+\end{aligned}
+\end{equation}
+
+where $Q (N,V,T)$ is the partition function of the canonical ensemble. From this relations and a differential change in G, we can obtain the chemical potential ($\mu$), volume and entropy ($S$) relations for this ensemble:
+
+\begin{equation}
+\mu = (\frac{\partial G}{\partial N})_{P,T} = - \kappa_{b} T (\frac{\partial ln \Delta (N,P,T)}{\partial N})_{N,T}
+\end{equation}  
+\begin{equation}
+\langle V \rangle= (\frac{\partial G}{\partial P})_{N,T}= \kappa_{b} T (\frac{\partial ln \Delta (N,P,T)}{\partial N})_{N,P}
+\end{equation}
+\begin{equation}
+S = (\frac{\partial G}{\partial T})_{N,P}= \kappa_{b}  (ln Q(N,V,T)+ T(\frac{\partial ln Q (N,V,T)}{\partial T})_{V,N})
+\end{equation}
+ 
 \section{SAFT-$\gamma$ Mie Force Field}
 
 
@@ -51,7 +99,7 @@ U_{Mie}(r) = \epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda
 \left[ \left(\frac{\sigma}{r} \right)^{\lambda_r} - \left(\frac{\sigma}{r} \right)^{\lambda_a} \right]
 \label{eqn:miepotential}
 \end{equation}
-where $\epsilon$ is the potential well depth, $\sigma$ is the segment diameter, r is the distance between spherical segments, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain an equation able to give an accurate theoretical description of the vapor-liquid equilibrium and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
+where $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. This equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain an equation able to give an accurate theoretical description of the vapor-liquid equilibrium and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is:
 \begin{equation}
 \frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{CHAIN}
 \label{eqn:miehelm}

@@ -443,6 +443,12 @@ ISSN 0920-654X.}
   corresponding states.
 \emph{Langmuir}, -, p. A–L, 2017.}
 
+\bibitem[Mullins 2010]{doi:10.1021/ef900975e}
+\abntrefinfo{Mullins}{MULLINS}{2010}
+{MULLINS, O.~C. The modified yen model.
+\emph{Energy \& Fuels}, v.~24, n.~4, p. 2179--2207, 2010.}
+
+
 \bibitem[Paliwal and Shirts 2011]{bareva}
 \abntrefinfo{Paliwal and Shirts}{PALIWAL; SHIRTS}{2011}
 {PALIWAL, H.; SHIRTS, M.~R. A benchmark test set for alchemical free energy
@@ -487,6 +493,13 @@ ISSN 0920-654X.}
 {POHORILLE, A.; JARZYNSKI, C.; CHIPOT, C. Good practices in freeenergy
   calculations.
 \emph{Journal of Physical Chemistry B}, v.~114, p. 10235–10253, 2010.}
+
+\bibitem[Raabe 2017]{raabe}
+\abntrefinfo{Raabe}{RAABE}{2017}
+{RAABE, G. \emph{Molecular Simulation Studies on Thermophysical Properties -
+  With Application to Working Fluids. Springer Series Molecular Modeling and
+  Simulation}. [S.l.: s.n.], 2017.
+ISBN 978-981-10-3544-9 (Print) 978-981-10-3545-6 (Online).}
 
 \bibitem[Ramrattan \textit{et al.} 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan \textit{et al.}}{RAMRATTAN \textit{et al.}}{2015}

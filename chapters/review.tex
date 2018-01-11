@@ -6,7 +6,9 @@
 
 
 
-\section{Molecular Simulations of Molecules Mimicking Asphaltenes}
+%\section{Molecular Simulations of Molecules Mimicking Asphaltenes}
+%Asphaltenes consist of polyfunctional molecules, and they are defined by their solubility: insoluble in n-alkanes (pentane, hexane and heptane). Due to uncertainties related to its structures, a lot work has been done to develop model compounds that have well defined structure and can represent an average asphaltene. The two category of models presented in the literature are the archipelago and continental models. In the archipelago, asphaltenes consist of polyaromatic parts linked together by aliphatic or naphthemic moieties and, in the continental, they consist of a single
+%polyaromatic ring with linked aliphatic or naphthenic chains \cite{doi:10.1021/ef900975e,doi:10.1080/0892702031000148762}.
 \section{Coarse Grained Force Fields}
 
 
@@ -95,7 +97,7 @@ The Gibbs free energy difference between end states $A$ and $B$ are, more specif
 	\label{thermcy}
 \end{figure}
 
-The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of non bonded interactions that are turned off in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. Meanwhile, if only non-bonded interactions with the environment are turned off,this is a decoupling free energy calculation. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter($\lambda$) is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential. That's why the non-linear soft-core scheme \cite{beutler1994} is usually used, the generalized soft core potential is given by:
+The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of non bonded interactions that are turned off in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. Meanwhile, if only non-bonded interactions with the environment are turned off,this is a decoupling free energy calculation. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter($\lambda$) is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential.  That's why the non-linear soft-core scheme \cite{beutler1994} is used to make the potential behave more smoothly in relation to the change of $\lambda$ as can be seem in \figref{fig:SC}. The generalized soft core potential is given by:
 
 \begin{equation}
 \label{eq:softcore}
@@ -104,8 +106,7 @@ U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\fr
 & \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace
 \end{aligned}
 \end{equation}
-
-Using the Lennard Jones exponents, Eq. \eqref{eq:softcore} becomes:
+where $\alpha$ is a constant which the value of 0.5 is normally assumed to it,r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. Using the Lennard Jones exponents ($\lambda _{r} =12$ and $\lambda _{a} = 6$), Eq. \eqref{eq:softcore} becomes:
 
 \begin{equation}
 \label{eq:softcoreLJ}
@@ -114,7 +115,14 @@ U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda
 \end{aligned}
 \end{equation}
 
-where $\alpha$ is a constant which the value of 0.5 is normally assumed to it. The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}, which samples all states in a single simulation. This method allows a faster sampling across the alchemical states, provided that the kinetic barriers are not substantial. The free energies of solvation obtained can then be used to calculate other properties such as the partition coefficient, that is a measure of the partitioning of one solute in two solvents (a and b) at a temperature T:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Figures/SC}
+	\caption{Soft-core potential in reduced units.}
+	\label{fig:SC}
+\end{figure}
+
+The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}, which samples all states in a single simulation. This method allows a faster sampling across the alchemical states, provided that the kinetic barriers are not substantial. The free energies of solvation obtained can then be used to calculate other properties such as the partition coefficient, that is a measure of the partitioning of one solute in two solvents (a and b) at a temperature T:
 
 \begin{equation}
 \label{eqn:partcoe}
