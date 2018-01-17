@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/review.aux
+A level-1 auxiliary file: chapters/computational.aux
+A level-1 auxiliary file: chapters/methodology.aux
+A level-1 auxiliary file: chapters/results.aux
+A level-1 auxiliary file: chapters/conclusions.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 12245 items from 5000.
+Database file #1: abntex2-options.bib
+Database file #2: thesis.bib
+Repeated entry---line 750 of file thesis.bib
+ : @article{hadley2012
+ :                    ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 105 entries,
+            6714 wiz_defined-function locations,
+            1789 strings with 28368 characters,
+and the built_in function-call counts, 101382 in all, are:
+= -- 7297
+> -- 4286
+< -- 298
++ -- 1707
+- -- 1234
+* -- 7547
+:= -- 12458
+add.period$ -- 319
+call.type$ -- 106
+change.case$ -- 1373
+chr.to.int$ -- 400
+cite$ -- 101
+duplicate$ -- 5401
+empty$ -- 6354
+format.name$ -- 6231
+if$ -- 24159
+int.to.chr$ -- 6
+int.to.str$ -- 1
+missing$ -- 2015
+newline$ -- 516
+num.names$ -- 505
+pop$ -- 2537
+preamble$ -- 1
+purify$ -- 454
+quote$ -- 0
+skip$ -- 6108
+stack$ -- 1
+substring$ -- 4095
+swap$ -- 3276
+text.length$ -- 198
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 753
+width$ -- 0
+write$ -- 1645
+(There were 7 error messages)

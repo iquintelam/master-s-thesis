@@ -125,6 +125,11 @@
   implicit solvent.
 \emph{Journal of Physical Chemistry B}, v.~113, p. 267– 274, 2009.}
 
+\bibitem[Chipot and Pohorille 2007]{freeenergy}
+\abntrefinfo{Chipot and Pohorille}{CHIPOT; POHORILLE}{2007}
+{CHIPOT, C.; POHORILLE, A. \emph{Free Energy Calculations Theory and
+  Applications in Chemistry and Biology}. 1. ed. New York: Springer, 2007.}
+
 \bibitem[Chiu, Scott and Jakobsson 2010]{chiu2010}
 \abntrefinfo{Chiu, Scott and Jakobsson}{CHIU; SCOTT; JAKOBSSON}{2010}
 {CHIU, S.; SCOTT, H.; JAKOBSSON, E. A coarse-grained model based on morse
@@ -164,6 +169,12 @@
 {ESCOBEDO, F.~A.; MARTINEZ-VERACOECHEA, F.~J. Optimized expanded ensembles for
   simulations involving molecular insertions and deletions. i. closed systems.
 \emph{Journal of Chemical Physics}, v.~127, p. 174103, 2007.}
+
+\bibitem[Ferrenberg and Swendsen 1989]{PhysRevLett.63.1195}
+\abntrefinfo{Ferrenberg and Swendsen}{FERRENBERG; SWENDSEN}{1989}
+{FERRENBERG, A.~M.; SWENDSEN, R.~H. Optimized monte carlo data analysis.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~63, p. 1195--1198, Sep
+  1989.}
 
 \bibitem[Frenkel and Smit 2001]{frenkel}
 \abntrefinfo{Frenkel and Smit}{FRENKEL; SMIT}{2001}
@@ -281,11 +292,20 @@ ISBN 0122673514.}
 \emph{Journal of Molecular Biology}, v.~331, p. 171–180, 2001.}
 
 \bibitem[Kumar \textit{et al.} 1992]{wham}
-\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992}
+\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992a}
 {KUMAR, S.; BOUZIDA, D.; SWENDSEN, R.; KOLLMAN, P.; ROSENBERG, J. The weighted
   histogram analysis method for free-energy calculations on biomolecules. 1.
   the method.
 \emph{Journal of Computational Chemistry}, v.~13, p. 1011--1021, 1992.}
+
+\bibitem[Kumar \textit{et al.} 1992]{JCC:JCC540130812}
+\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992b}
+{KUMAR, S.; ROSENBERG, J.~M.; BOUZIDA, D.; SWENDSEN, R.~H.; KOLLMAN, P.~A. The
+  weighted histogram analysis method for free-energy calculations on
+  biomolecules. i. the method.
+\emph{Journal of Computational Chemistry}, John Wiley and Sons, Inc., v.~13,
+  n.~8, p. 1011--1021, 1992.
+ISSN 1096-987X.}
 
 \bibitem[Lafitte \textit{et al.} 2013]{lafitte2013}
 \abntrefinfo{Lafitte \textit{et al.}}{LAFITTE \textit{et al.}}{2013}
@@ -443,12 +463,6 @@ ISSN 0920-654X.}
   corresponding states.
 \emph{Langmuir}, -, p. A–L, 2017.}
 
-\bibitem[Mullins 2010]{doi:10.1021/ef900975e}
-\abntrefinfo{Mullins}{MULLINS}{2010}
-{MULLINS, O.~C. The modified yen model.
-\emph{Energy \& Fuels}, v.~24, n.~4, p. 2179--2207, 2010.}
-
-
 \bibitem[Paliwal and Shirts 2011]{bareva}
 \abntrefinfo{Paliwal and Shirts}{PALIWAL; SHIRTS}{2011}
 {PALIWAL, H.; SHIRTS, M.~R. A benchmark test set for alchemical free energy
@@ -507,6 +521,13 @@ ISBN 978-981-10-3544-9 (Print) 978-981-10-3545-6 (Online).}
   corresponding-states framework for the description of the mie family of
   intermolecular potentials.
 \emph{Molecular Physics}, v.~113, p. 1–16, 2015.}
+
+\bibitem[Roux 1995]{ROUX1995275}
+\abntrefinfo{Roux}{ROUX}{1995}
+{ROUX, B. The calculation of the potential of mean force using computer
+  simulations.
+\emph{Computer Physics Communications}, v.~91, n.~1, p. 275 -- 282, 1995.
+ISSN 0010-4655.}
 
 \bibitem[ROWLINSON and SWINTON 1982]{rowlinson}
 \abntrefinfo{ROWLINSON and SWINTON}{ROWLINSON; SWINTON}{1982}
