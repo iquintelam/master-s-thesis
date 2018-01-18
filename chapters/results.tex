@@ -41,16 +41,42 @@ In the table above, the first value of MPE for the \citeonline{lafitte2012} stra
 
 \end{table*}
 
-The solvation free energies of aromatic solutes in nonpolar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameters equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of 15-18 $\lambda$ were used depending on the pairs solute-solvent. The final values of $\lambda$ were concentrated on the region with a steeper slope. These values and the final values of $\eta$ are available at  Appendix A. The overlapping of the intermediate states are an important measure of the reliability of solvation free energy estimations. In order demonstrate that the group of $\lambda$ found have a sufficient overlap, the overlapping matrices obtained with the software alchemical-analysis. The overlapping matrix for the solvation free energy of benzene in hexane is presented bellow:  
+The solvation free energies of aromatic solutes in nonpolar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameters equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of 15-18 $\lambda s$ and their respective $\eta s$ were used depending on the pairs solute-solvent. The final values of $\lambda$ were concentrated on the region with a steeper slope as can been seen for the pair hexane + benzene in the Table bellow:
+
+\begin{table*}[h]
+	\centering
+	\caption{Optimized values of $\lambda$ and $\eta$ for the solutes in hexane}
+	\begin{tabular}{ll}
+		\hline
+        $\lambda$	&	$\eta$\\ 
+        \hline		
+        0	&	0\\ 
+        0.065	&	0.708\\ 
+        0.112	&	1.385\\ 
+        0.15	&	1.892 \\ 
+        0.188	&	2.399\\ 
+        0.226	&	2.519\\ 
+        0.264	&	2.457\\ 
+        0.304	&	2.367\\ 
+        0.356	&	1.921\\ 
+        0.411	&	1.411\\ 
+        0.492	&	0.524\\ 
+        0.588	&	-0.663\\ 
+        0.69	&	-2.016 \\ 
+        0.824	&	-3.922\\ 
+        1	    &	-6.583\\ 	
+		\hline
+	\end{tabular}
+\end{table*}
+
+The $\lambda s$ and $\eta s$  for the other pairs are available at  Appendix A. Other important analysis  to asses the reliability of solvation free energy estimations  is the overlapping of the intermediate states. In order to asses the overlap of states, we obtained overlapping matrices with the software alchemical-analysis. The overlapping matrix for the solvation free energy of benzene in hexane is presented in Figure \figref{fig:hexove} and the matrices for the other pairs are available at Appendix B.  
 
 \begin{figure}[H]
-	\label{fig:overhex}
 	\centering
-	\includegraphics[width=0.9\textwidth]{Figures/ohex_benz}
+	\includegraphics[width=0.8\textwidth]{Figures/ohex_benz}
 	\caption{Overlapping matrix for hexane+benzene.}
+    \label{fig:hexove}
 \end{figure}
-
-The overlapping matrices for the other pairs are available at the Appendix B. The numerical values for solvation free energies estimated  and the absolute devitions to experimental data were:
 
 \begin{table*}[h]
 \centering
@@ -75,7 +101,7 @@ The overlapping matrices for the other pairs are available at the Appendix B. Th
   \end{tabular}
 \end{table*}
 
-The absolute deviations are smaller for when the solvent is hexane, what shows that the SAFT-$\gamma$ Mie force field performs better for a non polar solvent. Additionally, this force field presented better results for the pair hexane+benzene than the Trappe force field \cite{garrido2011}. We also can see effect of molecule's size on the entropic region of the free energy curve in Figure \ref{fig:hex}. It was expected that a force field based on an EoS that doesn't explicitly account for hydrogen bond would not perform well for 1-octanol. Despite this, the solvation free energies of propane and phenanthrene in 1-octanol stayed in the desired deviation range of 1-2 kcal/mol \cite{doimobley}. The deviation was much smaller for propane. This can be attributed to propane's non polarity and smoother free energy curve (Figure \ref{fig:oct}). The anthracene and phenanthrene molecules have the same geometry in the model and similar physical properties, but the absolute deviation of the solvation free energy of anthracene in 1-octanol is much higher than the one of phenanthrene 1-octanol. This may indicate a problem in the parameterization of anthracene.     
+The numerical values for solvation free energies estimated in Table \ref{tbl:solv1} had smaller absolute deviations to experimental data, what shows that the SAFT-$\gamma$ Mie force field performs better for a non polar solvent. Additionally, this force field presented better results for the pair hexane+benzene than the Trappe force field \cite{garrido2011}. We also observed the effect of molecule's size on the entropic region of the free energy curve in Figure \ref{fig:hex}. It was expected that a force field based on an EoS that doesn't explicitly account for hydrogen bond would not perform well for 1-octanol. Despite this, the solvation free energies of propane and phenanthrene in 1-octanol stayed in the desired deviation range of 1-2 kcal/mol \cite{doimobley}. The deviation was much smaller for propane. This can be attributed to propane's non polarity and smoother free energy curve (Figure \ref{fig:oct}). The anthracene and phenanthrene molecules have the same geometry in the model and similar physical properties, but the absolute deviation of the solvation free energy of anthracene in 1-octanol is much higher than the one of phenanthrene 1-octanol. This may indicate a problem in the parameterization of anthracene.     
 
 \begin{figure}[H]
 \centering

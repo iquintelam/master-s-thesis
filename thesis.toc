@@ -36,16 +36,16 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{41}{chapter.5}
 \contentsline {section}{\numberline {5.1}Solvation free energies}{41}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hydration free energies}{46}{section.5.2}
+\contentsline {section}{\numberline {5.2}Hydration free energies}{47}{section.5.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{50}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{52}{section*.26}
+\contentsline {chapter}{\uppercase {Bibliography}}{52}{section*.27}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{60}{section*.27}
+\contentsline {part}{\uppercase {Appendix}}{60}{section*.28}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
