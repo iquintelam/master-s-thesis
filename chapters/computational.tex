@@ -331,7 +331,13 @@ Instead of doing various simulations in different values of $\lambda$, expanded 
 Z^{EE} = \sum_{i=1}^{N} Z_{i}(\lambda_{i}) exp(\eta_{i})
 \label{eqn:ee}
 \end{equation}   
-where N is the number of alchemical states and $\eta_{i}$ is the arbitrary weight of the sub ensemble $Z_{i}$ at each state. In solvation energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the soft-core potential (Eq. \ref{eq:softcore}) and the expanded ensemble is sampled by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that the sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
+where N is the number of alchemical states, $\eta_{i}$ is the arbitrary weight of the sub ensemble at each state and $Z_{i}$ is configuration partition function at state i. For the isothermal-isobaric ensemble, $Z$ is:
+
+\begin{equation}
+Z = {\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(\lambda, r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]}
+\end{equation} 
+
+In solvation energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the soft-core potential (Eq. \ref{eq:softcore}). For molecular dynamic simulations, the sampling of the expanded ensemble is done by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that type of sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
 
 \begin{equation}
 \pi(x|\lambda_{k}) = \dfrac{\exp[-\beta u(x,\lambda_{k})]}{\int dx \exp [- \beta u(x,\lambda_{k})]}
