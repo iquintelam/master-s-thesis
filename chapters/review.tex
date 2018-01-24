@@ -3,9 +3,15 @@
 \chapter{Literature Review} % Main chapter title
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-%\section{Molecular Simulations of Molecules Mimicking Asphaltenes}
-%Asphaltenes consist of polyfunctional molecules, and they are defined by their solubility: insoluble in n-alkanes (pentane, hexane and heptane). Due to uncertainties related to its structures, a lot work has been done to develop model compounds that have well defined structure and can represent an average asphaltene. The two category of models presented in the literature are the archipelago and continental models. In the archipelago, asphaltenes consist of polyaromatic parts linked together by aliphatic or naphthemic moieties and, in the continental, they consist of a single
-%polyaromatic ring with linked aliphatic or naphthenic chains \cite{doi:10.1021/ef900975e,doi:10.1080/0892702031000148762}.
+\section{Molecular Simulations of Molecules Mimicking Asphaltenes}
+Asphaltenes consist of polyfunctional molecules, and they are defined by their solubility: insoluble in n-alkanes (pentane, hexane and heptane) and solube in tolune. Due to uncertainties related to its structures, a lot work has been done to develop model compounds that have well defined structure and can represent an average asphaltene. The two category of models presented in the literature are the archipelago and continental models. In the archipelago, asphaltenes consist of polyaromatic parts linked together by aliphatic or naphthemic moieties and, in the continental, they consist of a single
+polyaromatic ring with linked aliphatic or naphthenic chains \cite{doi:10.1021/ef900975e,doi:10.1080/0892702031000148762}. Studies with molecular simulation uses this models or compounds that have similar solubility properties like toluene and pyrene. 
+
+\citeonline{ERVIK2016576}  obtained correct interfacial orientation of asphaltenes using coarse grained molecular dynamics simulations of the interface, with an accurate model for the asphaltene molecules. A pyrelene based model was used in the work of \citeonline{doi:10.1021/jp3010184,doi:10.1021/jp407363p} to study molecular association and interaction as well as the adsorption properties of the pyrelene model at the water/toluene or heptane interface. Molecular dynamics simulations were also used to the study the nanoaggregation of four types of model asphaltene molecules in binary mixtures of toluene and water \cite{doi:10.1021/ef9004576@proofing}. This study observed that  in thin films of toluene trapped between two aqueous phases,
+both interface-bound and core-bound asphaltenes have similar diffusion behavior. 
+
+
+
 \section{Coarse Grained Force Fields}
 
 
@@ -191,7 +197,7 @@ The integral in Eq. \eqref{eq:ti3} is obtained by interpolating the output data 
 
 \subsection{Histograms}
 %97
-Histograms are used  to compute probability distributions. Usually every histogram bin is treated as number of visits to a specific state.The standard practice when using histograms is to use the weighted histogram analysis method (WHAM) developed by \citeonline{PhysRevLett.63.1195} and generalized by \citeonline{JCC:JCC540130812} \cite{freeenergy} to put together different histograms by minimizing the statistical error in the computed density of states and entropy function. This method describes the total probability distribution as a weighted sum of probability distributions without bias  obtained from biased simulations. This method was developed to avoid problems related to data loss, high uncertainties and the calculation of the constant of the free energy added to the system by the biased potential \cite{ROUX1995275}. The probability distribution dependent on the potential energy and temperature ($\tilde{\varrho_{r}^{*}}(U,T)$) for the WHAM is:
+Histograms are used  to compute probability distributions. Usually every histogram bin is treated as number of visits to a specific state.The standard practice when using histograms is to use the weighted histogram analysis method (WHAM) developed by \citeonline{PhysRevLett.63.1195} and generalized by \citeonline{wham} \cite{freeenergy} to put together different histograms by minimizing the statistical error in the computed density of states and entropy function. This method describes the total probability distribution as a weighted sum of probability distributions without bias  obtained from biased simulations. This method was developed to avoid problems related to data loss, high uncertainties and the calculation of the constant of the free energy added to the system by the biased potential \cite{ROUX1995275}. The probability distribution dependent on the potential energy and temperature ($\tilde{\varrho_{r}^{*}}(U,T)$) for the WHAM is:
 
 \begin{equation}
 \label{eq:wham1}

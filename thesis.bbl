@@ -163,6 +163,14 @@
 \emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
   2016.}
 
+\bibitem[Ervik \textit{et al.} 2016]{ERVIK2016576}
+\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016}
+{ERVIK Åsmund; LYSGAARD, M.~O.; HERDES, C.; JIMéNEZ-SERRATOS, G.; MüLLER,
+  E.~A.; MUNKEJORD, S.~T.; MüLLER, B. A multiscale method for simulating fluid
+  interfaces covered with large molecules such as asphaltenes.
+\emph{Journal of Computational Physics}, v.~327, p. 576 -- 611, 2016.
+ISSN 0021-9991.}
+
 \bibitem[Escobedo and Martinez-Veracoechea 2007]{escobedo2007}
 \abntrefinfo{Escobedo and Martinez-Veracoechea}{ESCOBEDO;
   MARTINEZ-VERACOECHEA}{2007}
@@ -312,6 +320,7 @@ ISBN 0122673514.}
 \emph{Journal of Computational Chemistry}, John Wiley and Sons, Inc., v.~13,
   n.~8, p. 1011--1021, 1992.
 ISSN 1096-987X.}
+
 
 \bibitem[Lafitte \textit{et al.} 2013]{lafitte2013}
 \abntrefinfo{Lafitte \textit{et al.}}{LAFITTE \textit{et al.}}{2013}
@@ -468,6 +477,17 @@ ISSN 0920-654X.}
   homonuclear rings and its parametrization based on the principle of
   corresponding states.
 \emph{Langmuir}, -, p. A–L, 2017.}
+
+\bibitem[Mullins 2010]{doi:10.1021/ef900975e}
+\abntrefinfo{Mullins}{MULLINS}{2010}
+{MULLINS, O.~C. The modified yen model.
+\emph{Energy \& Fuels}, v.~24, n.~4, p. 2179--2207, 2010.}
+
+\bibitem[Murgich 2003]{doi:10.1080/0892702031000148762}
+\abntrefinfo{Murgich}{MURGICH}{2003}
+{MURGICH, J. Molecular simulation and the aggregation of the heavy fractions in
+  crude oils.
+\emph{Molecular Simulation}, v.~29, n.~6-7, p. 451--461, 2003.}
 
 \bibitem[Paliwal and Shirts 2011]{bareva}
 \abntrefinfo{Paliwal and Shirts}{PALIWAL; SHIRTS}{2011}
@@ -634,6 +654,22 @@ ISSN 0016-2361.}
   protein model: from single molecules, amyloid formation, crowding and
   hydrodynamics to dna/rna systems.
 \emph{Chemical Society Reviews}, v.~43, p. 4871– 4893, 2014.}
+
+\bibitem[Teklebrhan \textit{et al.} 2012]{doi:10.1021/jp3010184}
+\abntrefinfo{Teklebrhan \textit{et al.}}{TEKLEBRHAN \textit{et al.}}{2012}
+{TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJöBLOM, J. Probing
+  structure–nanoaggregation relations of polyaromatic surfactants: A
+  molecular dynamics simulation and dynamic light scattering study.
+\emph{The Journal of Physical Chemistry B}, v.~116, n.~20, p. 5907--5918, 2012.
+PMID: 22512276.}
+
+\bibitem[Teklebrhan \textit{et al.} 2014]{doi:10.1021/jp407363p}
+\abntrefinfo{Teklebrhan \textit{et al.}}{TEKLEBRHAN \textit{et al.}}{2014}
+{TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJöBLOM, J. Initial
+  partition and aggregation of uncharged polyaromatic molecules at the
+  oil–water interface: A molecular dynamics simulation study.
+\emph{The Journal of Physical Chemistry B}, v.~118, n.~4, p. 1040--1051, 2014.
+PMID: 24397444.}
 
 \bibitem[Torrie and Valleau 1977]{TORRIE1977187}
 \abntrefinfo{Torrie and Valleau}{TORRIE; VALLEAU}{1977}

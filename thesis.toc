@@ -8,50 +8,51 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{9}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Literature Review}}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Coarse Grained Force Fields}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Solvation Free Energies Based on Molecular Dynamics}{14}{section.2.2}
-\contentsline {section}{\numberline {2.3}Post simulation methods}{17}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Thermodynamic integration}{18}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Histograms}{18}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Free Energy of Perturbation (FEP)}{19}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Bennet Acceptance Ratio (BAR)}{20}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{21}{subsubsection.2.3.3.2}
+\contentsline {section}{\numberline {2.1}Molecular Simulations of Molecules Mimicking Asphaltenes}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Coarse Grained Force Fields}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}Solvation Free Energies Based on Molecular Dynamics}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Post simulation methods}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Thermodynamic integration}{18}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Histograms}{19}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Free Energy of Perturbation (FEP)}{19}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Bennet Acceptance Ratio (BAR)}{20}{subsubsection.2.4.3.1}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{21}{subsubsection.2.4.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentals of the Computational Methods}}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Molecular Dynamics}{23}{section.3.1}
-\contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie EoS}{26}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Ideal Contribution}{27}{subsubsection.3.2.1.1}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Monomer Contribution}{27}{subsubsection.3.2.1.2}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Chain Contribution}{28}{subsubsection.3.2.1.3}
-\contentsline {subsubsection}{\numberline {3.2.1.4}Ring Contribution}{28}{subsubsection.3.2.1.4}
-\contentsline {subsubsection}{\numberline {3.2.1.5}Combining rules for the intermolecular potential parameters}{29}{subsubsection.3.2.1.5}
-\contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{30}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Expanded Ensemble Method}{33}{section.3.3}
-\contentsline {section}{\numberline {3.4}Gibbs Ensemble Monte Carlo (GEMC)}{37}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentals of the Computational Methods}}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}Molecular Dynamics}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie EoS}{27}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Ideal Contribution}{28}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Monomer Contribution}{28}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Chain Contribution}{29}{subsubsection.3.2.1.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Ring Contribution}{29}{subsubsection.3.2.1.4}
+\contentsline {subsubsection}{\numberline {3.2.1.5}Combining rules for the intermolecular potential parameters}{30}{subsubsection.3.2.1.5}
+\contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{31}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Expanded Ensemble Method}{34}{section.3.3}
+\contentsline {section}{\numberline {3.4}Gibbs Ensemble Monte Carlo (GEMC)}{38}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{39}{chapter.4}
-\contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{40}{section.4.2}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{40}{chapter.4}
+\contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{40}{section.4.1}
+\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{41}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Solvation free energies}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hydration free energies}{48}{section.5.2}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Solvation free energies}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hydration free energies}{49}{section.5.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{51}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{52}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{53}{section*.28}
+\contentsline {chapter}{\uppercase {Bibliography}}{54}{section*.28}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{61}{section*.29}
+\contentsline {part}{\uppercase {Appendix}}{62}{section*.29}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{62}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{63}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{65}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{66}{appendix.B}
 \vspace {\cftbeforechapterskip }
