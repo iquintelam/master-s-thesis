@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  24 JAN 2018 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  24 JAN 2018 22:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1470,14 +1470,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [63
 
-] [64] [65] <Figures/ohex_pyr.pdf, id=1209, 420.06938pt x 433.62pt>
+] [64] [65] <Figures/ohex_pyr.pdf, id=1208, 420.06938pt x 433.62pt>
 File: Figures/ohex_pyr.pdf Graphic file (type pdf)
 
 <use Figures/ohex_pyr.pdf>
 Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 772.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
 
-<Figures/ohex_phen.pdf, id=1210, 420.06938pt x 433.62pt>
+<Figures/ohex_phen.pdf, id=1209, 420.06938pt x 433.62pt>
 File: Figures/ohex_phen.pdf Graphic file (type pdf)
 
 <use Figures/ohex_phen.pdf>
@@ -1486,98 +1486,98 @@ Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 778.
  [66
 
  <./Figures/ohex_pyr.pdf>]
-<Figures/ooct_prop.pdf, id=1238, 420.06938pt x 433.62pt>
+<Figures/ooct_prop.pdf, id=1237, 420.06938pt x 433.62pt>
 File: Figures/ooct_prop.pdf Graphic file (type pdf)
 
 <use Figures/ooct_prop.pdf>
 Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 784.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
  [67 <./Figures/ohex_phen.pdf>]
-<Figures/ooct_ant.pdf, id=1265, 504.08327pt x 520.34402pt>
+<Figures/ooct_ant.pdf, id=1264, 504.08327pt x 520.34402pt>
 File: Figures/ooct_ant.pdf Graphic file (type pdf)
 
 <use Figures/ooct_ant.pdf>
 Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 790.
 (pdftex.def)             Requested size: 409.49722pt x 422.72289pt.
  [68 <./Figures/ooct_prop.pdf>]
-<Figures/ooct_phen.pdf, id=1292, 504.08327pt x 520.34402pt>
+<Figures/ooct_phen.pdf, id=1291, 504.08327pt x 520.34402pt>
 File: Figures/ooct_phen.pdf Graphic file (type pdf)
 
 <use Figures/ooct_phen.pdf>
 Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 796.
 (pdftex.def)             Requested size: 409.49722pt x 422.72289pt.
  [69 <./Figures/ooct_ant.pdf>]
-<Figures/otol_pyr.pdf, id=1319, 420.06938pt x 433.62pt>
+<Figures/otol_pyr.pdf, id=1318, 420.06938pt x 433.62pt>
 File: Figures/otol_pyr.pdf Graphic file (type pdf)
 
 <use Figures/otol_pyr.pdf>
 Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 802.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
  [70 <./Figures/ooct_phen.pdf>]
-<Figures/otol_antr.pdf, id=1347, 420.06938pt x 433.62pt>
+<Figures/otol_antr.pdf, id=1346, 420.06938pt x 433.62pt>
 File: Figures/otol_antr.pdf Graphic file (type pdf)
 
 <use Figures/otol_antr.pdf>
 Package pdftex.def Info: Figures/otol_antr.pdf used on input line 808.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
  [71 <./Figures/otol_pyr.pdf>]
-<Figures/otol_phen.pdf, id=1374, 420.06938pt x 433.62pt>
+<Figures/otol_phen.pdf, id=1373, 420.06938pt x 433.62pt>
 File: Figures/otol_phen.pdf Graphic file (type pdf)
 
 <use Figures/otol_phen.pdf>
 Package pdftex.def Info: Figures/otol_phen.pdf used on input line 814.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
  [72 <./Figures/otol_antr.pdf>]
-<Figures/otolco2_1.pdf, id=1402, 420.06938pt x 433.62pt>
+<Figures/otolco2_1.pdf, id=1401, 420.06938pt x 433.62pt>
 File: Figures/otolco2_1.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_1.pdf>
 Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 820.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
 
-<Figures/otolco2_2.pdf, id=1403, 420.06938pt x 433.62pt>
+<Figures/otolco2_2.pdf, id=1402, 420.06938pt x 433.62pt>
 File: Figures/otolco2_2.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_2.pdf>
 Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 825.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
  [73 <./Figures/otol_phen.pdf>] [74 <./Figures/otolco2_1.pdf>] <Figures/otolco2
-_3.pdf, id=1456, 455.10025pt x 452.20944pt>
+_3.pdf, id=1455, 455.10025pt x 452.20944pt>
 File: Figures/otolco2_3.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_3.pdf>
 Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 831.
 (pdftex.def)             Requested size: 409.49722pt x 406.89502pt.
  [75 <./Figures/otolco2_2.pdf>]
-<Figures/otolco2_4.pdf, id=1483, 448.07399pt x 462.52798pt>
+<Figures/otolco2_4.pdf, id=1482, 448.07399pt x 462.52798pt>
 File: Figures/otolco2_4.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_4.pdf>
 Package pdftex.def Info: Figures/otolco2_4.pdf used on input line 837.
 (pdftex.def)             Requested size: 409.49722pt x 422.71492pt.
  [76 <./Figures/otolco2_3.pdf>]
-<Figures/owat_prop.pdf, id=1510, 420.06938pt x 433.62pt>
+<Figures/owat_prop.pdf, id=1509, 420.06938pt x 433.62pt>
 File: Figures/owat_prop.pdf Graphic file (type pdf)
 
 <use Figures/owat_prop.pdf>
 Package pdftex.def Info: Figures/owat_prop.pdf used on input line 843.
 (pdftex.def)             Requested size: 409.49722pt x 422.70833pt.
  [77 <./Figures/otolco2_4.pdf>]
-<Figures/owat_benz.pdf, id=1538, 427.09563pt x 424.38548pt>
+<Figures/owat_benz.pdf, id=1537, 427.09563pt x 424.38548pt>
 File: Figures/owat_benz.pdf Graphic file (type pdf)
 
 <use Figures/owat_benz.pdf>
 Package pdftex.def Info: Figures/owat_benz.pdf used on input line 849.
 (pdftex.def)             Requested size: 409.49722pt x 406.89386pt.
  [78 <./Figures/owat_prop.pdf>]
-<Figures/owat_tol.pdf, id=1566, 427.09563pt x 424.38548pt>
+<Figures/owat_tol.pdf, id=1565, 427.09563pt x 424.38548pt>
 File: Figures/owat_tol.pdf Graphic file (type pdf)
 
 <use Figures/owat_tol.pdf>
 Package pdftex.def Info: Figures/owat_tol.pdf used on input line 855.
 (pdftex.def)             Requested size: 409.49722pt x 406.89386pt.
  [79 <./Figures/owat_benz.pdf>]
-<Figures/owat_phen.pdf, id=1593, 427.09563pt x 424.38548pt>
+<Figures/owat_phen.pdf, id=1592, 427.09563pt x 424.38548pt>
 File: Figures/owat_phen.pdf Graphic file (type pdf)
 
 <use Figures/owat_phen.pdf>
@@ -1612,36 +1612,34 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 898.
  ) 
 Here is how much of TeX's memory you used:
- 15685 strings out of 494929
- 234226 string characters out of 6180141
- 425837 words of memory out of 5000000
- 18063 multiletter control sequences out of 15000+600000
- 70084 words of font info for 269 fonts, out of 8000000 for 9000
+ 15683 strings out of 494929
+ 234105 string characters out of 6180141
+ 425601 words of memory out of 5000000
+ 18059 multiletter control sequences out of 15000+600000
+ 70239 words of font info for 271 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,17n,44p,2272b,685s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.doi:10.1021/ef9004576@proofing} has been ref
-erenced but does not exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
-plr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (82 pages, 1455625 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
+/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
+>
+Output written on thesis.pdf (82 pages, 1455422 bytes).
 PDF statistics:
- 1905 PDF objects out of 2073 (max. 8388607)
- 1538 compressed objects within 16 object streams
- 370 named destinations out of 1000 (max. 500000)
+ 1904 PDF objects out of 2073 (max. 8388607)
+ 1537 compressed objects within 16 object streams
+ 369 named destinations out of 1000 (max. 500000)
  48087 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -306,21 +306,19 @@ ISBN 0122673514.}
 \emph{Journal of Molecular Biology}, v.~331, p. 171–180, 2001.}
 
 \bibitem[Kumar \textit{et al.} 1992]{wham}
-\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992a}
+\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992}
 {KUMAR, S.; BOUZIDA, D.; SWENDSEN, R.; KOLLMAN, P.; ROSENBERG, J. The weighted
   histogram analysis method for free-energy calculations on biomolecules. 1.
   the method.
 \emph{Journal of Computational Chemistry}, v.~13, p. 1011--1021, 1992.}
 
-\bibitem[Kumar \textit{et al.} 1992]{JCC:JCC540130812}
-\abntrefinfo{Kumar \textit{et al.}}{KUMAR \textit{et al.}}{1992b}
-{KUMAR, S.; ROSENBERG, J.~M.; BOUZIDA, D.; SWENDSEN, R.~H.; KOLLMAN, P.~A. The
-  weighted histogram analysis method for free-energy calculations on
-  biomolecules. i. the method.
-\emph{Journal of Computational Chemistry}, John Wiley and Sons, Inc., v.~13,
-  n.~8, p. 1011--1021, 1992.
-ISSN 1096-987X.}
-
+\bibitem[Kuznicki, Masliyah and Bhattacharjee 0]{doi:10.1021/ef9004576}
+\abntrefinfo{Kuznicki, Masliyah and Bhattacharjee}{KUZNICKI; MASLIYAH;
+  BHATTACHARJEE}{0}
+{KUZNICKI, T.; MASLIYAH, J.~H.; BHATTACHARJEE, S. Aggregation and partitioning
+  of model asphaltenes at toluene - water interfaces: Molecular dynamics
+  simulations.
+\emph{Energy and Fuels}, v.~0, n. proofing, 0.}
 
 \bibitem[Lafitte \textit{et al.} 2013]{lafitte2013}
 \abntrefinfo{Lafitte \textit{et al.}}{LAFITTE \textit{et al.}}{2013}
