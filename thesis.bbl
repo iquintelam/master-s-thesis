@@ -190,6 +190,12 @@ ISSN 0021-9991.}
   Orlando, FL, USA: Academic Press, Inc., 2001.
 ISBN 0122673514.}
 
+\bibitem[Gao \textit{et al.} 2014]{doi:10.1021/ef5020428}
+\abntrefinfo{Gao \textit{et al.}}{GAO \textit{et al.}}{2014}
+{GAO, F.; XU, Z.; LIU, G.; YUAN, S. Molecular dynamics simulation: The behavior
+  of asphaltene in crude oil and at the oil/water interface.
+\emph{Energy \& Fuels}, v.~28, n.~12, p. 7368--7376, 2014.}
+
 \bibitem[Garrido \textit{et al.} 2011]{garrido2011}
 \abntrefinfo{Garrido \textit{et al.}}{GARRIDO \textit{et al.}}{2011}
 {GARRIDO, N.~M.; JORGE, M.; QUEIMADA, A.~J.; MACEDO, E.~A.; ECONOMOU, I.~G.
@@ -218,6 +224,13 @@ ISBN 0122673514.}
   creation.
 \emph{The Journal of Chemical Physics}, v.~123, p. 214109, 2005.}
 
+\bibitem[Greenfield 2011]{doi:10.1080/10298436.2011.575141}
+\abntrefinfo{Greenfield}{GREENFIELD}{2011}
+{GREENFIELD, M.~L. Molecular modelling and simulation of asphaltenes and
+  bituminous materials.
+\emph{International Journal of Pavement Engineering}, v.~12, n.~4, p. 325--341,
+  2011.}
+
 \bibitem[Hadley and McCabe 2010]{hadley2010}
 \abntrefinfo{Hadley and McCabe}{HADLEY; MCCABE}{2010}
 {HADLEY, K.~R.; MCCABE, C. On the investigation of coarse-grained models for
@@ -236,6 +249,13 @@ ISBN 0122673514.}
 {HE, X.; SHINODA, W.; DEVANE, R.; KLEIN, M.~L. Exploring the utility of
   coarse-grained water models for computational studies of interfacial systems.
 \emph{Molecular Simulation}, v.~108, p. 2007--2020, 2010.}
+
+\bibitem[Headen \textit{et al.} 2017]{doi:10.1021/acs.energyfuels.6b02161}
+\abntrefinfo{Headen \textit{et al.}}{HEADEN \textit{et al.}}{2017}
+{HEADEN, T.~F.; BOEK, E.~S.; JACKSON, G.; TOTTON, T.~S.; MüLLER, E.~A.
+  Simulation of asphaltene aggregation through molecular dynamics: Insights and
+  limitations.
+\emph{Energy \& Fuels}, v.~31, n.~2, p. 1108--1125, 2017.}
 
 \bibitem[Herdes \textit{et al.} 2017]{herdes2017}
 \abntrefinfo{Herdes \textit{et al.}}{HERDES \textit{et al.}}{2017}
@@ -269,6 +289,13 @@ ISBN 0122673514.}
   integration method on the accuracy and computational efficiency of free
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
+
+\bibitem[Jover \textit{et al.} 2015]{doi:10.1021/ef502209j}
+\abntrefinfo{Jover \textit{et al.}}{JOVER \textit{et al.}}{2015}
+{JOVER, J.~F.; MüLLER, E.~A.; HASLAM, A.~J.; GALINDO, A.; JACKSON, G.;
+  TOULHOAT, H.; NIETO-DRAGHI, C. Aspects of asphaltene aggregation obtained
+  from coarse-grained molecular modeling.
+\emph{Energy and Fuels}, v.~29, n.~2, p. 556--566, 2015.}
 
 \bibitem[Kamberaj, Low and Neal 2005]{kamberaj}
 \abntrefinfo{Kamberaj, Low and Neal}{KAMBERAJ; LOW; NEAL}{2005}
@@ -358,6 +385,12 @@ ISBN 0122673514.}
 {LEVITT, M.; WARSHE, A. Computer-simulation of protein folding.
 \emph{Nature}, v.~253, p. 694–698, 1975.}
 
+\bibitem[Li and Greenfield 2011]{doi:10.1021/ef200507c}
+\abntrefinfo{Li and Greenfield}{LI; GREENFIELD}{2011}
+{LI, D.~D.; GREENFIELD, M.~L. High internal energies of proposed asphaltene
+  structures.
+\emph{Energy \& Fuels}, v.~25, n.~8, p. 3698--3705, 2011.}
+
 \bibitem[Liu 2002]{liu2002}
 \abntrefinfo{Liu}{LIU}{2002}
 {LIU, J.~S. \emph{Monte Carlo strategies in Scientific Computing}. 2. ed. New
@@ -428,6 +461,13 @@ ISBN 0122673514.}
 \abntrefinfo{Mie}{MIE}{1903}
 {MIE, G. Zur kinetischen theorie der einatomigen korper.
 \emph{Ann. Phys.}, v.~316, p. 657--697, 1903.}
+
+\bibitem[Mikami \textit{et al.} 2013]{doi:10.1021/ef301610q}
+\abntrefinfo{Mikami \textit{et al.}}{MIKAMI \textit{et al.}}{2013}
+{MIKAMI, Y.; LIANG, Y.; MATSUOKA, T.; BOEK, E.~S. Molecular dynamics
+  simulations of asphaltenes at the oil–water interface: From nanoaggregation
+  to thin-film formation.
+\emph{Energy \& Fuels}, v.~27, n.~4, p. 1838--1845, 2013.}
 
 \bibitem[Mobley \textit{et al.} 2007]{mobley2007}
 \abntrefinfo{Mobley \textit{et al.}}{MOBLEY \textit{et al.}}{2007}

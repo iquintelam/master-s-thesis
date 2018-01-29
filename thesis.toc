@@ -9,14 +9,14 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Literature Review}}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Molecular Simulations of Molecules Mimicking Asphaltenes}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Coarse Grained Force Fields}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Solvation Free Energies Based on Molecular Dynamics}{14}{section.2.3}
+\contentsline {section}{\numberline {2.2}Coarse Grained Force Fields}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Solvation Free Energies Based on Molecular Dynamics}{15}{section.2.3}
 \contentsline {section}{\numberline {2.4}Post simulation methods}{18}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Thermodynamic integration}{18}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Thermodynamic integration}{19}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Histograms}{19}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Free Energy of Perturbation (FEP)}{19}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Bennet Acceptance Ratio (BAR)}{20}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{21}{subsubsection.2.4.3.2}
+\contentsline {subsection}{\numberline {2.4.3}Free Energy of Perturbation (FEP)}{20}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Bennet Acceptance Ratio (BAR)}{21}{subsubsection.2.4.3.1}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{22}{subsubsection.2.4.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentals of the Computational Methods}}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}Molecular Dynamics}{24}{section.3.1}
@@ -46,13 +46,13 @@
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{62}{section*.29}
+\contentsline {part}{\uppercase {Appendix}}{63}{section*.29}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{63}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{64}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{66}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{67}{appendix.B}
 \vspace {\cftbeforechapterskip }

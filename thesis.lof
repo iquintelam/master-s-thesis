@@ -1,6 +1,6 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Schematic representation for the two different approaches of coarse graining.Taken from \citeonline {tatyana}\relax }}{12}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Schematic representation for the two different approaches of coarse graining.Taken from \citeonline {tatyana}\relax }}{13}{figure.caption.4}
 \contentsline {figure}{\numberline {2.3.1}{\ignorespaces Thermodynamic cycle for solvation free energy calculations with molecular dynamics (Adapted from \citeonline {klimovich})\relax }}{16}{figure.caption.5}
 \contentsline {figure}{\numberline {2.3.2}{\ignorespaces Soft-core potential in reduced units.\relax }}{17}{figure.caption.6}
 \contentsline {figure}{\numberline {3.1.1}{\ignorespaces Periodic boundary condition representation. Taken from \citeonline {frenkel}\relax }}{24}{figure.caption.7}
@@ -14,19 +14,19 @@
 \contentsline {figure}{\numberline {5.1.4}{\ignorespaces Solvation free energy profiles of different solutes in toluene. \relax }}{47}{figure.caption.19}
 \contentsline {figure}{\numberline {5.1.5}{\ignorespaces Solvation free energy profiles of phenanthrene in toluene+$CO_{2}$.\relax }}{49}{figure.caption.21}
 \contentsline {figure}{\numberline {5.2.1}{\ignorespaces Hydration free energy profiles for different solutes.\relax }}{51}{figure.caption.25}
-\contentsline {figure}{\numberline {B.0.1}{\ignorespaces Overlapping matrix for hexane+pyrene.\relax }}{66}{figure.caption.35}
-\contentsline {figure}{\numberline {B.0.2}{\ignorespaces Overlapping matrix for hexane+phenanthrene.\relax }}{67}{figure.caption.36}
-\contentsline {figure}{\numberline {B.0.3}{\ignorespaces Overlapping matrix for 1-octanol+propane.\relax }}{68}{figure.caption.37}
-\contentsline {figure}{\numberline {B.0.4}{\ignorespaces Overlapping matrix for 1-octanol+anthracene.\relax }}{69}{figure.caption.38}
-\contentsline {figure}{\numberline {B.0.5}{\ignorespaces Overlapping matrix for 1-octanol+phenanthrene.\relax }}{70}{figure.caption.39}
-\contentsline {figure}{\numberline {B.0.6}{\ignorespaces Overlapping matrix for toluene+pyrene.\relax }}{71}{figure.caption.40}
-\contentsline {figure}{\numberline {B.0.7}{\ignorespaces Overlapping matrix for toluene+anthracene.\relax }}{72}{figure.caption.41}
-\contentsline {figure}{\numberline {B.0.8}{\ignorespaces Overlapping matrix for toluene+phenanthrene.\relax }}{73}{figure.caption.42}
-\contentsline {figure}{\numberline {B.0.9}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.087)+phenanthrene.\relax }}{74}{figure.caption.43}
-\contentsline {figure}{\numberline {B.0.10}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.119)+phenanthrene.\relax }}{75}{figure.caption.44}
-\contentsline {figure}{\numberline {B.0.11}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.169)+phenanthrene.\relax }}{76}{figure.caption.45}
-\contentsline {figure}{\numberline {B.0.12}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.289)+phenanthrene.\relax }}{77}{figure.caption.46}
-\contentsline {figure}{\numberline {B.0.13}{\ignorespaces Overlapping matrix for water+propane.\relax }}{78}{figure.caption.47}
-\contentsline {figure}{\numberline {B.0.14}{\ignorespaces Overlapping matrix for water+benzene.\relax }}{79}{figure.caption.48}
-\contentsline {figure}{\numberline {B.0.15}{\ignorespaces Overlapping matrix for water+toluene.\relax }}{80}{figure.caption.49}
-\contentsline {figure}{\numberline {B.0.16}{\ignorespaces Overlapping matrix for water+phenanthrene.\relax }}{81}{figure.caption.50}
+\contentsline {figure}{\numberline {B.0.1}{\ignorespaces Overlapping matrix for hexane+pyrene.\relax }}{67}{figure.caption.35}
+\contentsline {figure}{\numberline {B.0.2}{\ignorespaces Overlapping matrix for hexane+phenanthrene.\relax }}{68}{figure.caption.36}
+\contentsline {figure}{\numberline {B.0.3}{\ignorespaces Overlapping matrix for 1-octanol+propane.\relax }}{69}{figure.caption.37}
+\contentsline {figure}{\numberline {B.0.4}{\ignorespaces Overlapping matrix for 1-octanol+anthracene.\relax }}{70}{figure.caption.38}
+\contentsline {figure}{\numberline {B.0.5}{\ignorespaces Overlapping matrix for 1-octanol+phenanthrene.\relax }}{71}{figure.caption.39}
+\contentsline {figure}{\numberline {B.0.6}{\ignorespaces Overlapping matrix for toluene+pyrene.\relax }}{72}{figure.caption.40}
+\contentsline {figure}{\numberline {B.0.7}{\ignorespaces Overlapping matrix for toluene+anthracene.\relax }}{73}{figure.caption.41}
+\contentsline {figure}{\numberline {B.0.8}{\ignorespaces Overlapping matrix for toluene+phenanthrene.\relax }}{74}{figure.caption.42}
+\contentsline {figure}{\numberline {B.0.9}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.087)+phenanthrene.\relax }}{75}{figure.caption.43}
+\contentsline {figure}{\numberline {B.0.10}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.119)+phenanthrene.\relax }}{76}{figure.caption.44}
+\contentsline {figure}{\numberline {B.0.11}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.169)+phenanthrene.\relax }}{77}{figure.caption.45}
+\contentsline {figure}{\numberline {B.0.12}{\ignorespaces Overlapping matrix for toluene+$CO_{2}$(0.289)+phenanthrene.\relax }}{78}{figure.caption.46}
+\contentsline {figure}{\numberline {B.0.13}{\ignorespaces Overlapping matrix for water+propane.\relax }}{79}{figure.caption.47}
+\contentsline {figure}{\numberline {B.0.14}{\ignorespaces Overlapping matrix for water+benzene.\relax }}{80}{figure.caption.48}
+\contentsline {figure}{\numberline {B.0.15}{\ignorespaces Overlapping matrix for water+toluene.\relax }}{81}{figure.caption.49}
+\contentsline {figure}{\numberline {B.0.16}{\ignorespaces Overlapping matrix for water+phenanthrene.\relax }}{82}{figure.caption.50}
