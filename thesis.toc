@@ -44,15 +44,20 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\uppercase {Bibliography}}{54}{section*.28}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
-\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
-\cftinsert {A}
-\contentsline {part}{\uppercase {Appendix}}{63}{section*.29}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{64}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{63}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{67}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{66}{appendix.B}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{82}{appendix.C}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{91}{appendix.D}
 \vspace {\cftbeforechapterskip }
