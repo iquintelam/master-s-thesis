@@ -41,11 +41,20 @@ In the table above, the first value of MPE for the \citeonline{lafitte2012} stra
 
 \end{table*}
 
-The solvation free energies of aromatic solutes in nonpolar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameters equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of 15-18 $\lambda s$ and their respective $\eta s$ were used depending on the pairs solute-solvent. The final values of $\lambda$ were concentrated on the region with a steeper slope as can been seen for the pair hexane + benzene in the Table bellow:
+The solvation free energies of aromatic solutes in nonpolar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameters equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of 15-18, depending on the pairs solute-solvent,  $\lambda s$ and their respective $\eta s$ were estimated as described in the methodology. The final $\lambda$ set was found using  
+the cumulative probability distribution (Eq. \eqref{eqn:cumfun}) for all the pair. The distribution for the pair hexane+benzene can be seem in \figref{fig:optimized_cdf}. The final values of $\lambda$ and were concentrated on the region with a steeper slope as can been seen for the same pair solvent + solute in the Table \ref{tbl:lambdahex}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/optimized_cdf}
+\caption{Cumulative probability}
+\label{fig:optimized_cdf}
+\end{figure}
 
 \begin{table*}[h]
 	\centering
 	\caption{Optimized values of $\lambda$ and $\eta$ for the pair benzene + hexane}
+	  \label{tbl:lambdahex}
 	\begin{tabular}{ll}
 		\hline
         $\lambda$	&	$\eta$\\ 

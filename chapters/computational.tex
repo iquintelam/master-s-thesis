@@ -379,7 +379,7 @@ The choice of the $\lambda$ set correspondent to overlapping alchemical states a
 \label{eqn:stream}
 \end{equation}
 
-In the equation above, $\Lambda$ is the actual continue value of the coupling parameter. This continue function of $\lambda s$ may be obtained by interpolating them linearly. $D(\Lambda)$ is the diffusivity at  state $\Lambda$ and $x(\Lambda)$ is the fraction of times that the trial simulation at state $\Lambda_{i}$ has most recently visited the state $\lambda=1$ as opposed to state $\lambda=0$. The derivative ${dx(\Lambda)}/{d \Lambda}$ can be approximated with the central finite differences method. Finally, $\Pi (\Lambda)$ is the probability of visiting $\Lambda$:
+In the equation above, $\Lambda$ is the actual continue value of the coupling parameter. This continue function of $\lambda s$ is obtained by interpolating the $\lambda$ set linearly. $D(\Lambda)$ is the diffusivity at  state $\Lambda$ and $x(\Lambda)$ is the fraction of times that the trial simulation at state $\Lambda_{i}$ has most recently visited the state $\lambda=1$ as opposed to state $\lambda=0$. The derivative ${dx(\Lambda)}/{d \Lambda}$ is approximated with the central finite differences method. Finally, $\Pi (\Lambda)$ is the probability of visiting $\Lambda$:
 
 \begin{equation}
 \Pi (\Lambda) = \dfrac{C^{'} \bar{\Pi} (\lambda)}{\Lambda_{i+1} - \Lambda_{i}}
@@ -406,7 +406,7 @@ Hence, we can calculate $\bar{\Pi} $ and, consequently, the cumulative probabili
 \Phi = \int_{\lambda =0}^{\lambda =1} \Pi^{'}(\Lambda_{i}) d \Lambda = \dfrac{i}{K}
 \label{eqn:cumfun}
 \end{equation}
-where, $K$ is the total number of $\lambda$ states.
+where, $K$ is the total number of $\lambda$ states. 
 
 \section{Gibbs Ensemble Monte Carlo (GEMC)}\label{gemc}
 
