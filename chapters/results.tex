@@ -42,7 +42,7 @@ In the table above, the first value of MPE for the \citeonline{lafitte2012} stra
 \end{table*}
 
 The solvation free energies of aromatic solutes in nonpolar (hexane), aromatic (toluene) and hydrogen bonding (1-octanol) solvents were examined with binary interaction parameters equal to zero. Since the force field doesn't account for charges, the solvation free energy is equal to the Mie contribution ( Eq. \eqref{eq:softcore}). A total of 15-18, depending on the pairs solute-solvent,  $\lambda s$ and their respective $\eta s$ were estimated as described in the methodology. The final $\lambda$ set was found using  
-the cumulative probability distribution (Eq. \eqref{eqn:cumfun}) for all the pair. The distribution for the pair hexane+benzene can be seem in \figref{fig:optimized_cdf}. The final values of $\lambda$ and were concentrated on the region with a steeper slope as can been seen for the same pair solvent + solute in the Table \ref{tbl:lambdahex}.
+the cumulative probability distribution (Eq. \eqref{eqn:cumfun}) for all pairs. The distribution for the pair hexane+benzene can be seem in \figref{fig:optimized_cdf} and the optimized values of $\lambda$ and $\eta$ in Table \ref{tbl:lambdahex}. The $\lambda s$ and $\eta s$  for the other pairs are available at  Appendix A. The coupling parameters are concentrated on the region with a steeper slope for all the pairs  as it was expected.
 
 \begin{figure}[h]
 \centering
@@ -78,7 +78,7 @@ the cumulative probability distribution (Eq. \eqref{eqn:cumfun}) for all the pai
 	\end{tabular}
 \end{table*}
 
-The $\lambda s$ and $\eta s$  for the other pairs are available at  Appendix A. It is also important to analyze the reliability of solvation free energy estimations  through the overlapping of the intermediate states. Insufficient overlap among states when using a FEP based such MBAR may result in the underestimation of variance, and, consequently, in the substantially incorrect free energies. The overlapping matrix for the solvation free energy of benzene in hexane is presented in Figure \figref{fig:hexove} and the matrices for the other pairs are available at Appendix B. The elements of these matrices are the probabilities of observing a sample from state  i in state j. As an example, the probability of observing state 6 in a simulation of state 8 is 0.16 in Figure \figref{fig:hexove}. It can be observed in the figures that  the matrices for all the pairs in this work have more than  three diagonals. In addition to that,  the probabilities in the three main diagonals are higher than 0.03, which indicates that the free energy estimations are reliable \cite{klimovich}.   
+It is also important to analyze the reliability of solvation free energy estimations  through the overlapping of the intermediate states found with the optimization above. Insufficient overlap among states when using a FEP based such MBAR may result in the underestimation of variance, and, consequently, in substantially incorrect free energies. The overlapping matrix for the solvation free energy of benzene in hexane is presented in \figref{fig:hexove} and the matrices for the other pairs are available at Appendix B. The elements of these matrices are the probabilities of observing a sample from state  i in state j. As an example, the probability of observing state 6 in a simulation of state 8 is 0.16 in \figref{fig:hexove}. It can be observed in the figures that  the matrices for all the pairs in this work have more than  three diagonals. In addition to that,  the probabilities in the three main diagonals are higher than 0.03, which indicates that the free energy estimations are reliable \cite{klimovich}.   
 
 \begin{figure}[H]
 	\centering
@@ -109,6 +109,7 @@ The $\lambda s$ and $\eta s$  for the other pairs are available at  Appendix A. 
     \hline
   \end{tabular}
 \end{table*}
+\FloatBarrier
 
 The numerical values for solvation free energies estimated in Table \ref{tbl:solv1} had smaller absolute deviations to experimental data, what shows that the SAFT-$\gamma$ Mie force field performs better for a non polar solvent. Additionally, this force field presented better results for the pair hexane+benzene than the Trappe force field \cite{garrido2011}. We also observed the effect of molecule's size on the entropic region of the free energy curve in Figure \ref{fig:hex}. It was expected that a force field based on an EoS that doesn't explicitly account for hydrogen bond would not perform well for 1-octanol. Despite this, the solvation free energies of propane and phenanthrene in 1-octanol stayed in the desired deviation range of 1-2 kcal/mol \cite{doimobley}. The deviation was much smaller for propane. This can be attributed to propane's non polarity and smoother free energy curve (Figure \ref{fig:oct}). The anthracene and phenanthrene molecules have the same geometry in the model and similar physical properties, but the absolute deviation of the solvation free energy of anthracene in 1-octanol is much higher than the one of phenanthrene 1-octanol. This may indicate a problem in the parameterization of anthracene.     
 
