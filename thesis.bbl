@@ -60,6 +60,14 @@
   in solution using the coarse-grained force field scorpion.
 \emph{Journal of Chemical Theory and Computation}, v.~9, p. 803--813, 2013.}
 
+\bibitem[Beckstein, Fourrier and Iorga 2014]{Beckstein2014}
+\abntrefinfo{Beckstein, Fourrier and Iorga}{BECKSTEIN; FOURRIER; IORGA}{2014}
+{BECKSTEIN, O.; FOURRIER, A.; IORGA, B.~I. Prediction of hydration free
+  energies for the sampl4 diverse set of compounds using molecular dynamics
+  simulations with the opls-aa force field.
+\emph{Journal of Computer-Aided Molecular Design}, v.~28, n.~3, p. 265--276,
+  Mar 2014.}
+
 \bibitem[Bennett 1976]{bennet1976}
 \abntrefinfo{Bennett}{BENNETT}{1976}
 {BENNETT, C. Efficient estimation of free energy differences from monte carlo
@@ -450,6 +458,16 @@ ISBN 0122673514.}
   enthalpies demonstrated with an update of the freesolv database.
 \emph{Journal Chemical Engineering Data}, v.~62, p. 1559--1569, 2017.}
 
+\bibitem[Matubayasi 2017]{MATUBAYASI201745}
+\abntrefinfo{Matubayasi}{MATUBAYASI}{2017}
+{MATUBAYASI, N. Free-energy analysis of protein solvation with all-atom
+  molecular dynamics simulation combined with a theory of solutions.
+\emph{Current Opinion in Structural Biology}, v.~43, p. 45 -- 54, 2017.
+ISSN 0959-440X.
+Theory and simulation • Macromolecular assemblies.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0959440X16301683}.}
+
 \bibitem[Mej\'ia, Herdes and M\"uller 2014]{mejia2014}
 \abntrefinfo{Mej\'ia, Herdes and M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
 {MEJ\'IA, A.; HERDES, C.; M\"ULLER, E.~A. Force fields for coarse-grained
@@ -633,6 +651,13 @@ ISSN 0021-9991.}
   multiple equilibrium states.
 \emph{Journal of Chemical Physics}, v.~129, p. 124105, 2008.}
 
+\bibitem[Shirts and Pande 2005]{dexp}
+\abntrefinfo{Shirts and Pande}{SHIRTS; PANDE}{2005}
+{SHIRTS, M.~R.; PANDE, V.~S. Comparison of efficiency and bias of free energies
+  computed by exponential averaging, the bennett acceptance ratio, and
+  thermodynamic integration.
+\emph{J. Chem. Phys.}, v.~122, p. 144107, 2005.}
+
 \bibitem[Shirts \textit{et al.} 2003]{shirts2013}
 \abntrefinfo{Shirts \textit{et al.}}{SHIRTS \textit{et al.}}{2003}
 {SHIRTS, M.~R.; PITERA, J.~W.; SWOPE, W.~C.; PANDE, V.~S. Extremely precise
@@ -740,6 +765,13 @@ ISSN 0021-9991.}
   integration time step in molecular dynamics simulations of coarse-grained
   molecular models.
 \emph{Physical Chemistry Chemical Physics}, v.~11, p.~1934, 2009.}
+
+\bibitem[Ytreberg, Swendsen and Zuckerman 2006]{gdel}
+\abntrefinfo{Ytreberg, Swendsen and Zuckerman}{YTREBERG; SWENDSEN;
+  ZUCKERMAN}{2006}
+{YTREBERG, F.~M.; SWENDSEN, R.~H.; ZUCKERMAN, D.~M. Comparison of free energy
+  methods for molecular systems.
+\emph{Journal of Chemical Physics}, v.~125, p. 184114, 2006.}
 
 \bibitem[Zwanzig 1954]{zwanzig1954}
 \abntrefinfo{Zwanzig}{ZWANZIG}{1954}

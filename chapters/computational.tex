@@ -2,7 +2,7 @@
 \chapter{Fundamentals of the Computational Methods} % Main chapter title
 
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-
+\onehalfspace
 
 \section{Molecular Dynamics}
 Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. This cubic lattice has a finite size, but  a finite size or box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
@@ -322,6 +322,290 @@ The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary
 
 However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data. The strategy followed by them was to do simulations in three values of $k_{ij}$ first and, after, they refined the parameter until a value in good agreement with the experimental data was found. 
 
+\section{Solvation Free Energies Based on Molecular Dynamics}
+% background topics
+
+Free energies can be expressed as averages over ensembles of atomic configurations generated using Monte Carlo or molecular dynamics techniques. In the canonical ensemble, the free energy is given by:  
+
+\begin{equation}
+\label{eq:fcano}
+\begin{aligned}
+F(N,V,T) = -\kappa_{b}T ln Q(N,V,T)
+\end{aligned}
+\end{equation}
+where $Q(N,V,T))$ is the partition function of the canonical ensemble:
+
+\begin{equation}
+\label{eq:partican}
+\begin{aligned}
+Q(N,V,T) = \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) \right)
+\right]
+\end{aligned}
+\end{equation}
+where $\beta=1/k_{b}T$. Meanwhile, the average over the isothermal-isobaric ensemble gives the Gibbs free energy:
+
+\begin{equation}
+\label{eq:fisobari}
+\begin{aligned}
+G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
+\end{aligned}
+\end{equation}
+where $\Delta (N,P,T)$ is the partition function of the isothermal-isobaric ensemble:
+
+\begin{equation}
+\label{eq:partiso}
+\begin{aligned}
+\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]
+\end{aligned}
+\end{equation}
+
+Evaluating the partition function is a difficult task, but we are interested in calculating the Gibbs free energy difference between two states of a system, that is given by: 
+
+\begin{equation}
+\label{eq:dif}
+\begin{aligned}
+\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{\Delta_{B}}{\Delta_{A}}\right) 
+\end{aligned}
+\end{equation}
+
+Since the masses of particles in systems 0 and 1 are the same, the moment integrals in the ratio ${\Delta_{B}}/{\Delta_{A}}$ can be simplified into to the ratio of the configuration integrals:
+
+\begin{equation}
+\label{eq:partiso}
+\begin{aligned}
+\dfrac{Z_{B}}{Z_{A}} = \dfrac{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{B} \right]}{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{A} \right]}
+\end{aligned}
+\end{equation}
+
+What results in the following equation for the Gibbs free energy difference:
+
+\begin{equation}
+\label{eq:dif}
+\begin{aligned}
+\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{Z_{B}}{Z_{A}}\right)
+\end{aligned}
+\end{equation}
+
+The Gibbs free energy difference between end states $A$ and $B$ are, more specifically, the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these differences be accurate, the states' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since free energy is a state function. That's why alchemical states (no physical sense) are used to link physical states of interest. The solvation free energy calculations are done through a thermodynamic cycle to gradually insert the solute molecule into the solvent as illustrated in \figref{thermcy}. According to this cycle, the free energy of solvation is expressed as:
+
+\begin{equation}
+\label{eq:freesolv}
+\begin{aligned}
+\Delta G_{solv} = \Delta G_{1 \rightarrow 4} = \Delta G_{1 \rightarrow 2} + \Delta G_{2 \rightarrow 3} + \Delta G_{3 \rightarrow 4}  
+\end{aligned}
+\end{equation}
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[scale=0.6]{Figures/cicclotermo.jpg}
+	\caption{Thermodynamic cycle for solvation free energy calculations with molecular dynamics (Adapted from \citeonline{klimovich})}
+	\label{thermcy}
+\end{figure}
+
+The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of non bonded interactions that are turned off in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. Meanwhile, if only non-bonded interactions with the environment are turned off,this is a decoupling free energy calculation. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter($\lambda$) is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential.  That's why the non-linear soft-core scheme \cite{beutler1994} is used to make the potential behave more smoothly in relation to the change of $\lambda$ as can be seem in \figref{fig:SC}. The generalized soft core potential is given by:
+
+\begin{equation}
+\label{eq:softcore}
+\begin{aligned}
+U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \\
+& \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace
+\end{aligned}
+\end{equation}
+where $\alpha$ is a constant which the value of 0.5 is normally assumed to it,r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. Using the Lennard Jones exponents ($\lambda _{r} =12$ and $\lambda _{a} = 6$), Eq. \eqref{eq:softcore} becomes:
+
+\begin{equation}
+\label{eq:softcoreLJ}
+\begin{aligned}
+U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{6}}\right\rbrace
+\end{aligned}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Figures/SC}
+	\caption{Soft-core potential in reduced units.}
+	\label{fig:SC}
+\end{figure}
+
+The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}, which samples all states in a single simulation. This method allows a faster sampling across the alchemical states, provided that the kinetic barriers are not substantial. The free energies of solvation obtained can then be used to calculate other properties such as the partition coefficient, that is a measure of the partitioning of one solute in two solvents (a and b) at a temperature T:
+
+\begin{equation}
+\label{eqn:partcoe}
+\log{P}^{a/b} = \frac{\Delta G_{solv}^{a} - \Delta G_{solv}^{b}}{2.303RT}
+\end{equation}
+
+\section{Post simulation methods}
+
+The data from molecular dynamics simulations method explained in the section above provide the potential energies corresponding to each $\lambda$. These potential energies obtained need to be post processed and analyzed in order to calculate the solvation free energies. Since these calculations  can have slow convergences, a lot of papers in the las decades focused in developing methods to improve sampling and analysis techniques. Almost all methods rely o three different approaches: free energy of perturbation (FEP), histogram and thermodynamic integration methods.
+%chap2,3,4
+\subsection{Thermodynamic integration}
+
+The thermodynamic integration method \cite{kirkwood1935} uses equilibrium averages to evaluate the potential energy derivative with respect to the coupling parameter. Then, the free energies are calculated by  doing the derivative ($\frac{\partial G}{\partial \lambda} $):
+
+\begin{equation}
+\label{eq:ti1}
+\begin{aligned}
+\frac{\partial \beta G}{\partial \lambda} = - \frac{1}{Z (\lambda)}\frac{\partial Z}{\partial \lambda}
+\end{aligned}
+\end{equation}
+
+The Eq. \eqref{eq:dif} can be rewritten according to the Halmitonian of the system ($\mathcal{H}$):
+
+\begin{equation}
+\label{eq:ti2}
+\begin{aligned}
+\Delta G = - \kappa_{b}T ln \left( \frac{Z_{1}}{Z_{0}}\right) = -\kappa_{b}T ln \int \frac{exp(-\beta \mathcal{H} _{1}(r,p)) dr dp}{exp(-\beta \mathcal{H} _{0}(r,p)) dr dp}
+\end{aligned}
+\end{equation}
+
+Substituting Eq. \eqref{eq:ti2} in \eqref{eq:ti2} and adding the coupling parameter to the Halmitonian ($\mathcal{H} (r,p,\lambda)$) in order to describe the transition between the end states:
+
+\begin{equation}
+\label{eq:ti3}
+\begin{aligned}
+\frac{\partial \beta G}{\partial \lambda} =  \int \frac{\frac{\partial \mathcal{H} (r,p,\lambda)}{\partial \lambda}exp(-\beta \mathcal{H}(r,p,\lambda)) dr dp}{exp(-\beta \mathcal{H}(r,p,\lambda)) dr dp} =  \left \langle \frac{\partial \mathcal{H}(r,p,\lambda)}{\partial \lambda} \right \rangle 
+\end{aligned}
+\end{equation}
+
+The integral in Eq. \eqref{eq:ti3} is obtained by interpolating the output data between the states from simulations in different ways. Some examples of methods for the interpolations are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific as the works of \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations at each $\lambda _{k}$ and the average over of the derivative at each state is compute in order to obtain the final solvation free energy:
+
+\begin{equation}
+\label{eq:ti4}
+\begin{aligned}
+\Delta G \approx \sum _{k}  \left \langle \frac{\partial \mathcal{H}(r,p,\lambda)}{\partial \lambda} \right \rangle 
+\end{aligned}
+\end{equation}
+
+\subsection{Histograms}
+%97
+Histograms are used  to compute probability distributions. Usually every histogram bin is treated as number of visits to a specific state.The standard practice when using histograms is to use the weighted histogram analysis method (WHAM) developed by \citeonline{PhysRevLett.63.1195} and generalized by \citeonline{wham} \cite{freeenergy} to put together different histograms by minimizing the statistical error in the computed density of states and entropy function. This method describes the total probability distribution as a weighted sum of probability distributions without bias  obtained from biased simulations. This method was developed to avoid problems related to data loss, high uncertainties and the calculation of the constant of the free energy added to the system by the biased potential \cite{ROUX1995275}. The probability distribution dependent on the potential energy and temperature ($\tilde{\varrho_{r}^{*}}(U,T)$) for the WHAM is:
+
+\begin{equation}
+\label{eq:wham1}
+\tilde{\varrho_{r}^{*}}(U,T) = \frac{\sum_{i} f_{i}(U) exp(- \beta U)}{\sum_{i} f_{tot,i} exp(\beta _{i} \tilde{A}_{i} -\beta _{i} U) }
+\end{equation} 
+
+\begin{equation}
+\label{eq:wham2}
+exp(- \beta _{i} \tilde{A}_{i}) = \sum_{U} \tilde{\varrho_{r}^{*}}(U,T) 
+\end{equation}
+
+\begin{equation}
+\label{eq:wham3}
+\tilde{\varrho_{r}^{*}}(U,T) = \frac{\tilde{\varrho_{r}^{*}}(U,T)}{\sum_{U} \tilde{\varrho_{r}^{*}}(U,T)}
+\end{equation} 
+where $\tilde{A}_{i}$ gives the free energy for run i, $f_{i}(U)$ is the number of counts of energy U for run i and $f_{tot,i}$ is the total number of counts in run i. The Eq. \eqref{eq:wham1} and \eqref{eq:wham2} are solved self consistently with the initial value for $\tilde{A}_{i}$ equal to zero. The final probability distribution is then given by Eq. \eqref{eq:wham3}, and is used to calculate various moments of the potential energy \cite{freeenergy}.
+
+
+\subsection{Free Energy of Perturbation (FEP)}
+%38
+The free energy of perturbation method \cite{zwanzig1954} is the oldest and one of the most general purpose strategy to calculate free energy differences. In this method, the difference between two thermodynamic states A and B is given by:
+
+\begin{equation}
+\label{eq:fep}
+\begin{aligned}
+\Delta G_{AB} = -\frac{1}{\beta} ln \langle{e^{-\beta (U_{B}-U_{A})}}\rangle_{A}
+\end{aligned}
+\end{equation}
+
+According to the equation above, the free energy difference is calculated by doing an average over the potential energies of state A and B obtained during the simulation of state A. This method requires a great overlap between states( the state B needs to represent a small perturbation in state A) in order to obtain a rapid convergence of the free energy difference. To assure overlap, it is possible to carry out simulations in N intermediate states between A and B, so Eq. \eqref{eq:fep} becomes:
+
+\begin{equation}
+\label{eq:fepint}
+\begin{aligned}
+\Delta G_{AB} = -\frac{1}{\beta} ln \left(\frac{1}{N}\sum_{i=0}^{N+1}
+{e^{-\beta (U_{i+1}-U_{i})}}\right)_{i}
+\end{aligned}
+\end{equation}
+
+The way of calculating $\Delta G$ of Eq. \eqref{eq:fepint} is called Exponential Averaging (EXP) \cite{zwanzig1955,bareva}. The direction of the transformation is also important in this method. If the direction is of decreasing entropy, the step is of insertion ($\Delta G_{AB}$) and the method is called insertion exponential averaging (IEXP). The direction of increasing entropy is  called a deletion step ($\Delta G_{BA}$) and the method is labeled as deletion exponential averaging (DEXP). These directions can yield different values of free energy differences due to under sampling in the tail regions of the $\Delta G_{AB}$ distribution \cite{klimovich,pohorille2010}. These problems make the EXP methods not suited to calculate free energy differences when the system hasn't a sufficient overlap. For these cases, the Bennet Acceptance Ratio or the Multi-State Bennet Acceptance Ratio is more indicated.   
+
+\subsubsection{Bennet Acceptance Ratio (BAR)}
+
+The BAR method \cite{bennet1976} was developed with the intent of eliminating the bias in the free energy estimation. It uses the uncorrelated samples of the potential energy in both directions ($A \rightarrow B$ and $B \rightarrow A$) to obtain the free energy differences using the information in a statically optimal way. The free energy difference between two intermediate states (i and j) is calculated by the self-consistent solution of the following equations: 
+
+\begin{equation}
+\label{eq:bar1}
+\begin{aligned}
+\Delta G_{ij} = \frac{1}{\beta} ln \left( \dfrac{\sum_{k=1}^{N_{j}} \dfrac{1}{1+\exp[-\beta(\Delta U_{k}^{j}-C)]}}{\sum_{l=1}^{N_{i}} \dfrac{1}{1+\exp[-\beta(\Delta U_{l}^{i}-C)]}}\right) + C - \frac{1}{\beta}ln\left(\frac{N_{j}}{N_{i}}\right)
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\label{eq:bar2}
+\begin{aligned}
+C = \Delta G_{ij} + \frac{1}{\beta}ln\left(\frac{N_{j}}{N_{i}}\right)
+\end{aligned}
+\end{equation}
+
+The total free energy difference between end states is then given by the sum over differences of consecutive intermediate states. This method also provides a function to obtain the minimum variance for free energy differences. The variance equation for any value of C is given by:
+
+\begin{equation}
+\label{eq:barvar}
+\begin{aligned}
+s_{ij}^{2} = \frac{1}{\beta^{2} N_{i}} \left[\dfrac{\langle{f^{2}(x)}\rangle_{i}}{\langle{f(x)}\rangle^{2}_{i}} - 1\right] + \frac{1}{\beta^{2} N_{j}} \left[\dfrac{\langle{f^{2}(x)}\rangle_{j}}{\langle{f(x)}\rangle^{2}_{j}} - 1\right]
+\end{aligned}
+\end{equation}
+where $f(x)=1/(1+x)$ is the Fermi equation and $x=\exp[\beta(\Delta U - C)]$. The variance of the free energy difference between end states can be calculated by assuming independent errors and summing over the variance of consecutive intermediate states. However, this assumption is not correct and there is no general formula to obtain a statistically unbiased estimate of an entire transformation with the BAR method \cite{bareva}. 
+
+There are two other methods related to the BAR method that don't solve Eqs. \eqref{eq:bar1} and \eqref{eq:bar2} self consistently. By doing that, free energy differences will not have minimum variance, but significant space and disk memory can be saved since the averages of Eqs. \eqref{eq:bar1} - \eqref{eq:barvar} are accumulated.The two methods are the Unoptimized Bennett Acceptance Ratio (UBAR) and the Range-Based Bennett Acceptance Ratio (RBAR). The first one avoids the self consistently resolution of the BAR equations by defining $C=\beta^{-1}ln(N_{j}/N_{i})$. The UBAR method also requires that the intermediate free energy differences are approximately equal to zero to obtain optimal estimations. Meanwhile, the RBAR method selects a range of initial guesses of the constant $C$ in order to calculate a range  of $\Delta G_{ij}$. The value of free energy difference correspondent to the minimum variance is then used as input in Eq. \eqref{eq:bar2} to calculate the value of $C$. Hence, this method requires a good estimation of the initial range for the values of $C$. In terms of accuracy, the UBAR method can be as accurate as the BAR method, but it may end up being as computational costly \cite{bareva}.  
+
+\subsubsection{Multistate Bennet Acceptance Ratio (MBAR)}\label{mbar}
+
+The MBAR method \cite{mbar} is a further development of the BAR method, the MBAR is equal to the BAR method when the calculations are made between only two states. It proposes an estimator that computes free energies and their uncertainties of all $K$ states  by minimizing the $KxK$ matrix of variances simultaneously for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the ${x_{i,n}}_{n=1}^{N_{i}}$ configurations of i, the following probability distributions is sampled:
+\begin{equation}
+p_{i}(x) = \frac{q_{i}(x)}{c_{i}}
+\end{equation}
+
+\begin{equation}
+c_{i} = \int dx q_{i}(x)
+\end{equation}
+where $q_{i}(x)=exp(-u_{i}(x))$ and $u_{i}$ is the potential energy of each state, defined by $u_{i}= \beta [U_{i}(x)+P_{i}V(x) + \mu _{i}^{T}n(x)]$. Meanwhile, $c_{i}$ is normalization constant.  The free energies are estimated with the ratio of this constant in each state:
+
+\begin{equation}
+\Delta f_{ij} = f_{i} - f_{j} = - ln \frac{c_{j}}{c_{i}}  = -ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} 
+\end{equation}
+
+\citeonline{mbar} then proposed the following arbitrary function:
+
+\begin{equation}
+c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} 
+\end{equation}
+
+Using the above equation for every state  K, the relation bellow is obtained:
+
+\begin{equation}
+\label{eq:mbar1}
+\sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n})
+\end{equation}
+
+\citeonline{mbar} suggestedd the following equation for $\alpha _{ij}$ in order to decrease the variance:
+
+\begin{equation}
+\label{eq:mbar2}
+\alpha _{ij} (x) = \frac{N_{j} \hat{c_{i}} ^{-1}}{\sum_{k=1}^{K} N_{k} c_{i} ^{-1} q_{k}(x)}
+\end{equation}
+
+Assuming the sampling is carried out following Boltzmann statistics, Eqs. \eqref{eq:mbar1} and \eqref{eq:mbar2} can be rearranged to obtain the free energy estimator that solves self consistently the equation:  
+
+\begin{equation}
+\label{eq:mbar}
+\begin{aligned}
+f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
+\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp[\beta (f_{l} - u_{l}(x_{kn}))]}
+\end{aligned}
+\end{equation}
+
+The equation above requires the evaluation of the potential energy  of uncorrelated configuration $n$ for all K states ($u_{i}(x_{kn}$) and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are given then by $\Delta f_{ij} = f_{j} -  f_{i}$. The statistical variance of $S_{ij}^{2} \Delta f_{ij}$ is given by the matrix covariances:
+
+\begin{equation}
+\label{eq:varmbar}
+\begin{aligned}
+s_{ij}^{2} \Delta f_{ij} \equiv cov (-ln \hat{Z_{j}}/\hat{Z_{i}},-ln \hat{Z_{j}}/\hat{Z_{i}})
+\end{aligned}
+\end{equation}
+where $\hat{Z_{j}}$ and $\hat{Z_{i}})$ are the partition functions of states $i$ and $j$. The MBAR method can be considered as limit case of the 
+Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. Eq. \eqref{eq:mbar} becomes equal to the WHAM equations if the histogram width tend to zero. Despite this, the MBAR is still more suited because it doesn't have the bias associated with the discretization  and it allows the calculation of an error estimate.
 
 \section{Expanded Ensemble Method}\label{ee}
 %more fundamental 

@@ -31,7 +31,7 @@
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
-	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	openany,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
 	oneside,			% para impressão em recto e verso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
@@ -64,6 +64,11 @@
 \usepackage{placeins}
 \usepackage{float}
 \usepackage{pdfpages}
+\DisemulatePackage{setspace}
+
+\usepackage{setspace} % espacamento entre linhas
+
+% padrao 1.5 de espacamento entre linhas
 
 
 %\usepackage[portuguese]{babel}
@@ -312,7 +317,6 @@ in Chemical Engineering.}
    \assinatura{\textbf{Professor} \\ Guest 1}
    \assinatura{\textbf{Professor} \\ Guest 2}
    \assinatura{\textbf{Professor} \\ Guest 3}
-   \assinatura{\textbf{Professor} \\ Guest 4}
       
    \begin{center}
     \vspace*{0.5cm}
@@ -447,7 +451,8 @@ in Chemical Engineering.}
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
-\textual
+
+
 
 % ----------------------------------------------------------
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
@@ -458,6 +463,8 @@ in Chemical Engineering.}
 \include{chapters/methodology}
 \include{chapters/results}  
 \include{chapters/conclusions} 
+
+
 %ideias para revisão da bibliografia:
 %tipos de modelo coarse grained
 %metodologias de energia livre
