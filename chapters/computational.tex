@@ -2,7 +2,7 @@
 \chapter{Fundamentals of the Computational Methods} % Main chapter title
 
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-\onehalfspace
+\doublespacing
 
 \section{Molecular Dynamics}
 
@@ -157,7 +157,8 @@ In order to use the equations above, every MD simulation need a non overlapping 
 \varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} exp(-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T})
 \end{equation}
 
-Meanwhile, the initial positions are usually acquired by placing the molecules on a cubic lattice. The cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+Random velocities are then for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be takes from x ray or NMR spectroscopy, the atoms cab be placed randomly in the simulation volume or the atoms in  molecules can be placed in idealized or approximate geometries. The  generally used method to acquire the configurations places the molecules on a cubic lattice. Independent of the method used, certain restrictions should be applied in the initial configurations in order to carry out molecular simulations. As an example, the cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+\FloatBarrier
 \begin{figure*}
 	\centering
 	\includegraphics[width=0.7\textwidth]{Figures/pbc}
@@ -165,7 +166,6 @@ Meanwhile, the initial positions are usually acquired by placing the molecules o
 	\label{fig:pbc}
 \end{figure*}
 \FloatBarrier
-
 \subsection{Force Fields }
 Force fields are models for the description of structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. The description is done by approximating the potential energy function ($U(r^N)$). $U(r^N)$ has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending and bond torsion. The contribution for the bond stretching is usually given by the following Taylor expansion around the energy minimum:
 
