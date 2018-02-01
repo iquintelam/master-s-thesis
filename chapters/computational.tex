@@ -5,56 +5,74 @@
 \onehalfspace
 
 \section{Molecular Dynamics}
-Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is, more specifically, extracted from trajectories, which are obtained  through the Newton motion equations numerical integration \cite{tuckerman}. Every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The first one is usually acquired by placing the molecules on a cubic lattice and the initial velocities follow a temperature dependent Maxwell-Boltzmann distribution. This cubic lattice has a finite size, but  a finite size or box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
 
-With the initial system defined, the forces ($F$) acting on every particle are calculated by doing directional derivatives of the intermolecular potential $U(r)$ in relation to the atoms' positions:
-\begin{equation}
-\label{eq:forces}
- \vec{F }(r)_{i} =  - \nabla U(r)
-\end{equation}
-\setlength{\parskip}{6mm}
-\FloatBarrier
-\begin{figure*}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/pbc}
-	\caption{Periodic boundary condition representation. Taken from \citeonline{frenkel}}
-	\label{fig:pbc}
-\end{figure*}
-\FloatBarrier
+\subsection{Background and Formalution}
+Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is extracted from the time evolution of a syequationsstem, which are obtained  through the Newton motion  numerical integration \cite{tuckerman}:
 
-U(r) is generally described by a force field, which is a model for structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. In many force fields, the intermolecular interaction between particles i and j are modeled by the Lennard Jones Potential:
 \begin{equation}
-U_{LJ}(r) = 4 \epsilon
-\left[ \left(\frac{\sigma}{r} \right)^{12} - \left(\frac{\sigma}{r} \right)^{6} \right]
+\frac{d \vec{p}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}
 \end{equation}
-where r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the potential is:
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{Figures/lj2}
-\caption{Lennard Jones potential representation for two atoms of argon (i,j). Taken from \citeonline{raabe} }
-\label{fig:lj}
-\end{figure}
-
-The interactions in Figure \ref{fig:lj} tend to zero after a certain value of r, so this value can be set as the cutoff radius in which the potential energy is considered to be zero after it. Also, only interactions with te nearest periodic image of the cell is considered in order   for short range interactions (Minimum image convention condition). With this conditions, the calculations of forces and velocities can become viable. From the calculated forces on Eq. \eqref{eq:forces}, the velocities and coordinates of the atoms are updated by integrating:
+where $p_{i}$ is the momentum and $r^{N}$ are the coordinates of all the atoms$(x_{1},y_{1},z_{1},...,x_{N},y_{N},z_{N})$. Alternatively, we can write the equation relative to the velocity ($v_{i}$):
 \begin{equation}
-\frac{d \vec{r}_{i}}{dt} = \vec{v}_{i}
-\end{equation}
-\begin{equation}
-m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{1},..,\vec{r}_{N})}{\partial \vec{r}_{i}}
+m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}
 \end{equation}
 
-The most used method to perform these integration is the Velocity Verlet \cite{verlet}. It proposes the following equation for the coordinates update:
+In order to develop equations for any coordinate system ($q^{N}=(r_{1},\theta _{1},\phi _{1})$), the Halmitonian formulation, a more generalized formulation of classical mechanics,  is used to develop the equations of motion:
 \begin{equation}
-r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
-\end{equation}
-and this one to update the velocities:
-\begin{equation}
-v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
+\mathcal{H} (q^{N},p^{N}) = K(p^{N}) + U(q^{N}) 
 \end{equation}
 
-With the equations above, it is then possible to calculate the trajectories. During the integration process, control macroscopic properties need to be defined  to characterize the statistical ensemble, which corresponds to the set of configurations.  This control variables defined will then result in different system properties. In the microcanonical statistical ensemble, the number of particles (N), volume (V) and energy (E) are held constant.  The other ensembles include the canonical ensemble in which N, V and the temperature (T) are held constant and the isothermal-isobaric ensemble in which N, pressure (P) and T are held constant.  The canonical and isothermal-isobaric ensembles have external conditional been applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}. 
+In the equation above, $K$ is the kinetic energy and $U$ is the potential energy. The equations of motion can now be represented by:
 
-The NPT ensemble, as explained above, consists of system at constant temperature and pressure. A variety of physical properties are measure at this conditions such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ is becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
+\begin{equation}
+\frac{d \vec{p}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
+\end{equation}
+
+\begin{equation}
+\frac{d \vec{q}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
+\end{equation}
+
+The coordinates and momentum axes fo each atoms in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be then used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system's will explore with the same probability all regions of the phase space of microstates with the same energy. 
+
+\subsection{Statistical Ensembles}
+
+A statistical ensemble corresponds to the set of configurations of a system with control variables defined. For a isolated system at equilibrium, the ensemble will correspond  to the microcanonical ensemble. The microcanonical ensemble have constant values of  number of particles (N), volume (V) and total energy (E). Following the ergodic hypothesis, the system at these conditions will then spend the same amount of time in each of the microstates (points in phase space) with the fixed E.  The number of accessible microstates is defined by the partition function or the density of states, and, for the microcanonical ensemble, is given by: 
+
+\begin{equation}
+\begin{aligned}
+ \Omega (N,V,E) = \frac{1}{h^{3N}N!} \int dp^{N} dr^{N} \delta [\mathcal{H})(p^{N},r^{N}) -E]
+\end{aligned}
+\end{equation}
+where h is the Planck constant and the delta functions is a Dirac delta function. As mentioned above, the system has equal probabilities an these can be written as:
+
+\begin{equation}
+\begin{aligned}
+\varrho (p^{N},r^{N}) = \frac{[\mathcal{H})(p^{N},r^{N}) -E]}{ \Omega (N,V,E)} 
+\end{aligned}
+\end{equation}
+
+The relation of the microcanonical partition function to the macroscopic entropy is:
+
+\begin{equation}
+\begin{aligned}
+S = k_{b} ln \Omega (N,V,E) 
+\end{aligned}
+\end{equation}
+where $k_{b}$ is the Boltzmann constant. Other properties can be derived form the equation using the fundamental equation or its energy version:
+
+\begin{equation}
+\begin{aligned}
+dS = \frac{1}{T} dE + \frac{P}{T} dV + \frac{\mu}{T} dN
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+dE = T dS + P dV + \mu dN
+\end{aligned}
+\end{equation}
+
+As said above, the microcanonical ensemble  have  N,V,E as its control variable. Other ensembles can also be defined according to the macroscopic properties held constant.  In the canonical ensemble,  N, V and the temperature (T) are held constant and  N, pressure (P) and T are held constant in the isothermal-isobaric ensemble. Other ensembles include the isenthalpic-isobaric (constant number of particles, pressure and enthalpy) and the grand canonical (constant chemical potential, volume and temperature). A variety of physical properties are measure at the conditions of the isenthalpic-isobaric ensemble such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ is becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
 \begin{equation}
 G(N,P,T) = A(N,V(P),T) + PV(P)
 \end{equation}
@@ -72,7 +90,7 @@ G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
 \begin{equation}
 \label{eq:partiso}
 \begin{aligned}
-\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]
+\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{N}p d^{N}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r^{N}) + PV(r^{N}) \right) \right]
 \end{aligned}
 \end{equation}
 
@@ -87,7 +105,115 @@ where $Q (N,V,T)$ is the partition function of the canonical ensemble. From this
 \begin{equation}
 S = (\frac{\partial G}{\partial T})_{N,P}= \kappa_{b}  (ln Q(N,V,T)+ T(\frac{\partial ln Q (N,V,T)}{\partial T})_{V,N})
 \end{equation}
- 
+
+The isothermal-isobaric ensembles have external conditional been applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
+
+\subsection{Integration of the motion's equations}
+
+With the formalism defined for the equations of motions an for the statistical ensemble, we can then derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as function of time ($r^{N}(t)$) by updating the positions in discrete time intervals or time steps. One of the possible algorithms is The Verlet \cite{verlet}. Its proposed equation for the coordinates update is:  
+
+\begin{equation}
+r(t+ \Delta t) = 2r(t) - r(t+ \Delta t) + \frac{F(t)}{m} \Delta t^{2} +\vartheta (\Delta t^{4})
+\end{equation}
+
+In this equation, the positions are updated by a time step of $\Delta t$ by using the positions at the previous two time steps and the forces at $\Delta t$. The forces ($F$) acting on every particle are calculated by doing directional derivatives of the intermolecular potential $U(r)$, generally described by a force field, in relation to the atoms' positions:
+\begin{equation}
+\label{eq:forces}
+\vec{F }(r)_{i} =  - \nabla U(r)
+\end{equation}
+
+The velocities of this method can be approximated by:
+
+\begin{equation}
+v(t+ \Delta t) = \frac{r(t+ \Delta t) - r(t- \Delta t)}{2 \Delta t} +\vartheta (\Delta t^{3})
+\end{equation}
+
+The Verlet method doesn't use the velocity directly to update the positions. Hence, the Velocity Verlet algorithm was proposed to serve as a reformulation of the Verlet algorithm that uses the velocity: 
+
+\begin{equation}
+r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
+\end{equation}
+
+The velocity in the equation above is updated following:
+\begin{equation}
+v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
+\end{equation}
+
+Instead of using a time step of $\Delta t$, the velocities can be updated at $\Delta t /2$. This is the strategy proposed by the leap frog algorithm:
+
+\begin{equation}
+v(t+ \Delta t /2) = v(t- \Delta t /2) +\frac{F(t+ \Delta t) +F(t)}{m} \Delta t
+\end{equation}
+
+\begin{equation}
+r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t
+\end{equation}
+
+\subsection{Initial Configuration}
+
+In order to use the equations above, every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The initial velocities follow a temperature dependent Maxwell-Boltzmann distribution:
+
+\begin{equation}
+\varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} exp(-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T})
+\end{equation}
+
+Meanwhile, the initial positions are usually acquired by placing the molecules on a cubic lattice. The cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figures/pbc}
+	\caption{Periodic boundary condition representation. Taken from \citeonline{frenkel}}
+	\label{fig:pbc}
+\end{figure*}
+\FloatBarrier
+
+\subsection{Force Fields }
+Force fields are models for the description of structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. The description is done by approximating the potential energy function ($U(r^N)$). $U(r^N)$ has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending and bond torsion. The contribution for the bond stretching is usually given by the following Taylor expansion around the energy minimum:
+
+\begin{equation}
+u_{bs}(d) = k_{bs} (d - d_{0})^2
+\end{equation}
+
+Here, $d$ is the bond length, $d_{0}$ is the equilibrium bond length and $k_{bs}$ is bond stretching constant. The bond angle bending contribution corresponds to deviations from the preferred geometry, and is given by:
+
+\begin{equation}
+u_{ab}(\theta) = k_{ab} (\theta - \theta _{0})^2
+\end{equation}
+where $k_{ab}$ and $\theta _{0}$ are constants defined by the force field and $\theta$ is the bond angle between three atoms.  The bond torsion interactions corresponds to the energies of rotations along bonds and it happens among four atoms:
+
+\begin{equation}
+u_{bt}(\omega) = \sum_{n=0}^{N}  c_{n} cos(\omega) ^{n}
+\end{equation}
+where N is the number of terms, $c_{n}$ is the summation index defined by the force field and $\omega$ is the torsional angle defined by the force field. 
+
+The intermolecular interactions include electrostatics interactions, van der Waal interactions and volume repulsions. The electrostatics interactions of two atoms i and j with partial charges follow the Coulomb's Law:
+
+\begin{equation}
+u_{q}(r_{ij}) = \frac{q_{i}q_{j}}{4 \pi \epsilon _{0} r_{ij}}
+\end{equation} 
+
+In the equation above, $q_{i}$ and $q_{j}$ are the partial charges and  $\epsilon _{0}$ is the free space permittivity constant. In many force fields, the van der Waal interactions and volume repulsions between particles i and j are modeled in the same equation by the Lennard Jones Potential:
+\begin{equation}
+u_{LJ}(r_{ij}) = 4 \epsilon
+\left[ \left(\frac{\sigma}{r} \right)^{12} - \left(\frac{\sigma}{r} \right)^{6} \right]
+\end{equation}
+where r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the potential is:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figures/lj2}
+	\caption{Lennard Jones potential representation for two atoms of argon (i,j). Taken from \citeonline{raabe} }
+	\label{fig:lj}
+\end{figure}
+
+The interactions in Figure \ref{fig:lj} tend to zero after a certain value of r, so this value can be set as the cutoff radius in which the potential energy is considered to be zero after it. Also, only interactions with te nearest periodic image of the cell is considered in order   for short range interactions (Minimum image convention condition). With this conditions, the calculations of forces and velocities are viable.
+
+The final potential energy function defined by the force field can then be expressed by summing all the interactions above:
+
+\begin{equation}
+\begin{aligned}
+U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_{ij})
+\end{aligned}
+\end{equation}
+  
 \section{SAFT-$\gamma$ Mie Force Field}
 
 
@@ -322,7 +448,7 @@ The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary
 
 However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data. The strategy followed by them was to do simulations in three values of $k_{ij}$ first and, after, they refined the parameter until a value in good agreement with the experimental data was found. 
 
-\section{Solvation Free Energies Based on Molecular Dynamics}
+\section{Solvation Free Energies Simulations Based on Molecular Dynamics}
 % background topics
 
 Free energies can be expressed as averages over ensembles of atomic configurations generated using Monte Carlo or molecular dynamics techniques. In the canonical ensemble, the free energy is given by:  
@@ -434,7 +560,7 @@ The $\Delta G_{3 \rightarrow 4}$ can be then obtained by doing independent simul
 \log{P}^{a/b} = \frac{\Delta G_{solv}^{a} - \Delta G_{solv}^{b}}{2.303RT}
 \end{equation}
 
-\section{Post simulation methods}
+\section{Solvation Free Energies Calculation Methods}
 
 The data from molecular dynamics simulations method explained in the section above provide the potential energies corresponding to each $\lambda$. These potential energies obtained need to be post processed and analyzed in order to calculate the solvation free energies. Since these calculations  can have slow convergences, a lot of papers in the las decades focused in developing methods to improve sampling and analysis techniques. Almost all methods rely o three different approaches: free energy of perturbation (FEP), histogram and thermodynamic integration methods.
 %chap2,3,4
