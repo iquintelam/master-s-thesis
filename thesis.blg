@@ -17,12 +17,17 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 13418 items from 5000.
+Reallocated field_info (elt_size=4) to 13487 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
 Repeated entry---line 878 of file thesis.bib
  : @article{hadley2012
  :                    ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1132 of file thesis.bib
+ :  
+ :  issn="2190-5444",
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -45,45 +50,45 @@ while executing---line 2146 of file abntex2-alf.bst
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 122 entries,
+You've used 123 entries,
             6714 wiz_defined-function locations,
-            1876 strings with 31665 characters,
-and the built_in function-call counts, 119025 in all, are:
-= -- 8610
-> -- 4974
-< -- 424
-+ -- 2039
-- -- 1431
-* -- 8908
-:= -- 14650
-add.period$ -- 376
-call.type$ -- 123
-change.case$ -- 1599
-chr.to.int$ -- 469
-cite$ -- 118
-duplicate$ -- 6449
-empty$ -- 7403
-format.name$ -- 7238
-if$ -- 28220
+            1883 strings with 31763 characters,
+and the built_in function-call counts, 119682 in all, are:
+= -- 8649
+> -- 4990
+< -- 428
++ -- 2044
+- -- 1436
+* -- 8953
+:= -- 14741
+add.period$ -- 379
+call.type$ -- 124
+change.case$ -- 1606
+chr.to.int$ -- 473
+cite$ -- 119
+duplicate$ -- 6489
+empty$ -- 7458
+format.name$ -- 7261
+if$ -- 28372
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 2347
-newline$ -- 605
-num.names$ -- 590
-pop$ -- 2937
+missing$ -- 2364
+newline$ -- 610
+num.names$ -- 595
+pop$ -- 2956
 preamble$ -- 1
-purify$ -- 527
+purify$ -- 530
 quote$ -- 0
-skip$ -- 7188
+skip$ -- 7222
 stack$ -- 1
-substring$ -- 4895
-swap$ -- 3844
-text.length$ -- 241
+substring$ -- 4929
+swap$ -- 3865
+text.length$ -- 244
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 882
+while$ -- 890
 width$ -- 0
-write$ -- 1930
-(There were 7 error messages)
+write$ -- 1947
+(There were 8 error messages)

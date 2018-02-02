@@ -106,7 +106,7 @@ where $Q (N,V,T)$ is the partition function of the canonical ensemble. From this
 S = (\frac{\partial G}{\partial T})_{N,P}= \kappa_{b}  (ln Q(N,V,T)+ T(\frac{\partial ln Q (N,V,T)}{\partial T})_{V,N})
 \end{equation}
 
-The isothermal-isobaric ensembles have external conditional been applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
+The isothermal-isobaric ensembles have external conditional being applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
 
 \subsection{Integration of the motion's equations}
 
@@ -448,7 +448,7 @@ The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary
 
 However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the superficial tension data. The strategy followed by them was to do simulations in three values of $k_{ij}$ first and, after, they refined the parameter until a value in good agreement with the experimental data was found. 
 
-\section{Solvation Free Energies Simulations Based on Molecular Dynamics}
+\section{Solvation Free Energy Simulations Based on Molecular Dynamics}
 % background topics
 
 Free energies can be expressed as averages over ensembles of atomic configurations generated using Monte Carlo or molecular dynamics techniques. In the canonical ensemble, the free energy is given by:  
@@ -584,21 +584,21 @@ where $q_{i}(x)=exp(-u_{i}(x))$ and $u_{i}$ is the potential energy of each stat
 c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} 
 \end{equation}
 
-Using the above equation for every state  K, the relation bellow is obtained:
+Using the above equation for every state  K, the relation is obtained:
 
 \begin{equation}
 \label{eq:mbar1}
 \sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n})
 \end{equation}
 
-\citeonline{mbar} suggestedd the following equation for $\alpha _{ij}$ in order to decrease the variance:
+\citeonline{mbar} suggested the following equation for the arbitrary term $\alpha _{ij}$ in order to decrease the variance:
 
 \begin{equation}
 \label{eq:mbar2}
 \alpha _{ij} (x) = \frac{N_{j} \hat{c_{i}} ^{-1}}{\sum_{k=1}^{K} N_{k} c_{i} ^{-1} q_{k}(x)}
 \end{equation}
 
-Assuming the sampling is carried out following Boltzmann statistics, Eqs. \eqref{eq:mbar1} and \eqref{eq:mbar2} can be rearranged to obtain the free energy estimator that solves self consistently the equation:  
+Assuming the sampling is carried out following Boltzmann statistics, Eqs. \eqref{eq:mbar1} and \eqref{eq:mbar2} can be rearranged to obtain the free energy estimator, which is solved self consistently:  
 
 \begin{equation}
 \label{eq:mbar}
@@ -608,7 +608,13 @@ f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
 \end{aligned}
 \end{equation}
 
-The equation above requires the evaluation of the potential energy  of uncorrelated configuration $n$ for all K states ($u_{i}(x_{kn}$) and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are given then by $\Delta f_{ij} = f_{j} -  f_{i}$. The statistical variance of $S_{ij}^{2} \Delta f_{ij}$ is given by the matrix covariances:
+The equation above requires the evaluation of the potential energy  of uncorrelated configuration $n$ for all K states ($u_{i}(x_{kn})$) and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are then:
+
+\begin{equation}
+\Delta f_{ij} = f_{j} -  f_{i} 
+\end{equation} 
+
+The statistical variance resulting from free energy estimation $S_{ij}^{2} \Delta f_{ij}$ is given by the matrix covariances:
 
 \begin{equation}
 \label{eq:varmbar}
@@ -616,11 +622,11 @@ The equation above requires the evaluation of the potential energy  of uncorrela
 s_{ij}^{2} \Delta f_{ij} \equiv cov (-ln \hat{Z_{j}}/\hat{Z_{i}},-ln \hat{Z_{j}}/\hat{Z_{i}})
 \end{aligned}
 \end{equation}
-where $\hat{Z_{j}}$ and $\hat{Z_{i}})$ are the partition functions of states $i$ and $j$. The MBAR method can be considered as limit case of the 
-Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. Eq. \eqref{eq:mbar} becomes equal to the WHAM equations if the histogram width tend to zero. Despite this, the MBAR is still more suited because it doesn't have the bias associated with the discretization  and it allows the calculation of an error estimate.
+where $\hat{Z_{j}}$ and $\hat{Z_{i}}$ are the partition functions of states $i$ and $j$. The MBAR method can be considered as limit case of the 
+Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. Eq. \eqref{eq:mbar} becomes equal to the WHAM equations if the histogram width tends to zero. Despite this, the MBAR is still more suited than the WHAM because it doesn't have the bias associated with the discretization, allows the calculation of an error estimate and allows free energy calculations of states that weren't sampled \cite{mbar}.
 
 \section{Expanded Ensemble Method}\label{ee}
-%more fundamental 
+
 Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were developed to allow a non-Boltzmann sampling scheme of different states in only one simulation. In this scheme, the sampling is done by biasing the phase space exploration process with weights not related to the statistical ensemble. The statistical expanded ensemble, $Z^{EE}$, is obtained from the probability distributions correspondent to each $\lambda$, hence $Z^{EE}$ is defined as a sum of sub ensembles $Z_{i}$ in different values of $\lambda$:
 
 \begin{equation}
@@ -706,18 +712,18 @@ where, $K$ is the total number of $\lambda$ states.
 
 \section{Gibbs Ensemble Monte Carlo (GEMC)}\label{gemc}
 
-The Monte Carlo (MC) approach is another method for generating atomic trajectories in order to obtain macroscopic properties. The trajectories are obtained stochastically, unlike the molecular dynamics approach. The positions are evolved by random moves (MC steps) or perturbations obtained with the Metropolis method \cite{1953JChPh..21.1087M}, hence the positions are not predictable from the set of initial positions. The Metropolis method is a Markov process, that is a stochastic process in which the configurations change randomly with time and have no memories of the previous configurations. The random move is constructed in such way that the probability of visiting a particular point $r^{N}$ is proportional to the Boltzmann factor ($exp[-\beta U(r^{N})]$) \cite{frenkel}. The construction of a  MC according to \citeonline{1953JChPh..21.1087M} can be briefly summed up in:
+The Monte Carlo (MC) approach is another method for generating atomic trajectories in order to obtain macroscopic properties. The trajectories are obtained stochastically, unlike the molecular dynamics approach. The positions are evolved by random moves (MC steps) or perturbations obtained with the Metropolis method \cite{1953JChPh..21.1087M}, hence the trajectories are not predictable from the set of initial positions. The Metropolis method is a Markov process, that is a stochastic process in which the configurations change randomly with time and have no memories of the previous configurations. The random move is constructed in such way that the probability of visiting a particular point $r^{N}$ is proportional to the Boltzmann factor ($exp[-\beta U(r^{N})]$) \cite{frenkel}. The construction of a  particle displacement MC step according to \citeonline{1953JChPh..21.1087M} can be briefly summed up in:
 
 1. Pick a random particle, and calculate its energy $U(r^{N})$.
 
-2. Perturb the particle by randomly displacing  its configuration, $r' = r +\Delta$. Where $\Delta$ is a perturbation chose from a defined interval of maximum displacement ($[- \delta _{max},\delta _{max}]$). Calculate the energy with the ne positions $U(r'^{N})$.
+2. Perturb the particle by randomly displacing  its configuration, $r' = r +\Delta$. Where $\Delta$ is a perturbation chosen from a defined interval of maximum displacement ($[- \delta _{max},\delta _{max}]$). Calculate the energy with the new positions $U(r'^{N})$.
 
 3. Accept the move from $r^{N}$ to $r'^{N}$ with the probability:
 \begin{equation}
 	acc_{A \rightarrow B} = min(1,exp[-\beta U(r'^{N}) + \beta U(r^{N}) ])
 \end{equation}
 
-The  Monte Carlo simulations are interesting when we need to calculate properties in different thermodynamic ensembles, such as the Gibbs Ensemble \cite{papa1987}. This ensemble  is used to study phase coexistence with simultaneous Monte Carlo (MC) simulations of two boxes,  representing a two phase system, with periodic conditions. The boxes exchange molecules, energy and volume between them. Equilibrium is obtained through MC steps that consist of translation and rotation moves, volume exchange moves and randomly exchanges of molecules between the boxes. For the phase equilibrium of multi-component systems,the GEMC simulations should be carried out at the NPT (constant number of particles, pressure and temperature) ensemble to obey the requirement of an additional degree of freedom for mixtures. Meanwhile, the simulation of single component systems is carried out at constant number of particles, temperature and volume (NVT) since the two phase region would be a line for this system at constant pressure and temperature. The constant volume GEMC ensemble is rigorously equivalent to the canonical ensemble in the thermodynamic limit as demonstrated by \citeonline{frenkel}. The partition function of the GEMC-NVT ensemble is obtained considering that the particles in both boxes are subjected to the same intermolecular interactions. Also, the boxes’ volumes and number of particles ($N_{1}$,$N_{2}$,$V_{1}$ and $V_{2}$) can vary while the total volume ($V$) and total number of particles ($N$) remain constant ($N = N_{1} + N_{2}$,$V = V_{1} + V_{2}$):
+The values of maximum displacement are defined in order to obtain acceptance rates of 25-50 \% in the step 3   \cite{Frenkel2013}. Monte Carlo simulations are interesting when we need to calculate properties in different thermodynamic ensembles, such as the Gibbs Ensemble \cite{papa1987}. This ensemble  is used to study phase coexistence with simultaneous Monte Carlo (MC) simulations of two boxes,  representing a two phase system, with periodic conditions. The boxes exchange molecules, energy and volume between them. Equilibrium is obtained through MC steps that consist of translation and rotation moves, volume exchange moves and randomly exchanges of molecules between the boxes. For the phase equilibrium of multi-component systems,the GEMC simulations should be carried out at the NPT (constant number of particles, pressure and temperature) ensemble to obey the requirement of an additional degree of freedom for mixtures. Meanwhile, the simulation of single component systems is carried out at constant number of particles, temperature and volume (NVT) since the two phase region would be a line for this system at constant pressure and temperature. The constant volume GEMC ensemble is rigorously equivalent to the canonical ensemble in the thermodynamic limit as demonstrated by \citeonline{frenkel}. The partition function of the GEMC-NVT ensemble is obtained considering that the particles in both boxes are subjected to the same intermolecular interactions. Also, the boxes’ volumes and number of particles ($N_{1}$,$N_{2}$,$V_{1}$ and $V_{2}$) can vary while the total volume ($V$) and total number of particles ($N$) remain constant ($N = N_{1} + N_{2}$,$V = V_{1} + V_{2}$):
 
 \begin{equation}
 \begin{aligned}
@@ -727,7 +733,7 @@ Q(NVT) {} \equiv & \sum_{N_{1}}^{N} \dfrac{1}{V \Lambda ^{3N} N_{1}!(N-N_{1})!} 
 \label{eqn:gepart}
 \end{equation}
 
-In order to define the acceptance rules for the MC moves, it is necessary to know the probability of finding the configuration with $N_{1}$ particles in box 1 with volume $V_{1}$ and positions $x_{1}^{N_{1}}$ and $x_{2}^{N_{2}}$. This probability is given by:
+In order to define the acceptance rules for the MC moves and compute any property of interest, it is necessary to know the probability of finding the configuration with $N_{1}$ particles in box 1 with volume $V_{1}$ and positions $x_{1}^{N_{1}}$ and $x_{2}^{N_{2}}$. This probability is given by:
 
 \begin{equation}
 \pi(x_{1}^{N_{1}},x_{2}^{N_{2}},N_{1},N_{2},V_{1},V_{2}) \propto \dfrac{V_{1}^{N_{1}}V_{2}^{N_{2}}}{N_{1}!N_{2}!} \exp[-\beta U(x_{1}^{N_{1}}) -\beta U(x_{2}^{N_{2}})]
@@ -755,7 +761,7 @@ acc_{A \rightarrow B} = \min \left( 1, \dfrac{N_{1}V_{2}}{N_{2}V_{1}}  \exp[-\be
 \label{moleprob}
 \end{equation}
 
-This method has been widely used to calculate phase equilibrium, but it under performs for the region near the critical point due to large density fluctuations. The GEMC also has a poor performance for dense systems since the particle exchange moves have a low acceptance ratio for these dense systems.  
+This method has been widely used to calculate phase equilibrium, but it under performs for the region near the critical point due to large density fluctuations. The GEMC also has a poor performance for dense systems since the particle exchange moves have a low acceptance ratio.  
 
 
 

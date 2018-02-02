@@ -192,6 +192,11 @@ ISSN 0021-9991.}
 \emph{Phys. Rev. Lett.}, American Physical Society, v.~63, p. 1195--1198, Sep
   1989.}
 
+\bibitem[Frenkel 2013]{Frenkel2013}
+\abntrefinfo{Frenkel}{FRENKEL}{2013}
+{FRENKEL, D. Simulations: The dark side.
+\emph{The European Physical Journal Plus}, v.~128, n.~1, p.~10, 2013.}
+
 \bibitem[Frenkel and Smit 2001]{frenkel}
 \abntrefinfo{Frenkel and Smit}{FRENKEL; SMIT}{2001}
 {FRENKEL, D.; SMIT, B. \emph{Understanding Molecular Simulation}. 2nd. ed.
@@ -479,7 +484,7 @@ Dispon{\'\i}vel em:
 \abntrefinfo{{Metropolis} \textit{et al.}}{{Metropolis} \textit{et al.}}{1953}
 {{Metropolis}, N.; {Rosenbluth}, A.~W.; {Rosenbluth}, M.~N.; {Teller}, A.~H.;
   {Teller}, E. {Equation of State Calculations by Fast Computing Machines}.
-\emph{The Journal of Chemical Physics}, v.~21, p. 1087--1092, jun. 1953.}
+\emph{The Journal of Chemical Physics}, v.~21, p. 1087--1092, 1953.}
 
 \bibitem[Mie 1903]{MIE}
 \abntrefinfo{Mie}{MIE}{1903}
