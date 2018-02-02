@@ -48,55 +48,63 @@ Outside of the Martini framework, \citeonline{shinoda2010} studied different lev
 Solvation free energy calculations with molecular dynamics have a variety of applications due the amount of information it can provide about the behavior of the solvent in different chemical environments and the influence of the solute's molecular geometry. Free energy calculations have an inherent complexity that attracted studies in order to  improve free energy simulations and post processing methods \cite{mbar,bareva,dexp,gdel} in the last decades.
 
 Recent work \cite{PMID:24928188,mobley2017} made available a big database of hydration free energy of small molecules using the GAFF force field. \citeonline{Beckstein2014} also calculated the hydration free energies for 52 compounds with OPLS-AA force field. They obtained an overall root mean square deviation of the prediction from the experimental data of 1.75 kcal/mol and concluded that the precision of the results are mainly limited by the reproducibility of the Lennard-Jones contribution towards the solvation free energy. A comparison of polar and nonpolar contributions to these hydration free energy indicated the significance of each the terms  \cite{izairi2017}. \citeonline{garrido,garrido2011} calculated the free energy of solvation of large alkanes in 1-octanol and water with three different force fields (TraPPE, Gromos, OPLS-AA/TraPPE) and the solvation free energy of propane and benzene in non aqueous solvents like n-hexadecane, n-hexane, ethyl benzene and acetone  with the force fields TraPPE-UA and TraPPE-AA. \citeonline{roy2017} addressed the choice of the Lennard Jones parameters for predicting solvation free energy in 1-octanol. \citeonline{goncalves} calculated the free energy of solvation in the solvents tetrachloride, chloroform and benzene with GROMOS force field. Using the GAFF and the polarizable AMOEBA force fields, \citeonline{mohamed2016} evaluated the solvation free energy of small molecules in toluene, chloroform and acetonitrile, and obtained a mean unsigned error of 1.22 kcal/mol for AMOEBA and 0.66 kcal/mol for GAFF. In order to define the role of solvent water in the docking structure determination, \citeonline{MATUBAYASI201745} developped a method to compute the solvation free energy of proteins while using OPLS-AA force field for the
-solutes and TIP3P for water.
+solutes and TIP3P for water. \cite{doi:10.1021/acs.jctc.5b00963} used a coarse grained model created with the Elba force field to calculate solvation free energies in polar (water, hexanol, octanol and nonanol) and apolar (hexane,octane and nonane) solvents, and obtained mean absolute deviations of 1 kcl/mol for water and 1.5 kcal/mol for hexane. In this model, three carbons are represented by a single bead and water is represented by a single bead. 
 
 Though these variety of data using the intramolecular Lennard-Jones potential, we are not aware of works using the Mie Potential\cite{MIE} in free energy calculations. We, at this study, try to provide information about theses calculations with the SAFT-$\gamma$ Mie coarse grained force field.  The output of these calculations are highly dependent on the force field and deficiencies in the description of small molecules by the models can be revealed with these calculations \cite{mobley2007,shirts2013}. Other important reason for testing a coarse grained force field is that they can generally reproduce free energy difference since the effects of the degrees of freedom reduction  in the entropy are counterbalanced by reduced enthalpic terms \cite{kmiecik2016}. Hence, knowing if more coarse grained approaches have a similar performance to the all atoms force fields can help increase the scale of solvation free energy calculations. 
 
 \section{Solvation Free Energies Calculation Methods}
 
-The data from molecular dynamics simulations provide potential energies that need to be post processed and analyzed in order to calculate the solvation free energies. Since these calculations  can have slow convergences, a lot of papers in the las decades focused in developing methods to improve sampling and analysis techniques. Almost all methods rely o three different approaches: free energy of perturbation (FEP), histogram and thermodynamic integration methods.
+The data from molecular dynamics simulations provide potential energies that need to be post processed and analyzed in order to calculate the solvation free energies. Since these calculations  can have slow convergences, a lot of papers in the last decades focused in developing methods to improve sampling and analysis techniques. Almost all methods rely o three different approaches: free energy of perturbation (FEP), histogram and thermodynamic integration methods.
 
 \subsection{Thermodynamic integration}
 
-The thermodynamic integration method \cite{kirkwood1935} uses equilibrium averages to evaluate the potential energy derivative with respect to the coupling parameter. Then, the free energies are calculated by  doing the derivative ($\frac{\partial G}{\partial \lambda} $):
+The thermodynamic integration method \cite{kirkwood1935} uses equilibrium averages to evaluate the energy derivative with respect to the coupling parameter ($\lambda$): 
+%Then, the free energies are calculated by  doing the derivative ($\frac{\partial G}{\partial \lambda} $):
+%
+%\begin{equation}
+%\label{eq:ti1}
+%\begin{aligned}
+%\frac{\partial \beta G}{\partial \lambda} = - \frac{1}{Z (\lambda)}\frac{\partial Z}{\partial \lambda}
+%\end{aligned}
+%\end{equation}
+%
+%The Eq. \eqref{eq:dif} can be rewritten according to the Halmitonian of the system ($\mathcal{H}$):
+%
+%\begin{equation}
+%\label{eq:ti2}
+%\begin{aligned}
+%\Delta G = - \kappa_{b}T ln \left( \frac{Z_{1}}{Z_{0}}\right) = -\kappa_{b}T ln \int \frac{exp(-\beta \mathcal{H} _{1}(r,p)) dr dp}{exp(-\beta \mathcal{H} _{0}(r,p)) dr dp}
+%\end{aligned}
+%\end{equation}
 
-\begin{equation}
-\label{eq:ti1}
-\begin{aligned}
-\frac{\partial \beta G}{\partial \lambda} = - \frac{1}{Z (\lambda)}\frac{\partial Z}{\partial \lambda}
-\end{aligned}
-\end{equation}
+%Substituting Eq. \eqref{eq:ti2} in \eqref{eq:ti2} and adding the coupling parameter to the Halmitonian ($\mathcal{H} (r,p,\lambda)$) in order to describe the transition between the end states:
 
-The Eq. \eqref{eq:dif} can be rewritten according to the Halmitonian of the system ($\mathcal{H}$):
-
-\begin{equation}
-\label{eq:ti2}
-\begin{aligned}
-\Delta G = - \kappa_{b}T ln \left( \frac{Z_{1}}{Z_{0}}\right) = -\kappa_{b}T ln \int \frac{exp(-\beta \mathcal{H} _{1}(r,p)) dr dp}{exp(-\beta \mathcal{H} _{0}(r,p)) dr dp}
-\end{aligned}
-\end{equation}
-
-Substituting Eq. \eqref{eq:ti2} in \eqref{eq:ti2} and adding the coupling parameter to the Halmitonian ($\mathcal{H} (r,p,\lambda)$) in order to describe the transition between the end states:
+%\begin{equation}
+%\label{eq:ti3}
+%\begin{aligned}
+%\frac{\partial \beta G}{\partial \lambda} =  \int \frac{\frac{\partial \mathcal{H} (r,p,\lambda)}{\partial \lambda}exp(-\beta \mathcal{H}(r,p,\lambda)) dr dp}{exp(-\beta \mathcal{H}(r,p,\lambda)) dr dp} =  \left \langle \frac{\partial \mathcal{H}(r,p,\lambda)}{\partial \lambda} \right \rangle 
+%\end{aligned}
+%\end{equation}
 
 \begin{equation}
 \label{eq:ti3}
 \begin{aligned}
-\frac{\partial \beta G}{\partial \lambda} =  \int \frac{\frac{\partial \mathcal{H} (r,p,\lambda)}{\partial \lambda}exp(-\beta \mathcal{H}(r,p,\lambda)) dr dp}{exp(-\beta \mathcal{H}(r,p,\lambda)) dr dp} =  \left \langle \frac{\partial \mathcal{H}(r,p,\lambda)}{\partial \lambda} \right \rangle 
+\frac{\partial (1/k_{b}T) G}{\partial \lambda} =  \left \langle \frac{\partial \mathcal{H}}{\partial \lambda} \right \rangle 
 \end{aligned}
 \end{equation}
 
-The integral in Eq. \eqref{eq:ti3} is obtained by interpolating the output data between the states from simulations in different ways. Some examples of methods for the interpolations are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific as the works of \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations at each $\lambda _{k}$ and the average over of the derivative at each state is compute in order to obtain the final solvation free energy:
+In Eq. \eqref{eq:ti3}, $k_{b}$ is the Boltzmann constant, $G$ is the Gibbs free energy and $\mathcal{H}$ is the Halmitonian of the system. The derivative is obtained by interpolating the output data between the states from simulations. Some examples of methods for the interpolations are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific as the works of \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations for each coupling parameter $k$ are carried out and the average over the derivative at each state is compute in order to obtain the final solvation free energy:
 
 \begin{equation}
 \label{eq:ti4}
 \begin{aligned}
-\Delta G \approx \sum _{k}  \left \langle \frac{\partial \mathcal{H}(r,p,\lambda)}{\partial \lambda} \right \rangle 
+\Delta G \approx \sum _{k}  \left \langle \frac{\partial \mathcal{H}}{\partial \lambda} \right \rangle 
 \end{aligned}
 \end{equation}
 
 \subsection{Histograms}
 %97
-Histograms are used  to compute probability distributions. Usually every histogram bin is treated as number of visits to a specific state.The standard practice when using histograms is to use the weighted histogram analysis method (WHAM) developed by \citeonline{PhysRevLett.63.1195} and generalized by \citeonline{wham} \cite{freeenergy} to put together different histograms by minimizing the statistical error in the computed density of states and entropy function. This method describes the total probability distribution as a weighted sum of probability distributions without bias  obtained from biased simulations. This method was developed to avoid problems related to data loss, high uncertainties and the calculation of the constant of the free energy added to the system by the biased potential \cite{ROUX1995275}. The probability distribution dependent on the potential energy and temperature ($\tilde{\varrho_{r}^{*}}(U,T)$) for the WHAM is:
+Histograms are used  to compute probability distributions. Usually every histogram bin is treated as number of visits to a specific state.The standard practice when using histograms is to use the weighted histogram analysis method (WHAM) developed by \citeonline{PhysRevLett.63.1195} and generalized by \citeonline{wham} \cite{freeenergy} to put together different histograms by minimizing the statistical error in the computed density of states and entropy function. This method describes the total probability distribution as a weighted sum of probability distributions without bias  obtained from biased simulations. This method was developed to avoid problems related to data loss, high uncertainties and the calculation of the constant of the free energy added to the system by the biased potential \cite{ROUX1995275}. The probability distribution dependent on the potential energy ($U$) and temperature (T) ($\tilde{\varrho_{r}^{*}}(U,T)$) for the WHAM is:
 
 \begin{equation}
 \label{eq:wham1}
@@ -112,7 +120,7 @@ exp(- \beta _{i} \tilde{A}_{i}) = \sum_{U} \tilde{\varrho_{r}^{*}}(U,T)
 \label{eq:wham3}
 \tilde{\varrho_{r}^{*}}(U,T) = \frac{\tilde{\varrho_{r}^{*}}(U,T)}{\sum_{U} \tilde{\varrho_{r}^{*}}(U,T)}
 \end{equation} 
-where $\tilde{A}_{i}$ gives the free energy for run i, $f_{i}(U)$ is the number of counts of energy U for run i and $f_{tot,i}$ is the total number of counts in run i. The Eq. \eqref{eq:wham1} and \eqref{eq:wham2} are solved self consistently with the initial value for $\tilde{A}_{i}$ equal to zero. The final probability distribution is then given by Eq. \eqref{eq:wham3}, and is used to calculate various moments of the potential energy \cite{freeenergy}.
+where $\beta = 1/k_{b}T$, $\tilde{A}_{i}$ gives the free energy for run i, $f_{i}(U)$ is the number of counts of energy U for run i and $f_{tot,i}$ is the total number of counts in run i. The Eq. \eqref{eq:wham1} and \eqref{eq:wham2} are solved self consistently with the initial value for $\tilde{A}_{i}$ equal to zero. The final probability distribution is then given by Eq. \eqref{eq:wham3}, and is used to calculate various moments of the potential energy \cite{freeenergy}.
 
 
 \subsection{Free Energy of Perturbation (FEP)}
@@ -122,7 +130,7 @@ The free energy of perturbation method \cite{zwanzig1954} is the oldest and one 
 \begin{equation}
 \label{eq:fep}
 \begin{aligned}
-\Delta G_{AB} = -\frac{1}{\beta} ln \langle{e^{-\beta (U_{B}-U_{A})}}\rangle_{A}
+\Delta G_{AB} = -k_{b}T ln \langle{e^{-\beta (U_{B}-U_{A})}}\rangle_{A}
 \end{aligned}
 \end{equation}
 
@@ -131,7 +139,7 @@ According to the equation above, the free energy difference is calculated by doi
 \begin{equation}
 \label{eq:fepint}
 \begin{aligned}
-\Delta G_{AB} = -\frac{1}{\beta} ln \left(\frac{1}{N}\sum_{i=0}^{N+1}
+\Delta G_{AB} = -k_{b}T  ln \left(\frac{1}{N}\sum_{i=0}^{N+1}
 {e^{-\beta (U_{i+1}-U_{i})}}\right)_{i}
 \end{aligned}
 \end{equation}
@@ -166,7 +174,7 @@ s_{ij}^{2} = \frac{1}{\beta^{2} N_{i}} \left[\dfrac{\langle{f^{2}(x)}\rangle_{i}
 \end{equation}
 where $f(x)=1/(1+x)$ is the Fermi equation and $x=\exp[\beta(\Delta U - C)]$. The variance of the free energy difference between end states can be calculated by assuming independent errors and summing over the variance of consecutive intermediate states. However, this assumption is not correct and there is no general formula to obtain a statistically unbiased estimate of an entire transformation with the BAR method \cite{bareva}. 
 
-There are two other methods related to the BAR method that don't solve Eqs. \eqref{eq:bar1} and \eqref{eq:bar2} self consistently. By doing that, free energy differences will not have minimum variance, but significant space and disk memory can be saved since the averages of Eqs. \eqref{eq:bar1} - \eqref{eq:barvar} are accumulated.The two methods are the Unoptimized Bennett Acceptance Ratio (UBAR) and the Range-Based Bennett Acceptance Ratio (RBAR). The first one avoids the self consistently resolution of the BAR equations by defining $C=\beta^{-1}ln(N_{j}/N_{i})$. The UBAR method also requires that the intermediate free energy differences are approximately equal to zero to obtain optimal estimations. Meanwhile, the RBAR method selects a range of initial guesses of the constant $C$ in order to calculate a range  of $\Delta G_{ij}$. The value of free energy difference correspondent to the minimum variance is then used as input in Eq. \eqref{eq:bar2} to calculate the value of $C$. Hence, this method requires a good estimation of the initial range for the values of $C$. In terms of accuracy, the UBAR method can be as accurate as the BAR method, but it may end up being as computational costly \cite{bareva}.  
+There are two other methods related to the BAR method that don't solve Eqs. \eqref{eq:bar1} and \eqref{eq:bar2} self consistently. By doing that, free energy differences will not have minimum variance, but significant space and disk memory can be saved since the averages of Eqs. \eqref{eq:bar1} - \eqref{eq:barvar} are accumulated\cite{bareva}. The two methods are the Unoptimized Bennett Acceptance Ratio (UBAR) and the Range-Based Bennett Acceptance Ratio (RBAR). The first one avoids the self consistently resolution of the BAR equations by defining $C=\beta^{-1}ln(N_{j}/N_{i})$. The UBAR method also requires that the intermediate free energy differences are approximately equal to zero to obtain optimal estimations. Meanwhile, the RBAR method selects a range of initial guesses of the constant $C$ in order to calculate a range  of $\Delta G_{ij}$. The value of free energy difference correspondent to the minimum variance is then used as input in Eq. \eqref{eq:bar2} to calculate the value of $C$. Hence, this method requires a good estimation of the initial range for the values of $C$. In terms of accuracy, the UBAR method can be as accurate as the BAR method, but it may end up being as computational costly \cite{bareva}.  
 
 \subsubsection{Multistate Bennet Acceptance Ratio (MBAR)}
 
@@ -188,4 +196,4 @@ The equation above requires the evaluation of the potential energy  of uncorrela
 s_{ij}^{2} \Delta G_{ij} \equiv cov (-ln \hat{Z_{j}}/\hat{Z_{i}},-ln \hat{Z_{j}}/\hat{Z_{i}})
 \end{aligned}
 \end{equation}
-where $\hat{Z_{j}}$ and $\hat{Z_{i}})$ are the partition functions of states $i$ and $j$. 
+where $\hat{Z_{j}}$ and $\hat{Z_{i}}$ are the partition functions of states $i$ and $j$. 

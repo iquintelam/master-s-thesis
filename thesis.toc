@@ -12,11 +12,11 @@
 \contentsline {section}{\numberline {2.1}Molecular Simulations of Molecules Mimicking Asphaltenes}{13}{section.2.1}
 \contentsline {section}{\numberline {2.2}Coarse Grained Force Fields}{14}{section.2.2}
 \contentsline {section}{\numberline {2.3}Solvation Free Energies}{18}{section.2.3}
-\contentsline {section}{\numberline {2.4}Solvation Free Energies Calculation Methods}{19}{section.2.4}
+\contentsline {section}{\numberline {2.4}Solvation Free Energies Calculation Methods}{20}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Thermodynamic integration}{20}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Histograms}{21}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Free Energy of Perturbation (FEP)}{22}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Bennet Acceptance Ratio (BAR)}{23}{subsubsection.2.4.3.1}
+\contentsline {subsection}{\numberline {2.4.2}Histograms}{20}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Free Energy of Perturbation (FEP)}{21}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Bennet Acceptance Ratio (BAR)}{22}{subsubsection.2.4.3.1}
 \contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{24}{subsubsection.2.4.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentals of the Computational Methods}}{25}{chapter.3}
@@ -46,26 +46,27 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{59}{chapter.5}
 \contentsline {section}{\numberline {5.1}Solvation free energies}{59}{section.5.1}
 \contentsline {section}{\numberline {5.2}Hydration free energies}{66}{section.5.2}
+\contentsline {section}{\numberline {5.3}Partition Coefficients}{69}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{70}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{71}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{72}{section*.31}
+\contentsline {chapter}{\uppercase {Bibliography}}{73}{section*.32}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{81}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{82}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{84}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{85}{appendix.B}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{100}{appendix.C}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{101}{appendix.C}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{109}{appendix.D}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{110}{appendix.D}
 \vspace {\cftbeforechapterskip }

@@ -16,14 +16,14 @@
 
 \bibitem[Aimoli, Maginn and Abreu 2014]{cassiano1}
 \abntrefinfo{Aimoli, Maginn and Abreu}{AIMOLI; MAGINN; ABREU}{2014a}
-{AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C. Force field comparison and
+{AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C. R.~A. Force field comparison and
   thermodynamic property calculation of supercritical $co_{2}$ and $ch_{4}$
   using molecular dynamics simulations.
 \emph{{F}luid {P}hase {E}quilibria}, v.~368, p. 80--90, 2014.}
 
 \bibitem[Aimoli, Maginn and Abreu 2014]{cassiano2}
 \abntrefinfo{Aimoli, Maginn and Abreu}{AIMOLI; MAGINN; ABREU}{2014b}
-{AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C.~R. Transport properties of carbon
+{AIMOLI, C.~G.; MAGINN, E.~J.; ABREU, C. R.~A. Transport properties of carbon
   dioxide and methane from molecular dynamics simulations.
 \emph{The Journal of Chemical Physics}, v.~141, p. 134101, 2014.}
 
@@ -157,8 +157,15 @@
 \emph{Physical Review Letters}, American Physical Society, v.~92, p. 097201,
   Mar 2004.}
 
+\bibitem[Ervik \textit{et al.} 2016]{ERVIK2016576}
+\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016a}
+{ERVIK, A.; LYSGAARD, M.~O.; HERDES, C.; JIMéNEZ-SERRATOS, G.; MüLLER, E.~A.;
+  MUNKEJORD, S.~T.; MüLLER, B. A multiscale method for simulating fluid
+  interfaces covered with large molecules such as asphaltenes.
+\emph{Journal of Computational Physics}, v.~327, p. 576 -- 611, 2016.}
+
 \bibitem[Ervik \textit{et al.} 2016]{ervik20162}
-\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016}
+\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016b}
 {ERVIK, A.; LYSGAARD, M.~O.; HERDES, C.; JIM\'ENEZ-SERRATOS, G.; M\"LLER,
   E.~A.; MUNKEJORD, S.~T.; M\"ULLER, B. A multiscale method for simulating
   fluid interfaces covered with large molecules such as asphaltenes.
@@ -170,14 +177,6 @@
   saft-$\gamma$ mie force field parameters for thousands of molecular fluids.
 \emph{Journal of Chemical Information and Modeling}, v.~56, p. 1609–1614,
   2016.}
-
-\bibitem[Ervik \textit{et al.} 2016]{ERVIK2016576}
-\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016}
-{ERVIK Åsmund; LYSGAARD, M.~O.; HERDES, C.; JIMéNEZ-SERRATOS, G.; MüLLER,
-  E.~A.; MUNKEJORD, S.~T.; MüLLER, B. A multiscale method for simulating fluid
-  interfaces covered with large molecules such as asphaltenes.
-\emph{Journal of Computational Physics}, v.~327, p. 576 -- 611, 2016.
-ISSN 0021-9991.}
 
 \bibitem[Escobedo and Martinez-Veracoechea 2007]{escobedo2007}
 \abntrefinfo{Escobedo and Martinez-Veracoechea}{ESCOBEDO;
@@ -192,6 +191,15 @@ ISSN 0021-9991.}
 \emph{Phys. Rev. Lett.}, American Physical Society, v.~63, p. 1195--1198, Sep
   1989.}
 
+\bibitem[Free-energy analysis of protein solvation with all-atom molecular
+  dynamics simulation combined with a theory of solutions
+  2017]{MATUBAYASI201745}
+\abntrefinfo{Free-energy\ldots}{FREE-ENERGY\ldots}{2017}
+{FREE-ENERGY analysis of protein solvation with all-atom molecular dynamics
+  simulation combined with a theory of solutions.
+\emph{Current Opinion in Structural Biology}, v.~43, p. 45 -- 54, 2017.
+Theory and simulation • Macromolecular assemblies.}
+
 \bibitem[Frenkel 2013]{Frenkel2013}
 \abntrefinfo{Frenkel}{FRENKEL}{2013}
 {FRENKEL, D. Simulations: The dark side.
@@ -200,8 +208,7 @@ ISSN 0021-9991.}
 \bibitem[Frenkel and Smit 2001]{frenkel}
 \abntrefinfo{Frenkel and Smit}{FRENKEL; SMIT}{2001}
 {FRENKEL, D.; SMIT, B. \emph{Understanding Molecular Simulation}. 2nd. ed.
-  Orlando, FL, USA: Academic Press, Inc., 2001.
-ISBN 0122673514.}
+  Orlando, FL, USA: Academic Press, Inc., 2001.}
 
 \bibitem[Gao \textit{et al.} 2014]{doi:10.1021/ef5020428}
 \abntrefinfo{Gao \textit{et al.}}{GAO \textit{et al.}}{2014}
@@ -229,6 +236,13 @@ ISBN 0122673514.}
   bayesian restoration of images.
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, PAMI-6,
   p. 721 -- 741, 1984.}
+
+\bibitem[Genheden 2016]{doi:10.1021/acs.jctc.5b00963}
+\abntrefinfo{Genheden}{GENHEDEN}{2016}
+{GENHEDEN, S. Predicting partition coefficients with a simple
+  all-atom/coarse-grained hybrid model.
+\emph{Journal of Chemical Theory and Computation}, v.~12, n.~1, p. 297--304,
+  2016.}
 
 \bibitem[Gonçalves and Stassen 2005]{goncalves}
 \abntrefinfo{Gonçalves and Stassen}{GONçALVES; STASSEN}{2005}
@@ -463,16 +477,6 @@ ISBN 0122673514.}
   enthalpies demonstrated with an update of the freesolv database.
 \emph{Journal Chemical Engineering Data}, v.~62, p. 1559--1569, 2017.}
 
-\bibitem[Matubayasi 2017]{MATUBAYASI201745}
-\abntrefinfo{Matubayasi}{MATUBAYASI}{2017}
-{MATUBAYASI, N. Free-energy analysis of protein solvation with all-atom
-  molecular dynamics simulation combined with a theory of solutions.
-\emph{Current Opinion in Structural Biology}, v.~43, p. 45 -- 54, 2017.
-ISSN 0959-440X.
-Theory and simulation • Macromolecular assemblies.
-Dispon{\'\i}vel em:
-  \url{http://www.sciencedirect.com/science/article/pii/S0959440X16301683}.}
-
 \bibitem[Mej\'ia, Herdes and M\"uller 2014]{mejia2014}
 \abntrefinfo{Mej\'ia, Herdes and M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}
 {MEJ\'IA, A.; HERDES, C.; M\"ULLER, E.~A. Force fields for coarse-grained
@@ -516,8 +520,7 @@ Dispon{\'\i}vel em:
 {MOBLEY, D.~L.; GUTHRIE, J.~P. Freesolv: a database of experimental and
   calculated hydration free energies, with input files.
 \emph{Journal of computer-aided molecular design}, v.~28, n.~7, p. 711—720,
-  July 2014.
-ISSN 0920-654X.}
+  July 2014.}
 
 \bibitem[Mohamed, Bradshaw and Essex 2016]{mohamed2016}
 \abntrefinfo{Mohamed, Bradshaw and Essex}{MOHAMED; BRADSHAW; ESSEX}{2016}
@@ -601,12 +604,19 @@ ISSN 0920-654X.}
   calculations.
 \emph{Journal of Physical Chemistry B}, v.~114, p. 10235–10253, 2010.}
 
+\bibitem[Poole, Durham and Kibbey 2000]{POOLE2000117}
+\abntrefinfo{Poole, Durham and Kibbey}{POOLE; DURHAM; KIBBEY}{2000}
+{POOLE, S.~K.; DURHAM, D.; KIBBEY, C. Rapid method for estimating the
+  octanol–water partition coefficient (log pow) by microemulsion
+  electrokinetic chromatography.
+\emph{Journal of Chromatography B: Biomedical Sciences and Applications},
+  v.~745, n.~1, p. 117 -- 126, 2000.}
+
 \bibitem[Raabe 2017]{raabe}
 \abntrefinfo{Raabe}{RAABE}{2017}
 {RAABE, G. \emph{Molecular Simulation Studies on Thermophysical Properties -
   With Application to Working Fluids. Springer Series Molecular Modeling and
-  Simulation}. [S.l.: s.n.], 2017.
-ISBN 978-981-10-3544-9 (Print) 978-981-10-3545-6 (Online).}
+  Simulation}. [S.l.: s.n.], 2017.}
 
 \bibitem[Ramrattan \textit{et al.} 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan \textit{et al.}}{RAMRATTAN \textit{et al.}}{2015}
@@ -619,8 +629,7 @@ ISBN 978-981-10-3544-9 (Print) 978-981-10-3545-6 (Online).}
 \abntrefinfo{Roux}{ROUX}{1995}
 {ROUX, B. The calculation of the potential of mean force using computer
   simulations.
-\emph{Computer Physics Communications}, v.~91, n.~1, p. 275 -- 282, 1995.
-ISSN 0010-4655.}
+\emph{Computer Physics Communications}, v.~91, n.~1, p. 275 -- 282, 1995.}
 
 \bibitem[ROWLINSON and SWINTON 1982]{rowlinson}
 \abntrefinfo{ROWLINSON and SWINTON}{ROWLINSON; SWINTON}{1982}
@@ -634,14 +643,31 @@ ISSN 0010-4655.}
   choices.
 \emph{Journal of Physical Chemistry B}, v.~121, p. 9268–9273, 2017.}
 
+\bibitem[Ruelle 2000]{RUELLE2000457}
+\abntrefinfo{Ruelle}{RUELLE}{2000}
+{RUELLE, P. The n-octanol and n-hexane/water partition coefficient of
+  environmentally relevant chemicals predicted from the mobile order and
+  disorder (mod) thermodynamics.
+\emph{Chemosphere}, v.~40, n.~5, p. 457 -- 512, 2000.}
+
 \bibitem[Ryckaert, Ciccotti and Berendsen 1977]{RYCKAERT1977327}
 \abntrefinfo{Ryckaert, Ciccotti and Berendsen}{RYCKAERT; CICCOTTI;
   BERENDSEN}{1977}
 {RYCKAERT, J.-P.; CICCOTTI, G.; BERENDSEN, H.~J. Numerical integration of the
   cartesian equations of motion of a system with constraints: molecular
   dynamics of n-alkanes.
-\emph{Journal of Computational Physics}, v.~23, n.~3, p. 327 -- 341, 1977.
-ISSN 0021-9991.}
+\emph{Journal of Computational Physics}, v.~23, n.~3, p. 327 -- 341, 1977.}
+
+\bibitem[Sangster 1997]{sangster}
+\abntrefinfo{Sangster}{SANGSTER}{1997}
+{SANGSTER, J. 1. ed. Chichester, U.K.: John Wiley and Sons, 1997.}
+
+\bibitem[Schulte \textit{et al.} 1998]{doi:10.1021/je970112e}
+\abntrefinfo{Schulte \textit{et al.}}{SCHULTE \textit{et al.}}{1998}
+{SCHULTE, J.; DüRR, J.; RITTER, S.; HAUTHAL, W.~H.; QUITZSCH, K.; MAURER, G.
+  Partition coefficients for environmentally important, multifunctional organic
+  compounds in hexane + water.
+\emph{Journal of Chemical \& Engineering Data}, v.~43, n.~1, p. 69--73, 1998.}
 
 \bibitem[Shinoda, Devane and Klein 2007]{shinoda2007}
 \abntrefinfo{Shinoda, Devane and Klein}{SHINODA; DEVANE; KLEIN}{2007}
@@ -682,22 +708,20 @@ ISSN 0021-9991.}
   estimates by using regression to fit thermodynamic integration data.
 \emph{Journal of Computational Chemistry}, v.~6, p. 1018–1027, 2010.}
 
-\bibitem[Sjöblom \textit{et al.} 2003]{SJOBLOM2003399}
-\abntrefinfo{Sjöblom \textit{et al.}}{SJöBLOM \textit{et al.}}{2003}
-{SJöBLOM, J.; ASKE, N.; AUFLEM, I.~H.; BRANDAL Øystein; HAVRE, T.~E.; SæTHER
-  Øystein; WESTVIK, A.; JOHNSEN, E.~E.; KALLEVIK, H. Our current understanding
-  of water-in-crude oil emulsions.: Recent characterization techniques and high
-  pressure performance.
+\bibitem[Sj\"{O}blom \textit{et al.} 2003]{SJOBLOM2003399}
+\abntrefinfo{Sj\"{O}blom \textit{et al.}}{SJ\"{O}BLOM \textit{et al.}}{2003}
+{SJ\"{O}BLOM, J.; ASKE, N.; AUFLEM, I.~H.; BRANDAL Øystein; HAVRE, T.~E.;
+  SæTHER Øystein; WESTVIK, A.; JOHNSEN, E.~E.; KALLEVIK, H. Our current
+  understanding of water-in-crude oil emulsions.: Recent characterization
+  techniques and high pressure performance.
 \emph{Advances in Colloid and Interface Science}, v. 100-102, n. Supplement C,
-  p. 399 -- 473, 2003.
-ISSN 0001-8686.}
+  p. 399 -- 473, 2003.}
 
-\bibitem[Sjöblom, Simon and Xu 2015]{SJOBLOM20151}
-\abntrefinfo{Sjöblom, Simon and Xu}{SJöBLOM; SIMON; XU}{2015}
-{SJöBLOM, J.; SIMON, S.; XU, Z. Model molecules mimicking asphaltenes.
+\bibitem[Sj\"{O}blom, Simon and Xu 2015]{SJOBLOM20151}
+\abntrefinfo{Sj\"{O}blom, Simon and Xu}{SJ\"{O}BLOM; SIMON; XU}{2015}
+{SJ\"{O}BLOM, J.; SIMON, S.; XU, Z. Model molecules mimicking asphaltenes.
 \emph{Advances in Colloid and Interface Science}, v.~218, n. Supplement C, p. 1
-  -- 16, 2015.
-ISSN 0001-8686.}
+  -- 16, 2015.}
 
 \bibitem[Smith, Ness and Abbot 2007]{smithbook}
 \abntrefinfo{Smith, Ness and Abbot}{SMITH; NESS; ABBOT}{2007}
@@ -710,8 +734,7 @@ ISSN 0001-8686.}
 {SOROUSH, S.; STRAVER, E.~J.; RUDOLPH, E. S.~J.; PETERS, C.~J.; LOOS, T.~W. de;
   ZITHA, P.~L.; VAFAIE-SEFTI, M. Phase behavior of the ternary system carbon
   dioxide+toluene+asphaltene.
-\emph{Fuel}, v.~137, n. Supplement C, p. 405 -- 411, 2014.
-ISSN 0016-2361.}
+\emph{Fuel}, v.~137, n. Supplement C, p. 405 -- 411, 2014.}
 
 \bibitem[Sterpone, Derreumaux and Melchionna 2015]{opep2015}
 \abntrefinfo{Sterpone, Derreumaux and Melchionna}{STERPONE; DERREUMAUX;
@@ -731,7 +754,7 @@ ISSN 0016-2361.}
 
 \bibitem[Teklebrhan \textit{et al.} 2012]{doi:10.1021/jp3010184}
 \abntrefinfo{Teklebrhan \textit{et al.}}{TEKLEBRHAN \textit{et al.}}{2012}
-{TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJöBLOM, J. Probing
+{TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJ\"{O}BLOM, J. Probing
   structure–nanoaggregation relations of polyaromatic surfactants: A
   molecular dynamics simulation and dynamic light scattering study.
 \emph{The Journal of Physical Chemistry B}, v.~116, n.~20, p. 5907--5918, 2012.
@@ -739,7 +762,7 @@ PMID: 22512276.}
 
 \bibitem[Teklebrhan \textit{et al.} 2014]{doi:10.1021/jp407363p}
 \abntrefinfo{Teklebrhan \textit{et al.}}{TEKLEBRHAN \textit{et al.}}{2014}
-{TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJöBLOM, J. Initial
+{TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJ\"{O}BLOM, J. Initial
   partition and aggregation of uncharged polyaromatic molecules at the
   oil–water interface: A molecular dynamics simulation study.
 \emph{The Journal of Physical Chemistry B}, v.~118, n.~4, p. 1040--1051, 2014.
@@ -749,8 +772,7 @@ PMID: 24397444.}
 \abntrefinfo{Torrie and Valleau}{TORRIE; VALLEAU}{1977}
 {TORRIE, G.; VALLEAU, J. Nonphysical sampling distributions in monte carlo
   free-energy estimation: Umbrella sampling.
-\emph{Journal of Computational Physics}, v.~23, n.~2, p. 187 -- 199, 1977.
-ISSN 0021-9991.}
+\emph{Journal of Computational Physics}, v.~23, n.~2, p. 187 -- 199, 1977.}
 
 \bibitem[Trebst, Huse and Troyer 2004]{trebst2004}
 \abntrefinfo{Trebst, Huse and Troyer}{TREBST; HUSE; TROYER}{2004}

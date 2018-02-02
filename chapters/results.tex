@@ -226,7 +226,6 @@ The relatively large $k_{ij}$ value for the aromatic solutes can be pinned on th
 
 Hydration free energy differences with $k_{ij}$ had low absolute deviations from the experimental data, as expected since the parameter was adjusted to fit the data. The root mean square error (RMSE) for the pairs tested with the SAFT-$\gamma$ 	Mie model was equal to 0.24, meanwhile the RMSE for hydration free energy differences with the GAFF force field \cite{PMID:24928188} was 0.73. The difference in absolute deviations between the two force fields is significantly high for phenanthrene, hence the coarse grained force field with a binary parameter is preferred if the application requires a higher level of accuracy. Hydration free energy profiles in Figure \ref{fig:water} show the geometry  dependence on the free energy profiles. We can observe also that the solvation free energy for the first non zero lambda is negative for benzene and toluene, when a positive value is expected.This can be caused by numerical errors or by the force field. 
 
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{Figures/water}
@@ -234,4 +233,21 @@ Hydration free energy differences with $k_{ij}$ had low absolute deviations from
 \label{fig:water}
 \end{figure}
 
+\section{Partition Coefficients}
+
+Using the solvation free energies estimated, we also calculated partition coefficients ,Eq. \eqref{eqn:partcoe}, for toluene/hexane, water/hexane and water/1-octanol. The later is the one with most experimental data in the literature due to the fact that 1-octanol is a model for biological lipids and different soils and that this partition coefficient is used to to quantify hydrophobicity \cite{RUELLE2000457}. The water/hexane partition coefficient is important because hexane is a model for an apolar, hydrophobic phase and the toluene/hexane was calculated because the characterization of asphaltenes by these two solvents. Results and experimental data are shown in Table \ref{part}. The partition coefficient experimental data  are usually available for water/1-octanol  \cite{POOLE2000117,sangster} and water/hexane \cite{doi:10.1021/je970112e}. For the partition coefficient of toluene/hexane we used experimental data solvation energies exposed in the section above as an input in Eq. \eqref{eqn:partcoe} to generate estimated experimental data since direct experimental data were not available.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Partition Coefficient Calculated from MD simulations and from experimental data.}
+	\label{tbl:part}
+	\begin{tabular}{lll}
+ {Molecular Dynamics} & {Experimental}\\
+ \multicolumn{2}{c}{log $P^{water/1-octanol}$} \\
+ 2.47  &  \\
+ 2.47  &  \\
+	\end{tabular}
+	
+\end{table}
 
