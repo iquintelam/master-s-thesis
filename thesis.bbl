@@ -157,15 +157,8 @@
 \emph{Physical Review Letters}, American Physical Society, v.~92, p. 097201,
   Mar 2004.}
 
-\bibitem[Ervik \textit{et al.} 2016]{ERVIK2016576}
-\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016a}
-{ERVIK, A.; LYSGAARD, M.~O.; HERDES, C.; JIMéNEZ-SERRATOS, G.; MüLLER, E.~A.;
-  MUNKEJORD, S.~T.; MüLLER, B. A multiscale method for simulating fluid
-  interfaces covered with large molecules such as asphaltenes.
-\emph{Journal of Computational Physics}, v.~327, p. 576 -- 611, 2016.}
-
 \bibitem[Ervik \textit{et al.} 2016]{ervik20162}
-\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016b}
+\abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016}
 {ERVIK, A.; LYSGAARD, M.~O.; HERDES, C.; JIM\'ENEZ-SERRATOS, G.; M\"LLER,
   E.~A.; MUNKEJORD, S.~T.; M\"ULLER, B. A multiscale method for simulating
   fluid interfaces covered with large molecules such as asphaltenes.
@@ -190,15 +183,6 @@
 {FERRENBERG, A.~M.; SWENDSEN, R.~H. Optimized monte carlo data analysis.
 \emph{Phys. Rev. Lett.}, American Physical Society, v.~63, p. 1195--1198, Sep
   1989.}
-
-\bibitem[Free-energy analysis of protein solvation with all-atom molecular
-  dynamics simulation combined with a theory of solutions
-  2017]{MATUBAYASI201745}
-\abntrefinfo{Free-energy\ldots}{FREE-ENERGY\ldots}{2017}
-{FREE-ENERGY analysis of protein solvation with all-atom molecular dynamics
-  simulation combined with a theory of solutions.
-\emph{Current Opinion in Structural Biology}, v.~43, p. 45 -- 54, 2017.
-Theory and simulation • Macromolecular assemblies.}
 
 \bibitem[Frenkel 2013]{Frenkel2013}
 \abntrefinfo{Frenkel}{FRENKEL}{2013}
@@ -366,13 +350,13 @@ Theory and simulation • Macromolecular assemblies.}
   the method.
 \emph{Journal of Computational Chemistry}, v.~13, p. 1011--1021, 1992.}
 
-\bibitem[Kuznicki, Masliyah and Bhattacharjee 0]{doi:10.1021/ef9004576}
+\bibitem[Kuznicki, Masliyah and Bhattacharjee 2009]{doi:10.1021/ef9004576}
 \abntrefinfo{Kuznicki, Masliyah and Bhattacharjee}{KUZNICKI; MASLIYAH;
-  BHATTACHARJEE}{0}
+  BHATTACHARJEE}{2009}
 {KUZNICKI, T.; MASLIYAH, J.~H.; BHATTACHARJEE, S. Aggregation and partitioning
   of model asphaltenes at toluene - water interfaces: Molecular dynamics
   simulations.
-\emph{Energy and Fuels}, v.~0, n. proofing, 0.}
+\emph{Energy and Fuels}, v.~23, n.~10, p. 5027–5035, 2009.}
 
 \bibitem[Lafitte \textit{et al.} 2013]{lafitte2013}
 \abntrefinfo{Lafitte \textit{et al.}}{LAFITTE \textit{et al.}}{2013}
@@ -476,6 +460,13 @@ Theory and simulation • Macromolecular assemblies.}
   MOBLEY, D.~L. Approaches for calculating solvation free energies and
   enthalpies demonstrated with an update of the freesolv database.
 \emph{Journal Chemical Engineering Data}, v.~62, p. 1559--1569, 2017.}
+
+\bibitem[Matubayasi 2017]{MATUBAYASI201745}
+\abntrefinfo{Matubayasi}{MATUBAYASI}{2017}
+{MATUBAYASI, N. Free-energy analysis of protein solvation with all-atom
+  molecular dynamics simulation combined with a theory of solutions.
+\emph{Current Opinion in Structural Biology}, v.~43, p. 45 -- 54, 2017.
+Theory and simulation • Macromolecular assemblies.}
 
 \bibitem[Mej\'ia, Herdes and M\"uller 2014]{mejia2014}
 \abntrefinfo{Mej\'ia, Herdes and M\"uller}{MEJ\'IA; HERDES; M\"ULLER}{2014}

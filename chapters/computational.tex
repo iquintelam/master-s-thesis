@@ -7,7 +7,7 @@
 \section{Molecular Dynamics}
 
 \subsection{Background and Formalution}
-Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is extracted from the time evolution of a syequationsstem, which are obtained  through the Newton motion  numerical integration \cite{tuckerman}:
+Molecular Dynamics (MD) is a kind of molecular simulation that uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamical and dynamical information of a system. This information is extracted from the time evolution of a system, which are obtained  through the Newton motion' equations  numerical integration \cite{tuckerman}:
 
 \begin{equation}
 \frac{d \vec{p}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}
@@ -32,33 +32,33 @@ In the equation above, $K$ is the kinetic energy and $U$ is the potential energy
 \frac{d \vec{q}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
 \end{equation}
 
-The coordinates and momentum axes fo each atoms in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be then used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system's will explore with the same probability all regions of the phase space of microstates with the same energy. 
+The coordinates and momentum axes fo each atoms in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system will explore with the same probability all regions of the phase space of microstates with the same energy. 
 
 \subsection{Statistical Ensembles}
 
-A statistical ensemble corresponds to the set of configurations of a system with control variables defined. For a isolated system at equilibrium, the ensemble will correspond  to the microcanonical ensemble. The microcanonical ensemble have constant values of  number of particles (N), volume (V) and total energy (E). Following the ergodic hypothesis, the system at these conditions will then spend the same amount of time in each of the microstates (points in phase space) with the fixed E.  The number of accessible microstates is defined by the partition function or the density of states, and, for the microcanonical ensemble, is given by: 
+A statistical ensemble corresponds to the set of configurations of a system. For a isolated system at equilibrium, the ensemble  corresponds  to the microcanonical ensemble. This ensemble has as control variables the number of particles (N), volume (V) and total energy (E). Following the ergodic hypothesis, the system at these conditions will spend the same amount of time in each of the microstates (points in phase space) with the fixed E.  The number of accessible microstates is defined by the partition function or the density of states, and,  is given by the following equation  for the microcanonical ensemble: 
 
 \begin{equation}
 \begin{aligned}
  \Omega (N,V,E) = \frac{1}{h^{3N}N!} \int dp^{N} dr^{N} \delta [\mathcal{H})(p^{N},r^{N}) -E]
 \end{aligned}
 \end{equation}
-where h is the Planck constant and the delta functions is a Dirac delta function. As mentioned above, the system has equal probabilities an these can be written as:
+where h is the Planck constant and the delta function is a Dirac delta function. As mentioned above, the system will spend the same amount of time at each of the microstates, i. e. each of these microstates have equal probabilities ($\varrho$) of being visited:
 
 \begin{equation}
 \begin{aligned}
-\varrho (p^{N},r^{N}) = \frac{[\mathcal{H})(p^{N},r^{N}) -E]}{ \Omega (N,V,E)} 
+\varrho (p^{N},r^{N}) = \frac{[\mathcal{H}(p^{N},r^{N}) -E]}{ \Omega (N,V,E)} 
 \end{aligned}
 \end{equation}
 
-The relation of the microcanonical partition function to the macroscopic entropy is:
+In order to obtain the macroscopic properties from molecular dynamics, we need to have the relation of the microcanonical partition function to the entropy:
 
 \begin{equation}
 \begin{aligned}
 S = k_{b} ln \Omega (N,V,E) 
 \end{aligned}
 \end{equation}
-where $k_{b}$ is the Boltzmann constant. Other properties can be derived form the equation using the fundamental equation or its energy version:
+where $k_{b}$ is the Boltzmann constant. With this equations, we can derive other relations to macroscopic properties with the fundamental equation:
 
 \begin{equation}
 \begin{aligned}
@@ -72,13 +72,13 @@ dE = T dS + P dV + \mu dN
 \end{aligned}
 \end{equation}
 
-As said above, the microcanonical ensemble  have  N,V,E as its control variable. Other ensembles can also be defined according to the macroscopic properties held constant.  In the canonical ensemble,  N, V and the temperature (T) are held constant and  N, pressure (P) and T are held constant in the isothermal-isobaric ensemble. Other ensembles include the isenthalpic-isobaric (constant number of particles, pressure and enthalpy) and the grand canonical (constant chemical potential, volume and temperature). A variety of physical properties are measure at the conditions of the isenthalpic-isobaric ensemble such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ is becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
+As said above, the microcanonical ensemble  have  N,V,E as its control variable. Other ensembles can also be defined according to the macroscopic properties held constant.  In the canonical ensemble,  N, V and the temperature (T) are held constant and  N, pressure (P) and T are held constant in the isothermal-isobaric ensemble. Other ensembles include the isenthalpic-isobaric (constant number of particles, pressure and enthalpy) and the grand canonical (constant chemical potential, volume and temperature). A variety of physical properties are measure at the conditions of the isenthalpic-isobaric ensemble such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we are going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
 \begin{equation}
 G(N,P,T) = A(N,V(P),T) + PV(P)
 \end{equation}
 
 
-The Gibbs free energy is related to its the partition function $\Delta (N,P,T)$ (the number of accessible microstates) by:
+The Gibbs free energy is related to its partition function $\Delta (N,P,T)$ by:
 
 \begin{equation}
 \label{eq:fisobari}
@@ -86,15 +86,23 @@ The Gibbs free energy is related to its the partition function $\Delta (N,P,T)$ 
 G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
 \end{aligned}
 \end{equation}
-
+where $\Delta (N,P,T)$ is given by: 
 \begin{equation}
-\label{eq:partiso}
 \begin{aligned}
 \Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{N}p d^{N}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r^{N}) + PV(r^{N}) \right) \right]
 \end{aligned}
 \end{equation}
 
-where $Q (N,V,T)$ is the partition function of the canonical ensemble. From this relations and a differential change in G, we can obtain the chemical potential ($\mu$), volume and entropy ($S$) relations for this ensemble:
+In the equation above, $Q (N,V,T)$ is the partition function of the canonical ensemble:
+
+\begin{equation}
+\begin{aligned}
+Q(N,V,T) = \int d^{N}p d^{N}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{N}) \right)
+\right]
+\end{aligned}
+\end{equation}
+
+From these relations and a differential change in G, we can obtain the chemical potential ($\mu$), volume and entropy ($S$) relations for isenthalpic-isobaric ensemble:
 
 \begin{equation}
 \mu = (\frac{\partial G}{\partial N})_{P,T} = - \kappa_{b} T (\frac{\partial ln \Delta (N,P,T)}{\partial N})_{N,T}
@@ -116,13 +124,13 @@ With the formalism defined for the equations of motions an for the statistical e
 r(t+ \Delta t) = 2r(t) - r(t+ \Delta t) + \frac{F(t)}{m} \Delta t^{2} +\vartheta (\Delta t^{4})
 \end{equation}
 
-In this equation, the positions are updated by a time step of $\Delta t$ by using the positions at the previous two time steps and the forces at $\Delta t$. The forces ($F$) acting on every particle are calculated by doing directional derivatives of the intermolecular potential $U(r)$, generally described by a force field, in relation to the atoms' positions:
+In this equation, the accuracy is of order $\vartheta (\Delta t^{4})$ and the positions are updated by a time step of $\Delta t$ by using the positions at the previous two time steps and the forces ($F$) at $\Delta t$. The forces  acting on every particle are calculated by doing directional derivatives of the intermolecular potential $U(r)$ in relation to the atoms' positions:
 \begin{equation}
 \label{eq:forces}
 \vec{F }(r)_{i} =  - \nabla U(r)
 \end{equation}
 
-The velocities of this method can be approximated by:
+The intermolecular potential is generally described by a a force field. The velocities of this method can be approximated by:
 
 \begin{equation}
 v(t+ \Delta t) = \frac{r(t+ \Delta t) - r(t- \Delta t)}{2 \Delta t} +\vartheta (\Delta t^{3})
@@ -151,13 +159,13 @@ r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t
 
 \subsection{Initial Configuration}
 
-In order to use the equations above, every MD simulation need a non overlapping initial positions and velocities for every atom in the system. The initial velocities follow a temperature dependent Maxwell-Boltzmann distribution:
+The equations above require a non overlapping initial positions and velocities for every atom in the system in MD simulations. The initial velocities follow a temperature dependent Maxwell-Boltzmann distribution:
 
 \begin{equation}
 \varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} exp(-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T})
 \end{equation}
 
-Random velocities are then for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be takes from x ray or NMR spectroscopy, the atoms cab be placed randomly in the simulation volume or the atoms in  molecules can be placed in idealized or approximate geometries. The  generally used method to acquire the configurations places the molecules on a cubic lattice. Independent of the method used, certain restrictions should be applied in the initial configurations in order to carry out molecular simulations. As an example, the cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+Random velocities are then obtained for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be takes from x ray or NMR spectroscopy, the atoms cab be placed randomly in the simulation volume or the atoms in  molecules can be placed in idealized or approximate geometries. The  generally used method to acquire the configurations places the molecules on a cubic lattice. Independent of the method used, certain restrictions should be applied in the initial configurations in order to carry out molecular simulations. As an example, the cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
 \FloatBarrier
 \begin{figure*}
 	\centering
@@ -459,7 +467,8 @@ Free energies can be expressed as averages over ensembles of atomic configuratio
 F(N,V,T) = -\kappa_{b}T ln Q(N,V,T)
 \end{aligned}
 \end{equation}
-where $Q(N,V,T))$ is the partition function of the canonical ensemble:
+
+Remembering that $Q(N,V,T))$ is the partition function of the canonical ensemble:
 
 \begin{equation}
 \label{eq:partican}
@@ -468,7 +477,8 @@ Q(N,V,T) = \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{
 \right]
 \end{aligned}
 \end{equation}
-where $\beta=1/k_{b}T$. Meanwhile, the average over the isothermal-isobaric ensemble gives the Gibbs free energy:
+
+Meanwhile, the average over the isothermal-isobaric ensemble gives the Gibbs free energy:
 
 \begin{equation}
 \label{eq:fisobari}
@@ -485,7 +495,7 @@ where $\Delta (N,P,T)$ is the partition function of the isothermal-isobaric ense
 \end{aligned}
 \end{equation}
 
-Evaluating the partition function is a difficult task, but we are interested in calculating the Gibbs free energy difference between two states of a system, that is given by: 
+Evaluating the partition function is a difficult task, but we are interested in calculating only the Gibbs free energy difference between two states of a system, that is given by: 
 
 \begin{equation}
 \label{eq:dif}
@@ -503,7 +513,7 @@ Since the masses of particles in systems 0 and 1 are the same, the moment integr
 \end{aligned}
 \end{equation}
 
-What results in the following equation for the Gibbs free energy difference:
+What results in the following equation for the Gibbs free energy difference that doesn't require the calculation of the partition function at each state:
 
 \begin{equation}
 \label{eq:dif}
@@ -512,7 +522,7 @@ What results in the following equation for the Gibbs free energy difference:
 \end{aligned}
 \end{equation}
 
-The Gibbs free energy difference between end states $A$ and $B$ are, more specifically, the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to these differences be accurate, the states' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since free energy is a state function. That's why alchemical states (no physical sense) are used to link physical states of interest. The solvation free energy calculations are done through a thermodynamic cycle to gradually insert the solute molecule into the solvent as illustrated in \figref{thermcy}. According to this cycle, the free energy of solvation is expressed as:
+The Gibbs free energy difference between end states $A$ and $B$ are, more specifically, the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to have accurate results for free energy differences, the states' phase integral must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since free energy is a state function. That's why alchemical states (no physical sense) are used to link physical states of interest. The solvation free energy calculations are done through a thermodynamic cycle to gradually insert the solute molecule into the solvent as illustrated in \figref{thermcy}. According to this cycle, the free energy of solvation is expressed as:
 
 \begin{equation}
 \label{eq:freesolv}
