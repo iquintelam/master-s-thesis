@@ -9,10 +9,9 @@ when compared to other force fields since its parameters are obtained through th
 Mie EoS. Following this strategy, the phenanthrene parameters were obtained using two
 different ring equations and geometries. The ring equation proposed by Müller and Mejía
 (2017) provided the more adequate set of parameters.
-The potential energy data for every intermediate state were obtained with simulations at the expanded ensemble. 
 
-Solvation free energy differences were then
-estimated with these data using the MBAR method. The results for solvation free energy differences with non aqueous solvents had absolute deviations to the experimental
+
+In order to obtain accurate solvation free energies , we carefully selected and optimized the coupling parameter and their respective simulation weights to be used in our Expanded Ensemble simulations. The resulting potential energies from these simulations were then used to estimated solvation free energy differences with the MBAR method. The results for solvation free energy differences with non aqueous solvents had absolute deviations to the experimental
 data of less than 2.0 kcal/mol, except for the pair 1-octanol+anthracene. The geometry
 effect on the free energy curves was also observed- larger molecules had steeper curves
 and larger absolute deviations. The influence of carbon dioxide on the solvation free
@@ -26,7 +25,7 @@ the strategy of using the SAFT-VR Mie EoS also didn’t provide good results. Th
 necessity of one additional parameter happens probably due to the lack of an association term
 on the EoS that the model is based on. The results with $k_{ij}$ estimated with MD output
 were great, the absolute deviations to the experimental data found were smaller than
-the ones for the GAFF force field.
+the ones for the GAFF and ELBA force field. We also used the solvation free energies to calculate partition coefficients in water/1-octanol, water/hexane and tolune/hexane, and the results were generally satisfactory when compared to the experimental data.
 
 Generally, the SAFT-$\gamma$ Mie force field proved to be a good model to represent the solvation
 phenomenon. It correctly described solvation free energy differences of solutes
