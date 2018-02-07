@@ -116,13 +116,9 @@ S = (\frac{\partial G}{\partial T})_{N,P}= \kappa_{b}  (ln Q(N,V,T)+ T(\frac{\pa
 
 \subsection{Thermostats and Barostats}
 
-In the microcanonical ensemble, we can calculate th temperature using thermodynamic averages, specifically through this relation between temperature and kinetic energy per particle:
+The isothermal-isobaric and canonical ensembles have external conditions being applied to it (temperature and pressure). For temperature control, the method employed  mimics the effect of a thermal reservoir through a thermostat. The thermostats need to be capable of capturing the correct energy fluctuations in the system since the kinetic energy will fluctuate when using a heat bath to control temperature in a canonical ensemble of a finite system.  
 
-\begin{equation}
-k_{b}T = m \langle{ v ^{2} \rangle}
-\end{equation}
-
-However, the isothermal-isobaric and canonical ensembles have external conditional being applied to it (temperature and pressure). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. When using a heat bath to control temperature in a canonical ensemble of a finite system, the kinetic temperature will fluctuate. Hence we need thermostats capable of capturing the correct energy fluctuations in the system. Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, the Andersen \cite{1980JChPh722384A} and the Nose \cite{1984JChPh81511N} thermostats, but here we are going to discuss the most widely used thermostat: the Nosé-Hoover \cite{PhysRevA.31.1695}. This thermostat is based on the formulation of Nosé \cite{1984JChPh81511N}, that used a Lagrangian that contains additional, artificial coordinates and velocities \cite{frenkel}. In this method the Halmitonian in a canonical ensemble is constructed as:
+Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, the Andersen \cite{1980JChPh722384A} and the Nose \cite{1984JChPh81511N} thermostats, but here we are going to discuss the most widely used thermostat: the Nosé-Hoover \cite{PhysRevA.31.1695}. This thermostat is based on the formulation of Nosé \cite{1984JChPh81511N}, whom used a Lagrangian that contains additional, artificial coordinates and velocities \cite{frenkel}. In this method the Halmitonian in a canonical ensemble is constructed as:
 
 \begin{equation}
 \mathcal{H} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3Nk_{b}T ln s
@@ -145,8 +141,43 @@ where $\xi$ is a friction coefficient related to the conjugate momentum of the t
 \frac{\xi}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}
 \end{equation}
 
-To increase the robustness of the thermostat, The Nosé-Hoover chains of thermostats method was developed. 
-Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
+To increase the robustness of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed. It proposes the use of multiple thermal reservoirs that are linked to enhance temperature equilibration \cite{shell2015}.  
+ 
+Meanwhile, the pressure is controlled with a barostat. It maintains the pressure constant during the simulation by adjusting the simulation volume. Among the available  barostats methodologies are the Berendsen \cite{doi:10.1063/1.448118}, in which the pressure is coupled to a pressure bath and the volume is periodically rescaled and the Anderson barostat \cite{1980JChPh722384A}, which serves as basis for other barostating methdos such as the ones developed by Hoover \cite{PhysRevA.31.1695}, Martina-Tobias-Klein \cite{doi:10.1063/1.467468} and Parrinnello-Rahman \cite{doi:10.1063/1.328693}. The Andersen's idea was couple the system to a fictions pressure bath and  incorporate the volume into the phase space as an additional degree of freedom \cite{tuckerman}. As in the Nosé-Hoover thermostat, Andersen added terms into the Hamiltonian in order to control the variable of interest:
+
+\begin{equation}
+\mathcal{H} =  \sum_{i} \frac{V^{-2/3} \pi _{i}^{2}}{2 m_{i}} + U(V^{1/3} \mathbf{s}^{N})  + \frac{p_{V} ^{2} }{2\mathcal{W}} + PV
+\end{equation}
+with $\mathbf{s}$ and $\pi$ being scale transformations:
+
+\begin{equation}
+\mathbf{s} _{i} =  V^{-1/3} r_{i} 
+\end{equation}
+
+\begin{equation}
+\pi _{i} =  V^{1/3} p _{i}
+\end{equation}
+
+Here, $p_{V} $ is the momentum conjugate to the volume and $\mathcal{W}$ is a mass parameter that determines the time scale of the volume motion. With the equations above, we can derive the equations of motion in Cartesian coordinates for an constant pressure ensemble:
+
+\begin{equation}
+\frac{dr_{i}}{dt} = \frac{p_{i}}{m_{i}} + \frac{1}{3} \frac{dV}{dt} \frac{r_{i}}{V}
+\end{equation}
+
+\begin{equation}
+\frac{dp_{i}}{dt} = -  \frac{\partial U}{\partial r_{i}} - \frac{1}{3} \frac{dV}{dt} \frac{p_{i}}{V}
+\end{equation}
+
+\begin{equation}
+\frac{dV_{i}}{dt} = \frac{p_{V}}{\mathcal{W}}
+\end{equation}
+
+\begin{equation}
+\frac{dp_{V}}{dt} = \frac{1}{3V} \sum_{i} \left [ \frac{p_{i}^{2}}{m_{i}} -  \frac{\partial U}{\partial r_{i}} \cdot r_{i} \right] -P
+\end{equation}
+
+Thr equation of motions above are integraated numerically using the methodologies described in the next section.
+
 
 \subsection{Integration of the motion's equations}
 
@@ -198,13 +229,13 @@ The equations above require a non overlapping initial positions and velocities f
 \end{equation}
 
 Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x ray or NMR spectroscopy, the atoms cab be placed randomly in the simulation volume or the atoms can be placed in idealized or approximate geometries. The  generally used method to acquire the configurations places the molecules on a cubic lattice. Independent of the method used, certain restrictions should be applied in the initial configurations in order to carry out molecular simulations. As an example, the cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
-\FloatBarrier
-\begin{figure*}
+
+\begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{Figures/pbc}
 	\caption{Periodic boundary condition representation. Taken from \citeonline{frenkel}}
 	\label{fig:pbc}
-\end{figure*}
+\end{figure}
 \FloatBarrier
 \subsection{Force Fields }
 Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. The description is done by approximating the potential energy function ($U(r^N)$). $U(r^N)$ has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending and bond torsion. The contribution to the bond stretching is usually given by the following Taylor expansion around the energy minimum:
@@ -253,7 +284,9 @@ The final potential energy function defined by the force field can then be expre
 U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_{ij})
 \end{aligned}
 \end{equation}
-  
+%\subsection{title}
+%It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
+
 \section{SAFT-$\gamma$ Mie Force Field}
 
 

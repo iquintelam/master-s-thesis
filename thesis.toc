@@ -25,19 +25,19 @@
 \contentsline {subsection}{\numberline {3.1.1}Background and Formalution}{24}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Statistical Ensembles}{25}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Thermostats and Barostats}{27}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Integration of the motion's equations}{27}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Initial Configuration}{28}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.4}Integration of the motion's equations}{28}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Initial Configuration}{30}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Force Fields }{30}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie EoS}{31}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Ideal Contribution}{32}{subsubsection.3.2.1.1}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Monomer Contribution}{32}{subsubsection.3.2.1.2}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Chain Contribution}{33}{subsubsection.3.2.1.3}
+\contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{32}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie EoS}{32}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Ideal Contribution}{33}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Monomer Contribution}{33}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Chain Contribution}{34}{subsubsection.3.2.1.3}
 \contentsline {subsubsection}{\numberline {3.2.1.4}Ring Contribution}{34}{subsubsection.3.2.1.4}
-\contentsline {subsubsection}{\numberline {3.2.1.5}Combining rules for the intermolecular potential parameters}{34}{subsubsection.3.2.1.5}
-\contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{35}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Solvation Free Energy Simulations Based on Molecular Dynamics}{38}{section.3.3}
-\contentsline {section}{\numberline {3.4}Multistate Bennet Acceptance Ratio (MBAR)}{42}{section.3.4}
+\contentsline {subsubsection}{\numberline {3.2.1.5}Combining rules for the intermolecular potential parameters}{36}{subsubsection.3.2.1.5}
+\contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{36}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Solvation Free Energy Simulations Based on Molecular Dynamics}{39}{section.3.3}
+\contentsline {section}{\numberline {3.4}Multistate Bennet Acceptance Ratio (MBAR)}{43}{section.3.4}
 \contentsline {section}{\numberline {3.5}Expanded Ensemble Method}{44}{section.3.5}
 \contentsline {section}{\numberline {3.6}Gibbs Ensemble Monte Carlo (GEMC)}{47}{section.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
