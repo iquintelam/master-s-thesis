@@ -27,6 +27,12 @@
   dioxide and methane from molecular dynamics simulations.
 \emph{The Journal of Chemical Physics}, v.~141, p. 134101, 2014.}
 
+\bibitem[{Andersen} 1980]{1980JChPh722384A}
+\abntrefinfo{{Andersen}}{{Andersen}}{1980}
+{{Andersen}, H.~C. {Molecular dynamics simulations at constant pressure and/or
+  temperature}.
+\emph{Journal of Chemical Physics}, v.~72, p. 2384--2393, 1980.}
+
 \bibitem[ANDERSEN 1983]{anderson1983}
 \abntrefinfo{ANDERSEN}{ANDERSEN}{1983}
 {ANDERSEN, H.~C. Rattle: A “velocity” version of the shake algorithm for
@@ -550,6 +556,12 @@ Theory and simulation • Macromolecular assemblies.}
   crude oils.
 \emph{Molecular Simulation}, v.~29, n.~6-7, p. 451--461, 2003.}
 
+\bibitem[{Nos{\'e}} 1984]{1984JChPh81511N}
+\abntrefinfo{{Nos{\'e}}}{{Nos{\'e}}}{1984}
+{{Nos{\'e}}, S. {A unified formulation of the constant temperature molecular
+  dynamics methods}.
+\emph{Journal of Chemical Physics}, v.~81, p. 511--519, 1984.}
+
 \bibitem[Orsi and Essex 2011]{10.1371/journal.pone.0028637}
 \abntrefinfo{Orsi and Essex}{ORSI; ESSEX}{2011}
 {ORSI, M.; ESSEX, J.~W. The elba force field for coarse-grain modeling of lipid
@@ -665,6 +677,10 @@ Theory and simulation • Macromolecular assemblies.}
   Partition coefficients for environmentally important, multifunctional organic
   compounds in hexane + water.
 \emph{Journal of Chemical \& Engineering Data}, v.~43, n.~1, p. 69--73, 1998.}
+
+\bibitem[SHELL 2015]{shell2015}
+\abntrefinfo{SHELL}{SHELL}{2015}
+{SHELL, M.~S. 1. ed. Santa Barbara, U.S.A.: Cambridge University Press, 2015.}
 
 \bibitem[Shinoda, Devane and Klein 2007]{shinoda2007}
 \abntrefinfo{Shinoda, Devane and Klein}{SHINODA; DEVANE; KLEIN}{2007}

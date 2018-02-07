@@ -32,7 +32,7 @@ In the equation above, $K$ is the kinetic energy and $U$ is the potential energy
 \frac{d \vec{q}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
 \end{equation}
 
-The coordinates and momentum axes fo each atoms in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system will explore with the same probability all regions of the phase space of microstates with the same energy. 
+The coordinates and momentum axes fo each atoms in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system will explore with the same probability all regions of the phase space of microstates with the same energy \cite{shell2015}. 
 
 \subsection{Statistical Ensembles}
 
@@ -40,7 +40,7 @@ A statistical ensemble corresponds to the set of configurations of a system. For
 
 \begin{equation}
 \begin{aligned}
- \Omega (N,V,E) = \frac{1}{h^{3N}N!} \int dp^{N} dr^{N} \delta [\mathcal{H})(p^{N},r^{N}) -E]
+ \Omega (N,V,E) = \frac{1}{h^{3N}N!} \int dp^{N} dr^{N} \delta [\mathcal{H}(p^{N},r^{N}) -E]
 \end{aligned}
 \end{equation}
 where h is the Planck constant and the delta function is a Dirac delta function. As mentioned above, the system will spend the same amount of time at each of the microstates, i. e. each of these microstates have equal probabilities ($\varrho$) of being visited:
@@ -114,7 +114,39 @@ From these relations and a differential change in G, we can obtain the chemical 
 S = (\frac{\partial G}{\partial T})_{N,P}= \kappa_{b}  (ln Q(N,V,T)+ T(\frac{\partial ln Q (N,V,T)}{\partial T})_{V,N})
 \end{equation}
 
-The isothermal-isobaric ensembles have external conditional being applied to it (temperature and pressure, respectively). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. The most widely used thermostat are the Berendsen and Nosé-Hoover \cite{doi:10.1063/1.448118,PhysRevA.31.1695}. Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
+\subsection{Thermostats and Barostats}
+
+In the microcanonical ensemble, we can calculate th temperature using thermodynamic averages, specifically through this relation between temperature and kinetic energy per particle:
+
+\begin{equation}
+k_{b}T = m \langle{ v ^{2} \rangle}
+\end{equation}
+
+However, the isothermal-isobaric and canonical ensembles have external conditional being applied to it (temperature and pressure). For temperature control, the method employed  is to mimic the effect of a thermal reservoir through a thermostat. When using a heat bath to control temperature in a canonical ensemble of a finite system, the kinetic temperature will fluctuate. Hence we need thermostats capable of capturing the correct energy fluctuations in the system. Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, the Andersen \cite{1980JChPh722384A} and the Nose \cite{1984JChPh81511N} thermostats, but here we are going to discuss the most widely used thermostat: the Nosé-Hoover \cite{PhysRevA.31.1695}. This thermostat is based on the formulation of Nosé \cite{1984JChPh81511N}, that used a Lagrangian that contains additional, artificial coordinates and velocities \cite{frenkel}. In this method the Halmitonian in a canonical ensemble is constructed as:
+
+\begin{equation}
+\mathcal{H} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3Nk_{b}T ln s
+\end{equation}
+where $\xi$ is a friction coefficient related to the conjugate momentum of the thermal reservoir to which the system is coupled, $s$ is the position of the thermal reservoir and $\mathcal{Q}$ is the effective mass associated with s. The velocity update is then done with the Newton's equation with the addiction of the friction term \cite{shell2015}:
+
+\begin{equation}
+	\frac{dr_{i}}{dt} = v_{i}
+\end{equation}
+
+\begin{equation}
+\frac{dv_{i}}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}
+\end{equation}
+
+\begin{equation}
+\frac{\xi}{dt} = \frac{\sum m_{i} v_{i} - 3Nk_{b}T}{\mathcal{Q}} 
+\end{equation}
+
+\begin{equation}
+\frac{\xi}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}
+\end{equation}
+
+To increase the robustness of the thermostat, The Nosé-Hoover chains of thermostats method was developed. 
+Meanwhile, the pressure is controlled with a barostat, that allows volume fluctuation. Among the more used barostats are the Berendsen, Hoover, Martina-Tobias-Klein and Parrinnello-Rahman \cite{doi:10.1063/1.448118,PhysRevA.31.1695,doi:10.1063/1.467468,doi:10.1063/1.328693}. It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
 
 \subsection{Integration of the motion's equations}
 
@@ -165,7 +197,7 @@ The equations above require a non overlapping initial positions and velocities f
 \varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} exp(-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T})
 \end{equation}
 
-Random velocities are then obtained for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be takes from x ray or NMR spectroscopy, the atoms cab be placed randomly in the simulation volume or the atoms in  molecules can be placed in idealized or approximate geometries. The  generally used method to acquire the configurations places the molecules on a cubic lattice. Independent of the method used, certain restrictions should be applied in the initial configurations in order to carry out molecular simulations. As an example, the cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x ray or NMR spectroscopy, the atoms cab be placed randomly in the simulation volume or the atoms can be placed in idealized or approximate geometries. The  generally used method to acquire the configurations places the molecules on a cubic lattice. Independent of the method used, certain restrictions should be applied in the initial configurations in order to carry out molecular simulations. As an example, the cubic lattice has a finite size, but  a finite size box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the system N particles, replicated in periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
 \FloatBarrier
 \begin{figure*}
 	\centering
@@ -175,7 +207,7 @@ Random velocities are then obtained for each of the 3N components of the velocit
 \end{figure*}
 \FloatBarrier
 \subsection{Force Fields }
-Force fields are models for the description of structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. The description is done by approximating the potential energy function ($U(r^N)$). $U(r^N)$ has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending and bond torsion. The contribution for the bond stretching is usually given by the following Taylor expansion around the energy minimum:
+Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles and torsion. The description is done by approximating the potential energy function ($U(r^N)$). $U(r^N)$ has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending and bond torsion. The contribution to the bond stretching is usually given by the following Taylor expansion around the energy minimum:
 
 \begin{equation}
 u_{bs}(d) = k_{bs} (d - d_{0})^2
@@ -204,7 +236,7 @@ In the equation above, $q_{i}$ and $q_{j}$ are the partial charges and  $\epsilo
 u_{LJ}(r_{ij}) = 4 \epsilon
 \left[ \left(\frac{\sigma}{r} \right)^{12} - \left(\frac{\sigma}{r} \right)^{6} \right]
 \end{equation}
-where r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the potential is:
+where r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the Lennard Jones potential is:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figures/lj2}
@@ -212,7 +244,7 @@ where r is the distance the molecules, $\epsilon$ is the depth of the potential 
 	\label{fig:lj}
 \end{figure}
 
-The interactions in Figure \ref{fig:lj} tend to zero after a certain value of r, so this value can be set as the cutoff radius in which the potential energy is considered to be zero after it. Also, only interactions with te nearest periodic image of the cell is considered in order   for short range interactions (Minimum image convention condition). With this conditions, the calculations of forces and velocities are viable.
+The interactions in Figure \ref{fig:lj} tend to zero after a certain value of r, so this value can be set as the cutoff radius in which the potential energy is considered to be zero after it. Also, only interactions with te nearest periodic image of the cell are considered for short range interactions (Minimum image convention condition). With this conditions, the calculations of forces and velocities are viable.
 
 The final potential energy function defined by the force field can then be expressed by summing all the interactions above:
 
