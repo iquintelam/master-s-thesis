@@ -65,10 +65,14 @@
 \usepackage{float}
 \usepackage{pdfpages}
 \DisemulatePackage{setspace}
-
 \usepackage{setspace} % espacamento entre linhas
-
+\let\added\undefined      % neutralize \added command
+\let\deleted\undefined    % neutralize \deleted command
+\usepackage[markup=bfit]{changes}
+\definechangesauthor{iq}
+\setremarkmarkup{(#2)}
 % padrao 1.5 de espacamento entre linhas
+
 
 
 %\usepackage[portuguese]{babel}

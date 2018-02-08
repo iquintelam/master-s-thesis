@@ -114,6 +114,14 @@
   dynamicss.
 \emph{Molecular Simulation}, v.~107, p. 393--401, 2009.}
 
+\bibitem[Buenrostro-Gonzalez \textit{et al.} 2004]{AIC:AIC10243}
+\abntrefinfo{Buenrostro-Gonzalez \textit{et al.}}{BUENROSTRO-GONZALEZ
+  \textit{et al.}}{2004}
+{BUENROSTRO-GONZALEZ, E.; LIRA-GALEANA, C.; GIL-VILLEGAS, A.; WU, J. Asphaltene
+  precipitation in crude oils: Theory and experiments.
+\emph{AIChE Journal}, American Institute of Chemical Engineers, v.~50, n.~10,
+  p. 2552--2570, 2004.}
+
 \bibitem[Chang 1992]{co2toliq}
 \abntrefinfo{Chang}{CHANG}{1992}
 {CHANG, C.~J. The solubility of carbon dioxide in organic solvents at elevated
@@ -301,18 +309,18 @@
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
 
+\bibitem[Joshi \textit{et al.} 2001]{doi:10.1021/ef010047l}
+\abntrefinfo{Joshi \textit{et al.}}{JOSHI \textit{et al.}}{2001}
+{JOSHI, N.~B.; MULLINS, O.~C.; JAMALUDDIN, A.; CREEK, J.; MCFADDEN, J.
+  Asphaltene precipitation from live crude oil.
+\emph{Energy \& Fuels}, v.~15, n.~4, p. 979--986, 2001.}
+
 \bibitem[Jover \textit{et al.} 2015]{doi:10.1021/ef502209j}
 \abntrefinfo{Jover \textit{et al.}}{JOVER \textit{et al.}}{2015}
 {JOVER, J.~F.; MüLLER, E.~A.; HASLAM, A.~J.; GALINDO, A.; JACKSON, G.;
   TOULHOAT, H.; NIETO-DRAGHI, C. Aspects of asphaltene aggregation obtained
   from coarse-grained molecular modeling.
 \emph{Energy and Fuels}, v.~29, n.~2, p. 556--566, 2015.}
-
-\bibitem[Karabencheva-Christova 2014]{tatyana}
-\abntrefinfo{Karabencheva-Christova}{KARABENCHEVA-CHRISTOVA}{2014}
-{KARABENCHEVA-CHRISTOVA, T. \emph{Advances in Protein Chemistry and Structural
-  Biology: Biomolecular Modelling and Simulations}. 1. ed. Cambridge: Academic
-  Press, 2014.}
 
 \bibitem[Kirkwood 1935]{kirkwood1935}
 \abntrefinfo{Kirkwood}{KIRKWOOD}{1935}
@@ -609,18 +617,18 @@ Theory and simulation • Macromolecular assemblies.}
 \emph{Journal of Chromatography B: Biomedical Sciences and Applications},
   v.~745, n.~1, p. 117 -- 126, 2000.}
 
-\bibitem[Raabe 2017]{raabe}
-\abntrefinfo{Raabe}{RAABE}{2017}
-{RAABE, G. \emph{Molecular Simulation Studies on Thermophysical Properties -
-  With Application to Working Fluids. Springer Series Molecular Modeling and
-  Simulation}. [S.l.: s.n.], 2017.}
-
 \bibitem[Ramrattan \textit{et al.} 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan \textit{et al.}}{RAMRATTAN \textit{et al.}}{2015}
 {RAMRATTAN, N.; AVENDA{\~N}O, C.; M\"ULLER, E.; GALINDO, A. A
   corresponding-states framework for the description of the mie family of
   intermolecular potentials.
 \emph{Molecular Physics}, v.~113, p. 1–16, 2015.}
+
+\bibitem[Ravindra, Sokhi and Grieken 2008]{RAVINDRA20082895}
+\abntrefinfo{Ravindra, Sokhi and Grieken}{RAVINDRA; SOKHI; GRIEKEN}{2008}
+{RAVINDRA, K.; SOKHI, R.; GRIEKEN, R.~V. Atmospheric polycyclic aromatic
+  hydrocarbons: Source attribution, emission factors and regulation.
+\emph{Atmospheric Environment}, v.~42, n.~13, p. 2895 -- 2921, 2008.}
 
 \bibitem[Roux 1995]{ROUX1995275}
 \abntrefinfo{Roux}{ROUX}{1995}
