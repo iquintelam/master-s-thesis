@@ -309,6 +309,14 @@
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
 
+\bibitem[Jorgensen and Tirado-Rives 1988]{doi:10.1021/ja00214a001}
+\abntrefinfo{Jorgensen and Tirado-Rives}{JORGENSEN; TIRADO-RIVES}{1988}
+{JORGENSEN, W.~L.; TIRADO-RIVES, J. The opls [optimized potentials for liquid
+  simulations] potential functions for proteins, energy minimizations for
+  crystals of cyclic peptides and crambin.
+\emph{Journal of the American Chemical Society}, v.~110, n.~6, p. 1657--1666,
+  1988.}
+
 \bibitem[Joshi \textit{et al.} 2001]{doi:10.1021/ef010047l}
 \abntrefinfo{Joshi \textit{et al.}}{JOSHI \textit{et al.}}{2001}
 {JOSHI, N.~B.; MULLINS, O.~C.; JAMALUDDIN, A.; CREEK, J.; MCFADDEN, J.
@@ -659,6 +667,12 @@ Theory and simulation • Macromolecular assemblies.}
 \abntrefinfo{Sangster}{SANGSTER}{1997}
 {SANGSTER, J. \emph{Octanol-Water Partitioning Coefficients: Fundamentals and
   Physical Chemistry}. 1nd. ed. [S.l.]: John Wiley and Sons, 1997.}
+
+\bibitem[Schuler, Daura and Gunsteren 2001]{JCC:JCC1078}
+\abntrefinfo{Schuler, Daura and Gunsteren}{SCHULER; DAURA; GUNSTEREN}{2001}
+{SCHULER, L.~D.; DAURA, X.; GUNSTEREN, W.~F. van. An improved gromos96 force
+  field for aliphatic hydrocarbons in the condensed phase.
+\emph{Journal of Computational Chemistry}, v.~22, n.~11, p. 1205--1218, 2001.}
 
 \bibitem[Schulte \textit{et al.} 1998]{doi:10.1021/je970112e}
 \abntrefinfo{Schulte \textit{et al.}}{SCHULTE \textit{et al.}}{1998}
