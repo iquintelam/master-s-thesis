@@ -1,8 +1,8 @@
 \select@language {brazil}
 \select@language {english}
-\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Schematic representation for the two different approaches of coarse graining.Taken from \citeonline {tatyana}\relax }}{16}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Schematic representation for the two different approaches of coarse graining.\relax }}{16}{figure.caption.8}
 \contentsline {figure}{\numberline {3.1.1}{\ignorespaces Periodic boundary condition representation. Taken from \citeonline {frenkel}\relax }}{30}{figure.caption.9}
-\contentsline {figure}{\numberline {3.1.2}{\ignorespaces Lennard Jones potential representation for two atoms of argon (i,j). Taken from \citeonline {raabe} \relax }}{32}{figure.caption.10}
+\contentsline {figure}{\numberline {3.1.2}{\ignorespaces Lennard Jones potential representation. \relax }}{32}{figure.caption.10}
 \contentsline {figure}{\numberline {3.2.1}{\ignorespaces Values for parameter $\chi $ according to the ring geometry \cite {muller2017}.\relax }}{35}{figure.caption.11}
 \contentsline {figure}{\numberline {3.3.1}{\ignorespaces Thermodynamic cycle for solvation free energy calculations with molecular dynamics (Adapted from \citeonline {klimovich})\relax }}{41}{figure.caption.12}
 \contentsline {figure}{\numberline {3.3.2}{\ignorespaces Soft-core potential in reduced units.\relax }}{42}{figure.caption.13}

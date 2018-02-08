@@ -26,10 +26,10 @@ Molecular simulations can be carried out at different levels of description. The
 
 There is an obvious loss of information in grouping atoms, hence it is necessary to assure that the process of eliminating unnecessary or unimportant information ('coarse graining') doesn't affect the system's physical behavior. Ideally, coarse grained models need to have accuracy, transferability, robustness, and computational efficiency. In order to achieve these goals, coarse grained force fields are usually developed by mapping the atomistic model in order to define the pseudo atoms, which are generally formed by similar functional groups. The level of coarse graining also needs to be defined, up to 6 heavy atoms (non-hydrogen atoms) per bead in order to not lose important details and maintain isotropic representations of the beads \cite{shinoda2007,martini2007,hadley2012}. CG force fields can be parametrized following two different approaches, bottoms up and top down, to link the simulations on the coarse grained scale to a more detailed scale according to the schematic representation in \figref{fig:multiscale}. The bottoms up approach uses information of a more detailed scale such as the \textit{ab initio} description or the atomistic description to obtain information necessary to the parametrization. This method highly depends on the detailed model quality to succeed. Meanwhile, the top down methodology obtains parameters from larger scales, namely experimental thermodynamic properties or native-structure based properties. 
 
-\begin{figure}{H}
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{Figures/multiscale}
-	\caption{Schematic representation for the two different approaches of coarse graining.Taken from \citeonline{tatyana}}
+	\includegraphics[width=0.99\linewidth]{Figures/multiscale}
+	\caption{Schematic representation for the two different approaches of coarse graining.}
 	\label{fig:multiscale}
 \end{figure}
 \FloatBarrier
