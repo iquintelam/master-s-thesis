@@ -5,10 +5,18 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Abraham \textit{et al.} 1990]{P29900000291}
+\abntrefinfo{Abraham \textit{et al.}}{ABRAHAM \textit{et al.}}{1990}
+{ABRAHAM, M.~H.; WHITING, G.~S.; FUCHS, R.; CHAMBERS, E.~J. Thermodynamics of
+  solute transfer from water to hexadecane.
+\emph{J. Chem. Soc.{,} Perkin Trans. 2}, The Royal Society of Chemistry, p.
+  291--300, 1990.}
+
 \bibitem[ABREU 2017]{playmol}
 \abntrefinfo{ABREU}{ABREU}{2017}
 {ABREU, C. R.~A. \emph{Playmol}. 2017.
-  \url{http://atoms.peq.coppe.ufrj.br/playmol /index.html}.}
+  \url{http://atoms.peq.coppe.ufrj.br/playmol /index.html}.
+Accessed: 2017-03-10.}
 
 \bibitem[Adam \textit{et al.} 2014]{unres2014}
 \abntrefinfo{Adam \textit{et al.}}{ADAM \textit{et al.}}{2014}
@@ -328,6 +336,15 @@
   TOULHOAT, H.; NIETO-DRAGHI, C. Aspects of asphaltene aggregation obtained
   from coarse-grained molecular modeling.
 \emph{Energy and Fuels}, v.~29, n.~2, p. 556--566, 2015.}
+
+\bibitem[Katritzky \textit{et al.} 2003]{doi:10.1021/ci034120c}
+\abntrefinfo{Katritzky \textit{et al.}}{KATRITZKY \textit{et al.}}{2003}
+{KATRITZKY, A.~R.; OLIFERENKO, A.~A.; OLIFERENKO, P.~V.; PETRUKHIN, R.; TATHAM,
+  D.~B.; MARAN, U.; LOMAKA, A.; ACREE, W.~E. A general treatment of solubility.
+  1. the qspr correlation of solvation free energies of single solutes in
+  series of solvents.
+\emph{Journal of Chemical Information and Computer Sciences}, v.~43, n.~6, p.
+  1794--1805, 2003.}
 
 \bibitem[Kirkwood 1935]{kirkwood1935}
 \abntrefinfo{Kirkwood}{KIRKWOOD}{1935}
@@ -650,6 +667,14 @@ Theory and simulation • Macromolecular assemblies.}
 {RAVINDRA, K.; SOKHI, R.; GRIEKEN, R.~V. Atmospheric polycyclic aromatic
   hydrocarbons: Source attribution, emission factors and regulation.
 \emph{Atmospheric Environment}, v.~42, n.~13, p. 2895 -- 2921, 2008.}
+
+\bibitem[Rizzo \textit{et al.} 2006]{doi:10.1021/ct050097l}
+\abntrefinfo{Rizzo \textit{et al.}}{RIZZO \textit{et al.}}{2006}
+{RIZZO, R.~C.; AYNECHI, T.; CASE, D.~A.; KUNTZ, I.~D. Estimation of absolute
+  free energies of hydration using continuum methods accuracy of partial charge
+  models and optimization of nonpolar contributions.
+\emph{Journal of Chemical Theory and Computation}, v.~2, n.~1, p. 128--139,
+  2006.}
 
 \bibitem[Roux 1995]{ROUX1995275}
 \abntrefinfo{Roux}{ROUX}{1995}
