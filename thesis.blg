@@ -17,25 +17,34 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 14039 items from 5000.
+Reallocated field_info (elt_size=4) to 14246 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
-I was expecting a `,' or a `}'---line 1144 of file thesis.bib
+I was expecting a `,' or a `}'---line 1153 of file thesis.bib
  :   
  :   address = {Chichester, U.K.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1152 of file thesis.bib
+I was expecting a `,' or a `}'---line 1161 of file thesis.bib
  :   
  :   address = {Santa Barbara, U.S.A.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1273 of file thesis.bib
+I was expecting a `,' or a `}'---line 1282 of file thesis.bib
  :  
  :  doi="10.1140/epjp/i2013-13010-8"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1326 of file thesis.bib
+ :  
+ :  note = {Accessed: 2017-03-10}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+There is no name in "" for entry pso
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry pso
+while executing---line 2091 of file abntex2-alf.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -51,50 +60,54 @@ There is no name in "" for entry mobley2017
 while executing---line 2146 of file abntex2-alf.bst
 There is no name in "" for entry mobley2017
 while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry pso
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry pso
+while executing---line 2146 of file abntex2-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 131 entries,
+You've used 134 entries,
             6714 wiz_defined-function locations,
-            1925 strings with 33176 characters,
-and the built_in function-call counts, 125414 in all, are:
-= -- 8953
-> -- 5215
-< -- 398
-+ -- 2058
-- -- 1504
-* -- 9406
-:= -- 15457
-add.period$ -- 391
-call.type$ -- 132
-change.case$ -- 1684
-chr.to.int$ -- 509
-cite$ -- 127
-duplicate$ -- 6680
-empty$ -- 7958
-format.name$ -- 7574
-if$ -- 29841
+            1939 strings with 33652 characters,
+and the built_in function-call counts, 127965 in all, are:
+= -- 9129
+> -- 5317
+< -- 405
++ -- 2098
+- -- 1534
+* -- 9595
+:= -- 15782
+add.period$ -- 401
+call.type$ -- 135
+change.case$ -- 1719
+chr.to.int$ -- 518
+cite$ -- 130
+duplicate$ -- 6814
+empty$ -- 8132
+format.name$ -- 7726
+if$ -- 30447
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 2505
-newline$ -- 637
-num.names$ -- 635
-pop$ -- 3137
+missing$ -- 2561
+newline$ -- 651
+num.names$ -- 650
+pop$ -- 3207
 preamble$ -- 1
-purify$ -- 560
+purify$ -- 572
 quote$ -- 0
-skip$ -- 7433
+skip$ -- 7582
 stack$ -- 1
-substring$ -- 5285
-swap$ -- 4025
-text.length$ -- 271
+substring$ -- 5377
+swap$ -- 4101
+text.length$ -- 276
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 955
+while$ -- 975
 width$ -- 0
-write$ -- 2077
-(There were 9 error messages)
+write$ -- 2124
+(There were 14 error messages)

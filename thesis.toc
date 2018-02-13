@@ -43,7 +43,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{61}{chapter.4}
 \contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{61}{section.4.1}
-\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{62}{section.4.2}
+\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{63}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Solvation free energies}{65}{section.5.1}

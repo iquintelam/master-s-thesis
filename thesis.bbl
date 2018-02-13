@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[ABREU 2017]{playmol}
+\abntrefinfo{ABREU}{ABREU}{2017}
+{ABREU, C. R.~A. \emph{Playmol}. 2017.
+  \url{http://atoms.peq.coppe.ufrj.br/playmol /index.html}.}
+
 \bibitem[Adam \textit{et al.} 2014]{unres2014}
 \abntrefinfo{Adam \textit{et al.}}{ADAM \textit{et al.}}{2014}
 {ADAM, L.; MACIEJ, B.; CEZARY, C.; EWA, G.; YI, H.; DAWID, J.; PAWEL, K.;
@@ -688,6 +693,18 @@ Theory and simulation • Macromolecular assemblies.}
   Partition coefficients for environmentally important, multifunctional organic
   compounds in hexane + water.
 \emph{Journal of Chemical \& Engineering Data}, v.~43, n.~1, p. 69--73, 1998.}
+
+\bibitem[Schwaab \textit{et al.} 2008]{pso}
+\abntrefinfo{Schwaab \textit{et al.}}{SCHWAAB \textit{et al.}}{2008}
+{SCHWAAB, M.; BISCAIA, E. C.; , J. ; MONTEIRO, J.; PINTO, J. C. Nonlinear
+  parameter estimation through particle swarm optimization.
+\emph{Chemical Engineering Science}, v.~63, p. 1542--1552, 03 2008.}
+
+\bibitem[Shah and Maginn 2011]{doi:10.1063/1.3644939}
+\abntrefinfo{Shah and Maginn}{SHAH; MAGINN}{2011}
+{SHAH, J.~K.; MAGINN, E.~J. A general and efficient monte carlo method for
+  sampling intramolecular degrees of freedom of branched and cyclic molecules.
+\emph{The Journal of Chemical Physics}, v.~135, n.~13, p. 134121, 2011.}
 
 \bibitem[SHELL 2015]{shell2015}
 \abntrefinfo{SHELL}{SHELL}{2015}
