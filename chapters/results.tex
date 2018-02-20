@@ -8,16 +8,13 @@ The first part of this work consisted of obtaining phenanthrene parameters for t
 
 \begin{table*}[h]
     \centering
-    \caption{Estimated SAFT-$\gamma$ Mie Force Field parameters for phenanthrene}
+    \caption{Estimated SAFT-$\gamma$ Mie Force Field parameters for phenanthrene.}
     \label{tbl:estimparameters}
     \begin{tabular}{lllll}
-        \hline
-        \hline
-         $m_s$ & $\epsilon/k_{B}$ (K) & $\sigma (\dot{A})$ & $\lambda_r$& MPE(\%) \\ \hline
-         3 \cite{lafitte2012}    & 485.55              & 4.197              & 14.34 & 1.64|9.74       \\ 
-         5  \cite{muller2017}   & 262.74               & 4.077              & 9.55   &  0.88   \\ 
-         \hline
-         \hline
+    	\hline\hline
+    	$m_s$                & $\epsilon/k_{B}$ (K) & $\sigma (\dot{A})$ & $\lambda_r$ & MPE(\%)   \\ \hline
+    	3 \cite{lafitte2012} & 485.55               & 4.197              & 14.34       & 1.64|9.74 \\
+    	5  \cite{muller2017} & 262.74               & 4.077              & 9.55        & 0.88      \\ \hline\hline
     \end{tabular}
     
 \end{table*} 
@@ -26,7 +23,7 @@ In the table above, the first value of MPE for the \citeonline{lafitte2012} stra
 
 \begin{table*}[h]
 \centering
-  \caption{SAFT-$\gamma$ Mie Force Field for each substance used in this work}
+  \caption{SAFT-$\gamma$ Mie Force Field for each substance used in this work.}
   \label{tbl:parameters}
   \begin{tabular}{lllll}
       \hline
@@ -58,30 +55,26 @@ The solvation free energies of aromatic solutes in nonpolar (hexane), aromatic (
 
 \begin{table*}[h]
     \centering
-    \caption{Optimized values of $\lambda$ and $\eta$ for the pair benzene + hexane}
+    \caption{Optimized values of $\lambda$ and $\eta$ for the pair benzene + hexane.}
       \label{tbl:lambdahex}
     \begin{tabular}{ll}
-        \hline
-        \hline
-        $\lambda$    &    $\eta$\\ 
-        \hline        
-        0    &    0\\ 
-        0.065    &    0.708\\ 
-        0.112    &    1.385\\ 
-        0.15    &    1.892 \\ 
-        0.188    &    2.399\\ 
-        0.226    &    2.519\\ 
-        0.264    &    2.457\\ 
-        0.304    &    2.367\\ 
-        0.356    &    1.921\\ 
-        0.411    &    1.411\\ 
-        0.492    &    0.524\\ 
-        0.588    &    -0.663\\ 
-        0.69    &    -2.016 \\ 
-        0.824    &    -3.922\\ 
-        1        &    -6.583\\     
-        \hline
-        \hline
+    	\hline\hline
+    	$\lambda$ & $\eta$ \\ \hline
+    	0         & 0      \\
+    	0.065     & 0.708  \\
+    	0.112     & 1.385  \\
+    	0.15      & 1.892  \\
+    	0.188     & 2.399  \\
+    	0.226     & 2.519  \\
+    	0.264     & 2.457  \\
+    	0.304     & 2.367  \\
+    	0.356     & 1.921  \\
+    	0.411     & 1.411  \\
+    	0.492     & 0.524  \\
+    	0.588     & -0.663 \\
+    	0.69      & -2.016 \\
+    	0.824     & -3.922 \\
+    	1         & -6.583 \\ \hline\hline
     \end{tabular}
 \end{table*}
 \FloatBarrier
@@ -97,26 +90,22 @@ It is also important to analyze the reliability of solvation free energy estimat
 
 \begin{table*}[h]
 \centering
-  \caption{Calculated and experimental values for the solvation free energy differences (kcal/mol) of solutes in non aqueous solvents}
+  \caption{Calculated and experimental values for the solvation free energy differences (kcal/mol) of solutes in non aqueous solvents.}
   \label{tbl:solv1}
   \begin{tabular}{lllll}
-    \hline
-    \hline
-      Solvent & Solute & $\Delta G_{solv}^{exp}$&  $\Delta G_{solv}^{Mie}$ & Absolute \\
-      & & & & Deviation \\
-    \hline
-    hexane    & benzene      & -3.96  & -3.76  $\pm$ 0.01 & 0.20 \\
-    hexane    & pyrene       & -11.53& -10.82 $\pm$ 0.02 & 0.71 \\
-    hexane    & phenanthrene & -10.01& -9.16  $\pm$ 0.01 & 0.85 \\
-    1-octanol & propane      & -1.32  & -1.36  $\pm$ 0.02 & 0.04 \\
-    1-octanol & anthracene   & -11.72&  -8.16  $\pm$ 0.03 & 3.61 \\
-    1-octanol & phenanthrene & -10.22&  -8.34  $\pm$ 0.03 & 1.47 \\
-    toluene   & pyrene       & -12.86&  -11.74 $\pm$ 0.01 & 1.11\\
-    toluene   & anthracene   & -11.31&  -9.90 $\pm$ 0.01 & 1.41\\
-%    \hline
-%    RMSE      &              &        &                   & 1.48     \\
-    \hline
-    \hline
+  	\hline\hline
+  	Solvent               & Solute       & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute  \\
+  	                      &              &                         &                         & Deviation \\ \hline
+  	hexane                & benzene      & -3.96                   & -3.76  $\pm$ 0.01       & 0.20      \\
+  	hexane                & pyrene       & -11.53                  & -10.82 $\pm$ 0.02       & 0.71      \\
+  	hexane                & phenanthrene & -10.01                  & -9.16  $\pm$ 0.01       & 0.85      \\
+  	1-octanol             & propane      & -1.32                   & -1.36  $\pm$ 0.02       & 0.04      \\
+  	1-octanol             & anthracene   & -11.72                  & -8.16  $\pm$ 0.03       & 3.61      \\
+  	1-octanol             & phenanthrene & -10.22                  & -8.34  $\pm$ 0.03       & 1.47      \\
+  	toluene               & pyrene       & -12.86                  & -11.74 $\pm$ 0.01       & 1.11      \\
+  	toluene               & anthracene   & -11.31                  & -9.90 $\pm$ 0.01        & 1.41      \\
+  	%    \hline
+%    RMSE &              &                         &                         & 1.48      \\ \hline\hline
   \end{tabular}
 \end{table*}
 \FloatBarrier
@@ -187,16 +176,12 @@ We also calculated the hydration free energies of widely studied solutes (propan
     \caption{Calculated values using $k_{ij}=0$ and experimental values for the hydration free energy differences (kcal/mol) of solutes in water.}
     \label{tbl:solv3}
     \begin{tabular}{llll}
-        \hline
-        \hline
-        Solute  & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$& Absolute Deviation\\
-        \hline
-        propane   & 2.00 $\pm$ 0.20&1.10 $\pm$ 0.01 & 0.90 \\
-        benzene  & -0.86 $\pm$ 0.20 & -4.45 $\pm$ 0.03&  3.59 \\
-        toluene  & -0.83 $\pm$ 0.20 &-10.98 $\pm$ 0.30&  10.15 \\
-        phenanthrene & -3.88 $\pm$ 0.60 &-10.90 $\pm$ 0.04& 7.02  \\
-        \hline
-        \hline
+    	\hline\hline
+    	Solute       & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute Deviation \\ \hline
+    	propane      & 2.00 $\pm$ 0.20         & 1.10 $\pm$ 0.01         & 0.90               \\
+    	benzene      & -0.86 $\pm$ 0.20        & -4.45 $\pm$ 0.03        & 3.59               \\
+    	toluene      & -0.83 $\pm$ 0.20        & -10.98 $\pm$ 0.30       & 10.15              \\
+    	phenanthrene & -3.88 $\pm$ 0.60        & -10.90 $\pm$ 0.04       & 7.02               \\ \hline\hline
     \end{tabular}
 \end{table*}
 \FloatBarrier
@@ -228,19 +213,15 @@ These issues faced by SAFT-$\gamma$ Mie model are related to the problems of mod
   \caption{Calculated and experimental hydration free energy differences  (kcal/mol) of solutes in water.}
   \label{tbl:solv2}
   \begin{tabular}{llllll}
-    \hline
-    \hline
-     Solute      & $\Delta G_{solv}^{GAFF}$ & $\Delta G_{solv}^{ELBA}$ & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute \\
-     & & & & & Deviation \\
-    \hline
-    propane          &2.50 $\pm$0.02 & 2.76 $\pm$ 0.02&  2.00 $\pm$ 0.20 & 2.01 $\pm$ 0.01     & 0.01 \\
-    benzene          &-0.81$\pm$0.02& -0.69 $\pm$ 0.01& -0.86 $\pm$ 0.20 & -1.12 $\pm$ 0.01    &  0.26\\  
-    toluene          &-0.79$\pm$0.03& -0.76 $\pm$ 0.01& -0.83 $\pm$ 0.20 & -0.84 $\pm$ 0.01    &  0.01\\
-    phenanthrene    &-5.26$\pm$0.03& -                & -3.88 $\pm$ 0.60 & -3.47 $\pm$ 0.02    & 0.41 \\
-    \hline
-    \hline
-%    RMSE         &                  &               &  0.24     &      \\
-%    \hline
+  	\hline\hline
+  	Solute       & $\Delta G_{solv}^{GAFF}$ & $\Delta G_{solv}^{ELBA}$ & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute  \\
+  	             &                          &                          &                         &                         & Deviation \\ \hline
+  	propane      & 2.50 $\pm$0.02           & 2.76 $\pm$ 0.02          & 2.00 $\pm$ 0.20         & 2.01 $\pm$ 0.01         & 0.01      \\
+  	benzene      & -0.81$\pm$0.02           & -0.69 $\pm$ 0.01         & -0.86 $\pm$ 0.20        & -1.12 $\pm$ 0.01        & 0.26      \\
+  	toluene      & -0.79$\pm$0.03           & -0.76 $\pm$ 0.01         & -0.83 $\pm$ 0.20        & -0.84 $\pm$ 0.01        & 0.01      \\
+  	phenanthrene & -5.26$\pm$0.03           & -                        & -3.88 $\pm$ 0.60        & -3.47 $\pm$ 0.02        & 0.41      \\ \hline\hline
+  	%    RMSE    &                          &                          & 0.24                    &  \\
+  	%    \hline  &
   \end{tabular}
 
 \end{table}
@@ -266,26 +247,17 @@ Using the solvation free energies estimated in the sections above, we also calcu
     \caption{Partition Coefficient Calculated from MD simulations and from experimental data.}
     \label{tbl:part}
     \begin{tabular}{llll}
-        \hline
-        \hline
-         & {Molecular Dynamics} & {Experimental}& Absolute Deviation\\
-       \hline
-       \multicolumn{4}{c}{log $P^{water/1-octanol}$} \\
-           \hline
-       propane &2.47  &  2.40 & 0.07\\
-       phenanthrene &3.57  & 4.46 & 0.89\\
-       \hline
-       \multicolumn{4}{c}{log $P^{water/hexane}$} \\
-           \hline
-       benzene &1.93  &  2.06 & 0.13\\
-       phenanthrene &4.17  & 4.49 & 0.32 \\
-       \hline
-       \multicolumn{4}{c}{log $P^{tolune/hexane}$} \\
-           \hline 
-       pyrene &-0.67  &  -0.97 & 0.30\\
-       phenanthrene &-0.47  & - & - \\ 
-           \hline    
-           \hline 
+    	\hline\hline
+    	             & {Molecular Dynamics} & {Experimental} & Absolute Deviation \\ \hline
+    	              \multicolumn{4}{c}{log $P^{water/1-octanol}$}               \\ \hline
+    	propane      & 2.47                 & 2.40           & 0.07               \\
+    	phenanthrene & 3.57                 & 4.46           & 0.89               \\ \hline
+    	               \multicolumn{4}{c}{log $P^{water/hexane}$}                 \\ \hline
+    	benzene      & 1.93                 & 2.06           & 0.13               \\
+    	phenanthrene & 4.17                 & 4.49           & 0.32               \\ \hline
+    	               \multicolumn{4}{c}{log $P^{tolune/hexane}$}                \\ \hline
+    	pyrene       & -0.67                & -0.97          & 0.30               \\
+    	phenanthrene & -0.47                & -              & -                  \\ \hline\hline
     \end{tabular}
     
 \end{table}
