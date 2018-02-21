@@ -14,11 +14,11 @@
 \contentsline {section}{\numberline {2.2}Coarse-Grained (CG) Force Fields}{16}{section.2.2}
 \contentsline {section}{\numberline {2.3}Solvation Free Energies}{20}{section.2.3}
 \contentsline {section}{\numberline {2.4}Solvation Free Energy Calculation Methods}{22}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Thermodynamic integration}{22}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Thermodynamic integration}{23}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Histograms}{23}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Free Energy of Perturbation (FEP)}{24}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Bennet Acceptance Ratio (BAR)}{25}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{26}{subsubsection.2.4.3.2}
+\contentsline {subsection}{\numberline {2.4.3}Free Energy Perturbation (FEP)}{24}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Bennett Acceptance Ratio (BAR)}{25}{subsubsection.2.4.3.1}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennet Acceptance Ratio (MBAR)}{27}{subsubsection.2.4.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentals of the Computational Methods}}{28}{chapter.3}
 \contentsline {section}{\numberline {3.1}Molecular Dynamics}{28}{section.3.1}

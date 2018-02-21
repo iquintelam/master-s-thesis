@@ -2,7 +2,7 @@
 \select@language {english}
 \contentsline {figure}{\numberline {2.2.1}{\ignorespaces Schematic representation for the two different approaches of coarse-graining.\relax }}{18}{figure.caption.8}
 \contentsline {figure}{\numberline {3.1.1}{\ignorespaces Periodic boundary condition representation. Taken from \citeonline {frenkel}\relax }}{36}{figure.caption.9}
-\contentsline {figure}{\numberline {3.1.2}{\ignorespaces Lennard Jones potential representation. \relax }}{38}{figure.caption.10}
+\contentsline {figure}{\numberline {3.1.2}{\ignorespaces Lennard Jones potential representation for $\sigma = 1$ and $\epsilon = 1$. \relax }}{38}{figure.caption.10}
 \contentsline {figure}{\numberline {3.2.1}{\ignorespaces Values for parameter $\chi $ according to the ring geometry. Adapted from \citeonline {muller2017}.\relax }}{42}{figure.caption.11}
 \contentsline {figure}{\numberline {3.3.1}{\ignorespaces Thermodynamic cycle for solvation free energy calculations with molecular dynamics. Adapted from \citeonline {klimovich}.\relax }}{49}{figure.caption.12}
 \contentsline {figure}{\numberline {3.3.2}{\ignorespaces Soft-core potential in reduced units.\relax }}{51}{figure.caption.13}
