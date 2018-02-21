@@ -55,7 +55,7 @@ Though this variety of data using the intramolecular Lennard-Jones potential, we
 
 \section{Solvation Free Energy Calculation Methods}
 
-Solvation free energy calculations account for the difference in free energy related to transferring the solute form ideal gas condition to the liquid solvent condition. To do that, we gradually insert the solute in the solvent. This process is mathematically carried out by using a coupling parameter ($\lambda$) on the potential energy function. The $\lambda$ represents an intermediate state in the transition from the ideal gal condition to the solvent condition, and, during the solvation free energy simulations, we obtain total potential energies correspondent to these coupling parameters ($U(\lambda)$). After these molecular simulations, the potential energies need to be post-processed and analyzed to calculate the solvation free energies effectively. Since these calculations can have slow convergences, a lot of papers in the last decades focused on developing methods to improve sampling and analysis techniques. Almost all methods rely on o the following approaches:  free energy perturbation (FEP) based methods, thermodynamic integration, and histograms.
+Solvation free energy calculations account for the difference in free energy related to transferring the solute form ideal gas condition to the liquid solvent condition. To do that, we gradually insert the solute in the solvent. This process is mathematically carried out by using a coupling parameter ($\lambda$) on the total potential energy function. The $\lambda s$ represent intermediate states in the transition from the ideal gal condition to the solvent condition, and, during the solvation free energy simulations, we obtain total potential energies correspondent to these coupling parameters ($U(\lambda)$). After these simulations, the potential energies need to be post-processed and analyzed to calculate the solvation free energies effectively. Since these calculations can have slow convergences, a lot of papers in the last decades focused on developing methods to improve sampling and analysis techniques. Almost all methods rely on o the following approaches:  free energy perturbation (FEP) based methods, thermodynamic integration, and histograms.
 
 \subsection{Thermodynamic integration}
 
@@ -94,7 +94,7 @@ The thermodynamic integration method \cite{kirkwood1935} uses equilibrium averag
 \end{aligned}
 \end{equation}
 
-In Eq. \eqref{eq:ti3}, $k_{b}$ is the Boltzmann constant, $G$ is the Gibbs free energy and $\mathcal{H}$ is the Halmitonian of the system. The derivative is obtained for every configuration data between the states from simulations through an analytical expression. Some examples of methods for the interpolations are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific, such as as those found  in \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations for each coupling parameter $\lambda_{k}$ are carried out and the average over the derivative at each state is compute in order to obtain the final solvation free energy:
+In Eq. \eqref{eq:ti3}, $k_{b}$ is the Boltzmann constant, $G$ is the Gibbs free energy and $\mathcal{H}$ is the Halmitonian of the system. The derivative is obtained for every configuration data between the states from simulations through an analytical expression. Some examples of methods for obtaining theses expressions are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific, such as as those found  in \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations for each coupling parameter $\lambda_{k}$ are carried out and the average over the derivative at each state is compute in order to obtain the final solvation free energy:
 
 \begin{equation}
 \label{eq:ti4}
@@ -128,7 +128,7 @@ The free energy perturbation method \cite{zwanzig1954} is the oldest and one of 
 \end{aligned}
 \end{equation}
 
-According to the equation above, the free energy difference is calculated by doing an average over the configurations of state A and B obtained during the simulation of state A. This method requires a great overlap between states(the state B needs to represent a small perturbation in state A) in order to obtain a rapid convergence of the free energy difference. To ensure overlap, it is possible to carry out simulations in N intermediate states between A and B, so Eq. \eqref{eq:fep} becomes:
+According to the equation above, the free energy difference is calculated by doing an average over the configurations of state A and B obtained during the simulation of state A. This method requires a great overlap between states (the state B needs to represent a small perturbation in state A) in order to obtain a rapid convergence of the free energy difference. To ensure overlap, it is possible to carry out simulations in N intermediate states between A and B, so Eq. \eqref{eq:fep} becomes:
 
 \begin{equation}
 \label{eq:fepint}
@@ -158,7 +158,7 @@ C = \Delta G_{ij} + \frac{1}{\beta}ln\left(\frac{N_{j}}{N_{i}}\right)
 \end{aligned}
 \end{equation}
 
-The total free energy difference between the end states is then given by the sum over differences of consecutive intermediate states. This method also provides a function to obtain the for free energy differences, which is a minimum. The variance equation for any value of C is given by:
+The total free energy difference between the end states is then given by the sum over differences of consecutive intermediate states. This method also provides a function to obtain the variance for the free energy differences, which is a minimum. The variance equation for any value of C is given by:
 
 \begin{equation}
 \label{eq:barvar}
@@ -182,7 +182,7 @@ G_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
 \end{aligned}
 \end{equation}
 
-The equation above requires the evaluation of the potential energy  of  the $n_{th}$ uncorrelated configuration obtained at state K [$U_{i}(x_{kn}$] and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are given then by $\Delta G_{ij} = G_{j} -  G_{i}$. The uncertainties  can be computed by the matrix of covariances:
+The equation above requires the evaluation of the potential energy $[U_{i}(x_{kn})]$ of  the $n_{th}$ uncorrelated configuration obtained at state K and  all uncorrelated configuration snapshots ($N_{k}$) from state $K$. Free energy changes between states are given then by $\Delta G_{ij} = G_{j} -  G_{i}$. The uncertainties  can be computed by the matrix of covariances:
 
 \begin{equation}
 \label{eq:varmbar}

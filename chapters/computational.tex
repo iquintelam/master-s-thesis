@@ -22,14 +22,14 @@ In order to develop equations for any coordinate system, for instance $q^{N}=(r_
 \mathcal{H} (q^{N},p^{N}) = K(p^{N}) + U(q^{N}) 
 \end{equation}
 
-In the equation above, $K$ is the kinetic energy and $U$ is the potential energy. The equations of motion can now be represented by:
+In the equation above, $K$ is the kinetic energy and $U$ is the potential energy. The equations of motion are then rewritten using the Hamiltonian:
 
 \begin{equation}
 \frac{d \vec{p}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
 \end{equation}
 
 \begin{equation}
-\frac{d \vec{q}_{i}}{dt} = + \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
+\frac{d \vec{q}_{i}}{dt} =  \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
 \end{equation}
 
 In the dynamics described by the equations above, the Hamiltonian is preserved. The coordinate and momentum axes for each atom in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system will explore with the same probability all regions of the phase space of microstates with the same energy \cite{shell2015}. 
@@ -102,7 +102,7 @@ Q(N,V,T) = \int d^{N}p d^{N}r \exp \left[ -\beta \mathcal{H} (r^{N},p{N})
 \end{aligned}
 \end{equation}
 
-From these relations and a differential change in G, we can obtain the chemical potential ($\mu$), volume and entropy ($S$) relations for isenthalpic-isobaric ensemble:
+From these relations and a differential change in G, we can obtain the chemical potential ($\mu$), volume and entropy relations for isothermal-isobaric ensemble:
 
 \begin{equation}
 \mu = \left (\frac{\partial G}{\partial N} \right)_{P,T} = - \kappa_{b} T \left(\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,T}
@@ -180,31 +180,154 @@ The equations of motion above are integrated numerically using the methodologies
 
 \subsection{Integration of the equations of motion}
 
-With the formalism defined for the equations of motions and for the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time ($r^{N}(t)$) by updating the positions in discrete time intervals or time steps. One of the possible methods is known as Verlet \cite{verlet}. Its proposed equation for the update of  coordinates is:  
+With the formalism defined for the equations of motions and for the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time ($r^{N}(t)$) by updating the positions in discrete time intervals or time steps. To do that, the classical time evolution approach is used to preserve the Hamiltonian of the system in the numerical integration methods. In this approach, we start considering the time evolution of an arbitrary function $a(x_{t})$ along a trajectory $x_{t}$. Doing the time derivative of $a(x_{t})$:
 
 \begin{equation}
-r(t+ \Delta t) = 2r(t) - r(t \Delta t) + \frac{F(t)}{m} \Delta t^{2} +\vartheta (\Delta t^{4})
+\frac{da}{dt} = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right]
+\label{eqn:operador}
 \end{equation}
 
-In this equation, the accuracy is of order $\vartheta (\Delta t^{4})$ and the positions are updated by a time step of $\Delta t$ by using the positions at the previous two time steps and the forces ($F$). The forces  acting on every particle are calculated by taking directional derivatives of the intermolecular potential $U(r)$ in relation to the atomic positions:
-\begin{equation}
-\label{eq:forces}
-\vec{F }(r) =  - \nabla U(r)
-\end{equation}
-
-The velocities in this method are approximated by:
+In the equation above, we can represent the time evolution of $a(x_{t})$ with  the Poisson bracket:
 
 \begin{equation}
-v(t+ \Delta t) = \frac{r(t+ \Delta t) - r(t- \Delta t)}{2 \Delta t} +\vartheta (\Delta t^{3})
+\frac{da}{dt} = \{a,\mathcal{H}\}
 \end{equation}
 
-The Verlet method does not use the velocity directly to update the positions. Hence, the Velocity Verlet algorithm was proposed to serve as a reformulation of the Verlet algorithm that uses the velocity: 
+The Poisson bracket is equal to applying the Liouville operator ($i\mathcal{L}$) on the phase space. Hence,
+
+\begin{equation}
+\begin{aligned}
+\frac{da}{dt} = i\mathcal{L} a 
+\end{aligned}
+\label{eqn:liou}
+\end{equation}
+
+Substituting the equation above on the Eq. \ref{eqn:operador}:
+
+\begin{equation}
+\begin{aligned}
+i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right]
+\label{eqn:liou2}
+\end{aligned}
+\end{equation}
+
+The solution of Eq. \ref{eqn:liou} for $a(x_{t})$ is given by
+
+\begin{equation}
+a(x_{t}) = \exp [i\mathcal{L}t] a(x_{0})
+\label{eqn:exactsol}
+\end{equation}
+
+Here, $\exp [i\mathcal{L}t]$ is known as the classical propagator. The effect of this operator in a function can not be evaluated, however, we can develop approximate solutions for the Hamiltonian's equations with this operator. Rewriting Eq. \ref{eqn:liou2} as
+
+\begin{equation}
+\begin{aligned}
+i\mathcal{L}  =  i\mathcal{L}_{1} + i\mathcal{L}_{2},
+\end{aligned}
+\end{equation}
+where
+\begin{equation}
+\begin{aligned}
+i\mathcal{L}_{1} = \sum_{\alpha=1}^{N}  \dfrac{\partial }{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}   \\
+i\mathcal{L}_{2} = - \sum_{\alpha=1}^{N} \dfrac{\partial }{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} 
+\end{aligned}
+\end{equation}
+
+The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators that is, the order in which the operator are applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t])$. Though we can not to that, we can still express the propagator in terms of these two factor by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
+
+\begin{equation}
+\begin{aligned}
+\exp (i\mathcal{L}t)  = \exp (i\mathcal{L}_{1}t + i\mathcal{L}_{2}t) = \\
+\lim\limits_{P \rightarrow \infty} \left [ \exp (i\mathcal{L}_{2}t/2P) \exp (i\mathcal{L}_{1}t/P) \exp (i\mathcal{L}_{2}t/2P) \right ]^{P},
+\end{aligned}
+\label{eqn:trotter}
+\end{equation}
+where P is an integer. Defining a time step $\Delta t =t/P$ and using it in Eq. \ref{eqn:trotter}, we have
+
+\begin{equation}
+\begin{aligned}
+\exp (i\mathcal{L}t)  = 
+\lim\limits_{P \rightarrow \infty, \Delta t \rightarrow 0} \left [ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2) \right ]^{P},
+\end{aligned}
+\label{eqn:trotterdt}
+\end{equation}
+
+In order to obtain an approximation for $\exp (i\mathcal{L}t)$, we do take the limits and consider that P is a finite number. The resulting approximation for the classical propagator is then 
+
+\begin{equation}
+\begin{aligned}
+\exp (i\mathcal{L}t)  \equiv
+ \left [ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2) \right ]^{P} + \vartheta (P \Delta t^{3}),
+\end{aligned}
+\end{equation}
+using $P= t/\Delta t$
+\begin{equation}
+\begin{aligned}
+\exp (i\mathcal{L} \Delta t)  \equiv
+ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2)  + \vartheta (\Delta t^{3})
+\end{aligned}
+\label{eqn:trotterfin}
+\end{equation}  
+
+Now we can use Eq. \ref{eqn:trotterfin} as a numerical propagation for a single time step ($\Delta t$). Using this propagation on a single particle moving with Hamiltonian, where $i\mathcal{L}_{1} = K (p)$ and $i\mathcal{L}_{2} = U (r)$, we obtain
+
+\begin{equation}
+\begin{aligned}
+\exp (i\mathcal{L} \Delta t)  \equiv
+\exp \left (-\frac{\Delta t}{2} \dfrac{\partial U}{\partial r} \dfrac{\partial}{\partial p} \right) \exp \left( \Delta t \frac{p}{m}\dfrac{\partial }{\partial r} \right)\exp \left (-\frac{\Delta t}{2} \dfrac{\partial U}{\partial r} \dfrac{\partial}{\partial p} \right) 
+\end{aligned}
+\label{eqn:trotterfin2}
+\end{equation} 
+where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ is equal to the force ($F$) acting on the particle. We now are able to replace the exact evolution solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution, from a initial condition $(r(t),p(t))$, is then
+
+\begin{equation}
+\begin{aligned}
+\left[ \begin{array}{c} r(t+ \Delta t) \\ p(t + \Delta t) \end{array} \right] \equiv 
+\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right) \\
+\times \exp \left( \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right) \\
+\times \exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
+ \left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right]
+\end{aligned}
+\end{equation}
+
+The propagation is the determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence, we have the following equation after applying the first operator:
+
+\begin{equation}
+\begin{aligned}
+\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
+\left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right] = 
+\left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right]
+\end{aligned}
+\end{equation}
+
+Acting the second operator on the equation above:
+
+\begin{equation}
+\begin{aligned}
+\exp \left( \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right)
+\left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right] = 
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right]
+\end{aligned}
+\end{equation}
+and, finally:
+
+\begin{equation}
+\begin{aligned}
+\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right]= \\ 
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m} (p(t)+\frac{\Delta t}{2} F(r(t))) \\ p(t) + \frac{\Delta t}{2} F(r(t)) + \frac{\Delta t}{2} F\{r(t)+ \frac{\Delta t}{m} [p + \frac{\Delta t}{2}F(r(t))]\}\end{array} \right]
+\end{aligned}
+\end{equation}
+
+Using the equations above and substituting $p/m$ for $v$, the final position $r(t+\Delta t)$ can be written as:
 
 \begin{equation}
 r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
+\label{eqn:verlet}
 \end{equation}
 
-The velocity in the equation above is updated following:
+Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method does not use the velocity directly to update the positions. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculation of forces at each time step is the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above, and is given by
+
 \begin{equation}
 v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
 \end{equation}
@@ -219,7 +342,7 @@ v(t+ \Delta t /2) = v(t- \Delta t /2) +\frac{F(t+ \Delta t) +F(t)}{m} \Delta t
 r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t
 \end{equation}
 
-All the formulations described above generate the same trajectory for a given initial configuration.
+Although using different time steps or formulations, both the methods described  generate the same trajectory for a given initial configuration.
 
 \subsection{Initial Configuration and Periodic Boundary Condition}
 
@@ -229,7 +352,9 @@ The equations above require an overlap-free initial configuration with positions
 \varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} exp(-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T})
 \end{equation}
 
-Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x-ray or NMR spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}. Independently of the technique used, certain restrictions should be applied in the initial configurations to carry out molecular simulations. As an example, the cubic lattice has a finite size, but a finite box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so-called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the N particles, replicated in a periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x-ray or NMR spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}. 
+
+Independently of the technique used, certain restrictions should be applied in the initial configurations to carry out molecular simulations. As an example, the cubic lattice has a finite size, but a finite box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so-called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the N particles, replicated in a periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
 
 \begin{figure}
 	\centering

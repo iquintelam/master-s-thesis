@@ -818,6 +818,11 @@ Accessed: 2017-03-10.}
   hydrodynamics to dna/rna systems.
 \emph{Chemical Society Reviews}, v.~43, p. 4871– 4893, 2014.}
 
+\bibitem[Strang 1968]{strang}
+\abntrefinfo{Strang}{STRANG}{1968}
+{STRANG, G. On the construction and comparison of difference schemes.
+\emph{SIAM Journal on Numerical Analysis}, v.~5, p. 506--517, 1968.}
+
 \bibitem[Teklebrhan \textit{et al.} 2014]{doi:10.1021/jp407363p}
 \abntrefinfo{Teklebrhan \textit{et al.}}{TEKLEBRHAN \textit{et al.}}{2014}
 {TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJ\"{O}BLOM, J. Initial
@@ -838,6 +843,12 @@ PMID: 24397444.}
   in broad-histogram monte carlo simulations.
 \emph{Physical Review E}, American Physical Society, v.~70, p. 046701, Oct
   2004.}
+
+\bibitem[Trotter 1959]{trotter}
+\abntrefinfo{Trotter}{TROTTER}{1959}
+{TROTTER, H.~F. On the product of semi-groups of operators.
+\emph{Proceeding of the American Mathematical Society}, v.~10, p. 545--551,
+  1959.}
 
 \bibitem[Tuckerman 2010]{tuckerman}
 \abntrefinfo{Tuckerman}{TUCKERMAN}{2010}
