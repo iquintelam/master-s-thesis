@@ -349,33 +349,42 @@ Although using different time steps or formulations, both the methods described 
 The equations above require an overlap-free initial configuration with positions and velocities for all atoms in the system. The initial velocities follow a temperature-dependent Maxwell-Boltzmann distribution, which is
 
 \begin{equation}
-\varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} exp(-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T})
+\varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} \exp \left (-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T} \right)
 \end{equation}
 
-Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x-ray or NMR spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}. 
+Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x-ray or NMR spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}. There are some softwares used to optimize this placement. Among them, there is the Packmol free software \cite{packmol}. It treats the initial configuration problem as a packing optimization problem. The molecules are packed in such way that atoms from different molecules keep a safe pairwise distance and, due to the optimization of function and gradient evaluations, this strategy enables the packing of millions of atoms in reasonable time \cite{packmol}.   
 
-Independently of the technique used, certain restrictions should be applied in the initial configurations to carry out molecular simulations. As an example, the cubic lattice has a finite size, but a finite box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so-called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the N particles, replicated in a periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}\cite{frenkel}.
+Independently of the technique or software used, certain restrictions should be applied in the initial configurations to carry out molecular simulations. As an example, the cubic lattice has a finite size, but a finite box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so-called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the N particles, replicated in a periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}. 
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{Figures/pbc}
-	\caption{Periodic boundary condition representation. Taken from \citeonline{frenkel}}
+	\caption{Periodic boundary condition representation.}
 	\label{fig:pbc}
+\end{figure}
+
+The application of the PBC results in particles interacting not only with each other but also with their images. This increases hugely the number of interacting pairs and, consequently, the computational time. To overcome that, we need to choose a finite range potential using the minimum image convention criteria. This criteria only allows a particle to interact with the nearest particle or image.  This is technically done during the simulations by neglecting the interactions between two particles at or beyond a maximum length, which is given the name of cutoff radius ($R_{c}$). This cutoff should be equal to or less than half of the box length. This process of examining each pair separation can also be expensive depending on the number of distinct pairs. That is the reason we use pair listings, which defines a $'$skin$'$ around the cutoff radius with a radius $R_{List}$ (Figure \ref{fig:pairlist}). The pair list is initially built of all the neighbors within a distance $R_{List}$ of each particle. Over the course of the simulation, only pairs in the pair list have their separation checked. This list can then be reconstructed in a certain time interval during the simulation, but is important to update this list before any unlisted pair have come within $R_{List}$.    
+
+ \begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/pairlist}
+	\caption{Representation of the cutoff radius and the pair listing radius.}
+	\label{fig:pairlist}
 \end{figure}
 \FloatBarrier
 \subsection{Force Fields }
-Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion. The description is done by approximating the potential energy function ($U(r^N)$). This function has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending, and bond torsion. Here we are going to present the equations which are most used to represent these interactions. The contribution to the bond stretching is usually given by the harmonic approximation around the energy minimum:
+Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion. The description is done by approximating the potential energy function ($U(r^N)$). This function has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending, and bond torsion. Here we are going to present the equations which are most used to represent these interactions. The contribution to the bond stretching (bs ) is usually given by the harmonic approximation around the energy minimum:
 
 \begin{equation}
 u_{bs}(d) = k_{bs} (d - d_{0})^2
 \end{equation}
 
-Here, $d$ is the bond length, $d_{0}$ is the equilibrium bond length and $k_{bs}$ is a bond stretching constant. The angle bending contribution corresponds to deviations from the preferred geometry, and is often given by:
+Here, $d$ is the bond length, $d_{0}$ is the equilibrium bond length and $k_{bs}$ is a bond stretching constant. The angle bending (ab) contribution corresponds to deviations from the preferred geometry, and is often given by:
 
 \begin{equation}
 u_{ab}(\theta) = k_{ab} (\theta - \theta _{0})^2
 \end{equation}
-where $k_{ab}$ and $\theta _{0}$ are constants defined by the force field and $\theta$ is the bond angle between three atoms.  The bond torsion interactions corresponds to the energies of rotations around bonds and it happens among four atoms. A commonly model is
+where $k_{ab}$ and $\theta _{0}$ are constants defined by the force field and $\theta$ is the bond angle between three atoms.  The bond torsion (bt) interactions corresponds to the energies of rotations around bonds and it happens among four atoms. A commonly used model is
 
 \begin{equation}
 u_{bt}(\omega) = \sum_{n=0}^{N}  c_{n} cos^{n} (\omega) 
@@ -388,7 +397,7 @@ The intermolecular interactions include electrostatic interactions, van der Waal
 u_{q}(r_{ij}) = \frac{q_{i}q_{j}}{4 \pi \epsilon _{0} r_{ij}}
 \end{equation} 
 
-In the equation above, $\epsilon _{0}$ is the free space permittivity constant and $r_{ij}$ is the distance between atoms i and j. In many force fields, the van der Waals interactions between particles i and j is modeled by the Lennard-Jones Potential:
+In the equation above, $\epsilon _{0}$ is the free space permittivity constant and $r_{ij}$ is the distance between atoms i and j. In many force fields, the van der Waals interaction between particles i and j is modeled by the Lennard-Jones Potential:
 \begin{equation}
 u_{LJ}(r_{ij}) = 4 \epsilon
 \left[ \left(\frac{\sigma}{r_{ij}} \right)^{12} - \left(\frac{\sigma}{r_{ij}} \right)^{6} \right]

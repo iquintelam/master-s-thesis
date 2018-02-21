@@ -172,7 +172,7 @@ There are two other methods related to the BAR method that do not solve Eqs. \eq
 
 \subsubsection{Multistate Bennet Acceptance Ratio (MBAR)}
 
-The MBAR method \cite{mbar} is a further development of the BAR method. It consists of an estimator that computes free energies and their uncertainties of each $K$ state by minimizing the $K \times K$ matrix of variances simultaneously. The estimator solves the following equation for each $G_{i}$ self consistently:
+The MBAR method \cite{mbar} is a further development of the BAR method, and is the chosen to estimate the solvation free energies in this dissertation. This method consists of an estimator that computes free energies and their uncertainties of each $K$ state by minimizing the $K \times K$ matrix of variances simultaneously. The estimator solves the following equation for each $G_{i}$ self consistently:
 
 \begin{equation}
 \label{eq:mbar}
@@ -196,3 +196,5 @@ where $\hat{Z_{j}}$ and $\hat{Z_{i}}$ are the partition functions of states $i$ 
 \delta _{ij}^{2} \Delta G_{ij} = s_{ii}^{2} + s_{jj}^{2} - 2 s_{ij}
 \end{aligned}
 \end{equation}
+
+A further development is available in section \ref{mbar}.
