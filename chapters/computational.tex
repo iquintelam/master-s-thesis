@@ -10,26 +10,26 @@
 Molecular Dynamics (MD) uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamic and dynamic information of a system. This information is extracted from the time evolution of the system, which is obtained  through the numerical integration of the Newton equations of motion \cite{tuckerman}:
 
 \begin{equation}
-\frac{d \vec{p}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}
+\frac{d \vec{p}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}},
 \end{equation}
 where $p_{i}$ is the momentum and $r_{N}$ are the coordinates of all the atoms$(x_{1},y_{1},z_{1},...,x_{N},y_{N},z_{N})$. Alternatively, we can write the equation relative to the velocity ($v_{i}$):
 \begin{equation}
-m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}
+m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}.
 \end{equation}
 
 In order to develop equations for any coordinate system, for instance $q^{N}=(r_{1},\theta _{1},\phi _{1})$ , the Halmitonian formulation, a more general formulation of classical mechanics,  is used to develop the equations of motion:
 \begin{equation}
-\mathcal{H} (q^{N},p^{N}) = K(p^{N}) + U(q^{N}) 
+\mathcal{H} (q^{N},p^{N}) = K(p^{N}) + U(q^{N}) .
 \end{equation}
 
 In the equation above, $K$ is the kinetic energy and $U$ is the potential energy. The equations of motion are then rewritten using the Hamiltonian:
 
 \begin{equation}
-\frac{d \vec{p}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
+\frac{d \vec{p}_{i}}{dt} = - \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}},
 \end{equation}
 
 \begin{equation}
-\frac{d \vec{q}_{i}}{dt} =  \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}
+\frac{d \vec{q}_{i}}{dt} =  \frac{\partial \mathcal{H}}{\partial \vec{q}_{i}}.
 \end{equation}
 
 In the dynamics described by the equations above, the Hamiltonian is preserved. The coordinate and momentum axes for each atom in a 6N dimensional space is defined as the phase space. The trajectory through the phase space is then the time evolution of a system in a molecular dynamics simulation. This evolution of the simulation may be used to calculate the thermodynamic properties if the system is ergodic. That is, a trajectory in this system will explore with the same probability all regions of the phase space of microstates with the same energy \cite{shell2015}. 
@@ -40,7 +40,7 @@ A statistical ensemble corresponds to the set of configurations of a system. For
 
 \begin{equation}
 \begin{aligned}
-\Omega (N,V,E) = \frac{\epsilon_{0}}{h^{3N}N!} \int dp^{N} dr^{N} \delta [\mathcal{H}(p^{N},r^{N}) -E]
+\Omega (N,V,E) = \frac{\epsilon_{0}}{h^{3N}N!} \int dp^{N} dr^{N} \delta [\mathcal{H}(p^{N},r^{N}) -E].
 \end{aligned}
 \end{equation}
 
@@ -48,7 +48,7 @@ Here, $\epsilon _{0}$ is the energy unit, $h$ is the Planck constant and $\delta
 
 \begin{equation}
 \begin{aligned}
-\varrho (p^{N},r^{N}) = \frac{[\mathcal{H}(p^{N},r^{N}) -E]}{ \Omega (N,V,E)} 
+\varrho (p^{N},r^{N}) = \frac{[\mathcal{H}(p^{N},r^{N}) -E]}{ \Omega (N,V,E)} .
 \end{aligned}
 \end{equation}
 
@@ -63,13 +63,13 @@ where $k_{b}$ is the Boltzmann constant. With this equations, we can derive othe
 
 \begin{equation}
 \begin{aligned}
-dS = \frac{1}{T} dE + \frac{P}{T} dV + \frac{\mu}{T} dN
+dS = \frac{1}{T} dE + \frac{P}{T} dV + \frac{\mu}{T} dN,
 \end{aligned}
 \end{equation}
 
 \begin{equation}
 \begin{aligned}
-dE = T dS + P dV + \mu dN
+dE = T dS + P dV + \mu dN .
 \end{aligned}
 \end{equation}
 
@@ -82,14 +82,14 @@ where $V = V(P)$. The Gibbs free energy is related to its partition function $\D
 \begin{equation}
 \label{eq:fisobari}
 \begin{aligned}
-G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
+G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T),
 \end{aligned}
 \end{equation}
 where $\Delta (N,P,T)$ is given by: 
 
 \begin{equation}
 \begin{aligned}
-\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d p^{N} d r^{N} \exp \left[ -\beta \left( \mathcal{H} (r^{N},p{N}) + PV(r^{N}) \right) \right]
+\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d p^{N} d r^{N} \exp \left[ -\beta \left( \mathcal{H} (r^{N},p{N}) + PV(r^{N}) \right) \right] .
 \end{aligned}
 \end{equation}
 
@@ -97,7 +97,7 @@ In the equation above, $Q (N,V,T)$ is the partition function of the canonical en
 
 \begin{equation}
 \begin{aligned}
-Q(N,V,T) = \int d^{N}p d^{N}r \exp \left[ -\beta \mathcal{H} (r^{N},p{N})
+Q(N,V,T) = \int d^{N}p d^{N}r \exp \left[ -\beta \mathcal{H} (r^{N},p{N}) .
 \right]
 \end{aligned}
 \end{equation}
@@ -105,13 +105,13 @@ Q(N,V,T) = \int d^{N}p d^{N}r \exp \left[ -\beta \mathcal{H} (r^{N},p{N})
 From these relations and a differential change in G, we can obtain the chemical potential ($\mu$), volume and entropy relations for isothermal-isobaric ensemble:
 
 \begin{equation}
-\mu = \left (\frac{\partial G}{\partial N} \right)_{P,T} = - \kappa_{b} T \left(\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,T}
+\mu = \left (\frac{\partial G}{\partial N} \right)_{P,T} = - \kappa_{b} T \left(\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,T},
 \end{equation}  
 \begin{equation}
-\langle V \rangle= \left (\frac{\partial G}{\partial P} \right)_{N,T}= \kappa_{b} T \left (\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,P}
+\langle V \rangle= \left (\frac{\partial G}{\partial P} \right)_{N,T}= \kappa_{b} T \left (\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,P},
 \end{equation}
 \begin{equation}
-S = \left (\frac{\partial G}{\partial T} \right)_{N,P}= \kappa_{b}  (ln Q(N,V,T)+ T \left (\frac{\partial ln Q (N,V,T)}{\partial T} \right)_{V,N})
+S = \left (\frac{\partial G}{\partial T} \right)_{N,P}= \kappa_{b}  \left[ln Q(N,V,T)+ T \left (\frac{\partial ln Q (N,V,T)}{\partial T} \right)_{V,N}\right] .
 \end{equation}
 
 \subsection{Thermostats and Barostats}
@@ -121,59 +121,59 @@ The isothermal-isobaric and canonical ensembles have external conditions being a
 Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, the Andersen \cite{1980JChPh722384A} and the Nose \cite{1984JChPh81511N} thermostats, but here we are going to discuss the most widely used thermostat: the Nosé-Hoover \cite{PhysRevA.31.1695}. This thermostat is based on the formulation of Nosé \cite{1984JChPh81511N}, whom used a Lagrangian that contains additional, artificial coordinates and velocities \cite{frenkel}. In this method the Halmitonian in a canonical ensemble is constructed as:
 
 \begin{equation}
-\mathcal{H} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3Nk_{b}T ln s
+\mathcal{H} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3Nk_{b}T ln s ,
 \end{equation}
 where $\xi$ is a friction coefficient related to the conjugate momentum of the thermal reservoir to which the system is coupled, $s$ is the position of the thermal reservoir and $\mathcal{Q}$ is the effective mass associated with s. The velocity update is then done with the Newton's equation with the addiction of the friction term \cite{shell2015}:
 
 \begin{equation}
-\frac{dr_{i}}{dt} = v_{i}
+\frac{dr_{i}}{dt} = v_{i},
 \end{equation}
 
 \begin{equation}
-\frac{dv_{i}}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}
+\frac{dv_{i}}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i},
 \end{equation}
 
 \begin{equation}
-\frac{\xi}{dt} = \frac{\sum m_{i} v_{i} - 3Nk_{b}T}{\mathcal{Q}} 
+\frac{\xi}{dt} = \frac{\sum m_{i} v_{i} - 3Nk_{b}T}{\mathcal{Q}} ,
 \end{equation}
 
 \begin{equation}
-\frac{\xi}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}
+\frac{\xi}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}.
 \end{equation}
 
-To increase the robustness of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed. It proposes the use of multiple thermal reservoirs that are linked to enhance temperature equilibration \cite{shell2015}.  
+To increase the robustness of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed. It proposes the use of multiple thermal reservoirs linked in order to enhance temperature equilibration \cite{shell2015}.  
 
 Meanwhile, the pressure is controlled with a barostat. It maintains the pressure constant during the simulation by adjusting the simulation volume. Among the available  barostats methodologies are the Berendsen \cite{doi:10.1063/1.448118}, in which the pressure is coupled to a pressure bath and the volume is periodically rescaled and the Anderson barostat \cite{1980JChPh722384A}, which serves as basis for other barostating methdos such as the ones developed by Hoover \cite{PhysRevA.31.1695}, Martina-Tobias-Klein \cite{doi:10.1063/1.467468} and Parrinnello-Rahman \cite{doi:10.1063/1.328693}. The Andersen's idea was couple the system to a fictions pressure bath and  incorporate the volume into the phase space as an additional degree of freedom \cite{tuckerman}. As in the Nosé-Hoover thermostat, Andersen added terms into the Hamiltonian in order to control the variable of interest:
 
 \begin{equation}
-\mathcal{H} =  \sum_{i} \frac{V^{-2/3} \pi _{i}^{2}}{2 m_{i}} + U(V^{1/3} \mathbf{s}^{N})  + \frac{p_{V} ^{2} }{2\mathcal{W}} + PV
+\mathcal{H} =  \sum_{i} \frac{V^{-2/3} \pi _{i}^{2}}{2 m_{i}} + U(V^{1/3} \mathbf{s}^{N})  + \frac{p_{V} ^{2} }{2\mathcal{W}} + PV,
 \end{equation}
 with $\mathbf{s}$ and $\pi$ being scale transformations:
 
 \begin{equation}
-\mathbf{s} _{i} =  V^{-1/3} r_{i} 
+\mathbf{s} _{i} =  V^{-1/3} r_{i} ,
 \end{equation}
 
 \begin{equation}
-\pi _{i} =  V^{1/3} p _{i}
+\pi _{i} =  V^{1/3} p _{i}.
 \end{equation}
 
 Here, $p_{V} $ is the momentum conjugate to the volume and $\mathcal{W}$ is a mass parameter that determines the time scale of the volume motion. With the equations above, we can derive the equations of motion in Cartesian coordinates for an constant pressure ensemble:
 
 \begin{equation}
-\frac{dr_{i}}{dt} = \frac{p_{i}}{m_{i}} + \frac{1}{3} \frac{dV}{dt} \frac{r_{i}}{V}
+\frac{dr_{i}}{dt} = \frac{p_{i}}{m_{i}} + \frac{1}{3} \frac{dV}{dt} \frac{r_{i}}{V},
 \end{equation}
 
 \begin{equation}
-\frac{dp_{i}}{dt} = -  \frac{\partial U}{\partial r_{i}} - \frac{1}{3} \frac{dV}{dt} \frac{p_{i}}{V}
+\frac{dp_{i}}{dt} = -  \frac{\partial U}{\partial r_{i}} - \frac{1}{3} \frac{dV}{dt} \frac{p_{i}}{V},
 \end{equation}
 
 \begin{equation}
-\frac{dV_{i}}{dt} = \frac{p_{V}}{\mathcal{W}}
+\frac{dV_{i}}{dt} = \frac{p_{V}}{\mathcal{W}},
 \end{equation}
 
 \begin{equation}
-\frac{dp_{V}}{dt} = \frac{1}{3V} \sum_{i} \left [ \frac{p_{i}^{2}}{m_{i}} -  \frac{\partial U}{\partial r_{i}} \cdot r_{i} \right] -P
+\frac{dp_{V}}{dt} = \frac{1}{3V} \sum_{i} \left [ \frac{p_{i}^{2}}{m_{i}} -  \frac{\partial U}{\partial r_{i}} \cdot r_{i} \right] -P.
 \end{equation}
 
 The equations of motion above are integrated numerically using the methodologies described in the next section.
@@ -183,30 +183,30 @@ The equations of motion above are integrated numerically using the methodologies
 With the formalism defined for the equations of motions and for the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time ($r^{N}(t)$) by updating the positions in discrete time intervals or time steps. To do that, the classical time evolution approach is used to preserve the Hamiltonian of the system in the numerical integration methods. In this approach, we start considering the time evolution of an arbitrary function $a(x_{t})$ along a trajectory $x_{t}$. Doing the time derivative of $a(x_{t})$:
 
 \begin{equation}
-\frac{da}{dt} = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right]
+\frac{da}{dt} = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right].
 \label{eqn:operador}
 \end{equation}
 
 In the equation above, we can represent the time evolution of $a(x_{t})$ with  the Poisson bracket:
 
 \begin{equation}
-\frac{da}{dt} = \{a,\mathcal{H}\}
+\frac{da}{dt} = \{a,\mathcal{H}\}.
 \end{equation}
 
 The Poisson bracket is equal to applying the Liouville operator ($i\mathcal{L}$) on the phase space. Hence,
 
 \begin{equation}
 \begin{aligned}
-\frac{da}{dt} = i\mathcal{L} a 
+\frac{da}{dt} = i\mathcal{L} a .
 \end{aligned}
 \label{eqn:liou}
 \end{equation}
 
-Substituting the equation above on the Eq. \ref{eqn:operador}:
+Substituting the equation above in Eq. \ref{eqn:operador}:
 
 \begin{equation}
 \begin{aligned}
-i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right]
+i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right].
 \label{eqn:liou2}
 \end{aligned}
 \end{equation}
@@ -214,11 +214,11 @@ i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\al
 The solution of Eq. \ref{eqn:liou} for $a(x_{t})$ is given by
 
 \begin{equation}
-a(x_{t}) = \exp [i\mathcal{L}t] a(x_{0})
+a(x_{t}) = \exp [i\mathcal{L}t] a(x_{0}).
 \label{eqn:exactsol}
 \end{equation}
 
-Here, $\exp [i\mathcal{L}t]$ is known as the classical propagator. The effect of this operator in a function can not be evaluated, however, we can develop approximate solutions for the Hamiltonian's equations with this operator. Rewriting Eq. \ref{eqn:liou2} as
+Here, $\exp [i\mathcal{L}t]$ is known as the classical propagator. The effect of this operator in a function cannot be evaluated. However, we can develop approximate solutions for the Hamiltonian's equations with this operator. Rewriting Eq. \ref{eqn:liou2} as
 
 \begin{equation}
 \begin{aligned}
@@ -229,11 +229,11 @@ where
 \begin{equation}
 \begin{aligned}
 i\mathcal{L}_{1} = \sum_{\alpha=1}^{N}  \dfrac{\partial }{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}   \\
-i\mathcal{L}_{2} = - \sum_{\alpha=1}^{N} \dfrac{\partial }{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} 
+i\mathcal{L}_{2} = - \sum_{\alpha=1}^{N} \dfrac{\partial }{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} .
 \end{aligned}
 \end{equation}
 
-The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators that is, the order in which the operator are applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t])$. Though we can not to that, we can still express the propagator in terms of these two factor by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
+The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators, that is the order in which the operator is applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t])$. Though we can not do that, we can still express the propagator in terms of these two factors by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
 
 \begin{equation}
 \begin{aligned}
@@ -257,14 +257,14 @@ In order to obtain an approximation for $\exp (i\mathcal{L}t)$, we do take the l
 \begin{equation}
 \begin{aligned}
 \exp (i\mathcal{L}t)  \equiv
- \left [ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2) \right ]^{P} + \vartheta (P \Delta t^{3}),
+\left [ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2) \right ]^{P} + \vartheta (P \Delta t^{3}),
 \end{aligned}
 \end{equation}
 using $P= t/\Delta t$
 \begin{equation}
 \begin{aligned}
 \exp (i\mathcal{L} \Delta t)  \equiv
- \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2)  + \vartheta (\Delta t^{3})
+\exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2)  + \vartheta (\Delta t^{3}).
 \end{aligned}
 \label{eqn:trotterfin}
 \end{equation}  
@@ -274,7 +274,7 @@ Now we can use Eq. \ref{eqn:trotterfin} as a numerical propagation for a single 
 \begin{equation}
 \begin{aligned}
 \exp (i\mathcal{L} \Delta t)  \equiv
-\exp \left (-\frac{\Delta t}{2} \dfrac{\partial U}{\partial r} \dfrac{\partial}{\partial p} \right) \exp \left( \Delta t \frac{p}{m}\dfrac{\partial }{\partial r} \right)\exp \left (-\frac{\Delta t}{2} \dfrac{\partial U}{\partial r} \dfrac{\partial}{\partial p} \right) 
+\exp \left (-\frac{\Delta t}{2} \dfrac{\partial U}{\partial r} \dfrac{\partial}{\partial p} \right) \exp \left( \Delta t \frac{p}{m}\dfrac{\partial }{\partial r} \right)\exp \left (-\frac{\Delta t}{2} \dfrac{\partial U}{\partial r} \dfrac{\partial}{\partial p} \right) ,
 \end{aligned}
 \label{eqn:trotterfin2}
 \end{equation} 
@@ -286,7 +286,7 @@ where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\p
 \exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right) \\
 \times \exp \left( \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right) \\
 \times \exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
- \left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right]
+\left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right] .
 \end{aligned}
 \end{equation}
 
@@ -296,17 +296,17 @@ The propagation is the determined by acting each of the three operators starting
 \begin{aligned}
 \exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
 \left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right] = 
-\left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right]
+\left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right] .
 \end{aligned}
 \end{equation}
 
-Acting the second operator on the equation above:
+Acting the second operator in the equation above:
 
 \begin{equation}
 \begin{aligned}
 \exp \left( \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right)
 \left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right] = 
-\left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right]
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right] .
 \end{aligned}
 \end{equation}
 and, finally:
@@ -315,44 +315,44 @@ and, finally:
 \begin{aligned}
 \exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
 \left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right]= \\ 
-\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m} (p(t)+\frac{\Delta t}{2} F(r(t))) \\ p(t) + \frac{\Delta t}{2} F(r(t)) + \frac{\Delta t}{2} F\{r(t)+ \frac{\Delta t}{m} [p + \frac{\Delta t}{2}F(r(t))]\}\end{array} \right]
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m} (p(t)+\frac{\Delta t}{2} F(r(t))) \\ p(t) + \frac{\Delta t}{2} F(r(t)) + \frac{\Delta t}{2} F\{r(t)+ \frac{\Delta t}{m} [p + \frac{\Delta t}{2}F(r(t))]\}\end{array} \right] .
 \end{aligned}
 \end{equation}
 
-Using the equations above and substituting $p/m$ for $v$, the final position $r(t+\Delta t)$ can be written as:
+Using the equations above and substituting $p/m$ for $v$, the final position $r(t+\Delta t)$ can be written as
 
 \begin{equation}
-r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}
+r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}.
 \label{eqn:verlet}
 \end{equation}
 
-Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method does not use the velocity directly to update the positions. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculation of forces at each time step is the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above, and is given by
+Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method does not use the velocity directly to update the positions. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculations of forces at each time step is the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above and is given by
 
 \begin{equation}
-v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t
+v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t .
 \end{equation}
 
 Instead of using a time step of $\Delta t$, the velocities can be updated at $\Delta t /2$. This is the strategy proposed by the leap frog algorithm:
 
 \begin{equation}
-v(t+ \Delta t /2) = v(t- \Delta t /2) +\frac{F(t+ \Delta t) +F(t)}{m} \Delta t
+v(t+ \Delta t /2) = v(t- \Delta t /2) +\frac{F(t+ \Delta t) +F(t)}{m} \Delta t ,
 \end{equation}
 
 \begin{equation}
-r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t
+r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t .
 \end{equation}
 
-Although using different time steps or formulations, both the methods described  generate the same trajectory for a given initial configuration.
+Although using different time steps or formulations, both methods described generate the same trajectory for a given initial configuration.
 
 \subsection{Initial Configuration and Periodic Boundary Condition}
 
 The equations above require an overlap-free initial configuration with positions and velocities for all atoms in the system. The initial velocities follow a temperature-dependent Maxwell-Boltzmann distribution, which is
 
 \begin{equation}
-\varrho (v_{x,i}) = {\frac{m_{i}}{2 \pi k_{b} T}}^{\frac{1}{2}} \exp \left (-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T} \right)
+\varrho (v_{x,i}) = \left (\frac{m_{i}}{2 \pi k_{b} T} \right )^{\frac{1}{2}} \exp \left (-\frac{m_{i}v_{x,i}^2}{2 \pi k_{b} T} \right) .
 \end{equation}
 
-Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x-ray or NMR spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}. There are some softwares used to optimize this placement. Among them, there is the Packmol free software \cite{packmol}. It treats the initial configuration problem as a packing optimization problem. The molecules are packed in such way that atoms from different molecules keep a safe pairwise distance and, due to the optimization of function and gradient evaluations, this strategy enables the packing of millions of atoms in reasonable time \cite{packmol}.   
+Random velocities are then found with the equation above for each of the 3N components of the velocity. Meanwhile, the initial positions can be obtained by several approaches. The initial configuration can be taken from x-ray or nuclear magnetic resonance (NMR) spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}.  Among the available software to optimize this placement, there is the Packmol software \cite{packmol}. It treats the initial configuration problem as a packing optimization problem. The molecules are packed in such way that atoms from different molecules keep a safe pairwise distance and, due to the optimization of function and gradient evaluations, this strategy enables the packing of millions of atoms in reasonable time \cite{packmol}.   
 
 Independently of the technique or software used, certain restrictions should be applied in the initial configurations to carry out molecular simulations. As an example, the cubic lattice has a finite size, but a finite box would result in simulations dominated by surface effects. To avoid that, we can create a box periodically repeated in all directions by applying the so-called Periodic Boundary Conditions (PBC). The periodic box has a primitive cell, which contains the N particles, replicated in a periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}. 
 
@@ -363,9 +363,9 @@ Independently of the technique or software used, certain restrictions should be 
 	\label{fig:pbc}
 \end{figure}
 
-The application of the PBC results in particles interacting not only with each other but also with their images. This increases hugely the number of interacting pairs and, consequently, the computational time. To overcome that, we need to choose a finite range potential using the minimum image convention criteria. This criteria only allows a particle to interact with the nearest particle or image.  This is technically done during the simulations by neglecting the interactions between two particles at or beyond a maximum length, which is given the name of cutoff radius ($R_{c}$). This cutoff should be equal to or less than half of the box length. This process of examining each pair separation can also be expensive depending on the number of distinct pairs. That is the reason we use pair listings, which defines a $'$skin$'$ around the cutoff radius with a radius $R_{List}$ (Figure \ref{fig:pairlist}). The pair list is initially built of all the neighbors within a distance $R_{List}$ of each particle. Over the course of the simulation, only pairs in the pair list have their separation checked. This list can then be reconstructed in a certain time interval during the simulation, but is important to update this list before any unlisted pair have come within $R_{List}$.    
+The application of the PBC results in particles interacting not only with each other but also with their images. This fact greatly increases the number of interacting pairs and, consequently, the computational time. To overcome that, we need to choose a limited range potential using the minimum image convention criterion. This criterion only allows a particle to interact with the nearest particle or image.  This is technically done during the simulations by neglecting the interactions between two particles at or beyond a maximum length, which is given the name of cutoff radius ($R_{c}$). This cutoff should be equal to or less than half of the box length. This process of examining each pair separation can also be expensive depending on the number of distinct pairs. That is the reason molecular dynamics algorithms use pair listings. This method defines a 'skin' around the cutoff radius with a radius $R_{List}$ (Figure \ref{fig:pairlist}). The pair list is initially built of all the neighbors within a distance $R_{List}$ of each particle. Over the course of the simulation, only pairs in the pair list have their separation checked. This list can then be reconstructed in a specific time interval during the simulation but is essential to update this list before any unlisted pairs have come within $R_{List}$.    
 
- \begin{figure}
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/pairlist}
 	\caption{Representation of the cutoff radius and the pair listing radius.}
@@ -373,40 +373,54 @@ The application of the PBC results in particles interacting not only with each o
 \end{figure}
 \FloatBarrier
 \subsection{Force Fields }
-Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion. The description is done by approximating the potential energy function ($U(r^N)$). This function has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, bond angle bending, and bond torsion. Here we are going to present the equations which are most used to represent these interactions. The contribution to the bond stretching (bs ) is usually given by the harmonic approximation around the energy minimum:
+Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion. The description is done by approximating the potential energy function ($U(r^N)$), which has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, angle bending, and bond torsion (Figure \ref{fig:intraint}). 
+
+\begin{figure}[H]
+	\centering
+	\subfloat[a]{{\includegraphics[width=.4\textwidth]{Figures/bondstrech} }}%
+	\qquad
+	\subfloat[b]{{\includegraphics[width=.4\textwidth]{Figures/anglebend} }}%
+	\qquad
+	\subfloat[c]{{\includegraphics[width=.4\textwidth]{Figures/torsion} }}%    
+	\caption{Representation of bond stretching [a], angle bending [b], and bond torsion [c].}%
+	\label{fig:intraint}%
+\end{figure}
+
+
+At this dissertation, we are going to present the equations which are most used to represent these interactions. The contribution to the bond stretching (bs ) is usually given by the harmonic approximation around the energy minimum:
 
 \begin{equation}
-u_{bs}(d) = k_{bs} (d - d_{0})^2
+u_{bs}(d) = k_{bs} (d - d_{0})^2 .
 \end{equation}
 
-Here, $d$ is the bond length, $d_{0}$ is the equilibrium bond length and $k_{bs}$ is a bond stretching constant. The angle bending (ab) contribution corresponds to deviations from the preferred geometry, and is often given by:
+Here, $d$ is the bond length, $d_{0}$ is the equilibrium bond length and $k_{bs}$ is a bond stretching constant. The angle bending (ab) contribution corresponds to deviations from the preferred geometry and is often given by:
 
 \begin{equation}
-u_{ab}(\theta) = k_{ab} (\theta - \theta _{0})^2
+u_{ab}(\theta) = k_{ab} (\theta - \theta _{0})^2,
 \end{equation}
-where $k_{ab}$ and $\theta _{0}$ are constants defined by the force field and $\theta$ is the bond angle between three atoms.  The bond torsion (bt) interactions corresponds to the energies of rotations around bonds and it happens among four atoms. A commonly used model is
+where $k_{ab}$ and $\theta _{0}$ are constants defined by the force field and $\theta$ is the bond angle between three atoms.  The bond torsion (bt) interactions correspond to the energies of rotations around bonds, and it happens among four atoms. A commonly used model is
 
 \begin{equation}
-u_{bt}(\omega) = \sum_{n=0}^{N}  c_{n} cos^{n} (\omega) 
+u_{bt}(\omega) = \sum_{n=0}^{N}  c_{n} cos^{n} (\omega) ,
 \end{equation}
-where N is the number of terms, $c_{n}$ is the coefficient defined by the force field and $\omega$ is the torsional angle defined by the force field. 
+where N is the number of terms, $c_{n}$ is the coefficient defined by the force field and $\omega$ is the torsional angle also defined by the force field. 
 
-The intermolecular interactions include electrostatic interactions, van der Waals interactions. The first, electrostatic interactions, represents the interaction between two atoms i and j with partial charges ($q_{i} and q_{j}$), and it follows the Coulomb's Law:
+The other type of interactions, the intermolecular interactions, include electrostatic and van der Waals interactions. The first one represents the interaction between two atoms i and j with partial charges ($q_{i} and q_{j}$) and they are usually represented by Coulomb's Law:
 
 \begin{equation}
-u_{q}(r_{ij}) = \frac{q_{i}q_{j}}{4 \pi \epsilon _{0} r_{ij}}
+u_{q}(r_{ij}) = \frac{q_{i}q_{j}}{4 \pi \epsilon _{0} r_{ij}} .
 \end{equation} 
 
 In the equation above, $\epsilon _{0}$ is the free space permittivity constant and $r_{ij}$ is the distance between atoms i and j. In many force fields, the van der Waals interaction between particles i and j is modeled by the Lennard-Jones Potential:
 \begin{equation}
 u_{LJ}(r_{ij}) = 4 \epsilon
-\left[ \left(\frac{\sigma}{r_{ij}} \right)^{12} - \left(\frac{\sigma}{r_{ij}} \right)^{6} \right]
+\left[ \left(\frac{\sigma}{r_{ij}} \right)^{12} - \left(\frac{\sigma}{r_{ij}} \right)^{6} \right],
 \end{equation}
-where  $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the Lennard Jones potential is presented in Figure \ref{fig:lj}.
+where  $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential. The graphical representation of the Lennard-Jones potential is presented in Figure \ref{fig:lj}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Figures/lj2}
-	\caption{Lennard Jones potential representation for $\sigma = 1$ and $\epsilon = 1$. }
+	\includegraphics[width=0.8\linewidth]{Figures/lj2}
+	\caption{Lennard-Jones potential representation for $\sigma = 1$ and $\epsilon = 1$. }
 	\label{fig:lj}
 \end{figure}
 
@@ -416,12 +430,12 @@ The final potential energy function defined by the force field can then be expre
 
 \begin{equation}
 \begin{aligned}
-U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_{ij})
+U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_{ij}) .
 \end{aligned}
 \end{equation}
 %\subsection{title}
 %It is possible to impose movements restrictions on the molecule or even consider the molecule as a rigid body in order to increase the integration step or to follow the modeling of the molecules. Methods for this include the SHAKE, RATTLE and Kamberaj algorithms \cite{RYCKAERT1977327,anderson1983,kamberaj}.
-	
+
 \section{SAFT-$\gamma$ Mie Force Field}
 	
 	
@@ -446,76 +460,83 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
     
 	Here, $a^{IDEAL}$ is the ideal contribution for a mixture. It is given by
 	\begin{equation}
-	a^{IDEAL} = \sum_{i=1}^{N_{c}} x_{i}\ln{(\rho_{i}{\Lambda_{i}}^3)} -1
+	a^{IDEAL} = \sum_{i=1}^{N_{c}} x_{i}\ln{(\rho_{i}{\Lambda_{i}}^3)} -1 ,
 	\label{eqn:aideal}
 	\end{equation}
 	where $x_{i}=N_{i}/N$ is the molar fraction of component i, $N_{i}$ is the number of molecules of each component, $\rho_{i}=N_{i}/V$ is the number density and $\Lambda_{i}^3$ is the de Broglie thermal wavelength. Also in Eq. \ref{eqn:miehelm}, $a^{MONO}$ is the monomer contribution, which  describes interactions between Mie segments and can be expressed, for a mixture, as
 	\begin{equation}
-	a^{MONO} = \left(\sum_{i=1}^{N_{c}} x_{i}m_{s,i} \right)a^{M}
+	a^{MONO} = \left(\sum_{i=1}^{N_{c}} x_{i}m_{s,i} \right)a^{M} .
 	\label{eqn:amonomer}
 	\end{equation}
 	
 	In the equation above, $m_{s,i}$ is the number of spherical segments making up the molecule i and $a^{M}$  is the monomer dimensionless Helmholtz free energy and it is expressed as a third-order perturbation expansion in the inverse temperature \cite{bh1976}:
 	\begin{equation}
-	a^{M} = a^{HS}+\beta{a_{1}}+\beta{a_{2}}^2+\beta{a_{3}}^3 
+	a^{M} = a^{HS}+\beta{a_{1}}+\beta{a_{2}}^2+\beta{a_{3}}^3 . 
 	\label{eqn:aM}
 	\end{equation}
 	
-	The detailing of terms of Eq. \eqref{eqn:amonomer} can be found in \citeonline{lafitte2013}. However, here we are going to  the hard-sphere dimensionless Helmholtz free energy for a mixture $a^{HS}$. It is given by:
+	 Here, $a^{HS}$ is the hard-sphere dimensionless Helmholtz free energy for a mixture and is given by:
 	\begin{equation}
-	a^{HS} = \frac{6}{\pi\rho_{s}}\left[\left(\frac{\zeta^3_2}{\zeta^2_3}-\zeta_0 \right)\ln(1-\zeta_3)+\frac{3\zeta_{1}\zeta_{2}}{1-\zeta_3}+ \frac{\zeta^3_2}{\zeta_{3}(1-\zeta_3)^2}\right]
+	a^{HS} = \frac{6}{\pi\rho_{s}}\left[\left(\frac{\zeta^3_2}{\zeta^2_3}-\zeta_0 \right)\ln(1-\zeta_3)+\frac{3\zeta_{1}\zeta_{2}}{1-\zeta_3}+ \frac{\zeta^3_2}{\zeta_{3}(1-\zeta_3)^2}\right] .
 	\label{eqn:hs}
 	\end{equation}
 	
 	The variable $\rho_{s}=\rho\sum_{i}^{N_c} x_{i}m_{s,i}$ is the total number density of spherical segments and $\zeta_l$ are the moments of the number density:
 	\begin{equation}
-	\zeta_l = \frac{\pi\rho_s}{6}\left(\sum_{i=1}^{N_c} x_{s,i}d_{ii} \right), l = 0,1,2,3
+	\zeta_l = \frac{\pi\rho_s}{6}\left(\sum_{i=1}^{N_c} x_{s,i}d_{ii} \right), l = 0,1,2,3 ,
 	\label{eqn:zetal}
 	\end{equation}
-	where $x_{s,i}$ is the mole fraction of segments and is related to the mole fractions of all component is ($x_i$) by:
+	where $x_{s,i}$ is the mole fraction of segments and is related to the mole fractions of all component ($x_i$) by:
 	\begin{equation}
-	x_{s,i} = \frac{m_{s,i}x_i}{\sum_{k=1}^{N_c} m_{s,k}x_{k} }
+	x_{s,i} = \frac{m_{s,i}x_i}{\sum_{k=1}^{N_c} m_{s,k}x_{k} } .
 	\label{eqn:xsi}
 	\end{equation}
 	
 	
 	The effective hard-sphere diameter $d_{ii}$ for the segments is:
 	\begin{equation}
-	d_{ii} =\int_{0}^{\sigma_{ii}} \left ( 1 - \exp \left [-\beta U^{Mie}_{ii}(r) \right ] \right ) dr
+	d_{ii} =\int_{0}^{\sigma_{ii}} \left ( 1 - \exp \left [-\beta U^{Mie}_{ii}(r) \right ] \right ) dr .
 	\label{eqn:diameter}
 	\end{equation}
 	
 	
-	The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of a 5-point Gauss-Legendre quadrature \cite{papa2014}. The term $a^{CHAIN}$ in Eq. \ref{eqn:miehelm} corresponds to the chain contribution. This chain formation of $m_{s}$ tangentially bonded Mie segments is based on the first-order perturbation theory (TPT1)  \cite{papa2014} and can be expressed as:
+	The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of a 5-point Gauss-Legendre quadrature \cite{papa2014}. The detailing of the other terms of Eq. \eqref{eqn:aM} can be found in \citeonline{lafitte2013}. The term $a^{CHAIN}$ in Eq. \ref{eqn:miehelm} corresponds to the chain contribution. This chain formation of $m_{s}$ tangentially bonded Mie segments is based on the first-order perturbation theory (TPT1)  \cite{papa2014} and can be expressed as:
 	\begin{equation}
-	a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln \left(g_{ii}^{Mie}(\sigma_{ii}) \right)
+	a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln \left(g_{ii}^{Mie}(\sigma_{ii}) \right) .
 	\label{eqn:achain}
 	\end{equation}
-	
-	
+		
 	The term $g_{ij}^{Mie}(\sigma_{ij})$ correspond to the radial distribution function (RDF) of the hypothetical Mie system evaluated at the effective diameter and can be obtained with the perturbation expansion:
 	\begin{equation}
 	\begin{aligned}
-	g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp[\beta\epsilon g_{1,ij}(\sigma_{ij})/g_{d,ij}^{HS}(\sigma_{ij}) + (\beta\epsilon)^{2} g_{2,ij}(\sigma_{ij})/g_{d,ij}^{HS}(\sigma_{ij})]
+	g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp \left [\beta\epsilon \frac{g_{1,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})} + (\beta\epsilon)^{2} \frac{g_{2,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})} \right] .
 	\end{aligned}
 	\label{eqn:gmie}
 	\end{equation}
 	
 	
-	The other terms in the equations above are explicitly exposed in the original article \cite{lafitte2013}. 
+	In the equation above, $g_{d,ij}^{HS}$ is obtained from 
+	
+	\begin{equation}
+	\begin{aligned}
+	g_{d,ij}^{HS}(\sigma_{ij}) = \exp (k_{0} + k_{1} x_{0,ij} + k_{2} x_{0,ij}^{2} + k_{3} x_{0,ij}^{3}) ,
+	\end{aligned}
+	\label{eqn:ghs}
+	\end{equation}
+	where with $x_{0,ij} = \sigma_{ij}/d_{ij}$ and $k_{1}, k_{2},$ and $k_{3}$ are density dependent coefficients. For brevity, we are not going to detail these coefficients and the other terms of Eq. \ref{eqn:gmie}, but they are available at the original paper \cite{lafitte2013}.  
 	
 	The ring contribution ($a^{RING}$) in Eq. \ref{eqn:miehelmring} have two forms for rings formed from $m_{s}$ tangentially bonded segments. The first one  \cite{lafitte2012} consideres that the difference between a chain and a ring molecule is that the latter has one more bond that is connecting the first segment to the last. With this assumption, Eq.~\eqref{eqn:achain} can be adapted to rings by
 	\begin{equation}
-	a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii}))
+	a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii})) .
 	\label{eqn:aringlafitte}
 	\end{equation}
 	
 	According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parameterization with molecular simulation data so that the EoS can  be used in molecular simulations, but this additional parameterization is not necessary when we are modeling chain molecules. Recently, \citeonline{muller2017} tried to correct this inconsistency. They developed a ring free energy equation based on the work of \citeonline{muller1993}, who obtained rigorous expressions for hard-sphere fluids with molecular geometries of rings with $m_s=3$. The final expression developed for the dimensionless Helmholtz free energy due to ring formation is
 	\begin{equation}
-	a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}\left (m_{s,i}-1+\chi_{i}\eta_{i} \right )\ln \left [g_{ii}^{Mie}(\sigma_{ii}) \right]
+	a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}\left (m_{s,i}-1+\chi_{i}\eta_{i} \right )\ln \left [g_{ii}^{Mie}(\sigma_{ii}) \right] ,
 	\label{eqn:aringmuller}
 	\end{equation}
-	where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction of the atom i and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$, Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. In addition, the equation corresponds to a system of hard sphere triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\zeta$ for $m_{s}=3,m_{s}=4,m_{s}=5, and m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid. Values of $\chi$  for some of the geometry estimated can be seen in \figref{ringqsi}.
+	where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction of the atom i and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$, Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. In addition, the equation corresponds to a system of hard sphere triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\zeta$ for $m_{s}=3,m_{s}=4,m_{s}=5, and m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid with $\epsilon/k_{b} = 250 K$, $\sigma = 3.0 \dot{A}$, $\lambda_{r} = 11$, and $\lambda_{r} = 6$. Values of $\chi$  for some of the geometry estimated in the article can be seen in \figref{ringqsi}.
 	\begin{figure}[th]
 		\centering
 		\includegraphics[scale=0.5]{Figures/mullergeo.png}
@@ -526,15 +547,19 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\subsubsection{Combining rules for the intermolecular potential parameters}
 	\citeonline{lafitte2013} also suggested mixing rules for the potential parameters based on Lorentz-Berthelot combining rules \cite{rowlinson}:
 	\begin{equation}
-	\sigma_{ij} =\frac{\sigma{ii}+\sigma{jj}}{2}
+	\sigma_{ij} =\frac{\sigma{ii}+\sigma{jj}}{2},
 	\label{eqn:sigmamix}
 	\end{equation}
 	\begin{equation}
-	\lambda_{k,ij} -3 =\sqrt{(\lambda_{k,ii}-3)(\lambda_{k,jj}-3)} , k=r,a
+	d_{ij} =\frac{d_{ii}+d_{jj}}{2},
+	\label{eqn:dmix}
+	\end{equation}
+	\begin{equation}
+	\lambda_{k,ij} -3 =\sqrt{(\lambda_{k,ii}-3)(\lambda_{k,jj}-3)} , k=r,a,
 	\label{eqn:lambdamix}
 	\end{equation}
 	\begin{equation}
-	\epsilon_{ij} =(1-k_{ij})\frac{\sqrt{\sigma_{ii}^{3}\sigma_{jj}^{3}}}{\sigma_{ij}^{3}}\sqrt{\epsilon_{ii}\epsilon_{jj}}
+	\epsilon_{ij} =(1-k_{ij})\frac{\sqrt{\sigma_{ii}^{3}\sigma_{jj}^{3}}}{\sigma_{ij}^{3}}\sqrt{\epsilon_{ii}\epsilon_{jj}}.
 	\label{eqn:epsmix}
 	\end{equation}
 	
@@ -550,7 +575,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\begin{aligned}
 	\min\limits_{\sigma,\epsilon,\lambda_{r}} F_{obj}(\sigma,\epsilon,\lambda_{r})= \sum_{i=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-P_{v}^{exp}(T_{i})}{P_{v}^{exp}(T_{i})} \right)^2 +\\
-	\sum_{i=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2
+	\sum_{i=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2 ,
 	\end{aligned}
 	\label{eqn:fobj}
 	\end{equation}
@@ -559,11 +584,11 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\citeonline{lafitte2012} suggested that two corrections factors ($c_{\sigma}$ and $c_{\epsilon}$) should be estimated with simulation data when using Eq. \eqref{eqn:aringlafitte} for the ring contribution. They are related to the EoS parameters by scaled parameters:
 	
 	\begin{equation}
-	\sigma^{scaled} = c_{\sigma}\sigma^{SAFT}
+	\sigma^{scaled} = c_{\sigma}\sigma^{SAFT}.
 	\label{eqn:csigma}
 	\end{equation}
 	\begin{equation}
-	\epsilon^{scaled} = c_{\epsilon}\epsilon^{SAFT}
+	\epsilon^{scaled} = c_{\epsilon}\epsilon^{SAFT}.
 	\label{eqn:ceps}
 	\end{equation}
 	
@@ -572,7 +597,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\begin{split}
 	\min\limits_{c_{\sigma},c_{\epsilon}} F_{obj}(c_{\sigma},c_{\epsilon})= \sum_{i=1}^{N_{p}} \left(\frac{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-P_{v}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right)^2 + \\
-	\sum_{i=1}^{N_{p}} \left(\frac{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-\rho_{liq}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right)^2
+	\sum_{i=1}^{N_{p}} \left(\frac{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-\rho_{liq}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right)^2 .
 	\end{split}
 	\label{eqn:fobjla}
 	\end{equation}
@@ -580,61 +605,60 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	The repulsive parameter is maintained in the value found on the minimization of Eq. \eqref{eqn:fobj}. The refined values for $\sigma$ and $\epsilon$ are:
 	
 	\begin{equation}
-	\sigma^{sim} = \sigma^{SAFT}/c_{\sigma}
+	\sigma^{sim} = \sigma^{SAFT}/c_{\sigma},
 	\label{eqn:simsigma}
 	\end{equation}
 	
 	\begin{equation}
-	\epsilon^{sim} = \epsilon^{SAFT}/c_{\epsilon}
+	\epsilon^{sim} = \epsilon^{SAFT}/c_{\epsilon},
 	\label{eqn:simeps}
 	\end{equation}
 	
 	It is interesting to point out that this new parameterization is not necessary when using Eq. \eqref{eqn:aringmuller} as the ring contribution. The other method to obtain the force field parameters is the correspondent state parametrization \cite{mejia2014}. This method considers that the unweighted volume average of the attractive contribution to the Mie intermolecular potential,$a_{1}$, is a mean field approximation:
 	
 	\begin{equation}
-	a_{1} = 2\pi\rho\sigma^{3}\epsilon\alpha
+	a_{1} = 2\pi\rho\sigma^{3}\epsilon\alpha .
 	\label{eqn:a1corres}
 	\end{equation}
 	
 	The van der Waals constant, $\alpha$, considering $ \lambda_{a} = 6$ is related by the Mie exponents by:
 	
 	\begin{equation}
-	\alpha = \frac{1}{\epsilon\sigma^{3	}} \int_{\sigma}^{\infty} \phi(r)r^{2}dr = \frac{\lambda_{r}}{3(\lambda_{r}-3)}\left(\frac{\lambda_r}{6}\right)^{6/(\lambda_{r} - 6)}  
+	\alpha = \frac{1}{\epsilon\sigma^{3	}} \int_{\sigma}^{\infty} \phi(r)r^{2}dr = \frac{\lambda_{r}}{3(\lambda_{r}-3)}\left(\frac{\lambda_r}{6}\right)^{6/(\lambda_{r} - 6)}  .
 	\label{eqn:alpha}
 	\end{equation}
 	
 	The parameterization in this method starts by using the experimental acentric factor, $\omega$, for each molecule with a fixed value of $ m_{s}$ to obtain the value of the repulsive exponent with the following Padé series:
 	
 	\begin{equation}
-	\lambda_{r} = \frac{\sum_{i=0} a_{i}\omega^{i}}{1+\sum_{i=1} b_{i}\omega^{i}}   
+	\lambda_{r} = \frac{\sum_{i=0} a_{i}\omega^{i}}{1+\sum_{i=1} b_{i}\omega^{i}} ,  
 	\label{eqn:lambdaco}
 	\end{equation}
-	
-	$a_{i}$ and $b_{i}$ are dependent parameters of the number of segments and a table with their values is presented in the original paper \cite{mejia2014}. The van der Waals constant can be found substituting $\lambda_{r}$ into Eq. \eqref{eqn:alpha}. The reduced critical potential $T_{c}^{*}$ is related to $\alpha$ by a Padé series: 
+	where $a_{i}$ and $b_{i}$ are dependent parameters of the number of segments and a table with their values is presented in the original paper \cite{mejia2014}. The van der Waals constant can be found substituting $\lambda_{r}$ into Eq. \eqref{eqn:alpha}. The reduced critical potential $T_{c}^{*}$ is related to $\alpha$ by a Padé series: 
 	
 	\begin{equation}
-	T_{c}^{*} = \frac{\sum_{i=0} c_{i}\alpha^{i}}{1+\sum_{i=1} d_{i}\alpha^{i}}   
+	T_{c}^{*} = \frac{\sum_{i=0} c_{i}\alpha^{i}}{1+\sum_{i=1} d_{i}\alpha^{i}}   .
 	\label{eqn:tc}
 	\end{equation}
 	
 	The values of $c_{i}$ and $d_{i}$ are also available in the original paper. The reduced temperature of the equation above is used in conjunction with the experimental critical temperature, $ T_{c}$, to find the energy parameter with the relation below:
 	
 	\begin{equation}
-	T_{c}^{*} = \frac{\kappa_{b}T_{c}}{\epsilon}   
+	T_{c}^{*} = \frac{\kappa_{b}T_{c}}{\epsilon}   .
 	\label{eqn:epscorre}
 	\end{equation}
 	
 	The diameter parameter, however, is not obtained with the critical properties, but with the reduced liquid density,$\rho_{T_{r}=0.7}$, at the reduced temperature ,$T_{r}$, of $0.7$. This density is also obtained with a Padé series using parameters by \citeonline{mejia2014}:
 	
 	\begin{equation}
-	\rho_{T_{r}=0.7}^{*} = \frac{\sum_{i=0} j_{i}\alpha^{i}}{1+\sum_{i=1} k_{i}\alpha^{i}} 
+	\rho_{T_{r}=0.7}^{*} = \frac{\sum_{i=0} j_{i}\alpha^{i}}{1+\sum_{i=1} k_{i}\alpha^{i}} .
 	\label{eqn:denscorre}
 	\end{equation}
 	
 	The relation among the equation above, $\sigma$ and the experimental density is given by:
 	
 	\begin{equation}
-	\rho_{T_{r}=0.7}^{*} = \rho_{T_{r}=0.7}\sigma^{3}N_{av}   
+	\rho_{T_{r}=0.7}^{*} = \rho_{T_{r}=0.7}\sigma^{3}N_{av},   
 	\label{eqn:sigmacorre}
 	\end{equation}
 	where $N_{av}$ is The Avogadro number. This correspondent state method has the advantage of only requiring critical data, which is available for a great range of fluids, and liquid density data. The parameters found with this strategy are available at an online database \cite{ervik2016}.     
@@ -644,7 +668,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\begin{aligned}
 	\min\limits_{k_{ij}} F_{obj}(k_{ij})= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
-	\sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2
+	\sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2 .
 	\end{aligned}
 	\label{eqn:fobjmix}
 	\end{equation}
@@ -659,7 +683,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:fcano}
 	\begin{aligned}
-	F(N,V,T) = -\kappa_{b}T ln Q(N,V,T)
+	F(N,V,T) = -\kappa_{b}T ln Q(N,V,T).
 	\end{aligned}
 	\end{equation}
 	
@@ -669,7 +693,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eq:partican}
 	\begin{aligned}
 	Q(N,V,T) = \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) \right)
-	\right]
+	\right] .
 	\end{aligned}
 	\end{equation}
 	
@@ -678,7 +702,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:fisobari}
 	\begin{aligned}
-	G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T)
+	G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T),
 	\end{aligned}
 	\end{equation}
 	where $\Delta (N,P,T)$ is the partition function of the isothermal-isobaric ensemble:
@@ -686,7 +710,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:partiso}
 	\begin{aligned}
-	\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]
+	\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right].
 	\end{aligned}
 	\end{equation}
 	
@@ -695,7 +719,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:dif}
 	\begin{aligned}
-	\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{\Delta_{B}}{\Delta_{A}}\right) 
+	\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{\Delta_{B}}{\Delta_{A}}\right) .
 	\end{aligned}
 	\end{equation}
 	
@@ -704,7 +728,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:partiso}
 	\begin{aligned}
-	\dfrac{Z_{B}}{Z_{A}} = \dfrac{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{B} \right]}{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{A} \right]}
+	\dfrac{Z_{B}}{Z_{A}} = \dfrac{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{B} \right]}{\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right)_{A} \right]}.
 	\end{aligned}
 	\end{equation}
 	
@@ -713,7 +737,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:dif}
 	\begin{aligned}
-	\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{Z_{B}}{Z_{A}}\right)
+	\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{Z_{B}}{Z_{A}}\right).
 	\end{aligned}
 	\end{equation}
 	
@@ -722,7 +746,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:freesolv}
 	\begin{aligned}
-	\Delta G_{solv} = \Delta G_{1 \rightarrow 4} = \Delta G_{1 \rightarrow 2} + \Delta G_{2 \rightarrow 3} + \Delta G_{3 \rightarrow 4}  
+	\Delta G_{solv} = \Delta G_{1 \rightarrow 4} = \Delta G_{1 \rightarrow 2} + \Delta G_{2 \rightarrow 3} + \Delta G_{3 \rightarrow 4}  .
 	\end{aligned}
 	\end{equation}
 	
@@ -733,21 +757,21 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 		\label{thermcy}
 	\end{figure}
 	
-	The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of non bonded interactions that are turned off in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. Meanwhile, if only non-bonded interactions with the environment are turned off,this is a decoupling free energy calculation. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard Jones potential. In order to carry out the later process, a modified potential with a coupling parameter($\lambda$) is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential.  That's why the non-linear soft-core scheme \cite{beutler1994} is used to make the potential behave more smoothly in relation to the change of $\lambda$ as can be seem in \figref{fig:SC}. The generalized soft core potential is given by:
+	The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The following transformation, $\Delta G_{2 \rightarrow 3}$, is the free energy of moving the non-interacting molecule in the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule doesn't depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required to the non-interaction molecule in the aqueous phase regain its non-bonded interactions.  The solvation free energy calculation can be classified according to the types of non bonded interactions that are turned off in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the cycle. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. Meanwhile, if only non-bonded interactions with the environment are turned off,this is a decoupling free energy calculation. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones potential. In order to carry out the later process, a modified potential with a coupling parameter($\lambda$) is used. Each $\lambda$ represent an alchemical state and, when $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential.  That's why the non-linear soft-core scheme \cite{beutler1994} is used to make the potential behave more smoothly in relation to the change of $\lambda$ as can be seem in \figref{fig:SC}. The generalized soft core potential is given by:
 	
 	\begin{equation}
 	\label{eq:softcore}
 	\begin{aligned}
 	U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \\
-	& \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace
+	& \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace,
 	\end{aligned}
 	\end{equation}
-	where $\alpha$ is a constant which the value of 0.5 is normally assumed to it,r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. Using the Lennard Jones exponents ($\lambda _{r} =12$ and $\lambda _{a} = 6$), Eq. \eqref{eq:softcore} becomes:
+	where $\alpha$ is a constant which the value of 0.5 is normally assumed to it,r is the distance the molecules, $\epsilon$ is the depth of the potential well, $\sigma$ is the distance correspondent to a zero intermolecular potential, $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. Using the Lennard-Jones exponents ($\lambda _{r} =12$ and $\lambda _{a} = 6$), Eq. \eqref{eq:softcore} becomes
 	
 	\begin{equation}
 	\label{eq:softcoreLJ}
 	\begin{aligned}
-	U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{6}}\right\rbrace
+	U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{6}}\right\rbrace .
 	\end{aligned}
 	\end{equation}
 	
@@ -762,45 +786,45 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	
 	\begin{equation}
 	\label{eqn:partcoe}
-	\log{P}^{a/b} = \frac{\Delta G_{solv}^{a} - \Delta G_{solv}^{b}}{2.303RT}
+	\log{P}^{a/b} = \frac{\Delta G_{solv}^{a} - \Delta G_{solv}^{b}}{2.303RT} .
 	\end{equation}
 	
 	
 	
-\section{Multistate Bennet Acceptance Ratio (MBAR)}\label{mbar}
+\section{Multistate Bennett Acceptance Ratio (MBAR)}\label{mbar}
 	
 	The MBAR method is a free energy of perturbation based method, the MBAR is equal to the BAR method when the calculations are made between only two states. It proposes an estimator that computes free energies and their uncertainties of all $K$ states  by minimizing the $KxK$ matrix of variances simultaneously for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the ${x_{i,n}}_{n=1}^{N_{i}}$ configurations of i, the following probability distributions is sampled:
 	\begin{equation}
-	p_{i}(x) = \frac{q_{i}(x)}{c_{i}}
+	p_{i}(x) = \frac{q_{i}(x)}{c_{i}},
 	\end{equation}
 	
 	\begin{equation}
-	c_{i} = \int dx q_{i}(x)
+	c_{i} = \int dx q_{i}(x),
 	\end{equation}
 	where $q_{i}(x)=exp(-u_{i}(x))$ and $u_{i}$ is the potential energy of each state, defined by $u_{i}= \beta [U_{i}(x)+P_{i}V(x) + \mu _{i}^{T}n(x)]$. Meanwhile, $c_{i}$ is normalization constant.  The free energies are estimated with the ratio of this constant in each state:
 	
 	\begin{equation}
-	\Delta f_{ij} = f_{i} - f_{j} = - ln \frac{c_{j}}{c_{i}}  = -ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} 
+	\Delta f_{ij} = f_{i} - f_{j} = - ln \frac{c_{j}}{c_{i}}  = -ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} .
 	\end{equation}
 	
 	\citeonline{mbar} then proposed the following arbitrary function:
 	
 	\begin{equation}
-	c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} 
+	c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} .
 	\end{equation}
 	
 	Using the above equation for every state  K, the relation is obtained:
 	
 	\begin{equation}
 	\label{eq:mbar1}
-	\sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n})
+	\sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n}) .
 	\end{equation}
 	
 	\citeonline{mbar} suggested the following equation for the arbitrary term $\alpha _{ij}$ in order to decrease the variance:
 	
 	\begin{equation}
 	\label{eq:mbar2}
-	\alpha _{ij} (x) = \frac{N_{j} \hat{c_{i}} ^{-1}}{\sum_{k=1}^{K} N_{k} c_{i} ^{-1} q_{k}(x)}
+	\alpha _{ij} (x) = \frac{N_{j} \hat{c_{i}} ^{-1}}{\sum_{k=1}^{K} N_{k} c_{i} ^{-1} q_{k}(x)} .
 	\end{equation}
 	
 	Assuming the sampling is carried out following Boltzmann statistics, Eqs. \eqref{eq:mbar1} and \eqref{eq:mbar2} can be rearranged to obtain the free energy estimator, which is solved self consistently:  
@@ -809,14 +833,14 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eq:mbar}
 	\begin{aligned}
 	f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
-	\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp[\beta (f_{l} - u_{l}(x_{kn}))]}
+	\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp[\beta (f_{l} - u_{l}(x_{kn}))]} .
 	\end{aligned}
 	\end{equation}
 	
 	The equation above requires the evaluation of the potential energy  of uncorrelated configuration $n$ for all K states ($u_{i}(x_{kn})$) and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are then:
 	
 	\begin{equation}
-	\Delta f_{ij} = f_{j} -  f_{i} 
+	\Delta f_{ij} = f_{j} -  f_{i}  .
 	\end{equation} 
 	
 	The statistical variance resulting from free energy estimation $S_{ij}^{2} \Delta f_{ij}$ is given by the matrix covariances:
@@ -824,7 +848,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\label{eq:varmbar}
 	\begin{aligned}
-	s_{ij}^{2} \Delta f_{ij} \equiv cov (-ln \hat{Z_{j}}/\hat{Z_{i}},-ln \hat{Z_{j}}/\hat{Z_{i}})
+	s_{ij}^{2} \Delta f_{ij} \equiv cov (-ln \hat{Z_{j}}/\hat{Z_{i}},-ln \hat{Z_{j}}/\hat{Z_{i}}),
 	\end{aligned}
 	\end{equation}
 	where $\hat{Z_{j}}$ and $\hat{Z_{i}}$ are the partition functions of states $i$ and $j$. The MBAR method can be considered as limit case of the 
@@ -835,45 +859,45 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were developed to allow a non-Boltzmann sampling scheme of different states in only one simulation. In this scheme, the sampling is done by biasing the phase space exploration process with weights not related to the statistical ensemble. The statistical expanded ensemble, $Z^{EE}$, is obtained from the probability distributions correspondent to each $\lambda$, hence $Z^{EE}$ is defined as a sum of sub ensembles $Z_{i}$ in different values of $\lambda$:
 	
 	\begin{equation}
-	Z^{EE} = \sum_{i=1}^{N} Z_{i}(\lambda_{i}) exp(\eta_{i})
+	Z^{EE} = \sum_{i=1}^{N} Z_{i}(\lambda_{i}) exp(\eta_{i}),
 	\label{eqn:ee}
 	\end{equation}   
 	where N is the number of alchemical states, $\eta_{i}$ is the arbitrary weight of the sub ensemble at each state and $Z_{i}$ is configuration partition function at state i. For the isothermal-isobaric ensemble, $Z$ is:
 	
 	\begin{equation}
-	Z = {\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(\lambda, r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]}
+	Z = {\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(\lambda, r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]}.
 	\end{equation} 
 	
 	In solvation free energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the soft-core potential (Eq. \ref{eq:softcore}). For molecular dynamic simulations, the sampling of the expanded ensemble is done by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that type of sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
 	
 	\begin{equation}
-	\pi(x|\lambda_{k}) = \dfrac{\exp[-\beta u(x,\lambda_{k})]}{\int dx \exp [- \beta u(x,\lambda_{k})]}
+	\pi(x|\lambda_{k}) = \dfrac{\exp[-\beta u(x,\lambda_{k})]}{\int dx \exp [- \beta u(x,\lambda_{k})]}.
 	\label{eqn:rhoee1}
 	\end{equation} 
 	
 	Meanwhile, the state transition in the MD simulation uses the following conditional distribution:
 	
 	\begin{equation}
-	\pi(\lambda_{k}|x) = \dfrac{\exp[-\beta u(x,\lambda_{k}) + \eta_{k}]}{ \sum_{k=1}^{K} \exp [- \beta u(x,\lambda_{k})+ \eta_{k}]}
+	\pi(\lambda_{k}|x) = \dfrac{\exp[-\beta u(x,\lambda_{k}) + \eta_{k}]}{ \sum_{k=1}^{K} \exp [- \beta u(x,\lambda_{k})+ \eta_{k}]},
 	\label{eqn:rhoee2}
 	\end{equation} 
 	where $u(x,\lambda_{k}) = U(x,\lambda_{k}) + PV(x,\lambda_{k})$ is the reduced potential function for the NPT ensemble. There are a variety of acceptance schemes to do the expanded sampling using Eq. \eqref{eqn:rhoee2}, but \citeonline{chodera2011} suggested that the independence sampling \cite{liu2002} is the best strategy to increase the number of uncorrelated configurations. The implementation suggested by them updates the state index from $i$ to $j$ by first generating a uniform random number $R$ on the interval $[0,1)$ and then selecting the smallest new value of $j$ that satisfies  the relation below:
 	
 	\begin{equation}
-	R < \sum_{i=1}^{j} \pi(\lambda_{i}|x) 
+	R < \sum_{i=1}^{j} \pi(\lambda_{i}|x) .
 	\label{eqn:relee2}
 	\end{equation} 
 	
 	The sampling strategy above depends on the weights in order to assure an adequate sampling of the states. If there isn't a sufficient number of states sampled, the expanded ensemble becomes deficient in obtaining input data to estimate free energy differences with the methods exposed in Chapter 2. The weights can be calculated following the flat-histogram approach \cite{bernd1992,bernd1993,dayal2004}. This strategy aims to obtain adequate sampling by assuring that all the states have an equal number of samples, i.e. the ratio of the probability of sampling state ($\pi_{i}$) to the probability of sampling state $j$ ($\pi_{j}$) is equal to one. Given that $\pi_{i}$ has the following equation:
 	
 	\begin{equation}
-	\pi_{i} = \dfrac{Z_{i}(\lambda_{i}) exp(\eta_{i})}{Z^{EE}} 
+	\pi_{i} = \dfrac{Z_{i}(\lambda_{i}) exp(\eta_{i})}{Z^{EE}} ,
 	\label{eqn:wei1}
 	\end{equation} 
 	and using Eqs. \ref{eq:dif} and \ref {eq:partiso}, the following relation can be obtained for $\pi_{i}/\pi_{j}=1$:
 	
 	\begin{equation}
-	(\eta_{i} - \eta_{j}) = \beta(G_i-G_j)
+	(\eta_{i} - \eta_{j}) = \beta(G_i-G_j).
 	\label{eqn:weight}
 	\end{equation}
 	
@@ -882,35 +906,35 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate energy differences. In this work, the method chosen to obtain the optimal stage of the $\lambda$ domain is the one developed by \citeonline{escobedo2007} with basis in the study of  \citeonline{trebst2004}. This method targets "bottlenecks" in the simulation. It does that by optimizing $\lambda$ through the minimization of the number of round trips per CPU time between the lowest $\lambda$ ($=0$) and highest $\lambda$ ($=1$). This is specifically done by maximizing the steady-state stream $\phi$ of the simulation, which "walks" among the values of $\lambda$. This stream is estimated from Fick's diffusion type of law:
 	
 	\begin{equation}
-	\phi = D(\Lambda) \Pi (\Lambda) \dfrac{dx(\Lambda)}{d \Lambda}
+	\phi = D(\Lambda) \Pi (\Lambda) \dfrac{dx(\Lambda)}{d \Lambda}.
 	\label{eqn:stream}
 	\end{equation}
 	
 	In the equation above, $\Lambda$ is the actual continue value of the coupling parameter. This continue function of $\lambda s$ is obtained by interpolating the $\lambda$ set linearly. $D(\Lambda)$ is the diffusivity at  state $\Lambda$ and $x(\Lambda)$ is the fraction of times that the trial simulation at state $\Lambda_{i}$ has most recently visited the state $\lambda=1$ as opposed to state $\lambda=0$. The derivative ${dx(\Lambda)}/{d \Lambda}$ is approximated with the central finite differences method. Finally, $\Pi (\Lambda)$ is the probability of visiting $\Lambda$:
 	
 	\begin{equation}
-	\Pi (\Lambda) = \dfrac{C^{'} \bar{\Pi} (\lambda)}{\Lambda_{i+1} - \Lambda_{i}}
+	\Pi (\Lambda) = \dfrac{C^{'} \bar{\Pi} (\lambda)}{\Lambda_{i+1} - \Lambda_{i}}.
 	\label{eqn:plambda}
 	\end{equation}
 	
 	The $C^{'} $ term in the equation above represents a constant and $\bar{\Pi} (\lambda)$ is the arithmetic average of visiting the $\Lambda$ states:
 	
 	\begin{equation}
-	\bar{\Pi} (\lambda) = \dfrac{\pi_{i+1} - \pi_{i}}{2}
+	\bar{\Pi} (\lambda) = \dfrac{\pi_{i+1} - \pi_{i}}{2}.
 	\label{eqn:barplambda}
 	\end{equation}
 	
 	The $\phi$ is maximum when the probability $\Pi^{'}(\Lambda_{i})$ is proportional to $1/\sqrt{D(\Lambda)}$. With that information, it is possible to estimate the diffusivity using one trial simulation with the following equation:
 	
 	\begin{equation}
-	D(\Lambda) = \dfrac{\Lambda_{i+1} - \Lambda_{i}}{\bar{\Pi} (\lambda) {dx(\Lambda)}/{d \Lambda}}
+	D(\Lambda) = \dfrac{\Lambda_{i+1} - \Lambda_{i}}{\bar{\Pi} (\lambda) {dx(\Lambda)}/{d \Lambda}}.
 	\label{eqn:diff}
 	\end{equation}
 	
 	Hence, we can calculate $\bar{\Pi} $ and, consequently, the cumulative probability, which is used to obtain the new $\lambda$ states:
 	
 	\begin{equation}
-	\Phi = \int_{\lambda =0}^{\lambda =1} \Pi^{'}(\Lambda_{i}) d \Lambda = \dfrac{i}{K}
+	\Phi = \int_{\lambda =0}^{\lambda =1} \Pi^{'}(\Lambda_{i}) d \Lambda = \dfrac{i}{K},
 	\label{eqn:cumfun}
 	\end{equation}
 	where, $K$ is the total number of $\lambda$ states. 
@@ -925,7 +949,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	
 	3. Accept the move from $r^{N}$ to $r'^{N}$ with the probability:
 	\begin{equation}
-	acc_{A \rightarrow B} = min(1,exp[-\beta U(r'^{N}) + \beta U(r^{N}) ])
+	acc_{A \rightarrow B} = min(1,exp[-\beta U(r'^{N}) + \beta U(r^{N}) ]) .
 	\end{equation}
 	
 	The values of maximum displacement are defined in order to obtain acceptance rates of 25-50 \% in the step 3   \cite{Frenkel2013}. Monte Carlo simulations are interesting when we need to calculate properties in different thermodynamic ensembles, such as the Gibbs Ensemble \cite{papa1987}. This ensemble  is used to study phase coexistence with simultaneous Monte Carlo (MC) simulations of two boxes,  representing a two phase system, with periodic conditions. The boxes exchange molecules, energy and volume between them. Equilibrium is obtained through MC steps that consist of translation and rotation moves, volume exchange moves and randomly exchanges of molecules between the boxes. For the phase equilibrium of multi-component systems,the GEMC simulations should be carried out at the NPT (constant number of particles, pressure and temperature) ensemble to obey the requirement of an additional degree of freedom for mixtures. Meanwhile, the simulation of single component systems is carried out at constant number of particles, temperature and volume (NVT) since the two phase region would be a line for this system at constant pressure and temperature. The constant volume GEMC ensemble is rigorously equivalent to the canonical ensemble in the thermodynamic limit as demonstrated by \citeonline{frenkel}. The partition function of the GEMC-NVT ensemble is obtained considering that the particles in both boxes are subjected to the same intermolecular interactions. Also, the boxes’ volumes and number of particles ($N_{1}$,$N_{2}$,$V_{1}$ and $V_{2}$) can vary while the total volume ($V$) and total number of particles ($N$) remain constant ($N = N_{1} + N_{2}$,$V = V_{1} + V_{2}$):
@@ -933,7 +957,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	\begin{aligned}
 	Q(NVT) {} \equiv & \sum_{N_{1}}^{N} \dfrac{1}{V \Lambda ^{3N} N_{1}!(N-N_{1})!} \int_{0}^{V} dV_{1} V_{1}^{N_{1}} V_{2}^{N_{2}} \int dx_{1}^{N_{1}} \exp[-\beta U(x_{1}^{N_{1}})] \\
-	& \int dx_{2}^{N_{2}} \exp[-\beta U(x_{2}^{N_{2}})]
+	& \int dx_{2}^{N_{2}} \exp[-\beta U(x_{2}^{N_{2}})] .
 	\end{aligned}
 	\label{eqn:gepart}
 	\end{equation}
@@ -941,28 +965,28 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	In order to define the acceptance rules for the MC moves and compute any property of interest, it is necessary to know the probability of finding the configuration with $N_{1}$ particles in box 1 with volume $V_{1}$ and positions $x_{1}^{N_{1}}$ and $x_{2}^{N_{2}}$. This probability is given by:
 	
 	\begin{equation}
-	\pi(x_{1}^{N_{1}},x_{2}^{N_{2}},N_{1},N_{2},V_{1},V_{2}) \propto \dfrac{V_{1}^{N_{1}}V_{2}^{N_{2}}}{N_{1}!N_{2}!} \exp[-\beta U(x_{1}^{N_{1}}) -\beta U(x_{2}^{N_{2}})]
+	\pi(x_{1}^{N_{1}},x_{2}^{N_{2}},N_{1},N_{2},V_{1},V_{2}) \propto \dfrac{V_{1}^{N_{1}}V_{2}^{N_{2}}}{N_{1}!N_{2}!} \exp[-\beta U(x_{1}^{N_{1}}) -\beta U(x_{2}^{N_{2}})] .
 	\label{eqn:geprob}
 	\end{equation}
 	
 	The acceptance criterion for the translation and rotation moves of configuration A	to B is similar to the conventional NVT MC ensembles and is equal to:
 	
 	\begin{equation}
-	acc_{A \rightarrow B} = \min(1,\exp[-\beta U(x_{A}^{N_{1}}) -\beta U(x_{B}^{N_{1}})])
+	acc_{A \rightarrow B} = \min(1,\exp[-\beta U(x_{A}^{N_{1}}) -\beta U(x_{B}^{N_{1}})]) .
 	\label{eqn:drprob}
 	\end{equation} 
 	
 	The exchange volume moves happen by exchanging an amount $\Delta V$ between the boxes to achieve pressure equilibrium. $\Delta V$ can be chosen from a uniform distribution based on the maximum variation of volume defined ($\delta V_{max}$) with probability $1/\delta V_{max}$. The acceptance rule for these moves is: 
 	
 	\begin{equation}
-	acc_{A \rightarrow B} = \min \left(1, \left(\dfrac{V_{1}^{B}}{V_{1}^{A}} \right)^{N_{1}=1} \left( \dfrac{V_{2}^{B}}{V_{2}^{A}} \right)^{N_{2}+1} \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right)
+	acc_{A \rightarrow B} = \min \left(1, \left(\dfrac{V_{1}^{B}}{V_{1}^{A}} \right)^{N_{1}=1} \left( \dfrac{V_{2}^{B}}{V_{2}^{A}} \right)^{N_{2}+1} \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right) .
 	\label{vprob}
 	\end{equation}
 	
 	Particle exchange moves are carried out to obtain the equality of chemical potential between the boxes. One particle from one box is removed and then added to a random location in the other box. The criteria to accept or reject this type of move is:
 	
 	\begin{equation}
-	acc_{A \rightarrow B} = \min \left( 1, \dfrac{N_{1}V_{2}}{N_{2}V_{1}}  \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right)
+	acc_{A \rightarrow B} = \min \left( 1, \dfrac{N_{1}V_{2}}{N_{2}V_{1}}  \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right) .
 	\label{moleprob}
 	\end{equation}
 	
