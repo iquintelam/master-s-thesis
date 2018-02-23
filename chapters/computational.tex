@@ -363,17 +363,17 @@ Independently of the technique or software used, certain restrictions should be 
 	\label{fig:pbc}
 \end{figure}
 
-The application of the PBC results in particles interacting not only with each other but also with their images. This fact greatly increases the number of interacting pairs and, consequently, the computational time. To overcome that, we need to choose a limited range potential using the minimum image convention criterion. This criterion only allows a particle to interact with the nearest particle or image.  This is technically done during the simulations by neglecting the interactions between two particles at or beyond a maximum length, which is given the name of cutoff radius ($R_{c}$). This cutoff should be equal to or less than half of the box length. This process of examining each pair separation can also be expensive depending on the number of distinct pairs. That is the reason molecular dynamics algorithms use pair listings. This method defines a 'skin' around the cutoff radius with a radius $R_{List}$ (Figure \ref{fig:pairlist}). The pair list is initially built of all the neighbors within a distance $R_{List}$ of each particle. Over the course of the simulation, only pairs in the pair list have their separation checked. This list can then be reconstructed in a specific time interval during the simulation but is essential to update this list before any unlisted pairs have come within $R_{List}$.    
+The application of the PBC results in particles interacting not only with each other but also with their images. This fact greatly increases the number of interacting pairs and, consequently, the computational time. To overcome that, we need to choose a limited range potential using the minimum image convention criterion. This criterion only allows a particle to interact with the nearest particle or image.  This is technically done during the simulations by neglecting the interactions between two particles at or beyond a maximum length, which is given the name of cutoff radius ($R_{c}$). This cutoff should be equal to or less than half of the box length. This process of examining each pair separation can also be expensive depending on the number of distinct pairs. That is the reason molecular dynamics algorithms use pair listings. This method defines a 'skin' around the cutoff radius with a radius $R_{List}$ (Figure \ref{fig:pairlist}). The pair list is initially built of all the neighbor particles within a distance $R_{List}$ of each particle. Over the course of the simulation, only pairs in the pair list have their separation checked. This list can then be reconstructed in a specific time interval during the simulation but is essential to update this list before any unlisted pairs have come within $R_{List}$.    
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/pairlist}
-	\caption{Representation of the cutoff radius and the pair listing radius.}
+	\caption{Representation of the cutoff radius and the pair list radius.}
 	\label{fig:pairlist}
 \end{figure}
 \FloatBarrier
 \subsection{Force Fields }
-Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion. The description is done by approximating the potential energy function ($U(r^N)$), which has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, angle bending, and bond torsion (Figure \ref{fig:intraint}). 
+Force fields are models used to describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion. The description is done by approximating the potential energy function [$U(r^N)$], which has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, angle bending, and bond torsion (Figure \ref{fig:intraint}). 
 
 \begin{figure}[H]
 	\centering
@@ -439,7 +439,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 \section{SAFT-$\gamma$ Mie Force Field}
 	
 	
-	\subsection{SAFT-VR Mie Equation of State }
+	\subsection{SAFT-VR Mie Equation of State (EoS)}
 	
 	The SAFT-VR Mie equation of state \cite{lafitte2013} is the basis for the SAFT-$\gamma$ Mie coarse-grained force field \cite{avendano2011}. This EoS was initially developed to describe chain molecules formed from fused segments interacting via the Mie attractive and repulsive potential. The Mie potential is a type of generalized Lennard-Jones potential that can be used to explicitly describe repulsive interactions of different hardness/softness and attractive interactions of different ranges, and is given by
 	\begin{equation}
@@ -493,20 +493,20 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{equation}
 	
 	
-	The effective hard-sphere diameter $d_{ii}$ for the segments is:
+	The effective hard-sphere diameter $d_{ii}$ for the segments is
 	\begin{equation}
 	d_{ii} =\int_{0}^{\sigma_{ii}} \left ( 1 - \exp \left [-\beta U^{Mie}_{ii}(r) \right ] \right ) dr .
 	\label{eqn:diameter}
 	\end{equation}
 	
 	
-	The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of a 5-point Gauss-Legendre quadrature \cite{papa2014}. The detailing of the other terms of Eq. \eqref{eqn:aM} can be found in \citeonline{lafitte2013}. The term $a^{CHAIN}$ in Eq. \ref{eqn:miehelm} corresponds to the chain contribution. This chain formation of $m_{s}$ tangentially bonded Mie segments is based on the first-order perturbation theory (TPT1)  \cite{papa2014} and can be expressed as:
+	The integral in Eq. \eqref{eqn:diameter} is normally obtained by means of a 5-point Gauss-Legendre quadrature \cite{papa2014}. The detailing of the other terms of Eq. \eqref{eqn:aM} can be found in \citeonline{lafitte2013}. The term $a^{CHAIN}$ in Eq. \ref{eqn:miehelm} corresponds to the chain contribution. This chain formation of $m_{s}$ tangentially bonded Mie segments is based on the first-order perturbation theory (TPT1)  \cite{papa2014} and can be expressed as
 	\begin{equation}
 	a^{CHAIN} =-\sum_{i=1}^{N_{c}} x_{i}(m_{s,i} - 1)\ln \left(g_{ii}^{Mie}(\sigma_{ii}) \right) .
 	\label{eqn:achain}
 	\end{equation}
 		
-	The term $g_{ij}^{Mie}(\sigma_{ij})$ correspond to the radial distribution function (RDF) of the hypothetical Mie system evaluated at the effective diameter and can be obtained with the perturbation expansion:
+	The term $g_{ij}^{Mie}(\sigma_{ij})$ correspond to the radial distribution function (RDF) of the hypothetical Mie system evaluated at the effective diameter. It is obtained with the following perturbation expansion
 	\begin{equation}
 	\begin{aligned}
 	g_{ij}^{Mie}(\sigma_{ij}) =g_{d,ij}^{HS}(\sigma_{ij})\exp \left [\beta\epsilon \frac{g_{1,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})} + (\beta\epsilon)^{2} \frac{g_{2,ij}(\sigma_{ij})}{g_{d,ij}^{HS}(\sigma_{ij})} \right] .
@@ -515,7 +515,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{equation}
 	
 	
-	In the equation above, $g_{d,ij}^{HS}$ is obtained from 
+	In the equation above, $g_{d,ij}^{HS}$ is equal to 
 	
 	\begin{equation}
 	\begin{aligned}
@@ -523,9 +523,9 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{aligned}
 	\label{eqn:ghs}
 	\end{equation}
-	where with $x_{0,ij} = \sigma_{ij}/d_{ij}$ and $k_{1}, k_{2},$ and $k_{3}$ are density dependent coefficients. For brevity, we are not going to detail these coefficients and the other terms of Eq. \ref{eqn:gmie}, but they are available at the original paper \cite{lafitte2013}.  
+	where $x_{0,ij} = \sigma_{ij}/d_{ij}$ and $k_{1}, k_{2},$ and $k_{3}$ are density dependent coefficients. For brevity, we are not going to detail these coefficients and the other terms of Eq. \ref{eqn:gmie}, but they are available at the original paper \cite{lafitte2013}.  
 	
-	The ring contribution ($a^{RING}$) in Eq. \ref{eqn:miehelmring} have two forms for rings formed from $m_{s}$ tangentially bonded segments. The first one  \cite{lafitte2012} consideres that the difference between a chain and a ring molecule is that the latter has one more bond that is connecting the first segment to the last. With this assumption, Eq.~\eqref{eqn:achain} can be adapted to rings by
+	The ring contribution ($a^{RING}$) in Eq. \ref{eqn:miehelmring} have two forms for rings formed from $m_{s}$ tangentially bonded segments. The first one  \cite{lafitte2012} considers that the difference between a chain and a ring molecule is that the latter has one more bond that is connecting the first segment to the last. With this assumption, Eq.~\eqref{eqn:achain} can be adapted to rings by
 	\begin{equation}
 	a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln(g_{ii}^{Mie}(\sigma_{ii})) .
 	\label{eqn:aringlafitte}
@@ -543,9 +543,8 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 		\caption{Values for parameter $\chi$ according to the ring geometry. Adapted from \citeonline{muller2017}.}
 		\label{ringqsi}
 	\end{figure}
-	
-	\subsubsection{Combining rules for the intermolecular potential parameters}
-	\citeonline{lafitte2013} also suggested mixing rules for the potential parameters based on Lorentz-Berthelot combining rules \cite{rowlinson}:
+
+	\citeonline{lafitte2013} also suggested mixing rules for this EoS parameters based on Lorentz-Berthelot combining rules \cite{rowlinson}:
 	\begin{equation}
 	\sigma_{ij} =\frac{\sigma{ii}+\sigma{jj}}{2},
 	\label{eqn:sigmamix}
@@ -592,7 +591,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eqn:ceps}
 	\end{equation}
 	
-	According to \citeonline{lafitte2012}, these corrections are necessary because the approximations employed in the EoS theory generate discrepancies between molecular simulations and the EoS for ring molecules modeled with Eq. \eqref{eqn:aringlafitte}. The objective function for this estimation is given by:
+	According to \citeonline{lafitte2012}, these corrections are necessary because the approximations employed in the EoS theory generate discrepancies between molecular simulations and the EoS for ring molecules modeled with Eq. \eqref{eqn:aringlafitte}. The objective function for this estimation is given by
 	
 	\begin{equation}
 	\begin{split}
@@ -602,7 +601,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eqn:fobjla}
 	\end{equation}
 	
-	The repulsive parameter is maintained in the value found on the minimization of Eq. \eqref{eqn:fobj}. The refined values for $\sigma$ and $\epsilon$ are:
+	The repulsive parameter is maintained in the value found on the minimization of Eq. \eqref{eqn:fobj}. The refined values for $\sigma$ and $\epsilon$ are
 	
 	\begin{equation}
 	\sigma^{sim} = \sigma^{SAFT}/c_{\sigma},
@@ -614,14 +613,14 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eqn:simeps}
 	\end{equation}
 	
-	It is interesting to point out that this new parameterization is not necessary when using Eq. \eqref{eqn:aringmuller} as the ring contribution. The other method to obtain the force field parameters is the correspondent state parametrization \cite{mejia2014}. This method considers that the unweighted volume average of the attractive contribution to the Mie intermolecular potential,$a_{1}$, is a mean field approximation:
+	It is interesting to point out that this new parameterization is not necessary when using Eq. \eqref{eqn:aringmuller} as the ring contribution. The other method to obtain the force field parameters is the correspondent state parametrization \cite{mejia2014}. This method considers that the unweighted volume average of the attractive contribution to the Mie intermolecular potential,$a_{1}$, is the following mean field approximation
 	
 	\begin{equation}
 	a_{1} = 2\pi\rho\sigma^{3}\epsilon\alpha .
 	\label{eqn:a1corres}
 	\end{equation}
 	
-	The van der Waals constant, $\alpha$, considering $ \lambda_{a} = 6$ is related by the Mie exponents by:
+	The van der Waals constant, $\alpha$, considering $ \lambda_{a} = 6$ is related by the Mie exponents by
 	
 	\begin{equation}
 	\alpha = \frac{1}{\epsilon\sigma^{3	}} \int_{\sigma}^{\infty} \phi(r)r^{2}dr = \frac{\lambda_{r}}{3(\lambda_{r}-3)}\left(\frac{\lambda_r}{6}\right)^{6/(\lambda_{r} - 6)}  .
