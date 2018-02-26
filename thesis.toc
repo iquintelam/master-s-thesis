@@ -31,38 +31,38 @@
 \contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{45}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie Equation of State (EoS)}{45}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{49}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Solvation Free Energy Simulations Based on Molecular Dynamics}{53}{section.3.3}
+\contentsline {section}{\numberline {3.3}Solvation Free Energy Simulations Based on Molecular Dynamics}{54}{section.3.3}
 \contentsline {section}{\numberline {3.4}Multistate Bennett Acceptance Ratio (MBAR)}{58}{section.3.4}
 \contentsline {section}{\numberline {3.5}Expanded Ensemble Method}{60}{section.3.5}
-\contentsline {section}{\numberline {3.6}Gibbs Ensemble Monte Carlo (GEMC)}{63}{section.3.6}
+\contentsline {section}{\numberline {3.6}Gibbs Ensemble Monte Carlo (GEMC)}{64}{section.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{67}{chapter.4}
-\contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{67}{section.4.1}
-\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{69}{section.4.2}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{68}{chapter.4}
+\contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{68}{section.4.1}
+\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{70}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{71}{chapter.5}
-\contentsline {section}{\numberline {5.1}Solvation free energies}{71}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hydration free energies}{79}{section.5.2}
-\contentsline {section}{\numberline {5.3}Partition Coefficients}{82}{section.5.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{72}{chapter.5}
+\contentsline {section}{\numberline {5.1}Solvation free energies}{72}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hydration free energies}{80}{section.5.2}
+\contentsline {section}{\numberline {5.3}Partition Coefficients}{83}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{85}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{86}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{87}{section*.36}
+\contentsline {chapter}{\uppercase {Bibliography}}{88}{section*.36}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{97}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{98}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{100}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{101}{appendix.B}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{116}{appendix.C}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{117}{appendix.C}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{125}{appendix.D}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{126}{appendix.D}
