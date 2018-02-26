@@ -791,7 +791,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	
 \section{Multistate Bennett Acceptance Ratio (MBAR)}\label{mbar}
 	
-	The MBAR method is a free energy of perturbation based method, the MBAR is equal to the BAR method when the calculations are made between only two states. It proposes an estimator that computes free energies and their uncertainties of all $K$ states  by minimizing the $KxK$ matrix of variances simultaneously for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the ${x_{i,n}}_{n=1}^{N_{i}}$ configurations of i, the following probability distributions is sampled:
+	Among the post-processing methods of potential energies obtained form solvation free energy simulations available in the literature, we chose to use the MBAR due to the fact that it provides the minimum variance for the free energies. The MBAR method \cite{mbar} is based on free energy of perturbation, MBAR is equal to the BAR method when the calculations are made between two states only. It is a maximum likelihood method which proposes an estimator that computes free energies and their uncertainties of all $K$ states  by minimizing the $K \times K$ matrix of variances for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the ${x^{N_{i}}_{i,n }}_{n=1 }$ configurations of i, the following probability distributions is sampled:
 	\begin{equation}
 	p_{i}(x) = \frac{q_{i}(x)}{c_{i}},
 	\end{equation}
@@ -799,10 +799,11 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\begin{equation}
 	c_{i} = \int dx q_{i}(x),
 	\end{equation}
-	where $q_{i}(x)=exp(-u_{i}(x))$ and $u_{i}$ is the potential energy of each state, defined by $u_{i}= \beta [U_{i}(x)+P_{i}V(x) + \mu _{i}^{T}n(x)]$. Meanwhile, $c_{i}$ is normalization constant.  The free energies are estimated with the ratio of this constant in each state:
+	where $q_{i}(x)=\exp[-u_{i}(x)]$ and $u_{i}$ is the reduced potential energy of each state, defined for a an alchemical transformation by $u_{i} (x)= \beta_{i} [U_{i}(x)+P_{i}V(x) + \mu _{i}^{T}n(x)]$. IN addition, $c_{i}$ is a normalization constant.  The free energies are estimated from the ratio of this constant in each state, since
 	
 	\begin{equation}
-	\Delta f_{ij} = f_{i} - f_{j} = - ln \frac{c_{j}}{c_{i}}  = -ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} .
+	\Delta f_{ij} = f_{i} - f_{j} = - \ln \frac{c_{j}}{c_{i}}  = -\ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} .
+	\label{eqn:mbar1}
 	\end{equation}
 	
 	\citeonline{mbar} then proposed the following arbitrary function:
@@ -811,14 +812,14 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} .
 	\end{equation}
 	
-	Using the above equation for every state  K, the relation is obtained:
+	Using the equation above for every state  K, the following relation is obtained:
 	
 	\begin{equation}
 	\label{eq:mbar1}
 	\sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n}) .
 	\end{equation}
 	
-	\citeonline{mbar} suggested the following equation for the arbitrary term $\alpha _{ij}$ in order to decrease the variance:
+	\citeonline{mbar} suggested the following equation for the arbitrary term $\alpha _{ij}$ in order to minimize the variance:
 	
 	\begin{equation}
 	\label{eq:mbar2}
@@ -831,26 +832,20 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eq:mbar}
 	\begin{aligned}
 	f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
-	\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp[\beta (f_{l} - u_{l}(x_{kn}))]} .
+	\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp \lbrace \beta [f_{l} - u_{l}(x_{kn})] \rbrace} .
 	\end{aligned}
 	\end{equation}
 	
-	The equation above requires the evaluation of the potential energy  of uncorrelated configuration $n$ for all K states ($u_{i}(x_{kn})$) and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are then:
+	The equation above requires the evaluation of the potential energy  of every  uncorrelated configuration $n$ for all K states [$u_{i}(x_{kn})$] and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are then computed with Eq. \ref{eqn:mbar1}. The statistical variance resulting from free energy estimation is given by the matrix covariances ($s$):
 	
 	\begin{equation}
-	\Delta f_{ij} = f_{j} -  f_{i}  .
-	\end{equation} 
-	
-	The statistical variance resulting from free energy estimation $S_{ij}^{2} \Delta f_{ij}$ is given by the matrix covariances:
-	
-	\begin{equation}
-	\label{eq:varmbar}
 	\begin{aligned}
-	s_{ij}^{2} \Delta f_{ij} \equiv cov (-ln \hat{Z_{j}}/\hat{Z_{i}},-ln \hat{Z_{j}}/\hat{Z_{i}}),
+	\delta _{ij}^{2} s_{ij} = s_{ii}^{2} + s_{jj}^{2} - 2 s_{ij}.
 	\end{aligned}
 	\end{equation}
-	where $\hat{Z_{j}}$ and $\hat{Z_{i}}$ are the partition functions of states $i$ and $j$. The MBAR method can be considered as limit case of the 
-	Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. Eq. \eqref{eq:mbar} becomes equal to the WHAM equations if the histogram width tends to zero. Despite this, the MBAR is still more suited than the WHAM because it doesn't have the bias associated with the discretization, allows the calculation of an error estimate and allows free energy calculations of states that weren't sampled \cite{mbar}.
+	
+    The MBAR method can be considered as a limiting case of the 
+	Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. WHAM equations become equal to Eq. \eqref{eq:mbar} if the histogram width tends to zero. Despite this, the MBAR is still more suited than the WHAM because it does not have the bias associated with the discretization and allows the calculation of an error estimate \cite{mbar}.
 	
 \section{Expanded Ensemble Method}\label{ee}
 	
