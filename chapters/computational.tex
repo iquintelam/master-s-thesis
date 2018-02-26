@@ -7,7 +7,7 @@
 \section{Molecular Dynamics}
 
 \subsection{Background and Formalution}
-Molecular Dynamics (MD) uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamic and dynamic information of a system. This information is extracted from the time evolution of the system, which is obtained  through the numerical integration of the Newton equations of motion \cite{tuckerman}:
+Molecular Dynamics (MD) uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamic and dynamic information of a system. This information is extracted from the time evolution of the system, which is obtained  through the numerical integration of the Newton's equations of motion \cite{tuckerman}:
 
 \begin{equation}
 \frac{d \vec{p}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}},
@@ -17,7 +17,7 @@ where $p_{i}$ is the momentum and $r_{N}$ are the coordinates of all the atoms$(
 m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}.
 \end{equation}
 
-In order to develop equations for any coordinate system, for instance $q^{N}=(r_{1},\theta _{1},\phi _{1})$ , the Halmitonian formulation, a more general formulation of classical mechanics,  is used to develop the equations of motion:
+In order to develop equations for any coordinate system, for instance $q^{N}=(r_{1},\theta _{1},\phi _{1})$, the Halmitonian formulation, a more general formulation of classical mechanics,  is used to develop the equations of motion:
 \begin{equation}
 \mathcal{H} (q^{N},p^{N}) = K(p^{N}) + U(q^{N}) .
 \end{equation}
@@ -36,7 +36,7 @@ In the dynamics described by the equations above, the Hamiltonian is preserved. 
 
 \subsection{Statistical Ensembles}
 
-A statistical ensemble corresponds to the set of configurations of a system. For an isolated system at equilibrium, it is called the microcanonical ensemble. This ensemble has as control variables the number of particles (N), volume (V), and total energy (E). Following the ergodic hypothesis, the system at these conditions will spend the same amount of time in each of the microstates (points in phase space) with the fixed Hamiltonian.  The number of accessible microstates is defined by the partition function or the density of states, and  is given by the following equation  for the microcanonical ensemble: 
+In order to calculate thermodynamic properties, we need to define control variables of a system. For an isolated system at equilibrium, the control variables are the number of particles (N), volume (V), and total energy (E). The set of configurations under the control variables is then called statistical ensemble. In the example cited above, it is specifically called the microcanonical ensemble. Following the ergodic hypothesis, the system at these conditions will spend the same amount of time in each of the microstates (points in phase space) with the fixed Hamiltonian.  The number of accessible microstates is defined by the partition function or the density of states, and  is given by the following equation  for the microcanonical ensemble: 
 
 \begin{equation}
 \begin{aligned}
@@ -52,7 +52,7 @@ Here, $\epsilon _{0}$ is the energy unit, $h$ is the Planck constant and $\delta
 \end{aligned}
 \end{equation}
 
-In order to obtain the macroscopic properties from molecular dynamics, we need to have the relation of the microcanonical partition function to the entropy ($S$). Known as the Boltzmann equation. It is:
+The macroscopic properties from molecular dynamics are then obtained from the relation of the microcanonical partition function to the entropy ($S$). Known as the Boltzmann equation. It is:
 
 \begin{equation}
 \begin{aligned}
@@ -686,7 +686,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{aligned}
 	\end{equation}
 	
-	Recall that $Q(N,V,T))$ is the partition function of the canonical ensemble, expressed as
+	Recall that $Q(N,V,T)$ is the partition function of the canonical ensemble, expressed as
 	
 	\begin{equation}
 	\label{eq:partican}
@@ -696,7 +696,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{aligned}
 	\end{equation}
 	
-	The Giibs free energy, the object of study in this dissertation, is given by
+	The Gibbs free energy, the object of study in this dissertation, is given by
 	
 	\begin{equation}
 	\label{eq:fisobari}
@@ -707,22 +707,20 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	where $\Delta (N,P,T)$ is the partition function of the isothermal-isobaric ensemble:
 	
 	\begin{equation}
-	\label{eq:partiso}
 	\begin{aligned}
 	\Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d^{n}p d^{n}r \exp \left[ -\beta \left( \sum_{i=1}^{N}\dfrac{p_{i}^{2}}{2m_{i}} + U(r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right].
 	\end{aligned}
 	\end{equation}
 	
-	Evaluating the partition function is an often unfeasible, but we are interested in calculating only the Gibbs free energy difference between two states of a system, which is  
+	Evaluating the partition function is an often unfeasible task, but we are interested in calculating only the Gibbs free energy difference between two states of a system, which is  
 	
 	\begin{equation}
-	\label{eq:dif}
 	\begin{aligned}
 	\Delta G_{AB} = G_{B} - G_{A}= -\kappa_{b}T ln \left( \frac{\Delta_{B}}{\Delta_{A}}\right) .
 	\end{aligned}
 	\end{equation}
 	
-	Since the masses of particles in at states 0 and 1 of a sytem are the same and the Hamiltonian is separable ($\mathcal{H} = K(p) + U(r)$), the moment integrals in the ratio ${\Delta_{B}}/{\Delta_{A}}$ can be simplified into to the ratio of the configuration integrals:
+	Since the masses of particles in at states A and B of a system are the same and the Hamiltonian is separable in $K(p)$ and $U(r)$, the moment integrals in the ratio ${\Delta_{B}}/{\Delta_{A}}$ can be simplified into to the ratio of the configuration integrals:
 	
 	\begin{equation}
 	\label{eq:partiso}
@@ -740,7 +738,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{aligned}
 	\end{equation}
 	
-	In the case of a study concerning the solvation of a single molecule, the Gibbs free energy difference between end states $A$ and $B$ are, more specifically, the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to have accurate results for free energy differences, the states must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since free energy is a state function. That is why alchemical states (without physical sense) can be used to link physical states of interest. The solvation free energy calculations are done through a thermodynamic cycle path in which the solute molecule is gradually inserted into the solvent as illustrated in \figref{thermcy}. According to this path, the free energy of solvation is expressed as:
+	In the case of a study concerning the solvation of a single molecule, the Gibbs free energy difference between end states $A$ and $B$ are, more specifically, the difference between the solute alone in the gas phase and the solute interacting with the solvent. In order to have accurate results for free energy differences, the phase space must have sufficient overlap  \cite{klimovich}. This can be achieved by calculating the free energy difference between a series of intermediates states. The result of these differences are independent of the path chosen since free energy is a state function. That is why alchemical states (without physical sense) can be used to link physical states of interest. The solvation free energy calculations are done through a thermodynamic cycle path in which the solute molecule is gradually inserted into the solvent as illustrated in \figref{thermcy}. According to this path, the free energy of solvation is expressed as
 	
 	\begin{equation}
 	\label{eq:freesolv}
@@ -756,20 +754,20 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 		\label{thermcy}
 	\end{figure}
 	
-	The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the aqueous phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones or Mie potential. In order to carry out the latter process, a modified potential with a coupling parameter ($\lambda$) is used. Each $\lambda$ represents an alchemical state.When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential.  That is why the non-linear soft core scheme \cite{beutler1994} is used to make the potential behave more smoothly in relation to the change of $\lambda$, as can be seem in \figref{fig:SC}. According to the soft core developed by \citeonline{beutler1994}, we propose the following generalized soft core Mie potential:
-	
-	\begin{equation}
-	\label{eq:softcore}
-	\begin{aligned}
-	U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace,
-	\end{aligned}
-	\end{equation}
-	where $\alpha$ is a constant whose is  normally assumed to be 0.5. Using the Lennard-Jones exponents ($\lambda _{r} =12$ and $\lambda _{a} = 6$), Eq. \eqref{eq:softcore} becomes
+	The solvation free energy between states 1 and 2 in \figref{thermcy} is associated with turning off the molecule's non bonded interactions in the gas phase. The next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent, and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the aqueous phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the later case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $. The methods used to carry out these transformations scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones or Mie potential. In order to carry out the latter process, a modified potential with a coupling parameter ($\lambda$) is used. Each $\lambda$ represents an alchemical state.When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential.  That is why the non-linear soft core scheme \cite{beutler1994} is used to make the potential behave more smoothly in relation to the change of $\lambda$, as can be seem in \figref{fig:SC}. The soft core potential developed by \citeonline{beutler1994} is  
 	
 	\begin{equation}
 	\label{eq:softcoreLJ}
 	\begin{aligned}
-	U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{6}}\right\rbrace .
+	U_{LJ}^{sc}(r) {}=& 4\lambda\epsilon \left\lbrace\frac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{6}\right]^{2}} - \frac{1}{\alpha(1-\lambda)+(r/\sigma)^{6}}\right\rbrace ,
+	\end{aligned}
+	\end{equation}
+	where $\alpha$ is a constant whose is  normally assumed to be 0.5.	Based on Eq. \ref{eq:softcoreLJ}, we propose a generalized soft core Mie potential for any value of $\lambda _{r}$ and $\lambda _{a}$. It is given by:
+	
+	\begin{equation}
+	\label{eq:softcore}
+	\begin{aligned}
+	U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace .
 	\end{aligned}
 	\end{equation}
 	
@@ -780,7 +778,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 		\label{fig:SC}
 	\end{figure}
 	
-	The $\Delta G_{3 \rightarrow 4}$ can then be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}, which was the method used in this dissertation ans it is described in section \ref{{ee}}. The free energies of solvation obtained can then be used to calculate other properties such as the partition coefficient, that is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T:
+	The $\Delta G_{3 \rightarrow 4}$ can then be then obtained by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}, which was the method used in this dissertation ans it is described in section \ref{ee}. The free energies of solvation obtained can then be used to calculate other properties such as the partition coefficient, that is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T:
 	
 	\begin{equation}
 	\label{eqn:partcoe}
@@ -788,80 +786,21 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\end{equation}
 	where the factor $2.303RT$ is used to convert the free energies.
 	
-	
-\section{Multistate Bennett Acceptance Ratio (MBAR)}\label{mbar}
-	
-	Among the post-processing methods of potential energies obtained form solvation free energy simulations available in the literature, we chose to use the MBAR due to the fact that it provides the minimum variance for the free energies. The MBAR method \cite{mbar} is based on free energy of perturbation, MBAR is equal to the BAR method when the calculations are made between two states only. It is a maximum likelihood method which proposes an estimator that computes free energies and their uncertainties of all $K$ states  by minimizing the $K \times K$ matrix of variances for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the ${x^{N_{i}}_{i,n }}_{n=1 }$ configurations of i, the following probability distributions is sampled:
-	\begin{equation}
-	p_{i}(x) = \frac{q_{i}(x)}{c_{i}},
-	\end{equation}
-	
-	\begin{equation}
-	c_{i} = \int dx q_{i}(x),
-	\end{equation}
-	where $q_{i}(x)=\exp[-u_{i}(x)]$ and $u_{i}$ is the reduced potential energy of each state, defined for a an alchemical transformation by $u_{i} (x)= \beta_{i} [U_{i}(x)+P_{i}V(x) + \mu _{i}^{T}n(x)]$. IN addition, $c_{i}$ is a normalization constant.  The free energies are estimated from the ratio of this constant in each state, since
-	
-	\begin{equation}
-	\Delta f_{ij} = f_{i} - f_{j} = - \ln \frac{c_{j}}{c_{i}}  = -\ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} .
-	\label{eqn:mbar1}
-	\end{equation}
-	
-	\citeonline{mbar} then proposed the following arbitrary function:
-	
-	\begin{equation}
-	c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} .
-	\end{equation}
-	
-	Using the equation above for every state  K, the following relation is obtained:
-	
-	\begin{equation}
-	\label{eq:mbar1}
-	\sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n}) .
-	\end{equation}
-	
-	\citeonline{mbar} suggested the following equation for the arbitrary term $\alpha _{ij}$ in order to minimize the variance:
-	
-	\begin{equation}
-	\label{eq:mbar2}
-	\alpha _{ij} (x) = \frac{N_{j} \hat{c_{i}} ^{-1}}{\sum_{k=1}^{K} N_{k} c_{i} ^{-1} q_{k}(x)} .
-	\end{equation}
-	
-	Assuming the sampling is carried out following Boltzmann statistics, Eqs. \eqref{eq:mbar1} and \eqref{eq:mbar2} can be rearranged to obtain the free energy estimator, which is solved self consistently:  
-	
-	\begin{equation}
-	\label{eq:mbar}
-	\begin{aligned}
-	f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
-	\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp \lbrace \beta [f_{l} - u_{l}(x_{kn})] \rbrace} .
-	\end{aligned}
-	\end{equation}
-	
-	The equation above requires the evaluation of the potential energy  of every  uncorrelated configuration $n$ for all K states [$u_{i}(x_{kn})$] and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are then computed with Eq. \ref{eqn:mbar1}. The statistical variance resulting from free energy estimation is given by the matrix covariances ($s$):
-	
-	\begin{equation}
-	\begin{aligned}
-	\delta _{ij}^{2} s_{ij} = s_{ii}^{2} + s_{jj}^{2} - 2 s_{ij}.
-	\end{aligned}
-	\end{equation}
-	
-    The MBAR method can be considered as a limiting case of the 
-	Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. WHAM equations become equal to Eq. \eqref{eq:mbar} if the histogram width tends to zero. Despite this, the MBAR is still more suited than the WHAM because it does not have the bias associated with the discretization and allows the calculation of an error estimate \cite{mbar}.
-	
 \section{Expanded Ensemble Method}\label{ee}
 	
-	Instead of doing various simulations in different values of $\lambda$, expanded ensemble simulations \cite{lyubartsev} were developed to allow a non-Boltzmann sampling scheme of different states in only one simulation. In this scheme, the sampling is done by biasing the phase space exploration process with weights not related to the statistical ensemble. The statistical expanded ensemble, $Z^{EE}$, is obtained from the probability distributions correspondent to each $\lambda$, hence $Z^{EE}$ is defined as a sum of sub ensembles $Z_{i}$ in different values of $\lambda$:
+	We decided to use the Expanded Ensemble method \cite{lyubartsev} in our solvation free energy simulations since it allows a non-Boltzmann sampling scheme of different states in a single simulation. \citeonline{lyubartsev} initillay proposed in their paper that the sampling was done for different temperatures, but it can be generalized for different states or $\lambda 's$. In this scheme, the sampling is done by biasing the phase space exploration process with weights not related to the statistical ensemble. The partition function of the statistical expanded ensemble, $Z^{EE}$, is obtained from the probability distributions correspondent to each $\lambda$, hence $Z^{EE}$ is defined as a sum of subensembles $Z_{i}$ in different values of $\lambda$, that is,
 	
 	\begin{equation}
 	Z^{EE} = \sum_{i=1}^{N} Z_{i}(\lambda_{i}) exp(\eta_{i}),
 	\label{eqn:ee}
 	\end{equation}   
-	where N is the number of alchemical states, $\eta_{i}$ is the arbitrary weight of the sub ensemble at each state and $Z_{i}$ is configuration partition function at state i. For the isothermal-isobaric ensemble, $Z$ is:
+	where N is the number of alchemical states, $\eta_{i}$ is the arbitrary weight of the subensemble at each state and $Z_{i}$ is the configurational partition function of state i. For the isothermal-isobaric ensemble, $Z_{i}$ is given by
 	
 	\begin{equation}
-	Z = {\int_{0}^{\infty} dV \int d^{n}r \exp \left[ -\beta \left(U(\lambda, r_{1},..,r_{n}) + PV(r_{1},..,r_{n}) \right) \right]}.
+	Z_{i} = \frac{1}{V_{0}} {\int_{0}^{\infty} dV \int d^{n}r^{n} \exp \left \lbrace -\beta_{i} \left[ U(\lambda, r_{1},..,r_{n}) + P_{i}V(r_{1},..,r_{n}) \right] \right \rbrace}.
 	\end{equation} 
 	
-	In solvation free energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the soft-core potential (Eq. \ref{eq:softcore}). For molecular dynamic simulations, the sampling of the expanded ensemble is done by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that type of sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
+	In solvation free energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the softcore potential (Eq. \ref{eq:softcore}). For molecular dynamic simulations, the sampling of the expanded ensemble is done by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that this type of sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
 	
 	\begin{equation}
 	\pi(x|\lambda_{k}) = \dfrac{\exp[-\beta u(x,\lambda_{k})]}{\int dx \exp [- \beta u(x,\lambda_{k})]}.
@@ -874,14 +813,14 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\pi(\lambda_{k}|x) = \dfrac{\exp[-\beta u(x,\lambda_{k}) + \eta_{k}]}{ \sum_{k=1}^{K} \exp [- \beta u(x,\lambda_{k})+ \eta_{k}]},
 	\label{eqn:rhoee2}
 	\end{equation} 
-	where $u(x,\lambda_{k}) = U(x,\lambda_{k}) + PV(x,\lambda_{k})$ is the reduced potential function for the NPT ensemble. There are a variety of acceptance schemes to do the expanded sampling using Eq. \eqref{eqn:rhoee2}, but \citeonline{chodera2011} suggested that the independence sampling \cite{liu2002} is the best strategy to increase the number of uncorrelated configurations. The implementation suggested by them updates the state index from $i$ to $j$ by first generating a uniform random number $R$ on the interval $[0,1)$ and then selecting the smallest new value of $j$ that satisfies  the relation below:
+	where $u(x,\lambda_{k})$ is the reduced potential function for the NPT ensemble. There is a variety of acceptance schemes to do the expanded sampling using Eq. \eqref{eqn:rhoee2}, but \citeonline{chodera2011} suggested that the independence sampling \cite{liu2002} is the best strategy to increase the number of uncorrelated configurations. The implementation they suggested consist of updating the state index from $i$ to $j$ by first generating a uniform random number $R$ on the interval $[0,1)$ and then selecting the smallest new value of $j$ that satisfies  the relation
 	
 	\begin{equation}
 	R < \sum_{i=1}^{j} \pi(\lambda_{i}|x) .
 	\label{eqn:relee2}
 	\end{equation} 
 	
-	The sampling strategy above depends on the weights in order to assure an adequate sampling of the states. If there isn't a sufficient number of states sampled, the expanded ensemble becomes deficient in obtaining input data to estimate free energy differences with the methods exposed in Chapter 2. The weights can be calculated following the flat-histogram approach \cite{bernd1992,bernd1993,dayal2004}. This strategy aims to obtain adequate sampling by assuring that all the states have an equal number of samples, i.e. the ratio of the probability of sampling state ($\pi_{i}$) to the probability of sampling state $j$ ($\pi_{j}$) is equal to one. Given that $\pi_{i}$ has the following equation:
+	The sampling strategy above depends on a proper selection of weights in order to assure an adequate sampling of the states. If there is not a sufficient number of visits to each state, the expanded ensemble becomes deficient in obtaining input data to estimate free energy differences with the methods exposed in Chapter 2. The weights can be calculated following the flat-histogram approach \cite{bernd1992,bernd1993,dayal2004}. This strategy aims to obtain adequate sampling by ensuring that all the states have an equal number of visits, i.e. the ratio of the probability of sampling state ($\pi_{i}$) to the probability of sampling state $j$ ($\pi_{j}$) is equal to one. Given that $\pi_{i}$ is given by the equation:
 	
 	\begin{equation}
 	\pi_{i} = \dfrac{Z_{i}(\lambda_{i}) exp(\eta_{i})}{Z^{EE}} ,
@@ -894,63 +833,123 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eqn:weight}
 	\end{equation}
 	
-	Eq. \eqref{eqn:weight} is solved iteratively with trial simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram, it is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{eqn:weight}, the next values of $\eta$ can be calculated. This iteration goes on until a uniform distribution is secured. The weights found are then used in a longer simulation to obtain the final solvation free energy differences.
+	Eq. \eqref{eqn:weight} proposes that the choice of the new weights is dependent on the free energies that we are attempting to obtain. This is done by solving Eq. \eqref{eqn:weight} iteratively with trial simulations. For the first simulation, the values of $\eta$ are chosen or set to zero and the histogram of the states visited is obtained. With this histogram, it is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{eqn:weight}, the next values of $\eta$ can be calculated. This iteration goes on until a uniform distribution is attained. The weights found are then used in a longer simulation to obtain the final solvation free energy differences.
 	
-	The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate energy differences. In this work, the method chosen to obtain the optimal stage of the $\lambda$ domain is the one developed by \citeonline{escobedo2007} with basis in the study of  \citeonline{trebst2004}. This method targets "bottlenecks" in the simulation. It does that by optimizing $\lambda$ through the minimization of the number of round trips per CPU time between the lowest $\lambda$ ($=0$) and highest $\lambda$ ($=1$). This is specifically done by maximizing the steady-state stream $\phi$ of the simulation, which "walks" among the values of $\lambda$. This stream is estimated from Fick's diffusion type of law:
+	The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate free energy differences. In this work, the method chosen to obtain the optimal staging of the $\lambda$ domain is the one developed by \citeonline{escobedo2007} with basis in the study of  \citeonline{1742-5468-2006-03-P03018}. This method targets "bottlenecks" in the simulation. It does that by optimizing $\lambda$ through the minimization of the number of round trips per CPU time between the lowest ($0$) and highest ($1$) values of $\lambda$. This is specifically done by maximizing the steady-state stream $\phi$ of the simulation, which "walks" among the values of $\lambda$. This flow is estimated from a Fick's diffusion type of law:
 	
 	\begin{equation}
 	\phi = D(\Lambda) \Pi (\Lambda) \dfrac{dx(\Lambda)}{d \Lambda}.
 	\label{eqn:stream}
 	\end{equation}
 	
-	In the equation above, $\Lambda$ is the actual continue value of the coupling parameter. This continue function of $\lambda s$ is obtained by interpolating the $\lambda$ set linearly. $D(\Lambda)$ is the diffusivity at  state $\Lambda$ and $x(\Lambda)$ is the fraction of times that the trial simulation at state $\Lambda_{i}$ has most recently visited the state $\lambda=1$ as opposed to state $\lambda=0$. The derivative ${dx(\Lambda)}/{d \Lambda}$ is approximated with the central finite differences method. Finally, $\Pi (\Lambda)$ is the probability of visiting $\Lambda$:
+	In the equation above, $\Lambda$ is the actual continuous value of the coupling parameter. This continuous function of $\lambda 's$ is obtained by interpolating the $\lambda$ set linearly. $D(\Lambda)$ is the diffusivity at  state $\Lambda$ and $x(\Lambda)$ is the fraction of times that the trial simulation at state $\Lambda_{i}$ has most recently visited the state $\lambda=1$ as opposed to state $\lambda=0$. The derivative ${dx(\Lambda)}/{d \Lambda}$ is approximated with the central finite differences method. Finally, $\Pi (\Lambda)$ is the probability of visiting $\Lambda$:
 	
 	\begin{equation}
 	\Pi (\Lambda) = \dfrac{C^{'} \bar{\Pi} (\lambda)}{\Lambda_{i+1} - \Lambda_{i}}.
 	\label{eqn:plambda}
 	\end{equation}
 	
-	The $C^{'} $ term in the equation above represents a constant and $\bar{\Pi} (\lambda)$ is the arithmetic average of visiting the $\Lambda$ states:
+	The $C^{'} $ term in the equation above represents a constant and $\bar{\Pi} (\lambda)$ is the arithmetic average of the frequency of visits to the $\Lambda$ state:
 	
 	\begin{equation}
-	\bar{\Pi} (\lambda) = \dfrac{\pi_{i+1} - \pi_{i}}{2}.
+	\bar{\Pi}_{i} (\lambda) = \dfrac{\pi_{i+1} - \pi_{i}}{2}.
 	\label{eqn:barplambda}
 	\end{equation}
 	
-	The $\phi$ is maximum when the probability $\Pi^{'}(\Lambda_{i})$ is proportional to $1/\sqrt{D(\Lambda)}$. With that information, it is possible to estimate the diffusivity using one trial simulation with the following equation:
+	The $\phi$ is maximum when the optimal probability $\Pi^{'}(\Lambda_{i})$ of visiting state $\Lambda_{i}$ is proportional to $1/\sqrt{D(\Lambda)}$ \cite{trebst2004}. With that information, it is possible to estimate the diffusivity using one trial simulation with the following equation:
 	
 	\begin{equation}
 	D(\Lambda) = \dfrac{\Lambda_{i+1} - \Lambda_{i}}{\bar{\Pi} (\lambda) {dx(\Lambda)}/{d \Lambda}}.
 	\label{eqn:diff}
 	\end{equation}
 	
-	Hence, we can calculate $\bar{\Pi} $ and, consequently, the cumulative probability, which is used to obtain the new $\lambda$ states:
+	Hence, we can calculate $\bar{\Pi} $ and, consequently, the cumulative probability, which is used to obtain the new $\lambda$ state, with
 	
 	\begin{equation}
 	\Phi = \int_{\lambda =0}^{\lambda =1} \Pi^{'}(\Lambda_{i}) d \Lambda = \dfrac{i}{K},
 	\label{eqn:cumfun}
 	\end{equation}
-	where, $K$ is the total number of $\lambda$ states. 
+	where $K$ is the total number of $\lambda$ states. We obtained these cumulative probabilities for every $\lambda$ set we estimated in order to carry out solvation free energy simulations. An example of the cumulative probability calculated is presented in Figure \ref{fig:optimized_cdf} in the Results and Discussion section.
+
+\section{Multistate Bennett Acceptance Ratio (MBAR)}\label{mbar}
+
+We presented in the sections above the methods used to obtain the total potential energies at each alchemical state with molecular dynamics, but, in this section, we are going to discuss the methodology utilized to obtain solvation free energy differences from these data. The MBAR method \cite{mbar} is based on free energy of perturbation. It is a maximum likelihood method which proposes an estimator that computes free energies and their uncertainties of all $K$ states  by minimizing the $K \times K$ matrix of variances for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the $\lbrace x_{i,n } \rbrace ^{N_{i}}_{n=1 }$ configurations of i, the following probability distributions is sampled:
+\begin{equation}
+p_{i}(x) = \frac{q_{i}(x)}{c_{i}},
+\end{equation}
+
+\begin{equation}
+c_{i} = \int dx q_{i}(x),
+\end{equation}
+where $q_{i}(x)=\exp[-u_{i}(x)]$ and $u_{i}$ is the reduced potential energy of each state, defined for a an alchemical transformation by $u_{i} (x)= \beta_{i} [U_{i}(x)+P_{i}V(x) + \mu _{i}^{T}n(x)]$. IN addition, $c_{i}$ is a normalization constant.  The free energies are estimated from the ratio of this constant in each state, since
+
+\begin{equation}
+\Delta f_{ij} = f_{i} - f_{j} = - \ln \frac{c_{j}}{c_{i}}  = -\ln \frac{\int dx q_{j}(x)}{\int dx q_{i}(x)} .
+\label{eqn:mbar1}
+\end{equation}
+
+\citeonline{mbar} then proposed the following arbitrary function:
+
+\begin{equation}
+c_{i} \langle \alpha _{ij} q_{j} \rangle _{i}  =  c_{j} \langle \alpha _{ij} q_{i} \rangle _{j} .
+\end{equation}
+
+Using the equation above for every state  K, the following relation is obtained:
+
+\begin{equation}
+\label{eq:mbar1}
+\sum_{j=1}^{K} \frac{\hat{c_{i}}}{N_{i}} \sum_{n=1}^{N_{i}} \alpha _{ij} q_{j} (x_{i,n}) =  \sum_{j=1}^{K} \frac{\hat{c_{j}}}{N_{j}} \sum_{n=1}^{N_{j}} \alpha _{ij} q_{i} (x_{j,n}) .
+\end{equation}
+
+\citeonline{mbar} suggested the following equation for the arbitrary term $\alpha _{ij}$ in order to minimize the variance:
+
+\begin{equation}
+\label{eq:mbar2}
+\alpha _{ij} (x) = \frac{N_{j} \hat{c_{i}} ^{-1}}{\sum_{k=1}^{K} N_{k} c_{i} ^{-1} q_{k}(x)} .
+\end{equation}
+
+Assuming the sampling is carried out following Boltzmann statistics, Eqs. \eqref{eq:mbar1} and \eqref{eq:mbar2} can be rearranged to obtain the free energy estimator, which is solved self consistently:  
+
+\begin{equation}
+\label{eq:mbar}
+\begin{aligned}
+f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
+\dfrac{\exp[-\beta u_{i}(x_{kn})]}{\sum_{l=1}^{K} N_{l} \exp \lbrace \beta [f_{l} - u_{l}(x_{kn})] \rbrace} .
+\end{aligned}
+\end{equation}
+
+The equation above requires the evaluation of the potential energy  of every  uncorrelated configuration $n$ for all K states [$u_{i}(x_{kn})$] and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. Free energy changes between states are then computed with Eq. \ref{eqn:mbar1}. The statistical variance resulting from free energy estimation is given by the matrix covariances ($s$):
+
+\begin{equation}
+\begin{aligned}
+\delta _{ij}^{2} s_{ij} = s_{ii}^{2} + s_{jj}^{2} - 2 s_{ij}.
+\end{aligned}
+\end{equation}
+
+The MBAR method can be considered as a limiting case of the 
+Weighted Histogram Analysis Method (WHAM) \cite{wham} for computing free energies. WHAM equations become equal to Eq. \eqref{eq:mbar} if the histogram width tends to zero. Despite this, the MBAR is still more suited than the WHAM because it does not have the bias associated with the discretization and allows the calculation of an error estimate \cite{mbar}.
 	
 \section{Gibbs Ensemble Monte Carlo (GEMC)}\label{gemc}
 	
-	The Monte Carlo (MC) approach is another method for generating atomic trajectories in order to obtain macroscopic properties. The trajectories are obtained stochastically, unlike the molecular dynamics approach. The positions are evolved by random moves (MC steps) or perturbations obtained with the Metropolis method \cite{1953JChPh..21.1087M}, hence the trajectories are not predictable from the set of initial positions. The Metropolis method is a Markov process, that is a stochastic process in which the configurations change randomly with time and have no memories of the previous configurations. The random move is constructed in such way that the probability of visiting a particular point $r^{N}$ is proportional to the Boltzmann factor ($exp[-\beta U(r^{N})]$) \cite{frenkel}. The construction of a  particle displacement MC step according to \citeonline{1953JChPh..21.1087M} can be briefly summed up in:
+	In the initial steps of this research, we estimated the parameters of the aromatic molecules of the SAFT-$\gamma$ Mie force field with the methodology proposed by \citeonline{lafitte2012}. This approach required liquid-vapor equilibrium data obtained with molecular simulation, as it is described in section \ref{parsaft}. Hence, we carried out Monte Carlo simulations at the the Gibbs Ensemble \cite{papa1987} since this ensemble is used to study phase coexistence. However, before talking specifically about this ensemble, we are going to briefly talk about Monte Carlo simulations.
+	
+	The Monte Carlo (MC) approach is another method for generating atomic trajectories in order to obtain macroscopic properties. Rather than using the numerical integration of the Newton's equations of motion, the trajectories are obtained stochastically in the Monte Carlo approach. The positions are evolved by random moves or perturbations (MC steps) acquired with the Metropolis method \cite{1953JChPh..21.1087M}, hence the trajectories are not predictable from the set of initial positions. The Metropolis method is a Markov process, that is, a stochastic process in which the configurations change randomly with time and have no memory of the previous configurations. The random move is constructed in such a way that the probability of visiting a particular point $r^{N}$ is proportional to the Boltzmann factor ($exp[-\beta U(r^{N})]$) \cite{frenkel}. The construction of a  particle displacement MC step according to \citeonline{1953JChPh..21.1087M} can be briefly summed up as:
 	
 	1. Pick a random particle, and calculate its energy $U(r^{N})$.
 	
-	2. Perturb the particle by randomly displacing  its configuration, $r' = r +\Delta$. Where $\Delta$ is a perturbation chosen from a defined interval of maximum displacement ($[- \delta _{max},\delta _{max}]$). Calculate the energy with the new positions $U(r'^{N})$.
+	2. Perturb the particle by randomly displacing  it, $r' = r +\Delta r$. Where $\Delta r$ is a perturbation randomly chosen from a defined interval of maximum displacement ($[- \delta _{max},\delta _{max}]$). Calculate the energy with the new positions $U(r'^{N})$.
 	
 	3. Accept the move from $r^{N}$ to $r'^{N}$ with the probability:
 	\begin{equation}
-	acc_{A \rightarrow B} = min(1,exp[-\beta U(r'^{N}) + \beta U(r^{N}) ]) .
+	acc_{A \rightarrow B} = min \lbrace 1,exp[-\beta U(r'^{N}) + \beta U(r^{N}) ] \rbrace .
 	\end{equation}
 	
-	The values of maximum displacement are defined in order to obtain acceptance rates of 25-50 \% in the step 3   \cite{Frenkel2013}. Monte Carlo simulations are interesting when we need to calculate properties in different thermodynamic ensembles, such as the Gibbs Ensemble \cite{papa1987}. This ensemble  is used to study phase coexistence with simultaneous Monte Carlo (MC) simulations of two boxes,  representing a two phase system, with periodic conditions. The boxes exchange molecules, energy and volume between them. Equilibrium is obtained through MC steps that consist of translation and rotation moves, volume exchange moves and randomly exchanges of molecules between the boxes. For the phase equilibrium of multi-component systems,the GEMC simulations should be carried out at the NPT (constant number of particles, pressure and temperature) ensemble to obey the requirement of an additional degree of freedom for mixtures. Meanwhile, the simulation of single component systems is carried out at constant number of particles, temperature and volume (NVT) since the two phase region would be a line for this system at constant pressure and temperature. The constant volume GEMC ensemble is rigorously equivalent to the canonical ensemble in the thermodynamic limit as demonstrated by \citeonline{frenkel}. The partition function of the GEMC-NVT ensemble is obtained considering that the particles in both boxes are subjected to the same intermolecular interactions. Also, the boxes’ volumes and number of particles ($N_{1}$,$N_{2}$,$V_{1}$ and $V_{2}$) can vary while the total volume ($V$) and total number of particles ($N$) remain constant ($N = N_{1} + N_{2}$,$V = V_{1} + V_{2}$):
+	The values of maximum displacement are defined iteratively in order to obtain acceptance rates of 25-50\% in the step 3   \cite{Frenkel2013}. Monte Carlo simulations are interesting when we need to calculate properties in different thermodynamic ensembles, such as the Gibbs Ensemble used in this dissertation. The phase coexistence at this ensemble is obtained with simultaneous Monte Carlo (MC) simulations of two boxes with periodic boundary conditions, representing a two phase system. The boxes exchange molecules, energy, and volume between them. Equilibrium is obtained through MC steps that consist of translation and rotation moves, volume exchange moves, and random exchanges of molecules between the boxes. For the phase equilibrium of multi-component systems, the GEMC simulations should be carried out at the NPT (constant number of particles, pressure and temperature) ensemble to obey the requirement of an additional degree of freedom for mixtures. In turn, the simulation of single component systems is carried out at constant number of particles, temperature, and volume (NVT) since the two phase region would be a line for this system at constant pressure and temperature \cite{frenkel}. The partition function of the GEMC-NVT ensemble is obtained by considering that the particles in both boxes are subjected to the same intermolecular interactions. Also, volumes and number of particles ($N_{1}$,$\, N_{2}$,$\, V_{1}$ and $V_{2}$) can vary while the total volume ($V$) and the total number of particles ($N$) remain constant ($N = N_{1} + N_{2}$,$\, V = V_{1} + V_{2}$). Thus, the partition function is
 	
 	\begin{equation}
 	\begin{aligned}
-	Q(NVT) {} \equiv & \sum_{N_{1}}^{N} \dfrac{1}{V \Lambda ^{3N} N_{1}!(N-N_{1})!} \int_{0}^{V} dV_{1} V_{1}^{N_{1}} V_{2}^{N_{2}} \int dx_{1}^{N_{1}} \exp[-\beta U(x_{1}^{N_{1}})] \\
-	& \int dx_{2}^{N_{2}} \exp[-\beta U(x_{2}^{N_{2}})] .
+	Q(NVT) {} \equiv & \sum_{N_{1}}^{N} \dfrac{1}{V \Lambda ^{3N} N_{1}!(N-N_{1})!} \int_{0}^{V} V_{1}^{N_{1}} V_{2}^{N_{2}} dV_{1} \\
+	& \int  \exp[-\beta U(x_{1}^{N_{1}})] dx_{1}^{N_{1}} \int  \exp[-\beta U(x_{2}^{N_{2}})] dx_{2}^{N_{2}}.
 	\end{aligned}
 	\label{eqn:gepart}
 	\end{equation}
@@ -962,28 +961,28 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 	\label{eqn:geprob}
 	\end{equation}
 	
-	The acceptance criterion for the translation and rotation moves of configuration A	to B is similar to the conventional NVT MC ensembles and is equal to:
+	The acceptance criterion for the translation and rotation moves from configuration A	to configuration B is similar to the conventional NVT MC method and is equal to:
 	
 	\begin{equation}
-	acc_{A \rightarrow B} = \min(1,\exp[-\beta U(x_{A}^{N_{1}}) -\beta U(x_{B}^{N_{1}})]) .
+	acc_{A \rightarrow B} = \min \lbrace 1,\exp[-\beta U(x_{A}^{N_{1}}) -\beta U(x_{B}^{N_{1}})] \rbrace .
 	\label{eqn:drprob}
 	\end{equation} 
 	
-	The exchange volume moves happen by exchanging an amount $\Delta V$ between the boxes to achieve pressure equilibrium. $\Delta V$ can be chosen from a uniform distribution based on the maximum variation of volume defined ($\delta V_{max}$) with probability $1/\delta V_{max}$. The acceptance rule for these moves is: 
+	The volume exchange moves take place by exchanging an amount $\Delta V$ between the boxes to achieve pressure equilibrium. $\Delta V$ can be chosen from a uniform distribution based on the maximum variation of volume ($\delta V_{max}$) defined with probability $1/\delta V_{max}$. The acceptance rule for these moves is: 
 	
 	\begin{equation}
-	acc_{A \rightarrow B} = \min \left(1, \left(\dfrac{V_{1}^{B}}{V_{1}^{A}} \right)^{N_{1}=1} \left( \dfrac{V_{2}^{B}}{V_{2}^{A}} \right)^{N_{2}+1} \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right) .
+	acc_{A \rightarrow B} = \min \left \lbrace 1, \left(\dfrac{V_{1}^{B}}{V_{1}^{A}} \right)^{N_{1}=1} \left( \dfrac{V_{2}^{B}}{V_{2}^{A}} \right)^{N_{2}+1} \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right \rbrace .
 	\label{vprob}
 	\end{equation}
 	
 	Particle exchange moves are carried out to obtain the equality of chemical potential between the boxes. One particle from one box is removed and then added to a random location in the other box. The criteria to accept or reject this type of move is:
 	
 	\begin{equation}
-	acc_{A \rightarrow B} = \min \left( 1, \dfrac{N_{1}V_{2}}{N_{2}V_{1}}  \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right) .
+	acc_{A \rightarrow B} = \min \left \lbrace 1, \dfrac{N_{1}V_{2}}{N_{2}V_{1}}  \exp[-\beta U(x_{A}^{N}) -\beta U(x_{B}^{N})] \right \rbrace .
 	\label{moleprob}
 	\end{equation}
 	
-	This method has been widely used to calculate phase equilibrium, but it under performs for the region near the critical point due to large density fluctuations. The GEMC also has a poor performance for dense systems since the particle exchange moves have a low acceptance ratio.  
+	This method has been widely used to calculate phase equilibrium, but its performance is poor for the region near the critical point due to large density fluctuations. The GEMC method also has a poor performance for dense systems since the particle exchange moves have a low acceptance rate.  
 	
 	
 	
