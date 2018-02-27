@@ -20,17 +20,17 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated field_info (elt_size=4) to 14591 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
-I was expecting a `,' or a `}'---line 1173 of file thesis.bib
+I was expecting a `,' or a `}'---line 1174 of file thesis.bib
  :   
  :   address = {Chichester, U.K.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1181 of file thesis.bib
+I was expecting a `,' or a `}'---line 1182 of file thesis.bib
  :   
  :   address = {Santa Barbara, U.S.A.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1322 of file thesis.bib
+I was expecting a `,' or a `}'---line 1323 of file thesis.bib
  :  
  :  doi="10.1140/epjp/i2013-13010-8"
 (Error may have been on previous line)
