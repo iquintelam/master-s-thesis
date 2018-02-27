@@ -17,24 +17,30 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 14591 items from 5000.
+Reallocated field_info (elt_size=4) to 14936 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
-I was expecting a `,' or a `}'---line 1174 of file thesis.bib
+I was expecting a `,' or a `}'---line 1137 of file thesis.bib
+ :   
+ :   address = {Dordrecht, NL}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1145 of file thesis.bib
  :   
  :   address = {Chichester, U.K.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1182 of file thesis.bib
+I was expecting a `,' or a `}'---line 1153 of file thesis.bib
  :   
  :   address = {Santa Barbara, U.S.A.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1323 of file thesis.bib
+I was expecting a `,' or a `}'---line 1289 of file thesis.bib
  :  
  :  doi="10.1140/epjp/i2013-13010-8"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "perguntar"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 There is no name in "" for entry pso
 while executing---line 2091 of file abntex2-alf.bst
@@ -64,45 +70,45 @@ while executing---line 2146 of file abntex2-alf.bst
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 139 entries,
+You've used 143 entries,
             6714 wiz_defined-function locations,
-            1968 strings with 34821 characters,
-and the built_in function-call counts, 133860 in all, are:
-= -- 9594
-> -- 5531
-< -- 471
-+ -- 2236
-- -- 1594
-* -- 10041
-:= -- 16513
-add.period$ -- 417
-call.type$ -- 140
-change.case$ -- 1790
-chr.to.int$ -- 535
-cite$ -- 135
-duplicate$ -- 7218
-empty$ -- 8443
-format.name$ -- 8053
-if$ -- 31755
+            1968 strings with 35346 characters,
+and the built_in function-call counts, 136457 in all, are:
+= -- 9687
+> -- 5698
+< -- 388
++ -- 2249
+- -- 1642
+* -- 10169
+:= -- 16880
+add.period$ -- 430
+call.type$ -- 144
+change.case$ -- 1843
+chr.to.int$ -- 551
+cite$ -- 139
+duplicate$ -- 7209
+empty$ -- 8740
+format.name$ -- 8296
+if$ -- 32437
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 2661
-newline$ -- 677
-num.names$ -- 675
-pop$ -- 3325
+missing$ -- 2745
+newline$ -- 694
+num.names$ -- 695
+pop$ -- 3492
 preamble$ -- 1
-purify$ -- 594
+purify$ -- 611
 quote$ -- 0
-skip$ -- 8001
+skip$ -- 8087
 stack$ -- 1
-substring$ -- 5642
-swap$ -- 4302
-text.length$ -- 288
+substring$ -- 5839
+swap$ -- 4263
+text.length$ -- 251
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1015
+while$ -- 1052
 width$ -- 0
-write$ -- 2207
-(There were 13 error messages)
+write$ -- 2219
+(There were 14 error messages)

@@ -28,7 +28,7 @@ There is an evident loss of information in grouping atoms; hence it is necessary
 The level of coarse-graining also needs to be established. \citeonline{hadley2012} affirm that six heavy atoms (non-hydrogen atoms) per bead are traditionally used in order to not lose valuable details and to maintain isotropic representations of the beads. After the mapping, CG force fields needs to be parametrized. There are two different approaches, bottom up and top down, to link the simulations on the coarse-grained scale to another scale (schematically represented in \figref{fig:multiscale}). The bottom-up approach uses information of a more detailed scale such as the quantum mechanics description or the atomistic description to obtain information necessary to the parametrization. This method highly depends on the more detailed model quality to succeed. Meanwhile, the top down methodology obtains parameters from larger scales, namely experimental thermodynamic properties or structure based properties. 
 
 \begin{figure}[H]
-	\centering
+	\raggedleft
 	\includegraphics[width=0.9\textwidth]{Figures/multiscale}
 	\caption{Schematic representation for the two different approaches of coarse-graining.}
 	\label{fig:multiscale}
@@ -49,7 +49,7 @@ database in polar (water, hexanol, octanol and nonanol) and apolar (hexane,octan
 
 Though this variety of data using the intramolecular Lennard-Jones potential, we are not aware of work using the Mie Potential in free energy calculations. We, in the present study, try to provide information about these predictions with the SAFT-$\gamma$ Mie coarse-grained force field.  As said before, the output of these calculations are highly dependent on the force field, and some coarse-grained models obtained satisfactory results for these kinds of simulations. Hence, knowing if other coarse-grained approaches have similar performances to the all-atoms force fields can help increase the scale of solvation free energy calculations. 
 
-\section{Solvation Free Energy Calculation Methods}
+\section{Solvation Free Energy Calculation Methods}\label{SFECM}
 
 Solvation free energy calculations account for the difference in free energy related to transferring the solute form ideal gas condition to the liquid solvent condition. To do that, we gradually insert the solute in the solvent. This process is mathematically carried out by using a coupling parameter ($\lambda$) on the total potential energy function, where $\lambda s$ represent the intermediate states in the transition from the ideal gal condition to the solvent condition. Hence,  during the solvation free energy simulations, we obtain total potential energies correspondent to these coupling parameters [($U(\lambda)$]. After the simulations, these potential energies need to be post-processed and analyzed to calculate the solvation free energies effectively. Since these calculations can have slow convergences, a lot of papers in the last decades focused on developing analysis methods to calculate free energies. Almost all methods rely on o the following approaches:  free energy perturbation (FEP) based methods, thermodynamic integration, and histograms.
 
@@ -86,11 +86,11 @@ The thermodynamic integration method \cite{kirkwood1935} uses equilibrium averag
 \begin{equation}
 \label{eq:ti3}
 \begin{aligned}
-\frac{\partial (G \, 1/k_{b}T) }{\partial \lambda} =  \left \langle \frac{\partial \mathcal{H}}{\partial \lambda} \right \rangle _{N,P,T} .
+\frac{\partial (G \, 1/\kappa_{b}T) }{\partial \lambda} =  \left \langle \frac{\partial \mathcal{H}}{\partial \lambda} \right \rangle _{N,P,T} .
 \end{aligned}
 \end{equation}
 
-In Eq. \eqref{eq:ti3}, $k_{b}$ is the Boltzmann constant, $G$ is the Gibbs free energy and $\mathcal{H}$ is the Halmitonian of the system. The derivative is obtained for every configuration data between the states from simulations through an analytical expression. Some examples of methods for obtaining theses expressions are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific, such as as those found  in \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations for each coupling parameter $\lambda_{k}$ are carried out and the average over the derivative at each state is compute in order to obtain the final solvation free energy:
+In Eq. \eqref{eq:ti3}, $\kappa_{b}$ is the Boltzmann constant, $G$ is the Gibbs free energy and $\mathcal{H}$ is the Halmitonian of the system. The derivative is obtained for every configuration data between the states from simulations through an analytical expression. Some examples of methods for obtaining theses expressions are the trapezoidal rule or natural cubic spline \cite{bareva}. There are also more complex schemes that are usually system specific, such as as those found  in \citeonline{garrido2010} and \citeonline{shyu2009}. MD simulations for each coupling parameter $\lambda_{k}$ are carried out and the average over the derivative at each state is compute in order to obtain the final solvation free energy:
 
 \begin{equation}
 \label{eq:ti4}
@@ -111,7 +111,7 @@ Histograms are used to compute probability distributions. Usually, every histogr
 & \tilde{\varrho_{r}}(U,T) = \frac{\tilde{\varrho_{r}^{*}}(U,T)}{\sum_{U} \tilde{\varrho_{r}^{*}}(U,T)},
 \end{aligned}
 \end{equation}
-where $\beta = 1/k_{b}T$, $\tilde{A}_{i}$ gives the free energy for run i, $f_{i}(U)$ is the number of counts of energy U for run i and $f_{tot,i}$ is the total number of counts in run i. Eq. \eqref{eq:wham1} is solved self consistently with the initial value for $\tilde{A}_{i}$ equals to zero. The final unnormalized probability distribution is then given by $\tilde{\varrho_{r}}(U,T)$.
+where $\beta = 1/\kappa_{b}T$, $\tilde{A}_{i}$ gives the free energy for run i, $f_{i}(U)$ is the number of counts of energy U for run i and $f_{tot,i}$ is the total number of counts in run i. Eq. \eqref{eq:wham1} is solved self consistently with the initial value for $\tilde{A}_{i}$ equals to zero. The final unnormalized probability distribution is then given by $\tilde{\varrho_{r}}(U,T)$.
 
 \subsection{Free Energy Perturbation (FEP)}
 %38
@@ -120,7 +120,7 @@ The free energy perturbation method \cite{zwanzig1954} is the oldest and one of 
 \begin{equation}
 \label{eq:fep}
 \begin{aligned}
-\Delta G_{AB} = -k_{b}T ln \langle{e^{-\beta (U_{B}-U_{A})}}\rangle_{A} .
+\Delta G_{AB} = -\kappa_{b}T ln \langle{e^{-\beta (U_{B}-U_{A})}}\rangle_{A} .
 \end{aligned}
 \end{equation}
 
@@ -129,7 +129,7 @@ According to the equation above, the free energy difference is calculated by doi
 \begin{equation}
 \label{eq:fepint}
 \begin{aligned}
-\Delta G_{AB} = -k_{b}T  \sum_{i=0}^{N}
+\Delta G_{AB} = -\kappa_{b}T  \sum_{i=0}^{N}
 ln \langle {e^{-\beta (U_{i+1}-U_{i})}} \rangle_{i} .
 \end{aligned}
 \end{equation}

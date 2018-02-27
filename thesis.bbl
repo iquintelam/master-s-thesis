@@ -9,8 +9,8 @@
 \abntrefinfo{Abraham \textit{et al.}}{ABRAHAM \textit{et al.}}{1990}
 {ABRAHAM, M.~H.; WHITING, G.~S.; FUCHS, R.; CHAMBERS, E.~J. Thermodynamics of
   solute transfer from water to hexadecane.
-\emph{Journal of the Chemical Society, Perkin Transactions 2}, The Royal
-  Society of Chemistry, p. 291--300, 1990.}
+\emph{Journal of the Chemical Society, Perkin Transactions 2}, p. 291--300,
+  1990.}
 
 \bibitem[ABREU 2017]{playmol}
 \abntrefinfo{ABREU}{ABREU}{2017}
@@ -78,8 +78,7 @@ Accessed: 2017-03-10.}
 {BECKSTEIN, O.; FOURRIER, A.; IORGA, B.~I. Prediction of hydration free
   energies for the sampl4 diverse set of compounds using molecular dynamics
   simulations with the opls-aa force field.
-\emph{Journal of Computer-Aided Molecular Design}, v.~28, n.~3, p. 265--276,
-  Mar 2014.}
+\emph{Journal of Computer-Aided Molecular Design}, v.~28, p. 265--276, 2014.}
 
 \bibitem[Bennett 1976]{bennet1976}
 \abntrefinfo{Bennett}{BENNETT}{1976}
@@ -104,14 +103,13 @@ Accessed: 2017-03-10.}
 \abntrefinfo{Berendsen \textit{et al.}}{BERENDSEN \textit{et al.}}{1984}
 {BERENDSEN, H. J.~C.; POSTMA, J. P.~M.; GUNSTEREN, W.~F. van; DINOLA, A.; HAAK,
   J.~R. Molecular dynamics with coupling to an external bath.
-\emph{The Journal of Chemical Physics}, v.~81, n.~8, p. 3684--3690, 1984.}
+\emph{The Journal of Chemical Physics}, v.~81, p. 3684--3690, 1984.}
 
 \bibitem[Berg and Neuhaus 1992]{bernd1992}
 \abntrefinfo{Berg and Neuhaus}{BERG; NEUHAUS}{1992}
 {BERG, B.~A.; NEUHAUS, T. Multicanonical ensemble: A new approach to simulate
   first-order phase transitions.
-\emph{Physical Review Letters}, American Physical Society, v.~68, p. 9--12, Jan
-  1992.}
+\emph{Physical Review Letters}, v.~68, p. 9--12, 1992.}
 
 \bibitem[Beutler \textit{et al.} 1994]{beutler1994}
 \abntrefinfo{Beutler \textit{et al.}}{BEUTLER \textit{et al.}}{1994}
@@ -132,8 +130,7 @@ Accessed: 2017-03-10.}
   \textit{et al.}}{2004}
 {BUENROSTRO-GONZALEZ, E.; LIRA-GALEANA, C.; GIL-VILLEGAS, A.; WU, J. Asphaltene
   precipitation in crude oils: Theory and experiments.
-\emph{AIChE Journal}, American Institute of Chemical Engineers, v.~50, n.~10,
-  p. 2552--2570, 2004.}
+\emph{AIChE Journal}, v.~50, p. 2552--2570, 2004.}
 
 \bibitem[Chang 1992]{co2toliq}
 \abntrefinfo{Chang}{CHANG}{1992}
@@ -169,8 +166,7 @@ Accessed: 2017-03-10.}
 \abntrefinfo{Dayal \textit{et al.}}{DAYAL \textit{et al.}}{2004}
 {DAYAL, P.; TREBST, S.; WESSEL, S.; W\"URTZ, D.; TROYER, M.; SABHAPANDIT, S.;
   COPPERSMITH, S.~N. Performance limitations of flat-histogram methods.
-\emph{Physical Review Letters}, American Physical Society, v.~92, p. 097201,
-  Mar 2004.}
+\emph{Physical Review Letters}, v.~92, p. 097201, 2004.}
 
 \bibitem[Ervik \textit{et al.} 2016]{ervik20162}
 \abntrefinfo{Ervik \textit{et al.}}{ERVIK \textit{et al.}}{2016}
@@ -193,16 +189,21 @@ Accessed: 2017-03-10.}
   simulations involving molecular insertions and deletions. i. closed systems.
 \emph{Journal of Chemical Physics}, v.~127, p. 174103, 2007.}
 
+\bibitem[Essex, Reynolds and Richards 1992]{doi:10.1021/ja00036a009}
+\abntrefinfo{Essex, Reynolds and Richards}{ESSEX; REYNOLDS; RICHARDS}{1992}
+{ESSEX, J.~W.; REYNOLDS, C.~A.; RICHARDS, W.~G. Theoretical determination of
+  partition coefficients.
+\emph{Journal of the American Chemical Society}, v.~114, p. 3634--3639, 1992.}
+
 \bibitem[Ferrenberg and Swendsen 1989]{PhysRevLett.63.1195}
 \abntrefinfo{Ferrenberg and Swendsen}{FERRENBERG; SWENDSEN}{1989}
 {FERRENBERG, A.~M.; SWENDSEN, R.~H. Optimized monte carlo data analysis.
-\emph{Phys. Rev. Lett.}, American Physical Society, v.~63, p. 1195--1198, Sep
-  1989.}
+\emph{Physical Review Letters}, v.~63, p. 1195--1198, 1989.}
 
 \bibitem[Frenkel 2013]{Frenkel2013}
 \abntrefinfo{Frenkel}{FRENKEL}{2013}
 {FRENKEL, D. Simulations: The dark side.
-\emph{The European Physical Journal Plus}, v.~128, n.~1, p.~10, 2013.}
+\emph{The European Physical Journal Plus}, v.~128, p.~10, 2013.}
 
 \bibitem[Frenkel and Smit 2001]{frenkel}
 \abntrefinfo{Frenkel and Smit}{FRENKEL; SMIT}{2001}
@@ -213,7 +214,7 @@ Accessed: 2017-03-10.}
 \abntrefinfo{Gao \textit{et al.}}{GAO \textit{et al.}}{2014}
 {GAO, F.; XU, Z.; LIU, G.; YUAN, S. Molecular dynamics simulation: The behavior
   of asphaltene in crude oil and at the oil/water interface.
-\emph{Energy \& Fuels}, v.~28, n.~12, p. 7368--7376, 2014.}
+\emph{Energy \& Fuels}, v.~28, p. 7368--7376, 2014.}
 
 \bibitem[Garrido \textit{et al.} 2011]{garrido2011}
 \abntrefinfo{Garrido \textit{et al.}}{GARRIDO \textit{et al.}}{2011}
@@ -240,8 +241,7 @@ Accessed: 2017-03-10.}
 \abntrefinfo{Genheden}{GENHEDEN}{2016}
 {GENHEDEN, S. Predicting partition coefficients with a simple
   all-atom/coarse-grained hybrid model.
-\emph{Journal of Chemical Theory and Computation}, v.~12, n.~1, p. 297--304,
-  2016.}
+\emph{Journal of Chemical Theory and Computation}, v.~12, p. 297--304, 2016.}
 
 \bibitem[Goncalves and Stassen 2005]{goncalves}
 \abntrefinfo{Goncalves and Stassen}{GONCALVES; STASSEN}{2005}
@@ -254,7 +254,7 @@ Accessed: 2017-03-10.}
 \abntrefinfo{Greenfield}{GREENFIELD}{2011}
 {GREENFIELD, M.~L. Molecular modelling and simulation of asphaltenes and
   bituminous materials.
-\emph{International Journal of Pavement Engineering}, v.~12, n.~4, p. 325--341,
+\emph{International Journal of Pavement Engineering}, v.~12, p. 325--341,
   2011.}
 
 \bibitem[Hadley and McCabe 2010]{hadley2010}
@@ -262,8 +262,7 @@ Accessed: 2017-03-10.}
 {HADLEY, K.~R.; MCCABE, C. On the investigation of coarse-grained models for
   water: Balancing computational efficiency and the retention of structural
   properties.
-\emph{The Journal of Physical Chemistry B}, v.~114, n.~13, p. 4590--4599,
-  2010.}
+\emph{The Journal of Physical Chemistry B}, v.~114, p. 4590--4599, 2010.}
 
 \bibitem[Hadley and McCabe 2012]{hadley2012}
 \abntrefinfo{Hadley and McCabe}{HADLEY; MCCABE}{2012}
@@ -281,7 +280,7 @@ Accessed: 2017-03-10.}
 {HEADEN, T.~F.; BOEK, E.~S.; JACKSON, G.; TOTTON, T.~S.; MüLLER, E.~A.
   Simulation of asphaltene aggregation through molecular dynamics: Insights and
   limitations.
-\emph{Energy \& Fuels}, v.~31, n.~2, p. 1108--1125, 2017.}
+\emph{Energy \& Fuels}, v.~31, p. 1108--1125, 2017.}
 
 \bibitem[Herdes \textit{et al.} 2017]{herdes2017}
 \abntrefinfo{Herdes \textit{et al.}}{HERDES \textit{et al.}}{2017}
@@ -299,8 +298,7 @@ Accessed: 2017-03-10.}
 \bibitem[Hoover 1985]{PhysRevA.31.1695}
 \abntrefinfo{Hoover}{HOOVER}{1985}
 {HOOVER, W.~G. Canonical dynamics: Equilibrium phase-space distributions.
-\emph{Phys. Rev. A}, American Physical Society, v.~31, p. 1695--1697, Mar
-  1985.}
+\emph{Physical Review A}, v.~31, p. 1695--1697, 1985.}
 
 \bibitem[Izairi and Kamberaj 2017]{izairi2017}
 \abntrefinfo{Izairi and Kamberaj}{IZAIRI; KAMBERAJ}{2017}
@@ -321,21 +319,20 @@ Accessed: 2017-03-10.}
 {JORGENSEN, W.~L.; TIRADO-RIVES, J. The opls [optimized potentials for liquid
   simulations] potential functions for proteins, energy minimizations for
   crystals of cyclic peptides and crambin.
-\emph{Journal of the American Chemical Society}, v.~110, n.~6, p. 1657--1666,
-  1988.}
+\emph{Journal of the American Chemical Society}, v.~110, p. 1657--1666, 1988.}
 
 \bibitem[Joshi \textit{et al.} 2001]{doi:10.1021/ef010047l}
 \abntrefinfo{Joshi \textit{et al.}}{JOSHI \textit{et al.}}{2001}
 {JOSHI, N.~B.; MULLINS, O.~C.; JAMALUDDIN, A.; CREEK, J.; MCFADDEN, J.
   Asphaltene precipitation from live crude oil.
-\emph{Energy \& Fuels}, v.~15, n.~4, p. 979--986, 2001.}
+\emph{Energy \& Fuels}, v.~15, p. 979--986, 2001.}
 
 \bibitem[Jover \textit{et al.} 2015]{doi:10.1021/ef502209j}
 \abntrefinfo{Jover \textit{et al.}}{JOVER \textit{et al.}}{2015}
 {JOVER, J.~F.; MüLLER, E.~A.; HASLAM, A.~J.; GALINDO, A.; JACKSON, G.;
   TOULHOAT, H.; NIETO-DRAGHI, C. Aspects of asphaltene aggregation obtained
   from coarse-grained molecular modeling.
-\emph{Energy and Fuels}, v.~29, n.~2, p. 556--566, 2015.}
+\emph{Energy \& Fuels}, v.~29, p. 556--566, 2015.}
 
 \bibitem[Katritzky \textit{et al.} 2003]{doi:10.1021/ci034120c}
 \abntrefinfo{Katritzky \textit{et al.}}{KATRITZKY \textit{et al.}}{2003}
@@ -343,16 +340,15 @@ Accessed: 2017-03-10.}
   D.~B.; MARAN, U.; LOMAKA, A.; ACREE, W.~E. A general treatment of solubility.
   1. the qspr correlation of solvation free energies of single solutes in
   series of solvents.
-\emph{Journal of Chemical Information and Modeling}, v.~43, n.~6, p.
-  1794--1805, 2003.}
+\emph{Journal of Chemical Information and Modeling}, v.~43, p. 1794--1805,
+  2003.}
 
 \bibitem[Katzgraber \textit{et al.} 2006]{1742-5468-2006-03-P03018}
 \abntrefinfo{Katzgraber \textit{et al.}}{KATZGRABER \textit{et al.}}{2006}
 {KATZGRABER, H.~G.; TREBST, S.; HUSE, D.~A.; TROYER, M. Feedback-optimized
   parallel tempering monte carlo.
-\emph{Journal of Statistical Mechanics: Theory and Experiment}, v.~2006, n.~03,
-  p. P03018, 2006.
-Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
+\emph{Journal of Statistical Mechanics: Theory and Experiment}, v.~2006, p.
+  P03018, 2006.}
 
 \bibitem[Kirkwood 1935]{kirkwood1935}
 \abntrefinfo{Kirkwood}{KIRKWOOD}{1935}
@@ -375,7 +371,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{Kobryn and Kovalenko}{KOBRYN; KOVALENKO}{2008}
 {KOBRYN, A.~E.; KOVALENKO, A. Molecular theory of hydrodynamic boundary
   conditions in nanofluidics.
-\emph{The Journal of Chemical Physics}, v.~129, n.~13, p. 134701, 2008.}
+\emph{The Journal of Chemical Physics}, v.~129, p. 134701, 2008.}
 
 \bibitem[Koga and Takada 2001]{koga2001}
 \abntrefinfo{Koga and Takada}{KOGA; TAKADA}{2001}
@@ -396,7 +392,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 {KUZNICKI, T.; MASLIYAH, J.~H.; BHATTACHARJEE, S. Aggregation and partitioning
   of model asphaltenes at toluene - water interfaces: Molecular dynamics
   simulations.
-\emph{Energy and Fuels}, v.~23, n.~10, p. 5027–5035, 2009.}
+\emph{Energy \& Fuels}, v.~23, p. 5027–5035, 2009.}
 
 \bibitem[Lafitte \textit{et al.} 2013]{lafitte2013}
 \abntrefinfo{Lafitte \textit{et al.}}{LAFITTE \textit{et al.}}{2013}
@@ -422,8 +418,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \bibitem[Lee 1993]{bernd1993}
 \abntrefinfo{Lee}{LEE}{1993}
 {LEE, J. New monte carlo algorithm: Entropic sampling.
-\emph{Physical Review Letters}, American Physical Society, v.~71, p. 211--214,
-  Jul 1993.}
+\emph{Physical Review Letters}, v.~71, p. 211--214, 1993.}
 
 \bibitem[Levitt 1976]{levitt1976}
 \abntrefinfo{Levitt}{LEVITT}{1976}
@@ -440,7 +435,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{Li and Greenfield}{LI; GREENFIELD}{2011}
 {LI, D.~D.; GREENFIELD, M.~L. High internal energies of proposed asphaltene
   structures.
-\emph{Energy \& Fuels}, v.~25, n.~8, p. 3698--3705, 2011.}
+\emph{Energy \& Fuels}, v.~25, p. 3698--3705, 2011.}
 
 \bibitem[Liu 2002]{liu2002}
 \abntrefinfo{Liu}{LIU}{2002}
@@ -453,7 +448,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
   Saft-$\gamma$ force field for the simulation of molecular fluids: 4. a
   single-site coarse-grained model of water applicable over a wide temperature
   range.
-\emph{Mol. Phys.}, v.~113, p. 1228–1249, 2015.}
+\emph{Molecular Physics}, v.~113, p. 1228–1249, 2015.}
 
 \bibitem[Lobanova \textit{et al.} 2016]{lobanova2016}
 \abntrefinfo{Lobanova \textit{et al.}}{LOBANOVA \textit{et al.}}{2016}
@@ -492,7 +487,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{Martyna, Tobias and Klein}{MARTYNA; TOBIAS; KLEIN}{1994}
 {MARTYNA, G.~J.; TOBIAS, D.~J.; KLEIN, M.~L. Constant pressure molecular
   dynamics algorithms.
-\emph{The Journal of Chemical Physics}, v.~101, n.~5, p. 4177--4189, 1994.}
+\emph{The Journal of Chemical Physics}, v.~101, p. 4177--4189, 1994.}
 
 \bibitem[Matos \textit{et al.} 2017]{mobley2017}
 \abntrefinfo{Matos \textit{et al.}}{MATOS \textit{et al.}}{2017}
@@ -514,43 +509,42 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \emph{Industrial and Chemical Engineering Research}, v.~53, p. 4131–4141,
   2014.}
 
-\bibitem[{Metropolis} \textit{et al.} 1953]{1953JChPh..21.1087M}
-\abntrefinfo{{Metropolis} \textit{et al.}}{{Metropolis} \textit{et al.}}{1953}
-{{Metropolis}, N.; {Rosenbluth}, A.~W.; {Rosenbluth}, M.~N.; {Teller}, A.~H.;
-  {Teller}, E. {Equation of State Calculations by Fast Computing Machines}.
+\bibitem[Metropolis \textit{et al.} 1953]{1953JChPh..21.1087M}
+\abntrefinfo{Metropolis \textit{et al.}}{METROPOLIS \textit{et al.}}{1953}
+{METROPOLIS, N.; ROSENBLUTH, A.~W.; ROSENBLUTH, M.~N.; TELLER, A.~H.; TELLER,
+  E. {Equation of State Calculations by Fast Computing Machines}.
 \emph{The Journal of Chemical Physics}, v.~21, p. 1087--1092, 1953.}
 
 \bibitem[Mie 1903]{MIE}
 \abntrefinfo{Mie}{MIE}{1903}
 {MIE, G. Zur kinetischen theorie der einatomigen korper.
-\emph{Ann. Phys.}, v.~316, p. 657--697, 1903.}
+\emph{Annals of Physics}, v.~316, p. 657--697, 1903.}
 
 \bibitem[Mikami \textit{et al.} 2013]{doi:10.1021/ef301610q}
 \abntrefinfo{Mikami \textit{et al.}}{MIKAMI \textit{et al.}}{2013}
 {MIKAMI, Y.; LIANG, Y.; MATSUOKA, T.; BOEK, E.~S. Molecular dynamics
   simulations of asphaltenes at the oil–water interface: From nanoaggregation
   to thin-film formation.
-\emph{Energy \& Fuels}, v.~27, n.~4, p. 1838--1845, 2013.}
+\emph{Energy \& Fuels}, v.~27, p. 1838--1845, 2013.}
 
 \bibitem[Mobley \textit{et al.} 2007]{mobley2007}
 \abntrefinfo{Mobley \textit{et al.}}{MOBLEY \textit{et al.}}{2007}
 {MOBLEY, D.~L.; DUMONT, E.; CHODERA, J.~D.; DILL, K.~A. Comparison of charge
   models for fixed-charge force fields: Small-molecule hydration free energies
   in explicit solvent.
-\emph{The Journal of Physical Chemistry B}, v.~111, n.~9, p. 2242--2254, 2007.}
+\emph{The Journal of Physical Chemistry B}, v.~111, p. 2242--2254, 2007.}
 
 \bibitem[Mobley and Gilson 2017]{doimobley}
 \abntrefinfo{Mobley and Gilson}{MOBLEY; GILSON}{2017}
 {MOBLEY, D.~L.; GILSON, M.~K. Predicting binding free energies: Frontiers and
   benchmarks.
-\emph{Annual Review of Biophysics}, v.~46, n.~1, p. 531--558, 2017.}
+\emph{Annual Review of Biophysics}, v.~46, p. 531--558, 2017.}
 
 \bibitem[Mobley and Guthrie 2014]{PMID:24928188}
 \abntrefinfo{Mobley and Guthrie}{MOBLEY; GUTHRIE}{2014}
 {MOBLEY, D.~L.; GUTHRIE, J.~P. Freesolv: a database of experimental and
   calculated hydration free energies, with input files.
-\emph{Journal of computer-aided molecular design}, v.~28, n.~7, p. 711—720,
-  July 2014.}
+\emph{Journal of computer-aided molecular design}, v.~28, p. 711—720, 2014.}
 
 \bibitem[Mohamed, Bradshaw and Essex 2016]{mohamed2016}
 \abntrefinfo{Mohamed, Bradshaw and Essex}{MOHAMED; BRADSHAW; ESSEX}{2016}
@@ -576,7 +570,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{M\"uller and Jackson}{M\"ULLER; JACKSON}{2014}
 {M\"ULLER, E.~A.; JACKSON, G. Force field parameters from the saft - $\gamma$
   equation of state for use in coarse-grained molecular simulations.
-\emph{Annual Review of Chemical and Biomolecular Engineering}, v.~5, n.~1, p.
+\emph{Annual Review of Chemical and Biomolecular Engineering}, v.~5, p.
   405--427, 2014.}
 
 \bibitem[M\"uller and Mej\'ia 2017]{muller2017}
@@ -589,25 +583,25 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \bibitem[Mullins 2010]{doi:10.1021/ef900975e}
 \abntrefinfo{Mullins}{MULLINS}{2010}
 {MULLINS, O.~C. The modified yen model.
-\emph{Energy \& Fuels}, v.~24, n.~4, p. 2179--2207, 2010.}
+\emph{Energy \& Fuels}, v.~24, p. 2179--2207, 2010.}
 
 \bibitem[Murgich 2003]{doi:10.1080/0892702031000148762}
 \abntrefinfo{Murgich}{MURGICH}{2003}
 {MURGICH, J. Molecular simulation and the aggregation of the heavy fractions in
   crude oils.
-\emph{Molecular Simulation}, v.~29, n.~6-7, p. 451--461, 2003.}
+\emph{Molecular Simulation}, v.~29, p. 451--461, 2003.}
 
 \bibitem[NOS\'E 1984]{1984JChPh81511N}
 \abntrefinfo{NOS\'E}{NOS\'E}{1984}
 {NOS\'E, S. A unified formulation of the constant temperature molecular
   dynamics methods.
-\emph{The Journal of Chemical Physics}, v.~81, n.~1, p. 511--519, 1984.}
+\emph{The Journal of Chemical Physics}, v.~81, p. 511--519, 1984.}
 
 \bibitem[Orsi and Essex 2011]{10.1371/journal.pone.0028637}
 \abntrefinfo{Orsi and Essex}{ORSI; ESSEX}{2011}
 {ORSI, M.; ESSEX, J.~W. The elba force field for coarse-grain modeling of lipid
   membranes.
-\emph{PLOS ONE}, Public Library of Science, v.~6, n.~12, p. 1--22, 12 2011.}
+\emph{PLOS ONE}, v.~6, p. 1--22, 2011.}
 
 \bibitem[Paliwal and Shirts 2011]{bareva}
 \abntrefinfo{Paliwal and Shirts}{PALIWAL; SHIRTS}{2011}
@@ -640,7 +634,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{Parrinello and Rahman}{PARRINELLO; RAHMAN}{1981}
 {PARRINELLO, M.; RAHMAN, A. Polymorphic transitions in single crystals: A new
   molecular dynamics method.
-\emph{Journal of Applied Physics}, v.~52, n.~12, p. 7182--7190, 1981.}
+\emph{Journal of Applied Physics}, v.~52, p. 7182--7190, 1981.}
 
 \bibitem[Plimpton 1995]{lammps}
 \abntrefinfo{Plimpton}{PLIMPTON}{1995}
@@ -660,7 +654,20 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
   octanol–water partition coefficient (log pow) by microemulsion
   electrokinetic chromatography.
 \emph{Journal of Chromatography B: Biomedical Sciences and Applications},
-  v.~745, n.~1, p. 117 -- 126, 2000.}
+  v.~745, p. 117 -- 126, 2000.}
+
+\bibitem[Raabe 2017]{raabe}
+\abntrefinfo{Raabe}{RAABE}{2017}
+{RAABE, G. \emph{Molecular Simulation Studies on Thermophysical Properties -
+  With Application to Working Fluids. Springer Series Molecular Modeling and
+  Simulation}. 1. ed. Singapore: Springer, 2017.}
+
+\bibitem[Rai and Maginn 2012]{C1FD00090J}
+\abntrefinfo{Rai and Maginn}{RAI; MAGINN}{2012}
+{RAI, N.; MAGINN, E.~J. Critical behaviour and vapour-liquid coexistence of
+  1-alkyl-3-methylimidazolium bis(trifluoromethylsulfonyl)amide ionic liquids
+  via monte carlo simulations.
+\emph{Faraday Discuss.}, v.~154, p. 53--69, 2012.}
 
 \bibitem[Ramrattan \textit{et al.} 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan \textit{et al.}}{RAMRATTAN \textit{et al.}}{2015}
@@ -673,21 +680,20 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{Ravindra, Sokhi and Grieken}{RAVINDRA; SOKHI; GRIEKEN}{2008}
 {RAVINDRA, K.; SOKHI, R.; GRIEKEN, R.~V. Atmospheric polycyclic aromatic
   hydrocarbons: Source attribution, emission factors and regulation.
-\emph{Atmospheric Environment}, v.~42, n.~13, p. 2895 -- 2921, 2008.}
+\emph{Atmospheric Environment}, v.~42, p. 2895 -- 2921, 2008.}
 
 \bibitem[Rizzo \textit{et al.} 2006]{doi:10.1021/ct050097l}
 \abntrefinfo{Rizzo \textit{et al.}}{RIZZO \textit{et al.}}{2006}
 {RIZZO, R.~C.; AYNECHI, T.; CASE, D.~A.; KUNTZ, I.~D. Estimation of absolute
   free energies of hydration using continuum methods accuracy of partial charge
   models and optimization of nonpolar contributions.
-\emph{Journal of Chemical Theory and Computation}, v.~2, n.~1, p. 128--139,
-  2006.}
+\emph{Journal of Chemical Theory and Computation}, v.~2, p. 128--139, 2006.}
 
 \bibitem[Roux 1995]{ROUX1995275}
 \abntrefinfo{Roux}{ROUX}{1995}
 {ROUX, B. The calculation of the potential of mean force using computer
   simulations.
-\emph{Computer Physics Communications}, v.~91, n.~1, p. 275 -- 282, 1995.}
+\emph{Computer Physics Communications}, v.~91, p. 275 -- 282, 1995.}
 
 \bibitem[ROWLINSON and SWINTON 1982]{rowlinson}
 \abntrefinfo{ROWLINSON and SWINTON}{ROWLINSON; SWINTON}{1982}
@@ -706,7 +712,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 {RUELLE, P. The n-octanol and n-hexane/water partition coefficient of
   environmentally relevant chemicals predicted from the mobile order and
   disorder (mod) thermodynamics.
-\emph{Chemosphere}, v.~40, n.~5, p. 457 -- 512, 2000.}
+\emph{Chemosphere}, v.~40, p. 457 -- 512, 2000.}
 
 \bibitem[Sangster 1997]{sangster}
 \abntrefinfo{Sangster}{SANGSTER}{1997}
@@ -717,26 +723,26 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 \abntrefinfo{Schuler, Daura and Gunsteren}{SCHULER; DAURA; GUNSTEREN}{2001}
 {SCHULER, L.~D.; DAURA, X.; GUNSTEREN, W.~F. van. An improved gromos96 force
   field for aliphatic hydrocarbons in the condensed phase.
-\emph{Journal of Computational Chemistry}, v.~22, n.~11, p. 1205--1218, 2001.}
+\emph{Journal of Computational Chemistry}, v.~22, p. 1205--1218, 2001.}
 
 \bibitem[Schulte \textit{et al.} 1998]{doi:10.1021/je970112e}
 \abntrefinfo{Schulte \textit{et al.}}{SCHULTE \textit{et al.}}{1998}
 {SCHULTE, J.; DüRR, J.; RITTER, S.; HAUTHAL, W.~H.; QUITZSCH, K.; MAURER, G.
   Partition coefficients for environmentally important, multifunctional organic
   compounds in hexane + water.
-\emph{Journal of Chemical \& Engineering Data}, v.~43, n.~1, p. 69--73, 1998.}
+\emph{Journal of Chemical \& Engineering Data}, v.~43, p. 69--73, 1998.}
 
 \bibitem[Schwaab \textit{et al.} 2008]{pso}
 \abntrefinfo{Schwaab \textit{et al.}}{SCHWAAB \textit{et al.}}{2008}
 {SCHWAAB, M.; BISCAIA, E. C.; , J. ; MONTEIRO, J.; PINTO, J. C. Nonlinear
   parameter estimation through particle swarm optimization.
-\emph{Chemical Engineering Science}, v.~63, p. 1542--1552, 03 2008.}
+\emph{Chemical Engineering Science}, v.~63, p. 1542--1552, 2008.}
 
 \bibitem[Shah and Maginn 2011]{doi:10.1063/1.3644939}
 \abntrefinfo{Shah and Maginn}{SHAH; MAGINN}{2011}
 {SHAH, J.~K.; MAGINN, E.~J. A general and efficient monte carlo method for
   sampling intramolecular degrees of freedom of branched and cyclic molecules.
-\emph{The Journal of Chemical Physics}, v.~135, n.~13, p. 134121, 2011.}
+\emph{The Journal of Chemical Physics}, v.~135, p. 134121, 2011.}
 
 \bibitem[SHELL 2015]{shell2015}
 \abntrefinfo{SHELL}{SHELL}{2015}
@@ -767,7 +773,7 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 {SHIRTS, M.~R.; PANDE, V.~S. Comparison of efficiency and bias of free energies
   computed by exponential averaging, the bennett acceptance ratio, and
   thermodynamic integration.
-\emph{J. Chem. Phys.}, v.~122, p. 144107, 2005.}
+\emph{Journal of Chemical Physics}, v.~122, p. 144107, 2005.}
 
 \bibitem[Shirts \textit{et al.} 2003]{shirts2013}
 \abntrefinfo{Shirts \textit{et al.}}{SHIRTS \textit{et al.}}{2003}
@@ -784,18 +790,17 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 
 \bibitem[Sj\"{O}blom \textit{et al.} 2003]{SJOBLOM2003399}
 \abntrefinfo{Sj\"{O}blom \textit{et al.}}{SJ\"{O}BLOM \textit{et al.}}{2003}
-{SJ\"{O}BLOM, J.; ASKE, N.; AUFLEM, I.~H.; BRANDAL Øystein; HAVRE, T.~E.;
-  SæTHER Øystein; WESTVIK, A.; JOHNSEN, E.~E.; KALLEVIK, H. Our current
+{SJ\"{O}BLOM, J.; ASKE, N.; AUFLEM, I.~H.; BRANDAL, O.; HAVRE, T.~E.;
+  S\AE{}THER, O.; WESTVIK, A.; JOHNSEN, E.~E.; KALLEVIK, H. Our current
   understanding of water-in-crude oil emulsions.: Recent characterization
   techniques and high pressure performance.
-\emph{Advances in Colloid and Interface Science}, v. 100-102, n. Supplement C,
-  p. 399 -- 473, 2003.}
+\emph{Advances in Colloid and Interface Science}, v. 100-102, p. 399 -- 473,
+  2003.}
 
 \bibitem[Sj\"{O}blom, Simon and Xu 2015]{SJOBLOM20151}
 \abntrefinfo{Sj\"{O}blom, Simon and Xu}{SJ\"{O}BLOM; SIMON; XU}{2015}
 {SJ\"{O}BLOM, J.; SIMON, S.; XU, Z. Model molecules mimicking asphaltenes.
-\emph{Advances in Colloid and Interface Science}, v.~218, n. Supplement C, p. 1
-  -- 16, 2015.}
+\emph{Advances in Colloid and Interface Science}, v.~218, p. 1 -- 16, 2015.}
 
 \bibitem[Smith, Ness and Abbot 2007]{smithbook}
 \abntrefinfo{Smith, Ness and Abbot}{SMITH; NESS; ABBOT}{2007}
@@ -808,14 +813,15 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 {SOROUSH, S.; STRAVER, E.~J.; RUDOLPH, E. S.~J.; PETERS, C.~J.; LOOS, T.~W. de;
   ZITHA, P.~L.; VAFAIE-SEFTI, M. Phase behavior of the ternary system carbon
   dioxide+toluene+asphaltene.
-\emph{Fuel}, v.~137, n. Supplement C, p. 405 -- 411, 2014.}
+\emph{Fuel}, v.~137, p. 405 -- 411, 2014.}
 
 \bibitem[Sterpone, Derreumaux and Melchionna 2015]{opep2015}
 \abntrefinfo{Sterpone, Derreumaux and Melchionna}{STERPONE; DERREUMAUX;
   MELCHIONNA}{2015}
 {STERPONE, F.; DERREUMAUX, P.; MELCHIONNA, S. Protein simulations in fluids:
   Coupling the opep coarse-grained force field with hydrodynamics.
-\emph{ga}, v.~11, p. 1843– 1853, 2015.}
+\emph{Journal of Chemical Theory and Computation}, v.~11, p. 1843– 1853,
+  2015.}
 
 \bibitem[Sterpone \textit{et al.} 2014]{opep2014}
 \abntrefinfo{Sterpone \textit{et al.}}{STERPONE \textit{et al.}}{2014}
@@ -836,15 +842,14 @@ Dispon{\'\i}vel em: \url{http://stacks.iop.org/1742-5468/2006/i=03/a=P03018}.}
 {TEKLEBRHAN, R.~B.; GE, L.; BHATTACHARJEE, S.; XU, Z.; SJ\"{O}BLOM, J. Initial
   partition and aggregation of uncharged polyaromatic molecules at the
   oil–water interface: A molecular dynamics simulation study.
-\emph{The Journal of Physical Chemistry B}, v.~118, n.~4, p. 1040--1051, 2014.
+\emph{The Journal of Physical Chemistry B}, v.~118, p. 1040--1051, 2014.
 PMID: 24397444.}
 
 \bibitem[Trebst, Huse and Troyer 2004]{trebst2004}
 \abntrefinfo{Trebst, Huse and Troyer}{TREBST; HUSE; TROYER}{2004}
 {TREBST, S.; HUSE, D.~A.; TROYER, M. Optimizing the ensemble for equilibration
   in broad-histogram monte carlo simulations.
-\emph{Physical Review E}, American Physical Society, v.~70, p. 046701, Oct
-  2004.}
+\emph{Physical Review E}, v.~70, p. 046701, 2004.}
 
 \bibitem[Trotter 1959]{trotter}
 \abntrefinfo{Trotter}{TROTTER}{1959}
@@ -862,6 +867,12 @@ PMID: 24397444.}
 {VERLET, L. Computer "experiments" on classical fluids. i. thermodynamical
   properties of lennard-jones molecules.
 \emph{Physical Review}, v.~159, p. 98--103, 1967.}
+
+\bibitem[Westmoreland \textit{et al.} 2002]{978-94-017-0765-7}
+\abntrefinfo{Westmoreland \textit{et al.}}{WESTMORELAND \textit{et al.}}{2002}
+{WESTMORELAND, P.; KOLLMAN, P.~A.; CHAKA, A.~M.; CUMMINGS, P.~T.; MOROKUMA, K.;
+  NEUROCK, M.; STECHEL, E.~B.; VASHISHTA, P. \emph{Applying Molecular and
+  Materials Modeling}. 1. ed. [S.l.]: Springer Netherlands, 2002.}
 
 \bibitem[Winger \textit{et al.} 2009]{winger2009}
 \abntrefinfo{Winger \textit{et al.}}{WINGER \textit{et al.}}{2009}
