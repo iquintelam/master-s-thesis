@@ -233,7 +233,7 @@ i\mathcal{L}_{2} = - \sum_{\alpha=1}^{N} \dfrac{\partial }{\partial p_{\alpha}} 
 \end{aligned}
 \end{equation}
 
-The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators, that is the order in which the operator is applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t])$. Though we can not do that, we can still express the propagator in terms of these two factors by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
+The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators, that is, the order in which the operator is applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t])$. Though we can not do that, we can still express the propagator in terms of these two factors by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
 
 \begin{equation}
 \begin{aligned}
@@ -252,7 +252,7 @@ where P is an integer. Defining a time step $\Delta t =t/P$ and using it in Eq. 
 \label{eqn:trotterdt}
 \end{equation}
 
-In order to obtain an approximation for $\exp (i\mathcal{L}t)$, we do take the limits and consider that P is a finite number. The resulting approximation for the classical propagator is then 
+In order to obtain an approximation for $\exp (i\mathcal{L}t)$, we take the limits and consider that P is a finite number. The resulting approximation for the classical propagator is then 
 
 \begin{equation}
 \begin{aligned}
@@ -278,7 +278,7 @@ Now we can use Eq. \ref{eqn:trotterfin} as a numerical propagation for a single 
 \end{aligned}
 \label{eqn:trotterfin2}
 \end{equation} 
-where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ is equal to the force ($F$) acting on the particle. We now are able to replace the exact evolution solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution, from a initial condition $(r(t),p(t))$, is then
+where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ is equal to the force ($F$) acting on the particle. We now are able to replace the exact solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution, from a initial condition $(r(t),p(t))$, is then
 
 \begin{equation}
 \begin{aligned}
@@ -290,7 +290,7 @@ where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\p
 \end{aligned}
 \end{equation}
 
-The propagation is the determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence, we have the following equation after applying the first operator:
+The propagation is determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence, we have the following equation after applying the first operator:
 
 \begin{equation}
 \begin{aligned}
@@ -326,7 +326,7 @@ r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}.
 \label{eqn:verlet}
 \end{equation}
 
-Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method does not use the velocity directly to update the positions. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculations of forces at each time step is the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above and is given by
+Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculations of forces at each time step are the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above and is given by
 
 \begin{equation}
 v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t .
@@ -567,7 +567,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
     
     \subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}\label{parsaft}
     
-    The SAFT-$\gamma$ Mie Force Field uses a top-down coarse-graining methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data such as fluid-phase equilibrium or interfacial tension data. The idea is that the force field parameters estimated with the SAFT-VR Mie EoS can be used in molecular simulations since both the equation of state and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has then been used to parametrize a variety of fluids \cite{ervik2016}. This force field has the advantage of incorporating the degrees of freedom provided by the use of the Mie Potential \cite{herdes2015}. This flexibility offers the exploration of a vast parameter space without using an iterative simulation scheme \cite{avendano2011}. Despite these advantages, the force field can be restricted by the shortcomings of the equation of state. As an example, the lack of an association term in the equation can cause an inadequate representation of the properties of hydrogen bonding compounds.
+    The SAFT-$\gamma$ Mie Force Field uses a top-down coarse-graining methodology in its parameterization. This methodology aims to obtain the intermolecular parameters from macroscopic experimental data such as fluid-phase equilibrium or interfacial tension data. The idea is that the force field parameters estimated with the SAFT-VR Mie EoS can be used in molecular simulations since both the equation of state and the force field use the same explicit intermolecular potential model (Mie potential). This correspondence between models has been used to parametrize a variety of fluids \cite{ervik2016}. This force field has the advantage of incorporating the degrees of freedom provided by the use of the Mie Potential \cite{herdes2015}. This flexibility offers the exploration of a vast parameter space without using an iterative simulation scheme \cite{avendano2011}. Despite these advantages, the force field can be restricted by the shortcomings of the equation of state. As an example, the lack of an association term in the equation can cause an inadequate representation of the properties of hydrogen bonding compounds.
     
     Each substance has initially five parameters to be estimated ($m_s,\ \sigma,\ \epsilon,\ \lambda_{r},\ and \, \lambda_{a}$) according to Eq. \eqref{eqn:miepotential}. The number of segments are usually fixed in an integer value since each segment represents one pseudo atom. The attractive parameter is generally  fixed due to its  high correlation with the repulsive parameter. Usually, the chosen value for this parameter is 6, corresponding to the London model, which is a good representation of the dispersion scale of most simple fluids that do not have strong polar interactions \cite{ramrattan2015,herdes2015}. There are two strategies to obtain the parameters: one is by fitting the SAFT-Vr Mie EoS to experimental data such as vapor pressure, liquid density and the other one is by using correspondent state parametrization. The first was the one followed in this dissertation to obtain the parameters for. Generally, this approach minimizes the following unweighted least-squares objective function:
     
@@ -699,7 +699,6 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
     The Gibbs free energy, the object of study in this dissertation, is given by
     
     \begin{equation}
-    \label{eq:fisobari}
     \begin{aligned}
     G(N,P,T) = -\kappa_{b}T ln \Delta (N,P,T),
     \end{aligned}
@@ -814,7 +813,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
     Z_{i} = \frac{1}{V_{0}} {\int_{0}^{\infty} dV \int d^{n}r^{n} \exp \left \lbrace -\beta_{i} \left[ U(\lambda, r_{1},..,r_{n}) + P_{i}V(r_{1},..,r_{n}) \right] \right \rbrace}.
     \end{equation} 
     
-    In solvation free energy calculations with molecular dynamics, $\lambda$ corresponds to the coupling parameter of the softcore potential (Eq. \ref{eq:softcore}). For molecular dynamic simulations, the sampling of the expanded ensemble is done by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that this type of sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
+     Since we are carrying out molecular dynamic simulations, the sampling of the expanded ensemble is done by performing an arbitrary number of MD  steps followed by a $\lambda$ transition. \citeonline{chodera2011} proved that this type of sampling of the expanded ensemble is similar to the Gibbs sampling method \cite{geman1984,liu2002}. Following the Gibbs method, the sampling of the configuration space x for one state $\lambda_{k}$ during the MD steps is done by using the conditional distribution:
     
     \begin{equation}
     \pi(x|\lambda_{k}) = \dfrac{\exp[-\beta u(x,\lambda_{k})]}{\int dx \exp [- \beta u(x,\lambda_{k})]}.
@@ -834,7 +833,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
     \label{eqn:relee2}
     \end{equation} 
     
-    The sampling strategy above depends on a proper selection of weights in order to assure an adequate sampling of the states. If there is not a sufficient number of visits to each state, the expanded ensemble becomes deficient in obtaining input data to estimate free energy differences with the methods exposed in section \ref{SFECM}. The weights can be calculated following the flat-histogram approach \cite{bernd1992,bernd1993,dayal2004}. This strategy aims to obtain adequate sampling by ensuring that all the states have an equal number of visits, i.e. the ratio of the probability of sampling state i ($\pi_{i}$) to the probability of sampling state $j$ ($\pi_{j}$) is equal to one. Given that $\pi_{i}$ is equal to:
+    The sampling strategy above depends on a proper selection of weights in order to assure an adequate sampling of the states. If there is not a sufficient number of visits to each state, the expanded ensemble becomes deficient in obtaining input data to estimate free energy differences with the methods exposed in section \ref{SFECM}. Here, we followed the flat-histogram approach \cite{bernd1992,bernd1993,dayal2004} to calculate the weights. This strategy aims to obtain adequate sampling by ensuring that all the states have an equal number of visits, i.e. the ratio of the probability of sampling state i ($\pi_{i}$) to the probability of sampling state $j$ ($\pi_{j}$) is equal to one. Given that $\pi_{i}$ is equal to:
     
     \begin{equation}
     \pi_{i} = \dfrac{Z_{i}(\lambda_{i}) exp(\eta_{i})}{Z^{EE}} ,
@@ -887,7 +886,7 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
 
 \section{Multistate Bennett Acceptance Ratio (MBAR)}\label{mbar}
 
-We presented in the sections above the methods used to obtain the total potential energies at each alchemical state with molecular dynamics, but, in this section, we are going to discuss the methodology utilized to estimate solvation free energy differences with these data. The MBAR method \cite{mbar} is based on free energy of perturbation. It is a maximum likelihood method which proposes an estimator that computes free energies and their uncertainties of all $K$ states by minimizing the $K \times K$ matrix of variances for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the $\lbrace x_{i,n } \rbrace ^{N_{i}}_{n=1 }$ configurations of i, the following probability distributions are sampled:
+We presented in the sections above the methods used to obtain the total potential energies of each alchemical state with molecular dynamics, but, in this section, we are going to discuss the methodology utilized to estimate solvation free energy differences with these data. The MBAR method \cite{mbar} is based on free energy of perturbation. It is a maximum likelihood method which proposes an estimator that computes free energies and their uncertainties of all $K$ states by minimizing the $K \times K$ matrix of variances for a simulation with $N_{j}$ uncorrelated samples in equilibrium. For each of the $\lbrace x_{i,n } \rbrace ^{N_{i}}_{n=1 }$ configurations of i, the following probability distributions are sampled:
 \begin{equation}
 p_{i}(x) = \frac{q_{i}(x)}{c_{i}},
 \end{equation}
@@ -932,7 +931,7 @@ f_{i} = \frac{1}{\beta}ln \sum_{k=1}^{K} \sum_{n=1}^{N_{k}}
 \end{aligned}
 \end{equation}
 
-The equation above requires the evaluation of the potential energy  of every  uncorrelated configuration $n$ for all K states [$u_{i}(x_{kn})$] and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. With the free energies, we compute the free energy differences between states with Eq. \ref{eqn:mbar1}. The statistical variance resulting from free energy estimation is given by the matrix covariances ($s$):
+The equation above requires the evaluation of the potential energy  of every  uncorrelated configuration $n$ for all K states [$u_{i}(x_{kn})$] and for all uncorrelated configuration snapshots ($N_{k}$) from state $k$. With the free energies, we compute the free energy differences between states with Eq. \ref{eqn:mbar1}. The statistical variance resulting from free energy estimation is given by the covariance matrix ($s$):
 
 \begin{equation}
 \begin{aligned}
