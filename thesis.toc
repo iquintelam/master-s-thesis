@@ -33,36 +33,32 @@
 \contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{37}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Solvation Free Energy Simulations Based on Molecular Dynamics}{42}{section.3.3}
 \contentsline {section}{\numberline {3.4}Expanded Ensemble Method}{47}{section.3.4}
-\contentsline {section}{\numberline {3.5}Multistate Bennett Acceptance Ratio (MBAR)}{51}{section.3.5}
+\contentsline {section}{\numberline {3.5}Multistate Bennett Acceptance Ratio (MBAR)}{52}{section.3.5}
 \contentsline {section}{\numberline {3.6}Gibbs Ensemble Monte Carlo (GEMC)}{53}{section.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methodology}}{57}{chapter.4}
 \contentsline {section}{\numberline {4.1}Phenanthrene Parameterization}{57}{section.4.1}
-\contentsline {section}{\numberline {4.2}Solvation Free Energy Calculations}{59}{section.4.2}
+\contentsline {section}{\numberline {4.2}Solvation Free Energy Simulations}{59}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{61}{chapter.5}
-\contentsline {section}{\numberline {5.1}Solvation free energies}{61}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hydration free energies}{69}{section.5.2}
-\contentsline {section}{\numberline {5.3}Partition Coefficients}{72}{section.5.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{62}{chapter.5}
+\contentsline {section}{\numberline {5.1}Solvation free energies}{62}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hydration free energies}{72}{section.5.2}
+\contentsline {section}{\numberline {5.3}Partition Coefficients}{75}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{75}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{78}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{77}{section*.37}
+\contentsline {chapter}{\uppercase {Bibliography}}{80}{section*.43}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Optimized values of $\lambda $ and $\eta $}}{87}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Overlapping Matrices}}{90}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlapping Matrices}}{90}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Work Published in Scientific Conference}}{106}{appendix.B}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{106}{appendix.C}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{115}{appendix.D}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{115}{appendix.C}

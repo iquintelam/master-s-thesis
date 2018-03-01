@@ -93,3 +93,12 @@ In all cases, however, the calculations yield the free energy
 difference between two states of a molecular system, and
 they do so by computing the reversible work for changing
 the initial state to the final one. 
+
+book free energy
+
+For example, when calculating free energy using umbrella sampling (or potentials of mean force along a reaction coordinate), the requirement that neighboring windows should overlap relates to ergodicity in the sense that neighboring regions must be accessible from each other.
+
+For complex systems, the ergodic hypothesis is broken on the time scale of conventional simulations since various regions of their configuration space become disconnected (separated by large free energy barriers) and configuration points trapped in such regions have their own invariant probability distributions. Therefore, for such systems there is an acute need for methods with enhanced configurational sampling to solve the problem of broken ergodicity
+
+The ergodic measure estimates the rate of self-averaging in an equilibrium MC or molecular dynamics simulation.
+The rate of self-averaging for a given property is expected to be proportional to the rate of conformation space sampling. 
