@@ -7,6 +7,7 @@ A level-1 auxiliary file: chapters/computational.aux
 A level-1 auxiliary file: chapters/methodology.aux
 A level-1 auxiliary file: chapters/results.aux
 A level-1 auxiliary file: chapters/conclusions.aux
+A level-1 auxiliary file: chapters/saftequations.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -40,7 +41,6 @@ I was expecting a `,' or a `}'---line 1289 of file thesis.bib
  :  doi="10.1140/epjp/i2013-13010-8"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "doi:10.1063/1.467468"
 Warning--I didn't find a database entry for "perguntar"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 There is no name in "" for entry pso
@@ -71,45 +71,45 @@ while executing---line 2146 of file abntex2-alf.bst
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 144 entries,
+You've used 145 entries,
             6714 wiz_defined-function locations,
-            1973 strings with 35530 characters,
-and the built_in function-call counts, 137359 in all, are:
-= -- 9745
-> -- 5750
-< -- 391
-+ -- 2268
-- -- 1657
-* -- 10239
-:= -- 16992
-add.period$ -- 433
-call.type$ -- 145
-change.case$ -- 1858
-chr.to.int$ -- 555
-cite$ -- 140
-duplicate$ -- 7259
-empty$ -- 8785
-format.name$ -- 8366
-if$ -- 32650
+            1978 strings with 35674 characters,
+and the built_in function-call counts, 138435 in all, are:
+= -- 9823
+> -- 5802
+< -- 394
++ -- 2287
+- -- 1672
+* -- 10327
+:= -- 17124
+add.period$ -- 436
+call.type$ -- 146
+change.case$ -- 1873
+chr.to.int$ -- 559
+cite$ -- 141
+duplicate$ -- 7309
+empty$ -- 8850
+format.name$ -- 8436
+if$ -- 32905
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 2764
-newline$ -- 699
-num.names$ -- 700
-pop$ -- 3520
+missing$ -- 2783
+newline$ -- 704
+num.names$ -- 705
+pop$ -- 3546
 preamble$ -- 1
-purify$ -- 616
+purify$ -- 621
 quote$ -- 0
-skip$ -- 8141
+skip$ -- 8197
 stack$ -- 1
-substring$ -- 5841
-swap$ -- 4292
-text.length$ -- 253
+substring$ -- 5895
+swap$ -- 4321
+text.length$ -- 255
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1058
+while$ -- 1066
 width$ -- 0
-write$ -- 2235
+write$ -- 2251
 (There were 14 error messages)
