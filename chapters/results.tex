@@ -208,19 +208,19 @@ It is also essential to analyze the reliability of solvation free energy estimat
 \centering
   \caption{Calculated and experimental values for the solvation free energy differences (kcal/mol) of solutes in non aqueous solvents.}
   \label{tbl:solv1}
-  \begin{tabular}{lllll}
+  \begin{tabular}{llllll}
   	\hline\hline
-  	Solvent               & Solute       & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute  \\
-  	                      &              &                         &                         & Deviation \\ \hline
-  	hexane                & benzene      & -3.96                   & -3.76  $\pm$ 0.01       & 0.20      \\
-  	hexane                & pyrene       & -11.53                  & -10.82 $\pm$ 0.02       & 0.71      \\
-  	hexane                & phenanthrene & -10.01                  & -9.16  $\pm$ 0.01       & 0.85      \\
-  	1-octanol             & propane      & -1.32                   & -1.36  $\pm$ 0.02       & 0.04      \\
-  	1-octanol             & anthracene   & -11.72                  & -8.16  $\pm$ 0.03       & 3.61      \\
-  	1-octanol             & phenanthrene & -10.22                  & -8.34  $\pm$ 0.03       & 1.47      \\
-  	toluene               & pyrene       & -12.86                  & -11.74 $\pm$ 0.01       & 1.11      \\
-  	toluene               & anthracene   & -11.31                  & -9.90 $\pm$ 0.01        & 1.41      \\
-\hline\hline
+  	 Solute       &Solvent   & $\Delta G_{solv}^{exp}$ & $\Delta G_{solv}^{Mie}$ & Absolute  \\
+  	              &          &                         &                         & Deviation \\ \hline
+  	 benzene      &hexane    & -3.96                   & -3.76  $\pm$ 0.01       & 0.20      \\
+  	 pyrene       &hexane    & -11.53                  & -10.82 $\pm$ 0.02       & 0.71      \\
+  	 phenanthrene &hexane    & -10.01                  & -9.16  $\pm$ 0.01       & 0.85      \\
+  	 propane      &1-octanol & -1.32                   & -1.36  $\pm$ 0.02       & 0.04      \\
+  	 anthracene   &1-octanol & -11.72                  & -8.12  $\pm$ 0.03       & 3.61      \\
+  	 phenanthrene &1-octanol & -10.22                  & -8.34  $\pm$ 0.03       & 1.47      \\
+  	 pyrene       &toluene   & -12.86                  & -11.74 $\pm$ 0.01       & 1.11      \\
+  	 anthracene   &toluene   & -11.31                  & -9.90 $\pm$ 0.01        & 1.41      \\
+\hline\hline& 
   \end{tabular}
 \end{table*}
 \FloatBarrier
@@ -229,22 +229,22 @@ The numerical values for solvation free energies in hexane had smaller absolute 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{Figures/hex}
-\caption{Solvation free energy profiles of different solutes in hexane.}
+\includegraphics[width=0.8\linewidth]{Figures/hex}
+\caption{Solvation free energy profiles obtained with MD simulations of different solutes in hexane.}
 \label{fig:hex}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{Figures/oct}
-    \caption{Solvation free energy profiles of different solutes in 1-octanol.}
+    \includegraphics[width=0.8\linewidth]{Figures/oct}
+    \caption{Solvation free energy profiles obtained with MD simulations of different solutes in 1-octanol.}
     \label{fig:oct}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{Figures/tol}
-    \caption{Solvation free energy profiles of different solutes in toluene. }
+    \includegraphics[width=0.8\linewidth]{Figures/tol}
+    \caption{Solvation free energy profiles obtained with MD simulations of different solutes in toluene. }
     \label{fig:tol}
 \end{figure}
 
@@ -275,8 +275,8 @@ The increase of $CO_{2}$ mass fraction in toluene caused a small effect on solva
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{Figures/Figure_1}
-\caption{Solvation free energy profiles of phenanthrene in toluene+$CO_{2}$.}
+\includegraphics[width=0.8\linewidth]{Figures/tolco2}
+\caption{Solvation free energy profiles obtained with MD simulations of phenanthrene in toluene+$CO_{2}$.}
 \label{fig:Figure_1}
 \end{figure}
 
@@ -334,7 +334,7 @@ These issues faced by SAFT-$\gamma$ Mie model are related to the problems of mod
   	propane      & 2.50 $\pm$0.02           & 2.76 $\pm$ 0.02          & 2.00 $\pm$ 0.20         & 2.01 $\pm$ 0.01         & 0.01      \\
   	benzene      & -0.81$\pm$0.02           & -0.69 $\pm$ 0.01         & -0.86 $\pm$ 0.20        & -1.12 $\pm$ 0.01        & 0.26      \\
   	toluene      & -0.79$\pm$0.03           & -0.76 $\pm$ 0.01         & -0.83 $\pm$ 0.20        & -0.84 $\pm$ 0.01        & 0.01      \\
-  	phenanthrene & -5.26$\pm$0.03           & -                        & -3.88 $\pm$ 0.60        & -3.47 $\pm$ 0.02        & 0.41      \\ \hline\hline
+  	phenanthrene & -5.26$\pm$0.03           & N/A                        & -3.88 $\pm$ 0.60        & -3.47 $\pm$ 0.02        & 0.41      \\ \hline\hline
   	%    RMSE    &                          &                          & 0.24                    &  \\
   	%    \hline  &
   \end{tabular}
@@ -347,8 +347,8 @@ Comparing the three force fields, the root mean square error (RMSE) for the pair
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{Figures/water}
-\caption{Hydration free energy profiles for different solutes.}
+\includegraphics[width=0.8\textwidth]{Figures/water}
+\caption{Hydration free energy profiles obtained with MD simulations for different solutes.}
 \label{fig:water}
 \end{figure}
 
