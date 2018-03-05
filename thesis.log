@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  4 MAR 2018 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  4 MAR 2018 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,6 +1035,27 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip264
+\RaggedLeftLeftskip=\skip265
+\RaggedRightLeftskip=\skip266
+\CenteringRightskip=\skip267
+\RaggedLeftRightskip=\skip268
+\RaggedRightRightskip=\skip269
+\CenteringParfillskip=\skip270
+\RaggedLeftParfillskip=\skip271
+\RaggedRightParfillskip=\skip272
+\JustifyingParfillskip=\skip273
+\CenteringParindent=\skip274
+\RaggedLeftParindent=\skip275
+\RaggedRightParindent=\skip276
+\JustifyingParindent=\skip277
+)
 
 Class memoir Warning: You are using the caption package with the memoir class. 
 To prepare we will now reset all captioning macros and configurations to kernel
@@ -1063,34 +1084,34 @@ Package caption Info: hyperref package is loaded.
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip264
-\ABCIauxlen=\skip265
+\minimumbiblabelwidth=\skip278
+\ABCIauxlen=\skip279
 \c@ABCIaux=\count182
 \c@ABCImax=\count183
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip266
+\biblabelsep=\skip280
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks35
 )
-Package color Info: Redefining color blue on input line 147.
+Package color Info: Redefining color blue on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 164.
+(hyperref)                removing `\gamma' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 166.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 164.
+Package hyperref Info: Option `colorlinks' set `true' on input line 166.
 \thesis@idxfile=\write4
 \openout4 = `thesis.idx'.
 
@@ -1100,45 +1121,42 @@ Writing index file thesis.idx
 
 LaTeX Warning: Label `eq:mbar' multiply defined.
 
-) (./chapters/methodology.aux) (./chapters/results.aux
-
-LaTeX Warning: Label `tbl:solv3' multiply defined.
-
-) (./chapters/conclusions.aux) (./chapters/saftequations.aux)
+) (./chapters/methodology.aux) (./chapters/results.aux)
+(./chapters/conclusions.aux) (./chapters/saftequations.aux)
 
 LaTeX Warning: Label `fig:over1' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 194.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 196.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 194.
-LaTeX Info: Redefining \ref on input line 194.
-LaTeX Info: Redefining \pageref on input line 194.
-LaTeX Info: Redefining \nameref on input line 194.
+Package hyperref Info: Link coloring ON on input line 196.
+LaTeX Info: Redefining \ref on input line 196.
+LaTeX Info: Redefining \pageref on input line 196.
+LaTeX Info: Redefining \nameref on input line 196.
 \myptabbox=\box37
-\myptabboxwidth=\skip267
+\myptabboxwidth=\skip281
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 194.
+(lastpage)             ! on input line 196.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1168,7 +1186,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 194.
+LaTeX Info: Redefining \microtypecontext on input line 196.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1190,9 +1208,11 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 196.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 210.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 212.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1202,9 +1222,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 210.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 212.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 210.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 212.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1213,41 +1233,41 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 219.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 221.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 219.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 221.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.219 
+l.221 
        [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
 
  []
 
 
-Overfull \hbox (16.54776pt too wide) in paragraph at lines 263--263
+Overfull \hbox (16.54776pt too wide) in paragraph at lines 265--265
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
 
  []
 
 [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 328.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 330.
  [3
 
 ] [4
@@ -1294,7 +1314,7 @@ ee en-ergy dif-fer-ences (kcal/mol)
 
 ]
 Overfull \hbox (1.41573pt too wide) detected at line 68
- \T1/phv/b/n/12 107
+ \T1/phv/b/n/12 108
  []
 
 
@@ -1325,7 +1345,7 @@ l.13
 e.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.484 \include{chapters/introduction}
+l.486 \include{chapters/introduction}
                                       [3]
 \openout2 = `chapters/review.aux'.
 
@@ -1608,190 +1628,190 @@ Package pdftex.def Info: Figures/ohex_benz.pdf used on input line 202.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[68 <./Figures/ohex_benz.pdf>]
-<Figures/hex.png, id=1577, 462.528pt x 346.896pt>
+[68 <./Figures/ohex_benz.pdf>] [69]
+<Figures/hex.png, id=1586, 462.528pt x 346.896pt>
 File: Figures/hex.png Graphic file (type png)
  <use Figures/hex.png>
 Package pdftex.def Info: Figures/hex.png used on input line 232.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-[69] <Figures/oct.png, id=1586, 462.528pt x 346.896pt>
+<Figures/oct.png, id=1587, 462.528pt x 346.896pt>
 File: Figures/oct.png Graphic file (type png)
  <use Figures/oct.png>
 Package pdftex.def Info: Figures/oct.png used on input line 239.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-<Figures/tol.png, id=1587, 462.528pt x 346.896pt>
+[70 <./Figures/hex.png>] <Figures/tol.png, id=1593, 462.528pt x 346.896pt>
 File: Figures/tol.png Graphic file (type png)
- <use Figures/tol.png>
+
+<use Figures/tol.png>
 Package pdftex.def Info: Figures/tol.png used on input line 246.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
-
-[70 <./Figures/hex.png> <./Figures/oct.png>] [71 <./Figures/tol.png>]
-<Figures/tolco2.png, id=1604, 462.528pt x 346.896pt>
+ [71 <./Figures/oct.png> <./Figures/tol.png>]
+<Figures/tolco2.png, id=1606, 462.528pt x 346.896pt>
 File: Figures/tolco2.png Graphic file (type png)
  <use Figures/tolco2.png>
 Package pdftex.def Info: Figures/tolco2.png used on input line 278.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-[72 <./Figures/tolco2.png>] [73] [74]
-<Figures/water.png, id=1643, 462.528pt x 346.896pt>
+[72] [73 <./Figures/tolco2.png>] [74] [75]
+<Figures/water.png, id=1649, 462.528pt x 346.896pt>
 File: Figures/water.png Graphic file (type png)
  <use Figures/water.png>
 Package pdftex.def Info: Figures/water.png used on input line 350.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-[75] [76 <./Figures/water.png>]) [77]
+[76 <./Figures/water.png>]) [77] [78]
 \openout2 = `chapters/conclusions.aux'.
 
- (./chapters/conclusions.tex [78
+ (./chapters/conclusions.tex [79
 
 
 
 ])
-[79] (./thesis.bbl
+[80] (./thesis.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[80
+[81
 
 
-] [81] [82] [83] [84] [85] [86] [87] [88]) [89]
+] [82] [83] [84] [85] [86] [87] [88] [89]) [90]
 \openout2 = `chapters/saftequations.aux'.
 
 
-(./chapters/saftequations.tex [90
+(./chapters/saftequations.tex [91
 
 
-] [91] [92]
+] [92] [93]
 Overfull \hbox (16.58601pt too wide) detected at line 158
 [] []
  []
 
-[93]) [94] <Figures/ohex_pyr.pdf, id=1799, 420.06938pt x 433.62pt>
+[94]) [95] <Figures/ohex_pyr.pdf, id=1806, 420.06938pt x 433.62pt>
 File: Figures/ohex_pyr.pdf Graphic file (type pdf)
 
 <use Figures/ohex_pyr.pdf>
-Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 805.
+Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 807.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/ohex_phen.pdf, id=1800, 420.06938pt x 433.62pt>
+<Figures/ohex_phen.pdf, id=1807, 420.06938pt x 433.62pt>
 File: Figures/ohex_phen.pdf Graphic file (type pdf)
 
 <use Figures/ohex_phen.pdf>
-Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 807.
+Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 809.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/ooct_prop.pdf, id=1801, 420.06938pt x 433.62pt>
+<Figures/ooct_prop.pdf, id=1808, 420.06938pt x 433.62pt>
 File: Figures/ooct_prop.pdf Graphic file (type pdf)
 
 <use Figures/ooct_prop.pdf>
-Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 809.
+Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 811.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/ooct_ant.pdf, id=1802, 504.08327pt x 520.34402pt>
+<Figures/ooct_ant.pdf, id=1809, 504.08327pt x 520.34402pt>
 File: Figures/ooct_ant.pdf Graphic file (type pdf)
 
 <use Figures/ooct_ant.pdf>
-Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 811.
+Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 813.
 (pdftex.def)             Requested size: 159.25278pt x 164.38562pt.
 
-<Figures/ooct_phen.pdf, id=1803, 504.08327pt x 520.34402pt>
+<Figures/ooct_phen.pdf, id=1810, 504.08327pt x 520.34402pt>
 File: Figures/ooct_phen.pdf Graphic file (type pdf)
 
 <use Figures/ooct_phen.pdf>
-Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 813.
+Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 815.
 (pdftex.def)             Requested size: 159.25278pt x 164.38562pt.
 
-<Figures/otol_pyr.pdf, id=1804, 420.06938pt x 433.62pt>
+<Figures/otol_pyr.pdf, id=1811, 420.06938pt x 433.62pt>
 File: Figures/otol_pyr.pdf Graphic file (type pdf)
 
 <use Figures/otol_pyr.pdf>
-Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 815.
+Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 817.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/otol_antr.pdf, id=1805, 420.06938pt x 433.62pt>
+<Figures/otol_antr.pdf, id=1812, 420.06938pt x 433.62pt>
 File: Figures/otol_antr.pdf Graphic file (type pdf)
 
 <use Figures/otol_antr.pdf>
-Package pdftex.def Info: Figures/otol_antr.pdf used on input line 817.
+Package pdftex.def Info: Figures/otol_antr.pdf used on input line 819.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/otol_phen.pdf, id=1806, 420.06938pt x 433.62pt>
+<Figures/otol_phen.pdf, id=1813, 420.06938pt x 433.62pt>
 File: Figures/otol_phen.pdf Graphic file (type pdf)
 
 <use Figures/otol_phen.pdf>
-Package pdftex.def Info: Figures/otol_phen.pdf used on input line 819.
+Package pdftex.def Info: Figures/otol_phen.pdf used on input line 821.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
 
-LaTeX Warning: Float too large for page by 30.59132pt on input line 822.
+LaTeX Warning: Float too large for page by 30.59132pt on input line 824.
 
-<Figures/otolco2_1.pdf, id=1807, 420.06938pt x 433.62pt>
+<Figures/otolco2_1.pdf, id=1814, 420.06938pt x 433.62pt>
 File: Figures/otolco2_1.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_1.pdf>
-Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 827.
+Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 829.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/otolco2_2.pdf, id=1808, 420.06938pt x 433.62pt>
+<Figures/otolco2_2.pdf, id=1815, 420.06938pt x 433.62pt>
 File: Figures/otolco2_2.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_2.pdf>
-Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 829.
+Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 831.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/otolco2_3.pdf, id=1809, 455.10025pt x 452.20944pt>
+<Figures/otolco2_3.pdf, id=1816, 455.10025pt x 452.20944pt>
 File: Figures/otolco2_3.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_3.pdf>
-Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 831.
+Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 833.
 (pdftex.def)             Requested size: 159.25278pt x 158.24117pt.
 
-<Figures/otolco2_4.pdf, id=1810, 448.07399pt x 462.52798pt>
+<Figures/otolco2_4.pdf, id=1817, 448.07399pt x 462.52798pt>
 File: Figures/otolco2_4.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_4.pdf>
-Package pdftex.def Info: Figures/otolco2_4.pdf used on input line 833.
+Package pdftex.def Info: Figures/otolco2_4.pdf used on input line 835.
 (pdftex.def)             Requested size: 159.25278pt x 164.39265pt.
 
-<Figures/owat_prop.pdf, id=1811, 420.06938pt x 433.62pt>
+<Figures/owat_prop.pdf, id=1818, 420.06938pt x 433.62pt>
 File: Figures/owat_prop.pdf Graphic file (type pdf)
 
 <use Figures/owat_prop.pdf>
-Package pdftex.def Info: Figures/owat_prop.pdf used on input line 835.
+Package pdftex.def Info: Figures/owat_prop.pdf used on input line 837.
 (pdftex.def)             Requested size: 159.25278pt x 164.38693pt.
 
-<Figures/owat_benz.pdf, id=1812, 427.09563pt x 424.38548pt>
+<Figures/owat_benz.pdf, id=1819, 427.09563pt x 424.38548pt>
 File: Figures/owat_benz.pdf Graphic file (type pdf)
 
 <use Figures/owat_benz.pdf>
-Package pdftex.def Info: Figures/owat_benz.pdf used on input line 837.
+Package pdftex.def Info: Figures/owat_benz.pdf used on input line 839.
 (pdftex.def)             Requested size: 159.25278pt x 158.23758pt.
 
-<Figures/owat_tol.pdf, id=1813, 427.09563pt x 424.38548pt>
+<Figures/owat_tol.pdf, id=1820, 427.09563pt x 424.38548pt>
 File: Figures/owat_tol.pdf Graphic file (type pdf)
 
 <use Figures/owat_tol.pdf>
-Package pdftex.def Info: Figures/owat_tol.pdf used on input line 839.
+Package pdftex.def Info: Figures/owat_tol.pdf used on input line 841.
 (pdftex.def)             Requested size: 159.25278pt x 158.23758pt.
 
-<Figures/owat_phen.pdf, id=1814, 427.09563pt x 424.38548pt>
+<Figures/owat_phen.pdf, id=1821, 427.09563pt x 424.38548pt>
 File: Figures/owat_phen.pdf Graphic file (type pdf)
 
 <use Figures/owat_phen.pdf>
-Package pdftex.def Info: Figures/owat_phen.pdf used on input line 841.
+Package pdftex.def Info: Figures/owat_phen.pdf used on input line 843.
 (pdftex.def)             Requested size: 159.25278pt x 158.23758pt.
 
 
-LaTeX Warning: Float too large for page by 38.9477pt on input line 844.
+LaTeX Warning: Float too large for page by 38.9477pt on input line 846.
 
-[95
+[96
 
 
-] [96 <./Figures/ohex_pyr.pdf> <./Figures/ohex_phen.pdf
+] [97 <./Figures/ohex_pyr.pdf> <./Figures/ohex_phen.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ohex_phen.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1819,7 +1839,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otol_antr.pdf): PDF inclusion
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otol_phen.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [97 <./Figures/otolco2_1.pdf> <./Figures/otolco2_2.pdf
+>] [98 <./Figures/otolco2_1.pdf> <./Figures/otolco2_2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otolco2_2.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1851,10 +1871,10 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/owat_phen.pdf): PDF inclusion
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2167, 614.295pt x 794.97pt>
+<C089.pdf, id=2173, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
  <use C089.pdf>
-Package pdftex.def Info: C089.pdf used on input line 848.
+Package pdftex.def Info: C089.pdf used on input line 850.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -1862,7 +1882,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 File: C089.pdf Graphic file (type pdf)
 <use C089.pdf>
-Package pdftex.def Info: C089.pdf used on input line 848.
+Package pdftex.def Info: C089.pdf used on input line 850.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -1872,436 +1892,436 @@ ersion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2170, page=1, 614.295pt x 794.97pt>
+<C089.pdf, id=2176, page=1, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
  <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 848.
+Package pdftex.def Info: C089.pdf, page1 used on input line 850.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: C089.pdf Graphic file (type pdf)
 
 <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 848.
+Package pdftex.def Info: C089.pdf, page1 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [98
+ [99
 
 ]
 File: C089.pdf Graphic file (type pdf)
  <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 848.
+Package pdftex.def Info: C089.pdf, page1 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
  <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 848.
+Package pdftex.def Info: C089.pdf, page1 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
 <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 848.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [99 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2227, page=2, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 2>
-Package pdftex.def Info: C089.pdf, page2 used on input line 848.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 2>
-Package pdftex.def Info: C089.pdf, page2 used on input line 848.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 2>
-Package pdftex.def Info: C089.pdf, page2 used on input line 848.
+Package pdftex.def Info: C089.pdf, page1 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [100 <./C089.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2241, page=3, 614.295pt x 794.97pt>
+<C089.pdf, id=2233, page=2, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 3>
-Package pdftex.def Info: C089.pdf, page3 used on input line 848.
+ <use C089.pdf, page 2>
+Package pdftex.def Info: C089.pdf, page2 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
-<use C089.pdf, page 3>
-Package pdftex.def Info: C089.pdf, page3 used on input line 848.
+<use C089.pdf, page 2>
+Package pdftex.def Info: C089.pdf, page2 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 3>
-Package pdftex.def Info: C089.pdf, page3 used on input line 848.
+ <use C089.pdf, page 2>
+Package pdftex.def Info: C089.pdf, page2 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [101 <./C089.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2263, page=4, 614.295pt x 794.97pt>
+<C089.pdf, id=2248, page=3, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 4>
-Package pdftex.def Info: C089.pdf, page4 used on input line 848.
+ <use C089.pdf, page 3>
+Package pdftex.def Info: C089.pdf, page3 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
-<use C089.pdf, page 4>
-Package pdftex.def Info: C089.pdf, page4 used on input line 848.
+<use C089.pdf, page 3>
+Package pdftex.def Info: C089.pdf, page3 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 4>
-Package pdftex.def Info: C089.pdf, page4 used on input line 848.
+ <use C089.pdf, page 3>
+Package pdftex.def Info: C089.pdf, page3 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [102 <./C089.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2276, page=5, 614.295pt x 794.97pt>
+<C089.pdf, id=2269, page=4, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 5>
-Package pdftex.def Info: C089.pdf, page5 used on input line 848.
+ <use C089.pdf, page 4>
+Package pdftex.def Info: C089.pdf, page4 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
-<use C089.pdf, page 5>
-Package pdftex.def Info: C089.pdf, page5 used on input line 848.
+<use C089.pdf, page 4>
+Package pdftex.def Info: C089.pdf, page4 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 5>
-Package pdftex.def Info: C089.pdf, page5 used on input line 848.
+ <use C089.pdf, page 4>
+Package pdftex.def Info: C089.pdf, page4 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [103 <./C089.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2289, page=6, 614.295pt x 794.97pt>
+<C089.pdf, id=2282, page=5, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 6>
-Package pdftex.def Info: C089.pdf, page6 used on input line 848.
+ <use C089.pdf, page 5>
+Package pdftex.def Info: C089.pdf, page5 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
-<use C089.pdf, page 6>
-Package pdftex.def Info: C089.pdf, page6 used on input line 848.
+<use C089.pdf, page 5>
+Package pdftex.def Info: C089.pdf, page5 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 6>
-Package pdftex.def Info: C089.pdf, page6 used on input line 848.
+ <use C089.pdf, page 5>
+Package pdftex.def Info: C089.pdf, page5 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [104 <./C089.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2303, page=7, 614.295pt x 794.97pt>
+<C089.pdf, id=2295, page=6, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 7>
-Package pdftex.def Info: C089.pdf, page7 used on input line 848.
+ <use C089.pdf, page 6>
+Package pdftex.def Info: C089.pdf, page6 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
-<use C089.pdf, page 7>
-Package pdftex.def Info: C089.pdf, page7 used on input line 848.
+<use C089.pdf, page 6>
+Package pdftex.def Info: C089.pdf, page6 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 7>
-Package pdftex.def Info: C089.pdf, page7 used on input line 848.
+ <use C089.pdf, page 6>
+Package pdftex.def Info: C089.pdf, page6 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [105 <./C089.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2325, page=8, 614.295pt x 794.97pt>
+<C089.pdf, id=2309, page=7, 614.295pt x 794.97pt>
+File: C089.pdf Graphic file (type pdf)
+ <use C089.pdf, page 7>
+Package pdftex.def Info: C089.pdf, page7 used on input line 850.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: C089.pdf Graphic file (type pdf)
+
+<use C089.pdf, page 7>
+Package pdftex.def Info: C089.pdf, page7 used on input line 850.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: C089.pdf Graphic file (type pdf)
+ <use C089.pdf, page 7>
+Package pdftex.def Info: C089.pdf, page7 used on input line 850.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [106 <./C089.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<C089.pdf, id=2331, page=8, 614.295pt x 794.97pt>
 File: C089.pdf Graphic file (type pdf)
  <use C089.pdf, page 8>
-Package pdftex.def Info: C089.pdf, page8 used on input line 848.
+Package pdftex.def Info: C089.pdf, page8 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
 
 <use C089.pdf, page 8>
-Package pdftex.def Info: C089.pdf, page8 used on input line 848.
+Package pdftex.def Info: C089.pdf, page8 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: C089.pdf Graphic file (type pdf)
  <use C089.pdf, page 8>
-Package pdftex.def Info: C089.pdf, page8 used on input line 848.
+Package pdftex.def Info: C089.pdf, page8 used on input line 850.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [106 <./C089.pdf>]
-<article/achemso-demo.pdf, id=2339, 614.295pt x 794.97pt>
+ [107 <./C089.pdf>]
+<article/achemso-demo.pdf, id=2346, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf>
-Package pdftex.def Info: article/achemso-demo.pdf used on input line 852.
+Package pdftex.def Info: article/achemso-demo.pdf used on input line 854.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf>
-Package pdftex.def Info: article/achemso-demo.pdf used on input line 852.
+Package pdftex.def Info: article/achemso-demo.pdf used on input line 854.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<article/achemso-demo.pdf, id=2342, page=1, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2349, page=1, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 1>
-Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 854
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 1>
-Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
-[107
+[108
 
 ]
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 1>
-Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 1>
-Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 1>
-Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page1 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
-[108 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2393, page=2, 614.295pt x 794.97pt>
+[109 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2399, page=2, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 2>
-Package pdftex.def Info: article/achemso-demo.pdf, page2 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page2 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 2>
-Package pdftex.def Info: article/achemso-demo.pdf, page2 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page2 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 2>
-Package pdftex.def Info: article/achemso-demo.pdf, page2 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page2 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [109 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2398, page=3, 614.295pt x 794.97pt>
+ [110 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2404, page=3, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 3>
-Package pdftex.def Info: article/achemso-demo.pdf, page3 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page3 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 3>
-Package pdftex.def Info: article/achemso-demo.pdf, page3 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page3 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 3>
-Package pdftex.def Info: article/achemso-demo.pdf, page3 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page3 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [110 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2423, page=4, 614.295pt x 794.97pt>
+ [111 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2429, page=4, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 4>
-Package pdftex.def Info: article/achemso-demo.pdf, page4 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page4 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 4>
-Package pdftex.def Info: article/achemso-demo.pdf, page4 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page4 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 4>
-Package pdftex.def Info: article/achemso-demo.pdf, page4 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page4 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [111 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2429, page=5, 614.295pt x 794.97pt>
+ [112 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2435, page=5, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 5>
-Package pdftex.def Info: article/achemso-demo.pdf, page5 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page5 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 5>
-Package pdftex.def Info: article/achemso-demo.pdf, page5 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page5 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 5>
-Package pdftex.def Info: article/achemso-demo.pdf, page5 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page5 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [112 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2439, page=6, 614.295pt x 794.97pt>
+ [113 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2446, page=6, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 6>
-Package pdftex.def Info: article/achemso-demo.pdf, page6 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page6 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 6>
-Package pdftex.def Info: article/achemso-demo.pdf, page6 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page6 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 6>
-Package pdftex.def Info: article/achemso-demo.pdf, page6 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page6 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [113 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2450, page=7, 614.295pt x 794.97pt>
+ [114 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2456, page=7, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 7>
-Package pdftex.def Info: article/achemso-demo.pdf, page7 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page7 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 7>
-Package pdftex.def Info: article/achemso-demo.pdf, page7 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page7 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 7>
-Package pdftex.def Info: article/achemso-demo.pdf, page7 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page7 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [114 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2497, page=8, 614.295pt x 794.97pt>
+ [115 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2503, page=8, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 8>
-Package pdftex.def Info: article/achemso-demo.pdf, page8 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page8 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 8>
-Package pdftex.def Info: article/achemso-demo.pdf, page8 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page8 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 8>
-Package pdftex.def Info: article/achemso-demo.pdf, page8 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page8 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [115 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2502, page=9, 614.295pt x 794.97pt>
+ [116 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2508, page=9, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 9>
-Package pdftex.def Info: article/achemso-demo.pdf, page9 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page9 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
  <use article/achemso-demo.pdf, page 9>
-Package pdftex.def Info: article/achemso-demo.pdf, page9 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page9 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 9>
-Package pdftex.def Info: article/achemso-demo.pdf, page9 used on input line 852
+Package pdftex.def Info: article/achemso-demo.pdf, page9 used on input line 854
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [116 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2507, page=10, 614.295pt x 794.97pt>
-File: article/achemso-demo.pdf Graphic file (type pdf)
-
-<use article/achemso-demo.pdf, page 10>
-Package pdftex.def Info: article/achemso-demo.pdf, page10 used on input line 85
-2.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/achemso-demo.pdf Graphic file (type pdf)
-
-<use article/achemso-demo.pdf, page 10>
-Package pdftex.def Info: article/achemso-demo.pdf, page10 used on input line 85
-2.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/achemso-demo.pdf Graphic file (type pdf)
-
-<use article/achemso-demo.pdf, page 10>
-Package pdftex.def Info: article/achemso-demo.pdf, page10 used on input line 85
-2.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [117 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2515, page=11, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2513, page=10, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 11>
-Package pdftex.def Info: article/achemso-demo.pdf, page11 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 10>
+Package pdftex.def Info: article/achemso-demo.pdf, page10 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 11>
-Package pdftex.def Info: article/achemso-demo.pdf, page11 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 10>
+Package pdftex.def Info: article/achemso-demo.pdf, page10 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 11>
-Package pdftex.def Info: article/achemso-demo.pdf, page11 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 10>
+Package pdftex.def Info: article/achemso-demo.pdf, page10 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [118 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2525, page=12, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2521, page=11, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 12>
-Package pdftex.def Info: article/achemso-demo.pdf, page12 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 11>
+Package pdftex.def Info: article/achemso-demo.pdf, page11 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 12>
-Package pdftex.def Info: article/achemso-demo.pdf, page12 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 11>
+Package pdftex.def Info: article/achemso-demo.pdf, page11 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 12>
-Package pdftex.def Info: article/achemso-demo.pdf, page12 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 11>
+Package pdftex.def Info: article/achemso-demo.pdf, page11 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [119 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2531, page=13, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2532, page=12, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 13>
-Package pdftex.def Info: article/achemso-demo.pdf, page13 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 12>
+Package pdftex.def Info: article/achemso-demo.pdf, page12 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 13>
-Package pdftex.def Info: article/achemso-demo.pdf, page13 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 12>
+Package pdftex.def Info: article/achemso-demo.pdf, page12 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
-<use article/achemso-demo.pdf, page 13>
-Package pdftex.def Info: article/achemso-demo.pdf, page13 used on input line 85
-2.
+<use article/achemso-demo.pdf, page 12>
+Package pdftex.def Info: article/achemso-demo.pdf, page12 used on input line 85
+4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [120 <./article/achemso-demo.pdf>]
+<article/achemso-demo.pdf, id=2538, page=13, 614.295pt x 794.97pt>
+File: article/achemso-demo.pdf Graphic file (type pdf)
+
+<use article/achemso-demo.pdf, page 13>
+Package pdftex.def Info: article/achemso-demo.pdf, page13 used on input line 85
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: article/achemso-demo.pdf Graphic file (type pdf)
+
+<use article/achemso-demo.pdf, page 13>
+Package pdftex.def Info: article/achemso-demo.pdf, page13 used on input line 85
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: article/achemso-demo.pdf Graphic file (type pdf)
+
+<use article/achemso-demo.pdf, page 13>
+Package pdftex.def Info: article/achemso-demo.pdf, page13 used on input line 85
+4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [121 <./article/achemso-demo.pdf>]
 No file thesis.ind.
 
 AED: lastpage setting LastPage
@@ -2314,14 +2334,14 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 886.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 886.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 888.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 888.
 (./thesis.aux (./chapters/introduction.aux) (./chapters/review.aux)
 (./chapters/computational.aux) (./chapters/methodology.aux)
 (./chapters/results.aux) (./chapters/conclusions.aux)
 (./chapters/saftequations.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 886.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 886.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 888.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 888.
 
 
 LaTeX Warning: There were undefined references.
@@ -2329,16 +2349,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 886.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 888.
  ) 
 Here is how much of TeX's memory you used:
- 16792 strings out of 494929
- 254395 string characters out of 6180141
- 451912 words of memory out of 5000000
- 18957 multiletter control sequences out of 15000+600000
- 65946 words of font info for 271 fonts, out of 8000000 for 9000
+ 16878 strings out of 494929
+ 256118 string characters out of 6180141
+ 453091 words of memory out of 5000000
+ 19029 multiletter control sequences out of 15000+600000
+ 66256 words of font info for 275 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 42i,18n,47p,2551b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,47p,2878b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -2361,10 +2381,10 @@ vetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (134 pages, 2981898 bytes).
+Output written on thesis.pdf (135 pages, 2983659 bytes).
 PDF statistics:
- 2847 PDF objects out of 2984 (max. 8388607)
- 2256 compressed objects within 23 object streams
- 519 named destinations out of 1000 (max. 500000)
+ 2853 PDF objects out of 2984 (max. 8388607)
+ 2261 compressed objects within 23 object streams
+ 520 named destinations out of 1000 (max. 500000)
  41665 words of extra memory for PDF output out of 42996 (max. 10000000)
 
