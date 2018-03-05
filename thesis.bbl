@@ -314,6 +314,12 @@ Accessed: 2017-03-10.}
   energy calculations using thermodynamic integration.
 \emph{Journal of Chemical Theory and Computation}, v.~6, p. 1018–1027, 2010.}
 
+\bibitem[Jorgensen \textit{et al.} 1983]{doi:10.1063/1.445869}
+\abntrefinfo{Jorgensen \textit{et al.}}{JORGENSEN \textit{et al.}}{1983}
+{JORGENSEN, W.~L.; CHANDRASEKHAR, J.; MADURA, J.~D.; IMPEY, R.~W.; KLEIN, M.~L.
+  Comparison of simple potential functions for simulating liquid water.
+\emph{The Journal of Chemical Physics}, v.~79, p. 926--935, 1983.}
+
 \bibitem[Jorgensen and Tirado-Rives 1988]{doi:10.1021/ja00214a001}
 \abntrefinfo{Jorgensen and Tirado-Rives}{JORGENSEN; TIRADO-RIVES}{1988}
 {JORGENSEN, W.~L.; TIRADO-RIVES, J. The opls [optimized potentials for liquid
@@ -609,6 +615,13 @@ Accessed: 2017-03-10.}
   dynamics methods.
 \emph{The Journal of Chemical Physics}, v.~81, p. 511--519, 1984.}
 
+\bibitem[Oostenbrink \textit{et al.} 2004]{JCC:JCC20090}
+\abntrefinfo{Oostenbrink \textit{et al.}}{OOSTENBRINK \textit{et al.}}{2004}
+{OOSTENBRINK, C.; VILLA, A.; MARK, A.~E.; GUNSTEREN, W.~F. V. A biomolecular
+  force field based on the free enthalpy of hydration and solvation: The gromos
+  force-field parameter sets 53a5 and 53a6.
+\emph{Journal of Computational Chemistry}, v.~25, p. 1656--1676, 2004.}
+
 \bibitem[Orsi and Essex 2011]{10.1371/journal.pone.0028637}
 \abntrefinfo{Orsi and Essex}{ORSI; ESSEX}{2011}
 {ORSI, M.; ESSEX, J.~W. The elba force field for coarse-grain modeling of lipid
@@ -680,6 +693,13 @@ Accessed: 2017-03-10.}
   1-alkyl-3-methylimidazolium bis(trifluoromethylsulfonyl)amide ionic liquids
   via monte carlo simulations.
 \emph{Faraday Discuss.}, v.~154, p. 53--69, 2012.}
+
+\bibitem[Rai and Siepmann 2007]{doi:10.1021/jp073586l}
+\abntrefinfo{Rai and Siepmann}{RAI; SIEPMANN}{2007}
+{RAI, N.; SIEPMANN, J.~I. Transferable potentials for phase equilibria. 9.
+  explicit hydrogen description of benzene and five-membered and six-membered
+  heterocyclic aromatic compounds.
+\emph{The Journal of Physical Chemistry B}, v.~111, p. 10790--10799, 2007.}
 
 \bibitem[Ramrattan \textit{et al.} 2015]{ramrattan2015}
 \abntrefinfo{Ramrattan \textit{et al.}}{RAMRATTAN \textit{et al.}}{2015}
