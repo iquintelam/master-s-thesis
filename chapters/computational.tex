@@ -775,23 +775,23 @@ U(r^N) = u_{bs}(d) + u_{ab}(\theta) + u_{bt}(\omega) + u_{q}(r_{ij}) + u_{LJ}(r_
     \begin{figure}[H]
     	\centering
     	\includegraphics[width=0.9\linewidth]{Figures/linear}
-    	\caption{Linear coupling of the potential energy , $U^{linear}_{LJ} = \lambda U_{LJ}$, in reduced units.}
+    	\caption{Linear coupling of the potential energy , $U^{linear}_{LJ} = \lambda U_{LJ}$, for different values of $\lambda$ in reduced units.}
     	\label{fig:linearpoten}
     \end{figure}    
     
     \begin{figure}[H]
     	\centering
     	\includegraphics[width=0.9\linewidth]{Figures/soft}
-    	\caption{Softcore potential in reduced units.}
+    	\caption{Softcore potential, Eq. \ref{eq:softcoreLJ}, for different values of $\lambda$ in reduced units.}
     	\label{fig:SC}
     \end{figure}
     
-    Now that we defined our coupled potential, we can then obtain the potential energies related to each alchemical state by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}. The latter was the method used in this dissertation and it is described in Section \ref{ee}. Having the potential energies, the next step is to use post-processing methods such as the MBAR used in this study to effectively calculate $\Delta G_{3 \rightarrow 4}$.  The solvation free energy differences can then be used to calculate other properties such as the partition coefficient. This property is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T. It is defined by the following equation when the activity coefficients are assumed to be one:
+    Now that we defined our coupled potential, we can then obtain the potential energies related to each alchemical state by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}. The latter was the method used in this dissertation and it is described in Section \ref{ee}. Having the potential energies, the next step is to use post-processing methods, such as the MBAR used in this study, to effectively calculate $\Delta G_{3 \rightarrow 4}$.  The solvation free energy differences can then be used to calculate other properties such as the partition coefficient. This property is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T. It is defined by the following equation when the activity coefficients are assumed to be one:
     
     \begin{equation}
     P = \dfrac{[solute]_{a}}{[solute]_{b}},
     \end{equation} 
-    where $[solute]_{a}$ and $[solute]_{b}$ are the concentration of the solute in the solvent a and b, respectively. Since $P$ is an equilibrium constant, it can be related to free energy change associated with transferring the solute from the phase a to the phase b. Hence, we can define the relation between the partition coefficient and difference in free energy with \cite{doi:10.1021/ja00036a009}:  
+    where $[solute]_{a}$ and $[solute]_{b}$ are the concentration of the solute in the solvent a and b, respectively. Since $P$ is an equilibrium constant, it can be related to free energy change associated with transferring the solute from the phase a to the phase b. Hence, we can define the relation between the partition coefficient and the difference in free energy with the equation bellow \cite{doi:10.1021/ja00036a009}:  
     
     \begin{equation}
     \label{eqn:partcoe}
