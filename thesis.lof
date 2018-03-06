@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {3.3.1}{\ignorespaces Thermodynamic cycle for computing solvation free energy of a single solute molecule with molecular dynamics. Adapted from \citeonline {klimovich}.\relax }}{36}{figure.caption.14}
 \contentsline {figure}{\numberline {3.3.2}{\ignorespaces Linear coupling of the potential energy , $U^{linear}_{LJ} = \lambda U_{LJ}$, for different values of $\lambda $ in reduced units.\relax }}{37}{figure.caption.15}
 \contentsline {figure}{\numberline {3.3.3}{\ignorespaces Softcore potential, Eq. \ref {eq:softcoreLJ}, for different values of $\lambda $ in reduced units.\relax }}{38}{figure.caption.16}
-\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Cumulative probability.\relax }}{42}{figure.caption.17}
+\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Relation between the optimized coupling parameters and the cumulative probability used to obtain them.\relax }}{42}{figure.caption.17}
 \contentsline {figure}{\numberline {4.1.1}{\ignorespaces Representation of phenanthrene with the geometry proposed by \citeonline {muller2017}. \relax }}{47}{figure.caption.18}
 \contentsline {figure}{\numberline {4.1.2}{\ignorespaces Representation of phenanthrene with the geometry proposed by \citeonline {lafitte2012}.\relax }}{48}{figure.caption.19}
 \contentsline {figure}{\numberline {5.1.1}{\ignorespaces Cumulative probability used to obtain the optimized values of $\lambda 's$ for the pair hexane+benzene.\relax }}{53}{figure.caption.22}
