@@ -229,10 +229,10 @@ All the equations of motion above are then numerically integrated  using the met
 
 \subsection{Integration of the equations of motion}
 
-With the formalism defined for the equations of motions and for the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time ($r^{N}(t)$) by updating the positions in discrete time intervals or time steps. To do that, the classical time evolution approach is used to preserve the Hamiltonian of the system in the numerical integration methods. In this approach, we start considering the time evolution of an arbitrary function $a(x_{t})$ along a trajectory $x_{t}$. Doing the time derivative of $a(x_{t})$:
+With the formalism defined for the equations of motions and the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time ($r^{N}(t)$) by updating the positions at discrete time intervals or time steps. To do that, the classical time evolution approach is used to preserve the Hamiltonian of the system in the numerical integration methods. In this approach, we consider the time evolution of an arbitrary function $a(x_{t})$ along a trajectory $x_{t}$. Doing the time derivative of $a(x_{t})$:
 
 \begin{equation}
-\frac{da}{dt} = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right].
+\frac{da}{dt} = \sum_{\alpha=1}^{3N} \left [  \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}\dfrac{\partial a}{\partial q_{\alpha}}  -  \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \dfrac{\partial a}{\partial p_{\alpha}} \right].
 \label{eqn:operador}
 \end{equation}
 
@@ -255,7 +255,7 @@ Substituting the equation above in Eq. \ref{eqn:operador}:
 
 \begin{equation}
 \begin{aligned}
-i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}  - \dfrac{\partial a}{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \right].
+i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [  \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}\dfrac{\partial a}{\partial q_{\alpha}}  -  \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \dfrac{\partial a}{\partial p_{\alpha}} \right].
 \label{eqn:liou2}
 \end{aligned}
 \end{equation}
@@ -263,11 +263,11 @@ i\mathcal{L} a = \sum_{\alpha=1}^{3N} \left [ \dfrac{\partial a}{\partial q_{\al
 The solution of Eq. \ref{eqn:liou} for $a(x_{t})$ is given by
 
 \begin{equation}
-a(x_{t}) = \exp [i\mathcal{L}t] a(x_{0}).
+a(x_{t}) = \exp (i\mathcal{L}t) a(x_{0}).
 \label{eqn:exactsol}
 \end{equation}
 
-Here, $\exp [i\mathcal{L}t]$ is known as the classical propagator. The effect of this operator in a function cannot be evaluated. However, we can develop approximate solutions for the Hamiltonian's equations with this operator. Rewriting Eq. \ref{eqn:liou2} as
+Here, $\exp (i\mathcal{L}t)$ is known as the classical propagator. The effect of this operator in a function cannot be evaluated. However, we can develop approximate solutions for the Hamiltonian's equations with this operator \cite{tuckerman}. Rewriting Eq. \ref{eqn:liou2} as
 
 \begin{equation}
 \begin{aligned}
@@ -277,7 +277,7 @@ i\mathcal{L}  =  i\mathcal{L}_{1} + i\mathcal{L}_{2},
 where
 \begin{equation}
 \begin{aligned}
-i\mathcal{L}_{1} = \sum_{\alpha=1}^{N}  \dfrac{\partial }{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}   \\
+i\mathcal{L}_{1} = \sum_{\alpha=1}^{N}  \dfrac{\partial }{\partial q_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}},   \\
 i\mathcal{L}_{2} = - \sum_{\alpha=1}^{N} \dfrac{\partial }{\partial p_{\alpha}} \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} .
 \end{aligned}
 \end{equation}
@@ -301,7 +301,7 @@ where P is an integer. Defining a time step $\Delta t =t/P$ and using it in Eq. 
 \label{eqn:trotterdt}
 \end{equation}
 
-In order to obtain an approximation for $\exp (i\mathcal{L}t)$, we take the limits and consider that P is a finite number. The resulting approximation for the classical propagator is then 
+In order to obtain an approximation for $\exp (i\mathcal{L}t)$, we do not take the limits and consider that P is a finite number \cite{tuckerman}. The resulting approximation for the classical propagator is then 
 
 \begin{equation}
 \begin{aligned}
@@ -327,7 +327,7 @@ Now we can use Eq. \ref{eqn:trotterfin} as a numerical propagation for a single 
 \end{aligned}
 \label{eqn:trotterfin2}
 \end{equation} 
-where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ is equal to the force ($F$) acting on the particle. We now are able to replace the exact solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution, from a initial condition $(r(t),p(t))$, is then
+where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ are equal to the force ($F$) acting on the particle. We now are able to replace the exact solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution, from a initial condition $(r(t),p(t))$, is then
 
 \begin{equation}
 \begin{aligned}
@@ -339,11 +339,11 @@ where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\p
 \end{aligned}
 \end{equation}
 
-The propagation is determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence, we have the following equation after applying the first operator:
+The propagation is determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence, we have the following equation after applying the first operator \cite{tuckerman}:
 
 \begin{equation}
 \begin{aligned}
-\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
+\exp \left \lbrace \frac{\Delta t}{2} F[r(t)] \dfrac{\partial}{\partial p} \right \rbrace
 \left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right] = 
 \left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right] .
 \end{aligned}
@@ -353,18 +353,18 @@ Acting the second operator in the equation above:
 
 \begin{equation}
 \begin{aligned}
-\exp \left( \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right)
-\left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F(r(t)) \end{array} \right] = 
-\left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right] .
+\exp \left[ \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right]
+\left[ \begin{array}{c} r(t) \\ p(t) + \frac{\Delta t}{2} F[r(t)] \end{array} \right] = 
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m}p(t) \\ p(t) + \frac{\Delta t}{2} F[r(t) + \frac{\Delta t}{m}p(t) ] \end{array} \right] .
 \end{aligned}
 \end{equation}
-and, finally:
+and, finally, we have the following equations after applying the third operator :
 
 \begin{equation}
 \begin{aligned}
-\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
-\left[ \begin{array}{c} r(t) + \frac{\Delta t}{2m}p(t) \\ p(t) + \frac{\Delta t}{2} F(r(t) + \frac{\Delta t}{2m}p(t) ) \end{array} \right]= \\ 
-\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m} (p(t)+\frac{\Delta t}{2} F(r(t))) \\ p(t) + \frac{\Delta t}{2} F(r(t)) + \frac{\Delta t}{2} F\{r(t)+ \frac{\Delta t}{m} [p + \frac{\Delta t}{2}F(r(t))]\}\end{array} \right] .
+\exp \left \lbrace \frac{\Delta t}{2} F[r(t)] \dfrac{\partial}{\partial p} \right \rbrace
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m}p(t) \\ p(t) + \frac{\Delta t}{2} F[r(t) + \frac{\Delta t}{m}p(t) ] \end{array} \right]= \\ 
+\left[ \begin{array}{c} r(t) + \frac{\Delta t}{m} \lbrace p(t)+\frac{\Delta t}{2} F[r(t)]\rbrace \\ p(t) + \frac{\Delta t}{2} F[r(t)] + \frac{\Delta t}{2} F\{r(t)+ \frac{\Delta t}{m} [p + \frac{\Delta t}{2}F(r(t))]\}\end{array} \right] .
 \end{aligned}
 \end{equation}
 
@@ -391,7 +391,7 @@ v(t+ \Delta t /2) = v(t- \Delta t /2) +\frac{F(t+ \Delta t) +F(t)}{m} \Delta t ,
 r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t .
 \end{equation}
 
-Although using different time steps or formulations, both methods described generate the same trajectory for a given initial configuration.
+Although using different time steps or formulations, both methods described to generate the same trajectory for a given initial configuration.
 
 \subsection{Initial Configuration and Periodic Boundary Condition}
 
