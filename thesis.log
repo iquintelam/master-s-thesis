@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  9 MAR 2018 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  12 MAR 2018 09:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2335,7 +2335,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page15 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [111 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2518, page=16, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2519, page=16, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 16>
@@ -2355,7 +2355,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page16 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [112 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2528, page=17, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2529, page=17, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 17>
@@ -2375,7 +2375,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page17 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [113 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2533, page=18, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2534, page=18, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 18>
@@ -2395,7 +2395,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page18 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [114 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2540, page=19, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2541, page=19, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 19>
@@ -2415,7 +2415,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page19 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [115 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2545, page=20, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2546, page=20, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 20>
@@ -2435,7 +2435,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page20 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [116 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2553, page=21, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2554, page=21, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 21>
@@ -2455,7 +2455,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page21 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [117 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2558, page=22, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2559, page=22, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 22>
@@ -2475,7 +2475,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page22 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [118 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2568, page=23, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2569, page=23, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 23>
@@ -2495,7 +2495,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page23 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [119 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2573, page=24, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2574, page=24, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 24>
@@ -2515,7 +2515,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page24 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [120 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2579, page=25, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2580, page=25, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 25>
@@ -2535,7 +2535,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page25 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [121 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2584, page=26, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2585, page=26, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 26>
@@ -2555,7 +2555,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page26 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [122 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2589, page=27, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2590, page=27, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 27>
@@ -2575,7 +2575,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page27 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [123 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2594, page=28, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2595, page=28, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 28>
@@ -2595,7 +2595,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page28 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [124 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2599, page=29, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2600, page=29, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 29>
@@ -2615,7 +2615,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page29 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [125 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2604, page=30, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2605, page=30, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 30>
@@ -2635,7 +2635,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page30 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [126 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2610, page=31, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2611, page=31, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 31>
@@ -2655,7 +2655,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page31 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [127 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2615, page=32, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2616, page=32, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 32>
@@ -2675,7 +2675,7 @@ Package pdftex.def Info: article/achemso-demo.pdf, page32 used on input line 86
 0.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [128 <./article/achemso-demo.pdf>]
-<article/achemso-demo.pdf, id=2620, page=33, 614.295pt x 794.97pt>
+<article/achemso-demo.pdf, id=2621, page=33, 614.295pt x 794.97pt>
 File: article/achemso-demo.pdf Graphic file (type pdf)
 
 <use article/achemso-demo.pdf, page 33>
@@ -2727,7 +2727,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 894.
 Here is how much of TeX's memory you used:
  16975 strings out of 494929
  259083 string characters out of 6180142
- 456424 words of memory out of 5000000
+ 457424 words of memory out of 5000000
  19113 multiletter control sequences out of 15000+600000
  66101 words of font info for 273 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -2760,7 +2760,7 @@ st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.
 pfb>
-Output written on thesis.pdf (142 pages, 3135551 bytes).
+Output written on thesis.pdf (142 pages, 3135394 bytes).
 PDF statistics:
  2952 PDF objects out of 2984 (max. 8388607)
  2325 compressed objects within 24 object streams
