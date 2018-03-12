@@ -44,7 +44,7 @@ In order to calculate thermodynamic properties, we need to define the control va
 \end{aligned}
 \end{equation}
 
-Here, $\epsilon _{0}$ is a constant, $h$ is the Planck constant and $\delta$ is a Dirac delta function. As mentioned above, the system will spend the same amount of time at each of the microstates, i. e. each of these microstates have equal probabilities ($\varrho$) of being visited. Such probability is:
+Here, $\epsilon _{0}$ is the energy unit, $h$ is the Planck constant and $\delta$ is the Dirac delta function. As mentioned above, the system will spend the same amount of time at each of the microstates, i. e. each of these microstates have equal probabilities ($\varrho$) of being visited. Such probability is:
 
 \begin{equation}
 \begin{aligned}
@@ -59,7 +59,7 @@ The macroscopic properties from molecular dynamics are then obtained from the re
 S = \kappa_{b} ln \Omega (N,V,E), 
 \end{aligned}
 \end{equation}
-where $\kappa_{b}$ is the Boltzmann constant. With this equations, we can derive other relations to macroscopic properties with the fundamental thermodynamic equations:
+where $\kappa_{b}$ is the Boltzmann constant. With these equations, we can derive other relations to macroscopic properties with the fundamental thermodynamic equations:
 
 \begin{equation}
 \begin{aligned}
@@ -118,65 +118,114 @@ S = \left (\frac{\partial G}{\partial T} \right)_{N,P}= \kappa_{b}  \left[ln Q(N
 
 The isothermal-isobaric and canonical ensembles have external conditions being applied to it (temperature and pressure). For temperature control, the method employed mimics the effect of a thermal reservoir through the use of a thermostat. The thermostats need to be capable of capturing the correct energy fluctuations in the system since the kinetic energy will fluctuate when using a heat bath to control the temperature in a canonical ensemble of a finite system \cite{frenkel}.  
 
-Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, the Andersen \cite{1980JChPh722384A} and the Nos\'{e} \cite{1984JChPh81511N} thermostats, but, here, we are going to discuss the most widely used thermostat: the Nosé-Hoover \cite{PhysRevA.31.1695}. This thermostat is based on the formulation of Nosé \cite{1984JChPh81511N}, whom used a Lagrangian that contains additional and artificial coordinates and velocities \cite{frenkel}. In this method, the Hamiltonian in a canonical ensemble is constructed as:
+Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, the Andersen \cite{1980JChPh722384A} and the Nos\'{e} \cite{1984JChPh81511N} thermostats, but, here, we are going to discuss the most widely used thermostat: the Nosé-Hoover \cite{PhysRevA.31.1695}. This thermostat is based on the formulation of Nosé \cite{1984JChPh81511N}, who used a Lagrangian that contains additional and artificial coordinates and velocities \cite{frenkel}. In this method, the Hamiltonian in a canonical ensemble is constructed as:
 
 \begin{equation}
-\mathcal{H} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3N\kappa_{b}T ln s ,
+\mathcal{H}_{Nos\acute{e}} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3N\kappa_{b}T ln s ,
 \end{equation}
 where $\xi$ is a friction coefficient related to the conjugate momentum of the thermal reservoir to which the system is coupled, $s$ is the position of the thermal reservoir and $\mathcal{Q}$ is the effective mass associated with s. The velocity update is then done with the friction term added to the equations of motion \cite{shell2015}:
 
 \begin{equation}
-\frac{dr_{i}}{dt} = v_{i},
+\frac{dr_{i}}{dt} = \frac{p_i}{m_i},
 \end{equation}
 
 \begin{equation}
-\frac{dv_{i}}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i},
+\frac{dp_{i}}{dt} = -  \frac{\partial U (r^{N})}{\partial r_{i}} - \xi p_{i},
 \end{equation}
 
 \begin{equation}
-\frac{\xi}{dt} = \frac{\sum m_{i} v_{i} - 3N\kappa_{b}T}{\mathcal{Q}} ,
+\frac{\xi}{dt} = \frac{\sum p_{i}^{2}/m_{i} - 3N\kappa_{b}T}{\mathcal{Q}} ,
 \end{equation}
 
 \begin{equation}
-\frac{\xi}{dt} = - \frac{1}{m_{i}} \frac{\partial U (r^{N})}{\partial r_{i}} - \xi v_{i}.
+\frac{1}{s}\frac{ds}{dt} =\frac{d \ln s}{dt} = \xi.
 \end{equation}
 
-To increase the robustness of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed. It proposes the use of multiple thermal reservoirs linked in order to enhance temperature equilibration \cite{shell2015}.  
-
-Meanwhile, the pressure is controlled with a barostat. It maintains the pressure constant during the simulation by adjusting the simulation volume. Among the available  barostats methodologies are the Berendsen \cite{doi:10.1063/1.448118}, in which the pressure is coupled to a pressure bath and the volume is periodically rescaled, and the Anderson barostat \cite{1980JChPh722384A}, which serves as basis for other barostating methdos such as the ones developed by Hoover \cite{PhysRevA.31.1695}, Martina-Tobias-Klein \cite{doi:10.1063/1.467468} and Parrinnello-Rahman \cite{doi:10.1063/1.328693}. The Andersen's idea was to couple the system to a fictional pressure bath and  incorporate the volume into the phase space as an additional degree of freedom \cite{tuckerman}. As in the Nosé-Hoover thermostat, Andersen added terms into the Hamiltonian in order to control the variable of interest:
+This approach proposed by the Nos\'{e} Hoover thermostat only generates a correct canonical distribution for molecular systems in which there are no external forces ($F_{i}$) and the center of mass is fixed or if there is only one conserved quantity \cite{frenkel}. To diminish these restrictions of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed by \citeonline{doi:10.1063/1.463940}. It proposes the use of another thermal reservoir or a whole chain of thermal reservoirs in order to enhance temperature equilibration \cite{shell2015}. Here, we are going to present its equations of motion since this was the method used in this dissertation. The equations of motion of a system of N particles coupled with M Nos\'{e} Hoover chains is given by
 
 \begin{equation}
-\mathcal{H} =  \sum_{i} \frac{V^{-2/3} \pi _{i}^{2}}{2 m_{i}} + U(V^{1/3} \mathbf{s}^{N})  + \frac{p_{V} ^{2} }{2\mathcal{W}} + PV,
-\end{equation}
-with $\mathbf{s}$ and $\pi$ being scale transformations:
-
-\begin{equation}
-\mathbf{s} _{i} =  V^{-1/3} r_{i} ,
+\frac{dr_{i}}{dt} = \frac{p_i}{m_i},
 \end{equation}
 
 \begin{equation}
-\pi _{i} =  V^{1/3} p _{i}.
-\end{equation}
-
-Here, $p_{V} $ is the momentum conjugate to the volume and $\mathcal{W}$ is a mass parameter that determines the time scale of the volume motion. With the equations above, we can derive the equations of motion in Cartesian coordinates for an ensemble at constant pressure:
-
-\begin{equation}
-\frac{dr_{i}}{dt} = \frac{p_{i}}{m_{i}} + \frac{1}{3} \frac{dV}{dt} \frac{r_{i}}{V},
+\frac{dp_{i}}{dt} = F_i  - \frac{p_{\xi _{1}}}{\mathcal{Q} _1} p_{i},
 \end{equation}
 
 \begin{equation}
-\frac{dp_{i}}{dt} = -  \frac{\partial U}{\partial r_{i}} - \frac{1}{3} \frac{dV}{dt} \frac{p_{i}}{V},
+\frac{\xi _{k}}{dt} = \frac{p_{\xi _k}}{\mathcal{Q} _{k}} \quad k = 1,...,M ,
 \end{equation}
 
 \begin{equation}
-\frac{dV_{i}}{dt} = \frac{p_{V}}{\mathcal{W}},
+\frac{p_{\xi _1}}{dt} = {\sum p_{i}^{2}/m_{i} - 3N\kappa_{b}T} -  \frac{p_{\xi _{2}}}{\mathcal{Q} _2}p_{\xi _{1}},
 \end{equation}
 
 \begin{equation}
-\frac{dp_{V}}{dt} = \frac{1}{3V} \sum_{i} \left [ \frac{p_{i}^{2}}{m_{i}} -  \frac{\partial U}{\partial r_{i}} \cdot r_{i} \right] -P.
+\frac{p_{\xi _k}}{dt} = \frac{p_{\xi _{k -1}}^{2}}{\mathcal{Q} _{k-1}} - \kappa_{b}T - \frac{p_{\xi _{k+1}}}{\mathcal{Q} _{k+1}}p_{\xi _{k}},
 \end{equation}
 
-The equations of motion above are then numerically integrated  using the methodologies described in the next section.
+\begin{equation}
+\frac{p_{\xi _M}}{dt} = \frac{ p_{\xi _{M-1}}^{2}}{\mathcal{Q} _{M-1}} - \kappa_{b}T .
+\end{equation}
+
+The conserved energy for the Nos\'{e} Hoover chains is then equal to
+
+\begin{equation}
+\mathcal{H}_{Nos\acute{e} \, Chains} =  K(p^{N}) + U(q^{N})  + \sum_{k=1}^{M }\frac{p^{2}_{\xi _{k}}}{2\mathcal{Q} _{k}} + 3N\kappa_{b}T \xi _{1} + \sum_{k=2}^{M} \kappa_{b}T \xi _{k}.
+\end{equation}
+
+Meanwhile, the pressure is controlled with a barostat. It maintains the pressure constant during the simulation by adjusting the simulation volume. Among the available  barostats methodologies are the Berendsen \cite{doi:10.1063/1.448118}, in which the pressure is coupled to a pressure bath, and the volume is periodically rescaled, and the Anderson barostat \cite{1980JChPh722384A}, which serves as a basis for other barostating methods such as the ones developed by Hoover \cite{PhysRevA.31.1695}, Martina-Tobias-Klein \cite{doi:10.1063/1.467468} and Parrinello-Rahman \cite{doi:10.1063/1.328693}. The Andersen's idea was to couple the system to a fictional pressure bath and incorporate the volume into the phase space as an additional degree of freedom \cite{tuckerman}. Here, we are going to present the approach developed by \cite{doi:10.1063/1.467468} since it was the one used to control the pressure in our simulations. Th equations of motion for a chain of barostats of length M are given by  
+
+\begin{equation}
+\frac{dr_{i}}{dt} = \frac{p_i}{m_i} + \frac{p_{\epsilon}}{\mathcal{W}} r_i,
+\end{equation}
+
+\begin{equation}
+\frac{dp_{i}}{dt} = F_i  - \left(1 + \frac{d}{dN}\right) \frac{p_{\epsilon}}{\mathcal{W}} p_{i} - \frac{p_{\epsilon _{1}}}{\mathcal{Q} _1} p_{i},
+\end{equation}
+
+\begin{equation}
+\frac{dV}{dt} = \frac{d V p_{\epsilon}}{\mathcal{W} }
+\end{equation}
+
+\begin{equation}
+\frac{dp_{\epsilon}}{dt} = dV (	P_{int} -P_{ext}) + \frac{1}{N} \sum_{i=1}^{N} \frac{p_{i}^{2}}{m_i} - \frac{p_{\xi _{1}}}{{\mathcal{Q} _1}}p_{\epsilon},
+\end{equation}
+
+\begin{equation}
+\frac{\xi _{k}}{dt} = \frac{p_{\xi _k}}{\mathcal{Q} _{k}} \quad k = 1,...,M ,
+\end{equation}
+
+\begin{equation}
+\frac{p_{\xi _1}}{dt} = \sum \frac{p_{i}^{2}}{m_{i}} - \frac{p_{\epsilon}^{2}}{\mathcal{W}} -  (dN +1)\kappa_{b}T -\frac{p_{\xi _{2}}}{\mathcal{Q} _2}p_{\xi _{1}},
+\end{equation}
+
+\begin{equation}
+\frac{p_{\xi _k}}{dt} = \frac{p_{\xi _{k -1}}^{2}}{\mathcal{Q} _{k-1}} - \kappa_{b}T - \frac{p_{\xi _{k+1}}}{\mathcal{Q} _{k+1}}p_{\xi _{k}} \quad k = 2,...,M-1 ,
+\end{equation}
+
+\begin{equation}
+\frac{p_{\xi _M}}{dt} = \frac{ p_{\xi _{M-1}}^{2}}{\mathcal{Q} _{M-1}} - \kappa_{b}T .
+\end{equation}
+
+In the equations above, $\epsilon$ is equal to
+
+\begin{equation}
+\epsilon = \ln \left[\frac{V}{V(0)}\right],
+\end{equation}
+where $V$ is the volume of the system and $V(0)$ is the volume at $t=0$. Also presented in the equations of motion are the mass parameter ($\mathcal{W}$) associated to $\epsilon$, the momentum ($p_{\epsilon}$) conjugate to $\epsilon$, the external pressure ($P_{ext}$), and the internal pressure ($P_{int}$). $P_{ext}$ is imposed as we do with the temperature in the thermostat and $P_{int}$ is calculated during the simulation with the following equation
+
+\begin{equation}
+P_{int} = \frac{1}{dV} \left[\sum_{i=1}^{N} \left(\frac{p_{i}^2}{m_i} + r_{i}\cdot F_i \right) - dV \frac{\partial U}{\partial V}\right].
+\end{equation}
+
+
+Finally, the conserved energy for the chain of barostats proposed by \citeonline{doi:10.1063/1.467468} is equal to
+
+\begin{equation}
+\mathcal{H}_{N,P_{ext},T} =  K(p^{N}) + U(q^{N})  + \frac{p_{\epsilon}^2}{\mathcal{W}}+\sum_{k=1}^{M }\frac{p^{2}_{\xi _{k}}}{\mathcal{Q} _{k}} + (dN+1)\kappa_{b}T \xi _{1}  + \kappa_{b}T\sum_{k=1}^{M}  \xi _{k} + P_{ext}V.
+\end{equation}
+
+All the equations of motion above are then numerically integrated  using the methodologies described in the next section.
 
 \subsection{Integration of the equations of motion}
 
