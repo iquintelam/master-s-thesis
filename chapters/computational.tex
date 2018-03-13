@@ -375,7 +375,7 @@ r(t+ \Delta t) = r(t) +v(t) \Delta t + \frac{F(t)}{2m} \Delta t^{2}.
 \label{eqn:verlet}
 \end{equation}
 
-Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculations of forces at each time step are the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above and is given by
+Eq.  \ref{eqn:verlet} is the position update part of the velocity Verlet method \cite{verlet}. In this method, the positions are updated by a time step of $\Delta t$ by using the positions at the previous time steps and forces. These recalculations of forces at each time step are the most computationally expensive part of the simulation since we have to take the derivative of the potential energy at each time step. The equation to update the velocity can also be derived from the equations above and is given by
 
 \begin{equation}
 v(t+ \Delta t) = v(t) +\frac{F(t+ \Delta t) +F(t)}{2m} \Delta t .
