@@ -78,7 +78,7 @@ a_{2,ij} {}=&  \frac{1}{2} K^{HS} (1+ \chi_{ij}) \epsilon_{ij} \mathcal{C}_{ij}^
 In Eq. \ref{eqn:a2ijap}, $K^{HS}$ is the isothermal compressibility of the mixture of hard spheres. It is equal to
 
 \begin{equation}
-K^{HS} = \dfrac{(1-\zeta_{x})^{4}}{1+4 \zeta_{x}+4 \zeta_{x}^{2}+4 \zeta_{x}^{3}+\zeta_{x}^{4}}.
+K^{HS} = \dfrac{(1-\zeta_{x})^{4}}{1+4 \zeta_{x}+4 \zeta_{x}^{2}+4 \zeta_{x}^{3}+\zeta_{x}^{4}},
 \end{equation}
 and $\chi_{ij}$ is given by
 
@@ -113,7 +113,7 @@ f_{k}(\alpha_{ij}) \dfrac{\sum_{n=0}^{n=3} \phi_{k,n} \alpha_{ij}^{n}}{1+ \sum_{
 \end{equation}
 where $\phi_{k,n}$ are coefficients defined in the original paper by \citeonline{lafitte2013}.
 
-The density dependent coefficients of Eq. \ref{eqn:ghs} are given by the following equations
+The density dependent coefficients of Eq. \ref{eqn:ghs} are given by the following equations:
 
 \begin{equation}
 k_{0} = - \ln(1-{\zeta}_{x}) + \frac{42{\zeta}_{x} -39{\zeta}_{x}^{2}+ 9{\zeta}_{x}^{3}-2{\zeta}_{x}^{4}}{6(1-\zeta_{x})^{3}},
@@ -135,8 +135,7 @@ In Eq. \ref{eqn:gmie}, the term $g_{1,ij}(\sigma_{ij})$ is the first-order contr
 
 \begin{equation}
 \begin{aligned}
-g_{1,ij}(\sigma_{ij}) {}=& \dfrac{1}{2 \pi \epsilon_{ij} d _{ij}^{3}} \left[ 3 \frac{\partial a_{1,ij}}{\partial \rho _{s}} \right. \\
-& \left.  - \mathcal{C}_{ij} \lambda_{a,ij} x_{0,ij}^{\lambda_{a,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};\lambda_{a,ij})+B_{ij}(\rho_{s};\lambda_{a,ij})}{\rho _{s}} \right. \\
+g_{1,ij}(\sigma_{ij}) {}=& \dfrac{1}{2 \pi \epsilon_{ij} d _{ij}^{3}} \left[ 3 \frac{\partial a_{1,ij}}{\partial \rho _{s}}   - \mathcal{C}_{ij} \lambda_{a,ij} x_{0,ij}^{\lambda_{a,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};\lambda_{a,ij})+B_{ij}(\rho_{s};\lambda_{a,ij})}{\rho _{s}} \right. \\
 & \left.  + \mathcal{C}_{ij} \lambda_{r,ij} x_{0,ij}^{\lambda_{r,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};\lambda_{r,ij})+B_{ij}(\rho_{s};\lambda_{r,ij})}{\rho _{s}} \right].
 \end{aligned}
 \end{equation} 
@@ -150,8 +149,7 @@ where $g_{2,ij}^{MCA}(\sigma_{ij})$ is equal to
 
 \begin{equation}
 \begin{aligned}
-g_{2,ij}(\sigma_{ij}) {}=& \dfrac{1}{2 \pi \epsilon_{ij} d _{ij}^{3}} \left[3 \frac{\partial \frac{a_{2}}{1+\gamma_{ij}}}{\partial \rho _{s}} \right. \\
-& \left. - \epsilon_{ij} K^{HS} \mathcal{C}_{ij}^{2} \lambda_{r,ij} x_{0,ij}^{2\lambda_{r,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};2\lambda_{r,ij})+B_{ij}(\rho_{s};2\lambda_{r,ij})}{\rho _{s}} \right. \\
+g_{2,ij}(\sigma_{ij}) {}=& \dfrac{1}{2 \pi \epsilon_{ij} d _{ij}^{3}} \left[3 \frac{\partial \frac{a_{2}}{1+\gamma_{ij}}}{\partial \rho _{s}} - \epsilon_{ij} K^{HS} \mathcal{C}_{ij}^{2} \lambda_{r,ij} x_{0,ij}^{2\lambda_{r,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};2\lambda_{r,ij})+B_{ij}(\rho_{s};2\lambda_{r,ij})}{\rho _{s}} \right. \\
 & \left. + \epsilon_{ij} K^{HS} \mathcal{C}_{ij}^{2} (\lambda_{r,ij}+\lambda_{a,ij}) (x_{0,ij})^{\lambda_{r,ij}+\lambda_{a,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};\lambda_{r,ij}+\lambda_{a,ij})+B_{ij}(\rho_{s};\lambda_{r,ij}+\lambda_{a,ij})}{\rho _{s}} \right. \\
 & \left. - \epsilon_{ij} K^{HS} \mathcal{C}_{ij}^{2} \lambda_{a,ij} x_{0,ij}^{2\lambda_{a,ij}} \dfrac{a_{1,ij}^{s}(\rho_{s};2\lambda_{a,ij})+B_{ij}(\rho_{s};2\lambda_{a,ij})}{\rho _{s}}\right],
 \end{aligned}
