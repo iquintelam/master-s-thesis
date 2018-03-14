@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{28}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie Equation of State (EoS)}{28}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{31}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Solvation Free Energy Simulations Based on Molecular Dynamics}{35}{section.3.3}
+\contentsline {section}{\numberline {3.3}Solvation Free Energy Calculations Based on Molecular Dynamics}{35}{section.3.3}
 \contentsline {section}{\numberline {3.4}Expanded Ensemble Method}{40}{section.3.4}
 \contentsline {section}{\numberline {3.5}Multistate Bennett Acceptance Ratio (MBAR)}{44}{section.3.5}
 \contentsline {section}{\numberline {3.6}Gibbs Ensemble Monte Carlo (GEMC)}{45}{section.3.6}
