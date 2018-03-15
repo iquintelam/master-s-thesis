@@ -2039,8 +2039,8 @@ FUNCTION {set.default.abnt.variables}
 			       %#1 \cite=(Author, YEAR)
   #0 'abnt.experimental :=
   abnt.doi.expand.to.url 'abnt.doi :=
-  #2 'abnt.etal.cite :=
-  #2 'abnt.etal.list :=
+  #3 'abnt.etal.cite :=
+  #3 'abnt.etal.list :=
   "et al." 'abnt.etal.text :=
   #0 'abnt.full.initials :=
   #0 'abnt.last.names :=      %#0 abnt-style, #1 bibtex-style

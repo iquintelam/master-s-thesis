@@ -2,11 +2,11 @@
 
 \label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-In this study, we had first to obtain the parameters of phenanthrene using an equation for rings for the SAFT-$\gamma$ Mie force field since they were not available on this force field database \cite{ervik2016}. Hence, this chapter is divided into two sections. The first one describes how we parametrized the phenanthrene molecule and the second one explains how we carried out the solvation free energy simulations. 
+In this study, we had first to obtain the parameters of phenanthrene using an equation for rings for the SAFT-$\gamma$ Mie force field since these parameters were not available on this force field database \cite{ervik2016}. Hence, we divided this chapter into two sections. The first one describes how we parametrized the phenanthrene molecule with the SAFT-$\gamma$ Mie force field and the second one explains how we carried out the solvation free energy simulations. 
 
 \section{Phenanthrene Parameterization}\label{parame}
 
-We implemented the two parameterization strategies for molecules with aromatic rings described in Section \ref{parsaft} for phenanthrene. For both of them, only vapor pressure data \cite{pvphen} were used due to the unavailability of saturated liquid density. We did not estimate the attractive exponent, $\lambda _{a}$. Instead, the value of six was given to it due to its high correlation with the repulsive exponent. The parameterization with the ring equation of \citeonline{muller2017} was carried out with the number of segments equal to five and with a geometry such as that in \figref{fig:fen5}, since this level of coarse-graining was also used for a similar molecule (anthracene) in the original paper.
+We implemented the two parameterization strategies for molecules with aromatic rings described in Section \ref{parsaft} for phenanthrene. For both of them, only vapor pressure data \cite{pvphen} were used due to the unavailability of saturated liquid density. We did not estimate the attractive exponent, $\lambda _{a}$. Instead, the value of six was given to it, as recommended by \citeonline{ramrattan2015} and \citeonline{herdes2015}, due to its high correlation with the repulsive exponent. The parameterization with the ring equation of \citeonline{muller2017} was carried out with the number of segments equal to five and with a geometry such as that in \figref{fig:fen5}, since this level of coarse-graining was also used for a similar molecule (anthracene) in the original paper.
 \begin{figure}[th]
 	\centering
 	\includegraphics[width=0.25\linewidth]{Figures/fen5}

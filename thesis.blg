@@ -73,24 +73,24 @@ while executing---line 2146 of file abntex2-alf.bst
 You've used 148 entries,
             6714 wiz_defined-function locations,
             1992 strings with 36351 characters,
-and the built_in function-call counts, 141596 in all, are:
-= -- 10044
-> -- 5939
+and the built_in function-call counts, 139653 in all, are:
+= -- 9783
+> -- 5678
 < -- 403
-+ -- 2342
-- -- 1711
-* -- 10579
-:= -- 17516
++ -- 2256
+- -- 1624
+* -- 10318
+:= -- 17342
 add.period$ -- 445
 call.type$ -- 149
-change.case$ -- 1917
-chr.to.int$ -- 571
+change.case$ -- 1888
+chr.to.int$ -- 570
 cite$ -- 144
 duplicate$ -- 7463
 empty$ -- 9047
-format.name$ -- 8640
-if$ -- 33649
-int.to.chr$ -- 4
+format.name$ -- 8379
+if$ -- 33214
+int.to.chr$ -- 5
 int.to.str$ -- 1
 missing$ -- 2842
 newline$ -- 719
@@ -99,7 +99,7 @@ pop$ -- 3620
 preamble$ -- 1
 purify$ -- 635
 quote$ -- 0
-skip$ -- 8369
+skip$ -- 8281
 stack$ -- 1
 substring$ -- 6062
 swap$ -- 4412
