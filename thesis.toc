@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Histograms}{12}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Free Energy Perturbation (FEP)}{13}{subsection.2.4.3}
 \contentsline {subsubsection}{\numberline {2.4.3.1}Bennett Acceptance Ratio (BAR)}{14}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennett Acceptance Ratio (MBAR)}{15}{subsubsection.2.4.3.2}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Multistate Bennett Acceptance Ratio (MBAR)}{16}{subsubsection.2.4.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Computational Methods}}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Molecular Dynamics}{17}{section.3.1}
