@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  21 MAR 2018 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  21 MAR 2018 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,31 +1307,12 @@ m/it/12 w[]$ \T1/ppl/m/n/12 (-20) of the mix-ture toluene+$\OML/cmm/m/it/12 CO[
 
 ] [10] (./thesis.toc [11
 
-]
-Overfull \hbox (1.41573pt too wide) detected at line 60
- \T1/phv/b/n/12 103
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 64
- \T1/phv/b/n/12 107
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 68
- \T1/phv/b/n/12 116
- []
-
-
-Overfull \hbox (0.65327pt too wide) in paragraph at lines 68--68
- [][] [][][]\T1/phv/b/n/12 PAPER FOR PUB-LI-CA-TION IN SCI-EN-TIFIC JOUR- 
- []
-
-) [12]
+]) [12]
 \openout2 = `chapters/introduction.aux'.
 
- (./chapters/introduction.texpdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
+
+(./chapters/introduction.texpdfTeX warning (ext4): destination with the same id
+entifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.10 
@@ -1344,7 +1325,7 @@ l.10
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 
+l.15 
       [2])pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -1363,9 +1344,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 M
-      olecular dynamics simulations were also utilized in the study of \cite...
-[4
+l.20 
+      [4
 
 
 
@@ -1373,8 +1353,8 @@ l.13 M
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 
-      [5] <Figures/multiscale.png, id=403, 1031.855pt x 717.68124pt>
+l.29 
+      [5] <Figures/multiscale.png, id=399, 1031.855pt x 717.68124pt>
 File: Figures/multiscale.png Graphic file (type png)
 
 <use Figures/multiscale.png>
@@ -1384,45 +1364,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 \end{figure}
-                  [6]pdfTeX warning (ext4): destination with the same identifie
-r (name{page.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
 l.39 
-      [7 <./Figures/multiscale.png>]pdfTeX warning (ext4): destination with the
- same identifier (name{page.8}) has been already used, duplicate ignored
+      [6 <./Figures/multiscale.png>]pdfTeX warning (ext4): destination with the
+ same identifier (name{page.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.41 
+      [7]pdfTeX warning (ext4): destination with the same identifier (name{page
+.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 
       [8]pdfTeX warning (ext4): destination with the same identifier (name{page
 .9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 
+l.55 
       [9]pdfTeX warning (ext4): destination with the same identifier (name{page
 .10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 
-      [10]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.55 
-      [11]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.105 
-       [12] [13]
+l.113 \end{equation}
+                     [10]
 Overfull \hbox (8.02597pt too wide) in paragraph at lines 137--138
 []\T1/ppl/m/n/12 (-20) This way of cal-cu-la-tion $\OT1/cmr/m/n/12 ^^A\OML/cmm/
 m/it/12 G$ \T1/ppl/m/n/12 (-20) is also called Ex-po-nen-tial Av-er-ag-ing (EXP
 ) ([][]ZWANZIG[][],
  []
 
-[14] [15]) [16]
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 
+       [11]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.168 
+       [12]) [13]
 \openout2 = `chapters/computational.aux'.
 
  (./chapters/computational.tex
@@ -1433,54 +1413,54 @@ s of all the atoms $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; y[]; z[]; :::; x[];
 y[]; z[]\OT1/cmr/m/n/12 )$\T1/ppl/m/n/12 (-20) .
  []
 
-[17
+[14
 
 
 
-] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]
-<Figures/pbc.png, id=871, 468.75125pt x 388.45125pt>
+] [15] [16] [17] [18] [19] [20] [21] [22] [23]
+<Figures/pbc.png, id=844, 468.75125pt x 388.45125pt>
 File: Figures/pbc.png Graphic file (type png)
  <use Figures/pbc.png>
 Package pdftex.def Info: Figures/pbc.png used on input line 410.
 (pdftex.def)             Requested size: 318.49861pt x 263.93588pt.
 
-[30 <./Figures/pbc.png>]
-<Figures/pairlist.png, id=880, 421.575pt x 368.37625pt>
+[24 <./Figures/pbc.png>]
+<Figures/pairlist.png, id=854, 421.575pt x 368.37625pt>
 File: Figures/pairlist.png Graphic file (type png)
 
 <use Figures/pairlist.png>
 Package pdftex.def Info: Figures/pairlist.png used on input line 419.
 (pdftex.def)             Requested size: 227.5pt x 198.79654pt.
- [31 <./Figures/pairlist.png>]
-<Figures/bondstrech.png, id=890, 446.66875pt x 94.3525pt>
+
+<Figures/bondstrech.png, id=860, 446.66875pt x 94.3525pt>
 File: Figures/bondstrech.png Graphic file (type png)
 
 <use Figures/bondstrech.png>
 Package pdftex.def Info: Figures/bondstrech.png used on input line 429.
 (pdftex.def)             Requested size: 136.50139pt x 28.83432pt.
 
-<Figures/anglebend.png, id=891, 337.26pt x 199.74625pt>
+<Figures/anglebend.png, id=861, 337.26pt x 199.74625pt>
 File: Figures/anglebend.png Graphic file (type png)
 
 <use Figures/anglebend.png>
 Package pdftex.def Info: Figures/anglebend.png used on input line 431.
 (pdftex.def)             Requested size: 136.50139pt x 80.84497pt.
 
-<Figures/torsion.png, id=892, 366.36874pt x 210.7875pt>
+<Figures/torsion.png, id=862, 366.36874pt x 210.7875pt>
 File: Figures/torsion.png Graphic file (type png)
 
 <use Figures/torsion.png>
 Package pdftex.def Info: Figures/torsion.png used on input line 433.
 (pdftex.def)             Requested size: 136.50139pt x 78.5337pt.
- [32 <./Figures/bondstrech.png> <./Figures/anglebend.png> <./Figures/torsion.pn
-g>]
-<Figures/lj2.png, id=900, 906.38625pt x 635.37375pt>
+ [25 <./Figures/pairlist.png>] [26 <./Figures/bondstrech.png> <./Figures/angleb
+end.png> <./Figures/torsion.png>]
+<Figures/lj2.png, id=875, 906.38625pt x 635.37375pt>
 File: Figures/lj2.png Graphic file (type png)
  <use Figures/lj2.png>
 Package pdftex.def Info: Figures/lj2.png used on input line 471.
 (pdftex.def)             Requested size: 364.00139pt x 255.16296pt.
 
-[33]
+[27 <./Figures/lj2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 488.
@@ -1493,14 +1473,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 488.
 
-[34 <./Figures/lj2.png>] [35] [36] [37]
-<Figures/mullergeo.png, id=988, 634.37pt x 215.80624pt>
+[28] [29] <Figures/mullergeo.png, id=950, 634.37pt x 215.80624pt>
 File: Figures/mullergeo.png Graphic file (type png)
 
 <use Figures/mullergeo.png>
 Package pdftex.def Info: Figures/mullergeo.png used on input line 591.
 (pdftex.def)             Requested size: 317.18422pt x 107.90285pt.
- [38 <./Figures/mullergeo.png>]
+ [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 617.
@@ -1513,27 +1492,27 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 617.
 
-[39] [40] [41] [42] [43] [44]
-<Figures/cicclotermo.png, id=1104, 655.44875pt x 504.88625pt>
+[31 <./Figures/mullergeo.png>] [32] [33] [34] [35] [36]
+<Figures/cicclotermo.png, id=1073, 655.44875pt x 504.88625pt>
 File: Figures/cicclotermo.png Graphic file (type png)
 
 <use Figures/cicclotermo.png>
 Package pdftex.def Info: Figures/cicclotermo.png used on input line 800.
 (pdftex.def)             Requested size: 393.27228pt x 302.93407pt.
- [45] [46 <./Figures/cicclotermo.png>]
-<Figures/linear.png, id=1141, 578.16pt x 433.62pt>
+ [37 <./Figures/cicclotermo.png>]
+<Figures/linear.png, id=1103, 578.16pt x 433.62pt>
 File: Figures/linear.png Graphic file (type png)
  <use Figures/linear.png>
 Package pdftex.def Info: Figures/linear.png used on input line 826.
 (pdftex.def)             Requested size: 364.00139pt x 272.99678pt.
 
-[47] <Figures/soft.png, id=1149, 578.16pt x 433.62pt>
+[38] <Figures/soft.png, id=1111, 578.16pt x 433.62pt>
 File: Figures/soft.png Graphic file (type png)
  <use Figures/soft.png>
 Package pdftex.def Info: Figures/soft.png used on input line 833.
 (pdftex.def)             Requested size: 364.00139pt x 272.99678pt.
 
-[48 <./Figures/linear.png> <./Figures/soft.png>] [49] [50] [51] [52]
+[39 <./Figures/linear.png> <./Figures/soft.png>] [40] [41] [42]
 Package epstopdf Info: Source file: <Figures/optimized_cdfexeample.eps>
 (epstopdf)                    date: 2018-03-01 16:46:03
 (epstopdf)                    size: 23164 bytes
@@ -1546,7 +1525,7 @@ ple-eps-converted-to.pdf Figures/optimized_cdfexeample.eps>
 (epstopdf)             \includegraphics on input line 939.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/optimized_cdfexeample-eps-converted-to.pdf, id=1250, 512.91624pt x 400
+<Figures/optimized_cdfexeample-eps-converted-to.pdf, id=1204, 512.91624pt x 400
 .49625pt>
 File: Figures/optimized_cdfexeample-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1554,40 +1533,41 @@ File: Figures/optimized_cdfexeample-eps-converted-to.pdf Graphic file (type pdf
 Package pdftex.def Info: Figures/optimized_cdfexeample-eps-converted-to.pdf use
 d on input line 939.
 (pdftex.def)             Requested size: 364.00139pt x 284.21988pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[53] [54 <./Figures/optimized_cdfexeample-eps-converted-to.pdf>] [55] [56]
-[57] [58]) [59]
+ [43 <./Figures/optimized_cdfexeample-eps-converted-to.pdf>] [44] [45] [46]) [4
+7]
 \openout2 = `chapters/methodology.aux'.
 
- (./chapters/methodology.tex
-<Figures/fen5.jpg, id=1385, 383.93437pt x 214.55156pt>
+
+(./chapters/methodology.tex
+<Figures/fen5.jpg, id=1330, 383.93437pt x 214.55156pt>
 File: Figures/fen5.jpg Graphic file (type jpg)
  <use Figures/fen5.jpg>
 Package pdftex.def Info: Figures/fen5.jpg used on input line 12.
 (pdftex.def)             Requested size: 113.75pt x 63.56387pt.
 
-[60
+[48
 
 
 
- <./Figures/fen5.jpg>] <Figures/fe3.png, id=1405, 240.9pt x 213.79875pt>
+ <./Figures/fen5.jpg>] <Figures/fe3.png, id=1353, 240.9pt x 213.79875pt>
 File: Figures/fe3.png Graphic file (type png)
 
 <use Figures/fe3.png>
 Package pdftex.def Info: Figures/fe3.png used on input line 29.
 (pdftex.def)             Requested size: 68.24722pt x 60.56789pt.
- [61 <./Figures/fe3.png (PNG copy)>] [62] [63]) [64]
+ [49 <./Figures/fe3.png (PNG copy)>] [50]) [51]
 \openout2 = `chapters/results.aux'.
 
 
-(./chapters/results.tex [65
+(./chapters/results.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52
 
 
 
-] [66]
+]
 Package epstopdf Info: Source file: <Figures/optimized_cdf.eps>
 (epstopdf)                    date: 2018-01-29 16:03:33
 (epstopdf)                    size: 23169 bytes
@@ -1600,7 +1580,7 @@ converted-to.pdf Figures/optimized_cdf.eps>
 (epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/optimized_cdf-eps-converted-to.pdf, id=1542, 512.91624pt x 400.49625pt
+<Figures/optimized_cdf-eps-converted-to.pdf, id=1477, 512.91624pt x 400.49625pt
 >
 File: Figures/optimized_cdf-eps-converted-to.pdf Graphic file (type pdf)
  <use Figures/optimized_cdf-eps-converted-to.pdf>
@@ -1620,196 +1600,199 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[67 <./Figures/optimized_cdf-eps-converted-to.pdf>] [68] [69]
-<Figures/ohex_benz.pdf, id=1597, 420.06938pt x 433.62pt>
+[53] [54 <./Figures/optimized_cdf-eps-converted-to.pdf>] [55]
+<Figures/ohex_benz.pdf, id=1533, 420.06938pt x 433.62pt>
 File: Figures/ohex_benz.pdf Graphic file (type pdf)
 
 <use Figures/ohex_benz.pdf>
-Package pdftex.def Info: Figures/ohex_benz.pdf used on input line 174.
+Package pdftex.def Info: Figures/ohex_benz.pdf used on input line 176.
 (pdftex.def)             Requested size: 318.49861pt x 328.77388pt.
+ [56
 
+] [57 <./Figures/ohex_benz.pdf>]
+<Figures/hex.png, id=1583, 462.528pt x 346.896pt>
+File: Figures/hex.png Graphic file (type png)
+ <use Figures/hex.png>
+Package pdftex.def Info: Figures/hex.png used on input line 208.
+(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
+
+[58] <Figures/oct.png, id=1590, 462.528pt x 346.896pt>
+File: Figures/oct.png Graphic file (type png)
+ <use Figures/oct.png>
+Package pdftex.def Info: Figures/oct.png used on input line 215.
+(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
+
+<Figures/tol.png, id=1591, 462.528pt x 346.896pt>
+File: Figures/tol.png Graphic file (type png)
+ <use Figures/tol.png>
+Package pdftex.def Info: Figures/tol.png used on input line 222.
+(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
+
+[59 <./Figures/hex.png> <./Figures/oct.png>] [60 <./Figures/tol.png>]
+<Figures/tolco2.png, id=1609, 462.528pt x 346.896pt>
+File: Figures/tolco2.png Graphic file (type png)
+ <use Figures/tolco2.png>
+Package pdftex.def Info: Figures/tolco2.png used on input line 254.
+(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
+
+[61 <./Figures/tolco2.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[70
-
-] [71 <./Figures/ohex_benz.pdf>] [72]
-<Figures/hex.png, id=1653, 462.528pt x 346.896pt>
-File: Figures/hex.png Graphic file (type png)
- <use Figures/hex.png>
-Package pdftex.def Info: Figures/hex.png used on input line 206.
-(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
-
-<Figures/oct.png, id=1654, 462.528pt x 346.896pt>
-File: Figures/oct.png Graphic file (type png)
- <use Figures/oct.png>
-Package pdftex.def Info: Figures/oct.png used on input line 213.
-(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
-
-[73 <./Figures/hex.png>] <Figures/tol.png, id=1660, 462.528pt x 346.896pt>
-File: Figures/tol.png Graphic file (type png)
-
-<use Figures/tol.png>
-Package pdftex.def Info: Figures/tol.png used on input line 220.
-(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
- [74 <./Figures/oct.png> <./Figures/tol.png>] [75]
-<Figures/tolco2.png, id=1676, 462.528pt x 346.896pt>
-File: Figures/tolco2.png Graphic file (type png)
- <use Figures/tolco2.png>
-Package pdftex.def Info: Figures/tolco2.png used on input line 252.
-(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
-
-[76 <./Figures/tolco2.png>] [77] [78] [79]
-<Figures/water.png, id=1728, 462.528pt x 346.896pt>
+[62] [63] [64] <Figures/water.png, id=1660, 462.528pt x 346.896pt>
 File: Figures/water.png Graphic file (type png)
- <use Figures/water.png>
-Package pdftex.def Info: Figures/water.png used on input line 353.
-(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-[80] [81 <./Figures/water.png>]) [82] [83]
+<use Figures/water.png>
+Package pdftex.def Info: Figures/water.png used on input line 355.
+(pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
+ [65 <./Figures/water.png>]) [66] [67]
 \openout2 = `chapters/conclusions.aux'.
 
- (./chapters/conclusions.tex [84
+
+(./chapters/conclusions.tex [68
 
 
 
-]
-[85]) [86] (./thesis.bbl
+]) [69] (./thesis.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[87
+[70
 
 
-] [88] [89] [90] [91] [92] [93] [94] [95] [96]) [97]
+] [71] [72] [73] [74] [75] [76] [77] [78] [79]) [80]
 \openout2 = `chapters/saftequations.aux'.
 
 
-(./chapters/saftequations.tex [98
+(./chapters/saftequations.tex [81
 
 
-] [99] [100]
+] [82] [83]
 Overfull \hbox (16.58601pt too wide) detected at line 156
 [] []
  []
 
-[101]) [102] <Figures/ohex_pyr.pdf, id=1902, 420.06938pt x 433.62pt>
+) [84] <Figures/ohex_pyr.pdf, id=1821, 420.06938pt x 433.62pt>
 File: Figures/ohex_pyr.pdf Graphic file (type pdf)
 
 <use Figures/ohex_pyr.pdf>
 Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 532.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ohex_phen.pdf, id=1903, 420.06938pt x 433.62pt>
+<Figures/ohex_phen.pdf, id=1822, 420.06938pt x 433.62pt>
 File: Figures/ohex_phen.pdf Graphic file (type pdf)
 
 <use Figures/ohex_phen.pdf>
 Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 534.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ooct_prop.pdf, id=1904, 420.06938pt x 433.62pt>
+<Figures/ooct_prop.pdf, id=1823, 420.06938pt x 433.62pt>
 File: Figures/ooct_prop.pdf Graphic file (type pdf)
 
 <use Figures/ooct_prop.pdf>
 Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 536.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ooct_ant.pdf, id=1905, 504.08327pt x 520.34402pt>
+<Figures/ooct_ant.pdf, id=1824, 504.08327pt x 520.34402pt>
 File: Figures/ooct_ant.pdf Graphic file (type pdf)
 
 <use Figures/ooct_ant.pdf>
 Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 538.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ooct_phen.pdf, id=1906, 504.08327pt x 520.34402pt>
+<Figures/ooct_phen.pdf, id=1825, 504.08327pt x 520.34402pt>
 File: Figures/ooct_phen.pdf Graphic file (type pdf)
 
 <use Figures/ooct_phen.pdf>
 Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 539.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/otol_pyr.pdf, id=1907, 420.06938pt x 433.62pt>
+<Figures/otol_pyr.pdf, id=1826, 420.06938pt x 433.62pt>
 File: Figures/otol_pyr.pdf Graphic file (type pdf)
 
 <use Figures/otol_pyr.pdf>
 Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 541.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/otol_antr.pdf, id=1908, 420.06938pt x 433.62pt>
+<Figures/otol_antr.pdf, id=1827, 420.06938pt x 433.62pt>
 File: Figures/otol_antr.pdf Graphic file (type pdf)
 
 <use Figures/otol_antr.pdf>
 Package pdftex.def Info: Figures/otol_antr.pdf used on input line 550.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/otol_phen.pdf, id=1909, 420.06938pt x 433.62pt>
+<Figures/otol_phen.pdf, id=1828, 420.06938pt x 433.62pt>
 File: Figures/otol_phen.pdf Graphic file (type pdf)
 
 <use Figures/otol_phen.pdf>
 Package pdftex.def Info: Figures/otol_phen.pdf used on input line 552.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/owat_prop.pdf, id=1910, 420.06938pt x 433.62pt>
+<Figures/owat_prop.pdf, id=1829, 420.06938pt x 433.62pt>
 File: Figures/owat_prop.pdf Graphic file (type pdf)
 
 <use Figures/owat_prop.pdf>
 Package pdftex.def Info: Figures/owat_prop.pdf used on input line 554.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/owat_benz.pdf, id=1911, 427.09563pt x 424.38548pt>
+<Figures/owat_benz.pdf, id=1830, 427.09563pt x 424.38548pt>
 File: Figures/owat_benz.pdf Graphic file (type pdf)
 
 <use Figures/owat_benz.pdf>
 Package pdftex.def Info: Figures/owat_benz.pdf used on input line 556.
 (pdftex.def)             Requested size: 191.09917pt x 189.8838pt.
 
-<Figures/owat_tol.pdf, id=1912, 427.09563pt x 424.38548pt>
+<Figures/owat_tol.pdf, id=1831, 427.09563pt x 424.38548pt>
 File: Figures/owat_tol.pdf Graphic file (type pdf)
 
 <use Figures/owat_tol.pdf>
 Package pdftex.def Info: Figures/owat_tol.pdf used on input line 558.
 (pdftex.def)             Requested size: 191.09917pt x 189.8838pt.
 
-<Figures/owat_phen.pdf, id=1913, 427.09563pt x 424.38548pt>
+<Figures/owat_phen.pdf, id=1832, 427.09563pt x 424.38548pt>
 File: Figures/owat_phen.pdf Graphic file (type pdf)
 
 <use Figures/owat_phen.pdf>
 Package pdftex.def Info: Figures/owat_phen.pdf used on input line 560.
 (pdftex.def)             Requested size: 191.09917pt x 189.8838pt.
 
-<Figures/otolco2_1.pdf, id=1914, 420.06938pt x 433.62pt>
+<Figures/otolco2_1.pdf, id=1833, 420.06938pt x 433.62pt>
 File: Figures/otolco2_1.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_1.pdf>
 Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 567.
 (pdftex.def)             Requested size: 200.20111pt x 206.65976pt.
 
-<Figures/otolco2_2.pdf, id=1915, 420.06938pt x 433.62pt>
+<Figures/otolco2_2.pdf, id=1834, 420.06938pt x 433.62pt>
 File: Figures/otolco2_2.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_2.pdf>
 Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 569.
 (pdftex.def)             Requested size: 200.20111pt x 206.65976pt.
 
-<Figures/otolco2_3.pdf, id=1916, 455.10025pt x 452.20944pt>
+<Figures/otolco2_3.pdf, id=1835, 455.10025pt x 452.20944pt>
 File: Figures/otolco2_3.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_3.pdf>
 Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 571.
 (pdftex.def)             Requested size: 200.20111pt x 198.93137pt.
 
-<Figures/otolco2_4.pdf, id=1917, 448.07399pt x 462.52798pt>
+<Figures/otolco2_4.pdf, id=1836, 448.07399pt x 462.52798pt>
 File: Figures/otolco2_4.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_4.pdf>
 Package pdftex.def Info: Figures/otolco2_4.pdf used on input line 573.
 (pdftex.def)             Requested size: 200.20111pt x 206.66061pt.
- [103
+
+No file thesis.ind.
+
+AED: lastpage setting LastPage
+[85
 
 
-] [104 <./Figures/ohex_pyr.pdf> <./Figures/ohex_phen.pdf
+] [86 <./Figures/ohex_pyr.pdf> <./Figures/ohex_phen.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ohex_phen.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1829,7 +1812,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ooct_phen.pdf): PDF inclusion
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otol_pyr.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [105 <./Figures/otol_antr.pdf> <./Figures/otol_phen.pdf
+>] [87 <./Figures/otol_antr.pdf> <./Figures/otol_phen.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otol_phen.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1849,7 +1832,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/owat_tol.pdf): PDF inclusion:
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/owat_phen.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [106 <./Figures/otolco2_1.pdf> <./Figures/otolco2_2.pdf
+>] [88 <./Figures/otolco2_1.pdf> <./Figures/otolco2_2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otolco2_2.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1862,874 +1845,6 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otolco2_3.pdf): PDF inclusion
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/otolco2_4.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2274, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf>
-Package pdftex.def Info: C089.pdf used on input line 580.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-File: C089.pdf Graphic file (type pdf)
-<use C089.pdf>
-Package pdftex.def Info: C089.pdf used on input line 580.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2277, page=1, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 580.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [107
-
-]
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 1>
-Package pdftex.def Info: C089.pdf, page1 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [108 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2335, page=2, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 2>
-Package pdftex.def Info: C089.pdf, page2 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 2>
-Package pdftex.def Info: C089.pdf, page2 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 2>
-Package pdftex.def Info: C089.pdf, page2 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [109 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2349, page=3, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 3>
-Package pdftex.def Info: C089.pdf, page3 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 3>
-Package pdftex.def Info: C089.pdf, page3 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 3>
-Package pdftex.def Info: C089.pdf, page3 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [110 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2370, page=4, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 4>
-Package pdftex.def Info: C089.pdf, page4 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 4>
-Package pdftex.def Info: C089.pdf, page4 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 4>
-Package pdftex.def Info: C089.pdf, page4 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [111 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2383, page=5, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 5>
-Package pdftex.def Info: C089.pdf, page5 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 5>
-Package pdftex.def Info: C089.pdf, page5 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 5>
-Package pdftex.def Info: C089.pdf, page5 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [112 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2396, page=6, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 6>
-Package pdftex.def Info: C089.pdf, page6 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 6>
-Package pdftex.def Info: C089.pdf, page6 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 6>
-Package pdftex.def Info: C089.pdf, page6 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [113 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2410, page=7, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 7>
-Package pdftex.def Info: C089.pdf, page7 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 7>
-Package pdftex.def Info: C089.pdf, page7 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 7>
-Package pdftex.def Info: C089.pdf, page7 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [114 <./C089.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./C089.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<C089.pdf, id=2433, page=8, 614.295pt x 794.97pt>
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 8>
-Package pdftex.def Info: C089.pdf, page8 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
-
-<use C089.pdf, page 8>
-Package pdftex.def Info: C089.pdf, page8 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: C089.pdf Graphic file (type pdf)
- <use C089.pdf, page 8>
-Package pdftex.def Info: C089.pdf, page8 used on input line 580.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [115 <./C089.pdf>]
-<article/elsarticle-template.pdf, id=2446, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf>
-Package pdftex.def Info: article/elsarticle-template.pdf used on input line 584
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
- <use article/elsarticle-template.pdf>
-Package pdftex.def Info: article/elsarticle-template.pdf used on input line 584
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-<article/elsarticle-template.pdf, id=2449, page=1, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 1>
-Package pdftex.def Info: article/elsarticle-template.pdf, page1 used on input l
-ine 584.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 1>
-Package pdftex.def Info: article/elsarticle-template.pdf, page1 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [116
-
-]
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 1>
-Package pdftex.def Info: article/elsarticle-template.pdf, page1 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 1>
-Package pdftex.def Info: article/elsarticle-template.pdf, page1 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 1>
-Package pdftex.def Info: article/elsarticle-template.pdf, page1 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [117 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2510, page=2, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 2>
-Package pdftex.def Info: article/elsarticle-template.pdf, page2 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 2>
-Package pdftex.def Info: article/elsarticle-template.pdf, page2 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 2>
-Package pdftex.def Info: article/elsarticle-template.pdf, page2 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [118 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2515, page=3, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 3>
-Package pdftex.def Info: article/elsarticle-template.pdf, page3 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 3>
-Package pdftex.def Info: article/elsarticle-template.pdf, page3 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 3>
-Package pdftex.def Info: article/elsarticle-template.pdf, page3 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [119 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2520, page=4, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 4>
-Package pdftex.def Info: article/elsarticle-template.pdf, page4 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 4>
-Package pdftex.def Info: article/elsarticle-template.pdf, page4 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 4>
-Package pdftex.def Info: article/elsarticle-template.pdf, page4 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [120 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2526, page=5, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 5>
-Package pdftex.def Info: article/elsarticle-template.pdf, page5 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 5>
-Package pdftex.def Info: article/elsarticle-template.pdf, page5 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 5>
-Package pdftex.def Info: article/elsarticle-template.pdf, page5 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [121 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2556, page=6, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 6>
-Package pdftex.def Info: article/elsarticle-template.pdf, page6 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 6>
-Package pdftex.def Info: article/elsarticle-template.pdf, page6 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 6>
-Package pdftex.def Info: article/elsarticle-template.pdf, page6 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [122 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2572, page=7, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 7>
-Package pdftex.def Info: article/elsarticle-template.pdf, page7 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 7>
-Package pdftex.def Info: article/elsarticle-template.pdf, page7 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 7>
-Package pdftex.def Info: article/elsarticle-template.pdf, page7 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [123 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2577, page=8, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 8>
-Package pdftex.def Info: article/elsarticle-template.pdf, page8 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 8>
-Package pdftex.def Info: article/elsarticle-template.pdf, page8 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 8>
-Package pdftex.def Info: article/elsarticle-template.pdf, page8 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [124 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2582, page=9, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 9>
-Package pdftex.def Info: article/elsarticle-template.pdf, page9 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 9>
-Package pdftex.def Info: article/elsarticle-template.pdf, page9 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 9>
-Package pdftex.def Info: article/elsarticle-template.pdf, page9 used on input l
-ine 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [125 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2592, page=10, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 10>
-Package pdftex.def Info: article/elsarticle-template.pdf, page10 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 10>
-Package pdftex.def Info: article/elsarticle-template.pdf, page10 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 10>
-Package pdftex.def Info: article/elsarticle-template.pdf, page10 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [126 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2598, page=11, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 11>
-Package pdftex.def Info: article/elsarticle-template.pdf, page11 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 11>
-Package pdftex.def Info: article/elsarticle-template.pdf, page11 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 11>
-Package pdftex.def Info: article/elsarticle-template.pdf, page11 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [127 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2603, page=12, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 12>
-Package pdftex.def Info: article/elsarticle-template.pdf, page12 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 12>
-Package pdftex.def Info: article/elsarticle-template.pdf, page12 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 12>
-Package pdftex.def Info: article/elsarticle-template.pdf, page12 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [128 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2638, page=13, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 13>
-Package pdftex.def Info: article/elsarticle-template.pdf, page13 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 13>
-Package pdftex.def Info: article/elsarticle-template.pdf, page13 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 13>
-Package pdftex.def Info: article/elsarticle-template.pdf, page13 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [129 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2648, page=14, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 14>
-Package pdftex.def Info: article/elsarticle-template.pdf, page14 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 14>
-Package pdftex.def Info: article/elsarticle-template.pdf, page14 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 14>
-Package pdftex.def Info: article/elsarticle-template.pdf, page14 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [130 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2654, page=15, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 15>
-Package pdftex.def Info: article/elsarticle-template.pdf, page15 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 15>
-Package pdftex.def Info: article/elsarticle-template.pdf, page15 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 15>
-Package pdftex.def Info: article/elsarticle-template.pdf, page15 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [131 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2662, page=16, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 16>
-Package pdftex.def Info: article/elsarticle-template.pdf, page16 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 16>
-Package pdftex.def Info: article/elsarticle-template.pdf, page16 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 16>
-Package pdftex.def Info: article/elsarticle-template.pdf, page16 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [132 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2673, page=17, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 17>
-Package pdftex.def Info: article/elsarticle-template.pdf, page17 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 17>
-Package pdftex.def Info: article/elsarticle-template.pdf, page17 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 17>
-Package pdftex.def Info: article/elsarticle-template.pdf, page17 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [133 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2678, page=18, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 18>
-Package pdftex.def Info: article/elsarticle-template.pdf, page18 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 18>
-Package pdftex.def Info: article/elsarticle-template.pdf, page18 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 18>
-Package pdftex.def Info: article/elsarticle-template.pdf, page18 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [134 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2683, page=19, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 19>
-Package pdftex.def Info: article/elsarticle-template.pdf, page19 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 19>
-Package pdftex.def Info: article/elsarticle-template.pdf, page19 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 19>
-Package pdftex.def Info: article/elsarticle-template.pdf, page19 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [135 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2688, page=20, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 20>
-Package pdftex.def Info: article/elsarticle-template.pdf, page20 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 20>
-Package pdftex.def Info: article/elsarticle-template.pdf, page20 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 20>
-Package pdftex.def Info: article/elsarticle-template.pdf, page20 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [136 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2696, page=21, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 21>
-Package pdftex.def Info: article/elsarticle-template.pdf, page21 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 21>
-Package pdftex.def Info: article/elsarticle-template.pdf, page21 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 21>
-Package pdftex.def Info: article/elsarticle-template.pdf, page21 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [137 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2701, page=22, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 22>
-Package pdftex.def Info: article/elsarticle-template.pdf, page22 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 22>
-Package pdftex.def Info: article/elsarticle-template.pdf, page22 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 22>
-Package pdftex.def Info: article/elsarticle-template.pdf, page22 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [138 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2712, page=23, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 23>
-Package pdftex.def Info: article/elsarticle-template.pdf, page23 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 23>
-Package pdftex.def Info: article/elsarticle-template.pdf, page23 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 23>
-Package pdftex.def Info: article/elsarticle-template.pdf, page23 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [139 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2717, page=24, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 24>
-Package pdftex.def Info: article/elsarticle-template.pdf, page24 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 24>
-Package pdftex.def Info: article/elsarticle-template.pdf, page24 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 24>
-Package pdftex.def Info: article/elsarticle-template.pdf, page24 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [140 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2722, page=25, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 25>
-Package pdftex.def Info: article/elsarticle-template.pdf, page25 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 25>
-Package pdftex.def Info: article/elsarticle-template.pdf, page25 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 25>
-Package pdftex.def Info: article/elsarticle-template.pdf, page25 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [141 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2727, page=26, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 26>
-Package pdftex.def Info: article/elsarticle-template.pdf, page26 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 26>
-Package pdftex.def Info: article/elsarticle-template.pdf, page26 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 26>
-Package pdftex.def Info: article/elsarticle-template.pdf, page26 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [142 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2732, page=27, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 27>
-Package pdftex.def Info: article/elsarticle-template.pdf, page27 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 27>
-Package pdftex.def Info: article/elsarticle-template.pdf, page27 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 27>
-Package pdftex.def Info: article/elsarticle-template.pdf, page27 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [143 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2737, page=28, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 28>
-Package pdftex.def Info: article/elsarticle-template.pdf, page28 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 28>
-Package pdftex.def Info: article/elsarticle-template.pdf, page28 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 28>
-Package pdftex.def Info: article/elsarticle-template.pdf, page28 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [144 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2743, page=29, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 29>
-Package pdftex.def Info: article/elsarticle-template.pdf, page29 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 29>
-Package pdftex.def Info: article/elsarticle-template.pdf, page29 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 29>
-Package pdftex.def Info: article/elsarticle-template.pdf, page29 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [145 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2748, page=30, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 30>
-Package pdftex.def Info: article/elsarticle-template.pdf, page30 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 30>
-Package pdftex.def Info: article/elsarticle-template.pdf, page30 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 30>
-Package pdftex.def Info: article/elsarticle-template.pdf, page30 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [146 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2753, page=31, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 31>
-Package pdftex.def Info: article/elsarticle-template.pdf, page31 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 31>
-Package pdftex.def Info: article/elsarticle-template.pdf, page31 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 31>
-Package pdftex.def Info: article/elsarticle-template.pdf, page31 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [147 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2758, page=32, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 32>
-Package pdftex.def Info: article/elsarticle-template.pdf, page32 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 32>
-Package pdftex.def Info: article/elsarticle-template.pdf, page32 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 32>
-Package pdftex.def Info: article/elsarticle-template.pdf, page32 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [148 <./article/elsarticle-template.pdf>]
-<article/elsarticle-template.pdf, id=2763, page=33, 614.295pt x 794.97pt>
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 33>
-Package pdftex.def Info: article/elsarticle-template.pdf, page33 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 33>
-Package pdftex.def Info: article/elsarticle-template.pdf, page33 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: article/elsarticle-template.pdf Graphic file (type pdf)
-
-<use article/elsarticle-template.pdf, page 33>
-Package pdftex.def Info: article/elsarticle-template.pdf, page33 used on input 
-line 584.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [149 <./article/elsarticle-template.pdf>]
-No file thesis.ind.
-
-AED: lastpage setting LastPage
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -2741,7 +1856,7 @@ AED: lastpage setting LastPage
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 618.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 618.
-(./thesis.aux (./chapters/introduction.aux) (./chapters/review.aux)
+ (./thesis.aux (./chapters/introduction.aux) (./chapters/review.aux)
 (./chapters/computational.aux) (./chapters/methodology.aux)
 (./chapters/results.aux) (./chapters/conclusions.aux)
 (./chapters/saftequations.aux))
@@ -2754,45 +1869,34 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 618.
  ) 
 Here is how much of TeX's memory you used:
- 17109 strings out of 494929
- 261128 string characters out of 6180142
- 450864 words of memory out of 5000000
- 19204 multiletter control sequences out of 15000+600000
+ 16910 strings out of 494929
+ 255908 string characters out of 6180142
+ 448845 words of memory out of 5000000
+ 19071 multiletter control sequences out of 15000+600000
  66269 words of font info for 278 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 42i,18n,47p,2657b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,47p,2657b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-ib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
-ino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.
-pfb>
-Output written on thesis.pdf (162 pages, 3154451 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
+tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a
+.pfb>
+Output written on thesis.pdf (101 pages, 1825018 bytes).
 PDF statistics:
- 3100 PDF objects out of 3580 (max. 8388607)
- 2450 compressed objects within 25 object streams
- 561 named destinations out of 1000 (max. 500000)
- 41245 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2494 PDF objects out of 2984 (max. 8388607)
+ 2044 compressed objects within 21 object streams
+ 499 named destinations out of 1000 (max. 500000)
+ 40994 words of extra memory for PDF output out of 42996 (max. 10000000)
 

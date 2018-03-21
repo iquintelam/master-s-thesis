@@ -6,7 +6,7 @@
 
 The first part of this work consisted of obtaining phenanthrene parameters for the SAFT-$\gamma$ Mie Force Field as described in Section \ref{parame}. This part was necessary since these parameters were not available for the ring geometry on the force field database \cite{ervik2016}. The parameters obtained and the mean percentage error (MPE) of the vapor pressure found with the SAFT-VR Mie EoS to the experimental data \cite{pvphen} were those observed in Table \ref{tbl:estimparameters}.
 
-\begin{table*}[h]
+\begin{table}[h]
 	\centering
 	\caption{Estimated SAFT-$\gamma$ Mie force field parameters for phenanthrene.}
 	\label{tbl:estimparameters}
@@ -17,11 +17,11 @@ The first part of this work consisted of obtaining phenanthrene parameters for t
 		5  \cite{muller2017} & 262.74               & 4.077              & 9.55        & 0.88      \\ \hline\hline
 	\end{tabular}
 	
-\end{table*} 
+\end{table} 
 
 The MPE value of 1.69 for the \citeonline{lafitte2012} strategy in the Table \ref{tbl:estimparameters} is the error between the vapor pressure calculated with the equation of state and the experimental data. The other MPE value for the \citeonline{lafitte2012} strategy (9.74) is the error between the vapor pressure calculated with the equation of state and the vapor pressure obtained in the GEMC simulations. The \citeonline{lafitte2012} strategy should not need an estimation with molecular simulation data since this additional procedure is not necessary when estimating parameters for the chain equation \cite{avendano2011} or the ring equation of \citeonline{muller2017}. In addition to that, this use of molecular simulation data to acquire the parameters negates the overall idea proposed by \cite{avendano2011}. They developed this force field with the intention of obtaining the parameters in a more straightforward way than other force fields since the SAFT-$\gamma$ Mie model would not have the computational time associated with doing molecular simulations in its parameterization. Due to these specific characteristics of the model of \citeonline{lafitte2012}, we only studied the solvation free energy of phenanthrene with the set of parameters estimated with the strategy of \citeonline{muller2017}. In fact, we only followed the strategy of \citeonline{lafitte2012} because it was the only one available when we first started this research. The sets of parameters for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}, and all the utilized parameters are available in Table \ref{tbl:parameters}.
 
-\begin{table*}[h]
+\begin{table}[h]
 	\centering
 	\caption{SAFT-$\gamma$ Mie force field for each substance used in this work.}
 	\label{tbl:parameters}
@@ -42,17 +42,18 @@ The MPE value of 1.69 for the \citeonline{lafitte2012} strategy in the Table \re
 		\hline
 	\end{tabular}
 	
-\end{table*}
+\end{table}
 \FloatBarrier
 Our primary intention with this study is to assess the capability of the SAFT-$\gamma$ Mie force field to represent solvation free energies. Hence, we chose benchmark solutes used in the literature (benzene, propane) and polyaromatic solutes (benzene, pyrene, phenanthrene, anthracene), and, for the solvents, we picked non-polar (hexane), aromatic (toluene), and hydrogen bonding (1-octanol, water) substances. It would be interesting to do a study with a bigger database of pairs solvent-solute. However, the time required for performing each of the solvation free energy simulations, some difficulties related to the available computational structure, and the fact that a better model of aromatic compounds with this force field was only published in the middle of our study prevented us of doing a more extensive study. The solvation free energy simulations for the pairs chosen were carried with binary interaction parameters equal to zero since these parameters were not necessary according to our preliminary studies. Since the force field does not account for charges, we only calculated the Mie contribution (Eq. \eqref{eq:softcore}) to the solvation free energy. A total of 15 to 18 $\lambda 's$, depending on the solute-solvent pairs, and their respective $\eta 's$ were estimated as described in Sections \ref{ee} and \ref{solvme}. The final $\lambda$ set for all the pairs was found using the cumulative probability distribution (Eq. \eqref{eqn:cumfun}). The probability distribution for the hexane(solvent)+benzene(solute) pair can be seen in \figref{fig:optimized_cdf}. Now on we are going to use the terminology solvent+solute. The optimized values of $\lambda$ and $\eta$ for this pair and all the other pairs are available in Tables \ref{tbl:lambdahex} to \ref{tbl:lambdaco2}. Observing the coupling parameters found for all the pairs, we can see that they are concentrated on the region with a steeper slope as it is expected in this method.
-
+\FloatBarrier
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figures/optimized_cdf}
 	\caption{Cumulative probability used to obtain the optimized values of $\lambda 's$ for the pair hexane+benzene.}
 	\label{fig:optimized_cdf}
 \end{figure}
-\begin{table*}[h]
+
+\begin{table}[h]
 	\centering
 	\caption{Optimized values of $\lambda $ and $\eta $ for the hexane+solute pairs.}
 	\label{tbl:lambdahex}
@@ -79,8 +80,8 @@ Our primary intention with this study is to assess the capability of the SAFT-$\
 		1.000         &-6.583  &1.000      &    -18.141    &    1.000    &    -15.448    \\
 		\hline\hline   
 	\end{tabular}
-\end{table*}
-\begin{table*}[h]
+\end{table}
+\begin{table}[h]
 	\centering
 	\caption{Optimized values of $\lambda $ and $\eta$ for the 1-octanol+solute pairs.}
 	\begin{tabular}{cccccc}
@@ -109,8 +110,8 @@ Our primary intention with this study is to assess the capability of the SAFT-$\
 		&        &    1.000    &    -13.768    &    1.000    &    -14.073    \\
 		\hline\hline
 	\end{tabular}
-\end{table*}
-\begin{table*}[h]
+\end{table}
+\begin{table}[h]
 	\centering
 	\caption{Optimized values of $\lambda $ and $\eta$ for the toluene+solute pairs.}
 	\begin{tabular}{cccccc}
@@ -136,8 +137,9 @@ Our primary intention with this study is to assess the capability of the SAFT-$\
 		1.000    &    -19.814    &    1.000    &    -16.923    &    1.000    &    -17.803    \\        
 		\hline\hline
 	\end{tabular}
-\end{table*}
-\begin{table*}[h]
+\end{table}
+\FloatBarrier
+\begin{table}[h]
 	\centering
 	\caption{Optimized values of $\lambda $ and $\eta $ for the phenanthrene+$CO_{2}$+ toluene mixture with different values of $w_{CO_{2}}$.}
 	\label{tbl:lambdaco2}
@@ -165,18 +167,18 @@ Our primary intention with this study is to assess the capability of the SAFT-$\
 		&        &        &        &    1.000    &    -17.998    &    1.000    &    -18.163    \\
 		\hline\hline
 	\end{tabular}
-\end{table*}
-\FloatBarrier
+\end{table}
+
 It is also essential to analyze the reliability of solvation free energy estimations through the overlapping of the intermediate states. Insufficient overlap among states when using FEP based methods such as MBAR may result in the underestimation of variance and, consequently, in substantially incorrect solvation free energies \cite{klimovich}. The overlap matrix for the solvation free energy of benzene in hexane is presented in \figref{fig:hexove} and the matrices for the other pairs are available in Appendix \ref{overlapmatrix}. Each element $ij$ of these matrices is the average probability of observing a configuration sampled from state i in state j. As an example, the average probability of finding a configuration sampled from state 3 in state 4 is 0.11 in \figref{fig:hexove}. According to \citeonline{klimovich}, a tridiagonal overlap matrix is an indication of reliable free energy estimates, as long as the resulting error is sufficiently low. They define a tridiagonal matrix as one matrix with elements appreciable different from zero (the values should be as low as 0.03) in the main diagonal and the first diagonals above and below the main one. This requirement was met for all the pairs in our study. Some of the overlap matrices, including the one in Figure \ref{fig:hexove}, had more than three diagonals, and, consequently, an apparent unnecessary number of intermediate states. However, this number of intermediate states were indispensable in our study because the error estimate of the solvation free energies significantly increased when we removed some of the intermediate states. Hence, we maintained these intermediate states in order to obtain low error values. After this analysis, we present in Table \ref{tbl:solv1} the results for solvation free energy calculations and the absolute deviations from experimental data \cite{doi:10.1021/ci034120c}.  
 
-\begin{figure*}[h]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Figures/ohex_benz}
 	\caption{Overlap matrix for hexane+benzene.}
 	\label{fig:hexove}
-\end{figure*}
-\FloatBarrier
-\begin{table*}[h]
+\end{figure}
+
+\begin{table}[h]
 	\centering
 	\caption{Calculated and experimental values for the solvation free energies (kcal/mol) of solutes in non-aqueous solvents.}
 	\label{tbl:solv1}
@@ -194,13 +196,13 @@ It is also essential to analyze the reliability of solvation free energy estimat
 		anthracene   & toluene   & -11.31                  & -9.90 $\,$ $\pm$ 0.01        & 1.41      &  \\ \hline\hline
 		&
 	\end{tabular}
-\end{table*}
+\end{table}
 
 
 The numerical values for solvation free energies in hexane had overall smaller absolute deviations from experimental data than the deviations in the other solvents. Additionally, this force field presented better results for the pair hexane+benzene than the TraPPE force field (- 4.35  $\pm$ 0.05 kcal/mol) \cite{garrido2011} and the ELBA coarse-grained force field  (-2.92 $\pm$ 0.01 kcal/mol) \cite{doi:10.1021/acs.jctc.5b00963}. TraPPE is a force field parametrized with fluid-phase equilibria data that uses the Lennard-Jones potential to describe the non-bonded interactions. In the cited paper, they used the united-atom description of the TraPPE force field for the alkyl group, the all-atom description for the polar groups and the explicit-hydrogen approach for the aromatic groups. In the explicit-hydrogen approach, the interaction sites for all hydrogen atoms, some lone pair electrons, and bond centers are accounted for \cite{doi:10.1021/jp073586l}. In turn, the ELBA force field is a coarse-grained model that comprises six independent parameters. This force field models three carbons as one Lennard-Jones site and one water molecule as a single Lennard Jones site with a point dipole. We also present the solvation free energies correspondent to each alchemical state ($\lambda$) for all the pairs studied here in Figures \ref{fig:hex} to \ref{fig:tol}. Specifically observing the solvation free energy in hexane (Figure \ref{fig:hex}), we can see the effect of the molecule's size on the entropic region of the free energy curve. This region is correspondent to the first values of $\lambda$ where space in the solvent is being 'opened' for the insertion of the solute.
 
 We expected that a force field based on an EoS that does not explicitly account for hydrogen bond would not perform well for 1-octanol in mixtures since the parameterization of this molecule did not explicitly account for the interactions of association. All the beads representing 1-octanol have the same intermolecular parameter, and there is no distinction between the polar and apolar groups. Despite this, the solvation free energies of propane and phenanthrene in 1-octanol lied in the desired deviation range of 1-2 kcal/mol \cite{doimobley}. For propane, the observed deviation in solvation free energies was much smaller when compared to the other solutes, which can be attributed to the non polarity of propane and its smoother free energy curve, presented in Figure \ref{fig:oct}. Such solvation free energy of propane in 1-octanol also had a smaller deviation than the prediction of the ELBA force field (-0.92 $\pm$ 0.01) \cite{doi:10.1021/acs.jctc.5b00963}. The absolute deviation of the solvation free energy computed for anthracene in 1-octanol is much higher than the one calculated for phenanthrene in 1-octanol. The anthracene and phenanthrene molecules have the same geometry (Figure \ref{fig:fen5}) in the SAFT-$\gamma$ Mie model, although anthracene is a linear molecule and phenanthrene is not, and also similar physical properties. Hence, this high deviation of the solvation free energy of anthracene in 1-octanol may indicate a problem in the geometry chosen for anthracene in the SAFT-$\gamma$ Mie force field and the importance of the geometry in modeling the molecules with this force field.      
-
+\FloatBarrier
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/hex}
