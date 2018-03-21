@@ -10,7 +10,7 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{1}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Literature Review}}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Molecular Simulations of Molecules Mimicking Asphaltenes}{4}{section.2.1}
+\contentsline {section}{\numberline {2.1}Molecular Simulations of Asphaltene-Like Molecules}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Coarse-Grained (CG) Force Fields}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Solvation Free Energies}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}Solvation Free Energy Calculation Methods}{9}{section.2.4}

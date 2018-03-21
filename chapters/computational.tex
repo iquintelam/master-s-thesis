@@ -7,17 +7,17 @@
 \section{Molecular Dynamics}
 
 \subsection{Background and Formulation}
-Molecular Dynamics (MD) uses molecular configurations (Cartesian coordinates and momentum) to extract structural , thermodynamic, and dynamic information of a system. This information is extracted from the time evolution of the system, which is obtained  through the numerical integration of the Newton's equations of motion \cite{tuckerman}:
+Molecular Dynamics (MD) uses molecular configurations (Cartesian coordinates and momentum) to extract structural, thermodynamic, and dynamic information of a system. This information is extracted from the time evolution of the system, which is obtained  through the numerical integration of the Newton's equations of motion \cite{tuckerman}:
 
 \begin{equation}
 \frac{d \vec{p}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}},
 \end{equation}
-where $p_{i}$ is the momentum and $r_{N}$ are the coordinates of all the atoms $(x_{1},y_{1},z_{1},...,x_{N},y_{N},z_{N})$. Alternatively, we can write the equation relative to the velocity ($v_{i}$):
+where $p_{i}$ is the momentum and $r_{N}$ are the coordinates of all the atoms $(x_{1},y_{1},z_{1},..., x_{N},\\ y_{N},z_{N})$. Alternatively, we can write the equation relative to the velocity ($v_{i}$):
 \begin{equation}
 m_{i} \frac{\vec{v}_{i}}{dt} = - \frac{\partial U (\vec{r}_{N})}{\partial \vec{r}_{i}}.
 \end{equation}
 
-In order to develop equations for any coordinate system, for instance $q^{N}=(r_{1},\theta _{1},\phi _{1})$, the Halmitonian formulation, a more general formulation of classical mechanics,  is used to develop the equations of motion:
+In order to develop equations for any coordinate system, for instance $q^{N}=(r_{1},\theta _{1},\phi _{1})$, the Hamiltonian formulation, a more general formulation of classical mechanics,  is used to develop the equations of motion:
 \begin{equation}
 \mathcal{H} (q^{N},p^{N}) = K(p^{N}) + U(q^{N}) .
 \end{equation}
@@ -44,7 +44,7 @@ In order to calculate thermodynamic properties, we need to define the control va
 \end{aligned}
 \end{equation}
 
-Here, $\epsilon _{0}$ is the energy unit, $h$ is the Planck constant and $\delta$ is the Dirac delta function. As mentioned above, the system will spend the same amount of time at each of the microstates, i. e. each of these microstates have equal probabilities ($\varrho$) of being visited. Such probability is:
+Here, $\epsilon _{0}$ is the energy unit, $h$ is the Planck constant, and $\delta$ is the Dirac delta function. As mentioned above, the system will spend the same amount of time at each of the microstates, i. e. each of these microstates have equal probabilities ($\varrho$) of being visited. Such probability is:
 
 \begin{equation}
 \begin{aligned}
@@ -73,7 +73,7 @@ dE = T dS + P dV + \mu dN .
 \end{aligned}
 \end{equation}
 
-As said above, the microcanonical ensemble  has  N, V, and E as its control variables. Other ensembles can also be defined according to the macroscopic properties held constant.  In the canonical ensemble,  N, V, and the temperature (T) are held constant and  N, pressure (P) and T are held constant in the isothermal-isobaric ensemble. Other ensembles are the isoenthalpic-isobaric (constant number of particles, pressure, and enthalpy) and the grand canonical (constant chemical potential, volume, and temperature) ones. A variety of physical properties is measured at the conditions of the isothermal-isobaric ensemble such as enthalpies, entropies, redox potential, equilibrium constants and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we are going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
+As said above, the microcanonical ensemble  has  N, V, and E as its control variables. Other ensembles can also be defined according to the macroscopic properties held constant.  In the canonical ensemble,  N, V, and the temperature (T) are held constant and  N, pressure (P), and T are held constant in the isothermal-isobaric ensemble. Other ensembles are the isoenthalpic-isobaric (constant number of particles, pressure, and enthalpy) and the grand canonical (constant chemical potential, volume, and temperature) ones. A variety of physical properties is measured at the conditions of the isothermal-isobaric ensemble such as enthalpies, entropies, redox potential, equilibrium constants, and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried at this work, hence we are going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
 \begin{equation}
 G(N,P,T) = A(N,V,T) + PV,
 \end{equation}
@@ -123,7 +123,7 @@ Among the available thermostat are the Berendsen \cite{doi:10.1063/1.448118}, th
 \begin{equation}
 \mathcal{H}_{Nos\acute{e}} =  K(p^{N}) + U(q^{N})  + \frac{\xi ^{2} \mathcal{Q}}{2} + 3N\kappa_{b}T ln s ,
 \end{equation}
-where $\xi$ is a friction coefficient related to the conjugate momentum of the thermal reservoir to which the system is coupled, $s$ is the position of the thermal reservoir and $\mathcal{Q}$ is the effective mass associated with s. The velocity update is then done with the friction term added to the equations of motion \cite{shell2015}:
+where $\xi$ is a friction coefficient related to the conjugate momentum of the thermal reservoir to which the system is coupled, $s$ is the position of the thermal reservoir, and $\mathcal{Q}$ is the effective mass associated with s. The velocity update is then done with the friction term added to the equations of motion \cite{shell2015}:
 
 \begin{equation}
 \frac{dr_{i}}{dt} = \frac{p_i}{m_i},
@@ -141,7 +141,7 @@ where $\xi$ is a friction coefficient related to the conjugate momentum of the t
 \frac{1}{s}\frac{ds}{dt} =\frac{d \ln s}{dt} = \xi.
 \end{equation}
 
-This approach proposed by the Nos\'{e} Hoover thermostat only generates a correct canonical distribution for molecular systems in which there are no external forces ($F_{i}$) and the center of mass is fixed or if there is only one conserved quantity \cite{frenkel}. To diminish these restrictions of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed by \citeonline{doi:10.1063/1.463940}. This is the one chosen to control the temperature in our simulations. It proposes the use of another thermal reservoir or a whole chain of thermal reservoirs in order to enhance temperature equilibration \cite{shell2015}. Here, we are going to present its equations of motion since this was the method used in this dissertation. The equations of motion of a system of N particles coupled with M Nos\'{e} Hoover chains is given by
+This approach proposed by the Nos\'{e}-Hoover thermostat only generates a correct canonical distribution for molecular systems in which there are no external forces ($F_{i}$) and the center of mass is fixed or if there is only one conserved quantity \cite{frenkel}. To diminish these restrictions of the Nosé-Hoover thermostat, the Nosé-Hoover chains of thermostats method was developed by \citeonline{doi:10.1063/1.463940}. This is the one chosen to control the temperature in our simulations. It proposes the use of another thermal reservoir or a whole chain of thermal reservoirs in order to enhance temperature equilibration \cite{shell2015}. Here, we are going to present its equations of motion since this was the method used in this dissertation. The equations of motion of a system of N particles coupled with M Nos\'{e}-Hoover chains is given by
 
 \begin{equation}
 \frac{dr_{i}}{dt} = \frac{p_i}{m_i},
@@ -173,7 +173,7 @@ The conserved energy for the Nos\'{e} Hoover chains is then equal to
 \mathcal{H}_{Nos\acute{e} \, Chains} =  K(p^{N}) + U(q^{N})  + \sum_{k=1}^{M }\frac{p^{2}_{\xi _{k}}}{2\mathcal{Q} _{k}} + 3N\kappa_{b}T \xi _{1} + \sum_{k=2}^{M} \kappa_{b}T \xi _{k}.
 \end{equation}
 
-The pressure is controlled with a barostat. It maintains the pressure constant during the simulation by adjusting the simulation volume. Among the available  barostats methodologies are the Berendsen \cite{doi:10.1063/1.448118}, in which the pressure is coupled to a pressure bath, and the volume is periodically rescaled, and the Anderson barostat \cite{1980JChPh722384A}, which serves as a basis for other barostating methods such as the ones developed by Hoover \cite{PhysRevA.31.1695}, Martina-Tobias-Klein \cite{doi:10.1063/1.467468} and Parrinello-Rahman \cite{doi:10.1063/1.328693}. The Andersen's idea was to couple the system to a fictional pressure bath and incorporate the volume into the phase space as an additional degree of freedom \cite{tuckerman}. Here, we are going to present the approach developed by \cite{doi:10.1063/1.467468} since it was the one used to control the pressure in our simulations. Th equations of motion for a chain of barostats of length M are given by  
+The pressure is controlled with a barostat. It maintains the pressure constant during the simulation by adjusting the simulation volume. Among the available  barostats methodologies are the Berendsen \cite{doi:10.1063/1.448118}, in which the pressure is coupled to a pressure bath, and the volume is periodically rescaled, and the Anderson barostat \cite{1980JChPh722384A}, which serves as a basis for other barostating methods such as the ones developed by Hoover \cite{PhysRevA.31.1695}, Martina-Tobias-Klein \cite{doi:10.1063/1.467468} and Parrinello-Rahman \cite{doi:10.1063/1.328693}. The Andersen's idea was to couple the system to a fictional pressure bath and incorporate the volume into the phase space as an additional degree of freedom \cite{tuckerman}. Here, we are going to present the approach developed by \citeonline{doi:10.1063/1.467468} since this was the one used to control the pressure in our simulations. The equations of motion for a chain of barostats of length M are given by  
 
 \begin{equation}
 \frac{dr_{i}}{dt} = \frac{p_i}{m_i} + \frac{p_{\epsilon}}{\mathcal{W}} r_i,
@@ -212,7 +212,7 @@ In the equations above, $\epsilon$ is equal to
 \begin{equation}
 \epsilon = \ln \left[\frac{V}{V(0)}\right],
 \end{equation}
-where $V$ is the volume of the system and $V(0)$ is the volume at $t=0$. Also presented in the equations of motion are the mass parameter ($\mathcal{W}$) associated to $\epsilon$, the momentum ($p_{\epsilon}$) conjugate to $\epsilon$, the external pressure ($P_{ext}$), and the internal pressure ($P_{int}$). $P_{ext}$ is imposed as we do with the temperature in the thermostat and $P_{int}$ is calculated during the simulation with the following equation \cite{tuckerman}:
+where $V$ is the volume of the system and $V(0)$ is the volume at $t=0$. The mass parameter ($\mathcal{W}$) associated to $\epsilon$, the momentum ($p_{\epsilon}$) conjugate to $\epsilon$, the external pressure ($P_{ext}$), and the internal pressure ($P_{int}$) are also featured in the equations of motion. $P_{ext}$ is imposed as we do with the temperature in the thermostat and $P_{int}$ is calculated during the simulation with the following equation \cite{tuckerman}:
 
 \begin{equation}
 P_{int} = \frac{1}{dV} \left[\sum_{i=1}^{N} \left(\frac{p_{i}^2}{m_i} + r_{i}\cdot F_i \right) - dV \frac{\partial U}{\partial V}\right].
@@ -229,7 +229,7 @@ All the equations of motion above are then numerically integrated  using the met
 
 \subsection{Integration of the equations of motion}
 
-With the formalism defined for the equations of motions and the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time ($r^{N}(t)$) by updating the positions at discrete time intervals or time steps. To do that, the classical time evolution approach is used to preserve the Hamiltonian of the system in the numerical integration methods. In this approach, we consider the time evolution of an arbitrary function $a(x_{t})$ along a trajectory $x_{t}$ \cite{tuckerman}. Doing the time derivative of $a(x_{t})$:
+With the formalism defined for the equations of motions and the statistical ensemble, we can now derive discrete-time numerical approximations for them.  The basic idea is to solve the trajectory of atoms as a function of time [$r^{N}(t)$] by updating the positions at discrete time intervals or time steps. To do that, the classical time evolution approach is used to preserve the Hamiltonian of the system in the numerical integration methods. In this approach, we consider the time evolution of an arbitrary function $a(x_{t})$ along a trajectory $x_{t}$ \cite{tuckerman}. Doing the time derivative of $a(x_{t})$:
 
 \begin{equation}
 \frac{da}{dt} = \sum_{\alpha=1}^{3N} \left [  \dfrac{\partial \mathcal{H}}{\partial p_{\alpha}}\dfrac{\partial a}{\partial q_{\alpha}}  -  \dfrac{\partial \mathcal{H}}{\partial q_{\alpha}} \dfrac{\partial a}{\partial p_{\alpha}} \right].
@@ -251,7 +251,7 @@ The Poisson bracket is equal to applying the Liouville operator ($i\mathcal{L}$)
 \label{eqn:liou}
 \end{equation}
 
-Substituting the equation above in Eq. \ref{eqn:operador}, we have the following equation:
+Substituting Eq. \ref{eqn:liou} in Eq. \ref{eqn:operador}, we have the following equation:
 
 \begin{equation}
 \begin{aligned}
@@ -267,7 +267,7 @@ a(x_{t}) = \exp (i\mathcal{L}t) a(x_{0}).
 \label{eqn:exactsol}
 \end{equation}
 
-Here, $\exp (i\mathcal{L}t)$ is known as the classical propagator. The effect of this operator in a function cannot be evaluated. However, we can develop approximate solutions for the Hamiltonian's equations with this operator \cite{tuckerman}. Rewriting Eq. \ref{eqn:liou2} as
+Here, $\exp (i\mathcal{L}t)$ is known as the classical propagator. The effect of this operator in a function can not be evaluated. However, we can develop approximate solutions for the Hamiltonian's equations with this operator \cite{tuckerman}. Rewriting Eq. \ref{eqn:liou2} as
 
 \begin{equation}
 \begin{aligned}
@@ -282,7 +282,7 @@ i\mathcal{L}_{2} = - \sum_{\alpha=1}^{N} \dfrac{\partial }{\partial p_{\alpha}} 
 \end{aligned}
 \end{equation}
 
-The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators, that is, the order in which the operator is applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t])$. Though we can not do that, we can still express the propagator in terms of these two factors by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
+The operators $i\mathcal{L}_{1}$ and $i\mathcal{L}_{2}$ in the equations above are non-commuting operators, that is, the order in which the operator is applied is important \cite{tuckerman}. This fact implies that we can not separate the classical propagator $\exp (i\mathcal{L}t)$  into the product $\exp (i\mathcal{L}_{1}t) \exp (i\mathcal{L}_{2}t)$. Though we can not do that, we can still express the propagator in terms of these two factors by using the symmetric Trotter theorem or Strang splitting formula \cite{trotter,strang}. Applying this theorem to the classical propagator, we then obtain
 
 \begin{equation}
 \begin{aligned}
@@ -296,7 +296,7 @@ where P is an integer. Defining a time step $\Delta t =t/P$ and using it in Eq. 
 \begin{equation}
 \begin{aligned}
 \exp (i\mathcal{L}t)  = 
-\lim\limits_{P \rightarrow \infty, \Delta t \rightarrow 0} \left [ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2) \right ]^{P},
+\lim\limits_{P \rightarrow \infty, \Delta t \rightarrow 0} \left [ \exp (i\mathcal{L}_{2} \Delta t/2) \exp (i\mathcal{L}_{1} \Delta t) \exp (i\mathcal{L}_{2} \Delta t/2) \right ]^{P}.
 \end{aligned}
 \label{eqn:trotterdt}
 \end{equation}
@@ -327,19 +327,19 @@ Now we can use Eq. \ref{eqn:trotterfin} as a numerical propagation for a single 
 \end{aligned}
 \label{eqn:trotterfin2}
 \end{equation} 
-where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ are equal to the force ($F$) acting on the particle. We now are able to replace the exact solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution, from a initial condition $(r(t),p(t))$, is then
+where the derivatives of the intermolecular potential $-\dfrac{\partial U(r)}{\partial r}$ are equal to the force ($F$) acting on the particle. We now are able to replace the exact solution of Eq. \ref{eqn:exactsol} with the approximation of Eq. \ref{eqn:trotterfin2}. The approximation evolution from a initial condition $(r(t),p(t))$  is then
 
 \begin{equation}
 \begin{aligned}
 \left[ \begin{array}{c} r(t+ \Delta t) \\ p(t + \Delta t) \end{array} \right] \equiv 
-\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right) \\
+\exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right) 
 \times \exp \left( \Delta t \frac{p(t)}{m}\dfrac{\partial }{\partial r} \right) \\
 \times \exp \left (\frac{\Delta t}{2} F(r(t)) \dfrac{\partial}{\partial p} \right)
 \left[ \begin{array}{c} r(t) \\ p(t) \end{array} \right] .
 \end{aligned}
 \end{equation}
 
-The propagation is determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence,  after applying the first operator, we have  \cite{tuckerman}:
+The propagation is determined by acting each of the three operators starting from the right on $r$ and $p$. The result of applying the operator in a function $g(r)$ is the Taylor expansion $g(r+c)$. Hence,  after applying the first operator, we obtain the equation bellow \cite{tuckerman}:
 
 \begin{equation}
 \begin{aligned}
@@ -349,7 +349,7 @@ The propagation is determined by acting each of the three operators starting fro
 \end{aligned}
 \end{equation}
 
-Acting the second operator in the equation above:
+Acting the second operator in the preceding equation, the result is the following:
 
 \begin{equation}
 \begin{aligned}
@@ -358,7 +358,7 @@ Acting the second operator in the equation above:
 \left[ \begin{array}{c} r(t) + \frac{\Delta t}{m}p(t) \\ p(t) + \frac{\Delta t}{2} F[r(t) + \frac{\Delta t}{m}p(t) ] \end{array} \right] .
 \end{aligned}
 \end{equation}
-and, finally, we have the following equations after applying the third operator :
+and, finally, we find the following equations after applying the third operator :
 
 \begin{equation}
 \begin{aligned}
@@ -391,21 +391,21 @@ v(t+ \Delta t /2) = v(t- \Delta t /2) +\frac{F(t+ \Delta t) +F(t)}{m} \Delta t ,
 r(t+ \Delta t) = r(t) +v(t+ \Delta t /2) \Delta t .
 \end{equation}
 
-Although using different time steps or formulations, both methods described to generate the same trajectory for a given initial configuration.
+Although using different time steps or formulations, both of the methods described here generate the same trajectory for a given initial configuration.
 
 \subsection{Initial Configuration and Periodic Boundary Condition} \label{icbc}
 
-The equations above require an overlap-free initial configuration with positions and velocities for all atoms in the system. The initial velocities follow a temperature-dependent Maxwell-Boltzmann distribution, which is
+The equations from the preceding section require an overlap-free initial configuration with positions and velocities for all atoms in the system. The initial velocities follow a temperature-dependent Maxwell-Boltzmann distribution, which is
 
 \begin{equation}
 \varrho (v_{x,i}) = \left (\frac{m_{i}}{2 \pi \kappa_{b} T} \right )^{\frac{1}{2}} \exp \left (-\frac{m_{i}v_{x,i}^2}{2 \pi \kappa_{b} T} \right) .
 \end{equation}
 
-Random velocities are then found with the equation above for each of the 3N components of the velocity and the initial positions can be obtained by several approaches. The initial configuration can be taken from an x-ray or a nuclear magnetic resonance (NMR) spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}.  Among the available software to optimize this placement, there is the Packmol software \cite{packmol}. It treats the initial configuration problem as a packing optimization problem. The molecules are packed in such way that atoms from different molecules keep a safe pairwise distance and, due to the optimization function and gradient evaluations, this strategy enables the packing of millions of atoms in reasonable time \cite{packmol}.   
+Random velocities are then found with the equation above for each of the 3N components of the velocity, and the initial positions can be obtained by several approaches. The initial configuration can be taken from an x-ray or a nuclear magnetic resonance (NMR) spectroscopy, the atoms can be placed randomly in the simulation volume, or the atoms can be placed in idealized or approximate geometries. The generally used method to acquire the configurations places the molecules on a cubic lattice \cite{shell2015}.  Among the available software to optimize this placement, there is the Packmol software \cite{packmol}. It treats the initial configuration problem as a packing optimization problem. The molecules are packed in such way that atoms from different molecules keep a safe pairwise distance and, due to the optimization function and gradient evaluations, this strategy enables the packing of millions of atoms in reasonable time \cite{packmol}.   
 
 Independently of the technique or software used, certain restrictions should be applied in the initial configurations to carry out molecular simulations. As an example, the cubic lattice has a finite size, but a finite box would result in simulations dominated by surface effects. To avoid that and be able to simulate bulk phase, we can create a box periodically repeated in all directions by applying the so-called Periodic Boundary Conditions (PBC) \cite{frenkel}. The periodic box has a primitive cell, which contains the N particles, replicated in a periodic lattice of infinite cells as represented in Figure \ref{fig:pbc}. 
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Figures/pbc}
 	\caption{Representation of the periodic boundary condition.}
@@ -414,13 +414,13 @@ Independently of the technique or software used, certain restrictions should be 
 
 The application of the PBC results in particles interacting not only with each other but also with their images. This fact significantly increases the number of interacting pairs and, consequently, the computational time. To overcome that, we need to choose a limited range potential using the minimum image convention criterion. This criterion only allows a particle to interact with the nearest particle or image.  This is technically done during the simulations by neglecting the interactions between two particles at or beyond a maximum length, which is given the name of cutoff radius ($R_{c}$). This cutoff should be equal to or less than half of the box length. This process of examining each pair separation can also be expensive depending on the number of distinct pairs. That is the reason molecular dynamics algorithms use pair listings. This method defines a 'skin' around the cutoff radius with a radius $R_{List}$, as represented in Figure \ref{fig:pairlist}. The pair list is initially built of all the neighbor particles within a distance $R_{List}$ of each particle. Over the course of the simulation, only pairs in the pair list interact. We then will have a list of all particles j with which a particle i interacts as an example. The pair list must then be updated from time to time during the simulation since particles typically diffuse \cite{tuckerman}.    
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/pairlist}
 	\caption{Representation of the cutoff radius and the pair list radius. Adapted from \citeonline{tuckerman}.}
 	\label{fig:pairlist}
 \end{figure}
-\FloatBarrier
+
 \subsection{Force Fields }
 As said previously, we need to calculate the derivative of the potential energy function in relation to the coordinates in order to update the positions during a simulation. Therefore, we need a model for this potential energy functions. These models are called force fields. They can describe structural characteristics such as van der Waals interactions, bond lengths, bond angles, and torsion in a molecular simulation. The description is done by approximating the potential energy function [$U(r^N)$], which has contributions due to intermolecular and intramolecular interactions. The intramolecular interactions include bond stretching, angle bending, and bond torsion. An illustration of these interactions can be seen in Figure \ref{fig:intraint}. 
 
@@ -473,9 +473,7 @@ where  $\epsilon$ is the depth of the potential well, $\sigma$ is the distance c
 	\label{fig:lj}
 \end{figure}
 
-The potential in Figure \ref{fig:lj} tends to zero and becomes negligible after a specific value of r. Hence, we need to set a cutoff radius in which the potential energy is considered to be zero after it. The point in which the cutoff is defined is generally the one in which the radial distribution function ($g(r)$) is approximately constant. Also, only interactions with the nearest periodic image of the cell are considered for short-range interactions as explained in the Section \ref{icbc}. With this conditions, the calculations of forces and velocities are computationally feasible.
-
-The final potential energy function defined by the force field is expressed by summing all the interactions above:
+The potential in Figure \ref{fig:lj} tends to zero and becomes negligible after a specific value of r. Hence, we need to set a cutoff radius in which the potential energy is considered to be zero after it. The point in which the cutoff is defined is generally the one in which the radial distribution function [$g(r)$] is approximately constant. Also, only interactions with the nearest periodic image of the cell are considered for short-range interactions as explained in the Section \ref{icbc}. With this conditions, the calculations of forces and velocities are computationally feasible. The final potential energy function defined by the force field is then expressed by summing all the interactions above:
 
 \begin{equation}
 \begin{aligned}
@@ -580,12 +578,12 @@ a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}m_{s,i}\ln[g_{ii}^{Mie}(\sigma_{ii})] .
 \label{eqn:aringlafitte}
 \end{equation}
 
-According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parameterization with molecular simulation data so that the EoS can  be used in molecular simulations, but this additional parameterization is not necessary when we are modeling chain molecules. Recently, \citeonline{muller2017} tried to correct this inconsistency. They developed a ring free energy equation based on the work of \citeonline{muller1993}, who obtained rigorous expressions for hard-sphere fluids with molecular geometries of rings with $m_s=3$. The final expression developed for the dimensionless Helmholtz free energy due to ring formation is
+According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an additional parameterization with molecular simulation data so that the EoS can  be used in molecular simulations, but this additional parameterization is not necessary when we are modeling chain molecules. Recently, \citeonline{muller2017} tried to correct this inconsistency. They developed a Helmholtz free energy equation for rings based on the work of \citeonline{muller1993}, who obtained rigorous expressions for hard-sphere fluids with molecular geometries of rings with $m_s=3$. The final expression developed for the dimensionless Helmholtz free energy due to ring formation is
 \begin{equation}
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}\left (m_{s,i}-1+\chi_{i}\eta_{i} \right )\ln \left [g_{ii}^{Mie}(\sigma_{ii}) \right] ,
 \label{eqn:aringmuller}
 \end{equation}
-where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction of the atom i and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$, Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. In addition, the equation corresponds to a system of hard sphere triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\zeta$ for $m_{s}=3,m_{s}=4,m_{s}=5$, and $m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid with $\epsilon/\kappa_{b} = 250 K$, $\sigma = 3.0 \dot{A}$, $\lambda_{r} = 11$, and $\lambda_{r} = 6$. Values of $\chi$  for some of the geometry estimated in their article can be seen in \figref{ringqsi}.
+where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction of the atom i and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$, Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. In addition, the equation corresponds to a system of hard sphere triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\chi$ for $m_{s}=3,m_{s}=4,m_{s}=5$, and $m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid with $\epsilon/\kappa_{b} = 250 K$, $\sigma = 3.0 \dot{A}$, $\lambda_{r} = 11$, and $\lambda_{r} = 6$. Values of $\chi$  for some of the geometry estimated in their article can be seen in \figref{ringqsi}.
 \begin{figure}[th]
 	\centering
 	\includegraphics[scale=0.5]{Figures/mullergeo.png}
@@ -611,7 +609,7 @@ d_{ij} =\frac{d_{ii}+d_{jj}}{2},
 \label{eqn:epsmix}
 \end{equation}
 
-The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule for chemically distinct compounds that can be fitted to experimental or molecular simulation data. This necessity of an additional parameter brings the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones used by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  
+The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule for chemically distinct compounds that can be fitted to experimental or molecular simulation data. This necessity of an additional parameter raises the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones employed by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  
 
 
 \subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}\label{parsaft}
@@ -627,7 +625,7 @@ Each substance has initially five parameters to be estimated ($m_s,\ \sigma,\ \e
 \end{aligned}
 \label{eqn:fobj}
 \end{equation}
-where $N_{p}$ is the number of experimental points, $P_{v}$ is the vapor pressure and $\rho_{l}$ is the saturated liquid density. Other properties that can be used in the estimation are interfacial tension and speed of sound, for instance. The multiple parameters of the model make it necessary the use of a wide range of experimental data since multiple solutions may be found for the fit. Therefore, one needs to be careful in deciding the level of coarse-graining (i.e. the choice of parameter $m_{s}$) and the subsequent parameter space so as to avoid some physical inconsistencies such as a premature freezing \cite{lobanova2015}.
+where $N_{p}$ is the number of experimental points, $P_{v}$ is the vapor pressure, and $\rho_{l}$ is the saturated liquid density. Other properties that can be used in the estimation are interfacial tension and speed of sound, for instance. The multiple parameters of the model make it necessary the use of a wide range of experimental data since multiple solutions may be found for the fit. Therefore, one needs to be careful in deciding the level of coarse-graining (i.e. the choice of parameter $m_{s}$) and the subsequent parameter space so as to avoid some physical inconsistencies such as a premature freezing \cite{lobanova2015}.
 
 \citeonline{lafitte2012} suggested that two correction factors ($c_{\sigma}$ and $c_{\epsilon}$) should be estimated with simulation data when using Eq. \eqref{eqn:aringlafitte} for the ring contribution. They are related to the EoS parameters by scaled parameters:
 
@@ -696,7 +694,7 @@ T_{c}^{*} = \frac{\kappa_{b}T_{c}}{\epsilon}   .
 \label{eqn:epscorre}
 \end{equation}
 
-The diameter parameter, however, is not obtained with the critical properties, but with the reduced liquid density at the reduced temperature of $0.7$, $\rho_{T_{r}=0.7}$. This density is also obtained with a Padé series using parameters by \citeonline{mejia2014}:
+The diameter parameter, however, is not obtained with the critical properties, but with the reduced liquid density at the reduced temperature of $0.7$ ($\rho_{T_{r}=0.7}$). This density is also obtained with a Padé series using parameters by \citeonline{mejia2014}:
 
 \begin{equation}
 \rho_{T_{r}=0.7}^{*} = \frac{\sum_{i=0} j_{i}\alpha^{i}}{1+\sum_{i=1} k_{i}\alpha^{i}} .
@@ -802,7 +800,7 @@ In the case of a study concerning the solvation of a single molecule, the Gibbs 
 	\label{thermcy}
 \end{figure}
 
-The last term in Eq. \ref{eq:freesolv} accounts for the difference between the mean volume of the box with the solute inserted ($V_{1}$) and the mean volume of the box with only solvent molecules in it ($V^{*}$). However, \citeonline{shirts2013} have shown that this term is negligible with respect to the statistical uncertainty of calculating $\Delta G$. When we have other solute molecules that are equal to the solute molecule being inserted in the box, another term in Eq. \ref{eq:freesolv} can appear in order to distinguish these molecules \cite{shirts2013}. The  term $\Delta G_{1 \rightarrow 2}$, also represented in \figref{thermcy},  is the solvation free energy associated with turning off the non bonded interactions of the molecule in the gas phase. In the next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the aqueous phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the latter case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $.  
+The last term in Eq. \ref{eq:freesolv} accounts for the difference between the mean volume of the simulation box with the solute inserted ($V_{1}$) and the mean volume of the simulation box with only solvent molecules in it ($V^{*}$). However, \citeonline{shirts2013} have shown that this term is negligible with respect to the statistical uncertainty of calculating $\Delta G$. In addition, when we have other solute molecules that are equal to the solute molecule being inserted in the box, another term in Eq. \ref{eq:freesolv} can appear in order to distinguish these molecules \cite{shirts2013}. The  term $\Delta G_{1 \rightarrow 2}$, also represented in \figref{thermcy},  is the solvation free energy associated with turning off the non bonded interactions of the molecule in the gas phase. In the next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the aqueous phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the latter case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $.  
 
 The methods used to carry out the transformations of Figure \ref{thermcy} during the simulation scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones or Mie potential. In order to carry out the latter process, a modified potential with a coupling parameter ($\lambda$) is used. Each $\lambda$ represents an alchemical state. When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential \cite{shirts2013}. We can see in Figure \ref{fig:linearpoten} that a linear coupling of the parameter would cause an abrupt change in the potential energy when the $\lambda$ reaches zero. That is the reason the non-linear softcore scheme \cite{beutler1994} is used to couple the $\lambda$. This scheme makes the potential behave more smoothly in relation to the change of $\lambda$, as can be seen in \figref{fig:SC}. The softcore potential is  
 
@@ -835,7 +833,7 @@ U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\fr
 	\label{fig:SC}
 \end{figure}
 
-Now that we defined our coupled potential, we can then obtain the potential energies related to each alchemical state by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}. The latter was the method used in this dissertation, and it is described in Section \ref{ee}. Having the potential energies, the next step is to use post-processing methods, such as the MBAR used in this study, to effectively calculate $\Delta G_{3 \rightarrow 4}$.  The solvation free energies can then be used to calculate other properties such as the partition coefficient. This property is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T. It is defined by the following equation when the activity coefficients are assumed to be one \cite{doi:10.1021/ja00036a009}:
+Now that we defined our coupled potential, we can then obtain the potential energies related to each alchemical state by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}. The latter was the method used in this dissertation, and it is described in Section \ref{ee}. With the potential energies, the next step is to use post-processing methods, such as the MBAR used in this study, to effectively calculate $\Delta G_{3 \rightarrow 4}$.  The solvation free energies can then be used to calculate other properties such as the partition coefficient. This property is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T. It is defined by the following equation when the activity coefficients are assumed to be one \cite{doi:10.1021/ja00036a009}:
 
 \begin{equation}
 P = \dfrac{[solute]_{a}}{[solute]_{b}},
@@ -895,7 +893,7 @@ and using Eqs. \ref{eq:dif} and \ref {eq:partiso}, the following relation can be
 \label{eqn:weight}
 \end{equation}
 
-Eq. \eqref{eqn:weight} proposes that the choice of the new weights is dependent on the free energies that we are attempting to obtain. This equation is then solved iteratively with trial simulations. For the first simulation, the values of $\eta$ are set to zero, and the histogram of the states visited is obtained. With this histogram, it is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{eqn:weight}, the next values of $\eta$ can be calculated. This iteration goes on until a uniform distribution is attained. The weights found are then used in a longer simulation to obtain the final solvation free energies.
+Eq. \eqref{eqn:weight} proposes that the choice of the weights is dependent on the free energies that we are attempting to obtain. This equation is then solved iteratively with trial simulations. For the first simulation, the values of $\eta$ are set to zero, and the histogram of the states visited is obtained. With this histogram, it is possible to estimate the free energy differences and, since the weights are related to the free energies by Eq. \eqref{eqn:weight}, the next values of $\eta$ can be calculated. This iteration goes on until a uniform distribution is attained. The weights found are then used in a longer simulation to obtain the final solvation free energies.
 
 The choice of the $\lambda$ set correspondent to overlapping alchemical states are crucial to acquire accurate solvation free energies. In this work, the method chosen to obtain the optimal staging of the $\lambda$ domain is the one developed by \citeonline{escobedo2007} with a basis in the study of  \citeonline{1742-5468-2006-03-P03018}. This method targets "bottlenecks" in the simulation. It does that by optimizing $\lambda$ through the minimization of the number of round trips per CPU time between the lowest ($0$) and highest ($1$) values of $\lambda$. This is specifically done by maximizing the steady-state flow $\phi$ of the simulation, which "walks" among the values of $\lambda$. This flow is estimated from a Fick's diffusion type of law:
 
