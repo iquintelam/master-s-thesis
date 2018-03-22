@@ -199,28 +199,28 @@ It is also essential to analyze the reliability of solvation free energy estimat
 \end{table}
 
 
-The numerical values for solvation free energies in hexane had overall smaller absolute deviations from experimental data than the deviations in the other solvents. Additionally, this force field presented better results for the pair hexane+benzene than the TraPPE force field (- 4.35  $\pm$ 0.05 kcal/mol) \cite{garrido2011} and the ELBA coarse-grained force field  (-2.92 $\pm$ 0.01 kcal/mol) \cite{doi:10.1021/acs.jctc.5b00963}. TraPPE is a force field parametrized with fluid-phase equilibria data that uses the Lennard-Jones potential to describe the non-bonded interactions. In the cited paper, they used the united-atom description of the TraPPE force field for the alkyl group, the all-atom description for the polar groups and the explicit-hydrogen approach for the aromatic groups. In the explicit-hydrogen approach, the interaction sites for all hydrogen atoms, some lone pair electrons, and bond centers are accounted for \cite{doi:10.1021/jp073586l}. In turn, the ELBA force field is a coarse-grained model that comprises six independent parameters. This force field models three carbons as one Lennard-Jones site and one water molecule as a single Lennard Jones site with a point dipole. We also present the solvation free energies correspondent to each alchemical state ($\lambda$) for all the pairs studied here in Figures \ref{fig:hex} to \ref{fig:tol}. Specifically observing the solvation free energy in hexane (Figure \ref{fig:hex}), we can see the effect of the molecule's size on the entropic region of the free energy curve. This region is correspondent to the first values of $\lambda$ where space in the solvent is being 'opened' for the insertion of the solute.
+The numerical values for solvation free energies in hexane had overall smaller absolute deviations from experimental data than the deviations in the other solvents. Additionally, this force field presented better results for the pair hexane+benzene than the TraPPE force field (- 4.35  $\pm$ 0.05 kcal/mol) \cite{garrido2011} and the ELBA coarse-grained force field  (-2.92 $\pm$ 0.01 kcal/mol) \cite{doi:10.1021/acs.jctc.5b00963}. TraPPE is a force field parametrized with fluid-phase equilibria data that uses the Lennard-Jones potential to describe the non-bonded interactions. In the cited paper, they used the united-atom description of the TraPPE force field for the alkyl group, the all-atom description for the polar groups and the explicit-hydrogen approach for the aromatic groups. In the explicit-hydrogen approach, the interaction sites for all hydrogen atoms, some lone pair electrons, and bond centers are accounted for \cite{doi:10.1021/jp073586l}. In turn, the ELBA force field is a coarse-grained model that comprises six independent parameters. This force field models three carbons as one Lennard-Jones site and one water molecule as a single Lennard Jones site with a point dipole. We also present the solvation free energies corresponding to each alchemical state ($\lambda$) for all the pairs studied here in Figures \ref{fig:hex} to \ref{fig:tol}. Specifically observing the solvation free energy in hexane (Figure \ref{fig:hex}), we can see the effect of the molecule's size on the entropic region of the free energy curve. This region corresponds to the first values of $\lambda$ where space in the solvent is being 'opened' for the insertion of the solute.
 
 We expected that a force field based on an EoS that does not explicitly account for hydrogen bond would not perform well for 1-octanol in mixtures since the parameterization of this molecule did not explicitly account for the interactions of association. All the beads representing 1-octanol have the same intermolecular parameter, and there is no distinction between the polar and apolar groups. Despite this, the solvation free energies of propane and phenanthrene in 1-octanol lied in the desired deviation range of 1-2 kcal/mol \cite{doimobley}. For propane, the observed deviation in solvation free energies was much smaller when compared to the other solutes, which can be attributed to the non polarity of propane and its smoother free energy curve, presented in Figure \ref{fig:oct}. Such solvation free energy of propane in 1-octanol also had a smaller deviation than the prediction of the ELBA force field (-0.92 $\pm$ 0.01) \cite{doi:10.1021/acs.jctc.5b00963}. The absolute deviation of the solvation free energy computed for anthracene in 1-octanol is much higher than the one calculated for phenanthrene in 1-octanol. The anthracene and phenanthrene molecules have the same geometry (Figure \ref{fig:fen5}) in the SAFT-$\gamma$ Mie model, although anthracene is a linear molecule and phenanthrene is not, and also similar physical properties. Hence, this high deviation of the solvation free energy of anthracene in 1-octanol may indicate a problem in the geometry chosen for anthracene in the SAFT-$\gamma$ Mie force field and the importance of the geometry in modeling the molecules with this force field.      
 \FloatBarrier
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/hex}
-	\caption{Representation of solvation free energies of different solutes in hexane correspondent to each alchemical state.}
+	\caption{Representation of solvation free energies of different solutes in hexane corresponding to each alchemical state.}
 	\label{fig:hex}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/oct}
-	\caption{Representation of solvation free energies of different solutes in 1-octanol correspondent to each alchemical state.}
+	\caption{Representation of solvation free energies of different solutes in 1-octanol corresponding to each alchemical state.}
 	\label{fig:oct}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figures/tol}
-	\caption{Representation of solvation free energies of different solutes in toluene correspondent to each alchemical state. }
+	\caption{Representation of solvation free energies of different solutes in toluene corresponding to each alchemical state. }
 	\label{fig:tol}
 \end{figure}
 
@@ -266,7 +266,7 @@ Water is a solvent extensively used in experimental and computational studies. B
 	\centering
 	\caption{Optimized values of $\lambda $ and $\eta $ for the water+solute pairs. }
 	\label{tbl:lambdawater}
-	\begin{tabular}{llllllll}
+	\begin{tabular}{cccccccc}
 		\hline\hline
 		\multicolumn{2}{c}{propane}& \multicolumn{2}{c}{benzene}& \multicolumn{2}{c}{toluene}& \multicolumn{2}{c}{phenanthrene}\\
 		\hline\hline
@@ -353,11 +353,11 @@ Comparing the three aforementioned force fields, the root mean square error (RMS
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/water}
-	\caption{Representation of hydration free energies of different solutes correspondent to each alchemical state.}
+	\caption{Representation of hydration free energies of different solutes corresponding to each alchemical state.}
 	\label{fig:water}
 \end{figure}
 
-The results found here for both the solvation free energies and hydration free energies fulfilled the intentions of this dissertation. We assessed the prediction capability of the SAFT-$\gamma$ Mie force field and provided satisfactory solvation free energy estimates of PAH's using a coarse-grained force field. In addition to that, we found flaws in the methodology used by the SAFT-$\gamma$ Mie force field to model the water molecule. Hence, these shortcomings of this model can now be addressed, and the force field can even be improved by using other mixing rules to avoid the use of a binary parameter or, even, using hydration free energy estimates in the parameterization of water. These results also encourage us to calculate solvation free energies of more complex molecules mimicking asphaltenes in non-aqueous solvents in future studies.  
+The results found here for both the solvation free energies and hydration free energies fulfilled the intentions of this dissertation. We assessed the prediction capability of the SAFT-$\gamma$ Mie force field and provided satisfactory solvation free energy estimates of PAHs using a coarse-grained force field. In addition to that, we found flaws in the methodology used by the SAFT-$\gamma$ Mie force field to model the water molecule. Hence, these shortcomings of this model can now be addressed, and the force field can even be improved by using other mixing rules to avoid the use of a binary parameter or, even, using hydration free energy estimates in the parameterization of water. These results also encourage us to calculate solvation free energies of more complex molecules mimicking asphaltenes in non-aqueous solvents in future studies.  
 
 \section{Partition Coefficients}
 
