@@ -1,0 +1,114 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/review.aux
+A level-1 auxiliary file: chapters/computational.aux
+A level-1 auxiliary file: chapters/methodology.aux
+A level-1 auxiliary file: chapters/results.aux
+A level-1 auxiliary file: chapters/conclusions.aux
+A level-1 auxiliary file: chapters/saftequations.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 15212 items from 5000.
+Database file #1: abntex2-options.bib
+Database file #2: thesis.bib
+I was expecting a `,' or a `}'---line 1148 of file thesis.bib
+ :   
+ :   address = {Dordrecht, NL}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1156 of file thesis.bib
+ :   
+ :   address = {Chichester, U.K.}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1164 of file thesis.bib
+ :   
+ :   address = {Santa Barbara, U.S.A.}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1300 of file thesis.bib
+ :  
+ :  doi="10.1140/epjp/i2013-13010-8"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+There is no name in "" for entry pso
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry pso
+while executing---line 2091 of file abntex2-alf.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry mobley2017
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry pso
+while executing---line 2146 of file abntex2-alf.bst
+There is no name in "" for entry pso
+while executing---line 2146 of file abntex2-alf.bst
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 148 entries,
+            6714 wiz_defined-function locations,
+            1992 strings with 36356 characters,
+and the built_in function-call counts, 139653 in all, are:
+= -- 9783
+> -- 5678
+< -- 403
++ -- 2256
+- -- 1624
+* -- 10318
+:= -- 17342
+add.period$ -- 445
+call.type$ -- 149
+change.case$ -- 1888
+chr.to.int$ -- 570
+cite$ -- 144
+duplicate$ -- 7463
+empty$ -- 9047
+format.name$ -- 8379
+if$ -- 33214
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 2842
+newline$ -- 719
+num.names$ -- 720
+pop$ -- 3620
+preamble$ -- 1
+purify$ -- 635
+quote$ -- 0
+skip$ -- 8281
+stack$ -- 1
+substring$ -- 6062
+swap$ -- 4412
+text.length$ -- 261
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 1091
+width$ -- 0
+write$ -- 2299
+(There were 14 error messages)
