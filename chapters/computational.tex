@@ -620,7 +620,7 @@ Each substance has initially five parameters to be estimated ($m_s,\ \sigma,\ \e
 
 \begin{equation}
 \begin{aligned}
-\min\limits_{\sigma,\epsilon,\lambda_{r}} F_{obj}= \sum_{i=1}^{N_{p}} \left[\frac{P_{v}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-P_{v}^{exp}(T_{i})}{P_{v}^{exp}(T_{i})} \right]^2 +\\
+F_{obj}= \sum_{i=1}^{N_{p}} \left[\frac{P_{v}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-P_{v}^{exp}(T_{i})}{P_{v}^{exp}(T_{i})} \right]^2 +\\
 \sum_{i=1}^{N_{p}} \left[\frac{\rho_{l}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right]^2 ,
 \end{aligned}
 \label{eqn:fobj}
@@ -642,7 +642,7 @@ According to \citeonline{lafitte2012}, these corrections are necessary because t
 
 \begin{equation}
 \begin{split}
-\min\limits_{c_{\sigma},c_{\epsilon}} F_{obj}= \sum_{i=1}^{N_{p}} \left[\frac{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-P_{v}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right]^2 + \\
+F_{obj}= \sum_{i=1}^{N_{p}} \left[\frac{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-P_{v}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{P_{v}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right]^2 + \\
 \sum_{i=1}^{N_{p}} \left[\frac{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})-\rho_{liq}^{SAFT}(T_{i},\sigma^{scaled},\epsilon^{scaled})}{\rho_{liq}^{sim}(T_{i},\sigma^{SAFT},\epsilon^{SAFT})} \right]^2 .
 \end{split}
 \label{eqn:fobjla}
@@ -713,7 +713,7 @@ The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary
 
 \begin{equation}
 \begin{aligned}
-\min\limits_{k_{ij}} F_{obj}= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
+F_{obj}= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
 \sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2 .
 \end{aligned}
 \label{eqn:fobjmix}
@@ -721,6 +721,54 @@ The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary
 
 However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the interfacial tension data. The strategy they followed was to carry out simulations in three values of $k_{ij}$ first and, after, refine the parameter until a value in good agreement with the experimental data is found. We decided to follow this strategy in our estimations of $k_{ij}$ since the estimation with the EoS did not provide satisfactory results for the hydration free energy calculations.  
 
+\begin{table}[h]
+	\centering
+	\caption{Parameters of the SAFT-$\gamma$ Mie force field for each substance used in this work.}
+	\label{tbl:parameters}
+	\begin{tabular}{ccccc}
+		\hline
+		\hline
+		& $m_s$ & $\epsilon/\kappa_{b}$ (K) & $\sigma$ (\AA) & $\lambda_r$ \\ \hline\hline
+		Water          & 1     & 305.21               & 2.902              & 8.0         \\
+		Carbon dioxide & 2     & 194.94               & 2.848              & 14.65       \\
+		Propane        & 1     & 426.08               & 4.871              & 34.29       \\
+		Hexane         & 2     & 376.35               & 4.508              & 19.57       \\
+		1-octanol        & 3     & 495.71               & 4.341              & 28.79       \\
+		Toluene        & 3     & 268.24               & 3.685              & 11.80       \\
+		Benzene        & 3     & 230.30               & 3.441              & 10.45       \\
+		Pyrene         & 4     & 459.04               & 4.134              & 15.79       \\
+		Anthracene     & 5     & 259.68               & 3.631              & 9.55        \\ 
+		\hline
+		\hline
+	\end{tabular}
+	
+\end{table}
+
+\begin{table}
+	\caption{Coarse-grained geometries.}
+	\centering
+\begin{tabular}{ccc}
+
+	\toprule
+	 Molecule &  Structure &  Coarse grained structure  \\
+	\midrule
+	Water &
+	\adjustimage{height=1.2cm,valign=m}{Figures/waterg} &
+    \adjustimage{height=1cm,valign=m}{Figures/onebead}  \\
+	Carbon dioxide &
+     \adjustimage{height=0.8cm,valign=m}{Figures/co2g} &
+	\adjustimage{height=1cm,valign=m}{Figures/twobeads}  \\
+	Propane & \adjustimage{height=1.5cm,valign=m}{Figures/propg}  & \adjustimage{height=1cm,valign=m}{Figures/onebead} \\
+	Hexane & \adjustimage{height=1.5cm,valign=m}{Figures/hexg}  & \adjustimage{height=1cm,valign=m}{Figures/twobeads} \\
+	1-octanol & \adjustimage{height=1.5cm,valign=m}{Figures/octg}  & \adjustimage{height=1cm,valign=m}{Figures/threebeads} \\
+	Toluene & \adjustimage{height=2.5cm,valign=m}{Figures/tolg}  & \adjustimage{height=2cm,valign=m}{Figures/fe3} \\
+	Benzene & \adjustimage{height=2.5cm,valign=m}{Figures/benzg}  & \adjustimage{height=2cm,valign=m}{Figures/fe3} \\
+	Pyrene & \adjustimage{height=2.5cm,valign=m}{Figures/pyre}  & \adjustimage{height=2cm,valign=m}{Figures/pyrecg} \\
+	Anthracene & \adjustimage{height=2cm,valign=m}{Figures/ant}  & \adjustimage{height=2cm,valign=m}{Figures/fen5} \\
+	    \bottomrule
+	    
+\end{tabular}
+\end{table}
 \section{Solvation Free Energy Calculations Based on Molecular Dynamics}
 % background topics
 
@@ -802,7 +850,18 @@ In the case of a study concerning the solvation of a single molecule, the Gibbs 
 
 The last term in Eq. \ref{eq:freesolv} accounts for the difference between the mean volume of the simulation box with the solute inserted ($V_{1}$) and the mean volume of the simulation box with only solvent molecules in it ($V^{*}$). However, \citeonline{shirts2013} have shown that this term is negligible with respect to the statistical uncertainty of calculating $\Delta G$. In addition, when we have other solute molecules that are equal to the solute molecule being inserted in the box, another term in Eq. \ref{eq:freesolv} can appear in order to distinguish these molecules \cite{shirts2013}. The  term $\Delta G_{1 \rightarrow 2}$, also represented in \figref{thermcy},  is the solvation free energy associated with turning off the non bonded interactions of the molecule in the gas phase. In the next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the solvent phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the latter case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $.  
 
-The methods used to carry out the transformations of Figure \ref{thermcy} during the simulation scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones or Mie potential. In order to carry out the latter process, a modified potential with a coupling parameter ($\lambda$) is used. Each $\lambda$ represents an alchemical state. When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, but it could generate numerical problems related to the exponential part of the potential \cite{shirts2013}. We can see in Figure \ref{fig:linearpoten} that a linear coupling of the parameter would cause an abrupt change in the potential energy when the $\lambda$ reaches zero. That is the reason the non-linear softcore scheme \cite{beutler1994} is used to couple the $\lambda$. This scheme makes the potential behave more smoothly in relation to the change of $\lambda$, as can be seen in \figref{fig:SC}. The softcore potential is  
+The methods used to carry out the transformations of Figure \ref{thermcy} during the simulation scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones or Mie potential. In order to carry out the latter process, a modified potential with a coupling parameter ($\lambda$) is used. Each $\lambda$ represents an alchemical state. When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, as it is demonstrated in Figure \ref{fig:linearpoten}, but it could generate numerical problems related to the exponential part of the potential \cite{shirts2013}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figures/linear8}
+	\caption{Linear coupling of the potential energy, $U^{linear}_{Mie} = \lambda U_{Mie}$, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _a = 6$, and $\lambda _r = 8$.}
+	\label{fig:linearpoten}
+\end{figure} 
+
+Observing Figure \ref{fig:linearpoten}, we can see that a linear coupling of the parameter would cause an abrupt change in the potential energy when the $\lambda$ reaches zero. That is the reason the non-linear softcore scheme \cite{beutler1994} is used to couple the $\lambda$. This scheme makes the potential behave more smoothly in relation to the change of $\lambda$. 
+
+The softcore potential is equal to
 
 \begin{equation}
 \label{eq:softcoreLJ}
@@ -819,18 +878,32 @@ U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\fr
 \end{aligned}
 \end{equation}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Figures/linear}
-	\caption{Linear coupling of the potential energy, $U^{linear}_{LJ} = \lambda U_{LJ}$, for different values of $\lambda$. Here, $\sigma=1$ and $\epsilon=1$}
-	\label{fig:linearpoten}
-\end{figure}    
+Using this generalized softcore potential, we plotted the relation between the values of $\lambda$ and the potential for repulsive exponents of different hardness/softness in Figure \ref{fig:scmie}. We see that this softcore scheme makes the potential behave more smoothly in relation to the change of $\lambda$, mainly for the smaller repulsive exponents. 
+ 
 
-\begin{figure}[H]
+\begin{figure}%
 	\centering
-	\includegraphics[width=0.8\linewidth]{Figures/soft}
-	\caption{Softcore potential, Eq. \ref{eq:softcoreLJ}, for different values of $\lambda$. Here, $\sigma=1$ and $\epsilon=1$.}
-	\label{fig:SC}
+	\subfloat[][]{%
+		\label{fig:ex3-a}%
+		\includegraphics[height=5.9cm]{Figures/soft8}}%
+	\hspace{0.05cm}%
+	\subfloat[][]{%
+		\label{fig:ex3-b}%
+		\includegraphics[height=5.9cm]{Figures/soft15}} \\
+	\vspace{-1cm}
+	\subfloat[][]{%
+		\label{fig:ex3-c}%
+		\includegraphics[height=5.9cm]{Figures/soft20}}%
+	\hspace{0.05cm}%
+	\subfloat[][]{%
+		\label{fig:ex3-d}%
+		\includegraphics[height=5.9cm]{Figures/soft30}}%
+	\caption[A set of four subfigures.]{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}$ is equal to
+		8 \subref{fig:ex3-a};
+		15 \subref{fig:ex3-b};
+		20 \subref{fig:ex3-c}; and,
+		30 \subref{fig:ex3-d}.}%
+	\label{fig:scmie}
 \end{figure}
 
 Now that we defined our coupled potential, we can then obtain the potential energies related to each alchemical state by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}. The latter was the method used in this dissertation, and it is described in Section \ref{ee}. With the potential energies, the next step is to use post-processing methods, such as the MBAR used in this study, to effectively calculate $\Delta G_{3 \rightarrow 4}$.  The solvation free energies can then be used to calculate other properties such as the partition coefficient. This property is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T. It is defined by the following equation when the activity coefficients are assumed to be one \cite{doi:10.1021/ja00036a009}:

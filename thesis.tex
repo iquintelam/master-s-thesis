@@ -37,6 +37,7 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
+\usepackage{subfig}
 \usepackage{palatino} % Use the Palatino font by default
 \usepackage{amsmath}
 \usepackage{nicefrac}
@@ -55,6 +56,22 @@
 
 \usepackage{ragged2e}
 \usepackage{array}
+
+\usepackage{adjustbox}
+\usepackage{booktabs}
+
+\providecommand{\textsubscript}[1]{%
+	\mbox{$_\text{#1}$}%
+}
+
+\newcommand{\mystack}[1]{%
+	\mbox{$
+		\vcenter{%
+			\hbox{\shortstack{#1}}%
+		}%
+		\mathsurround=0pt
+		$}
+}
 
 \newcommand\cedilla{}
 \let\cedilla\c

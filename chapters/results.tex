@@ -21,30 +21,7 @@ The first part of this work consisted of obtaining phenanthrene parameters for t
 
 The MPE value of 1.64 for the \citeonline{lafitte2012} strategy in the Table \ref{tbl:estimparameters} is the error between the vapor pressure calculated with the equation of state and the experimental data. The second MPE value for the \citeonline{lafitte2012} strategy (9.74) is the error between the vapor pressure calculated with the equation of state and the vapor pressure obtained in the GEMC simulations. The \citeonline{lafitte2012} strategy should not need an estimation with molecular simulation data since this additional procedure is not necessary when estimating parameters for the chain equation \cite{avendano2011} or the ring equation of \citeonline{muller2017}. In addition to that, this use of molecular simulation data to acquire the parameters negates the overall idea proposed by \cite{avendano2011}. They developed this force field with the intention of obtaining the parameters in a more straightforward way than other force fields since the SAFT-$\gamma$ Mie model would not have the computational time associated with doing molecular simulations in its parameterization. Due to these specific characteristics of the model of \citeonline{lafitte2012}, we only studied the solvation free energy of phenanthrene with the set of parameters estimated with the strategy of \citeonline{muller2017}. In fact, we only followed the strategy of \citeonline{lafitte2012} because it was the only one available when we first started this research. The sets of parameters for the other compounds were retrieved from the literature \cite{lobanova2016,herdes2015,ervik2016,muller2017}, and all the utilized parameters are available in Table \ref{tbl:parameters}.
 
-\begin{table}[h]
-	\centering
-	\caption{Parameters of the SAFT-$\gamma$ Mie force field for each substance used in this work.}
-	\label{tbl:parameters}
-	\begin{tabular}{ccccc}
-		\hline
-		\hline
-		& $m_s$ & $\epsilon/\kappa_{b}$ (K) & $\sigma$ (\AA) & $\lambda_r$ \\ \hline\hline
-		Water          & 1     & 305.21               & 2.902              & 8.0         \\
-		Propane        & 1     & 426.08               & 4.871              & 34.29       \\
-		Carbon dioxide & 2     & 194.94               & 2.848              & 14.65       \\
-		Hexane         & 2     & 376.35               & 4.508              & 19.57       \\
-		Octanol        & 3     & 495.71               & 4.341              & 28.79       \\
-		Toluene        & 3     & 268.24               & 3.685              & 11.80       \\
-		Benzene        & 3     & 230.30               & 3.441              & 10.45       \\
-		Pyrene         & 4     & 459.04               & 4.134              & 15.79       \\
-		Anthracene     & 5     & 259.68               & 3.631              & 9.55        \\ 
-		\hline
-		\hline
-	\end{tabular}
-	
-\end{table}
-\FloatBarrier
-Our primary intention with this study is to assess the capability of the SAFT-$\gamma$ Mie force field to represent solvation free energies. Hence, we chose benchmark solutes used in the literature (benzene, propane) and polyaromatic solutes (benzene, pyrene, phenanthrene, anthracene), and, for the solvents, we picked non-polar (hexane), aromatic (toluene), and hydrogen bonding (1-octanol, water) substances. It would be interesting to do a study with a bigger database of pairs solvent-solute. However, the time required for performing each of the solvation free energy simulations, some difficulties related to the available computational structure, and the fact that a better model of aromatic compounds with this force field was only published in the middle of our study prevented us from doing a more extensive study. The solvation free energy simulations for the pairs chosen were carried out with binary interaction parameters equal to zero since these parameters were not necessary according to our preliminary studies. Since the force field does not account for charges, we only calculated the Mie contribution (Eq. \eqref{eq:softcore}) to the solvation free energy. A total of 15 to 18 $\lambda 's$, depending on the solute-solvent pairs, and their respective $\eta 's$ were estimated as described in Sections \ref{ee} and \ref{solvme}. The final $\lambda$ set for all the pairs was found using the cumulative probability distribution (Eq. \eqref{eqn:cumfun}). The probability distribution for the hexane(solvent)+benzene(solute) pair can be seen in \figref{fig:optimized_cdf}. From now on we are going to use the terminology solvent+solute. The optimized values of $\lambda$ and $\eta$ for this pair and all the other pairs are available in Tables \ref{tbl:lambdahex} to \ref{tbl:lambdaco2}. By observing the coupling parameters found for all the pairs, we can see that they are concentrated on the region with a steeper slope as it is expected in this method.
+Our primary intention with this study is to assess the capability of the SAFT-$\gamma$ Mie force field to represent solvation free energies. Hence, we chose benchmark solutes used in the literature (benzene, propane) and polyaromatic solutes (benzene, pyrene, phenanthrene, anthracene), and, for the solvents, we picked non-polar (hexane), aromatic (toluene), and hydrogen bonding (1-octanol, water) substances. It would be interesting to do a study with a bigger database of pairs solvent-solute. However, the time required for performing each of the solvation free energy simulations, some difficulties related to the available computational structure, and the fact that a better model of aromatic compounds with this force field was only published in the middle of our study prevented us from doing a more extensive study. The solvation free energy simulations for the pairs chosen were carried out with binary interaction parameters equal to zero since these parameters were not necessary according to our preliminary studies. Since the force field does not account for charges, we only calculated the Mie contribution (Eq. \eqref{eq:softcore}) to the solvation free energy. A total of 15 to 18 $\lambda 's$, depending on the solute-solvent pairs, and their respective $\eta 's$ were estimated as described in Sections \ref{ee} and \ref{solvme}. The simulations we carried out using these optimized weights deviated from the flat histogram requirement of equal number visits by an average of 5\% for all of the pairs solvent+solute. The final $\lambda$ set for all the pairs was found using the cumulative probability distribution (Eq. \eqref{eqn:cumfun}). The probability distribution for the hexane(solvent)+benzene(solute) pair can be seen in \figref{fig:optimized_cdf}. From now on we are going to use the terminology solvent+solute. The optimized values of $\lambda$ and $\eta$ for this pair and all the other pairs are available in Tables \ref{tbl:lambdahex} to \ref{tbl:lambdaco2}. By observing the coupling parameters found for all the pairs, we can see that they are concentrated on the region with a steeper slope as it is expected in this method.
 \FloatBarrier
 \begin{figure}[h]
 	\centering
@@ -52,6 +29,11 @@ Our primary intention with this study is to assess the capability of the SAFT-$\
 	\caption{Cumulative probability used to obtain the optimized values of $\lambda 's$ for the pair hexane+benzene.}
 	\label{fig:optimized_cdf}
 \end{figure}
+
+%Simulations using these weights deviated
+%by an average of 5% from flat histogram occupancy
+%in states, with an average maximum deviation over all
+%simulations of less than 10%.
 
 \begin{table}[h]
 	\centering
