@@ -18,25 +18,25 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 15212 items from 5000.
+Reallocated field_info (elt_size=4) to 15281 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: thesis.bib
-I was expecting a `,' or a `}'---line 1148 of file thesis.bib
+I was expecting a `,' or a `}'---line 1157 of file thesis.bib
  :   
  :   address = {Dordrecht, NL}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1156 of file thesis.bib
+I was expecting a `,' or a `}'---line 1165 of file thesis.bib
  :   
  :   address = {Chichester, U.K.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1164 of file thesis.bib
+I was expecting a `,' or a `}'---line 1173 of file thesis.bib
  :   
  :   address = {Santa Barbara, U.S.A.}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1300 of file thesis.bib
+I was expecting a `,' or a `}'---line 1309 of file thesis.bib
  :  
  :  doi="10.1140/epjp/i2013-13010-8"
 (Error may have been on previous line)
@@ -70,45 +70,45 @@ while executing---line 2146 of file abntex2-alf.bst
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 148 entries,
+You've used 149 entries,
             6714 wiz_defined-function locations,
-            1992 strings with 36356 characters,
-and the built_in function-call counts, 139653 in all, are:
-= -- 9783
-> -- 5678
-< -- 403
-+ -- 2256
-- -- 1624
-* -- 10318
-:= -- 17342
-add.period$ -- 445
-call.type$ -- 149
-change.case$ -- 1888
-chr.to.int$ -- 570
-cite$ -- 144
-duplicate$ -- 7463
-empty$ -- 9047
-format.name$ -- 8379
-if$ -- 33214
+            1997 strings with 36532 characters,
+and the built_in function-call counts, 140551 in all, are:
+= -- 9852
+> -- 5711
+< -- 406
++ -- 2268
+- -- 1634
+* -- 10385
+:= -- 17455
+add.period$ -- 448
+call.type$ -- 150
+change.case$ -- 1899
+chr.to.int$ -- 574
+cite$ -- 145
+duplicate$ -- 7509
+empty$ -- 9108
+format.name$ -- 8426
+if$ -- 33425
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 2842
-newline$ -- 719
-num.names$ -- 720
-pop$ -- 3620
+missing$ -- 2860
+newline$ -- 724
+num.names$ -- 725
+pop$ -- 3643
 preamble$ -- 1
-purify$ -- 635
+purify$ -- 639
 quote$ -- 0
-skip$ -- 8281
+skip$ -- 8330
 stack$ -- 1
-substring$ -- 6062
-swap$ -- 4412
-text.length$ -- 261
+substring$ -- 6112
+swap$ -- 4437
+text.length$ -- 263
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1091
+while$ -- 1100
 width$ -- 0
-write$ -- 2299
+write$ -- 2315
 (There were 14 error messages)

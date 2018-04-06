@@ -583,10 +583,11 @@ According to \citeonline{lafitte2012}, Eq. \eqref{eqn:aringlafitte} needs an add
 a^{RING} =-\sum_{i=1}^{N_{c}} x_{i}\left (m_{s,i}-1+\chi_{i}\eta_{i} \right )\ln \left [g_{ii}^{Mie}(\sigma_{ii}) \right] ,
 \label{eqn:aringmuller}
 \end{equation}
-where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction of the atom i and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and on the geometry of the ring of each component i. For a value of $\chi=0$, Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. In addition, the equation corresponds to a system of hard sphere triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\chi$ for $m_{s}=3,m_{s}=4,m_{s}=5$, and $m_{s}=7$ with pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid with $\epsilon/\kappa_{b} = 250 K$, $\sigma = 3.0 \dot{A}$, $\lambda_{r} = 11$, and $\lambda_{r} = 6$. Values of $\chi$  for some of the geometry estimated in their article can be seen in \figref{ringqsi}.
+where $\eta_{i}=m_{s,i}\rho_{i}\sigma_{ii}^{3}/6$ is the packing fraction of the atom i and $\chi_{i}$ is a parameter which depends on $m_{s,i}$ and the geometry of the ring of each component i. For a value of $\chi=0$, Eq. \eqref{eqn:aringmuller} is equal to Eq. \eqref{eqn:achain}. In addition, the equation corresponds to a system of hard sphere triangles when $\chi=1.3827$. \citeonline{muller2017} also calculated values of $\chi$ for $m_{s}=3,m_{s}=4,m_{s}=5$, and $m_{s}=7$ using a geometry formed by a system of equilateral triangles. In these calculations, they used pseudo-experimental data from molecular dynamics (MD) for a defined pure fluid with $\epsilon/\kappa_{b} = 250 K$, $\sigma = 3.0 \dot{A}$, $\lambda_{r} = 11$, and $\lambda_{r} = 6$. Values of $\chi$  for some of the geometry estimated in their article can be seen in \figref{ringqsi}.
+
 \begin{figure}[th]
 	\centering
-	\includegraphics[scale=0.5]{Figures/mullergeo.png}
+	\includegraphics[scale=0.5]{Figures/mullercomtrian}
 	\caption{Values for parameter $\chi$ according to the ring geometry. Adapted from \citeonline{muller2017}.}
 	\label{ringqsi}
 \end{figure}
@@ -609,7 +610,7 @@ d_{ij} =\frac{d_{ii}+d_{jj}}{2},
 \label{eqn:epsmix}
 \end{equation}
 
-The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule for chemically distinct compounds that can be fitted to experimental or molecular simulation data. This necessity of an additional parameter raises the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones employed by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  
+The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule. This parameter can be described as scaling factor to consider for the interactions among chemically distinct compounds, which are not explicitly accounted by the SAFT-VR Mie EoS. This necessity of an additional parameter raises the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones employed by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  
 
 
 \subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}\label{parsaft}
@@ -707,19 +708,34 @@ The relation between the equation above, $\sigma$ and the experimental density i
 \rho_{T_{r}=0.7}^{*} = \rho_{T_{r}=0.7}\sigma^{3}N_{av},   
 \label{eqn:sigmacorre}
 \end{equation}
-where $N_{av}$ is the Avogadro number. This corresponding states method has the advantage of only requiring critical data, which is available for a great range of fluids, and liquid density data. The parameters found with this strategy are available at an online database \cite{ervik2016}.     
+where $N_{av}$ is the Avogadro number. This corresponding states method has the advantage of only requiring critical data, which is available for a great range of fluids, and liquid density data. The parameters of a variety of compounds for this force field are available at a large online database available at: http://www.bottledsaft.org \cite{ervik2016}. Hence, here, we only expose the coarse-grained geometries and the sets of parameters for the compounds used in this work. They are available  at Tables \ref{tbl:geopara} and \ref{tbl:parameters}. The parameters for water were retrieved from \citeonline{lobanova2016}; for carbon dioxide, propane, and hexane from \citeonline{herdes2015}; for 1-octanol from \citeonline{ervik2016}; and for the aromatic compounds from   \citeonline{muller2017}.     
 
-The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is necessary to adjust the mixture behavior of chemically distinct components. Normally, it is estimated by minimizing the difference between experimental binary vapor-liquid equilibrium or interfacial tension data and the SAFT-VR Mie EoS output data \cite{muller2017,lobanova2016}. The objective function is similar to: 
-
-\begin{equation}
-\begin{aligned}
-F_{obj}= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
-\sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2 .
-\end{aligned}
-\label{eqn:fobjmix}
-\end{equation}
-
-However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the interfacial tension data. The strategy they followed was to carry out simulations in three values of $k_{ij}$ first and, after, refine the parameter until a value in good agreement with the experimental data is found. We decided to follow this strategy in our estimations of $k_{ij}$ since the estimation with the EoS did not provide satisfactory results for the hydration free energy calculations.  
+\begin{table}[h]
+	\caption{Coarse-grained geometries of the substances used in this work for the SAFT-$\gamma$ Mie.}
+	\centering
+	\label{tbl:geopara}
+	\begin{tabular}{ccc}
+		
+		\toprule \toprule
+		Molecule &  Structure &  Coarse grained structure  \\
+		\midrule \midrule
+		Water &
+		\adjustimage{height=1.2cm,valign=m}{Figures/waterg} &
+		\adjustimage{height=1cm,valign=m}{Figures/onebead}  \\
+		Carbon dioxide &
+		\adjustimage{height=0.8cm,valign=m}{Figures/co2g} &
+		\adjustimage{height=1cm,valign=m}{Figures/twobeads}  \\
+		Propane & \adjustimage{height=1.5cm,valign=m}{Figures/propg}  & \adjustimage{height=1cm,valign=m}{Figures/onebead} \\
+		Hexane & \adjustimage{height=1.5cm,valign=m}{Figures/hexg}  & \adjustimage{height=1cm,valign=m}{Figures/twobeads} \\
+		1-octanol & \adjustimage{height=1.5cm,valign=m}{Figures/octg}  & \adjustimage{height=1cm,valign=m}{Figures/threebeads} \\
+		Toluene & \adjustimage{height=2.5cm,valign=m}{Figures/tolg}  & \adjustimage{height=2cm,valign=m}{Figures/fe3} \\
+		Benzene & \adjustimage{height=2.5cm,valign=m}{Figures/benzg}  & \adjustimage{height=2cm,valign=m}{Figures/fe3} \\
+		Pyrene & \adjustimage{height=2.5cm,valign=m}{Figures/pyre}  & \adjustimage{height=2cm,valign=m}{Figures/pyrecg} \\
+		Anthracene & \adjustimage{height=2cm,valign=m}{Figures/ant}  & \adjustimage{height=2cm,valign=m}{Figures/fen5} \\
+		\bottomrule \bottomrule
+		
+	\end{tabular}
+\end{table}
 
 \begin{table}[h]
 	\centering
@@ -743,32 +759,20 @@ However, \citeonline{ervik20162} used molecular simulation results to fit the pa
 	\end{tabular}
 	
 \end{table}
+\FloatBarrier
+The binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix} is normally estimated by minimizing the difference between experimental binary vapor-liquid equilibrium or interfacial tension data and the SAFT-VR Mie EoS output data \cite{muller2017,lobanova2016}. The objective function is similar to: 
 
-\begin{table}
-	\caption{Coarse-grained geometries.}
-	\centering
-\begin{tabular}{ccc}
+\begin{equation}
+\begin{aligned}
+F_{obj}= \sum_{k=1}^{N_{p}} \left(\frac{P_{v}^{SAFT}(T_{k},x,k_{ij})-P_{v}^{exp}(T_{k},x)}{P_{v}^{exp}(T_{k},x)} \right)^2 +\\
+\sum_{k=1}^{N_{p}} \left(\frac{\rho_{l}^{SAFT}(T_{k},x,k_{ij})-\rho_{l}^{exp}(T_{i})}{\rho_{l}^{exp}(T_{i})} \right)^2 .
+\end{aligned}
+\label{eqn:fobjmix}
+\end{equation}
 
-	\toprule
-	 Molecule &  Structure &  Coarse grained structure  \\
-	\midrule
-	Water &
-	\adjustimage{height=1.2cm,valign=m}{Figures/waterg} &
-    \adjustimage{height=1cm,valign=m}{Figures/onebead}  \\
-	Carbon dioxide &
-     \adjustimage{height=0.8cm,valign=m}{Figures/co2g} &
-	\adjustimage{height=1cm,valign=m}{Figures/twobeads}  \\
-	Propane & \adjustimage{height=1.5cm,valign=m}{Figures/propg}  & \adjustimage{height=1cm,valign=m}{Figures/onebead} \\
-	Hexane & \adjustimage{height=1.5cm,valign=m}{Figures/hexg}  & \adjustimage{height=1cm,valign=m}{Figures/twobeads} \\
-	1-octanol & \adjustimage{height=1.5cm,valign=m}{Figures/octg}  & \adjustimage{height=1cm,valign=m}{Figures/threebeads} \\
-	Toluene & \adjustimage{height=2.5cm,valign=m}{Figures/tolg}  & \adjustimage{height=2cm,valign=m}{Figures/fe3} \\
-	Benzene & \adjustimage{height=2.5cm,valign=m}{Figures/benzg}  & \adjustimage{height=2cm,valign=m}{Figures/fe3} \\
-	Pyrene & \adjustimage{height=2.5cm,valign=m}{Figures/pyre}  & \adjustimage{height=2cm,valign=m}{Figures/pyrecg} \\
-	Anthracene & \adjustimage{height=2cm,valign=m}{Figures/ant}  & \adjustimage{height=2cm,valign=m}{Figures/fen5} \\
-	    \bottomrule
-	    
-\end{tabular}
-\end{table}
+However, \citeonline{ervik20162} used molecular simulation results to fit the parameter to the interfacial tension data. The strategy they followed was to carry out simulations in three values of $k_{ij}$ first and, after, refine the parameter until a value in good agreement with the experimental data is found. We decided to follow this strategy in our estimations of $k_{ij}$ since the estimation with the EoS did not provide satisfactory results for the hydration free energy calculations.  
+
+
 \section{Solvation Free Energy Calculations Based on Molecular Dynamics}
 % background topics
 
@@ -890,7 +894,7 @@ Using this generalized softcore potential, we plotted the relation between the v
 	\subfloat[][]{%
 		\label{fig:ex3-b}%
 		\includegraphics[height=5.9cm]{Figures/soft15}} \\
-	\vspace{-1cm}
+
 	\subfloat[][]{%
 		\label{fig:ex3-c}%
 		\includegraphics[height=5.9cm]{Figures/soft20}}%
@@ -898,7 +902,7 @@ Using this generalized softcore potential, we plotted the relation between the v
 	\subfloat[][]{%
 		\label{fig:ex3-d}%
 		\includegraphics[height=5.9cm]{Figures/soft30}}%
-	\caption[A set of four subfigures.]{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}$ is equal to
+	\caption[Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$.]{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}$ is equal to
 		8 \subref{fig:ex3-a};
 		15 \subref{fig:ex3-b};
 		20 \subref{fig:ex3-c}; and,
