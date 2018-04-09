@@ -717,6 +717,12 @@ Accessed: 2017-03-10.}
   hydrocarbons: Source attribution, emission factors and regulation.
 \emph{Atmospheric Environment}, v.~42, p. 2895 -- 2921, 2008.}
 
+\bibitem[Riniker and Gunsteren 2011]{doi:10.1063/1.3553378}
+\abntrefinfo{Riniker and Gunsteren}{RINIKER; GUNSTEREN}{2011}
+{RINIKER, S.; GUNSTEREN, W.~F. van. A simple, efficient polarizable
+  coarse-grained water model for molecular dynamics simulations.
+\emph{The Journal of Chemical Physics}, v.~134, n.~8, p. 084110, 2011.}
+
 \bibitem[Rizzo \textit{et al.} 2006]{doi:10.1021/ct050097l}
 \abntrefinfo{Rizzo \textit{et al.}}{RIZZO \textit{et al.}}{2006}
 {RIZZO, R.~C.; AYNECHI, T.; CASE, D.~A.; KUNTZ, I.~D. Estimation of absolute
@@ -748,6 +754,13 @@ Accessed: 2017-03-10.}
   environmentally relevant chemicals predicted from the mobile order and
   disorder (mod) thermodynamics.
 \emph{Chemosphere}, v.~40, p. 457 -- 512, 2000.}
+
+\bibitem[Ruiter \textit{et al.}]{doi:10.1002/jcc.23229}
+\abntrefinfo{Ruiter \textit{et al.}}{RUITER \textit{et al.}}{}
+{RUITER, A. de; BORESCH, S.; OOSTENBRINK, C. Comparison of thermodynamic
+  integration and bennett acceptance ratio for calculating relative
+  protein‐ligand binding free energies.
+\emph{Journal of Computational Chemistry}, v.~34, n.~12, p. 1024--1034.}
 
 \bibitem[Sangster 1997]{sangster}
 \abntrefinfo{Sangster}{SANGSTER}{1997}

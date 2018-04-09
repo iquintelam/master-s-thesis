@@ -14,13 +14,18 @@ We implemented the two parameterization strategies for molecules with aromatic r
 	\label{fig:fen5}
 \end{figure}
 
-The minimization was done using the Particle Swarm Optimization (PSO)  method \cite{pso} with the following objective function:
+The minimization was done using the Particle Swarm Optimization (PSO)  method \cite{pso} with 50 particles and 50 interactions. The objective function used was equal to
 \begin{equation}
-\min\limits_{\sigma,\epsilon,\lambda_{r}} F_{obj} = \sum_{i=1}^{N_{p}} \left[\frac{P_{v}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-P_{v}^{exp}(T_{i})}{P_{v}^{exp}(T_{i})} \right]^2 .
+ F_{obj} = \sum_{i=1}^{N_{p}} \left[\frac{P_{v}^{SAFT}(T_{i},\sigma,\epsilon,\lambda_{r})-P_{v}^{exp}(T_{i})}{P_{v}^{exp}(T_{i})} \right]^2 .
 \label{eqn:fobjm}
 \end{equation}
 
-Here, $P_{v}^{exp}$ is the experimental vapor pressure and $P_{v}^{SAFT}$ is the vapor pressure obtained with the SAFT-VR Mie EoS. We used the routine proposed by  \citeonline{smithbook} to calculate the bubble point with the EoS. The parameters ($\sigma$, $\epsilon $, and $\lambda _{r}$) from the minimization of the objective function in Eq. \eqref{eqn:fobjm} are the final force field parameters used in molecular simulations. 
+Here, $P_{v}^{exp}$ is the experimental vapor pressure and $P_{v}^{SAFT}$ is the vapor pressure obtained with the SAFT-VR Mie EoS. According to the fundamental thermodynamic equation, the vapor pressure is given by
+\begin{equation}
+P_{v}^{SAFT} =  - \frac{\partial A^{SAFT}}{\partial V}
+\end{equation}
+
+This derivative and all the derivatives required to calculate $A^{SAFT}$, such as the ones in Eqs. \ref{eq:g1saft} and  \ref{eq:g2saft}, were obtained numerically with the finite difference method. The routine used to calculate the bubble point with the EoS was the one proposed by  \citeonline{smithbook}. The parameters ($\sigma$, $\epsilon $, and $\lambda _{r}$) from the minimization of the objective function in Eq. \eqref{eqn:fobjm} are the final force field parameters used in molecular simulations. 
 
 The parameterization with the ring equation the \citeonline{lafitte2012} was carried out with $m_{s}=3$, so that every bead would represent one aromatic ring, as depicted in Figure \ref{fig:fen3}.
 

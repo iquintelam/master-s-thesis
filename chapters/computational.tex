@@ -4,6 +4,8 @@
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 %\doublespacing
 
+At this dissertation, our primary goal was to obtain solvation free energy estimates of asphaltene-like molecules using molecular dynamics. In order to that, we used a variety of computational methods including the molecular dynamics itself, the coarse-grained SAFT-$\gamma$ Mie force field, the solvation free energies calculations, the expanded ensemble method, and MBAR method, first presented in the preceding Chapter. These aforementioned methods are then presented and explained here.   
+
 \section{Molecular Dynamics}
 
 \subsection{Background and Formulation}
@@ -63,19 +65,21 @@ where $\kappa_{b}$ is the Boltzmann constant. With these equations, we can deriv
 
 \begin{equation}
 \begin{aligned}
-dS = \frac{1}{T} dE + \frac{P}{T} dV + \frac{\mu}{T} dN,
+dS = \frac{1}{T} dE + \frac{P}{T} dV - \frac{\mu}{T} dN,
 \end{aligned}
 \end{equation}
 
 \begin{equation}
+\label{eq:fteq}
 \begin{aligned}
-dE = T dS + P dV + \mu dN .
+dE =  T dS - P dV + \mu dN .
 \end{aligned}
 \end{equation}
 
 As said above, the microcanonical ensemble  has  N, V, and E as its control variables. Other ensembles can also be defined according to the macroscopic properties held constant.  In the canonical ensemble,  N, V, and the temperature (T) are held constant and  N, pressure (P), and T are held constant in the isothermal-isobaric ensemble. Other ensembles are the isoenthalpic-isobaric (constant number of particles, pressure, and enthalpy) and the grand canonical (constant chemical potential, volume, and temperature) ones. A variety of physical properties is measured at the conditions of the isothermal-isobaric ensemble such as enthalpies, entropies, redox potential, equilibrium constants, and free energies, what makes this ensemble one of the most important \cite{tuckerman}. This is also the ensemble in which solvation free energy simulations are carried out at this work, hence we are going to briefly talk about it. This ensemble is obtained from a Legendre transformation on the canonical ensemble. The Helmholtz free energy $A(N,V,T)$ becomes the Gibbs free energy $G(N,P,T)$ by transforming the volume into the external pressure:
 \begin{equation}
 G(N,P,T) = A(N,V,T) + PV,
+\label{eq:gcm}
 \end{equation}
 where $V = V(P)$. The Gibbs free energy is related to its partition function $\Delta (N,P,T)$ by:
 
@@ -90,6 +94,13 @@ where $\Delta (N,P,T)$ is given by:
 \begin{equation}
 \begin{aligned}
 \Delta (N,P,T) = \frac{1}{V_{0}} \int_{0}^{\infty} dV \int d p^{N} d r^{N} \exp \left[ -\beta \left( \mathcal{H} (r^{N},p{N}) + PV(r^{N}) \right) \right] .
+\end{aligned}
+\end{equation}
+
+The Helmholtz free energy is then given by:
+\begin{equation}
+\begin{aligned}
+A(N,V,T) = -\kappa_{b}T \ln Q(N,V,T).
 \end{aligned}
 \end{equation}
 
@@ -108,10 +119,10 @@ From these relations and a differential change in G, we can obtain the chemical 
 \mu = \left (\frac{\partial G}{\partial N} \right)_{P,T} = - \kappa_{b} T \left(\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,T},
 \end{equation}  
 \begin{equation}
-\langle V \rangle= \left (\frac{\partial G}{\partial P} \right)_{N,T}= \kappa_{b} T \left (\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,P},
+\langle V \rangle= - \left (\frac{\partial G}{\partial P} \right)_{N,T}= \kappa_{b} T \left (\frac{\partial ln \Delta (N,P,T)}{\partial N} \right)_{N,P},
 \end{equation}
 \begin{equation}
-S = \left (\frac{\partial G}{\partial T} \right)_{N,P}= \kappa_{b}  \left[ln Q(N,V,T)+ T \left (\frac{\partial ln Q (N,V,T)}{\partial T} \right)_{V,N}\right] .
+S = \left (\frac{\partial G}{\partial T} \right)_{N,P}= - \kappa_{b}  \left[ln Q(N,V,T)+ T \left (\frac{\partial ln Q (N,V,T)}{\partial T} \right)_{V,N}\right] .
 \end{equation}
 
 \subsection{Thermostats and Barostats}
@@ -496,12 +507,12 @@ U_{Mie}(r) = \epsilon\frac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda
 \end{equation}
 where $\lambda_r$ is the repulsive exponent and $\lambda_a$ is the attractive exponent. The SAFT-VR Mie equation uses the \citeonline{bh1976} high perturbation expansion of the Helmholtz free energy up to the third order and an improved expression for the  radial distribution function (RDF) of Mie monomers at contact to obtain an equation able to give an accurate theoretical description of the vapor-liquid equilibrium and second derivative properties \cite{lafitte2013}. For a non-associating fluid, the Helmholtz free energy is
 \begin{equation}
-\frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{CHAIN}, 
+\frac{A^{SAFT}}{N\kappa_{b}T} = a^{SAFT} = a^{IDEAL} + a^{MONO} + a^{CHAIN}, 
 \label{eqn:miehelm}
 \end{equation}
 or, depending on the molecule type, the free energy can be equal to
 \begin{equation}
-\frac{A}{N\kappa_{b}T} = a = a^{IDEAL} + a^{MONO} + a^{RING}.
+\frac{A^{SAFT}}{N\kappa_{b}T} = a^{SAFT} = a^{IDEAL} + a^{MONO} + a^{RING}.
 \label{eqn:miehelmring}
 \end{equation}
 
@@ -610,7 +621,7 @@ d_{ij} =\frac{d_{ii}+d_{jj}}{2},
 \label{eqn:epsmix}
 \end{equation}
 
-The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule. This parameter can be described as scaling factor to consider for the interactions among chemically distinct compounds, which are not explicitly accounted by the SAFT-VR Mie EoS. This necessity of an additional parameter raises the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones employed by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  
+The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule. This parameter can be described as scaling factor to consider for the interactions among chemically distinct compounds, which are not explicitly accounted by the SAFT-VR Mie EoS. This necessity of an additional parameter raises the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones employed by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  Having the dimensionless Helmholtz free energy exposed in the equations above, we can now calculate the derivative properties with the fundamental thermodynamic equation (Eq. \ref{eq:fteq}) using the EoS. The results provided by this calculation are then used to estimate the parameters of the SAFT-$\gamma$ Mie force field. 
 
 
 \subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}\label{parsaft}
@@ -710,8 +721,8 @@ The relation between the equation above, $\sigma$ and the experimental density i
 \end{equation}
 where $N_{av}$ is the Avogadro number. This corresponding states method has the advantage of only requiring critical data, which is available for a great range of fluids, and liquid density data. The parameters of a variety of compounds for this force field are available at a large online database available at: http://www.bottledsaft.org \cite{ervik2016}. Hence, here, we only expose the coarse-grained geometries and the sets of parameters for the compounds used in this work. They are available  at Tables \ref{tbl:geopara} and \ref{tbl:parameters}. The parameters for water were retrieved from \citeonline{lobanova2016}; for carbon dioxide, propane, and hexane from \citeonline{herdes2015}; for 1-octanol from \citeonline{ervik2016}; and for the aromatic compounds from   \citeonline{muller2017}.     
 
-\begin{table}[h]
-	\caption{Coarse-grained geometries of the substances used in this work for the SAFT-$\gamma$ Mie.}
+\begin{table}
+	\caption{Coarse-grained geometries of the substances used in this work for the SAFT-$\gamma$ Mie force field.}
 	\centering
 	\label{tbl:geopara}
 	\begin{tabular}{ccc}
@@ -737,7 +748,7 @@ where $N_{av}$ is the Avogadro number. This corresponding states method has the 
 	\end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}
 	\centering
 	\caption{Parameters of the SAFT-$\gamma$ Mie force field for each substance used in this work.}
 	\label{tbl:parameters}

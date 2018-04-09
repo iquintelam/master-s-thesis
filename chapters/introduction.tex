@@ -11,11 +11,11 @@ These coarse-grained models are generally able to reproduce experimental free en
 
 We selected the solvents and solutes in our free energy calculations with the intention of testing the force field with standard sets used as a benchmark in solvation free energy calculations and with polycyclic aromatic substances used as models to asphaltenes. Asphaltenes are complicated to characterize by determining their composition on a molecular basis, but the literature broadly accepts that they can be described as a fraction of crude oil soluble in toluene and insoluble in n-alkanes (pentane, hexane, heptane) \cite{SJOBLOM2003399}. They have motivated many studies with interest in developing models for their structure and behavior due to all the problems they can cause during their transportation and refining such as precipitation during the oil processing \cite{SJOBLOM20151}. This precipitation issue is a recurrent problem due to the growing market of the production of crude oil in deep waters, whose conditions are favorable to precipitation \cite{AIC:AIC10243}. As an example, asphaltene precipitation due to pressure drop can clog oil production equipment and cause a growth in the cost of production \cite{doi:10.1021/ef010047l}. All these factors make the understanding of the behavior of asphaltenes in different chemical and physical environments relevant to the oil industry. 
 
-As said in the previous paragraph, asphaltene characterization still faces some issues. Hence, we choose to use polycyclic aromatic hydrocarbons (PAHs), which have well-defined characteristics, to initially test the efficiency of the SAFT-$\gamma$ Mie force field in describing the solvation phenomenon. PAHs are a group of organic compounds that have fused rings, carbon and hydrogen in their structure \cite{RAVINDRA20082895}. The ones utilized in this work were phenanthrene, anthracene, and pyrene since they share similarities with asphaltenes regarding their solubility. In this context,  we selected compounds that are used to characterize asphaltenes (toluene, hexane) as solvents in our free energy calculations. We also tested the anti-solvent/solvent effect of carbon dioxide due to its influence in asphaltene precipitation during the oil processing \cite{SOROUSH2014405}.
+As said in the previous paragraph, asphaltene characterization still faces some issues. Hence, we choose to use polycyclic aromatic hydrocarbons (PAHs), which have well-defined characteristics, to initially test the efficiency of the SAFT-$\gamma$ Mie force field in describing the solvation phenomenon. PAHs are a group of organic compounds that have fused rings, carbon and hydrogen in their structure \cite{RAVINDRA20082895}, which are characteristic shared with asphaltenes. The ones utilized in this work were phenanthrene, anthracene, and pyrene since they share similarities with asphaltenes regarding their solubility. In this context,  we selected compounds that are used to characterize asphaltenes (toluene, hexane) as solvents in our free energy calculations. We also tested the anti-solvent/solvent effect of carbon dioxide due to its influence in asphaltene precipitation during the oil processing \cite{SOROUSH2014405}.
 
 \chapter{Objectives} % Main chapter title
 
-The general objective of this dissertation is to acquire good estimates of the solvation free energies of PAHs, which can represent asphaltenes, using the SAFT-$\gamma$ Mie for ce field. By doing that, we intend to provide information about the solvation phenomenon of extremely relevant compound for the oil industry and improve this force field. Additionally, the success of the description of small asphaltene-like compounds by this force field can then open up the possibility of obtaining satisfactory results for more complex asphaltene models with a force field with a low computational cost.
+The general objective of this dissertation is to acquire reasonable estimates of the solvation free energies of PAHs, which can represent asphaltenes, using molecular dynamics simulations with the SAFT-$\gamma$ Mie force field. By doing that, we intend to provide information about the solvation phenomenon of an extremely important compound for the oil industry and improve this force field. Additionally, the success of the description of small asphaltene-like compounds by this force field can then open up the possibility of obtaining satisfactory results for more complex asphaltene models with a force field with a low computational cost.
 
 The specific objectives are to :
 
@@ -24,18 +24,6 @@ The specific objectives are to :
 	\item[$\bullet$] Estimate the binary interaction parameter required by the SAFT-$\gamma$ Mie force field for aqueous mixtures.
 	\item[$\bullet$] Optimize the parameters necessary to carry out the expanded ensemble simulation.
 	\item[$\bullet$] Carry out expanded ensemble simulation to obtain the potential energies using  a thermodynamic path and a softcore model for the potential energy function.
-	\item[$\bullet$] Calculate the solvation free energies using potential energies obtained with molecular dynamics simulations with the Multistate Bennett Acceptance (MBAR) method.
-	\item[$\bullet$] Calculate the partition coefficients for some systems studied here using the calculated solvation free energies.
+	\item[$\bullet$] Calculate the solvation free energies using the potential energies obtained with molecular dynamics simulations with the Multistate Bennett Acceptance (MBAR) method.
+	\item[$\bullet$] Calculate the partition coefficients for some systems studied here using the estimated solvation free energies.
 \end{description}
-
-
-
-
-
-% With these calculations of solvation free energies with the SAFT-$\gamma$ Mie model, we intend to improve this force field and provide satisfactory solvation free energy estimates of PAHs with a coarse-grained model. The success of the description of small asphaltene-like compounds by this force field can then open up the possibility of obtaining satisfactory results for more complex asphaltene models with a force field with a low
-
-%		\item Obter boas estimativas de $\Delta G_{solv}$ de PAHs como um modelo coarse-grained. 
-%		\item Melhorar o campo de força.
-%		\item Modelagem de modelos de asfaltenos mais complexos.
-%		\item Aumentar a escala das simulações.
-
