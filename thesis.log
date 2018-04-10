@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  9 APR 2018 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.22)  9 APR 2018 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,10 +23,8 @@ ment class
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ifetex/ifetex.sty
-Package: ifetex 2011/12/15 v1.2 ifetex
+Class memoir Info: An `ifetex' package is being emulated on input line 265.
 
-(/usr/share/texlive/texmf-dist/tex/plain/ifetex/ifetex.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -316,6 +314,7 @@ Package delarray [2008/07/23] emulated by memoir.
 Package enumerate [2008/07/23] emulated by memoir.
 Package epigraph [2008/07/23] emulated by memoir.
 Package ifmtarg [2008/07/23] emulated by memoir.
+Package ifetex [2008/07/23] emulated by memoir.
 Package index [2008/07/23] emulated by memoir.
 Package makeidx [2008/07/23] emulated by memoir.
 Package moreverb [2008/07/23] emulated by memoir.
@@ -1426,7 +1425,7 @@ l.20
                    \relax 
 l.28 T
       he level of coarse-graining also needs to be established. The decision...
-[5] <Figures/multiscale.png, id=407, 1031.855pt x 717.68124pt>
+[5] <Figures/multiscale.png, id=408, 1031.855pt x 717.68124pt>
 File: Figures/multiscale.png Graphic file (type png)
 
 <use Figures/multiscale.png>
@@ -1446,7 +1445,7 @@ l.43
 .8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 
+l.62 
       [8]pdfTeX warning (ext4): destination with the same identifier (name{page
 .9}) has been already used, duplicate ignored
 <to be read again> 
@@ -1456,8 +1455,8 @@ l.69
 .10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 \end{equation}
-                     [10]
+l.112 
+       [10]
 
 Package hyperref Warning: Suppressing empty link on input line 120.
 
@@ -1477,7 +1476,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175 \end{equation}
+l.168 \end{equation}
                      [12] [13]) [14]
 \openout2 = `chapters/computational.aux'.
 
@@ -1695,42 +1694,42 @@ Package pdftex.def Info: Figures/linear8.png used on input line 872.
 <Figures/soft8.png, id=1162, 539.1342pt x 401.0985pt>
 File: Figures/soft8.png Graphic file (type png)
  <use Figures/soft8.png>
-Package pdftex.def Info: Figures/soft8.png used on input line 903.
+Package pdftex.def Info: Figures/soft8.png used on input line 901.
 (pdftex.def)             Requested size: 225.63684pt x 167.87108pt.
 
 <Figures/soft15.png, id=1163, 539.1342pt x 401.0985pt>
 File: Figures/soft15.png Graphic file (type png)
 
 <use Figures/soft15.png>
-Package pdftex.def Info: Figures/soft15.png used on input line 907.
+Package pdftex.def Info: Figures/soft15.png used on input line 905.
 (pdftex.def)             Requested size: 225.63684pt x 167.87108pt.
 
 <Figures/soft20.png, id=1164, 539.1342pt x 401.0985pt>
 File: Figures/soft20.png Graphic file (type png)
 
 <use Figures/soft20.png>
-Package pdftex.def Info: Figures/soft20.png used on input line 911.
+Package pdftex.def Info: Figures/soft20.png used on input line 909.
 (pdftex.def)             Requested size: 225.63684pt x 167.87108pt.
 
 <Figures/soft30.png, id=1165, 539.1342pt x 401.0985pt>
 File: Figures/soft30.png Graphic file (type png)
 
 <use Figures/soft30.png>
-Package pdftex.def Info: Figures/soft30.png used on input line 915.
+Package pdftex.def Info: Figures/soft30.png used on input line 913.
 (pdftex.def)             Requested size: 225.63684pt x 167.87108pt.
  [42 <./Figures/linear8.png>] [43 <./Figures/soft8.png> <./Figures/soft15.png> 
 <./Figures/soft20.png> <./Figures/soft30.png>] [44]
 [45] [46]
 Package epstopdf Info: Source file: <Figures/optimized_cdfexeample.eps>
-(epstopdf)                    date: 2018-03-01 16:46:03
+(epstopdf)                    date: 2018-04-07 08:59:35
 (epstopdf)                    size: 23164 bytes
 (epstopdf)             Output file: <Figures/optimized_cdfexeample-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2018-03-01 16:48:50
+(epstopdf)                    date: 2018-04-07 08:59:35
 (epstopdf)                    size: 16787 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/optimized_cdfexeam
 ple-eps-converted-to.pdf Figures/optimized_cdfexeample.eps>
-(epstopdf)             \includegraphics on input line 1025.
+(epstopdf)             \includegraphics on input line 1023.
 Package epstopdf Info: Output file is already uptodate.
 
 <Figures/optimized_cdfexeample-eps-converted-to.pdf, id=1282, 512.91624pt x 400
@@ -1739,7 +1738,7 @@ File: Figures/optimized_cdfexeample-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Figures/optimized_cdfexeample-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/optimized_cdfexeample-eps-converted-to.pdf use
-d on input line 1025.
+d on input line 1023.
 (pdftex.def)             Requested size: 364.00139pt x 284.21988pt.
  [47 <./Figures/optimized_cdfexeample-eps-converted-to.pdf>] [48] [49] [50]) [5
 1]
@@ -1747,28 +1746,28 @@ d on input line 1025.
 
 
 (./chapters/methodology.tex
-<Figures/fe5cg.png, id=1406, 536.0025pt x 144.54pt>
+<Figures/fe5cg.png, id=1408, 536.0025pt x 144.54pt>
 File: Figures/fe5cg.png Graphic file (type png)
  <use Figures/fe5cg.png>
 Package pdftex.def Info: Figures/fe5cg.png used on input line 12.
-(pdftex.def)             Requested size: 341.25pt x 92.02226pt.
+(pdftex.def)             Requested size: 318.49861pt x 85.88657pt.
 
 [52
 
 
 
  <./Figures/fe5cg.png>]
-<Figures/fe3cg.png, id=1429, 516.93124pt x 149.55875pt>
+<Figures/fe3cg.png, id=1432, 516.93124pt x 149.55875pt>
 File: Figures/fe3cg.png Graphic file (type png)
 
 <use Figures/fe3cg.png>
 Package pdftex.def Info: Figures/fe3cg.png used on input line 34.
-(pdftex.def)             Requested size: 341.25pt x 98.73418pt.
+(pdftex.def)             Requested size: 318.49861pt x 92.15038pt.
  [53 <./Figures/fe3cg.png>] [54]) [55]
 \openout2 = `chapters/results.aux'.
 
 
-(./chapters/results.tex <Figures/ede.png, id=1538, 578.16pt x 433.62pt>
+(./chapters/results.tex <Figures/ede.png, id=1541, 578.16pt x 433.62pt>
 File: Figures/ede.png Graphic file (type png)
 
 <use Figures/ede.png>
@@ -1780,18 +1779,18 @@ Package pdftex.def Info: Figures/ede.png used on input line 26.
 
 ] [57 <./Figures/ede.png>]
 Package epstopdf Info: Source file: <Figures/optimized_cdf.eps>
-(epstopdf)                    date: 2018-01-29 16:03:33
+(epstopdf)                    date: 2018-04-07 08:59:35
 (epstopdf)                    size: 23169 bytes
 (epstopdf)             Output file: <Figures/optimized_cdf-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2018-01-29 16:16:08
+(epstopdf)                    date: 2018-04-07 08:59:35
 (epstopdf)                    size: 16790 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/optimized_cdf-eps-
 converted-to.pdf Figures/optimized_cdf.eps>
 (epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/optimized_cdf-eps-converted-to.pdf, id=1557, 512.91624pt x 400.49625pt
+<Figures/optimized_cdf-eps-converted-to.pdf, id=1561, 512.91624pt x 400.49625pt
 >
 File: Figures/optimized_cdf-eps-converted-to.pdf Graphic file (type pdf)
  <use Figures/optimized_cdf-eps-converted-to.pdf>
@@ -1812,7 +1811,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [58 <./Figures/optimized_cdf-eps-converted-to.pdf>] [59] [60]
-<Figures/ohex_benz.pdf, id=1614, 420.06938pt x 433.62pt>
+<Figures/ohex_benz.pdf, id=1617, 420.06938pt x 433.62pt>
 File: Figures/ohex_benz.pdf Graphic file (type pdf)
 
 <use Figures/ohex_benz.pdf>
@@ -1825,26 +1824,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [61
 
 ] [62 <./Figures/ohex_benz.pdf>]
-<Figures/hex.png, id=1664, 462.528pt x 346.896pt>
+<Figures/hex.png, id=1667, 462.528pt x 346.896pt>
 File: Figures/hex.png Graphic file (type png)
  <use Figures/hex.png>
 Package pdftex.def Info: Figures/hex.png used on input line 198.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-<Figures/oct.png, id=1665, 462.528pt x 346.896pt>
+<Figures/oct.png, id=1668, 462.528pt x 346.896pt>
 File: Figures/oct.png Graphic file (type png)
  <use Figures/oct.png>
 Package pdftex.def Info: Figures/oct.png used on input line 205.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
 
-[63 <./Figures/hex.png>] <Figures/tol.png, id=1672, 462.528pt x 346.896pt>
+[63 <./Figures/hex.png>] <Figures/tol.png, id=1675, 462.528pt x 346.896pt>
 File: Figures/tol.png Graphic file (type png)
 
 <use Figures/tol.png>
 Package pdftex.def Info: Figures/tol.png used on input line 212.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
  [64 <./Figures/oct.png> <./Figures/tol.png>]
-<Figures/tolco2.png, id=1684, 462.528pt x 346.896pt>
+<Figures/tolco2.png, id=1687, 462.528pt x 346.896pt>
 File: Figures/tolco2.png Graphic file (type png)
  <use Figures/tolco2.png>
 Package pdftex.def Info: Figures/tolco2.png used on input line 244.
@@ -1858,7 +1857,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [66 <./Figures/tolco2.png>] [67] [68] [69]
-<Figures/water.png, id=1742, 462.528pt x 346.896pt>
+<Figures/water.png, id=1745, 462.528pt x 346.896pt>
 File: Figures/water.png Graphic file (type png)
  <use Figures/water.png>
 Package pdftex.def Info: Figures/water.png used on input line 345.
@@ -1893,112 +1892,112 @@ Overfull \hbox (16.58601pt too wide) detected at line 158
 [] []
  []
 
-) [88] <Figures/ohex_pyr.pdf, id=1896, 420.06938pt x 433.62pt>
+) [88] <Figures/ohex_pyr.pdf, id=1899, 420.06938pt x 433.62pt>
 File: Figures/ohex_pyr.pdf Graphic file (type pdf)
 
 <use Figures/ohex_pyr.pdf>
 Package pdftex.def Info: Figures/ohex_pyr.pdf used on input line 555.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ohex_phen.pdf, id=1897, 420.06938pt x 433.62pt>
+<Figures/ohex_phen.pdf, id=1900, 420.06938pt x 433.62pt>
 File: Figures/ohex_phen.pdf Graphic file (type pdf)
 
 <use Figures/ohex_phen.pdf>
 Package pdftex.def Info: Figures/ohex_phen.pdf used on input line 557.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ooct_prop.pdf, id=1898, 420.06938pt x 433.62pt>
+<Figures/ooct_prop.pdf, id=1901, 420.06938pt x 433.62pt>
 File: Figures/ooct_prop.pdf Graphic file (type pdf)
 
 <use Figures/ooct_prop.pdf>
 Package pdftex.def Info: Figures/ooct_prop.pdf used on input line 559.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ooct_ant.pdf, id=1899, 504.08327pt x 520.34402pt>
+<Figures/ooct_ant.pdf, id=1902, 504.08327pt x 520.34402pt>
 File: Figures/ooct_ant.pdf Graphic file (type pdf)
 
 <use Figures/ooct_ant.pdf>
 Package pdftex.def Info: Figures/ooct_ant.pdf used on input line 561.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/ooct_phen.pdf, id=1900, 504.08327pt x 520.34402pt>
+<Figures/ooct_phen.pdf, id=1903, 504.08327pt x 520.34402pt>
 File: Figures/ooct_phen.pdf Graphic file (type pdf)
 
 <use Figures/ooct_phen.pdf>
 Package pdftex.def Info: Figures/ooct_phen.pdf used on input line 562.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/otol_pyr.pdf, id=1901, 420.06938pt x 433.62pt>
+<Figures/otol_pyr.pdf, id=1904, 420.06938pt x 433.62pt>
 File: Figures/otol_pyr.pdf Graphic file (type pdf)
 
 <use Figures/otol_pyr.pdf>
 Package pdftex.def Info: Figures/otol_pyr.pdf used on input line 564.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/otol_antr.pdf, id=1902, 420.06938pt x 433.62pt>
+<Figures/otol_antr.pdf, id=1905, 420.06938pt x 433.62pt>
 File: Figures/otol_antr.pdf Graphic file (type pdf)
 
 <use Figures/otol_antr.pdf>
 Package pdftex.def Info: Figures/otol_antr.pdf used on input line 573.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/otol_phen.pdf, id=1903, 420.06938pt x 433.62pt>
+<Figures/otol_phen.pdf, id=1906, 420.06938pt x 433.62pt>
 File: Figures/otol_phen.pdf Graphic file (type pdf)
 
 <use Figures/otol_phen.pdf>
 Package pdftex.def Info: Figures/otol_phen.pdf used on input line 575.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/owat_prop.pdf, id=1904, 420.06938pt x 433.62pt>
+<Figures/owat_prop.pdf, id=1907, 420.06938pt x 433.62pt>
 File: Figures/owat_prop.pdf Graphic file (type pdf)
 
 <use Figures/owat_prop.pdf>
 Package pdftex.def Info: Figures/owat_prop.pdf used on input line 577.
 (pdftex.def)             Requested size: 191.09917pt x 197.26433pt.
 
-<Figures/owat_benz.pdf, id=1905, 427.09563pt x 424.38548pt>
+<Figures/owat_benz.pdf, id=1908, 427.09563pt x 424.38548pt>
 File: Figures/owat_benz.pdf Graphic file (type pdf)
 
 <use Figures/owat_benz.pdf>
 Package pdftex.def Info: Figures/owat_benz.pdf used on input line 579.
 (pdftex.def)             Requested size: 191.09917pt x 189.8838pt.
 
-<Figures/owat_tol.pdf, id=1906, 427.09563pt x 424.38548pt>
+<Figures/owat_tol.pdf, id=1909, 427.09563pt x 424.38548pt>
 File: Figures/owat_tol.pdf Graphic file (type pdf)
 
 <use Figures/owat_tol.pdf>
 Package pdftex.def Info: Figures/owat_tol.pdf used on input line 581.
 (pdftex.def)             Requested size: 191.09917pt x 189.8838pt.
 
-<Figures/owat_phen.pdf, id=1907, 427.09563pt x 424.38548pt>
+<Figures/owat_phen.pdf, id=1910, 427.09563pt x 424.38548pt>
 File: Figures/owat_phen.pdf Graphic file (type pdf)
 
 <use Figures/owat_phen.pdf>
 Package pdftex.def Info: Figures/owat_phen.pdf used on input line 583.
 (pdftex.def)             Requested size: 191.09917pt x 189.8838pt.
 
-<Figures/otolco2_1.pdf, id=1908, 420.06938pt x 433.62pt>
+<Figures/otolco2_1.pdf, id=1911, 420.06938pt x 433.62pt>
 File: Figures/otolco2_1.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_1.pdf>
 Package pdftex.def Info: Figures/otolco2_1.pdf used on input line 590.
 (pdftex.def)             Requested size: 200.20111pt x 206.65976pt.
 
-<Figures/otolco2_2.pdf, id=1909, 420.06938pt x 433.62pt>
+<Figures/otolco2_2.pdf, id=1912, 420.06938pt x 433.62pt>
 File: Figures/otolco2_2.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_2.pdf>
 Package pdftex.def Info: Figures/otolco2_2.pdf used on input line 592.
 (pdftex.def)             Requested size: 200.20111pt x 206.65976pt.
 
-<Figures/otolco2_3.pdf, id=1910, 455.10025pt x 452.20944pt>
+<Figures/otolco2_3.pdf, id=1913, 455.10025pt x 452.20944pt>
 File: Figures/otolco2_3.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_3.pdf>
 Package pdftex.def Info: Figures/otolco2_3.pdf used on input line 594.
 (pdftex.def)             Requested size: 200.20111pt x 198.93137pt.
 
-<Figures/otolco2_4.pdf, id=1911, 448.07399pt x 462.52798pt>
+<Figures/otolco2_4.pdf, id=1914, 448.07399pt x 462.52798pt>
 File: Figures/otolco2_4.pdf Graphic file (type pdf)
 
 <use Figures/otolco2_4.pdf>
@@ -2088,13 +2087,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 641.
  ) 
 Here is how much of TeX's memory you used:
- 17944 strings out of 494929
- 273111 string characters out of 6180142
- 471571 words of memory out of 5000000
- 20029 multiletter control sequences out of 15000+600000
+ 17931 strings out of 494929
+ 272713 string characters out of 6180141
+ 471195 words of memory out of 5000000
+ 20022 multiletter control sequences out of 15000+600000
  66945 words of font info for 279 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 47i,17n,89p,2975b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,17n,89p,3026b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-
@@ -2112,10 +2111,10 @@ ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on thesis.pdf (105 pages, 2191000 bytes).
+Output written on thesis.pdf (105 pages, 2191258 bytes).
 PDF statistics:
- 2578 PDF objects out of 2984 (max. 8388607)
- 2097 compressed objects within 21 object streams
+ 2581 PDF objects out of 2984 (max. 8388607)
+ 2100 compressed objects within 21 object streams
  516 named destinations out of 1000 (max. 500000)
  43153 words of extra memory for PDF output out of 51595 (max. 10000000)
 

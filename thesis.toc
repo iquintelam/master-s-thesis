@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.4.2}Histograms}{11}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Free Energy Perturbation (FEP)}{11}{subsection.3.4.3}
 \contentsline {subsubsection}{\numberline {3.4.3.1}Bennett Acceptance Ratio (BAR)}{12}{subsubsection.3.4.3.1}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Multistate Bennett Acceptance Ratio (MBAR)}{13}{subsubsection.3.4.3.2}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Multistate Bennett Acceptance Ratio (MBAR)}{14}{subsubsection.3.4.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Computational Methods}}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Molecular Dynamics}{15}{section.4.1}
@@ -46,7 +46,7 @@
 \contentsline {section}{\numberline {6.1}Phenanthrene Parameterization}{56}{section.6.1}
 \contentsline {section}{\numberline {6.2}Solvation free energies}{57}{section.6.2}
 \contentsline {section}{\numberline {6.3}Hydration free energies}{66}{section.6.3}
-\contentsline {section}{\numberline {6.4}Partition Coefficients}{70}{section.6.4}
+\contentsline {section}{\numberline {6.4}Partition Coefficients}{71}{section.6.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclusions}}{72}{chapter.7}
 \vspace {\cftbeforechapterskip }

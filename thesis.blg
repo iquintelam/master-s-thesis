@@ -72,7 +72,7 @@ while executing---line 2146 of file abntex2-alf.bst
 +---------------------------------------------------------+
 You've used 151 entries,
             6714 wiz_defined-function locations,
-            2008 strings with 36920 characters,
+            2007 strings with 36895 characters,
 and the built_in function-call counts, 142401 in all, are:
 = -- 9982
 > -- 5787

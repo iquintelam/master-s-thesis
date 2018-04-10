@@ -286,7 +286,7 @@ Accessed: 2017-03-10.}
 {HERDES, C.; ERVIK, A.; MEJ\'IA, A.; M\"ULLER, E.~A. Prediction of the
   water/oil interfacial tension from molecular simulations using the
   coarse-grained saft-$\gamma$ mie force field.
-\emph{{F}luid {P}hase {E}quilib.}, 2017.}
+\emph{{F}luid {P}hase {E}quilibria}, 2017.}
 
 \bibitem[Herdes \textit{et al.} 2015]{herdes2015}
 \abntrefinfo{Herdes \textit{et al.}}{HERDES \textit{et al.}}{2015}
@@ -436,9 +436,9 @@ Accessed: 2017-03-10.}
   simulation of protein folding.
 \emph{Journal of Molecular Biology}, v.~104, p. 59--107, 1976.}
 
-\bibitem[Levitt and Warshe 1975]{levitt1975}
-\abntrefinfo{Levitt and Warshe}{LEVITT; WARSHE}{1975}
-{LEVITT, M.; WARSHE, A. Computer-simulation of protein folding.
+\bibitem[Levitt and Warshel 1975]{levitt1975}
+\abntrefinfo{Levitt and Warshel}{LEVITT; WARSHEL}{1975}
+{LEVITT, M.; WARSHEL, A. Computer-simulation of protein folding.
 \emph{Nature}, v.~253, p. 694–698, 1975.}
 
 \bibitem[Li and Greenfield 2011]{doi:10.1021/ef200507c}
