@@ -5,7 +5,7 @@ The term $a_{1}$  in Eq. \ref{eqn:aM} is the first-order mean-attractive energy 
 \begin{equation}
 a_{1} = \sum_{i=1}^{n} \sum_{j=1}^{n} x_{s,i} x_{s,j} a_{1,ij},
 \end{equation}	
-where $a_{1,ij}$ is equal to
+where $a_{1,ij}$ is the term corresponding to the pair interactions. It is equal to
 
 \begin{equation}
 \begin{aligned}
@@ -29,7 +29,7 @@ B_{ij}(\rho _{s}; \lambda _{ij}) =  2 \pi \rho _{s} d_{ij}^{3} \epsilon _{ij} \l
 \zeta _{x} = \frac{\pi \rho _{s}}{6} \sum_{i=1}^{n} \sum_{j=1}^{n} x_{s,i} x_{s,j} d_{ij}^{3} .
 \end{equation}
 
-Here, $I_{\lambda , ij}$ and $J_{\lambda , ij}$ are given by
+Here, $I_{\lambda , ij}$ and $J_{\lambda , ij}$ two terms that depend of the Mie potential. They are given by
 
 \begin{equation}
 I_{\lambda , ij} = \dfrac{ (x_{0,ij})^{3 - \lambda _{ij}} - 1}{\lambda _{ij} -3},
@@ -39,7 +39,7 @@ I_{\lambda , ij} = \dfrac{ (x_{0,ij})^{3 - \lambda _{ij}} - 1}{\lambda _{ij} -3}
 J_{\lambda , ij} = \dfrac{ (x_{0,ij})^{4 - \lambda _{ij}}(\lambda _{ij} -3) - (x_{0,ij})^{3 - \lambda _{ij}}(\lambda _{ij} -4) -1}{(\lambda _{ij} -3)(\lambda _{ij} -4)}.
 \end{equation}
 
-The perturbation terms $a_{1,ij}^{s}$ are obtained with the following equation:
+The terms $a_{1,ij}^{s}$ are the mean-attractive energies of a Sutherland potential of variable range and are obtained using a SAFT-VR treatment \cite{doi:10.1021/jp306442b}.  The resulting equation is:
 
 \begin{equation}
 a_{1,ij}^{S} (\rho _{s} ; \lambda _{ij}) = -2 \rho _{s} \left(\dfrac{\pi \epsilon _{ij} d_{ij}^{3}}{\lambda _{ij} -3}\right) \dfrac{1 - \zeta _{x}^{eff}(\lambda _{ij})/2}{[1- \zeta _{x}^{eff}(\lambda _{ij})]^3},
@@ -59,7 +59,7 @@ Here, the coefficients $c_{1}$, $c_{2}$, $c_{3}$ and $c_{4}$ are
 \end{aligned}
 \end{equation}
 
-The term $a_{2}$ in Eq. \ref{eqn:aM} has a similar formulation to $a_{1}$. It is given by
+The second-order fluctuation term, $a_{2}$, in Eq. \ref{eqn:aM} has a similar formulation to $a_{1}$. It is given by
 
 \begin{equation}
 a_{2} = \sum_{i=1}^{n} \sum_{j=1}^{n} x_{s,i} x_{s,j} a_{2,ij},
@@ -80,17 +80,17 @@ In Eq. \ref{eqn:a2ijap}, $K^{HS}$ is the isothermal compressibility of the mixtu
 \begin{equation}
 K^{HS} = \dfrac{(1-\zeta_{x})^{4}}{1+4 \zeta_{x}+4 \zeta_{x}^{2}+4 \zeta_{x}^{3}+\zeta_{x}^{4}},
 \end{equation}
-and $\chi_{ij}$ is given by
-
-\begin{equation}
-\chi_{ij} = f_{i}(\alpha_{ij}) \bar{\zeta}_{x} + f_{2}(\alpha_{ij}) \bar{\zeta}_{x}^{5} + f_{3}(\alpha_{ij}) \bar{\zeta}_{x}^{8},
-\end{equation}
-where $\bar{\zeta}_{x}$ is equal to
+where $\bar{\zeta}_{x}$ is the packing fraction for the mixture. It is equal to
 \begin{equation}
 \bar{\zeta}_{x} = \frac{\pi \rho _{s}}{6} \sum_{j=1}^{n} x_{s,i} x_{s,j} \sigma_{ij}^{3},
 \end{equation}
 
-and $\alpha_{ij}$ is equal to
+In Eq. \ref{eqn:a2ijap}, $\chi_{ij}$ is an empirical function of $\bar{\zeta}_{x}$. It is given by
+
+\begin{equation}
+\chi_{ij} = f_{i}(\alpha_{ij}) \bar{\zeta}_{x} + f_{2}(\alpha_{ij}) \bar{\zeta}_{x}^{5} + f_{3}(\alpha_{ij}) \bar{\zeta}_{x}^{8},
+\end{equation}
+where $\alpha_{ij}$ represents the equation for mixtures for the reduced attractive van der Waals constant of the Mie potential. It is given by
 
 \begin{equation}
 \alpha_{ij} = \mathcal{C}_{ij} \left(\frac{1}{\lambda_{a,ij}-3} - \frac{1}{\lambda_{r,ij}-3} \right).
