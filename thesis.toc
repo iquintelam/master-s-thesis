@@ -31,8 +31,8 @@
 \contentsline {subsection}{\numberline {3.1.6}Force Fields }{27}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}SAFT-$\gamma $ Mie Force Field}{30}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}SAFT-VR Mie Equation of State (EoS)}{30}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{34}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Solvation Free Energy Calculations Based on Molecular Dynamics}{39}{section.3.3}
+\contentsline {subsection}{\numberline {3.2.2}Parameter Estimation for the SAFT-$\gamma $ Mie Force Field}{33}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Solvation Free Energy Calculations Based on Molecular Dynamics}{38}{section.3.3}
 \contentsline {section}{\numberline {3.4}Expanded Ensemble Method}{45}{section.3.4}
 \contentsline {section}{\numberline {3.5}Multistate Bennett Acceptance Ratio (MBAR)}{49}{section.3.5}
 \contentsline {section}{\numberline {3.6}Gibbs Ensemble Monte Carlo (GEMC)}{51}{section.3.6}
@@ -60,11 +60,16 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
 \contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlap Matrices}}{91}{appendix.B}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANNEX \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Annex}}{95}{section*.50}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Work Published in Scientific Conference}}{95}{appendix.C}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Work Published in Scientific Conference}}{96}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{104}{appendix.D}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{105}{appendix.anexochapback.2}
