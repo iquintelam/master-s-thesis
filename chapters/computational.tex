@@ -4,7 +4,7 @@
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 %\doublespacing
 
-The primary goal of this study was to obtain solvation free energy estimates of asphaltene-like molecules using molecular dynamics. In order to that, we used a variety of computational methods including the molecular dynamics itself, the  SAFT-$\gamma$ Mie force field, solvation free energies calculations, the expanded ensemble method, and MBAR method, first presented in the preceding chapter. These aforementioned methods are then presented and explained here.   
+The primary goal of this study was to obtain solvation free energy estimates of asphaltene-like molecules using molecular dynamics. In order to that, we used a variety of computational methods including the molecular dynamics itself, the  parameterization of the SAFT-$\gamma$ Mie force field, the solvation free energy simulations, the expanded ensemble method, and the MBAR method, first explained in the preceding chapter. These aforementioned methods are then presented and explained here.   
 
 \section{Molecular Dynamics}
 
@@ -471,7 +471,7 @@ The other type of interactions, the intermolecular interactions or non-bonded in
 u_{qq}(r_{ij}) = \frac{q_{i}q_{j}}{4 \pi \epsilon _{0} r_{ij}} .
 \end{equation} 
 
-In the equation above, $\epsilon _{0}$ is the free space permittivity constant and $r_{ij}$ is the distance between atoms i and j. The interaction between the particle partial and the dipole ($u_{qp}$) and the dipole-dipole ($u_{pp}$) interactions can be represented by:  
+In the equation above, $\epsilon _{0}$ is the free space permittivity constant and $r_{ij}$ is the distance between atoms i and j. The interaction between the partial charges and the dipole moments of particles ($u_{qp}$) and the dipole-dipole ($u_{pp}$) interactions can be expressed as:  
 
 \begin{equation}
 u_{qp}(r_{ij}) = \frac{q}{r_{ij}^{3}}(p\bullet \vec{r}_{ij}).
@@ -632,7 +632,7 @@ d_{ij} =\frac{d_{ii}+d_{jj}}{2},
 \label{eqn:epsmix}
 \end{equation}
 
-The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule. This parameter can be described as scaling factor to consider for the interactions among chemically distinct compounds, which are not explicitly accounted by the SAFT-VR Mie EoS. This necessity of an additional parameter raises the question of the quality of these mixing rules and make us wonder if new mixing rules could be used to describe the mixing potential well parameter. Since these were the available mixing rules and the ones employed by other papers that used this force field, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  Having the dimensionless Helmholtz free energy exposed in the equations above, we can now calculate the derivative properties with the fundamental thermodynamic equation (Eq. \ref{eq:fteq}) using the EoS. The results provided by this calculation are then used to estimate the parameters of the SAFT-$\gamma$ Mie force field. 
+The $k_{ij}$ is a binary interaction parameter to correct the deviations of the mixing rule. This parameter can be described as scaling factor. It is necessary to account the interactions among chemically distinct compounds, which are not explicitly considered by the SAFT-VR Mie EoS. These mixing rules were the ones available in the literature and employed by other papers that used this force field. Therefore, we ended up using Eqs. \ref{eqn:sigmamix} to \ref{eqn:epsmix} in our study. However, the binary interaction parameter was only necessary for aqueous mixtures in our study.  Having the dimensionless Helmholtz free energy exposed in the equations above, we can now calculate the derivative properties with the fundamental thermodynamic equation (Eq. \ref{eq:fteq}) using the EoS. The output from these calculations are then used to estimate the parameters of the SAFT-$\gamma$ Mie force field. 
 
 
 \subsection{Parameter Estimation for the SAFT-$\gamma$ Mie Force Field}\label{parsaft}
@@ -724,7 +724,7 @@ The diameter parameter, however, is not obtained with the critical properties, b
 \label{eqn:denscorre}
 \end{equation}
 
-The coefficients $a_{i}, b_{i}, ...,f_{i}$ depend on the number of segments, and they are available in the literature for ring and chain molecules \cite{muller2017,mejia2014}. The relation between the Eq. \ref{eqn:denscorre}, $\sigma$ and the experimental density is given by
+The coefficients $a_{i}, b_{i}, ...,f_{i}$ depend on the number of segments, and they are available in the literature for ring and chain geometries \cite{muller2017,mejia2014}. The relation between the Eq. \ref{eqn:denscorre}, $\sigma$ and the experimental density is given by
 
 \begin{equation}
 \rho_{T_{r}=0.7}^{*} = \rho_{T_{r}=0.7}\sigma^{3}N_{av},   
@@ -755,7 +755,7 @@ where $N_{av}$ is the Avogadro number. This corresponding states method has the 
 	
 \end{table}
 
-When modeling mixtures with this force field, it can be necessary to estimate the binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix}. It is normally estimated by minimizing the difference between experimental binary vapor-liquid equilibrium or interfacial tension data and the SAFT-VR Mie EoS output data \cite{muller2017,lobanova2016}. The objective function is similar to: 
+When modeling mixtures with this force field, it can be necessary to estimate the binary interaction parameter $k_{ij}$ of Eq. \eqref{eqn:epsmix}. This parameter is normally estimated by minimizing the difference between experimental binary vapor-liquid equilibrium or interfacial tension data and the SAFT-VR Mie EoS output data \cite{muller2017,lobanova2016}. The objective function is similar to: 
 
 \begin{equation}
 \begin{aligned}
@@ -897,37 +897,66 @@ where $\alpha$ is a constant whose value is  normally assumed to be 0.5.    Base
 \begin{equation}
 \label{eq:softcore}
 \begin{aligned}
-U^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace .
+U_{Mie}^{sc}(r) {}=& \lambda\epsilon\dfrac{\lambda_r}{\lambda_r - \lambda_a} \left(\frac{\lambda_r}{\lambda_a} \right)^{\left( \frac{\lambda_a}{\lambda_r - \lambda_a} \right)} \left\lbrace\dfrac{1}{\left[\alpha(1-\lambda)+ (r/\sigma)^{\lambda_a}\right]^{\lambda_{r}/\lambda_{a}}} - \dfrac{1}{\alpha(1-\lambda)+(r/\sigma)^{\lambda_a}}\right\rbrace .
 \end{aligned}
 \end{equation}
 
-Using this generalized softcore potential, we plotted the potential energy with repulsive exponents of different hardness/softness for a range of values of $\lambda$ in Figure \ref{fig:scmie}. We see that this softcore scheme makes the potential behave more smoothly in relation to the change of $\lambda$, mainly for the softer repulsive exponents. 
+With the intention of observing the behavior of this generalized softcore potential, we plotted the $U_{Mie}^{sc}(r)$ with repulsive exponents of different hardness/softness for a range of values of $\lambda$ in Figures \ref{fig:scmie8} to \ref{fig:scmie30}. We see that this softcore scheme makes the potential behave more smoothly in relation to the change of $\lambda$, mainly for the softer repulsive exponents. 
 
+
+%\begin{figure}
+%	\centering
+%	\subfloat[][]{%
+%		\label{fig:ex3-a}%
+%		\includegraphics[height=5.9cm]{Figures/soft8}}%
+%	\hspace{0.05cm}%
+%	\subfloat[][]{%
+%		\label{fig:ex3-b}%
+%		\includegraphics[height=5.9cm]{Figures/soft15}} \\
+%	
+%	\subfloat[][]{%
+%		\label{fig:ex3-c}%
+%		\includegraphics[height=5.9cm]{Figures/soft20}}%
+%	\hspace{0.05cm}%
+%	\subfloat[][]{%
+%		\label{fig:ex3-d}%
+%		\includegraphics[height=5.9cm]{Figures/soft30}}%
+%	\caption[Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$.]{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}$ is equal to
+%		8 \subref{fig:ex3-a};
+%		15 \subref{fig:ex3-b};
+%		20 \subref{fig:ex3-c}; and,
+%		30 \subref{fig:ex3-d}.}%
+%	\label{fig:scmie}
+%\end{figure}
 
 \begin{figure}
 	\centering
-	\subfloat[][]{%
-		\label{fig:ex3-a}%
-		\includegraphics[height=5.9cm]{Figures/soft8}}%
-	\hspace{0.05cm}%
-	\subfloat[][]{%
-		\label{fig:ex3-b}%
-		\includegraphics[height=5.9cm]{Figures/soft15}} \\
-	
-	\subfloat[][]{%
-		\label{fig:ex3-c}%
-		\includegraphics[height=5.9cm]{Figures/soft20}}%
-	\hspace{0.05cm}%
-	\subfloat[][]{%
-		\label{fig:ex3-d}%
-		\includegraphics[height=5.9cm]{Figures/soft30}}%
-	\caption[Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$.]{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}$ is equal to
-		8 \subref{fig:ex3-a};
-		15 \subref{fig:ex3-b};
-		20 \subref{fig:ex3-c}; and,
-		30 \subref{fig:ex3-d}.}%
-	\label{fig:scmie}
+		\includegraphics[width=0.8\linewidth]{Figures/soft8}%
+		\caption{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}=8$}
+		\label{fig:scmie8}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figures/soft15}%
+\caption{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}=15$}
+\label{fig:scmie15}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figures/soft20}%
+\caption{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}=20$}
+\label{fig:scmie20}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figures/soft30}%
+\caption{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}=30$}
+\label{fig:scmie30}
+\end{figure}
+
 \FloatBarrier
 Now that we defined our coupled potential, we can then obtain the potential energies related to each alchemical state by doing independent simulations in different values of $\lambda$ or by doing expanded ensemble simulations \cite{lyubartsev}. The latter was the method used in this dissertation, and it is described in Section \ref{ee}. With the potential energies, the next step is to use post-processing methods, such as the MBAR used in this study, to effectively calculate $\Delta G_{3 \rightarrow 4}$.  The solvation free energies can then be used to calculate other properties such as the partition coefficient. This property is a measure of the partitioning of one solute in two solvents (a and b) with different physicochemical characteristics  at a temperature T. It is defined by the following equation when the activity coefficients are assumed to be one \cite{doi:10.1021/ja00036a009}:
 
