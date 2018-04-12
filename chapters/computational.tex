@@ -866,14 +866,14 @@ In the case of a study concerning the solvation of a single molecule, the Gibbs 
 \end{aligned}
 \end{equation}
 
-The last term in Eq. \ref{eq:freesolv} accounts for the difference between the mean volume of the simulation box with the solute inserted ($V_{1}$) and the mean volume of the simulation box with only solvent molecules in it ($V^{*}$). However, \citeonline{shirts2013} have shown that this term is negligible with respect to the statistical uncertainty of calculating $\Delta G$. In addition, when we have other solute molecules in solution, another term in Eq. \ref{eq:freesolv} may be necessary \cite{shirts2013}. The term $\Delta G_{1 \rightarrow 2}$, also represented in \figref{thermcy},  is the solvation free energy associated with turning off the non bonded interactions of the molecule in the gas phase. In the next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the solvent phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the latter case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $.  
-
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{Figures/cicclotermo}
+	\includegraphics[scale=0.50]{Figures/cicclotermo}
 	\caption{Thermodynamic path for computing solvation free energy of a single solute molecule with molecular dynamics. Adapted from \citeonline{klimovich}.}
 	\label{thermcy}
 \end{figure}
+
+The last term in Eq. \ref{eq:freesolv} accounts for the difference between the mean volume of the simulation box with the solute inserted ($V_{1}$) and the mean volume of the simulation box with only solvent molecules in it ($V^{*}$). However, \citeonline{shirts2013} have shown that this term is negligible with respect to the statistical uncertainty of calculating $\Delta G$. In addition, when we have other solute molecules in solution, another term in Eq. \ref{eq:freesolv} may be necessary \cite{shirts2013}. The term $\Delta G_{1 \rightarrow 2}$, also represented in \figref{thermcy},  is the solvation free energy associated with turning off the non bonded interactions of the molecule in the gas phase. In the next transformation, $\Delta G_{2 \rightarrow 3}$ is the free energy of moving the non-interacting molecule from the gas phase to the solvent and is equal to zero since the transformation of a non-interacting molecule does not depend on the environment. Lastly, $\Delta G_{3 \rightarrow 4}$ is the free energy required for the non-interaction molecule in the solvent phase to regain its non-bonded interactions with the solvent.  The solvation free energy calculation can be classified according to the types of non-bonded interactions that are turned off/on in the $1 \rightarrow 2$ and $ 3 \rightarrow 4$ parts of the path. If both non-bonded interactions with the environment and internal interactions are turned off, this is an annihilation free energy calculation. On the other hand, if only non-bonded interactions with the environment are turned off, this is a decoupling free energy calculation \cite{klimovich}. In the latter case, $\Delta G_{1 \rightarrow 2} = 0$ and the $\Delta G_{solv} = \Delta G_{3 \rightarrow 4} $.  
 
 The methods used to carry out the transformations of Figure \ref{thermcy} during the simulation scale the solute charges to zero and then turn off the interactions corresponding to the Lennard-Jones or Mie potential. In order to carry out the latter process, a modified potential with a coupling parameter ($\lambda$) is used. Each $\lambda$ represents an alchemical state. When $\lambda=0$, there is no interaction with the solvent and, when $\lambda=1$, interactions are fully activated. The coupling of the $\lambda$ parameter could be linear, as it is demonstrated in Figure \ref{fig:linearpoten}, but it could generate numerical problems related to the exponential part of the potential \cite{shirts2013}. 
 
@@ -929,7 +929,7 @@ With the intention of observing the behavior of this generalized softcore potent
 %	\label{fig:scmie}
 %\end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=0.8\linewidth]{Figures/soft8}%
 		\caption{Generalized softcore Mie potential, Eq. \ref{eq:softcore}, for different values of $\lambda$. Here, $\sigma=1$, $\epsilon=1$, $\lambda _{a} = 6$, and $\lambda _{r}=8$}
@@ -1060,7 +1060,7 @@ where $K$ is the total number of $\lambda$ states. In order to carry out our sol
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.75\linewidth]{Figures/optimized_cdfexeample}
+	\includegraphics[width=0.8\linewidth]{Figures/optimized_cdfexeample}
 	\caption{Relation between the optimized coupling parameters and the cumulative probability used to obtain them.}
 	\label{fig:optimized_cdfexeample}
 \end{figure}

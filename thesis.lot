@@ -2,15 +2,15 @@
 \select@language {english}
 \contentsline {table}{\numberline {3.2.1}{\ignorespaces Parameters of the SAFT-$\gamma $ Mie force field for each substance used in this work.\relax }}{37}{table.caption.13}
 \contentsline {table}{\numberline {3.2.2}{\ignorespaces Coarse-grained geometries of the substances used in this work for the SAFT-$\gamma $ Mie force field.\relax }}{38}{table.caption.14}
-\contentsline {table}{\numberline {5.1.1}{\ignorespaces Estimated SAFT-$\gamma $ Mie force field parameters for phenanthrene.\relax }}{58}{table.caption.24}
-\contentsline {table}{\numberline {5.2.1}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the hexane+solute pairs.\relax }}{61}{table.caption.27}
-\contentsline {table}{\numberline {5.2.2}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the 1-octanol+solute pairs.\relax }}{61}{table.caption.28}
-\contentsline {table}{\numberline {5.2.3}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the toluene+solute pairs.\relax }}{62}{table.caption.29}
-\contentsline {table}{\numberline {5.2.4}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the phenanthrene+$CO_{2}$+ toluene mixture with different values of $w_{CO_{2}}$.\relax }}{62}{table.caption.30}
-\contentsline {table}{\numberline {5.2.5}{\ignorespaces Calculated and experimental values for the solvation free energies (kcal/mol) of solutes in non-aqueous solvents.\relax }}{63}{table.caption.32}
-\contentsline {table}{\numberline {5.2.6}{\ignorespaces Calculated values for the solvation free energies (kcal/mol) of phenanthrene in toluene+$CO_{2}$.\relax }}{67}{table.caption.36}
-\contentsline {table}{\numberline {5.3.1}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the water+solute pairs. \relax }}{69}{table.caption.38}
-\contentsline {table}{\numberline {5.3.2}{\ignorespaces Calculated values using $k_{ij}=0$ and experimental values for the hydration free energies (kcal/mol) of solutes in water.\relax }}{69}{table.caption.39}
-\contentsline {table}{\numberline {5.3.3}{\ignorespaces Binary interaction parameters employed.\relax }}{69}{table.caption.40}
-\contentsline {table}{\numberline {5.3.4}{\ignorespaces Calculated and experimental hydration free energies (kcal/mol) of solutes in water.\relax }}{71}{table.caption.41}
-\contentsline {table}{\numberline {5.4.1}{\ignorespaces Partition Coefficient Calculated from MD simulations and from experimental data.\relax }}{73}{table.caption.43}
+\contentsline {table}{\numberline {5.1.1}{\ignorespaces Estimated SAFT-$\gamma $ Mie force field parameters for phenanthrene.\relax }}{57}{table.caption.24}
+\contentsline {table}{\numberline {5.2.1}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the hexane+solute pairs.\relax }}{60}{table.caption.27}
+\contentsline {table}{\numberline {5.2.2}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the 1-octanol+solute pairs.\relax }}{60}{table.caption.28}
+\contentsline {table}{\numberline {5.2.3}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the toluene+solute pairs.\relax }}{61}{table.caption.29}
+\contentsline {table}{\numberline {5.2.4}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the phenanthrene+$CO_{2}$+ toluene mixture with different values of $w_{CO_{2}}$.\relax }}{61}{table.caption.30}
+\contentsline {table}{\numberline {5.2.5}{\ignorespaces Calculated and experimental values for the solvation free energies (kcal/mol) of solutes in non-aqueous solvents.\relax }}{62}{table.caption.32}
+\contentsline {table}{\numberline {5.2.6}{\ignorespaces Calculated values for the solvation free energies (kcal/mol) of phenanthrene in toluene+$CO_{2}$.\relax }}{66}{table.caption.36}
+\contentsline {table}{\numberline {5.3.1}{\ignorespaces Optimized values of $\lambda $ and $\eta $ for the water+solute pairs. \relax }}{68}{table.caption.38}
+\contentsline {table}{\numberline {5.3.2}{\ignorespaces Calculated values using $k_{ij}=0$ and experimental values for the hydration free energies (kcal/mol) of solutes in water.\relax }}{68}{table.caption.39}
+\contentsline {table}{\numberline {5.3.3}{\ignorespaces Binary interaction parameters employed.\relax }}{68}{table.caption.40}
+\contentsline {table}{\numberline {5.3.4}{\ignorespaces Calculated and experimental hydration free energies (kcal/mol) of solutes in water.\relax }}{70}{table.caption.41}
+\contentsline {table}{\numberline {5.4.1}{\ignorespaces Partition Coefficient Calculated from MD simulations and from experimental data.\relax }}{72}{table.caption.43}
