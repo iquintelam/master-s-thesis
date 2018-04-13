@@ -44,32 +44,32 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results and Discussion}}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}Phenanthrene parameterization}{57}{section.5.1}
 \contentsline {section}{\numberline {5.2}Solvation free energies}{58}{section.5.2}
-\contentsline {section}{\numberline {5.3}Hydration free energies}{68}{section.5.3}
-\contentsline {section}{\numberline {5.4}Partition Coefficients}{72}{section.5.4}
+\contentsline {section}{\numberline {5.3}Hydration free energies}{67}{section.5.3}
+\contentsline {section}{\numberline {5.4}Partition Coefficients}{71}{section.5.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{74}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusions}}{73}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{76}{section*.46}
+\contentsline {chapter}{\uppercase {Bibliography}}{75}{section*.46}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Detailing of the SAFT-VR Mie Equation of State }}{87}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Detailing of the SAFT-VR Mie Equation of State }}{86}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlap Matrices}}{91}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Overlap Matrices}}{90}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANNEX \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Annex}}{95}{section*.50}
+\contentsline {part}{\uppercase {Annex}}{94}{section*.50}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Work Published in Scientific Conference}}{96}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Work Published in Scientific Conference}}{95}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{105}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Paper for Publication in Scientific Journal}}{104}{appendix.anexochapback.2}
